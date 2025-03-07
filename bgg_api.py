@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 import xml.etree.ElementTree as ET
 
+
 # APIアクセス関数
 def get_game_mechanics(game_id):
     """
@@ -36,6 +37,7 @@ def get_game_mechanics(game_id):
     else:
         st.error(f"エラー: ステータスコード {response.status_code}")
         return None
+
 
 def get_game_details(game_id):
     """
@@ -93,7 +95,11 @@ def get_game_details(game_id):
                     # 日本語文字を含むものを探す
                     for alt_name in alternate_names:
                         # ひらがなかカタカナが含まれているか確認（より信頼性が高い日本語判定）
-                        if any('\u3040' <= c <= '\u309F' or '\u30A0' <= c <= '\u30FF' for c in alt_name):
+                        has_japanese = any(
+                            '\u3040' <= c <= '\u309F' or '\u30A0' <= c <= '\u30FF'
+                            for c in alt_name
+                        )
+                        if has_japanese:
                             game["japanese_name"] = alt_name
                             break
             
@@ -127,10 +133,10 @@ def get_game_details(game_id):
                 game["publisher_min_age"] = age_element.get("value")
                 
             # BGGコミュニティの推奨プレイ人数を取得
-            suggested_numplayers = item.findall(".//poll[@name='suggested_numplayers']/results")
+            poll = item.findall(".//poll[@name='suggested_numplayers']/results")
             community_players = {"best": [], "recommended": [], "not_recommended": []}
             
-            for numplayer_result in suggested_numplayers:
+            for numplayer_result in poll:
                 num_players = numplayer_result.get("numplayers")
                 
                 # 最も投票が多い推奨度を見つける
@@ -157,17 +163,25 @@ def get_game_details(game_id):
             if community_players["best"]:
                 # 数値として解釈できる場合にソート
                 try:
-                    community_players["best"] = sorted(community_players["best"], key=lambda x: float(x.replace("+", "")))
+                    community_players["best"] = sorted(
+                        community_players["best"],
+                        key=lambda x: float(x.replace("+", ""))
+                    )
                 except ValueError:
                     pass
                 game["community_best_players"] = ", ".join(community_players["best"])
             
             if community_players["recommended"]:
                 try:
-                    community_players["recommended"] = sorted(community_players["recommended"], key=lambda x: float(x.replace("+", "")))
+                    community_players["recommended"] = sorted(
+                        community_players["recommended"],
+                        key=lambda x: float(x.replace("+", ""))
+                    )
                 except ValueError:
                     pass
-                game["community_recommended_players"] = ", ".join(community_players["recommended"])
+                game["community_recommended_players"] = ", ".join(
+                    community_players["recommended"]
+                )
             
             # BGGコミュニティの推奨年齢を取得
             suggested_age_poll = item.find(".//poll[@name='suggested_playerage']")
@@ -255,6 +269,7 @@ def get_game_details(game_id):
     else:
         st.error(f"エラー: ステータスコード {response.status_code}")
         return None
+
 
 def search_games(query, exact=False):
     """

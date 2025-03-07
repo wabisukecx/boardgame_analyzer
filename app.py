@@ -91,7 +91,8 @@ elif option == "ゲームIDで詳細情報を取得":
                     display_game_complexity(game_details)
                 
                 # ラーニングカーブ情報を計算して表示
-                if 'description' in game_details and 'mechanics' in game_details and 'weight' in game_details:
+                if ('description' in game_details and 'mechanics' in game_details
+                        and 'weight' in game_details):
                     learning_curve = calculate_learning_curve(game_details)
                     
                     # ラーニングカーブの情報を表示
@@ -106,7 +107,9 @@ elif option == "ゲームIDで詳細情報を取得":
                 display_data_tabs(game_details)
                 
                 # BGGへのリンク
-                st.markdown(f"[BoardGameGeekで詳細を見る](https://boardgamegeek.com/boardgame/{game_id})")
+                st.markdown(
+                    f"[BoardGameGeekで詳細を見る](https://boardgamegeek.com/boardgame/{game_id})"
+                )
                 
                 # 詳細情報をセッションに保存
                 if 'game_data' not in st.session_state:
@@ -159,7 +162,8 @@ elif option == "YAMLでデータを保存":
             display_name = japanese_name or game_name
             placeholder_filename = f"{selected_game_id}_{display_name}.yaml"
             # 特殊文字を置換（セミコロンも追加）
-            placeholder_filename = placeholder_filename.replace(" ", "_").replace("/", "_").replace("\\", "_").replace(":", "_").replace(";", "_")
+            placeholder_filename = placeholder_filename.replace(" ", "_").replace(
+                "/", "_").replace("\\", "_").replace(":", "_").replace(";", "_")
             
             custom_filename = st.text_input(
                 "保存するファイル名 (空白の場合はplaceholderの名前を使用)", 
@@ -169,7 +173,9 @@ elif option == "YAMLでデータを保存":
             
             # 保存ボタン
             if st.button("選択したゲームデータをYAMLに保存", type="primary"):
-                success, file_path, error_msg = save_game_data_to_yaml(game_data, custom_filename)
+                success, file_path, error_msg = save_game_data_to_yaml(
+                    game_data, custom_filename
+                )
                 
                 if success:
                     st.success(f"ゲームデータをYAMLファイルに保存しました: {file_path}")

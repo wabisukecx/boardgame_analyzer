@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
-from learning_curve import get_curve_type_display, get_player_type_display, get_replayability_display
+from learning_curve import (
+    get_curve_type_display, get_player_type_display, get_replayability_display
+)
+
 
 # カスタムスタイル用のCSSを定義
 def load_css():
@@ -51,6 +54,7 @@ def load_css():
     </style>
     """, unsafe_allow_html=True)
 
+
 # カスタムメトリック表示関数
 def display_custom_metric(label, value):
     """カスタムスタイルのメトリックを表示する"""
@@ -60,6 +64,7 @@ def display_custom_metric(label, value):
         <div class="custom-metric-value" style="font-size: 0.9rem;">{value}</div>
     </div>
     """, unsafe_allow_html=True)
+
 
 # サムネイル表示関数
 def display_game_thumbnail(thumbnail_url, game_name):
@@ -74,11 +79,13 @@ def display_game_thumbnail(thumbnail_url, game_name):
     else:
         # 画像がない場合のプレースホルダー
         st.markdown(f"""
-        <div style="text-align: center; padding: 15px; background-color: #f8f9fa; border-radius: 5px; margin-bottom: 10px;">
+        <div style="text-align: center; padding: 15px; background-color: #f8f9fa; 
+        border-radius: 5px; margin-bottom: 10px;">
             <p style="color: #6c757d;">画像なし</p>
             <p style="font-size: 0.9rem; margin-top: 5px;">{game_name}</p>
         </div>
         """, unsafe_allow_html=True)
+
 
 # ゲーム詳細表示関数
 def display_game_basic_info(game_details):
@@ -97,49 +104,73 @@ def display_game_basic_info(game_details):
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown("**ゲーム名**")
-        st.markdown(f"<div style='font-size: 0.9rem;'>{display_name}</div>", unsafe_allow_html=True)
+        st.markdown(
+            f"<div style='font-size: 0.9rem;'>{display_name}</div>",
+            unsafe_allow_html=True
+        )
         if japanese_name and english_name != japanese_name:
             st.caption(f"英語名: {english_name}")
     with col2:
         st.markdown("**発行年**")
         year = game_details.get('year_published', '不明')
-        st.markdown(f"<div style='font-size: 0.9rem;'>{year}</div>", unsafe_allow_html=True)
+        st.markdown(
+            f"<div style='font-size: 0.9rem;'>{year}</div>",
+            unsafe_allow_html=True
+        )
     with col3:
         st.markdown("**平均評価**")
         rating = game_details.get('average_rating', '不明')
         if rating != '不明':
             rating = round(float(rating), 2)
-        st.markdown(f"<div style='font-size: 0.9rem;'>{rating}</div>", unsafe_allow_html=True)
+        st.markdown(
+            f"<div style='font-size: 0.9rem;'>{rating}</div>",
+            unsafe_allow_html=True
+        )
     
     # ゲームサムネイルを表示（ある場合）
     if 'thumbnail_url' in game_details:
-        st.image(game_details['thumbnail_url'], caption=display_name, use_container_width=False)
+        st.image(
+            game_details['thumbnail_url'],
+            caption=display_name,
+            use_container_width=False
+        )
+
 
 def display_game_players_info(game_details):
     """ゲームのプレイ人数情報を表示する"""
     st.markdown("#### プレイ人数")
     # コミュニティの推奨人数を優先
     if 'community_best_players' in game_details:
-        display_custom_metric("ベストプレイ人数（コミュニティ推奨）", game_details['community_best_players'])
+        display_custom_metric(
+            "ベストプレイ人数（コミュニティ推奨）",
+            game_details['community_best_players']
+        )
     
     # パブリッシャー指定のプレイ人数も表示
     publisher_players = "不明"
-    if 'publisher_min_players' in game_details and 'publisher_max_players' in game_details:
-        publisher_players = f"{game_details['publisher_min_players']}～{game_details['publisher_max_players']}人"
+    if ('publisher_min_players' in game_details and
+            'publisher_max_players' in game_details):
+        publisher_players = f"{game_details['publisher_min_players']}～" \
+                            f"{game_details['publisher_max_players']}人"
     display_custom_metric("パブリッシャー指定プレイ人数", publisher_players)
+
 
 def display_game_age_time_info(game_details):
     """ゲームの年齢・プレイ時間情報を表示する"""
     st.markdown("#### 推奨年齢・プレイ時間")
     # コミュニティの推奨年齢を優先
     if 'community_min_age' in game_details:
-        display_custom_metric("推奨年齢（コミュニティ推奨）", f"{game_details['community_min_age']}歳以上")
+        display_custom_metric(
+            "推奨年齢（コミュニティ推奨）",
+            f"{game_details['community_min_age']}歳以上"
+        )
     
     # プレイ時間
     playtime = game_details.get('playing_time', '不明')
     if playtime != '不明':
         playtime = f"{playtime}分"
     display_custom_metric("プレイ時間", playtime)
+
 
 def display_game_complexity(game_details):
     """ゲームの複雑さを表示する"""
@@ -149,38 +180,56 @@ def display_game_complexity(game_details):
         weight = f"{round(float(weight), 2)}/5.0"
     display_custom_metric("BGG複雑さ評価", weight)
 
+
 def display_learning_curve(learning_curve):
     """ラーニングカーブの情報を表示する"""
     st.markdown("### ラーニングカーブ分析")
     
     col1, col2, col3 = st.columns(3)
     with col1:
-        display_custom_metric("初期学習の障壁", f"{learning_curve['initial_barrier']}/5.0")
+        display_custom_metric(
+            "初期学習の障壁",
+            f"{learning_curve['initial_barrier']}/5.0"
+        )
     with col2:
-        display_custom_metric("戦略の深さ", f"{learning_curve['strategic_depth']}/5.0")
+        display_custom_metric(
+            "戦略の深さ",
+            f"{learning_curve['strategic_depth']}/5.0"
+        )
     with col3:
         curve_type_ja = get_curve_type_display(learning_curve['learning_curve_type'])
         display_custom_metric("学習曲線タイプ", curve_type_ja)
     
-    # メカニクスの複雑度とリプレイ性を表示（追加）
+    # メカニクスの複雑度とリプレイ性を表示
     col1, col2 = st.columns(2)
     with col1:
         if 'mechanics_complexity' in learning_curve:
-            display_custom_metric("メカニクスの複雑度", f"{learning_curve['mechanics_complexity']}/5.0")
+            display_custom_metric(
+                "メカニクスの複雑度",
+                f"{learning_curve['mechanics_complexity']}/5.0"
+            )
     with col2:
         if 'replayability' in learning_curve:
             replay_score = learning_curve['replayability']
             replay_display = get_replayability_display(replay_score)
-            display_custom_metric("リプレイ性", f"{replay_score}/5.0 ({replay_display})")
+            display_custom_metric(
+                "リプレイ性",
+                f"{replay_score}/5.0 ({replay_display})"
+            )
     
     # 推奨プレイヤータイプを表示
     if 'player_types' in learning_curve and learning_curve['player_types']:
-        player_types_text = ", ".join([get_player_type_display(pt) for pt in learning_curve['player_types']])
+        player_types_text = ", ".join(
+            [get_player_type_display(pt) for pt in learning_curve['player_types']]
+        )
         st.info(f"推奨プレイヤータイプ: {player_types_text}")
+
 
 def display_data_tabs(game_details):
     """タブを使って詳細情報を表示する"""
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["メカニクス", "カテゴリ", "ランキング", "デザイナー", "パブリッシャー"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        "メカニクス", "カテゴリ", "ランキング", "デザイナー", "パブリッシャー"
+    ])
     
     with tab1:
         if 'mechanics' in game_details and game_details['mechanics']:
