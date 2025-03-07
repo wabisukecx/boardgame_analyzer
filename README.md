@@ -5,6 +5,7 @@ BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析
 ## 概要
 
 このアプリケーションは、BoardGameGeek APIを通じてボードゲームのデータを取得し、ゲームの複雑さ、学習曲線、メカニクスなどを分析するためのツールです。日本語UIで設計されており、ボードゲーム愛好家やボードゲームの情報を整理したい方に最適です。
+
 ![image](https://github.com/user-attachments/assets/33c3972c-fdf6-4185-8c34-3685f961fcf3)
 
 ## 主な機能
