@@ -51,9 +51,59 @@ def calculate_popularity_factor(rank):
     else:
         return 1.0  # その他はそのまま
 
+def get_year_published(game_data):
+    """
+    ゲームの発行年を取得する
+    
+    Parameters:
+    game_data (dict): ゲームの詳細情報
+    
+    Returns:
+    int or None: 発行年（見つからない場合はNone）
+    """
+    if 'year_published' not in game_data:
+        return None
+        
+    try:
+        return int(game_data['year_published'])
+    except (ValueError, TypeError):
+        return None
+
+def calculate_longevity_factor(year_published):
+    """
+    ゲームの発行年に基づく長寿命係数を計算する
+    発行から長い期間が経過しているゲームは、長期間人気を保っている証拠であり、
+    より高いリプレイ性を持つと考えられる
+    
+    Parameters:
+    year_published (int or None): ゲームの発行年
+    
+    Returns:
+    float: 長寿命係数（1.0〜1.25の範囲）- 重みを下げた
+    """
+    import datetime
+    
+    if year_published is None:
+        return 1.0
+        
+    current_year = datetime.datetime.now().year
+    years_since_publication = current_year - year_published
+    
+    if years_since_publication >= 20:
+        return 1.25  # 20年以上は25%増加（クラシックゲーム）- 40%→25%に下げた
+    elif years_since_publication >= 10:
+        return 1.2   # 10年以上は20%増加（長期的な人気）- 30%→20%に下げた
+    elif years_since_publication >= 5:
+        return 1.1   # 5年以上は10%増加（定着したゲーム）- 20%→10%に下げた
+    else:
+        return 1.0   # 新しいゲームはそのまま
+
 def calculate_replayability(game_data):
     """
-    ゲームのリプレイ性を計算する
+    ゲームのリプレイ性を計算する（改善版）
+    - ベースとなるリプレイ性はより厳しく設定
+    - 長期的な人気を反映するために発行年の情報を活用
+    - リプレイ要素を持つメカニクスをより詳細に評価
     
     Parameters:
     game_data (dict): ゲームの詳細情報
@@ -61,24 +111,53 @@ def calculate_replayability(game_data):
     Returns:
     float: リプレイ性スコア（1.0〜5.0の範囲）
     """
-    # 基本スコア（中程度）
-    base_score = 3.0
+    # 基本スコア（より厳しく設定）
+    base_score = 2.0  # 3.0から2.0に下げる
     
     # 要素の多様性によるスコア加算
     diversity_score = 0.0
     
-    # メカニクスの多様性（最大0.8ポイント）
+    # メカニクスの多様性（最大0.7ポイント）- 少し下げる
     mechanics_count = len(game_data.get('mechanics', []))
-    diversity_score += min(0.8, mechanics_count * 0.1)
+    diversity_score += min(0.7, mechanics_count * 0.1)
     
-    # セットアップのバリエーション（最大0.7ポイント）
-    setup_mechanics = ['Variable Set-up', 'Modular Board', 'Variable Player Powers']
-    if any(m.get('name') in setup_mechanics for m in game_data.get('mechanics', [])):
-        diversity_score += 0.7
+    # リプレイ性を高めるメカニクスをより詳細に評価
+    high_replay_mechanics = [
+        'Variable Set-up', 
+        'Modular Board', 
+        'Variable Player Powers',
+        'Deck Building',
+        'Legacy Game',
+        'Campaign / Battle Card Driven',
+        'Scenario / Mission / Campaign Game',
+        'Deck Construction',
+        'Engine Building'
+    ]
     
-    # カテゴリの多様性（最大0.5ポイント）
+    medium_replay_mechanics = [
+        'Dice Rolling',
+        'Card Drafting',
+        'Worker Placement',
+        'Tech Trees / Tech Tracks',
+        'Multi-Use Cards',
+        'Push Your Luck',
+        'Area Control',
+        'Route/Network Building'
+    ]
+    
+    # リプレイ性の高いメカニクスの数をカウント
+    high_replay_count = sum(1 for m in game_data.get('mechanics', []) 
+                            if m.get('name') in high_replay_mechanics)
+    medium_replay_count = sum(1 for m in game_data.get('mechanics', []) 
+                              if m.get('name') in medium_replay_mechanics)
+    
+    # リプレイ性が高いメカニクスの評価（最大0.8ポイント）
+    replay_mechanics_score = min(0.8, (high_replay_count * 0.2) + (medium_replay_count * 0.1))
+    diversity_score += replay_mechanics_score
+    
+    # カテゴリの多様性（最大0.4ポイント）- 少し下げる
     categories_count = len(game_data.get('categories', []))
-    diversity_score += min(0.5, categories_count * 0.1)
+    diversity_score += min(0.4, categories_count * 0.1)
     
     # 人気ランキングからの補正
     rank = get_rank_value(game_data)
@@ -86,14 +165,19 @@ def calculate_replayability(game_data):
     
     if rank is not None:
         if rank <= 100:
-            rank_bonus = 0.5  # トップ100は+0.5ポイント
+            rank_bonus = 0.6  # トップ100は+0.6ポイント
         elif rank <= 500:
-            rank_bonus = 0.3  # トップ500は+0.3ポイント
+            rank_bonus = 0.4  # トップ500は+0.4ポイント
         elif rank <= 1000:
-            rank_bonus = 0.1  # トップ1000は+0.1ポイント
+            rank_bonus = 0.2  # トップ1000は+0.2ポイント
     
-    # 最終スコア計算（スケールは1〜5で調整）
-    replayability = base_score + diversity_score + rank_bonus
+    # 長期的な人気による補正（新規追加）
+    year_published = get_year_published(game_data)
+    longevity_factor = calculate_longevity_factor(year_published)
+    
+    # 最終スコア計算
+    # 多様性スコアと人気ボーナスを足したものに、長寿命係数を掛ける
+    replayability = (base_score + diversity_score + rank_bonus) * longevity_factor
     
     # 上限と下限の設定
     replayability = max(1.0, min(5.0, replayability))
@@ -153,7 +237,7 @@ def calculate_learning_curve(game_data):
     # 戦略的深さを人気順位で補正（人気ゲームは戦略的深さが評価されている可能性が高い）
     strategic_depth = round(strategic_depth * popularity_factor, 2)
     
-    # リプレイ性を計算
+    # リプレイ性を計算（改善版）
     replayability = calculate_replayability(game_data)
     
     # 学習曲線のタイプ（閾値を調整）
@@ -211,6 +295,15 @@ def calculate_learning_curve(game_data):
     if rank is not None and rank <= 300:
         player_types.append("trend_follower")
     
+    # 長期間遊ばれているゲームを好むプレイヤー（新規追加）
+    year_published = get_year_published(game_data)
+    if year_published is not None:
+        import datetime
+        current_year = datetime.datetime.now().year
+        years_since_publication = current_year - year_published
+        if years_since_publication >= 10:
+            player_types.append("classic_lover")
+    
     return {
         "initial_barrier": initial_barrier,  # 初期学習の難しさ
         "strategic_depth": strategic_depth,  # 戦略の深さ
@@ -221,7 +314,8 @@ def calculate_learning_curve(game_data):
         "mechanics_complexity": round(avg_mechanic_complexity, 2),  # メカニクスの複雑さ
         "mechanics_count": len(mechanics_names),  # メカニクスの数
         "bgg_weight": base_weight,  # BGGの複雑さ評価（元の値）
-        "bgg_rank": rank  # BGGのランキング（新規追加）
+        "bgg_rank": rank,  # BGGのランキング（新規追加）
+        "year_published": year_published  # 発行年（新規追加）
     }
 
 def get_curve_type_display(curve_type):
@@ -260,7 +354,8 @@ def get_player_type_display(player_type):
         "hardcore": "ハードコアゲーマー",
         "system_master": "システムマスター（複雑なゲームシステムを好む）",
         "replayer": "リプレイヤー（遊び込めるゲームを好む）",
-        "trend_follower": "トレンドフォロワー（人気ゲームを好む）"
+        "trend_follower": "トレンドフォロワー（人気ゲームを好む）",
+        "classic_lover": "クラシック愛好家（長年遊ばれている定番ゲームを好む）"
     }
     return player_types_ja.get(player_type, player_type)
 
@@ -284,7 +379,7 @@ def get_mastery_time_display(mastery_time):
 
 def get_replayability_display(replayability):
     """
-    リプレイ性の表示名を取得する
+    リプレイ性の表示名を取得する（基準値を調整）
     
     Parameters:
     replayability (float): リプレイ性スコア
@@ -293,9 +388,11 @@ def get_replayability_display(replayability):
     str: 表示用のリプレイ性評価
     """
     if replayability >= 4.5:
-        return "非常に高い（何度でも遊べる）"
+        return "非常に高い（何度でも遊べる定番ゲーム）"
     elif replayability >= 4.0:
         return "高い（長期間遊べる）"
+    elif replayability >= 3.5:
+        return "やや高い（何度か遊ぶ価値がある）"
     elif replayability >= 3.0:
         return "中程度（数回は楽しめる）"
     elif replayability >= 2.0:

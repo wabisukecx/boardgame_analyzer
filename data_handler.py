@@ -53,8 +53,11 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
                     if 'id' in item:
                         del item['id']
         
-        # ラーニングカーブ情報を追加
-        if 'description' in game_data_safe and 'mechanics' in game_data_safe and 'weight' in game_data_safe:
+        # ラーニングカーブ情報を追加（まだない場合のみ）
+        if ('learning_analysis' not in game_data_safe and 
+            'description' in game_data_safe and 
+            'mechanics' in game_data_safe and 
+            'weight' in game_data_safe):
             game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
         
         # YAMLに変換して保存

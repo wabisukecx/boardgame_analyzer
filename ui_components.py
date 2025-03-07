@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from learning_curve import get_curve_type_display, get_player_type_display
+from learning_curve import get_curve_type_display, get_player_type_display, get_replayability_display
 
 # カスタムスタイル用のCSSを定義
 def load_css():
@@ -9,23 +9,24 @@ def load_css():
     <style>
         /* メトリック値のフォントサイズを調整 */
         .metric-value {
-            font-size: 1.5rem !important;
+            font-size: 0.9rem !important;
         }
         
         /* カスタム指標用のスタイル */
         .custom-metric {
-            padding: 10px;
+            padding: 8px;
             border-radius: 5px;
             background-color: #f8f9fa;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         .custom-metric-label {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #6c757d;
+            font-weight: bold;
         }
         .custom-metric-value {
-            font-size: 1.2rem;
-            font-weight: 500;
+            font-size: 0.9rem;
+            font-weight: 400;
         }
         
         /* サムネイル画像用のスタイル */
@@ -34,6 +35,18 @@ def load_css():
             border-radius: 5px;
             margin-bottom: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* 基本情報の見出しスタイル */
+        .info-heading {
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        /* 基本情報の値スタイル */
+        .info-value {
+            font-size: 0.9rem;
         }
     </style>
     """, unsafe_allow_html=True)
@@ -44,7 +57,7 @@ def display_custom_metric(label, value):
     st.markdown(f"""
     <div class="custom-metric">
         <div class="custom-metric-label">{label}</div>
-        <div class="custom-metric-value">{value}</div>
+        <div class="custom-metric-value" style="font-size: 0.9rem;">{value}</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -77,18 +90,26 @@ def display_game_basic_info(game_details):
     # 表示する名前（日本語名があれば優先）
     display_name = japanese_name or english_name
     
+    # 見出し追加
+    st.markdown("### ゲーム基本情報")
+    
+    # カスタムHTMLでフォントサイズを調整して表示
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("ゲーム名", display_name)
+        st.markdown("**ゲーム名**")
+        st.markdown(f"<div style='font-size: 0.9rem;'>{display_name}</div>", unsafe_allow_html=True)
         if japanese_name and english_name != japanese_name:
             st.caption(f"英語名: {english_name}")
     with col2:
-        st.metric("発行年", game_details.get('year_published', '不明'))
+        st.markdown("**発行年**")
+        year = game_details.get('year_published', '不明')
+        st.markdown(f"<div style='font-size: 0.9rem;'>{year}</div>", unsafe_allow_html=True)
     with col3:
+        st.markdown("**平均評価**")
         rating = game_details.get('average_rating', '不明')
         if rating != '不明':
             rating = round(float(rating), 2)
-        st.metric("平均評価", rating)
+        st.markdown(f"<div style='font-size: 0.9rem;'>{rating}</div>", unsafe_allow_html=True)
     
     # ゲームサムネイルを表示（ある場合）
     if 'thumbnail_url' in game_details:
@@ -130,6 +151,8 @@ def display_game_complexity(game_details):
 
 def display_learning_curve(learning_curve):
     """ラーニングカーブの情報を表示する"""
+    st.markdown("### ラーニングカーブ分析")
+    
     col1, col2, col3 = st.columns(3)
     with col1:
         display_custom_metric("初期学習の障壁", f"{learning_curve['initial_barrier']}/5.0")
@@ -138,6 +161,17 @@ def display_learning_curve(learning_curve):
     with col3:
         curve_type_ja = get_curve_type_display(learning_curve['learning_curve_type'])
         display_custom_metric("学習曲線タイプ", curve_type_ja)
+    
+    # メカニクスの複雑度とリプレイ性を表示（追加）
+    col1, col2 = st.columns(2)
+    with col1:
+        if 'mechanics_complexity' in learning_curve:
+            display_custom_metric("メカニクスの複雑度", f"{learning_curve['mechanics_complexity']}/5.0")
+    with col2:
+        if 'replayability' in learning_curve:
+            replay_score = learning_curve['replayability']
+            replay_display = get_replayability_display(replay_score)
+            display_custom_metric("リプレイ性", f"{replay_score}/5.0 ({replay_display})")
     
     # 推奨プレイヤータイプを表示
     if 'player_types' in learning_curve and learning_curve['player_types']:

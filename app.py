@@ -77,7 +77,6 @@ elif option == "ゲームIDで詳細情報を取得":
                 display_game_basic_info(game_details)
                 
                 # 追加の基本情報を表示
-                st.subheader("ゲーム情報")
                 col1, col2 = st.columns(2)
                 
                 with col1:
@@ -96,7 +95,6 @@ elif option == "ゲームIDで詳細情報を取得":
                     learning_curve = calculate_learning_curve(game_details)
                     
                     # ラーニングカーブの情報を表示
-                    st.subheader("ラーニングカーブ分析")
                     display_learning_curve(learning_curve)
                 
                 # ゲームの説明文を表示
