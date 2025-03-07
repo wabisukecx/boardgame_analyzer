@@ -1,14 +1,135 @@
 import streamlit as st
+import os
+import re
+import json
+import deepdiff
+import yaml
 
-# 自作モジュールをインポート
+# 既存のインポート
 from bgg_api import search_games, get_game_details
 from ui_components import (
     load_css, display_game_basic_info,
     display_game_players_info, display_game_age_time_info,
     display_game_complexity, display_learning_curve, display_data_tabs
 )
-from data_handler import save_game_data_to_yaml, search_results_to_dataframe
+from data_handler import save_game_data_to_yaml, search_results_to_dataframe, load_game_data_from_yaml
 from learning_curve import calculate_learning_curve
+
+# YAMLファイルからゲームIDとタイトルを抽出する関数
+def get_yaml_game_list():
+    """
+    game_dataフォルダ内のYAMLファイルを走査し、ゲームIDとタイトルのリストを返す
+    
+    Returns:
+    list: (ゲームID, ファイル名, 表示名)のタプルのリスト
+    """
+    game_list = []
+    # game_dataフォルダが存在するか確認
+    if not os.path.exists("game_data"):
+        return game_list
+        
+    # YAMLファイルを検索
+    for filename in os.listdir("game_data"):
+        if filename.endswith(".yaml"):
+            # ファイル名からゲームIDを抽出 (例: "167791_テラフォーミング・マーズ.yaml")
+            match = re.match(r"(\d+)_(.*?)\.yaml", filename)
+            if match:
+                game_id = match.group(1)
+                game_name = match.group(2)
+                display_name = f"{game_id} - {game_name}"
+                game_list.append((game_id, filename, display_name))
+    
+    # IDでソート
+    game_list.sort(key=lambda x: int(x[0]))
+    return game_list
+
+# データの内容を比較する関数
+def compare_game_data(old_data, new_data):
+    """
+    2つのゲームデータを比較し、重要な変更があるかどうかと変更内容を返す
+    
+    Parameters:
+    old_data (dict): 既存のゲームデータ
+    new_data (dict): 新しく取得したゲームデータ
+    
+    Returns:
+    tuple: (変更があるかどうか, 変更の説明)
+    """
+    if not old_data or not new_data:
+        return True, "データが不完全なため、更新が必要です。"
+    
+    # 重要なキーを定義
+    important_keys = {
+        'name': '英語名',
+        'japanese_name': '日本語名',
+        'year_published': '発行年',
+        'average_rating': '平均評価',
+        'weight': '複雑さ',
+        # メカニクスやカテゴリは複雑な構造なので別途処理
+    }
+    
+    changes = []
+    has_changes = False
+    
+    # 基本的なフィールドの比較
+    for key, display_name in important_keys.items():
+        old_value = old_data.get(key)
+        new_value = new_data.get(key)
+        
+        # データ型の違いを考慮して比較（文字列と数値の場合）
+        if isinstance(old_value, (int, float)) and isinstance(new_value, str):
+            try:
+                new_value = float(new_value) if '.' in new_value else int(new_value)
+            except ValueError:
+                pass
+        elif isinstance(new_value, (int, float)) and isinstance(old_value, str):
+            try:
+                old_value = float(old_value) if '.' in old_value else int(old_value)
+            except ValueError:
+                pass
+        
+        if old_value != new_value:
+            has_changes = True
+            if key in ['average_rating', 'weight'] and isinstance(old_value, (int, float)) and isinstance(new_value, (int, float)):
+                # 数値の場合は小数点2桁で丸める
+                old_str = f"{old_value:.2f}" if isinstance(old_value, float) else str(old_value)
+                new_str = f"{new_value:.2f}" if isinstance(new_value, float) else str(new_value)
+                changes.append(f"- {display_name}: {old_str} → {new_str}")
+            else:
+                changes.append(f"- {display_name}: {old_value} → {new_value}")
+    
+    # メカニクスの比較
+    old_mechanics = set(m.get('name', '') for m in old_data.get('mechanics', []))
+    new_mechanics = set(m.get('name', '') for m in new_data.get('mechanics', []))
+    
+    if old_mechanics != new_mechanics:
+        has_changes = True
+        added = new_mechanics - old_mechanics
+        removed = old_mechanics - new_mechanics
+        
+        if added:
+            changes.append(f"- 追加されたメカニクス: {', '.join(added)}")
+        if removed:
+            changes.append(f"- 削除されたメカニクス: {', '.join(removed)}")
+    
+    # カテゴリの比較
+    old_categories = set(c.get('name', '') for c in old_data.get('categories', []))
+    new_categories = set(c.get('name', '') for c in new_data.get('categories', []))
+    
+    if old_categories != new_categories:
+        has_changes = True
+        added = new_categories - old_categories
+        removed = old_categories - new_categories
+        
+        if added:
+            changes.append(f"- 追加されたカテゴリ: {', '.join(added)}")
+        if removed:
+            changes.append(f"- 削除されたカテゴリ: {', '.join(removed)}")
+    
+    # 変更の説明を結合
+    change_description = '\n'.join(changes) if changes else "変更はありませんでした。"
+    
+    return has_changes, change_description
 
 # ページ設定
 st.set_page_config(
@@ -63,7 +184,37 @@ if option == "ゲーム名で検索":
 elif option == "ゲームIDで詳細情報を取得":
     st.header("ゲームIDで詳細情報を取得")
     
-    game_id = st.text_input("詳細情報を取得するゲームIDを入力してください")
+    # 既存のYAMLファイルから選択できるようにする
+    yaml_games = get_yaml_game_list()
+    
+    # 入力方法を選択
+    input_method = st.radio(
+        "入力方法を選択",
+        ["手動入力", "保存済みYAMLファイルから選択"],
+        horizontal=True
+    )
+    
+    yaml_data = None
+    yaml_file_path = None
+    
+    if input_method == "手動入力":
+        game_id = st.text_input("詳細情報を取得するゲームIDを入力してください")
+    else:
+        if yaml_games:
+            selected_game = st.selectbox(
+                "保存済みゲームから選択",
+                options=yaml_games,
+                format_func=lambda x: x[2]  # 表示名を使用
+            )
+            game_id = selected_game[0] if selected_game else ""
+            
+            # 選択されたYAMLファイルからデータをロード
+            if selected_game:
+                yaml_file_path = os.path.join("game_data", selected_game[1])
+                yaml_data = load_game_data_from_yaml(yaml_file_path)
+        else:
+            st.warning("保存済みのYAMLファイルが見つかりません")
+            game_id = ""
     
     if st.button("詳細情報を取得", type="primary"):
         if game_id:
@@ -116,6 +267,32 @@ elif option == "ゲームIDで詳細情報を取得":
                     st.session_state.game_data = {}
                 
                 st.session_state.game_data[game_id] = game_details
+                
+                # YAMLファイルから読み込んだデータと比較して、変更があれば自動保存
+                if yaml_data and yaml_file_path:
+                    has_changes, change_description = compare_game_data(yaml_data, game_details)
+                    
+                    if has_changes:
+                        # 変更がある場合は、変更内容を表示して更新するか尋ねる
+                        st.warning("保存されているデータと新しく取得したデータに違いがあります。")
+                        
+                        with st.expander("変更内容の詳細"):
+                            st.markdown(change_description)
+                        
+                        if st.button("YAMLファイルを更新する", key="update_yaml"):
+                            # 元のファイル名を維持
+                            original_filename = os.path.basename(yaml_file_path)
+                            
+                            success, file_path, error_msg = save_game_data_to_yaml(
+                                game_details, original_filename
+                            )
+                            
+                            if success:
+                                st.success(f"ゲームデータが更新されました。YAMLファイルを最新情報で上書き保存しました。")
+                            else:
+                                st.error(f"ファイル更新エラー: {error_msg}")
+                    else:
+                        st.info("保存されているデータと新しく取得したデータに違いはありません。")
                 
             else:
                 st.warning("ゲーム詳細情報が見つかりませんでした")
