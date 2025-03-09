@@ -6,7 +6,8 @@ BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析
 
 このアプリケーションは、BoardGameGeek APIを通じてボードゲームのデータを取得し、ゲームの複雑さ、学習曲線、メカニクスなどを分析するためのツールです。日本語UIで設計されており、ボードゲーム愛好家やボードゲームの情報を整理したい方に最適です。
 
-yamlファイルをPCに保存できませんが、動作感はhttps://boardgameanalyzer-gsmlbaspmgvf3arxttip4f.streamlit.app/で確認いただけます。
+yamlファイルをPCに保存できませんが、動作感はStreamlit Community Cloudで確認できます。
+https://boardgameanalyzer-gsmlbaspmgvf3arxttip4f.streamlit.app/
 
 ## 主な機能
 
