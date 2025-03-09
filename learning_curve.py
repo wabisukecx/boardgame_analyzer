@@ -6,7 +6,14 @@ import datetime
 
 # メカニクスの複雑さデータを取得する関数をインポート
 from mechanic_complexity import get_complexity
-
+# 戦略深度計算の改善版をインポート
+from strategic_depth import (
+    calculate_strategic_depth_improved,
+    update_learning_curve_with_improved_strategic_depth,
+    estimate_decision_points,
+    estimate_interaction_complexity,
+    calculate_rules_complexity
+)
 
 def get_rank_value(game_data, rank_type="boardgame"):
     """
@@ -221,10 +228,7 @@ def calculate_learning_curve(game_data):
     avg_mechanic_complexity = (
         mechanics_complexity / max(1, mechanic_count) if mechanic_count > 0 else 3.0
     )
-    
-    # メカニクスの数も複雑さに影響（多くのメカニクスを持つゲームは複雑）
-    mechanics_count_factor = min(2.0, len(mechanics_names) / 3)
-    
+        
     # 推奨年齢からの複雑さ推定（年齢が高いほど複雑）
     min_age = int(game_data.get('publisher_min_age', 10))
     age_complexity = min(3.8, (min_age - 6) / 3)  # 6歳=0, 10歳=1.33, 14歳=2.67, 18歳以上=3.8
@@ -244,103 +248,51 @@ def calculate_learning_curve(game_data):
     initial_barrier = min(5.0, initial_barrier)
     initial_barrier = round(initial_barrier, 2)
     
-    # 戦略的深さ
-    strategic_depth = (base_weight * 0.7 + mechanics_count_factor * 0.3)
-    
-    # 人気順位による戦略的深さの補正
-    rank = get_rank_value(game_data)
-    popularity_factor = calculate_popularity_factor(rank)
-    
-    # 戦略的深さを人気順位で補正（人気ゲームは戦略的深さが評価されている可能性が高い）
-    strategic_depth = strategic_depth * popularity_factor
-    
-    # 上限を5.0に設定
-    strategic_depth = min(5.0, strategic_depth)
-    strategic_depth = round(strategic_depth, 2)
+    # 戦略的深さ（改善版）
+    strategic_depth = calculate_strategic_depth_improved(game_data)
     
     # リプレイ性を計算（改善版）
     replayability = calculate_replayability(game_data)
     
-    # 学習曲線のタイプ
-    if initial_barrier > 4.3:
-        base_curve_type = "steep"  # 急な学習曲線
-    elif initial_barrier > 3.5:
-        base_curve_type = "moderate"  # 中程度の学習曲線
-    else:
-        base_curve_type = "gentle"  # 緩やかな学習曲線
-        
-    # メカニクス数に基づいて学習曲線を調整
-    curve_type = base_curve_type
-    if len(mechanics_names) >= 8:
-        if base_curve_type == "steep" and strategic_depth > 4.0:
-            curve_type = "steep_then_flat"  # 急な学習曲線だが理解後は上達しやすい
-        elif base_curve_type == "moderate" and strategic_depth > 3.7:
-            curve_type = "moderate_then_flat"  # 中程度の学習曲線で理解後は上達しやすい
+    # ランク情報を取得
+    rank = get_rank_value(game_data)
     
-    # マスター時間の推定
-    if strategic_depth > 4.3:
-        if len(mechanics_names) >= 6:
-            mastery_time = "medium_to_long"  # メカニクスが多いが、一度基本を理解すれば応用が利く
-        else:
-            mastery_time = "long"  # マスターに長時間かかる
-    elif strategic_depth > 3.2:
-        mastery_time = "medium"  # マスターに中程度の時間がかかる
-    else:
-        mastery_time = "short"  # 比較的短時間でマスター可能
-    
-    # プレイヤータイプの推定
-    player_types = []
-    
-    # 初心者向け
-    if initial_barrier < 2.6 and strategic_depth < 3.7:
-        player_types.append("beginner")
-    
-    # カジュアルプレイヤー向け
-    if initial_barrier < 3.7 and strategic_depth < 4.3:
-        player_types.append("casual")
-    
-    # 熟練プレイヤー向け
-    if strategic_depth > 3.7:
-        player_types.append("experienced")
-    
-    # ハードコアゲーマー向け
-    if initial_barrier > 3.7 and strategic_depth > 4.3:
-        player_types.append("hardcore")
-        
-    # メカニクスが多く、戦略的深さが高い場合は「システムマスター」向け
-    if len(mechanics_names) >= 5 and strategic_depth > 4.0:
-        player_types.append("system_master")
-    
-    # リプレイヤー（リプレイ性が高いゲームを好むプレイヤー）
-    if replayability >= 4.0:
-        player_types.append("replayer")
-    
-    # 人気ゲームを好むプレイヤー
-    if rank is not None and rank <= 300:
-        player_types.append("trend_follower")
-    
-    # 長期間遊ばれているゲームを好むプレイヤー
+    # 発行年を取得
     year_published = get_year_published(game_data)
-    if year_published is not None:
-        current_year = datetime.datetime.now().year
-        years_since_publication = current_year - year_published
-        if years_since_publication >= 10:
-            player_types.append("classic_lover")
     
-    return {
+    # 基本的な学習曲線情報を構築
+    learning_curve = {
         "initial_barrier": initial_barrier,  # 初期学習の難しさ
         "strategic_depth": strategic_depth,  # 戦略の深さ
         "replayability": replayability,  # リプレイ性
-        "learning_curve_type": curve_type,  # 学習曲線のタイプ
-        "mastery_time": mastery_time,  # マスターにかかる時間
-        "player_types": player_types,  # 対象プレイヤータイプ
         "mechanics_complexity": round(avg_mechanic_complexity, 2),  # メカニクスの複雑さ
         "mechanics_count": len(mechanics_names),  # メカニクスの数
         "bgg_weight": base_weight,  # BGGの複雑さ評価（元の値）
         "bgg_rank": rank,  # BGGのランキング
         "year_published": year_published  # 発行年
     }
-
+    
+    # 改善版の指標で学習曲線データを拡張
+    learning_curve = update_learning_curve_with_improved_strategic_depth(
+        game_data, learning_curve)
+    
+    # 各種分析の詳細情報を追加
+    learning_curve["decision_points"] = estimate_decision_points(game_data.get('mechanics', []))
+    learning_curve["interaction_complexity"] = estimate_interaction_complexity(game_data.get('categories', []))
+    learning_curve["rules_complexity"] = calculate_rules_complexity(game_data)
+    
+    # マスター時間の推定
+    if strategic_depth > 4.3:
+        if len(mechanics_names) >= 6:
+            learning_curve["mastery_time"] = "medium_to_long"  # メカニクスが多いが、一度基本を理解すれば応用が利く
+        else:
+            learning_curve["mastery_time"] = "long"  # マスターに長時間かかる
+    elif strategic_depth > 3.2:
+        learning_curve["mastery_time"] = "medium"  # マスターに中程度の時間がかかる
+    else:
+        learning_curve["mastery_time"] = "short"  # 比較的短時間でマスター可能
+    
+    return learning_curve
 
 def get_curve_type_display(curve_type):
     """
@@ -353,14 +305,24 @@ def get_curve_type_display(curve_type):
     str: 表示用の学習曲線タイプ
     """
     curve_type_ja = {
+        # 基本タイプ
         "steep": "急な学習曲線",
         "moderate": "中程度の学習曲線",
         "gentle": "緩やかな学習曲線",
+        
+        # 旧バージョンの拡張タイプ
         "steep_then_flat": "初期は急だが習得後は上達しやすい学習曲線",
-        "moderate_then_flat": "中程度で習得後は上達しやすい学習曲線"
+        "moderate_then_flat": "中程度で習得後は上達しやすい学習曲線",
+        
+        # 新バージョンの拡張タイプ
+        "steep_then_moderate": "初期は急だが中程度の複雑さの学習曲線",
+        "steep_then_shallow": "初期は急だが戦略は浅い学習曲線",
+        "moderate_then_deep": "中程度の障壁で深い戦略性を持つ学習曲線",
+        "moderate_then_shallow": "中程度の障壁で浅い戦略性の学習曲線",
+        "gentle_then_deep": "習得は簡単だが深い戦略性を持つ学習曲線",
+        "gentle_then_moderate": "習得は簡単で中程度の戦略性を持つ学習曲線"
     }
     return curve_type_ja.get(curve_type, '不明')
-
 
 def get_player_type_display(player_type):
     """
@@ -378,12 +340,12 @@ def get_player_type_display(player_type):
         "experienced": "熟練プレイヤー",
         "hardcore": "ハードコアゲーマー",
         "system_master": "システムマスター（複雑なゲームシステムを好む）",
+        "strategist": "戦略家（戦略的深さのあるゲームを好む）",
         "replayer": "リプレイヤー（遊び込めるゲームを好む）",
         "trend_follower": "トレンドフォロワー（人気ゲームを好む）",
         "classic_lover": "クラシック愛好家（長年遊ばれている定番ゲームを好む）"
     }
     return player_types_ja.get(player_type, player_type)
-
 
 def get_mastery_time_display(mastery_time):
     """

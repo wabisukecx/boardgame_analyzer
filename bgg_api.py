@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import xml.etree.ElementTree as ET
-
+from rate_limiter import rate_limited_request, ttl_cache
 
 # APIアクセス関数
 def get_game_mechanics(game_id):
@@ -38,7 +38,8 @@ def get_game_mechanics(game_id):
         st.error(f"エラー: ステータスコード {response.status_code}")
         return None
 
-
+@ttl_cache(ttl_hours=48)
+@rate_limited_request(max_per_minute=15)
 def get_game_details(game_id):
     """
     ゲームの詳細情報を取得する（名前、年、メカニクス、カテゴリなど）
@@ -270,7 +271,8 @@ def get_game_details(game_id):
         st.error(f"エラー: ステータスコード {response.status_code}")
         return None
 
-
+@ttl_cache(ttl_hours=24)
+@rate_limited_request(max_per_minute=20)
 def search_games(query, exact=False):
     """
     ゲーム名で検索する

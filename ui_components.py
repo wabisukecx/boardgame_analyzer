@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 from learning_curve import (
-    get_curve_type_display, get_player_type_display, get_replayability_display
+    get_player_type_display, 
+    get_mastery_time_display, get_replayability_display
 )
 
 
@@ -28,7 +29,7 @@ def load_css():
             font-weight: bold;
         }
         .custom-metric-value {
-            font-size: 0.9rem;
+            font-size: 1.0rem;
             font-weight: 400;
         }
         
@@ -177,44 +178,78 @@ def display_game_complexity(game_details):
     st.markdown("#### ゲームの複雑さ")
     weight = game_details.get('weight', '不明')
     if weight != '不明':
-        weight = f"{round(float(weight), 2)}/5.0"
+        # 小数点第二位までに丸める
+        weight = f"{float(weight):.2f}/5.00"
     display_custom_metric("BGG複雑さ評価", weight)
 
-
 def display_learning_curve(learning_curve):
-    """ラーニングカーブの情報を表示する"""
+    """
+    ラーニングカーブの情報を表示する（改善版）
+    
+    Parameters:
+    learning_curve (dict): ラーニングカーブの情報
+    """
     st.markdown("### ラーニングカーブ分析")
     
-    col1, col2, col3 = st.columns(3)
+    # 基本情報を2列に変更（3列から2列に変更して列幅を広くする）
+    col1, col2 = st.columns(2)
     with col1:
+        # 小数点第二位までに丸める
+        initial_barrier = f"{float(learning_curve['initial_barrier']):.2f}/5.00"
         display_custom_metric(
             "初期学習の障壁",
-            f"{learning_curve['initial_barrier']}/5.0"
+            initial_barrier
         )
     with col2:
+        # 戦略深度に説明文を追加
+        strategic_depth = learning_curve['strategic_depth']
+        strategic_depth_desc = learning_curve.get('strategic_depth_description', '')
+        if not strategic_depth_desc:
+            # 説明がない場合は簡易的な説明を生成
+            if strategic_depth >= 4.5:
+                strategic_depth_desc = "非常に深い"
+            elif strategic_depth >= 4.0:
+                strategic_depth_desc = "深い"
+            elif strategic_depth >= 3.5:
+                strategic_depth_desc = "中〜高"
+            elif strategic_depth >= 3.0:
+                strategic_depth_desc = "中程度"
+            elif strategic_depth >= 2.5:
+                strategic_depth_desc = "中〜低"
+            else:
+                strategic_depth_desc = "浅い"
+        
+        # 小数点第二位までに丸める
+        strategic_depth_value = f"{float(strategic_depth):.2f}/5.00"
         display_custom_metric(
             "戦略の深さ",
-            f"{learning_curve['strategic_depth']}/5.0"
+            f"{strategic_depth_value} ({strategic_depth_desc})"
         )
-    with col3:
-        curve_type_ja = get_curve_type_display(learning_curve['learning_curve_type'])
-        display_custom_metric("学習曲線タイプ", curve_type_ja)
     
     # メカニクスの複雑度とリプレイ性を表示
     col1, col2 = st.columns(2)
     with col1:
         if 'mechanics_complexity' in learning_curve:
+            # 小数点第二位までに丸める
+            mechanics_complexity = f"{float(learning_curve['mechanics_complexity']):.2f}/5.00"
             display_custom_metric(
                 "メカニクスの複雑度",
-                f"{learning_curve['mechanics_complexity']}/5.0"
+                mechanics_complexity
             )
+        
+        # マスター時間を表示（あれば）
+        if 'mastery_time' in learning_curve:
+            mastery_time_ja = get_mastery_time_display(learning_curve['mastery_time'])
+            display_custom_metric("マスターにかかる時間", mastery_time_ja)
     with col2:
         if 'replayability' in learning_curve:
             replay_score = learning_curve['replayability']
             replay_display = get_replayability_display(replay_score)
+            # 小数点第二位までに丸める
+            replay_score_formatted = f"{float(replay_score):.2f}/5.00"
             display_custom_metric(
                 "リプレイ性",
-                f"{replay_score}/5.0 ({replay_display})"
+                f"{replay_score_formatted} ({replay_display})"
             )
     
     # 推奨プレイヤータイプを表示
@@ -223,7 +258,86 @@ def display_learning_curve(learning_curve):
             [get_player_type_display(pt) for pt in learning_curve['player_types']]
         )
         st.info(f"推奨プレイヤータイプ: {player_types_text}")
-
+    
+    # 詳細分析の表示（改善版で追加された指標）
+    if any(key in learning_curve for key in ['decision_points', 'interaction_complexity', 'rules_complexity']):
+        with st.expander("詳細分析", expanded=False):
+            st.markdown("#### メカニクスと相互作用の詳細指標")
+            
+            # 詳細指標を2列で表示
+            col1, col2 = st.columns(2)
+            with col1:
+                if 'decision_points' in learning_curve:
+                    decision_points = learning_curve['decision_points']
+                    decision_desc = ""
+                    if decision_points >= 4.5:
+                        decision_desc = "（非常に多様な選択肢）"
+                    elif decision_points >= 4.0:
+                        decision_desc = "（多くの重要な決断）"
+                    elif decision_points >= 3.0:
+                        decision_desc = "（バランスの取れた選択肢）"
+                    else:
+                        decision_desc = "（限られた選択肢）"
+                    
+                    # 小数点第二位までに丸める
+                    decision_points_formatted = f"{float(decision_points):.2f}/5.00"
+                    display_custom_metric(
+                        "意思決定ポイント",
+                        f"{decision_points_formatted} {decision_desc}"
+                    )
+                
+                if 'rules_complexity' in learning_curve:
+                    # 小数点第二位までに丸める
+                    rules_complexity = f"{float(learning_curve['rules_complexity']):.2f}/5.00"
+                    display_custom_metric(
+                        "ルールの複雑さ",
+                        rules_complexity
+                    )
+            
+            with col2:
+                if 'interaction_complexity' in learning_curve:
+                    interaction = learning_curve['interaction_complexity']
+                    interaction_desc = ""
+                    if interaction >= 4.5:
+                        interaction_desc = "（高度な対人戦略）"
+                    elif interaction >= 3.5:
+                        interaction_desc = "（中〜高レベルの相互作用）"
+                    elif interaction >= 2.5:
+                        interaction_desc = "（中程度の相互作用）"
+                    else:
+                        interaction_desc = "（低い相互作用）"
+                    
+                    # 小数点第二位までに丸める
+                    interaction_formatted = f"{float(interaction):.2f}/5.00"
+                    display_custom_metric(
+                        "プレイヤー相互作用",
+                        f"{interaction_formatted} {interaction_desc}"
+                    )
+                
+                if 'mechanics_count' in learning_curve:
+                    display_custom_metric(
+                        "メカニクスの数",
+                        f"{learning_curve['mechanics_count']}"
+                    )
+            
+            # 原データ表示
+            if 'bgg_weight' in learning_curve:
+                st.markdown("#### BGGデータ（参考）")
+                bgg_row1, bgg_row2 = st.columns(2)
+                with bgg_row1:
+                    # 小数点第二位までに丸める
+                    bgg_weight = f"{float(learning_curve['bgg_weight']):.2f}/5.00"
+                    display_custom_metric(
+                        "BGG複雑さ評価（原データ）",
+                        bgg_weight
+                    )
+                
+                with bgg_row2:
+                    if 'bgg_rank' in learning_curve and learning_curve['bgg_rank']:
+                        display_custom_metric(
+                            "BGGランキング",
+                            f"{learning_curve['bgg_rank']}"
+                        )
 
 def display_data_tabs(game_details):
     """タブを使って詳細情報を表示する"""
