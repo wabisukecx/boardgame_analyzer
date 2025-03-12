@@ -184,7 +184,7 @@ def display_game_complexity(game_details):
 
 def display_learning_curve(learning_curve):
     """
-    ラーニングカーブの情報を表示する（改善版）
+    ラーニングカーブの情報を表示する（カテゴリとランキング情報を活用した改善版）
     
     Parameters:
     learning_curve (dict): ラーニングカーブの情報
@@ -259,85 +259,100 @@ def display_learning_curve(learning_curve):
         )
         st.info(f"推奨プレイヤータイプ: {player_types_text}")
     
-    # 詳細分析の表示（改善版で追加された指標）
-    if any(key in learning_curve for key in ['decision_points', 'interaction_complexity', 'rules_complexity']):
-        with st.expander("詳細分析", expanded=False):
-            st.markdown("#### メカニクスと相互作用の詳細指標")
-            
-            # 詳細指標を2列で表示
-            col1, col2 = st.columns(2)
-            with col1:
-                if 'decision_points' in learning_curve:
-                    decision_points = learning_curve['decision_points']
-                    decision_desc = ""
-                    if decision_points >= 4.5:
-                        decision_desc = "（非常に多様な選択肢）"
-                    elif decision_points >= 4.0:
-                        decision_desc = "（多くの重要な決断）"
-                    elif decision_points >= 3.0:
-                        decision_desc = "（バランスの取れた選択肢）"
-                    else:
-                        decision_desc = "（限られた選択肢）"
-                    
-                    # 小数点第二位までに丸める
-                    decision_points_formatted = f"{float(decision_points):.2f}/5.00"
-                    display_custom_metric(
-                        "意思決定ポイント",
-                        f"{decision_points_formatted} {decision_desc}"
-                    )
+    # 詳細分析の表示（改善版で追加された指標を含む）
+    with st.expander("詳細分析", expanded=False):
+        st.markdown("#### メカニクスとカテゴリの詳細指標")
+        
+        # 詳細指標を2列で表示
+        col1, col2 = st.columns(2)
+        with col1:
+            if 'decision_points' in learning_curve:
+                decision_points = learning_curve['decision_points']
+                decision_desc = ""
+                if decision_points >= 4.5:
+                    decision_desc = "（非常に多様な選択肢）"
+                elif decision_points >= 4.0:
+                    decision_desc = "（多くの重要な決断）"
+                elif decision_points >= 3.0:
+                    decision_desc = "（バランスの取れた選択肢）"
+                else:
+                    decision_desc = "（限られた選択肢）"
                 
-                if 'rules_complexity' in learning_curve:
-                    # 小数点第二位までに丸める
-                    rules_complexity = f"{float(learning_curve['rules_complexity']):.2f}/5.00"
-                    display_custom_metric(
-                        "ルールの複雑さ",
-                        rules_complexity
-                    )
+                # 小数点第二位までに丸める
+                decision_points_formatted = f"{float(decision_points):.2f}/5.00"
+                display_custom_metric(
+                    "意思決定ポイント",
+                    f"{decision_points_formatted} {decision_desc}"
+                )
             
-            with col2:
-                if 'interaction_complexity' in learning_curve:
-                    interaction = learning_curve['interaction_complexity']
-                    interaction_desc = ""
-                    if interaction >= 4.5:
-                        interaction_desc = "（高度な対人戦略）"
-                    elif interaction >= 3.5:
-                        interaction_desc = "（中〜高レベルの相互作用）"
-                    elif interaction >= 2.5:
-                        interaction_desc = "（中程度の相互作用）"
-                    else:
-                        interaction_desc = "（低い相互作用）"
-                    
-                    # 小数点第二位までに丸める
-                    interaction_formatted = f"{float(interaction):.2f}/5.00"
-                    display_custom_metric(
-                        "プレイヤー相互作用",
-                        f"{interaction_formatted} {interaction_desc}"
-                    )
+            if 'rules_complexity' in learning_curve:
+                # 小数点第二位までに丸める
+                rules_complexity = f"{float(learning_curve['rules_complexity']):.2f}/5.00"
+                display_custom_metric(
+                    "ルールの複雑さ",
+                    rules_complexity
+                )
                 
-                if 'mechanics_count' in learning_curve:
-                    display_custom_metric(
-                        "メカニクスの数",
-                        f"{learning_curve['mechanics_count']}"
-                    )
+            # 新しく追加したカテゴリ複雑さの表示
+            if 'category_complexity' in learning_curve:
+                category_complexity = f"{float(learning_curve['category_complexity']):.2f}/5.00"
+                display_custom_metric(
+                    "カテゴリに基づく複雑さ",
+                    category_complexity
+                )
+        
+        with col2:
+            if 'interaction_complexity' in learning_curve:
+                interaction = learning_curve['interaction_complexity']
+                interaction_desc = ""
+                if interaction >= 4.5:
+                    interaction_desc = "（高度な対人戦略）"
+                elif interaction >= 3.5:
+                    interaction_desc = "（中〜高レベルの相互作用）"
+                elif interaction >= 2.5:
+                    interaction_desc = "（中程度の相互作用）"
+                else:
+                    interaction_desc = "（低い相互作用）"
+                
+                # 小数点第二位までに丸める
+                interaction_formatted = f"{float(interaction):.2f}/5.00"
+                display_custom_metric(
+                    "プレイヤー相互作用",
+                    f"{interaction_formatted} {interaction_desc}"
+                )
             
-            # 原データ表示
-            if 'bgg_weight' in learning_curve:
-                st.markdown("#### BGGデータ（参考）")
-                bgg_row1, bgg_row2 = st.columns(2)
-                with bgg_row1:
-                    # 小数点第二位までに丸める
-                    bgg_weight = f"{float(learning_curve['bgg_weight']):.2f}/5.00"
-                    display_custom_metric(
-                        "BGG複雑さ評価（原データ）",
-                        bgg_weight
-                    )
+            if 'mechanics_count' in learning_curve:
+                display_custom_metric(
+                    "メカニクスの数",
+                    f"{learning_curve['mechanics_count']}"
+                )
                 
-                with bgg_row2:
-                    if 'bgg_rank' in learning_curve and learning_curve['bgg_rank']:
-                        display_custom_metric(
-                            "BGGランキング",
-                            f"{learning_curve['bgg_rank']}"
-                        )
+            # 新しく追加したランキング複雑さの表示
+            if 'rank_complexity' in learning_curve:
+                rank_complexity = f"{float(learning_curve['rank_complexity']):.2f}/5.00"
+                display_custom_metric(
+                    "ランキングに基づく複雑さ",
+                    rank_complexity
+                )
+        
+        # 原データ表示
+        if 'bgg_weight' in learning_curve:
+            st.markdown("#### BGGデータ（参考）")
+            bgg_row1, bgg_row2 = st.columns(2)
+            with bgg_row1:
+                # 小数点第二位までに丸める
+                bgg_weight = f"{float(learning_curve['bgg_weight']):.2f}/5.00"
+                display_custom_metric(
+                    "BGG複雑さ評価（原データ）",
+                    bgg_weight
+                )
+            
+            with bgg_row2:
+                if 'bgg_rank' in learning_curve and learning_curve['bgg_rank']:
+                    display_custom_metric(
+                        "BGGランキング",
+                        f"{learning_curve['bgg_rank']}"
+                    )
 
 def display_data_tabs(game_details):
     """タブを使って詳細情報を表示する"""

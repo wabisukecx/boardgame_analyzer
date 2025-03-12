@@ -1,11 +1,16 @@
 """
 BoardGameGeekのゲームデータからラーニングカーブを分析するモジュール
+カテゴリとランキング情報を活用した分析
 """
 
 import datetime
 
 # メカニクスの複雑さデータを取得する関数をインポート
 from mechanic_complexity import get_complexity
+# カテゴリの複雑さデータを取得する関数をインポート
+from category_complexity import calculate_category_complexity
+# ランキングに基づく評価を取得する関数をインポート
+from rank_complexity import calculate_rank_complexity
 # 戦略深度計算の改善版をインポート
 from strategic_depth import (
     calculate_strategic_depth_improved,
@@ -203,6 +208,7 @@ def calculate_replayability(game_data):
 def calculate_learning_curve(game_data):
     """
     ゲームデータからラーニングカーブ情報を計算する
+    カテゴリとランキング情報を活用した改善版
     
     Parameters:
     game_data (dict): ゲームの詳細情報
@@ -228,16 +234,22 @@ def calculate_learning_curve(game_data):
     avg_mechanic_complexity = (
         mechanics_complexity / max(1, mechanic_count) if mechanic_count > 0 else 3.0
     )
-        
-    # 推奨年齢からの複雑さ推定（年齢が高いほど複雑）
-    min_age = int(game_data.get('publisher_min_age', 10))
-    age_complexity = min(3.8, (min_age - 6) / 3)  # 6歳=0, 10歳=1.33, 14歳=2.67, 18歳以上=3.8
     
-    # 初期障壁（ルールの複雑さ）
+    # 【変更点】推奨年齢からの複雑さ推定を、カテゴリとランキングによる評価に置き換え
+    # カテゴリに基づく複雑さを計算
+    category_complexity = calculate_category_complexity(game_data.get('categories', []))
+    
+    # ランキングに基づく複雑さを計算
+    rank_complexity = calculate_rank_complexity(game_data.get('ranks', []))
+    
+    # カテゴリとランキングによる複雑さ評価（60:40の重み付け）
+    complexity_factor = (category_complexity * 0.6 + rank_complexity * 0.4)
+        
+    # 初期障壁（ルールの複雑さ）の計算を更新
     initial_barrier = (
         avg_mechanic_complexity * 0.6 + 
         base_weight * 0.2 +
-        age_complexity * 0.2
+        complexity_factor * 0.2  # 推奨年齢の代わりにカテゴリとランキングによる評価
     )
     
     # メカニクス数による初期障壁の調整（多くのメカニクスがあるほど初期学習が難しくなる）
@@ -269,7 +281,10 @@ def calculate_learning_curve(game_data):
         "mechanics_count": len(mechanics_names),  # メカニクスの数
         "bgg_weight": base_weight,  # BGGの複雑さ評価（元の値）
         "bgg_rank": rank,  # BGGのランキング
-        "year_published": year_published  # 発行年
+        "year_published": year_published,  # 発行年
+        # 新しく追加した指標
+        "category_complexity": round(category_complexity, 2),  # カテゴリに基づく複雑さ
+        "rank_complexity": round(rank_complexity, 2)  # ランキングに基づく複雑さ
     }
     
     # 改善版の指標で学習曲線データを拡張
