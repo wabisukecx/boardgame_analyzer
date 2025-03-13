@@ -1,0 +1,66 @@
+alternate_names:
+- Cupity Dupity
+- Die Stunde der Maus
+- Гікорі Дікорі
+- 嘀嗒小鼠队
+average_rating: '7.06249'
+categories:
+- name: Animals
+- name: Racing
+community_best_players: '3'
+community_min_age: '8'
+community_recommended_players: 1, 2, 4
+description: In Hickory Dickory, players control a team of mice competing in a royal
+  scavenger hunt hosted by Lord Cuckoo! The mice will ride on a cuckoo clock's minute
+  hand as they search for items that match their hunt card. The adorable mice will
+  jump off the hand to collect item tiles and perform various actions that will help
+  them gain berries, a.k.a., victory points.&#10;&#10;Once the clock strikes midnight,
+  the hunt is over and the mice will show off their scavenger hunt cards to Lord Cuckoo.
+  Berries will be rewarded for rows and columns completed on their hunt card, and
+  the mice team with the most berries wins!&#10;&#10;&mdash;description from publisher&#10;&#10;
+designers:
+- name: Sawyer West
+learning_analysis:
+  bgg_rank: 3929
+  bgg_weight: 2.5806
+  category_complexity: 2.62
+  decision_points: 3.3
+  initial_barrier: 4.25
+  interaction_complexity: 2.5
+  learning_curve_type: moderate_then_shallow
+  mastery_time: short
+  mechanics_complexity: 3.34
+  mechanics_count: 7
+  player_types:
+  - experienced
+  rank_complexity: 2.49
+  replayability: 3.0
+  rules_complexity: 3.791358095238095
+  strategic_depth: 3.02
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2023
+mechanics:
+- name: Action Retrieval
+- name: End Game Bonuses
+- name: Market
+- name: Set Collection
+- name: Tile Placement
+- name: Worker Placement
+- name: Worker Placement, Different Worker Types
+name: Hickory Dickory
+playing_time: '120'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '1'
+publishers:
+- name: Plaid Hat Games
+- name: ADC Blackfire Entertainment
+- name: Geekach Games
+- name: YOKA Games
+ranks:
+- rank: '3929'
+  type: boardgame
+thumbnail_url: https://cf.geekdo-images.com/wNPQex7ukUTDRO6WK1v0eA__thumb/img/tdOCFZkMaCFbBQGB1_Oz54QkNQY=/fit-in/200x150/filters:strip_icc()/pic6972966.jpg
+type: boardgame
+weight: '2.5806'
+year_published: '2023'

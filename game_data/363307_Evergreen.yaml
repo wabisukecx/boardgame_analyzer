@@ -1,0 +1,71 @@
+alternate_names:
+- 'Evergreen: зелена планета'
+- Зеленый мир
+- 에버그린
+average_rating: '7.45196'
+categories:
+- name: Puzzle
+community_best_players: '2'
+community_min_age: '10'
+community_recommended_players: 1, 3, 4
+description: In Evergreen, your goal is to build a lush ecosystem by planting seeds,
+  growing trees, and placing other natural elements on your planet, trying to make
+  it the greenest and most fertile of all.&#10;&#10;You choose biome cards from a
+  common pool to determine which area of your planet you'll develop in a round. The
+  cards not chosen make those regions more fertile, and thus more valuable. To create
+  a huge forest, you want to grow trees, plant bushes, and place lakes, while using
+  the power of nature to gain extra actions. Ideally you can concentrate your trees
+  in the most fertile areas, but without them overshadowing one another as you also
+  want them to collect as much light as possible.&#10;&#10;
+designers:
+- name: Hjalmar Hach
+learning_analysis:
+  bgg_rank: 951
+  bgg_weight: 2.1327
+  category_complexity: 2.5
+  decision_points: 2.7
+  initial_barrier: 2.7
+  interaction_complexity: 1.5
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.85
+  mechanics_count: 4
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  rank_complexity: 3.29
+  replayability: 2.7
+  rules_complexity: 2.953873333333333
+  strategic_depth: 2.34
+  strategic_depth_description: 低め（限られた戦略オプション）
+  year_published: 2022
+mechanics:
+- name: Bias
+- name: End Game Bonuses
+- name: Grid Coverage
+- name: Open Drafting
+name: Evergreen
+playing_time: '45'
+publisher_max_players: '4'
+publisher_min_age: '8'
+publisher_min_players: '1'
+publishers:
+- name: Horrible Guild
+- name: 999 Games
+- name: Games7Days
+- name: Ghenos Games
+- name: Gigamic
+- name: HeidelBÄR Games
+- name: HIT Games
+- name: IELLO
+- name: Lavka Games
+ranks:
+- rank: '951'
+  type: boardgame
+- rank: '219'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/71I0Ku92KgjaW_ZokJidCA__thumb/img/3BpSIoMWf4ig9_S-CTMpoo3KdfU=/fit-in/200x150/filters:strip_icc()/pic6872745.png
+type: boardgame
+weight: '2.1327'
+year_published: '2022'

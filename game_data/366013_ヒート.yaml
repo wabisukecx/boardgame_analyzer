@@ -1,0 +1,91 @@
+alternate_names:
+- Heat
+- 'Heat: Padlógáz'
+- Turbo
+- 'Гонка: Жара на трассе'
+- 'Турбо: Спека на треку'
+- ヒート
+- 火爆狂飙：全速前进
+- 熱力狂飆
+- '히트: 질주의 열기'
+average_rating: '8.02991'
+categories:
+- name: Racing
+- name: Sports
+community_best_players: 5, 6
+community_min_age: '8'
+community_recommended_players: 1, 2, 3, 4
+description: 'Based on simple and intuitive hand management, Heat: Pedal to the Metal
+  puts players in the driver''s seat of intense car races, jockeying for position
+  to cross the finish line first, while managing their car''s speed if they don''t
+  want to overheat. Selecting the right upgrades for their car will help them hug
+  the curves and keep their engine cool enough to maintain top speeds. Ultimately,
+  their driving skills will be the key to victory!&#10;&#10;Drivers can compete in
+  a single race or use the &quot;Championship System&quot; to play a whole season
+  in one game night, customizing their car before each race to claim the top spot
+  of the podium. They have to be careful as the weather, road conditions, and events
+  will change every race to spice up their championship. Players can also enjoy a
+  solo mode with the Legends Module or add automated drivers as additional opponents
+  in multiplayer games.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+designers:
+- name: Asger Harding Granerud
+- name: Daniel Skjold Pedersen
+japanese_name: ヒート
+learning_analysis:
+  bgg_rank: 41
+  bgg_weight: 2.1877
+  category_complexity: 2.62
+  decision_points: 3.1363636363636362
+  initial_barrier: 4.04
+  interaction_complexity: 2.5
+  learning_curve_type: moderate_then_shallow
+  mastery_time: short
+  mechanics_complexity: 3.0
+  mechanics_count: 11
+  player_types:
+  - replayer
+  - trend_follower
+  rank_complexity: 4.14
+  replayability: 3.8
+  rules_complexity: 3.404206666666666
+  strategic_depth: 2.78
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2022
+mechanics:
+- name: Catch the Leader
+- name: Deck, Bag, and Pool Building
+- name: Hand Management
+- name: Programmed Movement
+- name: Push Your Luck
+- name: Race
+- name: Simulation
+- name: Simultaneous Action Selection
+- name: Solo / Solitaire Game
+- name: Track Movement
+- name: Variable Set-up
+name: 'Heat: Pedal to the Metal'
+playing_time: '60'
+publisher_max_players: '6'
+publisher_min_age: '10'
+publisher_min_players: '1'
+publishers:
+- name: Days of Wonder
+- name: ADC Blackfire Entertainment
+- name: CoolPlay
+- name: Galápagos Jogos
+- name: Gém Klub Kft.
+- name: GoKids 玩樂小子
+- name: Hobby Japan
+- name: Hobby World
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Lord of Boards
+ranks:
+- rank: '41'
+  type: boardgame
+- rank: '7'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__thumb/img/2GbaKvYOzWIxfgbYTk2R9puiyzo=/fit-in/200x150/filters:strip_icc()/pic6940449.png
+type: boardgame
+weight: '2.1877'
+year_published: '2022'

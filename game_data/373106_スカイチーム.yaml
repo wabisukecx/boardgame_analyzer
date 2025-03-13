@@ -1,0 +1,110 @@
+alternate_names:
+- Halo wieża
+- A légi társaság
+- Nebeski tim
+- 'Sky Team: Προσδεθείτε!'
+- Крутое пике
+- Пілоти
+- スカイチーム
+- 天合小队
+- 스카이 팀
+average_rating: '8.17613'
+categories:
+- name: Aviation / Flight
+community_best_players: '2'
+community_min_age: '10'
+description: Sky Team is a co-operative game, exclusively for two players, in which
+  you play a pilot and co-pilot at the controls of an airliner. Your goal is to work
+  together as a team to land your airplane in different airports around the world.&#10;&#10;To
+  land your plane, you need to silently assign your dice to the correct spaces in
+  your cockpit to balance the axis of your plane, control its speed, deploy the flaps,
+  extend the landing gear, contact the control tower to clear your path, and even
+  have a little coffee to improve your concentration enough to change the value of
+  your dice.&#10;&#10;If the aircraft tilts too much and stalls, overshoots the airport,
+  or collides with another aircraft, you lose the game...and your pilot's license...and
+  probably your life.&#10;&#10;From Montreal to Tokyo, each airport offers its own
+  set of challenges. Watch out for the turbulence as this could end up being a bumpy
+  ride!&#10;&#10;AWARDS &amp; HONORS&#10;&#10;2025 - Beeple Award - Winner&#10;2024
+  - BoardLive Awards - Winner &#10;2024 - Gagnant Prix Jokers - cat&eacute;gorie Duo&#10;2024
+  - Gagnant Gold'n Gob - cat&eacute;gorie 2 joueurs&#10;2024 - Gagnant Mensa d'Or
+  - cat&eacute;gorie Meilleur jeu Duo &#10;2024 - Nederlandse Spellenprijs 2024 Winner&#10;2024
+  - Deutscher Spiele Preis 2024 - 2nd place &#10;2024 - BG Stats - Most popular game&#10;2024
+  - Gra roku (Game of the year Poland) - 2 player category winner&#10;2024 - International
+  Gamers Awards - 2 player category winner&#10;2023 - Swams des Jahres winner&#10;2024
+  - Dice Tower Awards - Best 2 player game&#10;2024 - Dice Tower Awards - Best cooperative
+  game&#10;2024 - Dice Tower Awards - Most innovative game&#10;2024 - Spiel des Jahres
+  Winner&#10;2024 - Best Light Game - BBQ Awards&#10;2024 - Best Cooperative Board
+  Game - Origins Awards&#10;2024 - Best 2023 Insider Game - Les Lys (Qu&eacute;bec)
+  &#10;2024 - Game of the Year - Spiel des Jahres 2024 (Germany)&#10;2024 - Best 2-Player
+  &amp; Innovation Gameplay - Big Awards 2024&#10;2024 - Best 2-Player &amp; Cooperative
+  Game - Golden Geek Awards 2023&#10;       Runner up for Best Innovative &amp; Thematic
+  Game - Golden Geek Awards 2023&#10;2023 - Best Cooperative Game - Board Game Quest&#10;2023
+  - Best 2-Player Game - Board Game Arena Awards&#10;2023 - Best 2-Player Game - Squirrelly
+  Awards&#10;2023 - Best Board Game - Dicebreaker Tabletop Awards&#10;2023 - Two Player
+  Board Game Winner - Game Boy Geek    &#10;2023 - Best Co-Op Game - Gaming Trend    &#10;2023
+  - Seal of Excellence - Dice Tower&#10;&#10;&mdash;description from the publisher&#10;&#10;
+designers:
+- name: Luc Rémond
+japanese_name: スカイチーム
+learning_analysis:
+  bgg_rank: 39
+  bgg_weight: 2.0513
+  category_complexity: 2.5
+  decision_points: 2.6333333333333333
+  initial_barrier: 3.74
+  interaction_complexity: 2.5
+  learning_curve_type: moderate_then_shallow
+  mastery_time: short
+  mechanics_complexity: 3.47
+  mechanics_count: 6
+  player_types:
+  - casual
+  - trend_follower
+  rank_complexity: 4.1
+  replayability: 3.6
+  rules_complexity: 3.93026
+  strategic_depth: 2.69
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2023
+mechanics:
+- name: Communication Limits
+- name: Cooperative Game
+- name: Dice Rolling
+- name: Scenario / Mission / Campaign Game
+- name: Simulation
+- name: Worker Placement with Dice Workers
+name: Sky Team
+playing_time: '15'
+publisher_max_players: '2'
+publisher_min_age: '12'
+publisher_min_players: '2'
+publishers:
+- name: Scorpion Masqué
+- name: 999 Games
+- name: ADC Blackfire Entertainment
+- name: Asmodee
+- name: Brädspel.se
+- name: Games4you
+- name: Geekach Games
+- name: Hachette Boardgames USA
+- name: Kaissa Chess & Games
+- name: KOSMOS
+- name: Lautapelit.fi
+- name: Lavka Games
+- name: Lucky Duck Games
+- name: Reflexshop
+- name: Regatul Jocurilor
+- name: Sugorokuya
+- name: Tabletop KZ
+- name: YOKA Games
+ranks:
+- rank: '39'
+  type: boardgame
+- rank: '16'
+  type: thematic
+- rank: '3'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__thumb/img/WyPClajMWU9lV5BdCXiZnqdZgmU=/fit-in/200x150/filters:strip_icc()/pic7398904.jpg
+type: boardgame
+weight: '2.0513'
+year_published: '2023'

@@ -1,0 +1,75 @@
+alternate_names:
+- 'ヌースフィヨルド: BIG BOX'
+average_rating: '8.30598'
+categories:
+- name: Economic
+community_best_players: 1, 3, 4, 5
+community_min_age: '12'
+community_recommended_players: '2'
+description: Nusfjord is a tranquil fishing village in the Lofoten archipelago in
+  northern Norway. Fifty years ago, business was blooming when the codfish would come
+  for spawning. Today, Nusfjord is more of a museum than a village, with less than
+  a hundred people living there. Imagine how beautiful this place must be given that
+  you must pay a fee to even look at the houses. Cruise ships used to pass by this
+  long and now mostly abandoned island world.&#10;&#10;In the time period in which
+  the game Nusfjord is set, things looked quite different. Sailing ships dominate
+  the fjord. The rocks around Nusfjord are covered in trees. As the owner of a major
+  fishing company in Nusfjord on the Lofoten archipelago, your goal is to develop
+  the harbor and the surrounding landscape, and to succeed you must enlarge your fleet,
+  clear the forest, erect new buildings, and satisfy the local elders. Others do this
+  as well, of course, so the competition is steep.&#10;&#10;As with Agricola and Ora
+  et Labora, Nusfjord has a worker placement mechanism, with each player starting
+  with three workers that they place on a central board to trigger certain actions.
+  Whether a player wants to clear a forest on their own board, buy a new cutter, or
+  construct a building, they must place a worker on the appropriate space &mdash;
+  which is possible only if room is available for this worker. Money is scarce, and
+  one of the quicker and easier ways to get it is to place shares of your own company
+  on the market. This risky action could be worthwhile because if you succeed in buying
+  these shares yourself, you have usually won money and not suffered any disadvantages;
+  however, if an opponent acquires these shares, then you must allow them to benefit
+  from your hard-earned catches at sea. The village elders might want their own share
+  of your catch as well, especially if you've visited them to take certain actions
+  in the village, so if you don't take care, your catch could end up entirely in the
+  hands of others and your camp will be empty.&#10;&#10;Nusfjord Big Box contains
+  the Nusfjord base game, two previously released expansions (Plaice deck and Salmon
+  deck), and two new expansions (Trout deck and Besoekende deck), along with extra
+  components, among them new guest meeples.&#10;&#10;
+designers:
+- name: Uwe Rosenberg
+japanese_name: 'ヌースフィヨルド: BIG BOX'
+learning_analysis:
+  bgg_rank: null
+  bgg_weight: 2.9231
+  category_complexity: 2.5
+  decision_points: 4.5
+  initial_barrier: 3.64
+  interaction_complexity: 3.0
+  learning_curve_type: moderate
+  mastery_time: medium
+  mechanics_complexity: 4.2
+  mechanics_count: 1
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  rank_complexity: 3.0
+  replayability: 2.3
+  rules_complexity: 3.7566200000000007
+  strategic_depth: 3.58
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  year_published: 2024
+mechanics:
+- name: Worker Placement
+name: 'Nusfjord: Big Box'
+playing_time: '120'
+publisher_max_players: '5'
+publisher_min_age: '12'
+publisher_min_players: '1'
+publishers:
+- name: Lookout Games
+- name: Hobby Japan
+ranks: []
+thumbnail_url: https://cf.geekdo-images.com/_asmaX0NMnJrdZd1TaACSA__thumb/img/o5LCXlZwizeKvEOjmJxPiUZNZf0=/fit-in/200x150/filters:strip_icc()/pic7978202.jpg
+type: boardgame
+weight: '2.9231'
+year_published: '2024'
