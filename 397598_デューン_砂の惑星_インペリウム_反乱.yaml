@@ -1,0 +1,95 @@
+alternate_names:
+- 'Diuna: Imperium – Powstanie'
+- 'Duna: Impérium – Povstání'
+- 'Duna: Imperium – Uprising'
+- 'Dune: Imperiul – Revolta'
+- 'Dűne: Impérium – Felkelés'
+- 'Dune: Imperium – Insurrección'
+- 'Dune: Imperium – Insurrection'
+- 'Dune: Imperium – Insurrezione'
+- 'Дюна: Империя – Восстание'
+- 'Дюна: Імперіум – Піднесення'
+- デューン　砂の惑星　インペリウム　反乱
+- '듄 임페리움: 봉기'
+average_rating: '8.71667'
+categories:
+- name: Movies / TV / Radio theme
+- name: Novel-based
+- name: Political
+- name: Science Fiction
+community_best_players: '4'
+community_min_age: '12'
+community_recommended_players: 1, 2, 3, 6
+description: 'In Dune: Imperium Uprising, you want to continue to balance military
+  might with political intrigue, wielding new tools in pursuit of victory. Spies will
+  shore up your plans, vital contracts will expand your resources, or you can learn
+  the ways of the Fremen and ride mighty sandworms into battle!&#10;&#10;Dune: Imperium
+  Uprising is a standalone spinoff to Dune: Imperium that expands on that game''s
+  blend of deck-building and worker placement, while introducing a new six-player
+  mode that pits two teams against one other in the biggest struggle yet.&#10;&#10;The
+  Dune: Imperium expansions Rise of Ix and Immortality work with Uprising, as do almost
+  all of the cards from the base game, and elements of Uprising can be used with Dune:
+  Imperium.&#10;&#10;The choices are yours. The Imperium awaits!&#10;&#10;'
+designers:
+- name: Paul Dennen
+japanese_name: デューン　砂の惑星　インペリウム　反乱
+learning_analysis:
+  bgg_rank: 13
+  bgg_weight: 3.493
+  category_complexity: 2.88
+  decision_points: 3.3076923076923075
+  initial_barrier: 4.8
+  interaction_complexity: 3.0
+  learning_curve_type: steep_then_shallow
+  mastery_time: medium
+  mechanics_complexity: 3.38
+  mechanics_count: 13
+  player_types:
+  - experienced
+  - replayer
+  - trend_follower
+  rank_complexity: 4.43
+  replayability: 4.1
+  rules_complexity: 4.211420512820513
+  strategic_depth: 3.48
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2023
+mechanics:
+- name: Automatic Resource Growth
+- name: Card Play Conflict Resolution
+- name: Deck, Bag, and Pool Building
+- name: Delayed Purchase
+- name: Force Commitment
+- name: Increase Value of Unchosen Resources
+- name: Multi-Use Cards
+- name: Open Drafting
+- name: Solo / Solitaire Game
+- name: Team-Based Game
+- name: 'Turn Order: Progressive'
+- name: Variable Player Powers
+- name: Worker Placement
+name: 'Dune: Imperium – Uprising'
+playing_time: '120'
+publisher_max_players: '6'
+publisher_min_age: '13'
+publisher_min_players: '1'
+publishers:
+- name: Dire Wolf
+- name: Arclight Games
+- name: Galápagos Jogos
+- name: Geekach Games
+- name: Korea Boardgames
+- name: Lucky Duck Games
+- name: Reflexshop
+- name: Regatul Jocurilor
+- name: REXhry
+- name: Tabletop KZ
+ranks:
+- rank: '13'
+  type: boardgame
+- rank: '8'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/UVUkjMV_Q2paVUIUP30Vvw__thumb/img/H6qmxJrRFjtOAPZOfDoZ480-46I=/fit-in/200x150/filters:strip_icc()/pic7664424.jpg
+type: boardgame
+weight: '3.493'
+year_published: '2023'

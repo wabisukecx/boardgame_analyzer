@@ -1,0 +1,85 @@
+alternate_names:
+- Czarny las
+- Selva negra
+- ブラックフォレスト
+- 翠光密林
+- 블랙 포레스트
+average_rating: '7.65334'
+categories:
+- name: City Building
+- name: Economic
+- name: Industry / Manufacturing
+- name: Medieval
+community_best_players: 1, 3
+community_min_age: '12'
+community_recommended_players: 2, 4
+description: In Black Forest, you start out with a small domain in need of new buildings
+  and livestock. You&rsquo;ll travel from village to village, to enlist the aid of
+  the best specialists.  Exploiting the abilities of these specialists lets you collect
+  resources, lay out new landscape tiles (e.g. ponds and fields), and build a variety
+  of buildings, which come in four types. Choose the right buildings, place landscapes,
+  fire up your glass production, and expand your domain.&#10;&#10;Uwe Rosenberg&rsquo;s
+  resource wheels, made famous in Glass Road (2013), return in Black Forest. Two resource
+  wheels on your tableau help you keep track of your resources and production. Black
+  Forest continues the story - as the name suggests &mdash; in the Black Forest. Among
+  others, the main difference between the two games is the use of worker placement
+  in Black Forest  instead of simultaneous action selection.&#10;&#10;A wide selection
+  of buildings and their different effects offer many different paths to victory.&#10;&#10;&mdash;description
+  from publisher&#10;&#10;
+designers:
+- name: Tido Lorenz
+- name: Uwe Rosenberg
+japanese_name: ブラックフォレスト
+learning_analysis:
+  bgg_rank: 1617
+  bgg_weight: 3.2159
+  category_complexity: 2.88
+  decision_points: 3.375
+  initial_barrier: 4.22
+  interaction_complexity: 2.75
+  learning_curve_type: moderate_then_shallow
+  mastery_time: medium
+  mechanics_complexity: 2.95
+  mechanics_count: 8
+  player_types:
+  - experienced
+  rank_complexity: 3.24
+  replayability: 3.4
+  rules_complexity: 3.8315133333333335
+  strategic_depth: 3.29
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2024
+mechanics:
+- name: Automatic Resource Growth
+- name: End Game Bonuses
+- name: Once-Per-Game Abilities
+- name: Set Collection
+- name: Solo / Solitaire Game
+- name: Tile Placement
+- name: Variable Set-up
+- name: Worker Placement
+name: Black Forest
+playing_time: '120'
+publisher_max_players: '4'
+publisher_min_age: '14'
+publisher_min_players: '1'
+publishers:
+- name: Feuerland Spiele
+- name: Capstone Games
+- name: Cranio Creations
+- name: Game Harbor
+- name: Maldito Games
+- name: MTS Games
+- name: Rebel Sp. z o.o.
+- name: Super Meeple
+- name: テンデイズゲームズ (TendaysGames)
+- name: White Goblin Games
+ranks:
+- rank: '1617'
+  type: boardgame
+- rank: '793'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/zyc92pV4Mn2G6HCegMGPWQ__thumb/img/eBQt7m5f9RtsZfBgCNhJER6f5CA=/fit-in/200x150/filters:strip_icc()/pic8194217.jpg
+type: boardgame
+weight: '3.2159'
+year_published: '2024'

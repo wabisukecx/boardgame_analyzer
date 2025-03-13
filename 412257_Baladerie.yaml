@@ -1,0 +1,52 @@
+average_rating: '6.34'
+categories:
+- name: Animals
+description: '&quot;Would you like to journey together in this land?&quot;&#10;&#10;In
+  the Perlune Region, where diverse races coexist harmoniously, there are multiple
+  towns with plenty of attractions such as iconic clock towers, bustling markets,
+  and historic castles. As the leader of the Perlune Region''s tourism association,
+  you guide visiting tourists to various sightseeing spots. Walking through the streets
+  with the tourists and occasionally viewing the city from the sky, you provide a
+  journey to their destination.&#10;&#10;Kind-hearted tourists express their gratitude
+  by presenting a token of appreciation along with the guide fee each time they utilize
+  the services of a tour guide. Furthermore, as you guide the tourists to their destinations,
+  their satisfaction increases. Build wonderful memories with the tourists who have
+  visited the Perlune Region, and enhance the reputation of your tourism association!&quot;&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;'
+designers:
+- name: Oguland (オグランド)
+learning_analysis:
+  bgg_rank: null
+  bgg_weight: 0.0
+  category_complexity: 2.5
+  decision_points: 2.0
+  initial_barrier: 1.92
+  interaction_complexity: 2.5
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.3
+  mechanics_count: 2
+  player_types:
+  - beginner
+  - casual
+  rank_complexity: 3.0
+  replayability: 2.4
+  rules_complexity: 2.1893333333333334
+  strategic_depth: 1.54
+  strategic_depth_description: 低い（戦略的要素が少ない）
+  year_published: 2024
+mechanics:
+- name: Dice Rolling
+- name: Pick-up and Deliver
+name: Baladerie
+playing_time: '60'
+publisher_max_players: '4'
+publisher_min_age: '14'
+publisher_min_players: '2'
+publishers:
+- name: Sui Works
+ranks: []
+thumbnail_url: https://cf.geekdo-images.com/8KtSwV68G-0AjkxAclHbZg__thumb/img/kAYdVFLv1gjb4rXnP_kIpSolIvQ=/fit-in/200x150/filters:strip_icc()/pic8015164.png
+type: boardgame
+weight: '0'
+year_published: '2024'
