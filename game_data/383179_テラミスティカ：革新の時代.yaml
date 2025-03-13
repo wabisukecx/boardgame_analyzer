@@ -1,0 +1,97 @@
+alternate_names:
+- Era da Inovação
+- La Era de la Innovación
+- Era Innowacji
+- 'Terra Mystica: L''Era delle Scoperte'
+- 'Terra Mystica: Találmányok kora'
+- Ера інновацій
+- テラミスティカ：革新の時代
+- 神秘大地：大創造時代
+- 혁신의 시대
+average_rating: '8.56444'
+categories:
+- name: Civilization
+- name: Fantasy
+- name: Territory Building
+community_best_players: '4'
+community_min_age: '14'
+community_recommended_players: 1, 2, 3, 5
+description: Age of Innovation is a standalone game set in the world of Terra Mystica.&#10;&#10;Twelve
+  factions, each with unique characteristics, populate this world of varying terrains.
+  Here you will compete to erect buildings and merge them into cities. Each game allows
+  you to create new combinations of factions, homelands, and abilities so that each
+  game isn't the same as another.&#10;&#10;You control one of these factions and will
+  terraform the game map's terrain into your homelands where you can erect your buildings.
+  Proximity to other factions may limit your expansion, but it also gains you significant
+  advantages in the game. This tension adds to the appeal of the Terra Mystica series.&#10;&#10;Upgrade
+  your buildings to gain valuable resources such as tools, scholars, money, and power.
+  Build schools to advance in different sciences and collect books, which you can
+  use to make innovations. Build your palace to gain a powerful new ability or build
+  workshops, guilds, and universities to complete your culture.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+designers:
+- name: Helge Ostertag
+japanese_name: テラミスティカ：革新の時代
+learning_analysis:
+  bgg_rank: 66
+  bgg_weight: 4.2605
+  category_complexity: 2.75
+  decision_points: 3.2
+  initial_barrier: 4.68
+  interaction_complexity: 2.6666666666666665
+  learning_curve_type: steep_then_moderate
+  mastery_time: medium
+  mechanics_complexity: 3.05
+  mechanics_count: 10
+  player_types:
+  - experienced
+  - hardcore
+  - system_master
+  - replayer
+  - trend_follower
+  rank_complexity: 4.1
+  replayability: 4.2
+  rules_complexity: 4.130433333333333
+  strategic_depth: 3.6
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  year_published: 2023
+mechanics:
+- name: Contracts
+- name: End Game Bonuses
+- name: Hexagon Grid
+- name: Income
+- name: Modular Board
+- name: Network and Route Building
+- name: 'Turn Order: Pass Order'
+- name: Variable Player Powers
+- name: Variable Set-up
+- name: Victory Points as a Resource
+name: Age of Innovation
+playing_time: '200'
+publisher_max_players: '5'
+publisher_min_age: '14'
+publisher_min_players: '1'
+publishers:
+- name: Capstone Games
+- name: Feuerland Spiele
+- name: Cranio Creations
+- name: Geekach Games
+- name: Gém Klub Kft.
+- name: Grok Games
+- name: IGAMES
+- name: Korea Boardgames
+- name: Maldito Games
+- name: Portal Games
+- name: Super Meeple
+- name: Swan Panasia Co., Ltd.
+- name: テンデイズゲームズ (TendaysGames)
+- name: White Goblin Games
+ranks:
+- rank: '66'
+  type: boardgame
+- rank: '31'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/D1vrcFEptCEoD8Z6s_iRfw__thumb/img/0yBK_DMaSgRVrp2fGuNPgb0Jo7w=/fit-in/200x150/filters:strip_icc()/pic7430993.jpg
+type: boardgame
+weight: '4.2605'
+year_published: '2023'

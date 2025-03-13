@@ -1,0 +1,46 @@
+average_rating: '5.58333'
+categories:
+- name: Animals
+community_best_players: '4'
+community_recommended_players: '3'
+description: In Three Star Zoo, you place animals in cages from 1 to 12, roll the
+  dice, and if your animal is in the cage with the correct number of stars, you can
+  get coins or take coins from other players depending on the effect. If you get coins,
+  you can expand your zoo by placing new animals, and finally, the person who collects
+  three &quot;stars,&quot; a sign of excellence, will win the &quot;three-star&quot;
+  zoo.&#10;&#10;&mdash;user summary&#10;&#10;
+designers: []
+learning_analysis:
+  bgg_rank: null
+  bgg_weight: 2.0
+  category_complexity: 2.5
+  decision_points: 1.5
+  initial_barrier: 1.84
+  interaction_complexity: 2.5
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 1.5
+  mechanics_count: 1
+  player_types:
+  - beginner
+  - casual
+  rank_complexity: 3.0
+  replayability: 2.3
+  rules_complexity: 1.5233333333333334
+  strategic_depth: 1.85
+  strategic_depth_description: 低い（戦略的要素が少ない）
+  year_published: 2021
+mechanics:
+- name: Dice Rolling
+name: 三つ星動物園 (Three Star Zoo)
+playing_time: '60'
+publisher_max_players: '4'
+publisher_min_age: '8'
+publisher_min_players: '2'
+publishers:
+- name: Might Games
+ranks: []
+thumbnail_url: https://cf.geekdo-images.com/qHJgrg1R2tpLKYv1-YBeBA__thumb/img/-mxVfw5kQtJ3AcuYrAwT0WEz5Ag=/fit-in/200x150/filters:strip_icc()/pic7610618.jpg
+type: boardgame
+weight: '2'
+year_published: '2021'

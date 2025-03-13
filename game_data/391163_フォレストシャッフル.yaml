@@ -1,0 +1,103 @@
+alternate_names:
+- Embosca't
+- Az erdő
+- 'Forest Shuffle: Το Δάσος'
+- Forêt Mixte
+- Leśne rozdanie
+- Metsas
+- Mežā
+- Mischwald
+- Miške
+- Smíšený les
+- Šumski svet
+- Vida na Floresta
+- Горска бъркотевица
+- Лісова Метушня
+- Смешанный лес
+- ฟอเรสต์ ชัฟเฟิ่ล
+- フォレストシャッフル
+- 森森不息
+- 포레스트 셔플
+average_rating: '7.69655'
+categories:
+- name: Animals
+- name: Card Game
+- name: Educational
+- name: Environmental
+community_best_players: '2'
+community_min_age: '10'
+community_recommended_players: 3, 4
+description: In Forest Shuffle, players compete to gather the most valuable trees,
+  then attract species to these trees, thus creating an ecologically balanced habitat
+  for flora and fauna.&#10;&#10;To start, each player has six cards in hand, with
+  cards depicting either a particular type of tree or two forest dwellers (animal,
+  plant, mushroom, etc.), with these latter cards being divided in half, whether vertically
+  or horizontally, with one dweller in each card half.&#10;&#10;On a turn, either
+  draw two cards &mdash; whether face down from the deck or face up from the clearing
+  &mdash; and add them to your hand, or play a card from your hand by paying the cost,
+  then putting it into play.&#10;&#10;During set-up, three winter cards were placed
+  into the bottom third of the deck. When the third winter card is drawn, the game
+  ends immediately, then players tally their points based on the trees and dwellers
+  in their forest. Whoever scores the most points wins.&#10;&#10;Forest Shuffle is
+  the first in a line of Lookout games sporting the Lookout Greenline label, produced
+  on FSC certified paper and avoiding plastic completely.&#10;&#10;
+designers:
+- name: Kosch
+japanese_name: フォレストシャッフル
+learning_analysis:
+  bgg_rank: 222
+  bgg_weight: 2.195
+  category_complexity: 2.88
+  decision_points: 3.157142857142857
+  initial_barrier: 4.04
+  interaction_complexity: 2.25
+  learning_curve_type: moderate_then_shallow
+  mastery_time: short
+  mechanics_complexity: 2.99
+  mechanics_count: 7
+  player_types:
+  - trend_follower
+  rank_complexity: 3.86
+  replayability: 3.6
+  rules_complexity: 3.392809523809523
+  strategic_depth: 2.73
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2023
+mechanics:
+- name: End Game Bonuses
+- name: Hand Management
+- name: Layering
+- name: Multi-Use Cards
+- name: Open Drafting
+- name: Set Collection
+- name: Tags
+name: Forest Shuffle
+playing_time: '60'
+publisher_max_players: '5'
+publisher_min_age: '10'
+publisher_min_players: '2'
+publishers:
+- name: Lookout Games
+- name: ADC Blackfire Entertainment
+- name: Bluebird Games
+- name: Brain Games
+- name: CoolPlay
+- name: Gém Klub Kft.
+- name: Hobby Japan
+- name: Kaissa Chess & Games
+- name: Lifestyle Boardgames Ltd
+- name: Lord of Boards
+- name: MEBO Games
+- name: Rebel Sp. z o.o.
+- name: Well Designed Game
+ranks:
+- rank: '222'
+  type: boardgame
+- rank: '160'
+  type: strategygames
+- rank: '37'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/08bC8NviSTNc4Zvur4pueA__thumb/img/Xq8TNBmMl3Z7DoynvbUXchFAztc=/fit-in/200x150/filters:strip_icc()/pic7578350.jpg
+type: boardgame
+weight: '2.195'
+year_published: '2023'
