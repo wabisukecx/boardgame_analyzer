@@ -1,0 +1,95 @@
+alternate_names:
+- Orlean
+- Орлеан
+- オルレアン
+- 奧爾良
+- 오를레앙
+average_rating: '8.05168'
+categories:
+- name: Medieval
+- name: Religious
+- name: Travel
+community_best_players: '4'
+community_min_age: '12'
+community_recommended_players: 2, 3
+description: During the medieval goings-on around Orl&eacute;ans, you must assemble
+  a following of farmers, merchants, knights, monks, etc. to gain supremacy through
+  trade, construction and science in medieval France.&#10;&#10;In Orl&eacute;ans,
+  you will recruit followers and put them to work to make use of their abilities.
+  Farmers and Boatmen supply you with money and goods; Knights expand your scope of
+  action and secure your mercantile expeditions; Craftsmen build trading stations
+  and tools to facilitate work; Scholars make progress in science; Traders open up
+  new locations for you to use your followers; and last but not least, it cannot hurt
+  to get active in monasteries since with Monks on your side you are much less likely
+  to fall prey to fate.&#10;&#10;You will always want to take more actions than possible,
+  and there are many paths to victory. The challenge is to combine all elements as
+  best as possible with regard to your strategy.&#10;&#10;
+designers:
+- name: Reiner Stockhausen
+japanese_name: オルレアン
+learning_analysis:
+  bgg_rank: 34
+  bgg_weight: 3.0239
+  category_complexity: 2.75
+  decision_points: 3.1818181818181817
+  initial_barrier: 4.44
+  interaction_complexity: 2.5
+  learning_curve_type: steep_then_shallow
+  mastery_time: medium
+  mechanics_complexity: 3.17
+  mechanics_count: 11
+  player_types:
+  - experienced
+  - replayer
+  - trend_follower
+  rank_complexity: 4.17
+  replayability: 4.68
+  rules_complexity: 3.860234545454545
+  strategic_depth: 3.43
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2014
+mechanics:
+- name: Contracts
+- name: Deck, Bag, and Pool Building
+- name: End Game Bonuses
+- name: Events
+- name: Kill Steal
+- name: Point to Point Movement
+- name: Simultaneous Action Selection
+- name: Tech Trees / Tech Tracks
+- name: 'Turn Order: Progressive'
+- name: Variable Set-up
+- name: Worker Placement, Different Worker Types
+name: Orléans
+playing_time: '90'
+publisher_max_players: '5'
+publisher_min_age: '12'
+publisher_min_players: '2'
+publishers:
+- name: dlp games
+- name: Arclight Games
+- name: Arrakis Games
+- name: Baldar
+- name: BGA Plus
+- name: Capstone Games
+- name: Cranio Creations
+- name: Engames
+- name: GaGa Games
+- name: Games7Days
+- name: Korea Boardgames
+- name: Matagot
+- name: MEEPLE
+- name: MeepleBR
+- name: Surfin' Meeple China
+- name: Swan Panasia Co., Ltd.
+- name: Tasty Minstrel Games
+- name: White Goblin Games
+ranks:
+- rank: '34'
+  type: boardgame
+- rank: '27'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__thumb/img/ykeqdM_Naz4IiqOgyB1arzteOiU=/fit-in/200x150/filters:strip_icc()/pic6228507.jpg
+type: boardgame
+weight: '3.0239'
+year_published: '2014'

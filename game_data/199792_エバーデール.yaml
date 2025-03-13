@@ -1,0 +1,118 @@
+alternate_names:
+- Divukraj
+- Everdel
+- Everdell, H Εύφορη Κοιλάδα
+- 'Everdell: Az Örökfa Árnyékában'
+- 'Everdell: Essentials Edition'
+- Valea de Smarald
+- Евердел
+- Евърдел
+- Эверделл
+- ดินแดนแห่งมนต์เสน่ห์
+- エバーデール
+- 仙境幽谷
+- 에버델
+average_rating: '8.00737'
+categories:
+- name: Animals
+- name: Card Game
+- name: City Building
+- name: Fantasy
+community_best_players: '3'
+community_min_age: '12'
+community_recommended_players: 1, 2, 4
+description: 'Within the charming valley of Everdell, beneath the boughs of towering
+  trees, among meandering streams and mossy hollows, a civilization of forest critters
+  is thriving and expanding. From Everfrost to Bellsong, many a year have come and
+  gone, but the time has come for new territories to be settled and new cities established.
+  You will be the leader of a group of critters intent on just such a task. There
+  are buildings to construct, lively characters to meet, events to host&mdash;you
+  have a busy year ahead of yourself. Will the sun shine brightest on your city before
+  the winter moon rises?&#10;&#10;Everdell is a game of dynamic tableau building and
+  worker placement.&#10;&#10;On their turn a player can take one of three actions:&#10;&#10;a)
+  Place a Worker: Each player has a collection of Worker pieces. These are placed
+  on the board locations, events, and on Destination cards. Workers perform various
+  actions to further the development of a player''s tableau: gathering resources,
+  drawing cards, and taking other special actions.&#10;&#10;b) Play a Card: Each player
+  is building and populating a city; a tableau of up to 15 Construction and Critter
+  cards. There are five types of cards: Travelers, Production, Destination, Governance,
+  and Prosperity. Cards generate resources (twigs, resin, pebbles, and berries), grant
+  abilities, and ultimately score points. The interactions of the cards reveal numerous
+  strategies and a near infinite variety of working cities.&#10;&#10;c) Prepare for
+  the next Season: Workers are returned to the players supply and new workers are
+  added. The game is played from Winter through to the onset of the following winter,
+  at which point the player with the city with the most points wins.&#10;&#10;'
+designers:
+- name: James A. Wilson
+japanese_name: エバーデール
+learning_analysis:
+  bgg_rank: 38
+  bgg_weight: 2.8237
+  category_complexity: 2.88
+  decision_points: 3.409090909090909
+  initial_barrier: 4.18
+  interaction_complexity: 2.625
+  learning_curve_type: moderate_then_shallow
+  mastery_time: short
+  mechanics_complexity: 2.9
+  mechanics_count: 11
+  player_types:
+  - experienced
+  - replayer
+  - trend_follower
+  rank_complexity: 4.2
+  replayability: 4.4
+  rules_complexity: 3.4414066666666665
+  strategic_depth: 3.08
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2018
+mechanics:
+- name: Contracts
+- name: End Game Bonuses
+- name: Hand Management
+- name: Income
+- name: Open Drafting
+- name: Ownership
+- name: Set Collection
+- name: Solo / Solitaire Game
+- name: Tags
+- name: Variable Set-up
+- name: Worker Placement
+name: Everdell
+playing_time: '80'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '1'
+publishers:
+- name: Starling Games (II)
+- name: Abraxas
+- name: Arclight Games
+- name: CMON Global Limited
+- name: Fantasmagoria
+- name: Galápagos Jogos
+- name: Gameology (Gameology Romania)
+- name: Gém Klub Kft.
+- name: Hobby World
+- name: Kaissa Chess & Games
+- name: Maldito Games
+- name: Matagot
+- name: MIPL
+- name: Pegasus Spiele
+- name: Rebel Sp. z o.o.
+- name: REXhry
+- name: Spilbræt.dk
+- name: Tabletop Tycoon Inc.
+- name: White Goblin Games
+- name: YOKA Games
+- name: Ігромаг
+ranks:
+- rank: '38'
+  type: boardgame
+- rank: '46'
+  type: strategygames
+- rank: '6'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__thumb/img/Cf_mYxR_VvdjTEPXseSurni2JNI=/fit-in/200x150/filters:strip_icc()/pic3918905.png
+type: boardgame
+weight: '2.8237'
+year_published: '2018'

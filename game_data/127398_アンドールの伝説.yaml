@@ -1,0 +1,101 @@
+alternate_names:
+- Andor
+- Andor legendái
+- 'Andor: dobrodružné legendy'
+- De Legenden van Andor
+- Die Legenden von Andor
+- Legendy krainy Andor
+- Le Leggende di Andor
+- As Lendas de Andor
+- Las Leyendas de Andor
+- Θρύλοι της Άντορ
+- Андор
+- Легендите на Андор
+- アンドールの伝説
+- 안도르의 전설
+average_rating: '7.09942'
+categories:
+- name: Adventure
+- name: Fantasy
+- name: Fighting
+- name: Puzzle
+community_best_players: '4'
+community_min_age: '8'
+community_recommended_players: 1, 2, 3
+description: Legends of Andor is a cooperative adventure board game for two to four
+  players in which a band of heroes must work together to defend a fantasy realm from
+  invading hordes. To secure Andor's borders, the heroes will embark on dangerous
+  quests over the course of five unique scenarios (as well as a final scenario created
+  by the players themselves). But as the clever game system keeps creatures on the
+  march toward the castle, the players must balance their priorities carefully.&#10;&#10;At
+  the heart of Legends of Andor is its unique narrative, the linked scenarios of which
+  tell an overarching story as the players successfully complete objectives. For each
+  scenario, or &quot;Legend&quot;, a legend deck conveys the plot of an ever-unfolding
+  tale...one in which the players are the protagonists. A wooden marker moves along
+  the board's legend track at key points during each scenario, triggering the draw
+  of a new legend card, the introduction of new game-altering effects, and the advancement
+  of the story's plot. In the end, the players must endeavor to guide the fate of
+  Andor through their heroic actions, bringing a happy ending to their epic fantasy
+  tale.&#10;&#10;Will their heroes roam the land completing quests in the name of
+  glory, or devote themselves to the defense of the realm? Uncover epic tales of glory
+  as you live the Legends of Andor!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+designers:
+- name: Michael Menzel
+japanese_name: アンドールの伝説
+learning_analysis:
+  bgg_rank: 625
+  bgg_weight: 2.7638
+  category_complexity: 2.88
+  decision_points: 3.0
+  initial_barrier: 2.83
+  interaction_complexity: 2.75
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.76
+  mechanics_count: 5
+  player_types:
+  - beginner
+  - casual
+  - replayer
+  - trend_follower
+  rank_complexity: 3.46
+  replayability: 4.32
+  rules_complexity: 3.303426666666667
+  strategic_depth: 2.94
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2012
+mechanics:
+- name: Area Movement
+- name: Cooperative Game
+- name: Dice Rolling
+- name: Scenario / Mission / Campaign Game
+- name: Variable Player Powers
+name: Legends of Andor
+playing_time: '90'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '2'
+publishers:
+- name: KOSMOS
+- name: 999 Games
+- name: Albi
+- name: Arclight Games
+- name: Devir
+- name: Fantasmagoria
+- name: Fantasy Flight Games
+- name: Galakta
+- name: Giochi Uniti
+- name: IELLO
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Piatnik
+- name: Zvezda
+ranks:
+- rank: '625'
+  type: boardgame
+- rank: '188'
+  type: thematic
+thumbnail_url: https://cf.geekdo-images.com/IO8_BYKeofnWy8DIjo2RRg__thumb/img/pMbV-KGyO3D9U6hnBzNRfylZvto=/fit-in/200x150/filters:strip_icc()/pic2606106.jpg
+type: boardgame
+weight: '2.7638'
+year_published: '2012'

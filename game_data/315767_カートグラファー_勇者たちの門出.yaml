@@ -1,0 +1,94 @@
+alternate_names:
+- Cartógrafos Heróis
+- 'Cartógrafos: Héroes'
+- 'Kartografové: Hrdinové'
+- 'Kartografowie: Herosi'
+- 'Kartográfusok: Hősök'
+- Die Kartographin
+- 'Картографы: Герои'
+- カートグラファー 勇者たちの門出
+- '王国制图师: 英雄'
+- '지도 제작자들: 영웅들'
+average_rating: '7.74804'
+categories:
+- name: Fantasy
+- name: Territory Building
+community_best_players: 3, 4
+community_min_age: '10'
+community_recommended_players: 1, 2, 5, 6, 7, 8, 9, 10
+description: The expedition to the Western Lands is the kind of honor that comes once
+  in a lifetime for a royal cartographer. But these are dangerous times. War ravages
+  the land, and you are sure to encounter Dragul forces determined to thwart Queen
+  Gimnax&rsquo;s plans for western expansion.&#10;&#10;Fortunately, brave heroes have
+  risen to the defense of Nalos. Chart their deeds alongside the queen's edicts and
+  secure your place in history.&#10;&#10;Cartographers Heroes is the sequel to the
+  critically acclaimed map-drawing game Cartographers. It includes all-new map sheets,
+  scoring cards, explore cards, and ambush cards with unique abilities.&#10;&#10;Cartographers
+  Heroes can be played on its own or mixed with components from the original game
+  for a greater variety of gameplay possibilities.&#10;&#10;-description from publisher&#10;&#10;
+designers:
+- name: Jordy Adan
+- name: John Brieger
+japanese_name: カートグラファー 勇者たちの門出
+learning_analysis:
+  bgg_rank: 443
+  bgg_weight: 2.0
+  category_complexity: 2.62
+  decision_points: 3.0
+  initial_barrier: 3.68
+  interaction_complexity: 2.75
+  learning_curve_type: moderate_then_shallow
+  mastery_time: short
+  mechanics_complexity: 2.69
+  mechanics_count: 9
+  player_types:
+  - casual
+  - trend_follower
+  rank_complexity: 3.73
+  replayability: 3.5
+  rules_complexity: 3.0866666666666664
+  strategic_depth: 2.67
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2021
+mechanics:
+- name: Bingo
+- name: End Game Bonuses
+- name: Grid Coverage
+- name: Line Drawing
+- name: Paper-and-Pencil
+- name: Simultaneous Action Selection
+- name: Solo / Solitaire Game
+- name: Square Grid
+- name: Variable Set-up
+name: Cartographers Heroes
+playing_time: '45'
+publisher_max_players: '100'
+publisher_min_age: '10'
+publisher_min_players: '1'
+publishers:
+- name: Thunderworks Games
+- name: Arclight Games
+- name: Buró
+- name: Gameland 游戏大陆
+- name: Gen-X Games
+- name: Hobby World
+- name: Intrafin Games
+- name: Ludofy Creative
+- name: Mandoo Games
+- name: Ogry Games
+- name: Outland
+- name: Pegasus Spiele
+- name: Raven Distribution
+- name: Reflexshop
+- name: REXhry
+ranks:
+- rank: '443'
+  type: boardgame
+- rank: '265'
+  type: strategygames
+- rank: '76'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/HIFpoE6wwuriOREJmqizPw__thumb/img/s-5zTf3OxkhmkZMfNCeLexMW-pU=/fit-in/200x150/filters:strip_icc()/pic5567490.png
+type: boardgame
+weight: '2'
+year_published: '2021'

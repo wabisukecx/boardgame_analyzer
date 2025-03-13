@@ -1,0 +1,109 @@
+alternate_names:
+- キーフラワー
+- 大五月花號
+- 奇伍德花季号
+- 키플라워
+average_rating: '7.71823'
+categories:
+- name: City Building
+- name: Economic
+- name: Renaissance
+- name: Territory Building
+- name: Transportation
+community_best_players: '4'
+community_min_age: '12'
+community_recommended_players: 2, 3, 5, 6
+description: 'Keyflower is a game for two to six players played over four rounds.
+  Each round represents a season: spring, summer, autumn, and finally winter. Each
+  player starts the game with a &quot;home&quot; tile and an initial team of eight
+  workers, each of which is colored red, yellow, or blue. Workers of matching colors
+  are used by the players to bid for tiles to add to their villages. Matching workers
+  may alternatively be used to generate resources, skills and additional workers,
+  not only from the player''s own tiles, but also from the tiles in the other players''
+  villages and from the new tiles being auctioned.&#10;&#10;In spring, summer and
+  autumn, more workers will arrive on board the Keyflower and her sister boats, with
+  some of these workers possessing skills in the working of the key resources of iron,
+  stone and wood. In each of these seasons, village tiles are set out at random for
+  auction. In the winter no new workers arrive and the players select the village
+  tiles for auction from those they received at the beginning of the game. Each winter
+  village tile offers VPs for certain combinations of resources, skills and workers.
+  The player whose village and workers generate the most VPs wins the game.&#10;&#10;Keyflower
+  presents players with many different challenges and each game will be different
+  due to the mix of village tiles that appear in that particular game. Throughout
+  the game, players will need to be alert to the opportunities to best utilize their
+  various resources, transport and upgrade capability, skills and workers.&#10;&#10;Keyflower,
+  a joint design between Richard Breese and Sebastian Bleasdale, is the seventh game
+  in the &quot;Key&quot; series from R&amp;D Games set in the medieval &quot;Key&quot;
+  land.&#10;&#10;'
+designers:
+- name: Sebastian Bleasdale
+- name: Richard Breese
+japanese_name: キーフラワー
+learning_analysis:
+  bgg_rank: 120
+  bgg_weight: 3.3353
+  category_complexity: 3.0
+  decision_points: 3.21875
+  initial_barrier: 4.69
+  interaction_complexity: 2.8
+  learning_curve_type: steep_then_shallow
+  mastery_time: medium
+  mechanics_complexity: 3.36
+  mechanics_count: 16
+  player_types:
+  - experienced
+  - replayer
+  - trend_follower
+  rank_complexity: 3.89
+  replayability: 4.8
+  rules_complexity: 4.087685
+  strategic_depth: 3.34
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2012
+mechanics:
+- name: Auction / Bidding
+- name: 'Auction: Fixed Placement'
+- name: 'Auction: Multiple Lot'
+- name: Constrained Bidding
+- name: End Game Bonuses
+- name: Hexagon Grid
+- name: Modular Board
+- name: Network and Route Building
+- name: Ownership
+- name: Selection Order Bid
+- name: Set Collection
+- name: Tile Placement
+- name: 'Turn Order: Auction'
+- name: Variable Set-up
+- name: Worker Placement
+- name: Worker Placement, Different Worker Types
+name: Keyflower
+playing_time: '120'
+publisher_max_players: '6'
+publisher_min_age: '12'
+publisher_min_players: '2'
+publishers:
+- name: R&D Games
+- name: Arclight Games
+- name: Czacha Games
+- name: Dice Realm
+- name: Ediciones MasQueOca
+- name: Fabrika Igr
+- name: FoxMind
+- name: Game Harbor
+- name: Game Salute
+- name: Gigamic
+- name: HUCH!
+- name: Quined Games
+- name: Red Glove
+- name: Swan Panasia Co., Ltd.
+- name: WoodCat
+ranks:
+- rank: '120'
+  type: boardgame
+- rank: '101'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/HbfgxDJZQnNEZQKvpmJxQg__thumb/img/5t1MtJEDdhSgtyJlmu3Hu1qR_ZQ=/fit-in/200x150/filters:strip_icc()/pic2278942.jpg
+type: boardgame
+weight: '3.3353'
+year_published: '2012'

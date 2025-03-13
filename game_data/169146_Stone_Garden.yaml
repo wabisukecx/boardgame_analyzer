@@ -1,0 +1,57 @@
+alternate_names:
+- 枯山水
+average_rating: '6.73546'
+categories:
+- name: Abstract Strategy
+community_best_players: 3, 4
+community_recommended_players: '2'
+description: In Stone Garden (&#230;&#158;&#175;&#229;&#177;&#177;&#230;&#176;&#180;,
+  which also translates as &quot;rock garden&quot; or &quot;Japanese rock garden&quot;),
+  players are gardeners attempting to make the most aesthetic garden by placing tiles
+  of sand and moss side by side on their respective garden boards. When meditating
+  by one's garden, virtue points are earned that can be spent on favorite rocks to
+  elevate the garden further. Through famous garden architects from history, special
+  effects affecting the garden can be achieved.&#10;&#10;
+designers:
+- name: Koota Yamada
+learning_analysis:
+  bgg_rank: 7578
+  bgg_weight: 2.7222
+  category_complexity: 2.5
+  decision_points: 2.75
+  initial_barrier: 2.98
+  interaction_complexity: 1.5
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 3.2
+  mechanics_count: 2
+  player_types:
+  - beginner
+  - casual
+  rank_complexity: 2.65
+  replayability: 2.76
+  rules_complexity: 3.1151066666666667
+  strategic_depth: 2.56
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2014
+mechanics:
+- name: Pattern Building
+- name: Tile Placement
+name: Stone Garden
+playing_time: '75'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '2'
+publishers:
+- name: New Games Order, LLC
+ranks:
+- rank: '7578'
+  type: boardgame
+- rank: '1155'
+  type: thematic
+- rank: '1995'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/_2QslGFaVlRYEAkceTwN3w__thumb/img/K32Q84hbWDRBv6ww1-MarVgH74M=/fit-in/200x150/filters:strip_icc()/pic3317011.jpg
+type: boardgame
+weight: '2.7222'
+year_published: '2014'

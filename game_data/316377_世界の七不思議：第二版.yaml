@@ -1,0 +1,108 @@
+alternate_names:
+- 7 Csoda (2021-es kiadás)
+- 7 Cudów Świata (Druga Edycja)
+- 7 divů světa (druhá edice)
+- 7 Wonders (2ª Edição)
+- 7 Wonders (editia II)
+- 7 Wonders (Seconda Edizione)
+- 7 Wonders (Zweite Edition)
+- 7 чудес
+- 7 Чудес (2-ге видання)
+- 7 הפלאים
+- 7 원더스 (2판)
+- Τα 7 Θαυματα του Κοσμου (2η Εκδοση)
+- 七大奇蹟：第二版
+- 世界の七不思議：第二版
+average_rating: '7.83915'
+categories:
+- name: Ancient
+- name: Card Game
+- name: City Building
+- name: Civilization
+- name: Economic
+community_best_players: 4, 5
+community_min_age: '10'
+community_recommended_players: 3, 6, 7
+description: '7 Wonders&#10;The board game with more awards than any other game on
+  the planet.&#10;With over 30 international awards, and over a million copies sold
+  throughout the world, rediscover 7 Wonders, the game which has won more awards than
+  any other game in the world, in a whole new version.   Lauded by both the public
+  and critics, 7 Wonders has claimed its place as an unmissable reference point in
+  modern board gaming. 7 Wonders is based on a simple and elegant mechanic (drafting)
+  which allows up to 7 players to play with no dead time. Players make their choice
+  and apply all of them at the same time. These choices are varied and their impact
+  is real. Finally, the game is divided into 3 Ages which little by little increase
+  the importance of these choices and thus the tension in the game. The global mechanics
+  and the care given to the artwork are used to immerse the player in Antiquity and
+  have contributed to the game&rsquo;s success.&#10;A game plays out over 3 rounds,
+  called Ages, during which you simultaneously play cards, one at a time, to develop
+  your City.&#10;&#10;These cards represent the various Buildings you can construct:
+  resource producers, civilian, commercial, military, scientific structures, and guilds.&#10;&#10;At
+  the end of each Age, you go to war with your nearest neighbours. At the end of all
+  3 Ages, you tally up all of the victory points earned by your City, your wonder,
+  your military prowess, and your treasury. The player with the highest score wins
+  the game.&#10;&#10;Content:&#10;7 Wonder boards&#10;148 Age cards: 49 Age I cards,
+  49 Age II cards, and 50 Age III cards&#10;78 Coins: 54 Coins of value 1, and 24
+  Coins of value 3&#10;48 Military Conflict tokens: 24 Defeats and 24 Victories (8
+  per Age)&#10;1 pad of score sheets&#10;3 quick reference sheets describing the effects
+  of the cards&#10;1 List of cards and chaining leaflet&#10;1 rulebook&#10;&#10;'
+designers:
+- name: Antoine Bauza
+japanese_name: 世界の七不思議：第二版
+learning_analysis:
+  bgg_rank: 215
+  bgg_weight: 2.3043
+  category_complexity: 3.0
+  decision_points: 3.55
+  initial_barrier: 3.4
+  interaction_complexity: 2.7
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.83
+  mechanics_count: 6
+  player_types:
+  - casual
+  - replayer
+  - trend_follower
+  rank_complexity: 3.86
+  replayability: 3.96
+  rules_complexity: 3.2775266666666667
+  strategic_depth: 2.95
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2020
+mechanics:
+- name: Closed Drafting
+- name: Hand Management
+- name: Neighbor Scope
+- name: Set Collection
+- name: Simultaneous Action Selection
+- name: Variable Player Powers
+name: 7 Wonders (Second Edition)
+playing_time: '30'
+publisher_max_players: '7'
+publisher_min_age: '10'
+publisher_min_players: '3'
+publishers:
+- name: Repos Production
+- name: ADC Blackfire Entertainment
+- name: Galápagos Jogos
+- name: Gém Klub Kft.
+- name: HaKubia
+- name: Hobby Japan
+- name: KADABRA
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Lifestyle Boardgames Ltd
+- name: Rebel Sp. z o.o.
+- name: Ігромаг
+ranks:
+- rank: '215'
+  type: boardgame
+- rank: '164'
+  type: strategygames
+- rank: '32'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/Naw8y8J_s-8cvq1GoTON6w__thumb/img/ieH8A28KJe3truXqQe1nDXSpxUE=/fit-in/200x150/filters:strip_icc()/pic7416519.jpg
+type: boardgame
+weight: '2.3043'
+year_published: '2020'

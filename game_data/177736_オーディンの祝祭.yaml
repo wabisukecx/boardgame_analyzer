@@ -1,0 +1,125 @@
+alternate_names:
+- À la gloire d'Odin
+- Um Banquete a Odin
+- El Banquete de Odín
+- Ein Fest für Odin
+- La Festa per Odino
+- Hostina pro Ódina
+- Odin
+- Uczta dla Odyna
+- Во славу Одина
+- オーディンの祝祭
+- 奧丁的盛宴
+- 오딘을 위하여
+average_rating: '8.16796'
+categories:
+- name: Economic
+- name: Farming
+- name: Industry / Manufacturing
+- name: Medieval
+- name: Puzzle
+community_best_players: '3'
+community_min_age: '12'
+community_recommended_players: 1, 2, 4
+description: 'A Feast for Odin is a saga in the form of a board game. You are reliving
+  the cultural achievements, mercantile expeditions, and pillages of those tribes
+  we know as Viking today &mdash; a term that was used quite differently towards the
+  end of the first millennium.&#10;&#10;When the northerners went out for a raid,
+  they used to say they headed out for a viking. Their Scandinavian ancestors, however,
+  were much more than just pirates. They were explorers and founders of states. Leif
+  Eriksson is said to be the first European in America, long before Columbus.&#10;In
+  what is known today as Normandy, the intruders were not called Vikings but Normans.
+  One of them is the famous William the Conqueror who invaded England in 1066. He
+  managed to do what the king of Norway failed to do only a few years prior: conquer
+  the Throne of England. The reason the people of these times became such strong seafarers
+  was their unfortunate agricultural situation: crop shortfalls caused great distress.&#10;&#10;In
+  this game, you will raid and explore new territories. You will also engage in the
+  day-to-day activity of collecting goods with which to achieve a financially secure
+  position in society. In the end, the player whose possessions bear the greatest
+  value will be declared the winner.&#10;&#10;--gameplay description from @StoryBoardGamer&#039;s
+  review:&#10;A Feast for Odin is a points-driven game, with a plethora of pathways
+  to victory, with a range of risks balanced against rewards. A significant portion
+  of this is your central hall, which has a whopping -86 points of squares and a major
+  part of your game is attempting to cover these up with various tiles. Likewise,
+  long halls and island colonies can also offer large rewards, but they will have
+  penalties of their own.&#10;&#10;Each year follows a familiar pattern of preparation,
+  worker placement, and then meeting the requirements of your feast. The main phase
+  of each year is a worker placement affair. You start with a selection of Vikings,
+  and a large action board with a whopping 61 different options to choose from. Each
+  of these will be arranged from left to right in one of four columns. Each column
+  requires an additional Viking to activate, but they are proportionally more powerful.&#10;&#10;At
+  the end of each round, you will need to fill a feast table with food, alternating
+  between plants and vegetable matter. You will also have a chance to lay the valuable
+  green and blue tiles into your main hall. The configuration of these tiles must
+  follow certain requirements, but your main goal is to both cover up a line of coin
+  icons to increase your income, while otherwise encircling certain printed icons
+  to generate those.&#10;&#10;You will build your engine over time, following an alternating
+  pattern of outward expansion and hunting against development and cultivation. It
+  all comes down to how much you&rsquo;re willing to take on at any one time, and
+  what risks you&rsquo;re willing to set yourself up with for their rewards.&#10;&#10;UPC
+  681706716909&#10;&#10;'
+designers:
+- name: Uwe Rosenberg
+japanese_name: オーディンの祝祭
+learning_analysis:
+  bgg_rank: 24
+  bgg_weight: 3.8597
+  category_complexity: 3.0
+  decision_points: 3.2222222222222223
+  initial_barrier: 4.46
+  interaction_complexity: 2.4
+  learning_curve_type: steep_then_shallow
+  mastery_time: medium
+  mechanics_complexity: 2.87
+  mechanics_count: 9
+  player_types:
+  - experienced
+  - replayer
+  - trend_follower
+  rank_complexity: 4.2
+  replayability: 4.4
+  rules_complexity: 3.7519399999999994
+  strategic_depth: 3.35
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2016
+mechanics:
+- name: Automatic Resource Growth
+- name: Dice Rolling
+- name: Grid Coverage
+- name: Income
+- name: Push Your Luck
+- name: Solo / Solitaire Game
+- name: Tile Placement
+- name: 'Turn Order: Pass Order'
+- name: Worker Placement
+name: A Feast for Odin
+playing_time: '120'
+publisher_max_players: '4'
+publisher_min_age: '12'
+publisher_min_players: '1'
+publishers:
+- name: Feuerland Spiele
+- name: Cranio Creations
+- name: Devir
+- name: Filosofia Éditions
+- name: Game Harbor
+- name: Hobby World
+- name: Korea Boardgames
+- name: Lacerta
+- name: Maldito Games
+- name: Mandala Jogos
+- name: Rebel Sp. z o.o.
+- name: Super Meeple
+- name: テンデイズゲームズ (TendaysGames)
+- name: TLAMA games
+- name: White Goblin Games
+- name: Z-Man Games
+ranks:
+- rank: '24'
+  type: boardgame
+- rank: '20'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/s9oGMCo1fcfV4Dk3EnqLZw__thumb/img/AKxMMz2DTbBrEynhDROla8fdjJ4=/fit-in/200x150/filters:strip_icc()/pic3146943.png
+type: boardgame
+weight: '3.8597'
+year_published: '2016'

@@ -1,0 +1,121 @@
+alternate_names:
+- Arnak elveszett romjai
+- Arnak Harabeleri
+- 'Arnak: Kadonneet rauniot'
+- Izgubljene ruševine Arnaka
+- Le Rovine Perdute di Arnak
+- As Ruínas Perdidas de Arnak
+- Las Ruinas Perdidas de Arnak
+- Les Ruines Perdues de Narak
+- De verdwenen ruïnes van Arnak
+- Die verlorenen Ruinen von Arnak
+- Zaginiona wyspa Arnak
+- Ztracený ostrov Arnak
+- Τα Ερείπια του Άρνακ
+- Загублені руїни Арнаку
+- Изгубените руини на Арнак
+- Руины острова Арнак
+- חורבותיה של ארנאק
+- นครสาบสูญแห่งอาร์นัค
+- アルナックの失われし遺跡
+- 阿納克遺蹟|阿纳克遗迹
+- 아르낙의 잊혀진 유적
+average_rating: '8.06842'
+categories:
+- name: Adventure
+- name: Exploration
+- name: Fantasy
+community_best_players: '3'
+community_min_age: '10'
+community_recommended_players: 1, 2, 4
+description: On an uninhabited island in uncharted seas, explorers have found traces
+  of a great civilization. Now you will lead an expedition to explore the island,
+  find lost artifacts, and face fearsome guardians, all in a quest to learn the island's
+  secrets.&#10;&#10;Lost Ruins of Arnak combines deck-building and worker placement
+  in a game of exploration, resource management, and discovery. In addition to traditional
+  deck-builder effects, cards can also be used to place workers, and new worker actions
+  become available as players explore the island. Some of these actions require resources
+  instead of workers, so building a solid resource base will be essential. You are
+  limited to only one action per turn, so make your choice carefully... what action
+  will benefit you most now? And what can you afford to do later... assuming someone
+  else doesn't take the action first!?&#10;&#10;Decks are small, and randomness in
+  the game is heavily mitigated by the wealth of tactical decisions offered on the
+  game board. With a variety of worker actions, artifacts, and equipment cards, the
+  set-up for each game will be unique, encouraging players to explore new strategies
+  to meet the challenge.&#10;&#10;Discover the Lost Ruins of Arnak!&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+designers:
+- name: Elwen
+- name: Mín
+japanese_name: アルナックの失われし遺跡
+learning_analysis:
+  bgg_rank: 29
+  bgg_weight: 2.927
+  category_complexity: 2.75
+  decision_points: 3.2222222222222223
+  initial_barrier: 4.54
+  interaction_complexity: 2.5
+  learning_curve_type: steep_then_shallow
+  mastery_time: short
+  mechanics_complexity: 3.31
+  mechanics_count: 9
+  player_types:
+  - experienced
+  - replayer
+  - trend_follower
+  rank_complexity: 4.23
+  replayability: 4.18
+  rules_complexity: 3.9654
+  strategic_depth: 3.14
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2020
+mechanics:
+- name: Contracts
+- name: Deck, Bag, and Pool Building
+- name: Multi-Use Cards
+- name: Once-Per-Game Abilities
+- name: Open Drafting
+- name: Resource to Move
+- name: Solo / Solitaire Game
+- name: 'Turn Order: Progressive'
+- name: Worker Placement
+name: Lost Ruins of Arnak
+playing_time: '120'
+publisher_max_players: '4'
+publisher_min_age: '12'
+publisher_min_players: '1'
+publishers:
+- name: Czech Games Edition
+- name: Brädspel.se
+- name: Cranio Creations
+- name: Devir
+- name: DiceTree Games
+- name: Fantasmagoria
+- name: GaGa Games
+- name: Games4you
+- name: Gém Klub Kft.
+- name: Goblin Gaming
+- name: HeidelBÄR Games
+- name: Hobby Japan
+- name: IELLO
+- name: Kaissa Chess & Games
+- name: Lautapelit.fi
+- name: Lex Games
+- name: Lord of Boards
+- name: MINDOK
+- name: More Fun Co., Ltd.
+- name: One Moment Games
+- name: Rebel Sp. z o.o.
+- name: Spilbræt.dk
+- name: White Goblin Games
+ranks:
+- rank: '29'
+  type: boardgame
+- rank: '28'
+  type: strategygames
+- rank: '1'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__thumb/img/J8SVmGOJXZGxNjkT3xYNQU7Haxg=/fit-in/200x150/filters:strip_icc()/pic5674958.jpg
+type: boardgame
+weight: '2.927'
+year_published: '2020'

@@ -1,0 +1,109 @@
+alternate_names:
+- The Crew
+- 'The Crew: Alla Scoperta del Pianeta Nove'
+- 'The Crew: En quête de la neuvième planète'
+- 'The Crew: În căutarea celei de-a noua planete'
+- 'The Crew: Iskanje devetega planeta'
+- 'The Crew: Küldetés a 9. bolygóhoz'
+- 'De Crew: Op weg naar de 9e Planeet'
+- 'Die Crew: Reist gemeinsam zum 9. Planeten'
+- 'Keşif: Gezegen 9 Görevi'
+- 'Odysea: Společně k deváté planetě'
+- 'A Tripulação: Em Busca do Nono Planeta'
+- 'La Tripulación: En busca del noveno planeta'
+- 'Załoga: W poszukiwaniu dziewiątej planety'
+- 'Η Αποστολή: Αναζητώντας τον Ένατο Πλανήτη'
+- Екипаж
+- 'Екіпаж: Пошуки дев''ятої планети'
+- 'Экипаж: Экспедиция к девятой планете'
+- 'הצוות: המסע לכוכב הלכת תשע'
+- ザ・クルー 第９惑星の探索
+- 星際探險隊
+- '스페이스 크루: 9번째 행성을 찾아서'
+average_rating: '7.78146'
+categories:
+- name: Card Game
+- name: Science Fiction
+- name: Space Exploration
+community_best_players: '4'
+community_min_age: '10'
+community_recommended_players: 3, 5
+description: 'In the co-operative trick-taking game The Crew: The Quest for Planet
+  Nine, the players set out as astronauts on an uncertain space adventure. What are
+  the rumors regarding the unknown planet about? The eventful journey through space
+  extends over 50 exciting missions. But this game can only be defeated by meeting
+  common individual tasks of each player. In order to meet the varied challenges communication
+  is essential in the team. But this is more difficult than expected in space.&#10;&#10;With
+  each mission the game becomes more difficult. After each mission the game can be
+  paused and continued later. During each mission it is not the number of tricks but
+  the right tricks at the right time that count.&#10;&#10;The team completes a mission
+  only if every single player is successful in fulfilling their tasks.&#10;&#10;The
+  game comes with 50 missions, with three additional missions published in spielbox
+  2/2020.&#10;&#10;'
+designers:
+- name: Thomas Sing
+japanese_name: ザ・クルー 第９惑星の探索
+learning_analysis:
+  bgg_rank: 80
+  bgg_weight: 1.9559
+  category_complexity: 2.75
+  decision_points: 3.1999999999999997
+  initial_barrier: 2.9
+  interaction_complexity: 2.5
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 3.12
+  mechanics_count: 5
+  player_types:
+  - beginner
+  - casual
+  - replayer
+  - trend_follower
+  rank_complexity: 3.89
+  replayability: 3.96
+  rules_complexity: 3.4658466666666663
+  strategic_depth: 2.74
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2019
+mechanics:
+- name: Communication Limits
+- name: Cooperative Game
+- name: Hand Management
+- name: Scenario / Mission / Campaign Game
+- name: Trick-taking
+name: 'The Crew: The Quest for Planet Nine'
+playing_time: '20'
+publisher_max_players: '5'
+publisher_min_age: '10'
+publisher_min_players: '2'
+publishers:
+- name: KOSMOS
+- name: 999 Games
+- name: Black Sea Games
+- name: Brain Games
+- name: Devir
+- name: Galakta
+- name: Geekach Games
+- name: Giochi Uniti
+- name: GP Games
+- name: HaKubia
+- name: Ideal Board Games
+- name: IELLO
+- name: Igroljub
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Lautapelit.fi
+- name: MINDOK
+- name: NeoTroy Games
+- name: Piatnik
+- name: Swan Panasia Co., Ltd.
+- name: Zvezda
+ranks:
+- rank: '80'
+  type: boardgame
+- rank: '13'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__thumb/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg
+type: boardgame
+weight: '1.9559'
+year_published: '2019'

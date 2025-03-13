@@ -1,0 +1,117 @@
+alternate_names:
+- Gloomhaven, aventures à Havrenuit
+- 'Gloomhaven: Мрачная Гавань'
+- Homályrév
+- グルームヘイヴン
+- 幽港迷城
+- 글룸헤이븐
+average_rating: '8.56802'
+categories:
+- name: Adventure
+- name: Exploration
+- name: Fantasy
+- name: Fighting
+- name: Miniatures
+community_best_players: '3'
+community_min_age: '14'
+community_recommended_players: 1, 2, 4
+description: Gloomhaven  is a game of Euro-inspired tactical combat in a persistent
+  world of shifting motives. Players will take on the roles of wandering adventurers
+  with their own special sets of skills and their own reasons for traveling to this
+  dark corner of the world. Players must work together out of necessity to clear out
+  menacing dungeons and forgotten ruins. In the process, they will enhance their abilities
+  with experience and loot, discover new locations to explore and plunder, and expand
+  an ever-branching story fueled by the decisions they make.&#10; This is a game with
+  a persistent and changing world that is ideally played over many game sessions.
+  After a scenario, players will make decisions about what to do next, which will
+  determine how the story continues, kind of like a &ldquo;Choose Your Own Adventure&rdquo;
+  book. Playing through a scenario is a co-operative affair where players will fight
+  against automated monsters using an innovative card system to determine the order
+  of play and what a player does on their turn.&#10;&#10;Each turn, a player chooses
+  two cards to play out of their hand. The number on the top card determines their
+  initiative for the round. Each card also has a top and bottom power, and when it
+  is a player&rsquo;s turn in the initiative order, they determine whether to use
+  the top power of one card and the bottom power of the other, or vice-versa. Players
+  must be careful, though, because over time they will permanently lose cards from
+  their hands. If they take too long to clear a dungeon, they may end up exhausted
+  and be forced to retreat.&#10;&#10;
+designers:
+- name: Isaac Childres
+japanese_name: グルームヘイヴン
+learning_analysis:
+  bgg_rank: 4
+  bgg_weight: 3.9133
+  category_complexity: 3.0
+  decision_points: 3.1875
+  initial_barrier: 4.86
+  interaction_complexity: 2.9
+  learning_curve_type: steep_then_moderate
+  mastery_time: medium
+  mechanics_complexity: 3.27
+  mechanics_count: 24
+  player_types:
+  - experienced
+  - hardcore
+  - strategist
+  - system_master
+  - replayer
+  - trend_follower
+  rank_complexity: 4.54
+  replayability: 4.95
+  rules_complexity: 4.259743333333334
+  strategic_depth: 3.86
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  year_published: 2017
+mechanics:
+- name: Action Queue
+- name: Action Retrieval
+- name: Campaign / Battle Card Driven
+- name: Card Play Conflict Resolution
+- name: Communication Limits
+- name: Cooperative Game
+- name: Critical Hits and Failures
+- name: Deck Construction
+- name: Grid Movement
+- name: Hand Management
+- name: Hexagon Grid
+- name: Legacy Game
+- name: Line of Sight
+- name: Modular Board
+- name: Multi-Use Cards
+- name: Narrative Choice / Paragraph
+- name: Once-Per-Game Abilities
+- name: Role Playing
+- name: Scenario / Mission / Campaign Game
+- name: Simultaneous Action Selection
+- name: Solo / Solitaire Game
+- name: Storytelling
+- name: Tags
+- name: Variable Player Powers
+name: Gloomhaven
+playing_time: '120'
+publisher_max_players: '4'
+publisher_min_age: '14'
+publisher_min_players: '1'
+publishers:
+- name: Cephalofair Games
+- name: Albi
+- name: Albi Polska
+- name: Arclight Games
+- name: Feuerland Spiele
+- name: Galápagos Jogos
+- name: Games Warehouse
+- name: Gém Klub Kft.
+- name: Hobby World
+- name: Korea Boardgames
+- name: MYBG Co., Ltd.
+ranks:
+- rank: '4'
+  type: boardgame
+- rank: '2'
+  type: thematic
+- rank: '4'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/sZYp_3BTDGjh2unaZfZmuA__thumb/img/veqFeP4d_3zNhFc3GNBkV95rBEQ=/fit-in/200x150/filters:strip_icc()/pic2437871.jpg
+type: boardgame
+weight: '3.9133'
+year_published: '2017'

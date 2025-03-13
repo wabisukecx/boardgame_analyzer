@@ -1,0 +1,80 @@
+alternate_names:
+- 'Cubitos: Ryzykowny Wyścig'
+- Кубитос
+- Кубітос
+- キュビトス
+- 方块向前冲
+- 큐비토스
+average_rating: '7.39375'
+categories:
+- name: Dice
+- name: Racing
+community_best_players: '4'
+community_min_age: '8'
+community_recommended_players: 2, 3
+description: Be fast or be last!&#10;&#10;In Cubitos, players take on the role of
+  participants in the annual Cube Cup, a race of strategy and luck to determine the
+  Cubitos Champion. Each player has a runner on the racetrack and a support team,
+  which is represented by all the dice you roll. Each turn, you roll dice and use
+  their results to move along the racetrack, buy new dice, and use abilities &mdash;
+  but you must be careful not to push your luck rolling too much or you could bust!&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+designers:
+- name: John D. Clair
+japanese_name: キュビトス
+learning_analysis:
+  bgg_rank: 465
+  bgg_weight: 2.171
+  category_complexity: 2.62
+  decision_points: 2.95
+  initial_barrier: 3.62
+  interaction_complexity: 2.5
+  learning_curve_type: moderate_then_shallow
+  mastery_time: short
+  mechanics_complexity: 2.59
+  mechanics_count: 10
+  player_types:
+  - casual
+  - trend_follower
+  rank_complexity: 3.54
+  replayability: 3.7
+  rules_complexity: 3.0318666666666667
+  strategic_depth: 2.64
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2021
+mechanics:
+- name: Catch the Leader
+- name: Deck, Bag, and Pool Building
+- name: Delayed Purchase
+- name: Dice Rolling
+- name: Grid Movement
+- name: Market
+- name: Push Your Luck
+- name: Race
+- name: Re-rolling and Locking
+- name: Variable Set-up
+name: Cubitos
+playing_time: '60'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '2'
+publishers:
+- name: Alderac Entertainment Group
+- name: Boardgame Mall
+- name: Dice&Bones
+- name: Geekach Games
+- name: Lavka Games
+- name: Ludistri
+- name: Maldito Games
+- name: Pegasus Spiele
+- name: White Goblin Games
+- name: YOKA Games
+ranks:
+- rank: '465'
+  type: boardgame
+- rank: '106'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/_WY_JrQQRrSUlVof11hMpQ__thumb/img/YBgLAPTM5xOW3fDj_if3-r3oDs0=/fit-in/200x150/filters:strip_icc()/pic5226311.png
+type: boardgame
+weight: '2.171'
+year_published: '2021'

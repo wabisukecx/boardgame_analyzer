@@ -1,0 +1,95 @@
+alternate_names:
+- Маракайбо
+- マラカイボ
+- 马拉开波
+- 마라카이보
+average_rating: '7.98427'
+categories:
+- name: Economic
+- name: Exploration
+- name: Nautical
+- name: Pirates
+community_best_players: '3'
+community_min_age: '14'
+community_recommended_players: 1, 2, 4
+description: 'Maracaibo, a strategy game for 1-4 players by Alexander Pfister, is
+  set in the Caribbean during the 17th century. The players try to increase their
+  influence in three nations in four rounds with a play time of 40 minutes per player.&#10;&#10;The
+  players sail on a round course through the Caribbean, e.g., you have city tiles
+  where you are able to perform various&nbsp;actions or deliver goods to. One special
+  feature is an implemented quest mode over more and various tiles, which tells the
+  player, who chase after it, a little story.&#10;&#10;As a player, you move with
+  your ship around the course, managing it by using cards like in other games from
+  Alexander Pfister.&#10;&#10;&#10;NOTE: The Spanish and Portuguese editions of Maracaibo
+  contain La Armada mini-expansion packaged inside the base game''s box.&#10;&#10;'
+designers:
+- name: Alexander Pfister
+japanese_name: マラカイボ
+learning_analysis:
+  bgg_rank: 72
+  bgg_weight: 3.9142
+  category_complexity: 2.88
+  decision_points: 3.28125
+  initial_barrier: 4.57
+  interaction_complexity: 2.625
+  learning_curve_type: steep_then_moderate
+  mastery_time: medium
+  mechanics_complexity: 3.02
+  mechanics_count: 16
+  player_types:
+  - experienced
+  - hardcore
+  - system_master
+  - replayer
+  - trend_follower
+  rank_complexity: 4.04
+  replayability: 4.73
+  rules_complexity: 3.8997149999999996
+  strategic_depth: 3.76
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  year_published: 2019
+mechanics:
+- name: Contracts
+- name: End Game Bonuses
+- name: Events
+- name: Hand Management
+- name: Income
+- name: Movement Points
+- name: Multi-Use Cards
+- name: Narrative Choice / Paragraph
+- name: Point to Point Movement
+- name: Scenario / Mission / Campaign Game
+- name: Set Collection
+- name: Solo / Solitaire Game
+- name: Stock Holding
+- name: Tech Trees / Tech Tracks
+- name: Track Movement
+- name: Variable Set-up
+name: Maracaibo
+playing_time: '120'
+publisher_max_players: '4'
+publisher_min_age: '12'
+publisher_min_players: '1'
+publishers:
+- name: Game's Up
+- name: BoardM Factory
+- name: Capstone Games
+- name: dlp games
+- name: Ediciones MasQueOca
+- name: Fishbone Games
+- name: Geronimo Games
+- name: Hobby World
+- name: MeepleBR
+- name: Super Meeple
+- name: テンデイズゲームズ (TendaysGames)
+- name: uplay.it edizioni
+- name: YOKA Games
+ranks:
+- rank: '72'
+  type: boardgame
+- rank: '55'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__thumb/img/lVlnhYyxlZb3WuKZJHLoJcFHEjs=/fit-in/200x150/filters:strip_icc()/pic4917407.jpg
+type: boardgame
+weight: '3.9142'
+year_published: '2019'
