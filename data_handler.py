@@ -18,8 +18,15 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
     # ファイル名の生成
     game_id = game_data.get('id', 'unknown')
     
+    # ゲームIDを6桁に揃える処理を追加
+    if game_id != 'unknown' and game_id.isdigit():
+        game_id = game_id.zfill(6)  # 6桁になるように左側に0を埋める
+    
     # 日本語名がある場合は優先して使用
     game_name = game_data.get('japanese_name', game_data.get('name', '名称不明'))
+    
+    # 全角スペースを半角スペースに変換
+    game_name = game_name.replace('　', ' ')
     
     # プレースホルダーファイル名
     placeholder_filename = f"{game_id}_{game_name}.yaml"
@@ -30,6 +37,8 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
     if not custom_filename:
         filename = placeholder_filename
     else:
+        # カスタムファイル名も全角スペースを半角に変換
+        custom_filename = custom_filename.replace('　', ' ')
         filename = custom_filename
         if not filename.endswith('.yaml'):
             filename += '.yaml'
@@ -59,6 +68,20 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
             'mechanics' in game_data_safe and 
             'weight' in game_data_safe):
             game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
+        
+        # YAMLに変換して保存する前に全角スペースを半角スペースに変換
+        # ディープコピーして全角スペースを変換
+        def replace_fullwidth_spaces(obj):
+            if isinstance(obj, str):
+                return obj.replace('　', ' ')
+            elif isinstance(obj, dict):
+                return {k: replace_fullwidth_spaces(v) for k, v in obj.items()}
+            elif isinstance(obj, list):
+                return [replace_fullwidth_spaces(item) for item in obj]
+            else:
+                return obj
+        
+        game_data_safe = replace_fullwidth_spaces(game_data_safe)
         
         # YAMLに変換して保存
         with open(file_path, 'w', encoding='utf-8') as file:
