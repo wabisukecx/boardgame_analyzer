@@ -106,14 +106,14 @@ def get_rank_complexity_value(rank_type, default_value=3.0):
 
 def calculate_rank_position_score(rank_value):
     """
-    ランキングの順位からスコアを計算する
-    スコアは順位が高い（数値が小さい）ほど高くなる
+    ランキングの順位からゲームの人気/品質スコアを計算する
+    順位が高い（数値が小さい）ほど人気/品質スコアが高くなる
     
     Parameters:
     rank_value (int or str): ランキングの順位
     
     Returns:
-    float: ランキング順位に基づくスコア（1.0〜5.0の範囲）
+    float: ランキング順位に基づく人気/品質スコア（1.0〜5.0の範囲）
     """
     try:
         # 順位を整数に変換
@@ -144,7 +144,7 @@ def calculate_rank_position_score(rank_value):
 def calculate_rank_complexity(ranks):
     """
     ランキング情報から複雑さスコアを計算する
-    ランキング種別の複雑さと順位を組み合わせて評価
+    ランキング種別の複雑さを主に考慮し、順位は二次的要素として扱う
     
     Parameters:
     ranks (list): ランキング情報のリスト
@@ -162,16 +162,16 @@ def calculate_rank_complexity(ranks):
         rank_value = rank_info.get('rank')
         
         if rank_value and rank_value != "Not Ranked":
-            # 順位からのスコア
-            position_score = calculate_rank_position_score(rank_value)
+            # 順位からの人気/品質スコア
+            popularity_score = calculate_rank_position_score(rank_value)
             
             # ランキング種別の複雑さ（基準値）
             type_complexity = get_rank_complexity_value(rank_type)
             
-            # 順位とランキング種別の両方を考慮したスコア
-            # 順位が高いほど、そのランキング種別の複雑さに近づく
-            # 例：strategygamesで上位なら高い複雑さ、partygamesで上位なら低い複雑さ
-            adjusted_score = (position_score * 0.7 + type_complexity * 0.3)
+            # 複雑さ評価は主にランキング種別に基づく
+            # 順位の影響は小さくする（20%）
+            # 高ランキングだと若干複雑さが上がる傾向を反映するが、主要因ではない
+            adjusted_score = (type_complexity * 0.8 + (popularity_score - 3.0) * 0.2)
             
             # 重み付けはランキング種別の重要度（boardgameは1.0、他は種別ごとに設定）
             weight = 1.0

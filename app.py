@@ -1,16 +1,14 @@
 import streamlit as st
 import os
 import re
-import json
-import deepdiff
-import yaml
 
 # 既存のインポート
 from bgg_api import search_games, get_game_details
 from ui_components import (
     load_css, display_game_basic_info,
     display_game_players_info, display_game_age_time_info,
-    display_game_complexity, display_learning_curve, display_data_tabs
+    display_game_complexity, display_learning_curve, display_data_tabs,
+    display_game_analysis_summary  # 新しく追加
 )
 from data_handler import save_game_data_to_yaml, search_results_to_dataframe, load_game_data_from_yaml
 from learning_curve import calculate_learning_curve
@@ -227,6 +225,17 @@ elif option == "ゲームIDで詳細情報を取得":
                 # 基本情報を表示
                 display_game_basic_info(game_details)
                 
+                # ラーニングカーブ情報を計算
+                if ('description' in game_details and 'mechanics' in game_details
+                        and 'weight' in game_details):
+                    learning_curve = calculate_learning_curve(game_details)
+                    
+                    # 評価サマリーを表示（新しく追加）
+                    display_game_analysis_summary(game_details, learning_curve)
+                    
+                    # ラーニングカーブの情報を表示
+                    display_learning_curve(learning_curve)
+                
                 # 追加の基本情報を表示
                 col1, col2 = st.columns(2)
                 
@@ -240,14 +249,6 @@ elif option == "ゲームIDで詳細情報を取得":
                 col1, col2 = st.columns(2)
                 with col1:
                     display_game_complexity(game_details)
-                
-                # ラーニングカーブ情報を計算して表示
-                if ('description' in game_details and 'mechanics' in game_details
-                        and 'weight' in game_details):
-                    learning_curve = calculate_learning_curve(game_details)
-                    
-                    # ラーニングカーブの情報を表示
-                    display_learning_curve(learning_curve)
                 
                 # ゲームの説明文を表示
                 if 'description' in game_details and game_details['description']:
@@ -288,7 +289,7 @@ elif option == "ゲームIDで詳細情報を取得":
                             )
                             
                             if success:
-                                st.success(f"ゲームデータが更新されました。YAMLファイルを最新情報で上書き保存しました。")
+                                st.success("ゲームデータが更新されました。YAMLファイルを最新情報で上書き保存しました。")
                             else:
                                 st.error(f"ファイル更新エラー: {error_msg}")
                     else:

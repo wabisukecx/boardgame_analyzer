@@ -15,8 +15,8 @@ from rank_complexity import calculate_rank_complexity
 from strategic_depth import (
     calculate_strategic_depth_improved,
     update_learning_curve_with_improved_strategic_depth,
-    estimate_decision_points,
-    estimate_interaction_complexity,
+    estimate_decision_points_improved as estimate_decision_points,
+    estimate_interaction_complexity_improved as estimate_interaction_complexity,
     calculate_rules_complexity
 )
 

@@ -331,7 +331,7 @@ def display_learning_curve(learning_curve):
             if 'rank_complexity' in learning_curve:
                 rank_complexity = f"{float(learning_curve['rank_complexity']):.2f}/5.00"
                 display_custom_metric(
-                    "ランキングに基づく複雑さ",
+                    "ゲーム種別に基づく複雑さ",
                     rank_complexity
                 )
         
@@ -420,3 +420,47 @@ def display_data_tabs(game_details):
             st.dataframe(df, use_container_width=True)
         else:
             st.info("パブリッシャー情報がありません")
+
+def display_game_analysis_summary(game_data, learning_curve):
+    """
+    ゲームデータとラーニングカーブから簡潔な評価サマリーを表示する
+    
+    Parameters:
+    game_data (dict): ゲームの詳細情報
+    learning_curve (dict): ラーニングカーブの情報
+    """
+    from game_analyzer import generate_game_summary
+    
+    st.markdown("### ゲーム評価サマリー")
+    
+    # 自動生成されたサマリーを表示
+    summary = generate_game_summary(game_data, learning_curve)
+    st.markdown(summary)
+    
+    # 複雑さと戦略性の視覚化（オプション）
+    with st.expander("複雑さと戦略性の視覚化", expanded=False):
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            # BGG重み vs 分析した複雑さ
+            bgg_weight = float(game_data.get('weight', 0))
+            rules_complexity = learning_curve.get('rules_complexity', 0)
+            
+            st.markdown("#### 複雑さ比較")
+            st.markdown(f"- BGGユーザー評価: **{bgg_weight:.2f}**/5.00")
+            st.markdown(f"- システム分析: **{rules_complexity:.2f}**/5.00")
+            
+            # 差異の計算と色分け
+            diff = rules_complexity - bgg_weight
+            if abs(diff) > 0.8:
+                color = "red" if diff > 0 else "blue"
+                st.markdown(f"<span style='color:{color};'>差異: {diff:.2f}</span>", unsafe_allow_html=True)
+        
+        with col2:
+            # 戦略深度とリプレイ性
+            strategic_depth = learning_curve.get('strategic_depth', 0)
+            replayability = learning_curve.get('replayability', 0)
+            
+            st.markdown("#### 戦略性とリプレイ性")
+            st.markdown(f"- 戦略的深さ: **{strategic_depth:.2f}**/5.00")
+            st.markdown(f"- リプレイ性: **{replayability:.2f}**/5.00")
