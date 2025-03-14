@@ -99,7 +99,7 @@ def display_game_basic_info(game_details):
     display_name = japanese_name or english_name
     
     # 見出し追加
-    st.markdown("### ゲーム基本情報")
+    st.markdown("### 基本情報")  # "ゲーム"を削除
     
     # カスタムHTMLでフォントサイズを調整して表示
     col1, col2, col3 = st.columns(3)
@@ -175,7 +175,7 @@ def display_game_age_time_info(game_details):
 
 def display_game_complexity(game_details):
     """ゲームの複雑さを表示する"""
-    st.markdown("#### ゲームの複雑さ")
+    st.markdown("#### 複雑さ")  # "ゲームの"を削除
     weight = game_details.get('weight', '不明')
     if weight != '不明':
         # 小数点第二位までに丸める
@@ -252,13 +252,6 @@ def display_learning_curve(learning_curve):
                 f"{replay_score_formatted} ({replay_display})"
             )
     
-    # 推奨プレイヤータイプを表示
-    if 'player_types' in learning_curve and learning_curve['player_types']:
-        player_types_text = ", ".join(
-            [get_player_type_display(pt) for pt in learning_curve['player_types']]
-        )
-        st.info(f"推奨プレイヤータイプ: {player_types_text}")
-    
     # 詳細分析の表示（改善版で追加された指標を含む）
     with st.expander("詳細分析", expanded=False):
         st.markdown("#### メカニクスとカテゴリの詳細指標")
@@ -334,25 +327,6 @@ def display_learning_curve(learning_curve):
                     "ゲーム種別に基づく複雑さ",
                     rank_complexity
                 )
-        
-        # 原データ表示
-        if 'bgg_weight' in learning_curve:
-            st.markdown("#### BGGデータ（参考）")
-            bgg_row1, bgg_row2 = st.columns(2)
-            with bgg_row1:
-                # 小数点第二位までに丸める
-                bgg_weight = f"{float(learning_curve['bgg_weight']):.2f}/5.00"
-                display_custom_metric(
-                    "BGG複雑さ評価（原データ）",
-                    bgg_weight
-                )
-            
-            with bgg_row2:
-                if 'bgg_rank' in learning_curve and learning_curve['bgg_rank']:
-                    display_custom_metric(
-                        "BGGランキング",
-                        f"{learning_curve['bgg_rank']}"
-                    )
 
 def display_data_tabs(game_details):
     """タブを使って詳細情報を表示する"""
@@ -431,7 +405,7 @@ def display_game_analysis_summary(game_data, learning_curve):
     """
     from game_analyzer import generate_game_summary
     
-    st.markdown("### ゲーム評価サマリー")
+    st.markdown("### 評価サマリー")  # "ゲーム"を削除
     
     # 自動生成されたサマリーを表示
     summary = generate_game_summary(game_data, learning_curve)
