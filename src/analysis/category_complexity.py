@@ -71,8 +71,13 @@ def add_missing_category(category_name, default_complexity=2.5):
         if category_name in complexity_data:
             return True
         
-        # 存在しない場合は追加
-        complexity_data[category_name] = default_complexity
+        # 存在しない場合は追加 - 新しい構造に合わせて辞書形式で追加
+        complexity_data[category_name] = {
+            'complexity': default_complexity,
+            'strategic_value': 3.0,  # デフォルト値
+            'interaction_value': 3.0,  # デフォルト値
+            'description': f"自動追加されたカテゴリ（デフォルト値）"
+        }
         
         # 保存
         return save_categories_data(complexity_data)
@@ -96,7 +101,16 @@ def get_category_complexity(category_name, default_value=2.5):
     
     # カテゴリが存在するか確認
     if category_name in complexity_data:
-        return complexity_data[category_name]
+        # 新しい構造: complexity_data[category_name] はディクショナリで、
+        # その中に 'complexity' キーがある
+        if isinstance(complexity_data[category_name], dict) and 'complexity' in complexity_data[category_name]:
+            return complexity_data[category_name]['complexity']
+        # 後方互換性のため、直接値が格納されている場合もサポート
+        elif isinstance(complexity_data[category_name], (int, float)):
+            return complexity_data[category_name]
+        # どちらでもない場合はデフォルト値を返す
+        else:
+            return default_value
     
     # 存在しない場合は追加して保存
     add_missing_category(category_name, default_value)
@@ -137,41 +151,24 @@ def initialize_categories_data():
     if not os.path.exists(CATEGORIES_DATA_FILE) or os.path.getsize(CATEGORIES_DATA_FILE) == 0:
         # サンプルデータ
         sample_data = {
-            "Abstract Strategy": 3.2,
-            "Adventure": 3.5,
-            "Animals": 1.8,
-            "Area Control / Area Influence": 4.2,
-            "Card Game": 2.5,
-            "Children's Game": 1.0,
-            "City Building": 3.7,
-            "Civilization": 4.5,
-            "Deduction": 3.3,
-            "Dice": 2.0,
-            "Economic": 4.0,
-            "Educational": 2.0,
-            "Family Game": 2.0,
-            "Fantasy": 3.0,
-            "Farming": 3.3,
-            "Fighting": 3.0,
-            "Historical": 3.8,
-            "Horror": 3.2,
-            "Medieval": 3.5,
-            "Memory": 1.5,
-            "Miniatures": 3.7,
-            "Multiplayer Solitaire": 2.7,
-            "Mythology": 3.3,
-            "Negotiation": 3.8,
-            "Party Game": 1.7,
-            "Political": 4.0,
-            "Puzzle": 2.8,
-            "Racing": 2.3,
-            "Real-time": 3.0,
-            "Science Fiction": 3.5,
-            "Strategy": 4.2,
-            "Territory Building": 3.8,
-            "Trading": 3.0,
-            "Wargame": 4.5,
-            "Word Game": 2.2
+            "Abstract Strategy": {
+                'complexity': 3.2,
+                'strategic_value': 3.5,
+                'interaction_value': 2.0,
+                'description': "抽象的なルールによる純粋な戦略。テーマよりもメカニクスが重視され、計算的思考が求められる。"
+            },
+            "Adventure": {
+                'complexity': 3.5,
+                'strategic_value': 3.0,
+                'interaction_value': 3.5,
+                'description': "冒険的要素と戦略のバランス。物語進行とリスク管理の両立が求められる。"
+            },
+            "Animals": {
+                'complexity': 1.8,
+                'strategic_value': 2.7,
+                'interaction_value': 3.0,
+                'description': "動物をテーマにしたゲーム。自然界の行動パターンや生態系を模したメカニクスを含む。"
+            },
         }
         save_categories_data(sample_data)
 

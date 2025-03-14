@@ -1,275 +1,153 @@
 """
-戦略深度計算モジュール - YAMLベースのデータ管理
+戦略深度計算モジュール - 既存のYAMLデータを活用
 """
 
 import os
-import yaml
 import math
-from src.analysis.mechanic_complexity import get_complexity
+from src.analysis.mechanic_complexity import load_mechanics_data, get_complexity
+from src.analysis.category_complexity import load_categories_data
 
-# YAMLファイルのパス
-MECHANIC_STRATEGIC_VALUES_FILE = "config/mechanic_strategic_values.yaml"
-CATEGORY_STRATEGIC_VALUES_FILE = "config/category_strategic_values.yaml"
-
-# YAML管理関数
-def load_mechanic_strategic_values():
-    """
-    メカニクスの戦略的価値と相互作用価値をYAMLから読み込む
-    
-    Returns:
-    dict: メカニクス名をキー、値をプロパティ辞書とする辞書
-    """
-    try:
-        # ファイルが存在しない場合は空の辞書を返す
-        if not os.path.exists(MECHANIC_STRATEGIC_VALUES_FILE):
-            return {}
-        
-        with open(MECHANIC_STRATEGIC_VALUES_FILE, 'r', encoding='utf-8') as file:
-            strategic_data = yaml.safe_load(file)
-            
-        # Noneの場合は空の辞書を返す
-        if strategic_data is None:
-            return {}
-            
-        return strategic_data
-    except Exception as e:
-        print(f"メカニクス戦略データの読み込みエラー: {str(e)}")
-        return {}
-
-def load_category_strategic_values():
-    """
-    カテゴリの戦略的価値と相互作用価値をYAMLから読み込む
-    
-    Returns:
-    dict: カテゴリ名をキー、値をプロパティ辞書とする辞書
-    """
-    try:
-        # ファイルが存在しない場合は空の辞書を返す
-        if not os.path.exists(CATEGORY_STRATEGIC_VALUES_FILE):
-            return {}
-        
-        with open(CATEGORY_STRATEGIC_VALUES_FILE, 'r', encoding='utf-8') as file:
-            strategic_data = yaml.safe_load(file)
-            
-        # Noneの場合は空の辞書を返す
-        if strategic_data is None:
-            return {}
-            
-        return strategic_data
-    except Exception as e:
-        print(f"カテゴリ戦略データの読み込みエラー: {str(e)}")
-        return {}
-
-def save_mechanic_strategic_values(strategic_data):
-    """
-    メカニクスの戦略的価値データをYAMLファイルに保存する
-    
-    Parameters:
-    strategic_data (dict): メカニクス名をキー、値をプロパティ辞書とする辞書
-    
-    Returns:
-    bool: 保存が成功したかどうか
-    """
-    try:
-        with open(MECHANIC_STRATEGIC_VALUES_FILE, 'w', encoding='utf-8') as file:
-            yaml.dump(strategic_data, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
-        return True
-    except Exception as e:
-        print(f"メカニクス戦略データの保存エラー: {str(e)}")
-        return False
-
-def save_category_strategic_values(strategic_data):
-    """
-    カテゴリの戦略的価値データをYAMLファイルに保存する
-    
-    Parameters:
-    strategic_data (dict): カテゴリ名をキー、値をプロパティ辞書とする辞書
-    
-    Returns:
-    bool: 保存が成功したかどうか
-    """
-    try:
-        with open(CATEGORY_STRATEGIC_VALUES_FILE, 'w', encoding='utf-8') as file:
-            yaml.dump(strategic_data, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
-        return True
-    except Exception as e:
-        print(f"カテゴリ戦略データの保存エラー: {str(e)}")
-        return False
-
-def add_missing_mechanic(mechanic_name, strategic_value=3.0, interaction_value=3.0):
-    """
-    存在しないメカニクスをYAMLファイルに追加する
-    
-    Parameters:
-    mechanic_name (str): 追加するメカニクス名
-    strategic_value (float): 戦略的価値のデフォルト値
-    interaction_value (float): 相互作用価値のデフォルト値
-    
-    Returns:
-    bool: 追加が成功したかどうか
-    """
-    try:
-        # 現在のデータを読み込む
-        strategic_data = load_mechanic_strategic_values()
-        
-        # 既に存在する場合は何もしない
-        if mechanic_name in strategic_data:
-            return True
-        
-        # 存在しない場合は追加
-        strategic_data[mechanic_name] = {
-            "strategic_value": strategic_value,
-            "interaction_value": interaction_value,
-            "description": f"自動追加されたメカニクス（デフォルト値）"
-        }
-        
-        # 保存
-        return save_mechanic_strategic_values(strategic_data)
-    except Exception as e:
-        print(f"メカニクスの追加エラー: {str(e)}")
-        return False
-
-def add_missing_category(category_name, strategic_value=3.0, interaction_value=3.0):
-    """
-    存在しないカテゴリをYAMLファイルに追加する
-    
-    Parameters:
-    category_name (str): 追加するカテゴリ名
-    strategic_value (float): 戦略的価値のデフォルト値
-    interaction_value (float): 相互作用価値のデフォルト値
-    
-    Returns:
-    bool: 追加が成功したかどうか
-    """
-    try:
-        # 現在のデータを読み込む
-        strategic_data = load_category_strategic_values()
-        
-        # 既に存在する場合は何もしない
-        if category_name in strategic_data:
-            return True
-        
-        # 存在しない場合は追加
-        strategic_data[category_name] = {
-            "strategic_value": strategic_value,
-            "interaction_value": interaction_value,
-            "description": f"自動追加されたカテゴリ（デフォルト値）"
-        }
-        
-        # 保存
-        return save_category_strategic_values(strategic_data)
-    except Exception as e:
-        print(f"カテゴリの追加エラー: {str(e)}")
-        return False
-
-def get_mechanic_strategic_value(mechanic_name):
+def get_mechanic_strategic_value(mechanic_name, default_value=3.0):
     """
     指定されたメカニクスの戦略的価値を取得する
-    存在しない場合はデフォルト値を返し、自動的にデータベースに追加する
     
     Parameters:
     mechanic_name (str): メカニクス名
+    default_value (float): 存在しない場合のデフォルト値
     
     Returns:
     float: 戦略的価値（1.0〜5.0の範囲）
     """
-    strategic_data = load_mechanic_strategic_values()
+    mechanics_data = load_mechanics_data()
     
     # メカニクスが存在するか確認
-    if mechanic_name in strategic_data:
-        return strategic_data[mechanic_name].get("strategic_value", 3.0)
+    if mechanic_name in mechanics_data:
+        # 辞書形式でstrategic_valueを格納している場合
+        if isinstance(mechanics_data[mechanic_name], dict) and "strategic_value" in mechanics_data[mechanic_name]:
+            return mechanics_data[mechanic_name]["strategic_value"]
+        else:
+            # 複雑さの値に基づいて戦略的価値を推定
+            complexity = mechanics_data[mechanic_name] if isinstance(mechanics_data[mechanic_name], (int, float)) else 3.0
+            # 複雑さに基づく戦略的価値の推定（複雑なほど高い戦略性）
+            estimated_value = min(5.0, complexity * 0.9)
+            return max(1.0, estimated_value)
     
-    # 存在しない場合は追加して保存
-    add_missing_mechanic(mechanic_name)
-    
-    return 3.0  # デフォルト値: 3.0
+    return default_value
 
-def get_mechanic_interaction_value(mechanic_name):
+def get_mechanic_interaction_value(mechanic_name, default_value=3.0):
     """
     指定されたメカニクスのプレイヤー間相互作用の値を取得する
-    存在しない場合はデフォルト値を返し、自動的にデータベースに追加する
     
     Parameters:
     mechanic_name (str): メカニクス名
+    default_value (float): 存在しない場合のデフォルト値
     
     Returns:
     float: 相互作用の値（1.0〜5.0の範囲）
     """
-    strategic_data = load_mechanic_strategic_values()
+    mechanics_data = load_mechanics_data()
     
     # メカニクスが存在するか確認
-    if mechanic_name in strategic_data:
-        return strategic_data[mechanic_name].get("interaction_value", 3.0)
+    if mechanic_name in mechanics_data:
+        # 辞書形式でinteraction_valueを格納している場合
+        if isinstance(mechanics_data[mechanic_name], dict) and "interaction_value" in mechanics_data[mechanic_name]:
+            return mechanics_data[mechanic_name]["interaction_value"]
+        else:
+            # 特定のメカニクスは相互作用が高い傾向がある
+            high_interaction_mechanics = [
+                'Trading', 'Negotiation', 'Auction/Bidding', 'Take That', 
+                'Betting and Bluffing', 'Player Elimination'
+            ]
+            if mechanic_name in high_interaction_mechanics:
+                return 4.5
+            
+            medium_interaction_mechanics = [
+                'Area Control', 'Team-Based Game', 'Cooperative Game', 
+                'Simultaneous Action Selection'
+            ]
+            if mechanic_name in medium_interaction_mechanics:
+                return 3.8
+            
+            # それ以外は中程度の相互作用
+            return default_value
     
-    # 存在しない場合は追加して保存
-    add_missing_mechanic(mechanic_name)
-    
-    return 3.0  # デフォルト値: 3.0
+    return default_value
 
-def get_category_strategic_value(category_name):
+def get_category_strategic_value(category_name, default_value=3.0):
     """
     指定されたカテゴリの戦略的価値を取得する
-    存在しない場合はデフォルト値を返し、自動的にデータベースに追加する
     
     Parameters:
     category_name (str): カテゴリ名
+    default_value (float): 存在しない場合のデフォルト値
     
     Returns:
     float: 戦略的価値（1.0〜5.0の範囲）
     """
-    strategic_data = load_category_strategic_values()
+    categories_data = load_categories_data()
     
     # カテゴリが存在するか確認
-    if category_name in strategic_data:
-        return strategic_data[category_name].get("strategic_value", 3.0)
+    if category_name in categories_data:
+        # 辞書形式でstrategic_valueを格納している場合
+        if isinstance(categories_data[category_name], dict) and "strategic_value" in categories_data[category_name]:
+            return categories_data[category_name]["strategic_value"]
+        else:
+            # 複雑さの値に基づいて戦略的価値を推定
+            complexity = categories_data[category_name] if isinstance(categories_data[category_name], (int, float)) else 3.0
+            # 複雑さに基づく戦略的価値の推定（複雑なほど高い戦略性）
+            estimated_value = min(5.0, complexity * 0.85 + 0.5)
+            return max(1.0, estimated_value)
     
-    # 存在しない場合は追加して保存
-    add_missing_category(category_name)
+    # 既知の高戦略カテゴリの場合
+    high_strategy_categories = [
+        'Strategy', 'Economic', 'Civilization', 'Wargame', 'Abstract Strategy', 'Political'
+    ]
+    if category_name in high_strategy_categories:
+        return 4.5
     
-    return 3.0  # デフォルト値: 3.0
+    # 既知の低戦略カテゴリの場合
+    low_strategy_categories = [
+        'Children\'s Game', 'Party Game', 'Dice', 'Memory'
+    ]
+    if category_name in low_strategy_categories:
+        return 2.0
+    
+    return default_value
 
-def get_category_interaction_value(category_name):
+def get_category_interaction_value(category_name, default_value=3.0):
     """
     指定されたカテゴリのプレイヤー間相互作用の値を取得する
-    存在しない場合はデフォルト値を返し、自動的にデータベースに追加する
     
     Parameters:
     category_name (str): カテゴリ名
+    default_value (float): 存在しない場合のデフォルト値
     
     Returns:
     float: 相互作用の値（1.0〜5.0の範囲）
     """
-    strategic_data = load_category_strategic_values()
+    categories_data = load_categories_data()
     
     # カテゴリが存在するか確認
-    if category_name in strategic_data:
-        return strategic_data[category_name].get("interaction_value", 3.0)
+    if category_name in categories_data:
+        # 辞書形式でinteraction_valueを格納している場合
+        if isinstance(categories_data[category_name], dict) and "interaction_value" in categories_data[category_name]:
+            return categories_data[category_name]["interaction_value"]
     
-    # 存在しない場合は追加して保存
-    add_missing_category(category_name)
+    # 既知の高相互作用カテゴリの場合
+    high_interaction_categories = [
+        'Negotiation', 'Political', 'Bluffing', 'Party Game', 'Fighting'
+    ]
+    if category_name in high_interaction_categories:
+        return 4.5
     
-    return 3.0  # デフォルト値: 3.0
-
-# YAMLファイルの初期化を行う関数
-def initialize_strategic_values():
-    """
-    YAMLファイルが存在しない場合、初期データを作成する
-    """
-    # メカニクス戦略データの初期化
-    if not os.path.exists(MECHANIC_STRATEGIC_VALUES_FILE) or os.path.getsize(MECHANIC_STRATEGIC_VALUES_FILE) == 0:
-        print("メカニクス戦略データのYAMLファイルを初期化します...")
-        # 初期データは既に別途作成されている前提
-        # 空ファイルを作成して、今後の追加に備える
-        save_mechanic_strategic_values({})
+    # 既知の低相互作用カテゴリの場合
+    low_interaction_categories = [
+        'Abstract Strategy', 'Puzzle', 'Solo / Solitaire Game'
+    ]
+    if category_name in low_interaction_categories:
+        return 2.0
     
-    # カテゴリ戦略データの初期化
-    if not os.path.exists(CATEGORY_STRATEGIC_VALUES_FILE) or os.path.getsize(CATEGORY_STRATEGIC_VALUES_FILE) == 0:
-        print("カテゴリ戦略データのYAMLファイルを初期化します...")
-        # 空ファイルを作成して、今後の追加に備える
-        save_category_strategic_values({})
-
-# 初期化を実行
-initialize_strategic_values()
+    return default_value
 
 # プレイ時間と複雑さの関係を評価する関数
 def evaluate_playtime_complexity(game_data):

@@ -72,8 +72,13 @@ def add_missing_mechanic(mechanic_name, default_complexity=2.5):
         if mechanic_name in complexity_data:
             return True
         
-        # 存在しない場合は追加
-        complexity_data[mechanic_name] = default_complexity
+        # 存在しない場合は追加 - 新しい構造に合わせて辞書形式で追加
+        complexity_data[mechanic_name] = {
+            'complexity': default_complexity,
+            'strategic_value': 3.0,  # デフォルト値
+            'interaction_value': 3.0,  # デフォルト値
+            'description': f"自動追加されたメカニクス（デフォルト値）"
+        }
         
         # 保存
         return save_mechanics_data(complexity_data)
@@ -97,7 +102,16 @@ def get_complexity(mechanic_name, default_value=2.5):
     
     # メカニクスが存在するか確認
     if mechanic_name in complexity_data:
-        return complexity_data[mechanic_name]
+        # 新しい構造: complexity_data[mechanic_name] はディクショナリで、
+        # その中に 'complexity' キーがある
+        if isinstance(complexity_data[mechanic_name], dict) and 'complexity' in complexity_data[mechanic_name]:
+            return complexity_data[mechanic_name]['complexity']
+        # 後方互換性のため、直接値が格納されている場合もサポート
+        elif isinstance(complexity_data[mechanic_name], (int, float)):
+            return complexity_data[mechanic_name]
+        # どちらでもない場合はデフォルト値を返す
+        else:
+            return default_value
     
     # 存在しない場合は追加して保存
     add_missing_mechanic(mechanic_name, default_value)
@@ -110,16 +124,26 @@ def initialize_mechanics_data():
     メカニクスデータが存在しない場合、初期データを作成する
     """
     if not os.path.exists(MECHANICS_DATA_FILE) or os.path.getsize(MECHANICS_DATA_FILE) == 0:
-        # サンプルデータを現在のCOMPLEXITY_BY_MECHANICから取得
+        # サンプルデータ
         sample_data = {
-            "Resource Management": 3.2,
-            "Engine Building": 3.8,
-            "Income": 2.3,
-            # 他のメカニクスデータ...
-            'Turn Order: Progressive': 2.3,
-            'Turn Order: Claim Action': 2.6,
-            'Turn Order: Pass Order': 2.7,
-            # 残りのデータ...
+            "Resource Management": {
+                'complexity': 3.8,
+                'strategic_value': 4.0,
+                'interaction_value': 2.5,
+                'description': "資源管理による戦略的深さ"
+            },
+            "Engine Building": {
+                'complexity': 4.7,
+                'strategic_value': 5.0,
+                'interaction_value': 2.0,
+                'description': "戦略的に非常に深いが、相互作用は比較的少ない"
+            },
+            "Worker Placement": {
+                'complexity': 4.2,
+                'strategic_value': 5.0,
+                'interaction_value': 3.5,
+                'description': "高い戦略性と中程度の相互作用"
+            },
         }
         save_mechanics_data(sample_data)
 

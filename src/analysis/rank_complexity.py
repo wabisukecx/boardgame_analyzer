@@ -72,8 +72,13 @@ def add_missing_rank_type(rank_type, default_complexity=3.0):
         if rank_type in complexity_data:
             return True
         
-        # 存在しない場合は追加
-        complexity_data[rank_type] = default_complexity
+        # 存在しない場合は追加 - 新しい構造に合わせて辞書形式で追加
+        complexity_data[rank_type] = {
+            'complexity': default_complexity,
+            'strategic_value': 3.5,  # デフォルト値
+            'interaction_value': 3.2,  # デフォルト値
+            'description': f"自動追加されたランキング種別（デフォルト値）"
+        }
         
         # 保存
         return save_rank_complexity_data(complexity_data)
@@ -97,7 +102,16 @@ def get_rank_complexity_value(rank_type, default_value=3.0):
     
     # ランキング種別が存在するか確認
     if rank_type in complexity_data:
-        return complexity_data[rank_type]
+        # 新しい構造: complexity_data[rank_type] はディクショナリで、
+        # その中に 'complexity' キーがある
+        if isinstance(complexity_data[rank_type], dict) and 'complexity' in complexity_data[rank_type]:
+            return complexity_data[rank_type]['complexity']
+        # 後方互換性のため、直接値が格納されている場合もサポート
+        elif isinstance(complexity_data[rank_type], (int, float)):
+            return complexity_data[rank_type]
+        # どちらでもない場合はデフォルト値を返す
+        else:
+            return default_value
     
     # 存在しない場合は追加して保存
     add_missing_rank_type(rank_type, default_value)
@@ -206,15 +220,24 @@ def initialize_rank_complexity_data():
     if not os.path.exists(RANK_COMPLEXITY_FILE) or os.path.getsize(RANK_COMPLEXITY_FILE) == 0:
         # サンプルデータ - ランキング種別ごとの複雑さ基準値
         sample_data = {
-            "boardgame": 3.0,       # 総合ランキング（標準）
-            "strategygames": 4.2,    # 戦略ゲーム（複雑）
-            "familygames": 2.3,      # ファミリーゲーム（やや簡単）
-            "partygames": 1.8,       # パーティーゲーム（簡単）
-            "thematic": 3.5,         # テーマティックゲーム（やや複雑）
-            "wargames": 4.5,         # ウォーゲーム（非常に複雑）
-            "abstracts": 3.7,        # 抽象ゲーム（やや複雑）
-            "childrensgames": 1.5,   # 子供向けゲーム（簡単）
-            "customizable": 3.8      # カスタマイズ可能なゲーム（やや複雑）
+            "boardgame": {
+                'complexity': 3.0,
+                'strategic_value': 3.5,
+                'interaction_value': 3.2,
+                'description': "総合ボードゲームランキング。一般的な複雑さを持つゲームが中心となり、多様なメカニクスとテーマを包含する。"
+            },
+            "strategygames": {
+                'complexity': 4.2,
+                'strategic_value': 4.8,
+                'interaction_value': 3.8,
+                'description': "戦略ゲームのランキング。複雑な意思決定と長期的計画が重視され、深い戦略的思考を要求するゲームが対象。"
+            },
+            "familygames": {
+                'complexity': 2.3,
+                'strategic_value': 2.8,
+                'interaction_value': 3.5,
+                'description': "ファミリーゲームのランキング。やや簡単なルールで幅広い年齢層が楽しめる、アクセシビリティの高いゲームが中心。"
+            },
         }
         save_rank_complexity_data(sample_data)
 
