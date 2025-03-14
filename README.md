@@ -21,6 +21,8 @@ BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析
 - データ比較機能: 既存データと新規取得データの自動比較
 - カテゴリ分析: ゲームカテゴリに基づく複雑さの評価
 - ランキング分析: BGGランキング種別と順位に基づく評価
+- 戦略深度評価: 意思決定の質と重みに基づく戦略性の分析
+- プレイヤー相互作用分析: ゲームにおけるプレイヤー間の相互作用の評価
 
 ## インストール方法
 
@@ -51,7 +53,7 @@ pip install streamlit pandas requests pyyaml deepdiff
 streamlit run app.py
 ```
 
-ブラウザで自動的に開かれるアプリケーションにアクセスします（通常は <http://localhost:8501）>
+ブラウザで自動的に開かれるアプリケーションにアクセスします（通常は <http://localhost:8501>）
 
 ## アプリの使い方
 
@@ -101,6 +103,8 @@ streamlit run app.py
 - ランキング情報: BGGでの種別ごとのランキングと順位に基づく評価
 - ランキング種別の複雑さ: 各ランキング種別（戦略ゲーム、ファミリーゲームなど）の特性に基づく複雑さ
 - リプレイ性: ゲームの再プレイ価値
+- メカニクスの戦略的価値: 各メカニクスが持つ戦略的深度への貢献度
+- プレイヤー相互作用値: メカニクスとカテゴリが促進するプレイヤー間の相互作用の度合い
 
 ### 分析結果の指標
 
@@ -120,23 +124,27 @@ streamlit run app.py
 
 ## 複雑さデータのカスタマイズ
 
-本アプリは、以下の3つのYAMLファイルを使用して複雑さの評価を行います：
+本アプリは、以下の5つのYAMLファイルを使用して複雑さの評価を行います：
 
 - mechanics_data.yaml: メカニクス（ゲームの仕組み）ごとの複雑さ
 - categories_data.yaml: カテゴリ（ゲームのテーマや種類）ごとの複雑さ
 - rank_complexity.yaml: ランキング種別ごとの複雑さ
+- mechanic_strategic_values.yaml: メカニクスの戦略的価値と相互作用値
+- category_strategic_values.yaml: カテゴリの戦略的価値と相互作用値
 
 これらのファイルは手動で編集できるため、実際のゲーム体験に基づいてカスタマイズすることで、より正確な分析が可能になります。初回起動時に基本データが自動生成され、新しいメカニクスやカテゴリが見つかると自動的に追加されます。
 
 ### 複雑さデータファイルの使い方と注意点
 
-本アプリは3つのYAMLファイル（mechanics_data.yaml、categories_data.yaml、rank_complexity.yaml）を使用して、ボードゲームの複雑さを評価します。これらのファイルを適切に管理することで、より正確な分析結果を得ることができます。
+本アプリは上記のYAMLファイルを使用して、ボードゲームの複雑さを評価します。これらのファイルを適切に管理することで、より正確な分析結果を得ることができます。
 
 #### ファイルの役割
 
 - mechanics_data.yaml: ゲームのメカニクス（ルールの仕組み）ごとの複雑さを定義
 - categories_data.yaml: ゲームのカテゴリ（テーマや種類）ごとの複雑さを定義
 - rank_complexity.yaml: BGGのランキング種別（戦略ゲーム、ファミリーゲームなど）ごとの複雑さを定義
+- mechanic_strategic_values.yaml: メカニクスの戦略性と相互作用の価値を定義
+- category_strategic_values.yaml: カテゴリの戦略性と相互作用の価値を定義
 
 #### 編集時の注意点
 
@@ -214,31 +222,44 @@ streamlit run app.py
 - ランキング情報と発行年に基づく長期的人気の考慮
 - 特定のリプレイ性を高めるメカニクスへの重み付け調整
 
-## ファイル構成
+## ディレクトリ構成
 
-- app.py - メインアプリケーション（Streamlit UI）
-- bgg_api.py - BoardGameGeek APIとの通信を行う関数
-- data_handler.py - データ保存・変換を扱う関数
-- learning_curve.py - 学習曲線分析のロジック
-- mechanic_complexity.py - メカニクスの複雑さ評価を扱う関数
-- category_complexity.py - カテゴリの複雑さ評価を扱う関数
-- rank_complexity.py - ランキング種別の複雑さ評価を扱う関数
-- strategic_depth.py - 戦略深度計算の改善機能
-- ui_components.py - UIコンポーネント関数
-- rate_limiter.py - API呼び出しのレート制限と再試行機能
-- mechanics_data.yaml - メカニクスの複雑さデータ
-- categories_data.yaml - カテゴリの複雑さデータ
-- rank_complexity.yaml - ランキング種別の複雑さデータ
-- mechanic_strategic_values.yaml - メカニクスの戦略的価値データ
-- category_strategic_values.yaml - カテゴリの戦略的価値データ
-- requirements.txt - 必要なパッケージのリスト
+```bash
+boardgame-analyzer/
+├── app.py                         # メインアプリケーション
+├── requirements.txt               # 必要なパッケージのリスト
+├── config/                        # 設定ファイル
+│   ├── mechanics_data.yaml        # メカニクスの複雑さデータ
+│   ├── categories_data.yaml       # カテゴリの複雑さデータ
+│   ├── rank_complexity.yaml       # ランキング種別の複雑さデータ
+│   ├── mechanic_strategic_values.yaml  # メカニクスの戦略的価値データ
+│   └── category_strategic_values.yaml  # カテゴリの戦略的価値データ
+├── game_data/                     # 保存されたゲームデータ
+│   └── [ゲームID]_[ゲーム名].yaml  # 各ゲームのデータファイル
+├── src/                           # ソースコード
+│   ├── api/                       # API関連
+│   │   ├── bgg_api.py             # BoardGameGeek API関連の関数
+│   │   └── rate_limiter.py        # APIレート制限と再試行機能
+│   ├── data/                      # データ処理
+│   │   └── data_handler.py        # データ保存・変換関数
+│   └── analysis/                  # 分析関連
+│       ├── learning_curve.py      # 学習曲線分析ロジック
+│       ├── game_analyzer.py       # ゲーム分析サマリー生成
+│       ├── mechanic_complexity.py # メカニクスの複雑さ評価
+│       ├── category_complexity.py # カテゴリの複雑さ評価
+│       ├── rank_complexity.py     # ランキング種別の複雑さ評価
+│       └── strategic_depth.py     # 戦略深度計算機能
+└── ui/                            # UI関連
+    └── ui_components.py           # UIコンポーネント関数
+```
 
 ## API制限と最適化
 
 - BGG APIへのリクエストはレート制限され、キャッシュされます
 - リクエスト間の待機時間を自動調整して429エラーを回避
-- データはTTL（Time To Live）キャッシュでローカルに保存され、効率的なAPI利用を実現
+- TTL（Time To Live）キャッシュによる効率的なAPI利用を実現
 - エラー発生時の自動再試行機能により信頼性を向上
+- ジッター（ばらつき）を追加したリクエスト間隔で集中アクセスを回避
 
 ## 注意事項
 
