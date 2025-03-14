@@ -101,10 +101,10 @@ learning_analysis:
   bgg_rank: 574
   bgg_weight: 2.2879
   category_complexity: 4.15
-  decision_points: 3.243333333333333
-  initial_barrier: 3.93
+  decision_points: 3.4133333333333336
+  initial_barrier: 3.17
   interaction_complexity: 4.65
-  learning_curve_type: moderate_then_shallow
+  learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.72
   mechanics_count: 11
@@ -122,7 +122,7 @@ learning_analysis:
   rank_complexity: 2.75
   replayability: 4.5
   rules_complexity: 3.170610303030303
-  strategic_depth: 3.08
+  strategic_depth: 3.14
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 1995
 mechanics:

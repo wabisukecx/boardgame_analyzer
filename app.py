@@ -2,15 +2,15 @@ import streamlit as st
 import os
 import re
 
-from bgg_api import search_games, get_game_details
-from ui_components import (
+from src.api.bgg_api import search_games, get_game_details
+from ui.ui_components import (
     load_css, display_game_basic_info,
     display_game_players_info, display_game_age_time_info,
     display_game_complexity, display_learning_curve, display_data_tabs,
     display_game_analysis_summary, display_custom_metric
 )
-from data_handler import save_game_data_to_yaml, search_results_to_dataframe, load_game_data_from_yaml
-from learning_curve import calculate_learning_curve
+from src.data.data_handler import save_game_data_to_yaml, search_results_to_dataframe, load_game_data_from_yaml
+from src.analysis.learning_curve import calculate_learning_curve
 
 # YAMLファイルからゲームIDとタイトルを抽出する関数
 def get_yaml_game_list():
