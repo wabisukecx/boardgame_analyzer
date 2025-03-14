@@ -2,12 +2,12 @@ import streamlit as st
 import pandas as pd
 from src.analysis.game_analyzer import generate_game_summary
 from src.analysis.learning_curve import (
-    get_player_type_display, 
+    get_player_type_display,
     get_mastery_time_display, get_replayability_display,
     get_curve_type_display
 )
 
-# カスタムスタイル用のCSSを定義
+
 def load_css():
     """アプリケーションで使用するカスタムCSSをロードする"""
     st.markdown("""
@@ -60,7 +60,6 @@ def load_css():
     """, unsafe_allow_html=True)
 
 
-# カスタムメトリック表示関数
 def display_custom_metric(label, value):
     """カスタムスタイルのメトリックを表示する"""
     st.markdown(f"""
@@ -71,7 +70,6 @@ def display_custom_metric(label, value):
     """, unsafe_allow_html=True)
 
 
-# サムネイル表示関数
 def display_game_thumbnail(thumbnail_url, game_name):
     """ゲームのサムネイル画像を表示する"""
     if thumbnail_url:
@@ -92,7 +90,6 @@ def display_game_thumbnail(thumbnail_url, game_name):
         """, unsafe_allow_html=True)
 
 
-# ゲーム詳細表示関数
 def display_game_basic_info(game_details):
     """ゲームの基本情報を表示する"""
     # 日本語名を取得
@@ -103,7 +100,7 @@ def display_game_basic_info(game_details):
     display_name = japanese_name or english_name
     
     # 見出し追加
-    st.markdown("### 基本情報")  # "ゲーム"を削除
+    st.markdown("### 基本情報")
     
     # カスタムHTMLでフォントサイズを調整して表示
     col1, col2, col3 = st.columns(3)
@@ -176,6 +173,7 @@ def display_game_age_time_info(game_details):
         playtime = f"{playtime}分"
     display_custom_metric("プレイ時間", playtime)
 
+
 def display_game_complexity(game_details, learning_curve=None):
     """ゲームの複雑さを表示する"""
     st.markdown("#### 複雑さ")
@@ -201,6 +199,7 @@ def display_game_complexity(game_details, learning_curve=None):
             # 学習曲線データがない場合でも空のスペースを確保（レイアウト維持のため）
             display_custom_metric("システム分析", "計算中...")
 
+
 def display_system_complexity(col, learning_curve):
     """システム分析（ルールの複雑さ）を表示する"""
     if learning_curve and 'rules_complexity' in learning_curve:
@@ -209,13 +208,14 @@ def display_system_complexity(col, learning_curve):
         with col:
             display_custom_metric("システム分析", system_analysis)
 
+
 def display_learning_curve(learning_curve, game_details=None):
     """
     ラーニングカーブの情報を表示する（カテゴリとランキング情報を活用した改善版）
     
     Parameters:
-    learning_curve (dict): ラーニングカーブの情報
-    game_details (dict, optional): ゲームの詳細情報（BGG複雑さを取得するため）
+        learning_curve (dict): ラーニングカーブの情報
+        game_details (dict, optional): ゲームの詳細情報（BGG複雑さを取得するため）
     """
     st.markdown("### ラーニングカーブ分析")
     
@@ -235,6 +235,7 @@ def display_learning_curve(learning_curve, game_details=None):
             display_custom_metric("学習曲線タイプ", curve_type_display)
         else:
             display_custom_metric("学習曲線タイプ", "計算中...")
+
 
 def display_data_tabs(game_details):
     """タブを使って詳細情報を表示する"""
@@ -303,22 +304,22 @@ def display_data_tabs(game_details):
         else:
             st.info("パブリッシャー情報がありません")
 
+
 def display_game_analysis_summary(game_data, learning_curve):
     """
     ゲームデータとラーニングカーブから簡潔な評価サマリーを表示する
     
     Parameters:
-    game_data (dict): ゲームの詳細情報
-    learning_curve (dict): ラーニングカーブの情報
+        game_data (dict): ゲームの詳細情報
+        learning_curve (dict): ラーニングカーブの情報
     """
-    
-    st.markdown("### 評価サマリー")  # "ゲーム"を削除
+    st.markdown("### 評価サマリー")
     
     # 自動生成されたサマリーを表示
     summary = generate_game_summary(game_data, learning_curve)
     st.markdown(summary)
     
-    # 複雑さと戦略性の視覚化（オプション）
+    # 複雑さと戦略性の視覚化
     with st.expander("複雑さと戦略性の視覚化", expanded=False):
         col1, col2 = st.columns(2)
         
