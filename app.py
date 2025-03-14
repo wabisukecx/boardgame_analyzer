@@ -9,16 +9,18 @@ from ui.ui_components import (
     display_game_complexity, display_learning_curve, display_data_tabs,
     display_game_analysis_summary, display_custom_metric
 )
-from src.data.data_handler import save_game_data_to_yaml, search_results_to_dataframe, load_game_data_from_yaml
+from src.data.data_handler import (
+    save_game_data_to_yaml, search_results_to_dataframe, load_game_data_from_yaml
+)
 from src.analysis.learning_curve import calculate_learning_curve
 
-# YAMLファイルからゲームIDとタイトルを抽出する関数
+
 def get_yaml_game_list():
     """
     game_dataフォルダ内のYAMLファイルを走査し、ゲームIDとタイトルのリストを返す
     
     Returns:
-    list: (ゲームID, ファイル名, 表示名)のタプルのリスト
+        list: (ゲームID, ファイル名, 表示名)のタプルのリスト
     """
     game_list = []
     # game_dataフォルダが存在するか確認
@@ -40,17 +42,17 @@ def get_yaml_game_list():
     game_list.sort(key=lambda x: int(x[0]))
     return game_list
 
-# データの内容を比較する関数
+
 def compare_game_data(old_data, new_data):
     """
     2つのゲームデータを比較し、重要な変更があるかどうかと変更内容を返す
     
     Parameters:
-    old_data (dict): 既存のゲームデータ
-    new_data (dict): 新しく取得したゲームデータ
+        old_data (dict): 既存のゲームデータ
+        new_data (dict): 新しく取得したゲームデータ
     
     Returns:
-    tuple: (変更があるかどうか, 変更の説明)
+        tuple: (変更があるかどうか, 変更の説明)
     """
     if not old_data or not new_data:
         return True, "データが不完全なため、更新が必要です。"
@@ -127,6 +129,7 @@ def compare_game_data(old_data, new_data):
     change_description = '\n'.join(changes) if changes else "変更はありませんでした。"
     
     return has_changes, change_description
+
 
 # ページ設定
 st.set_page_config(
