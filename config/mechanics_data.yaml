@@ -1,0 +1,715 @@
+Engine Building:
+  complexity: 4.7
+  strategic_value: 5.0
+  interaction_value: 2.0
+  description: 戦略的に非常に深いが、相互作用は比較的少ない
+Worker Placement:
+  complexity: 4.2
+  strategic_value: 5.0
+  interaction_value: 3.5
+  description: 高い戦略性と中程度の相互作用
+Tech Trees / Tech Tracks:
+  complexity: 4.5
+  strategic_value: 5.0
+  interaction_value: 2.0
+  description: 長期的な戦略立案が必要だが直接的な相互作用は少ない
+Deck Building:
+  complexity: 3.8
+  strategic_value: 5.0
+  interaction_value: 2.0
+  description: 戦略的なデッキ構築が中心だが、相互作用は間接的
+Area Control / Area Influence:
+  complexity: 3.9
+  strategic_value: 5.0
+  interaction_value: 4.0
+  description: 領域支配による高い戦略性と相互作用
+Multi-Use Cards:
+  complexity: 4.1
+  strategic_value: 4.0
+  interaction_value: 2.5
+  description: 多用途カードによる戦略的選択肢の豊富さ
+Resource Management:
+  complexity: 3.8
+  strategic_value: 4.0
+  interaction_value: 2.5
+  description: 資源管理による戦略的深さ
+Variable Player Powers:
+  complexity: 3.3
+  strategic_value: 4.0
+  interaction_value: 3.5
+  description: プレイヤーごとの異なる能力による戦略の多様性
+Action Points:
+  complexity: 3.1
+  strategic_value: 4.0
+  interaction_value: 2.5
+  description: 限られたアクションポイントの戦略的配分
+Auction / Bidding:
+  complexity: 3.7
+  strategic_value: 4.0
+  interaction_value: 5.0
+  description: オークションによる高い相互作用と戦略性
+Worker Placement, Different Worker Types:
+  complexity: 4.8
+  strategic_value: 4.8
+  interaction_value: 3.7
+  description: 多様なワーカータイプによる複雑な戦略
+Action Selection:
+  complexity: 3.2
+  strategic_value: 4.0
+  interaction_value: 3.0
+  description: アクション選択による戦略的決断
+Roles with Asymmetric Information:
+  complexity: 4.7
+  strategic_value: 4.0
+  interaction_value: 4.0
+  description: 非対称情報による戦略的駆け引き
+Card Drafting:
+  complexity: 3.2
+  strategic_value: 3.5
+  interaction_value: 3.0
+  description: カードドラフトによる戦略的選択と相互作用
+Route/Network Building:
+  complexity: 3.5
+  strategic_value: 3.5
+  interaction_value: 3.0
+  description: ルート構築による間接的な競争
+Tile Placement:
+  complexity: 3.1
+  strategic_value: 3.5
+  interaction_value: 2.5
+  description: タイル配置による空間的戦略
+Hand Management:
+  complexity: 2.9
+  strategic_value: 3.5
+  interaction_value: 2.5
+  description: 手札管理による戦略的選択
+Stock Holding:
+  complexity: 3.9
+  strategic_value: 3.5
+  interaction_value: 4.0
+  description: 株式保有による間接的な相互作用
+Set Collection:
+  complexity: 1.9
+  strategic_value: 3.0
+  interaction_value: 2.5
+  description: セット収集による基本的な戦略性
+Pattern Building:
+  complexity: 3.3
+  strategic_value: 3.0
+  interaction_value: 2.0
+  description: パターン構築による空間的パズル
+Modular Board:
+  complexity: 2.7
+  strategic_value: 3.0
+  interaction_value: 2.0
+  description: モジュラーボードによる変化する環境
+Push Your Luck:
+  complexity: 2.2
+  strategic_value: 2.5
+  interaction_value: 2.0
+  description: 運試しと判断のバランス
+Trading:
+  complexity: 2.5
+  strategic_value: 2.5
+  interaction_value: 5.0
+  description: トレードによる高い相互作用
+Voting:
+  complexity: 2.5
+  strategic_value: 2.5
+  interaction_value: 3.5
+  description: 投票による相互作用と社会的要素
+Dice Rolling:
+  complexity: 1.5
+  strategic_value: 2.0
+  interaction_value: 1.5
+  description: ダイスロールによる運要素
+Pattern Recognition:
+  complexity: 2.2
+  strategic_value: 2.0
+  interaction_value: 1.5
+  description: パターン認識による基本的な戦略
+Memory:
+  complexity: 1.9
+  strategic_value: 2.0
+  interaction_value: 1.9
+  description: 記憶力に基づくシンプルな戦略
+Roll / Spin and Move:
+  complexity: 1.0
+  strategic_value: 1.0
+  interaction_value: 1.5
+  description: サイコロを振って進む基本的なメカニクス
+Player Elimination:
+  complexity: 1.9
+  strategic_value: 1.0
+  interaction_value: 4.0
+  description: プレイヤー脱落による高い相互作用
+Lose a Turn:
+  complexity: 1.2
+  strategic_value: 1.0
+  interaction_value: 2.0
+  description: ターンスキップによる戦略的要素の低下
+Negotiation:
+  complexity: 3.2
+  strategic_value: 3.2
+  interaction_value: 5.0
+  description: 交渉による高い相互作用
+Betting and Bluffing:
+  complexity: 3.1
+  strategic_value: 3.1
+  interaction_value: 5.0
+  description: 賭けや虚勢による心理戦
+Take That:
+  complexity: 1.6
+  strategic_value: 2.0
+  interaction_value: 5.0
+  description: 直接的な攻撃による高い相互作用
+Chaining:
+  complexity: 3.9
+  strategic_value: 3.5
+  interaction_value: 3.2
+  description: アクションやカードの連鎖効果による複雑な戦略展開
+Hexagon Grid:
+  complexity: 2.9
+  strategic_value: 3.2
+  interaction_value: 2.8
+  description: 六角形グリッドによる自由度の高い空間的戦略
+Income:
+  complexity: 2.6
+  strategic_value: 3.7
+  interaction_value: 2.5
+  description: 定期的な収入獲得による経済的成長と戦略的計画
+Network and Route Building:
+  complexity: 3.5
+  strategic_value: 3.8
+  interaction_value: 3.5
+  description: 接続ネットワークの構築による領域拡大と競争
+Race:
+  complexity: 1.8
+  strategic_value: 2.7
+  interaction_value: 3.2
+  description: 目標への到達を競うシンプルでありながら競争的なメカニクス
+Random Production:
+  complexity: 2.7
+  strategic_value: 2.5
+  interaction_value: 2.0
+  description: ランダム要素による資源生産と対応戦略の構築
+Variable Set-up:
+  complexity: 2.6
+  strategic_value: 3.6
+  interaction_value: 2.7
+  description: 毎回異なる初期配置によるリプレイ性と適応戦略
+Contracts:
+  complexity: 3.2
+  strategic_value: 3.5
+  interaction_value: 3.3
+  description: 契約達成による目標志向のゲームプレイと戦略的計画
+Solo / Solitaire Game:
+  complexity: 3.5
+  strategic_value: 2.8
+  interaction_value: 1.5
+  description: 単独プレイ向けの自己挑戦型メカニクスと最適化戦略
+'Turn Order: Auction':
+  complexity: 3.5
+  strategic_value: 3.7
+  interaction_value: 4.0
+  description: ターン順序を競り落とすことによる戦略的優位性の確保
+Victory Points as a Resource:
+  complexity: 3.7
+  strategic_value: 4.0
+  interaction_value: 2.8
+  description: 勝利点を直接操作可能なリソースとして活用する高度な戦略
+Area Majority / Influence:
+  complexity: 3.9
+  strategic_value: 4.2
+  interaction_value: 4.5
+  description: 地域支配による間接的な競争と戦略的駆け引き
+Deck, Bag, and Pool Building:
+  complexity: 3.9
+  strategic_value: 4.0
+  interaction_value: 3.0
+  description: 様々な形式のリソース集合構築と戦略的最適化
+End Game Bonuses:
+  complexity: 2.9
+  strategic_value: 3.5
+  interaction_value: 2.5
+  description: ゲーム終了時の追加得点による長期的戦略立案の促進
+King of the Hill:
+  complexity: 3.1
+  strategic_value: 3.2
+  interaction_value: 4.3
+  description: 特定領域の支配を巡る直接的な競争と陣取り戦略
+Rondel:
+  complexity: 3.3
+  strategic_value: 3.6
+  interaction_value: 2.5
+  description: 円環状のアクション選択による計画的な手番構成と制限
+Track Movement:
+  complexity: 2.2
+  strategic_value: 2.5
+  interaction_value: 2.8
+  description: 定められた経路上の移動による進行と競争
+Action Drafting:
+  complexity: 3.2
+  strategic_value: 3.6
+  interaction_value: 3.2
+  description: プレイヤー間でのアクション選択と競合による戦略的決断
+Area Movement:
+  complexity: 2.6
+  strategic_value: 3.1
+  interaction_value: 3.3
+  description: 区域間の移動による位置取りと領域管理
+Interrupts:
+  complexity: 3.8
+  strategic_value: 3.5
+  interaction_value: 4.2
+  description: 他プレイヤーのアクションに割り込む能力による高度な相互作用
+Open Drafting:
+  complexity: 2.7
+  strategic_value: 3.2
+  interaction_value: 3.5
+  description: 公開情報下でのカード選択による戦略的駆け引き
+Selection Order Bid:
+  complexity: 3.5
+  strategic_value: 3.7
+  interaction_value: 3.8
+  description: 選択順序を競り合うことによる優先権の獲得と戦略的優位性
+Simultaneous Action Selection:
+  complexity: 2.9
+  strategic_value: 3.3
+  interaction_value: 3.9
+  description: 全プレイヤーが同時にアクションを選択する予測と読み合い
+Score-and-Reset Game:
+  complexity: 2.9
+  strategic_value: 3.3
+  interaction_value: 2.7
+  description: 定期的なスコアリングとリセットによる短期的戦略の連続
+Chit-Pull System:
+  complexity: 2.9
+  strategic_value: 3.2
+  interaction_value: 2.5
+  description: ランダム要素とチットによる戦略的適応と確率管理
+Cooperative Game:
+  complexity: 2.9
+  strategic_value: 3.4
+  interaction_value: 4.5
+  description: プレイヤー間の協力によるチームワークと共通目標の達成
+Delayed Purchase:
+  complexity: 3.1
+  strategic_value: 3.6
+  interaction_value: 2.8
+  description: 時間差のある購入システムによる計画的な戦略構築
+Variable Phase Order:
+  complexity: 3.8
+  strategic_value: 3.8
+  interaction_value: 3.2
+  description: フェーズ順序の変動による適応的な戦略立案の必要性
+Loans:
+  complexity: 3.1
+  strategic_value: 3.5
+  interaction_value: 2.7
+  description: 一時的な資金調達と返済リスクによる経済的戦略
+Market:
+  complexity: 3.2
+  strategic_value: 3.5
+  interaction_value: 3.4
+  description: 需給によって変動する市場での売買と価格戦略
+'Turn Order: Stat-Based':
+  complexity: 3.2
+  strategic_value: 3.7
+  interaction_value: 3.0
+  description: プレイヤーの状態や能力値に基づくターン順序の決定
+Action Queue:
+  complexity: 3.8
+  strategic_value: 4.0
+  interaction_value: 2.8
+  description: アクションを一列に並べて実行する計画的な戦略構築
+Action Retrieval:
+  complexity: 3.3
+  strategic_value: 3.7
+  interaction_value: 2.9
+  description: 使用したアクションの回収と再利用によるリソース管理
+Campaign / Battle Card Driven:
+  complexity: 3.9
+  strategic_value: 4.1
+  interaction_value: 3.7
+  description: カードによって進行する戦闘や物語展開の戦略的管理
+Card Play Conflict Resolution:
+  complexity: 4.2
+  strategic_value: 4.3
+  interaction_value: 4.0
+  description: カードプレイによる対立解決と戦略的リソース配分
+Communication Limits:
+  complexity: 3.7
+  strategic_value: 3.5
+  interaction_value: 4.3
+  description: 制限された情報共有下での連携と間接的戦略構築
+Critical Hits and Failures:
+  complexity: 2.5
+  strategic_value: 2.8
+  interaction_value: 3.4
+  description: 極端な成功や失敗によるゲーム展開の急転と対応
+Deck Construction:
+  complexity: 4.5
+  strategic_value: 4.7
+  interaction_value: 3.2
+  description: プレイ前のカードデッキ構築による高度な戦略最適化
+Grid Movement:
+  complexity: 2.5
+  strategic_value: 2.8
+  interaction_value: 3.0
+  description: 格子状のボード上での移動と位置取り戦略
+Legacy Game:
+  complexity: 4.7
+  strategic_value: 4.3
+  interaction_value: 3.8
+  description: ゲーム内容が永続的に変化する物語進行と長期的戦略
+Line of Sight:
+  complexity: 3.2
+  strategic_value: 3.4
+  interaction_value: 3.3
+  description: 視線の通る範囲での行動制限と空間認識戦略
+Narrative Choice / Paragraph:
+  complexity: 2.2
+  strategic_value: 2.6
+  interaction_value: 3.3
+  description: 物語的選択による分岐と結果の管理
+Once-Per-Game Abilities:
+  complexity: 2.7
+  strategic_value: 3.5
+  interaction_value: 2.8
+  description: 一度限りの強力な能力使用タイミングの戦略的選択
+Role Playing:
+  complexity: 3.3
+  strategic_value: 3.5
+  interaction_value: 4.2
+  description: 役割や人格を演じることによる没入型ゲームプレイ
+Scenario / Mission / Campaign Game:
+  complexity: 3.5
+  strategic_value: 3.8
+  interaction_value: 3.6
+  description: 一連のシナリオや任務による物語進行と長期的戦略
+Storytelling:
+  complexity: 2.4
+  strategic_value: 2.5
+  interaction_value: 4.3
+  description: 物語を作り出す創造的な相互作用と表現
+Tags:
+  complexity: 2.9
+  strategic_value: 3.4
+  interaction_value: 2.5
+  description: 分類タグによるゲーム要素の関連付けとシナジー構築
+'Auction: Fixed Placement':
+  complexity: 3.9
+  strategic_value: 4.0
+  interaction_value: 4.2
+  description: 固定位置での入札による戦略的リソース配分と競争
+'Auction: Multiple Lot':
+  complexity: 4.1
+  strategic_value: 4.2
+  interaction_value: 4.3
+  description: 複数のオークション対象の同時競り合いによる複雑な戦略
+Constrained Bidding:
+  complexity: 3.9
+  strategic_value: 4.1
+  interaction_value: 4.0
+  description: 制限された入札条件下での戦略的リソース管理
+Ownership:
+  complexity: 2.5
+  strategic_value: 3.2
+  interaction_value: 3.0
+  description: 所有権の獲得と管理による永続的な利益確保
+Events:
+  complexity: 2.7
+  strategic_value: 3.0
+  interaction_value: 3.4
+  description: 予期せぬ出来事への対応と適応戦略の構築
+Catch the Leader:
+  complexity: 2.7
+  strategic_value: 2.9
+  interaction_value: 4.2
+  description: 先行者を追いかけるバランス調整メカニクス
+Programmed Movement:
+  complexity: 3.8
+  strategic_value: 4.1
+  interaction_value: 3.0
+  description: 事前に計画された動きによる高度な戦略的予測
+Simulation:
+  complexity: 4.5
+  strategic_value: 4.3
+  interaction_value: 3.2
+  description: 現実世界のシステムを模倣した複雑な相互関係の管理
+Action / Event:
+  complexity: 3.5
+  strategic_value: 3.6
+  interaction_value: 3.3
+  description: アクションと事象の組み合わせによる多様な戦略展開
+Advantage Token:
+  complexity: 2.9
+  strategic_value: 3.2
+  interaction_value: 2.7
+  description: 一時的な優位性を提供するトークンの獲得と戦略的使用
+Area Control:
+  complexity: 3.9
+  strategic_value: 4.1
+  interaction_value: 4.3
+  description: 領域支配による間接的な陣取り合戦と戦略的配置
+Auction/Bidding:
+  complexity: 3.7
+  strategic_value: 3.9
+  interaction_value: 4.5
+  description: 資源やアイテムの競り合いによる価値評価と戦略的入札
+'Auction: Dutch':
+  complexity: 3.5
+  strategic_value: 3.7
+  interaction_value: 4.0
+  description: 価格が下がり続けるオークションでのタイミング戦略
+'Auction: English':
+  complexity: 3.3
+  strategic_value: 3.5
+  interaction_value: 4.2
+  description: 価格が上がり続けるオークションでの限界価値判断
+Auction Compensation:
+  complexity: 2.5
+  strategic_value: 3.4
+  interaction_value: 3.6
+  description: オークション敗者への補償による参加意欲の促進
+'Auction: Turn Order Until Pass':
+  complexity: 2.5
+  strategic_value: 3.3
+  interaction_value: 3.7
+  description: パスするまでターン順が続くオークションの戦略的緊張感
+Closed Economy Auction:
+  complexity: 2.5
+  strategic_value: 3.5
+  interaction_value: 3.8
+  description: 閉じた経済システム内での入札による資源循環
+Automatic Resource Growth:
+  complexity: 2.7
+  strategic_value: 3.0
+  interaction_value: 2.3
+  description: 自動的に増加するリソースの管理と長期的戦略
+Bias:
+  complexity: 2.9
+  strategic_value: 3.2
+  interaction_value: 3.0
+  description: 偏りのある確率や結果による戦略的適応
+Bingo:
+  complexity: 1.6
+  strategic_value: 1.8
+  interaction_value: 2.5
+  description: パターン完成を目指す運と戦略のバランス
+Closed Drafting:
+  complexity: 3.1
+  strategic_value: 3.7
+  interaction_value: 3.3
+  description: 非公開情報でのカード選択による読み合いと予測
+Commodity Speculation:
+  complexity: 3.8
+  strategic_value: 4.0
+  interaction_value: 3.5
+  description: 価格変動を予測した投資と資源取引の経済戦略
+Connections:
+  complexity: 3.2
+  strategic_value: 3.6
+  interaction_value: 3.2
+  description: 要素間の結合による相乗効果と空間的戦略
+Cube Tower:
+  complexity: 2.6
+  strategic_value: 2.4
+  interaction_value: 3.5
+  description: キューブを落として結果を決める物理的ランダム要素
+Deduction:
+  complexity: 3.2
+  strategic_value: 3.5
+  interaction_value: 3.3
+  description: 論理的推理と情報収集による謎解きと戦略構築
+Enclosure:
+  complexity: 3.3
+  strategic_value: 3.6
+  interaction_value: 3.2
+  description: 領域の囲い込みによる空間支配と戦略的配置
+Follow:
+  complexity: 2.4
+  strategic_value: 2.8
+  interaction_value: 3.7
+  description: 他プレイヤーのアクションに追随する二次的行動選択
+Force Commitment:
+  complexity: 3.5
+  strategic_value: 3.8
+  interaction_value: 3.5
+  description: リソース配分の事前決定による戦略的賭けとリスク管理
+Grid Coverage:
+  complexity: 2.9
+  strategic_value: 3.4
+  interaction_value: 2.7
+  description: 格子状の空間を埋めていく配置戦略と空間管理
+Hidden Victory Points:
+  complexity: 2.9
+  strategic_value: 3.3
+  interaction_value: 2.8
+  description: 非公開の勝利条件による間接的な競争と戦略的欺瞞
+Highest-Lowest Scoring:
+  complexity: 2.7
+  strategic_value: 3.1
+  interaction_value: 3.5
+  description: 最高または最低得点による戦略的位置取りと調整
+Increase Value of Unchosen Resources:
+  complexity: 3.3
+  strategic_value: 3.7
+  interaction_value: 3.4
+  description: 選ばれなかったリソースの価値上昇による動的市場の形成
+Kill Steal:
+  complexity: 2.1
+  strategic_value: 2.5
+  interaction_value: 4.5
+  description: 他プレイヤーの獲物や成果を横取りする競争的相互作用
+Ladder Climbing:
+  complexity: 2.7
+  strategic_value: 3.0
+  interaction_value: 3.5
+  description: 段階的な上昇による競争と戦略的タイミング
+Layering:
+  complexity: 3.5
+  strategic_value: 3.8
+  interaction_value: 2.9
+  description: 複数層の要素を重ねることによる複合的な戦略構築
+Line Drawing:
+  complexity: 2.9
+  strategic_value: 3.2
+  interaction_value: 2.7
+  description: 線を引いて接続や区画を作る空間的戦略
+Mancala:
+  complexity: 2.5
+  strategic_value: 3.3
+  interaction_value: 2.9
+  description: 石やコマを移動させながら分配する古典的戦略メカニクス
+Map Addition:
+  complexity: 2.9
+  strategic_value: 3.4
+  interaction_value: 2.8
+  description: マップの追加による空間拡大と探索戦略
+Melding and Splaying:
+  complexity: 3.7
+  strategic_value: 3.9
+  interaction_value: 2.8
+  description: カードの組み合わせと重ね方による戦略的配置
+Movement Points:
+  complexity: 2.9
+  strategic_value: 3.3
+  interaction_value: 3.0
+  description: 移動力の消費と管理による戦略的配置と行動計画
+Neighbor Scope:
+  complexity: 2.9
+  strategic_value: 3.2
+  interaction_value: 3.8
+  description: 隣接プレイヤーとの特別な相互作用による局所的戦略
+Ordering:
+  complexity: 2.9
+  strategic_value: 3.3
+  interaction_value: 2.7
+  description: 順序付けによる優先度決定と戦略的配列
+Paper-and-Pencil:
+  complexity: 2.2
+  strategic_value: 2.7
+  interaction_value: 2.3
+  description: 紙と鉛筆を使った記録と計画による永続的な決断
+Pattern Movement:
+  complexity: 3.2
+  strategic_value: 3.5
+  interaction_value: 2.8
+  description: 特定のパターンで動くコマの戦略的配置と予測
+Pick-up and Deliver:
+  complexity: 3.1
+  strategic_value: 3.4
+  interaction_value: 3.0
+  description: 物品の収集と配達による経路最適化と効率戦略
+Point to Point Movement:
+  complexity: 2.7
+  strategic_value: 3.0
+  interaction_value: 3.2
+  description: 接続点間の移動による経路選択と戦略的位置取り
+Predictive Bid:
+  complexity: 3.5
+  strategic_value: 3.8
+  interaction_value: 3.7
+  description: 結果を予測した入札による戦略的賭けと読み合い
+Real-Time:
+  complexity: 3.3
+  strategic_value: 3.0
+  interaction_value: 4.0
+  description: リアルタイムでの意思決定と実行による即応性と集中力
+Re-rolling and Locking:
+  complexity: 2.4
+  strategic_value: 2.8
+  interaction_value: 2.3
+  description: ダイスの再振りと固定による確率操作と戦略的リスク管理
+Resource to Move:
+  complexity: 2.9
+  strategic_value: 3.3
+  interaction_value: 2.8
+  description: リソースを消費して移動する経済的移動メカニクス
+Singing:
+  complexity: 2.1
+  strategic_value: 2.0
+  interaction_value: 4.5
+  description: 歌唱による社交的ゲームプレイと表現力の活用
+Square Grid:
+  complexity: 2.7
+  strategic_value: 3.0
+  interaction_value: 2.8
+  description: 四角形のグリッド上での移動と配置による空間戦略
+Stacking and Balancing:
+  complexity: 2.9
+  strategic_value: 2.8
+  interaction_value: 3.3
+  description: 物理的な積み重ねとバランス取りによる技術的挑戦
+Sudden Death Ending:
+  complexity: 2.9
+  strategic_value: 3.2
+  interaction_value: 3.5
+  description: 特定条件での即時ゲーム終了による緊張感と戦略的対応
+Targeted Clues:
+  complexity: 3.2
+  strategic_value: 3.4
+  interaction_value: 4.2
+  description: 特定プレイヤーへのヒント提供による協力的相互作用
+Team-Based Game:
+  complexity: 2.9
+  strategic_value: 3.3
+  interaction_value: 4.5
+  description: チームベースの協力による集団戦略と役割分担
+Trick-taking:
+  complexity: 2.6
+  strategic_value: 3.4
+  interaction_value: 3.7
+  description: トリックを取り合うカードプレイの読み合いと戦略
+'Turn Order: Claim Action':
+  complexity: 2.9
+  strategic_value: 3.4
+  interaction_value: 3.5
+  description: アクション選択によるターン順序の決定と戦略的優先順位付け
+'Turn Order: Pass Order':
+  complexity: 3.1
+  strategic_value: 3.5
+  interaction_value: 3.3
+  description: パスのタイミングによるターン順序の操作と戦略的駆け引き
+'Turn Order: Progressive':
+  complexity: 2.6
+  strategic_value: 3.0
+  interaction_value: 3.2
+  description: 順次進行するターン順序による公平性と計画的アクション
+'Turn Order: Role Order':
+  complexity: 3.1
+  strategic_value: 3.4
+  interaction_value: 3.3
+  description: 役割に基づくターン順序による戦略的役割選択
+Worker Placement with Dice Workers:
+  complexity: 4.7
+  strategic_value: 4.5
+  interaction_value: 3.8
+  description: ダイス値を持つワーカーの配置による確率と戦略の組み合わせ
+Zone of Control:
+  complexity: 3.2
+  strategic_value: 3.6
+  interaction_value: 3.4
+  description: 影響圏による空間制御と間接的な領域支配
