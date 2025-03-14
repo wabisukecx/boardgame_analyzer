@@ -131,222 +131,58 @@ Take That:
   interaction_value: 5.0
   description: 直接的な攻撃による高い相互作用
 Chaining:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 3.5
+  interaction_value: 3.2
+  description: アクションの連鎖による戦略的深さと限定的な相互作用
 Hexagon Grid:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 3.2
+  interaction_value: 2.8
+  description: 六角形グリッドによる空間的戦略と位置関係の重要性
 Income:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 3.7
+  interaction_value: 2.5
+  description: 経済的資源管理と長期的戦略的意思決定
 Network and Route Building:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 3.8
+  interaction_value: 3.5
+  description: ネットワーク構築による戦略的展開と競争的相互作用
 Race:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 2.7
+  interaction_value: 3.2
+  description: 競争的要素と限定的な戦略的選択
 Random Production:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 2.5
+  interaction_value: 2.0
+  description: ランダム性による変動的な戦略的アプローチ
 Variable Set-up:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 3.6
+  interaction_value: 2.7
+  description: 可変的な初期設定による戦略的多様性
 Contracts:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 3.5
+  interaction_value: 3.3
+  description: 契約達成による戦略的目標設定と相互作用
 Solo / Solitaire Game:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-'Turn Order: Auction':
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 2.8
+  interaction_value: 1.5
+  description: 単独プレイによる制限された戦略的アプローチ
+Turn Order: Auction:
+  strategic_value: 3.7
+  interaction_value: 4.0
+  description: ターン順序のオークションによる戦略的駆け引きと高い相互作用
 Victory Points as a Resource:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 4.0
+  interaction_value: 2.8
+  description: 勝利ポイントの戦略的活用と資源管理
 Area Majority / Influence:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 4.2
+  interaction_value: 4.5
+  description: エリア支配による高度な戦略的相互作用
 Deck, Bag, and Pool Building:
-  strategic_value: 3.0
+  strategic_value: 4.0
   interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  description: デッキ構築による戦略的資源管理
 End Game Bonuses:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-King of the Hill:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Rondel:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Track Movement:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Action Drafting:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Area Movement:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Interrupts:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Open Drafting:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Selection Order Bid:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Simultaneous Action Selection:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Score-and-Reset Game:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Chit-Pull System:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Cooperative Game:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Delayed Purchase:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Variable Phase Order:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Loans:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Market:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-'Turn Order: Stat-Based':
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Action Queue:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Action Retrieval:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Campaign / Battle Card Driven:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Card Play Conflict Resolution:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Communication Limits:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Critical Hits and Failures:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Deck Construction:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Grid Movement:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Legacy Game:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Line of Sight:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Narrative Choice / Paragraph:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Once-Per-Game Abilities:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Role Playing:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Scenario / Mission / Campaign Game:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Storytelling:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Tags:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-'Auction: Fixed Placement':
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-'Auction: Multiple Lot':
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Constrained Bidding:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Ownership:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Events:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Catch the Leader:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Programmed Movement:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
-Simulation:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたメカニクス（デフォルト値）
+  strategic_value: 3.5
+  interaction_value: 2.5
+  description: 最終得点ボーナスによる戦略的長期計画
