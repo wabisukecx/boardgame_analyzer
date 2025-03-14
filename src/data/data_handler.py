@@ -2,6 +2,7 @@ import os
 import yaml
 import streamlit as st
 import pandas as pd
+import re
 from src.analysis.learning_curve import calculate_learning_curve
 
 def save_game_data_to_yaml(game_data, custom_filename=None):
@@ -140,3 +141,32 @@ def search_results_to_dataframe(results):
         df = df.drop(columns=["type"])
     
     return df
+
+def load_all_game_data():
+    """
+    game_dataフォルダ内のすべてのYAMLファイルからゲームデータを読み込む
+    
+    Returns:
+    dict: ゲームID(文字列)をキー、ゲームデータを値とする辞書
+    """
+    game_data_dict = {}
+    
+    # game_dataフォルダが存在するか確認
+    if not os.path.exists("game_data"):
+        return game_data_dict
+    
+    # YAMLファイルを検索
+    for filename in os.listdir("game_data"):
+        if filename.endswith(".yaml"):
+            # ファイル名からゲームIDを抽出 (例: "167791_テラフォーミング・マーズ.yaml")
+            match = re.match(r"(\d+)_(.*?)\.yaml", filename)
+            if match:
+                game_id = match.group(1)
+                file_path = os.path.join("game_data", filename)
+                
+                # YAMLファイルを読み込む
+                game_data = load_game_data_from_yaml(file_path)
+                if game_data:
+                    game_data_dict[game_id] = game_data
+    
+    return game_data_dict
