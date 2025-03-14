@@ -95,50 +95,50 @@ Bluffing:
   interaction_value: 5.0
   description: 虚勢による心理的駆け引き
 Farming:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 3.2
+interaction_value: 3.5
+description: 農業資源管理と戦略的意思決定
 Medieval:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 3.5
+interaction_value: 3.2
+description: 中世の複雑な社会構造と政治的駆け引き
 Ancient:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 3.7
+interaction_value: 3.3
+description: 古代文明の複雑な政治・経済システム
 Religious:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 3.0
+interaction_value: 3.5
+description: 信仰と社会的影響力の戦略的側面
 Renaissance:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 3.8
+interaction_value: 3.6
+description: 文化・技術革新の戦略的展開
 Number:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 2.5
+interaction_value: 2.7
+description: 数学的思考と論理的戦略
 Fantasy:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 3.5
+interaction_value: 3.2
+description: 想像上の世界における戦略的要素
 Post-Napoleonic:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 3.9
+interaction_value: 3.7
+description: 戦略的再編と地政学的変動
 Transportation:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 3.3
+interaction_value: 3.0
+description: インフラ開発と経済的戦略
 Miniatures:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 3.2
+interaction_value: 3.5
+description: 戦術的配置と視覚的戦略
 Animals:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 2.7
+interaction_value: 3.0
+description: 生態系と資源管理の基本的戦略
 Sports:
-  strategic_value: 3.0
-  interaction_value: 3.0
-  description: 自動追加されたカテゴリ（デフォルト値）
+strategic_value: 2.8
+interaction_value: 3.5
+description: チーム戦略とダイナミックな相互作用
