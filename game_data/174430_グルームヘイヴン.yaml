@@ -5,7 +5,7 @@ alternate_names:
 - グルームヘイヴン
 - 幽港迷城
 - 글룸헤이븐
-average_rating: '8.56802'
+average_rating: '8.56798'
 categories:
 - name: Adventure
 - name: Exploration
@@ -41,22 +41,28 @@ japanese_name: グルームヘイヴン
 learning_analysis:
   bgg_rank: 4
   bgg_weight: 3.9133
-  category_complexity: 3.0
-  decision_points: 3.1875
-  initial_barrier: 4.86
-  interaction_complexity: 2.9
-  learning_curve_type: steep_then_moderate
+  category_complexity: 4.01
+  decision_points: 4.505454545454546
+  initial_barrier: 3.95
+  interaction_complexity: 3.7225
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.27
   mechanics_count: 24
   player_types:
+  - casual
   - experienced
   - hardcore
   - strategist
   - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.54
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.29
   replayability: 4.95
   rules_complexity: 4.259743333333334
   strategic_depth: 3.86
