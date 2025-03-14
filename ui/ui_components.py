@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import plotly.graph_objects as go
 from src.analysis.game_analyzer import generate_game_summary
 from src.analysis.learning_curve import (
     get_player_type_display,
@@ -346,3 +347,74 @@ def display_game_analysis_summary(game_data, learning_curve):
             st.markdown("#### 戦略性とリプレイ性")
             st.markdown(f"- 戦略的深さ: **{strategic_depth:.2f}**/5.00")
             st.markdown(f"- リプレイ性: **{replayability:.2f}**/5.00")
+
+def compare_games_radar_chart(games_data):
+    """
+    複数ゲームを比較するレーダーチャートを作成
+    
+    Parameters:
+    games_data (list): (ゲームデータ, 学習曲線データ)のタプルリスト
+    
+    Returns:
+    fig: plotlyのFigureオブジェクト
+    """
+    fig = go.Figure()
+    
+    # 比較するカテゴリ
+    categories = ['初期学習障壁', '戦略的深さ', 'リプレイ性', 
+                  '意思決定の深さ', 'プレイヤー相互作用', 'ルールの複雑さ']
+    
+    # 各ゲームの色をパステルカラーで生成
+    colors = ['rgba(178, 34, 34, 0.7)', 'rgba(31, 119, 180, 0.7)', 
+              'rgba(44, 160, 44, 0.7)', 'rgba(255, 127, 14, 0.7)',
+              'rgba(148, 103, 189, 0.7)', 'rgba(140, 86, 75, 0.7)']
+    
+    for i, (game_data, learning_curve) in enumerate(games_data):
+        if i >= len(colors):  # 色数の上限
+            break
+            
+        game_name = game_data.get('japanese_name', game_data.get('name', '不明'))
+        
+        values = [
+            learning_curve.get('initial_barrier', 0),
+            learning_curve.get('strategic_depth', 0),
+            learning_curve.get('replayability', 0),
+            learning_curve.get('decision_points', 0),
+            learning_curve.get('interaction_complexity', 0),
+            learning_curve.get('rules_complexity', 0)
+        ]
+        
+        # 円環状に閉じる
+        cat = categories + [categories[0]]
+        val = values + [values[0]]
+        
+        fig.add_trace(go.Scatterpolar(
+            r=val,
+            theta=cat,
+            fill='toself',
+            name=game_name,
+            line_color=colors[i],
+            fillcolor=colors[i].replace('0.7', '0.2')
+        ))
+    
+    fig.update_layout(
+        polar=dict(
+            radialaxis=dict(
+                visible=True,
+                range=[0, 5],
+                tickvals=[1, 2, 3, 4, 5]
+            )
+        ),
+        showlegend=True,
+        title={
+            'text': "ゲーム特性比較",
+            'y': 0.95,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'
+        },
+        margin=dict(l=80, r=80, t=50, b=50),
+        height=600
+    )
+    
+    return fig
