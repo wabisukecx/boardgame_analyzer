@@ -1,0 +1,100 @@
+alternate_names:
+- Konec věků
+- Кінець віків
+- Конец вечности
+- イーオンズ・エンド
+- 末日決戰
+- 에이언즈 엔드
+average_rating: '7.88277'
+categories:
+- name: Card Game
+- name: Fantasy
+- name: Fighting
+- name: Science Fiction
+community_best_players: '2'
+community_min_age: '12'
+community_recommended_players: 1, 3, 4
+description: 'The survivors of a long-ago invasion have taken refuge in the forgotten
+  underground city of Gravehold. There, the desperate remnants of society have learned
+  that the energy of the very breaches the beings use to attack them can be repurposed
+  through various gems, transforming the malign energies within into beneficial spells
+  and weapons to aid their last line of defense: the breach mages.&#10;&#10;Aeon''s
+  End is a cooperative game that explores the deckbuilding genre with a number of
+  innovative mechanisms, including a variable turn order system that simulates the
+  chaos of an attack, and deck management rules that require careful planning with
+  every discarded card. Players will struggle to defend Gravehold from The Nameless
+  and their hordes using unique abilities, powerful spells, and, most importantly
+  of all, their collective wits.&#10;&#10;'
+designers:
+- name: Jenny Iglesias
+- name: Nick Little (I)
+- name: Kevin Riley
+japanese_name: イーオンズ・エンド
+learning_analysis:
+  bgg_rank: 89
+  bgg_weight: 2.8053
+  category_complexity: 3.45
+  decision_points: 3.8750000000000004
+  initial_barrier: 4.37
+  interaction_complexity: 3.5999999999999996
+  learning_curve_type: steep_then_shallow
+  mastery_time: medium
+  mechanics_complexity: 3.16
+  mechanics_count: 10
+  player_types:
+  - experienced
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 3.14
+  replayability: 4.51
+  rules_complexity: 3.938393333333333
+  strategic_depth: 3.39
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2016
+mechanics:
+- name: Chit-Pull System
+- name: Cooperative Game
+- name: Deck, Bag, and Pool Building
+- name: Delayed Purchase
+- name: Hand Management
+- name: Open Drafting
+- name: Solo / Solitaire Game
+- name: Variable Phase Order
+- name: Variable Player Powers
+- name: Variable Set-up
+name: Aeon's End
+playing_time: '60'
+publisher_max_players: '4'
+publisher_min_age: '14'
+publisher_min_players: '1'
+publishers:
+- name: Action Phase Games
+- name: Indie Boards & Cards
+- name: Angry Lion Games
+- name: Arclight Games
+- name: Frosted Games
+- name: Geekach Games
+- name: Ghenos Games
+- name: Korea Boardgames
+- name: Lavka Games
+- name: Matagot
+- name: MeepleBR
+- name: Pegasus Spiele
+- name: Portal Games
+- name: REXhry
+- name: SD Games
+- name: Surfin' Meeple China
+ranks:
+- rank: '89'
+  type: boardgame
+- rank: '87'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/d50LceHj6LIafa4S_qIsCg__thumb/img/KMFA-gXm_LbZpyXSAHbIZm-eAcQ=/fit-in/200x150/filters:strip_icc()/pic3189350.jpg
+type: boardgame
+weight: '2.8053'
+year_published: '2016'

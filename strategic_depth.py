@@ -1,219 +1,171 @@
 """
-改善された戦略深度計算モジュール
+戦略深度計算モジュール - YAMLベースのデータ管理
 """
 
+import os
+import yaml
 import math
 from mechanic_complexity import get_complexity
 
-# メカニクスの戦略的重要性の分類（1〜5のスケール）
-MECHANICS_STRATEGIC_VALUE = {
-    # 非常に高い戦略価値（5）
-    'Engine Building': 5,
-    'Worker Placement': 5,
-    'Tech Trees / Tech Tracks': 5,
-    'Deck Building': 5,
-    'Area Control / Area Influence': 5,
-    
-    # 高い戦略価値（4）
-    'Multi-Use Cards': 4,
-    'Resource Management': 4,
-    'Variable Player Powers': 4,
-    'Action Points': 4,
-    'Auction / Bidding': 4,
-    'Worker Placement, Different Worker Types': 4,
-    'Action Selection': 4,
-    'Roles with Asymmetric Information': 4,
-    
-    # 中〜高の戦略価値（3.5）
-    'Card Drafting': 3.5,
-    'Route/Network Building': 3.5,
-    'Tile Placement': 3.5,
-    'Hand Management': 3.5,
-    'Simulation': 3.5,
-    'Stock Holding': 3.5,
-    
-    # 中程度の戦略価値（3）
-    'Set Collection': 3,
-    'Force Commitment': 3,
-    'Market': 3,
-    'Contracts': 3,
-    'Network and Route Building': 3,
-    'Pattern Building': 3,
-    'Modular Board': 3,
-    'End Game Bonuses': 3,
-    
-    # 中〜低の戦略価値（2.5）
-    'Push Your Luck': 2.5,
-    'Grid Movement': 2.5,
-    'Trading': 2.5,
-    'Voting': 2.5,
-    'Variable Phase Order': 2.5,
-    'Pattern Movement': 2.5,
-    
-    # 低い戦略価値（2）
-    'Take That': 2,
-    'Memory': 2,
-    'Dice Rolling': 2,
-    'Pattern Recognition': 2,
-    'Roll / Spin and Move': 2,
-    'Re-rolling and Locking': 2,
-    'Storytelling': 2,
-    
-    # 非常に低い戦略価値（1）
-    'Player Elimination': 1,
-    'Lose a Turn': 1,
-    'Bingo': 1
-}
+# YAMLファイルのパス
+MECHANIC_STRATEGIC_VALUES_FILE = "mechanic_strategic_values.yaml"
+CATEGORY_STRATEGIC_VALUES_FILE = "category_strategic_values.yaml"
 
-# メカニクスのプレイヤー間相互作用の分類（1〜5のスケール）
-MECHANICS_INTERACTION_VALUE = {
-    # 非常に高い相互作用（5）
-    'Negotiation': 5,
-    'Trading': 5,
-    'Auction / Bidding': 5,
-    'Betting and Bluffing': 5,
-    'Take That': 5,
+# YAML管理関数
+def load_mechanic_strategic_values():
+    """
+    メカニクスの戦略的価値と相互作用価値をYAMLから読み込む
     
-    # 高い相互作用（4）
-    'Area Control / Area Influence': 4,
-    'Roles with Asymmetric Information': 4,
-    'Card Play Conflict Resolution': 4,
-    'Stock Holding': 4,
-    'Communication Limits': 4,
-    'Player Elimination': 4,
-    
-    # 中〜高の相互作用（3.5）
-    'Worker Placement': 3.5,
-    'Voting': 3.5,
-    'Variable Player Powers': 3.5,
-    'Action Retrieval': 3.5,
-    'Advantage Token': 3.5,
-    
-    # 中程度の相互作用（3）
-    'Card Drafting': 3,
-    'Route/Network Building': 3,
-    'Market': 3,
-    'Selection Order Bid': 3,
-    'End Game Bonuses': 3,
-    'Catch the Leader': 3,
-    
-    # 中〜低の相互作用（2.5）
-    'Multi-Use Cards': 2.5,
-    'Resource Management': 2.5,
-    'Tile Placement': 2.5,
-    'Hand Management': 2.5,
-    'Set Collection': 2.5,
-    
-    # 低い相互作用（2）
-    'Engine Building': 2,
-    'Tech Trees / Tech Tracks': 2,
-    'Deck Building': 2,
-    'Push Your Luck': 2,
-    'Pattern Building': 2,
-    
-    # 非常に低い相互作用（1）
-    'Solo / Solitaire Game': 1,
-    'Paper-and-Pencil': 1
-}
+    Returns:
+    dict: メカニクス名をキー、値をプロパティ辞書とする辞書
+    """
+    try:
+        # ファイルが存在しない場合は空の辞書を返す
+        if not os.path.exists(MECHANIC_STRATEGIC_VALUES_FILE):
+            return {}
+        
+        with open(MECHANIC_STRATEGIC_VALUES_FILE, 'r', encoding='utf-8') as file:
+            strategic_data = yaml.safe_load(file)
+            
+        # Noneの場合は空の辞書を返す
+        if strategic_data is None:
+            return {}
+            
+        return strategic_data
+    except Exception as e:
+        print(f"メカニクス戦略データの読み込みエラー: {str(e)}")
+        return {}
 
-# カテゴリの戦略的重要性の分類（1〜5のスケール）
-CATEGORIES_STRATEGIC_VALUE = {
-    # 非常に高い戦略価値（5）
-    'Strategy': 5,
-    'Civilization': 5,
-    'Economic': 5,
-    'Wargame': 5,
-    'Political': 5,
+def load_category_strategic_values():
+    """
+    カテゴリの戦略的価値と相互作用価値をYAMLから読み込む
     
-    # 高い戦略価値（4）
-    'City Building': 4,
-    'Territory Building': 4,
-    'Science Fiction': 4,
-    'Industry / Manufacturing': 4,
-    'Medieval': 4,
-    'Renaissance': 4,
-    
-    # 中〜高の戦略価値（3.5）
-    'Exploration': 3.5,
-    'Farming': 3.5,
-    'Fantasy': 3.5,
-    'Abstract Strategy': 3.5,
-    'Space Exploration': 3.5,
-    'Trains': 3.5,
-    
-    # 中程度の戦略価値（3）
-    'Adventure': 3,
-    'Fighting': 3,
-    'Nautical': 3,
-    'Prehistoric': 3,
-    'Transportation': 3,
-    'Puzzle': 3,
-    
-    # 中〜低の戦略価値（2.5）
-    'Sports': 2.5,
-    'Movies / TV / Radio theme': 2.5,
-    'Card Game': 2.5,
-    'Travel': 2.5,
-    'Racing': 2.5,
-    
-    # 低い戦略価値（2）
-    'Word Game': 2,
-    'Party Game': 2,
-    'Educational': 2,
-    'Humor': 2,
-    'Dice': 2,
-    
-    # 非常に低い戦略価値（1）
-    'Children\'s Game': 1
-}
+    Returns:
+    dict: カテゴリ名をキー、値をプロパティ辞書とする辞書
+    """
+    try:
+        # ファイルが存在しない場合は空の辞書を返す
+        if not os.path.exists(CATEGORY_STRATEGIC_VALUES_FILE):
+            return {}
+        
+        with open(CATEGORY_STRATEGIC_VALUES_FILE, 'r', encoding='utf-8') as file:
+            strategic_data = yaml.safe_load(file)
+            
+        # Noneの場合は空の辞書を返す
+        if strategic_data is None:
+            return {}
+            
+        return strategic_data
+    except Exception as e:
+        print(f"カテゴリ戦略データの読み込みエラー: {str(e)}")
+        return {}
 
-# カテゴリのプレイヤー間相互作用の分類（1〜5のスケール）
-CATEGORIES_INTERACTION_VALUE = {
-    # 非常に高い相互作用（5）
-    'Negotiation': 5,
-    'Political': 5,
-    'Bluffing': 5,
-    'Trading': 5,
-    'Fighting': 5,
+def save_mechanic_strategic_values(strategic_data):
+    """
+    メカニクスの戦略的価値データをYAMLファイルに保存する
     
-    # 高い相互作用（4）
-    'Wargame': 4,
-    'Party Game': 4,
-    'Sports': 4,
-    'Civilization': 4,
-    'Economic': 4,
+    Parameters:
+    strategic_data (dict): メカニクス名をキー、値をプロパティ辞書とする辞書
     
-    # 中〜高の相互作用（3.5）
-    'Area Control / Area Influence': 3.5,
-    'Territory Building': 3.5,
-    'City Building': 3.5,
-    'Adventure': 3.5,
+    Returns:
+    bool: 保存が成功したかどうか
+    """
+    try:
+        with open(MECHANIC_STRATEGIC_VALUES_FILE, 'w', encoding='utf-8') as file:
+            yaml.dump(strategic_data, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
+        return True
+    except Exception as e:
+        print(f"メカニクス戦略データの保存エラー: {str(e)}")
+        return False
+
+def save_category_strategic_values(strategic_data):
+    """
+    カテゴリの戦略的価値データをYAMLファイルに保存する
     
-    # 中程度の相互作用（3）
-    'Racing': 3,
-    'Fantasy': 3,
-    'Science Fiction': 3,
-    'Medieval': 3,
-    'Card Game': 3,
+    Parameters:
+    strategic_data (dict): カテゴリ名をキー、値をプロパティ辞書とする辞書
     
-    # 中〜低の相互作用（2.5）
-    'Trains': 2.5,
-    'Transportation': 2.5,
-    'Industry / Manufacturing': 2.5,
-    'Word Game': 2.5,
+    Returns:
+    bool: 保存が成功したかどうか
+    """
+    try:
+        with open(CATEGORY_STRATEGIC_VALUES_FILE, 'w', encoding='utf-8') as file:
+            yaml.dump(strategic_data, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
+        return True
+    except Exception as e:
+        print(f"カテゴリ戦略データの保存エラー: {str(e)}")
+        return False
+
+def add_missing_mechanic(mechanic_name, strategic_value=3.0, interaction_value=3.0):
+    """
+    存在しないメカニクスをYAMLファイルに追加する
     
-    # 低い相互作用（2）
-    'Puzzle': 2,
-    'Abstract Strategy': 2,
-    'Educational': 2,
+    Parameters:
+    mechanic_name (str): 追加するメカニクス名
+    strategic_value (float): 戦略的価値のデフォルト値
+    interaction_value (float): 相互作用価値のデフォルト値
     
-    # 非常に低い相互作用（1）
-    'Solo / Solitaire Game': 1
-}
+    Returns:
+    bool: 追加が成功したかどうか
+    """
+    try:
+        # 現在のデータを読み込む
+        strategic_data = load_mechanic_strategic_values()
+        
+        # 既に存在する場合は何もしない
+        if mechanic_name in strategic_data:
+            return True
+        
+        # 存在しない場合は追加
+        strategic_data[mechanic_name] = {
+            "strategic_value": strategic_value,
+            "interaction_value": interaction_value,
+            "description": f"自動追加されたメカニクス（デフォルト値）"
+        }
+        
+        # 保存
+        return save_mechanic_strategic_values(strategic_data)
+    except Exception as e:
+        print(f"メカニクスの追加エラー: {str(e)}")
+        return False
+
+def add_missing_category(category_name, strategic_value=3.0, interaction_value=3.0):
+    """
+    存在しないカテゴリをYAMLファイルに追加する
+    
+    Parameters:
+    category_name (str): 追加するカテゴリ名
+    strategic_value (float): 戦略的価値のデフォルト値
+    interaction_value (float): 相互作用価値のデフォルト値
+    
+    Returns:
+    bool: 追加が成功したかどうか
+    """
+    try:
+        # 現在のデータを読み込む
+        strategic_data = load_category_strategic_values()
+        
+        # 既に存在する場合は何もしない
+        if category_name in strategic_data:
+            return True
+        
+        # 存在しない場合は追加
+        strategic_data[category_name] = {
+            "strategic_value": strategic_value,
+            "interaction_value": interaction_value,
+            "description": f"自動追加されたカテゴリ（デフォルト値）"
+        }
+        
+        # 保存
+        return save_category_strategic_values(strategic_data)
+    except Exception as e:
+        print(f"カテゴリの追加エラー: {str(e)}")
+        return False
 
 def get_mechanic_strategic_value(mechanic_name):
     """
     指定されたメカニクスの戦略的価値を取得する
+    存在しない場合はデフォルト値を返し、自動的にデータベースに追加する
     
     Parameters:
     mechanic_name (str): メカニクス名
@@ -221,11 +173,21 @@ def get_mechanic_strategic_value(mechanic_name):
     Returns:
     float: 戦略的価値（1.0〜5.0の範囲）
     """
-    return MECHANICS_STRATEGIC_VALUE.get(mechanic_name, 3.0)  # デフォルト値: 3.0
+    strategic_data = load_mechanic_strategic_values()
+    
+    # メカニクスが存在するか確認
+    if mechanic_name in strategic_data:
+        return strategic_data[mechanic_name].get("strategic_value", 3.0)
+    
+    # 存在しない場合は追加して保存
+    add_missing_mechanic(mechanic_name)
+    
+    return 3.0  # デフォルト値: 3.0
 
 def get_mechanic_interaction_value(mechanic_name):
     """
     指定されたメカニクスのプレイヤー間相互作用の値を取得する
+    存在しない場合はデフォルト値を返し、自動的にデータベースに追加する
     
     Parameters:
     mechanic_name (str): メカニクス名
@@ -233,11 +195,21 @@ def get_mechanic_interaction_value(mechanic_name):
     Returns:
     float: 相互作用の値（1.0〜5.0の範囲）
     """
-    return MECHANICS_INTERACTION_VALUE.get(mechanic_name, 3.0)  # デフォルト値: 3.0
+    strategic_data = load_mechanic_strategic_values()
+    
+    # メカニクスが存在するか確認
+    if mechanic_name in strategic_data:
+        return strategic_data[mechanic_name].get("interaction_value", 3.0)
+    
+    # 存在しない場合は追加して保存
+    add_missing_mechanic(mechanic_name)
+    
+    return 3.0  # デフォルト値: 3.0
 
 def get_category_strategic_value(category_name):
     """
     指定されたカテゴリの戦略的価値を取得する
+    存在しない場合はデフォルト値を返し、自動的にデータベースに追加する
     
     Parameters:
     category_name (str): カテゴリ名
@@ -245,11 +217,21 @@ def get_category_strategic_value(category_name):
     Returns:
     float: 戦略的価値（1.0〜5.0の範囲）
     """
-    return CATEGORIES_STRATEGIC_VALUE.get(category_name, 3.0)  # デフォルト値: 3.0
+    strategic_data = load_category_strategic_values()
+    
+    # カテゴリが存在するか確認
+    if category_name in strategic_data:
+        return strategic_data[category_name].get("strategic_value", 3.0)
+    
+    # 存在しない場合は追加して保存
+    add_missing_category(category_name)
+    
+    return 3.0  # デフォルト値: 3.0
 
 def get_category_interaction_value(category_name):
     """
     指定されたカテゴリのプレイヤー間相互作用の値を取得する
+    存在しない場合はデフォルト値を返し、自動的にデータベースに追加する
     
     Parameters:
     category_name (str): カテゴリ名
@@ -257,7 +239,37 @@ def get_category_interaction_value(category_name):
     Returns:
     float: 相互作用の値（1.0〜5.0の範囲）
     """
-    return CATEGORIES_INTERACTION_VALUE.get(category_name, 3.0)  # デフォルト値: 3.0
+    strategic_data = load_category_strategic_values()
+    
+    # カテゴリが存在するか確認
+    if category_name in strategic_data:
+        return strategic_data[category_name].get("interaction_value", 3.0)
+    
+    # 存在しない場合は追加して保存
+    add_missing_category(category_name)
+    
+    return 3.0  # デフォルト値: 3.0
+
+# YAMLファイルの初期化を行う関数
+def initialize_strategic_values():
+    """
+    YAMLファイルが存在しない場合、初期データを作成する
+    """
+    # メカニクス戦略データの初期化
+    if not os.path.exists(MECHANIC_STRATEGIC_VALUES_FILE) or os.path.getsize(MECHANIC_STRATEGIC_VALUES_FILE) == 0:
+        print("メカニクス戦略データのYAMLファイルを初期化します...")
+        # 初期データは既に別途作成されている前提
+        # 空ファイルを作成して、今後の追加に備える
+        save_mechanic_strategic_values({})
+    
+    # カテゴリ戦略データの初期化
+    if not os.path.exists(CATEGORY_STRATEGIC_VALUES_FILE) or os.path.getsize(CATEGORY_STRATEGIC_VALUES_FILE) == 0:
+        print("カテゴリ戦略データのYAMLファイルを初期化します...")
+        # 空ファイルを作成して、今後の追加に備える
+        save_category_strategic_values({})
+
+# 初期化を実行
+initialize_strategic_values()
 
 # プレイ時間と複雑さの関係を評価する関数
 def evaluate_playtime_complexity(game_data):
@@ -561,40 +573,31 @@ def calculate_strategic_depth_improved(game_data):
     mechanics = game_data.get('mechanics', [])
     mechanics_names = [m['name'] for m in mechanics]
     
-    # 戦略的価値の高いメカニクスによるボーナス計算
-    # 重み付けを再調整: 0.5 -> 0.4, 0.45 -> 0.35 など、全体的に20%減少
-    high_strategy_mechanics = {
-        'Engine Building': 0.4,
-        'Tech Trees / Tech Tracks': 0.35,
-        'Worker Placement': 0.32,
-        'Deck Building': 0.28,
-        'Area Control / Area Influence': 0.28,
-        'Multi-Use Cards': 0.24,
-        'Action Points': 0.2,
-        'Resource Management': 0.2
-    }
-    
-    medium_strategy_mechanics = {
-        'Card Drafting': 0.16,
-        'Variable Player Powers': 0.16,
-        'Route/Network Building': 0.16,
-        'Auction / Bidding': 0.12,
-        'Hand Management': 0.12,
-        'Tile Placement': 0.12,
-        'Action Selection': 0.12
-    }
+    # 戦略的価値の高いメカニクスのリストを取得
+    high_strategy_values = [(name, get_mechanic_strategic_value(name)) for name in mechanics_names]
+    high_strategy_values.sort(key=lambda x: x[1], reverse=True)
     
     # 戦略的価値に基づくボーナス計算
     strategy_bonus = 0
-    mechanic_count = 0
+    mechanic_count = len(high_strategy_values)
     
-    for mechanic in mechanics_names:
-        if mechanic in high_strategy_mechanics:
-            strategy_bonus += high_strategy_mechanics[mechanic]
-            mechanic_count += 1
-        elif mechanic in medium_strategy_mechanics:
-            strategy_bonus += medium_strategy_mechanics[mechanic]
-            mechanic_count += 1
+    # 上位の戦略的価値を持つメカニクスを重視
+    if mechanic_count > 0:
+        # 最大3つの戦略的メカニクスを考慮
+        top_n = min(3, mechanic_count)
+        
+        # 影響度の配分（1位:50%, 2位:30%, 3位:20%）
+        weights = [0.5, 0.3, 0.2][:top_n]
+        
+        # 正規化
+        weights_sum = sum(weights)
+        weights = [w / weights_sum for w in weights]
+        
+        # 各メカニクスの影響度×戦略的価値の合計
+        for i in range(top_n):
+            name, value = high_strategy_values[i]
+            impact = 0.1 * (value - 2.5)  # 2.5を基準としてボーナス/ペナルティを計算
+            strategy_bonus += impact * weights[i]
     
     # メカニクスが多すぎる場合の減衰を適用
     if mechanic_count > 0:

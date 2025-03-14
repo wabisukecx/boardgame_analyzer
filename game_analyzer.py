@@ -2,8 +2,7 @@
 game_analyzer.py - ボードゲームの自動評価・分析モジュール
 """
 
-# 未使用インポートを削除
-from learning_curve import get_player_type_display
+from learning_curve import get_player_type_display, get_replayability_display
 
 def analyze_game_summary(game_data, learning_curve):
     """
@@ -63,12 +62,7 @@ def analyze_game_summary(game_data, learning_curve):
     analysis['complexity_level'] = get_complexity_level(analysis['bgg_weight'])
     analysis['depth_level'] = get_depth_level(analysis['strategic_depth'])
     analysis['popularity'] = get_popularity_level(analysis['bgg_rank'])
-    
-    # 追加の分析
-    analysis['complexity_discrepancy'] = analyze_complexity_discrepancy(game_data, learning_curve)
-    analysis['key_strengths'] = analyze_key_strengths(game_data, learning_curve)
-    analysis['key_challenges'] = analyze_key_challenges(game_data, learning_curve)
-    
+
     return analysis
 
 def get_complexity_level(weight):
@@ -291,40 +285,40 @@ def generate_game_summary(game_data, learning_curve):
     
     # プレイヤータイプとリプレイ性
     player_types_display = [get_player_type_display(pt) for pt in analysis['player_types'][:2]]
-    replayability = analysis['replayability']
+    
+    # 数値を言葉での表現に変換
     initial_barrier = analysis['initial_barrier']
+    replayability = analysis['replayability']
+    
+    # 初期学習障壁の言葉での表現
+    if initial_barrier >= 4.5:
+        barrier_text = "非常に高い（学習に長い時間を要する）"
+    elif initial_barrier >= 4.0:
+        barrier_text = "高い（学習に時間を要する）"
+    elif initial_barrier >= 3.5:
+        barrier_text = "やや高い（学習にやや時間を要する）"
+    elif initial_barrier >= 3.0:
+        barrier_text = "中程度（基本的な学習が必要）"
+    elif initial_barrier >= 2.0:
+        barrier_text = "低め（簡単に学べる）"
+    else:
+        barrier_text = "低い（すぐに始められる）"
+        
+    # リプレイ性の言葉での表現
+    replayability_text = get_replayability_display(replayability)
     
     # 基本サマリー
     categories_text = "、".join(categories) if categories else "特定のテーマがない"
     mechanics_text = "、".join(mechanics) if mechanics else "特徴的なメカニクスがない"
     
     summary = (
-        f"**{game_name}**（{year}年）は、{categories_text}をテーマにしたボードゲームです。"
+        f"{game_name}（{year}年）は、{categories_text}をテーマにしたボードゲームです。"
         f"複雑さは{complexity}、戦略深度は{depth}です。主な特徴として{mechanics_text}などの"
         f"要素を含み、{popularity}"
         f"{'のためランキング情報はない' if popularity == '新作または評価収集中' else ''}です。\n\n"
     
-        f"初期学習障壁は{initial_barrier:.1f}/5.0で、リプレイ性は{replayability:.1f}/5.0です。"
+        f"初期学習障壁は{barrier_text}、リプレイ性は{replayability_text}です。"
         f"このゲームは特に{', '.join(player_types_display)}に適しています。"
-)
-    
-    # 強みと課題
-    strengths = analysis['key_strengths']
-    challenges = analysis['key_challenges']
-    
-    if strengths:
-        summary += f"\n\n**主な強み**: {', '.join(strengths)}"
-    
-    if challenges:
-        summary += f"\n\n**考慮すべき点**: {', '.join(challenges)}"
-    
-    # 複雑さの乖離分析
-    discrepancy = analysis['complexity_discrepancy']
-    if discrepancy['significant']:
-        summary += f"\n\n**複雑さ評価の特徴**: {discrepancy['description']}"
-    
-    # プレイ情報
-    if analysis['best_players']:
-        summary += f"\n\n**最適プレイ人数**: {analysis['best_players']}人"
+    )
     
     return summary

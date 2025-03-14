@@ -2,13 +2,12 @@ import streamlit as st
 import os
 import re
 
-# 既存のインポート
 from bgg_api import search_games, get_game_details
 from ui_components import (
     load_css, display_game_basic_info,
     display_game_players_info, display_game_age_time_info,
     display_game_complexity, display_learning_curve, display_data_tabs,
-    display_game_analysis_summary
+    display_game_analysis_summary, display_custom_metric
 )
 from data_handler import save_game_data_to_yaml, search_results_to_dataframe, load_game_data_from_yaml
 from learning_curve import calculate_learning_curve
@@ -234,17 +233,24 @@ elif option == "ゲームIDで詳細情報を取得":
                 with col2:
                     display_game_age_time_info(game_details)
                 
-                # 複雑さを表示
+                # 複雑さを表示 (BGG複雑さ評価のみ)
                 col1, col2 = st.columns(2)
                 with col1:
-                    display_game_complexity(game_details)
+                    # BGG複雑さ評価
+                    weight = game_details.get('weight', '不明')
+                    if weight != '不明':
+                        # 小数点第二位までに丸める
+                        weight = f"{float(weight):.2f}/5.00"
+                    display_custom_metric("BGG複雑さ評価", weight)
                 
                 # ラーニングカーブ情報を計算
+                learning_curve = None
                 if ('description' in game_details and 'mechanics' in game_details
                         and 'weight' in game_details):
                     learning_curve = calculate_learning_curve(game_details)
-                    
-                    # ラーニングカーブの情報を表示
+                
+                # ラーニングカーブの情報を表示
+                if learning_curve:
                     display_learning_curve(learning_curve)
                     
                     # 評価サマリーを表示

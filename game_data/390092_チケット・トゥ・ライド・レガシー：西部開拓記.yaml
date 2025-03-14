@@ -10,7 +10,7 @@ alternate_names:
 - 'Wsiąść do Pociągu Legacy: Legendy Zachodu'
 - 'Zug um Zug Legacy: Legenden des Westens'
 - チケット・トゥ・ライド・レガシー：西部開拓記
-average_rating: '8.69004'
+average_rating: '8.68905'
 categories:
 - name: Trains
 community_best_players: 4, 5
@@ -39,22 +39,26 @@ japanese_name: チケット・トゥ・ライド・レガシー：西部開拓�
 learning_analysis:
   bgg_rank: 101
   bgg_weight: 2.5579
-  category_complexity: 2.5
-  decision_points: 3.3333333333333335
+  category_complexity: 3.5
+  decision_points: 3.4814285714285718
   initial_barrier: 4.12
   interaction_complexity: 2.5
   learning_curve_type: moderate_then_shallow
-  mastery_time: medium
+  mastery_time: short
   mechanics_complexity: 3.02
   mechanics_count: 9
   player_types:
-  - experienced
   - trend_follower
-  rank_complexity: 4.01
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.44
   replayability: 3.5
   rules_complexity: 3.4982466666666663
-  strategic_depth: 3.27
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  strategic_depth: 2.98
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2023
 mechanics:
 - name: Connections

@@ -1,0 +1,116 @@
+alternate_names:
+- Architecten van het Westelijk Koninkrijk
+- Architectes du Royaume de l'Ouest
+- Architectes du royaume de l'ouest
+- Architekci Zachodniego Królestwa
+- Architekten des Westfrankenreichs
+- Architekti Západního království
+- Architetti del Regno Occidentale
+- Arquitectos del Reino del Oeste
+- Arquitetos do Reino Ocidental
+- A nyugati királyság építőmesterei
+- Архитекторы Западного Королевства
+- Архітектори Західного Королівства
+- สถาปนิกแห่งนครตะวันตก
+- 西フランク王国の建築家
+- 西國建築師
+- 西國建築師 Architects of the West Kingdom
+- 西方王国建筑师
+- 서쪽 왕국의 건축가
+average_rating: '7.72266'
+categories:
+- name: City Building
+- name: Medieval
+community_best_players: '4'
+community_min_age: '10'
+community_recommended_players: 1, 2, 3, 5
+description: Architects of the West Kingdom is set at the end of the Carolingian Empire,
+  circa 850 AD. As royal architects, players compete to impress their King and maintain
+  their noble status by constructing various landmarks throughout his newly appointed
+  domain. Players need to collect raw materials, hire apprentices, and keep a watchful
+  eye on their workforce. These are treacherous times, and rival architects will stop
+  at nothing to slow your progress. Will you remain virtuous, or be found in the company
+  of thieves and black marketeers?&#10;&#10;The aim of Architects of the West Kingdom
+  is to be the player with the most victory points (VP) at game's end. Points are
+  gained by constructing various buildings and advancing work on the Archbishop's
+  cathedral. Throughout the game, players need to make a lot of moral decisions. However,
+  only at game's end will their virtue be judged. A few underhand deals here and there
+  might not seem like much, but fall too far and you will be punished. The game ends
+  once a set number of constructions have been completed.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+designers:
+- name: S J Macdonald
+- name: Shem Phillips
+japanese_name: 西フランク王国の建築家
+learning_analysis:
+  bgg_rank: 116
+  bgg_weight: 2.7582
+  category_complexity: 3.83
+  decision_points: 4.4
+  initial_barrier: 3.89
+  interaction_complexity: 3.3249999999999997
+  learning_curve_type: moderate
+  mastery_time: medium
+  mechanics_complexity: 3.3
+  mechanics_count: 6
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.12
+  replayability: 3.85
+  rules_complexity: 3.92164
+  strategic_depth: 3.71
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  year_published: 2018
+mechanics:
+- name: Contracts
+- name: Open Drafting
+- name: Solo / Solitaire Game
+- name: Tags
+- name: Variable Player Powers
+- name: Worker Placement
+name: Architects of the West Kingdom
+playing_time: '80'
+publisher_max_players: '5'
+publisher_min_age: '12'
+publisher_min_players: '1'
+publishers:
+- name: Garphill Games
+- name: Angry Lion Games
+- name: Banana Games
+- name: CMON Global Limited
+- name: Fever Games
+- name: Korea Boardgames
+- name: Lavka Games
+- name: Lord of Boards
+- name: MEEPLE
+- name: MeepleBR
+- name: Mosaico Jogos
+- name: Pixie Games
+- name: Portal Games
+- name: Primigenio
+- name: Reflexshop
+- name: Renegade Game Studios
+- name: Schwerkraft-Verlag
+- name: TLAMA games
+- name: White Goblin Games
+- name: Yayoi The Dreamer
+- name: 株式会社ケンビル (KenBill)
+ranks:
+- rank: '116'
+  type: boardgame
+- rank: '103'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/OAX7HfOz-9N60StgADzd0g__thumb/img/sBMaoJ-Kz74lJ6djcl-NNMTr0Wo=/fit-in/200x150/filters:strip_icc()/pic3781944.png
+type: boardgame
+weight: '2.7582'
+year_published: '2018'

@@ -1,0 +1,263 @@
+alternate_names:
+- Challenge Rummy
+- Classic Rummy
+- Deluxe Rummikub
+- Deluxe Rummy-O
+- Digital Game
+- Disney Rummikub
+- Family Rummy
+- Gin Rummi Qube
+- 'Het Huis Anubis: Ris Ras +'
+- Mini Rummy
+- Mini-Rummy
+- Miniature Rummikub
+- My Rummy
+- My Rummy Travel
+- Original Rummikub
+- The Original Rummikub
+- The Original Rummikub Classic
+- The Original Rummikub Intro
+- Het originele Rummikub
+- Pocket Rummikub
+- Rack Rummy
+- Reise Rummikub
+- Reise Rummy
+- Rommi
+- Rum-E-Go
+- Rumi K
+- Rumi-K
+- Rummi Clasic
+- The Rummi Game
+- Rummi-Q
+- Rummika
+- Rummikid
+- Rummiking
+- Rummikub Classique
+- Rummikub Club
+- Rummikub Deluxe
+- Rummikub Easy Pack
+- Rummikub Graffiti
+- Rummikub Infinity
+- Rummikub Kompakt
+- Rummikub Light
+- Rummikub MINI
+- Rummikub Mundo
+- 'Rummikub Mundo: 經典版'
+- Rummikub NGT
+- Rummikub Novo
+- Rummikub Onyx
+- Rummikub Pocket
+- Rummikub Select
+- Rummikub Travel
+- Rummikub Voyage
+- Rummikub XXL
+- 'Rummikub: Infinity'
+- 'Rummikub: le rami des chiffres'
+- Rummy
+- Rummy Champion
+- Rummy De Luxe
+- Rummy Exclusiv
+- Rummy Joke
+- Rummy Junior
+- Rummy King
+- Rummy mit Spielsteinen
+- Rummy Profesional
+- Rummy Squares
+- Rummy-Club
+- Rummy-Cue
+- Rummy-Gin
+- Rummy-Jack
+- Rummy-O
+- Rummy-O II
+- Rummy-Tyle
+- Rummybrix
+- Rumy
+- Rumypok
+- Super Rummy
+- Super X-age Rummy
+- Top-Rummy
+- Tournament Rummikub
+- Travel Rummy
+- Руммикуб
+- Руммикуб. Без границ
+- Руммикуб. Без границ (мини)
+- Руммікуб
+- רומיקוב
+- รัมมี่คิวบ์
+- ラミィキューブ
+- 拉密：豪华版
+- 루미큐브 보이저
+- 루미큐브 클래식
+- 루미큐브 클래식 미니
+average_rating: '6.49227'
+categories:
+- name: Abstract Strategy
+- name: Card Game
+- name: Number
+community_best_players: '4'
+community_min_age: '8'
+community_recommended_players: 2, 3
+description: 'Rummikub is similar to several central European card games which are
+  played with two decks of playing cards, including Machiavelli and Vatikan. Ephraim
+  Hertzano invented the tile game Rummikub in the 1940s when card-playing was outlawed
+  under the Communist regime. After World War II, Hertzano immigrated to British Mandate
+  of Palestine (now Israel) and developed the first sets with his family. Over the
+  years, the Hertzano family licensed it to other countries and Rummikub became Israel''s
+  best-selling export game.&#10;&#10;Hertzano''s Official Rummikub Book, published
+  in 1978, describes three different versions of the game: American, Sabra, and International.
+  Modern Rummikub sets include only the Sabra version rules, with no mention of the
+  others, and there are variations in the rules between publishers.&#10;&#10;In Turkey,
+  the game is known as Okey and is widely played by families at gatherings or at local
+  cafes.&#10;&#10;Like Rummy that you play with cards, you try to get rid of all your
+  tiles by forming numbers into runs of 3 tiles or more, or 3 to 4 of a kind. The
+  colors of the numbers on the tiles are like card suits. This game may start rather
+  uneventfully, but when the players start putting more and more tiles in play, the
+  options for your upcoming turns can become more complex, challenging, and exciting
+  (from areyougame.com).&#10;&#10;'
+designers:
+- name: Ephraim Hertzano
+japanese_name: ラミィキューブ
+learning_analysis:
+  bgg_rank: 1728
+  bgg_weight: 1.7149
+  category_complexity: 3.12
+  decision_points: 3.5149999999999997
+  initial_barrier: 2.39
+  interaction_complexity: 2.85
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.5
+  mechanics_count: 2
+  player_types:
+  - beginner
+  - casual
+  - classic_lover
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.16
+  replayability: 3.12
+  rules_complexity: 2.2763133333333334
+  strategic_depth: 2.59
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 1977
+mechanics:
+- name: Set Collection
+- name: Tile Placement
+name: Rummikub
+playing_time: '60'
+publisher_max_players: '4'
+publisher_min_age: '8'
+publisher_min_players: '2'
+publishers:
+- name: (Unknown)
+- name: Alga
+- name: Aquamarine Games (COMPUDID)
+- name: Arxon
+- name: Bello Games New York, Inc.
+- name: BGA Plus
+- name: Boardgame Space
+- name: Bookmark Verlag
+- name: Brain Games Germany
+- name: Brio AB
+- name: Broadway Toys LTD
+- name: Cadaco
+- name: Cardinal
+- name: Carlit
+- name: Casper
+- name: Cayro, The Games
+- name: CBS Electronics
+- name: Clementoni
+- name: Coneways
+- name: Crown & Andrews Ltd.
+- name: Dal Negro
+- name: danspil
+- name: Desyllas Games
+- name: Dujardin
+- name: Enigma (Bergsala Enigma)
+- name: Espenlaub
+- name: F.X. Schmid
+- name: Falomir Juegos
+- name: Fame Products
+- name: Feelindigo
+- name: Fjarðarfell
+- name: Fortuna Games
+- name: Fotorama de México
+- name: Fun Connection
+- name: Game Design
+- name: Goliath Games
+- name: Grow Jogos e Brinquedos
+- name: H. I. T. INDUSTRIES, LTD.
+- name: Hansa Toy Co.
+- name: Hasbro
+- name: HEMA
+- name: Hertzano Ltd.
+- name: Ideal
+- name: Intelli
+- name: IRWIN Games
+- name: John Adams (IDEAL)
+- name: Joker
+- name: Jumbo
+- name: Kaissa Chess & Games
+- name: Kärnan
+- name: Kawada, Co. Ltd
+- name: Kingstone International
+- name: Kirjalito
+- name: Kod Kod
+- name: Korea Boardgames
+- name: Lamda Limited
+- name: Lastentuotetukku KY
+- name: Lemada Light Industries
+- name: Lifestyle Boardgames Ltd
+- name: Lifetime Educational Games
+- name: M & G Pacific Toys, Inc
+- name: Mar Lúdico
+- name: Masudaya Corp
+- name: MB Jeux
+- name: MB Juegos
+- name: Nordic Games GmbH
+- name: Noris Spiele
+- name: One Moment Games
+- name: Orangutan Games
+- name: Otto Maier Verlag
+- name: Parker Brothers
+- name: Pavilion
+- name: Peri Spiele
+- name: Perner Produktions GmbH
+- name: Piatnik
+- name: Playtoy Industries
+- name: Pressman Toy Corp.
+- name: Ravensburger
+- name: Schmidt International
+- name: Schmidt Spiele
+- name: Selchow & Righter
+- name: Selecta Spel en Hobby
+- name: Shelbud Products Corp.
+- name: Spear's Games
+- name: Spin Master Ltd.
+- name: Sterling Games
+- name: Studio100
+- name: Tactic
+- name: TM Toys
+- name: TOMA Sp. z o.o.
+- name: Tomy
+- name: Toy Club
+- name: Toy Place
+- name: University Games
+- name: Waddingtons
+- name: Weico Produkte GmbH
+- name: Western Publishing Company
+- name: Wood Expressions
+- name: Yangxin Industrial Company Limited
+- name: 놀이속의세상
+ranks:
+- rank: '1728'
+  type: boardgame
+- rank: '666'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/LeaLDlTTmeN639MfuflcMw__thumb/img/CSPEyoFAcA3WwtzDekp3Mfepcek=/fit-in/200x150/filters:strip_icc()/pic2286966.jpg
+type: boardgame
+weight: '1.7149'
+year_published: '1977'

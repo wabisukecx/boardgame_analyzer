@@ -1,0 +1,106 @@
+alternate_names:
+- Dixit ديكست
+- Диксит
+- Діксіт
+- ディクシット
+- 妙不可言
+- 妙語說書人
+- 画物语
+- 言不達意
+- 隻字片語
+- 隻言片語
+- 딕싯
+average_rating: '7.19231'
+categories:
+- name: Card Game
+- name: Humor
+- name: Party Game
+community_best_players: 5, 6
+community_min_age: '8'
+community_recommended_players: 4, 8
+description: Each turn in Dixit, one player is the storyteller who chooses one of
+  the six cards in their hand, then expresses an idea, with sounds or words, that
+  is reflected on that card's image, and places the card face down on the playing
+  surface. Each other player then selects the card that best matches that expression,
+  and passes the selected card to the storyteller, face down.&#10;&#10;The storyteller
+  shuffles all the cards together, then turns them over to reveal them. Each player
+  other than the storyteller then secretly guesses which card belongs to the storyteller.
+  If nobody or everybody guesses the correct card, the storyteller scores 0 points,
+  and each other player scores 2 points. Otherwise, the storyteller and whoever found
+  the correct answer score 3 points. Additionally, the non-storyteller players score
+  1 point for every vote received by their card.&#10;&#10;The game ends when the deck
+  is empty or if a player has scored at least 30 points. In either case, the player
+  with the most points wins.&#10;&#10;The Dixit base game and each expansion contain
+  84 cards, and the cards can be mixed together as desired.&#10;&#10;
+designers:
+- name: Jean-Louis Roubira
+japanese_name: ディクシット
+learning_analysis:
+  bgg_rank: 401
+  bgg_weight: 1.1943
+  category_complexity: 2.09
+  decision_points: 3.1100000000000003
+  initial_barrier: 2.1
+  interaction_complexity: 3.55
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.4
+  mechanics_count: 5
+  player_types:
+  - beginner
+  - casual
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.2
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.14
+  replayability: 3.84
+  rules_complexity: 2.532193333333333
+  strategic_depth: 2.36
+  strategic_depth_description: 低め（限られた戦略オプション）
+  year_published: 2008
+mechanics:
+- name: Race
+- name: Singing
+- name: Storytelling
+- name: Targeted Clues
+- name: Voting
+name: Dixit
+playing_time: '30'
+publisher_max_players: '8'
+publisher_min_age: '8'
+publisher_min_players: '3'
+publishers:
+- name: Libellud
+- name: ADC Blackfire Entertainment
+- name: Anne
+- name: Asmodee
+- name: Asterion Press
+- name: Boardgame Space
+- name: Galápagos Jogos
+- name: Gém Klub Kft.
+- name: hobbity.eu
+- name: Hobby Japan
+- name: KADABRA
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Lautapelit.fi
+- name: Maldón
+- name: Morapiaf
+- name: Nordic Games GmbH
+- name: Paladium Games
+- name: Rebel Sp. z o.o.
+- name: Swan Panasia Co., Ltd.
+- name: Ігромаг
+ranks:
+- rank: '401'
+  type: boardgame
+- rank: '27'
+  type: partygames
+thumbnail_url: https://cf.geekdo-images.com/J0PlHArkZDJ57H-brXW2Fw__thumb/img/QVwPXskFikQwBQlrdLJBAiRGgdg=/fit-in/200x150/filters:strip_icc()/pic6738336.jpg
+type: boardgame
+weight: '1.1943'
+year_published: '2008'

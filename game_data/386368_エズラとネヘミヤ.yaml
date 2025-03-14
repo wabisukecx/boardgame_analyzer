@@ -1,0 +1,99 @@
+alternate_names:
+- Esdra e Neemia
+- Esdras e Neemias
+- Esdras et Néhémie
+- エズラとネヘミヤ
+average_rating: '8.25052'
+categories:
+- name: Ancient
+- name: City Building
+- name: Religious
+community_best_players: '3'
+community_min_age: '12'
+community_recommended_players: 1, 2, 4
+description: In his first year as king of Persia, Cyrus the Great issued a decree
+  in writing to the Israelite exiles living under his rule:&#10;&#10;The God of heaven
+  has given me all the kingdoms of the earth and has appointed me to build a temple
+  for Him in Jerusalem. Any of his people may go up to Jerusalem in Judah to build
+  the temple of the Lord, the God of Israel. And in any place where survivors may
+  now be living, the people of Persia are to provide them with silver, gold, goods,
+  livestock, and offerings for the temple of God in Jerusalem. - Ezra 1:2-4 (paraphrased).&#10;&#10;Decades
+  later, in the twentieth year of Artaxerxes reign, the king noticed a sadness in
+  his cupbearer, Nehemiah. When asked why he looked so ill, Nehemiah replied:&#10;&#10;May
+  the king live forever! Why should I not look sad when the city of my ancestors lies
+  in ruins, and its gates have been destroyed by fire? If it pleases you, and if I
+  have found favor in your sight, let me go to the city in Judah where my ancestors
+  are buried so that I may rebuild it. - Nehemiah 2:3-5 (paraphrased).&#10;&#10;The
+  aim of Ezra and Nehemiah is to be the player with the most victory points (VP) at
+  game's end. Points are gained primarily by building the temple, rebuilding the city
+  walls and gates, and by teaching the Torah to the returning exiles. Players may
+  also seek to develop their land, travel to settlements outside the city walls, or
+  stoke the altar's fire to keep it burning day and night. The prophets Haggai and
+  Zechariah will be doing their part to keep the people focused on what is most important.&#10;&#10;Over
+  three weeks (rounds), players will use their hand of cards, workers, and resources
+  to do their part in rebuilding the great city of Jerusalem. After six days of work
+  comes a Sabbath day of rest when food will be needed, and the week's work will be
+  reflected upon. The game ends after the third Sabbath has been completed.&#10;&#10;&mdash;description
+  from the designer&#10;&#10;
+designers:
+- name: S J Macdonald
+- name: Shem Phillips
+japanese_name: エズラとネヘミヤ
+learning_analysis:
+  bgg_rank: 719
+  bgg_weight: 3.8389
+  category_complexity: 3.89
+  decision_points: 4.44
+  initial_barrier: 4.91
+  interaction_complexity: 3.0
+  learning_curve_type: steep_then_moderate
+  mastery_time: medium
+  mechanics_complexity: 3.39
+  mechanics_count: 7
+  player_types:
+  - experienced
+  - hardcore
+  - system_master
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.03
+  replayability: 3.6
+  rules_complexity: 4.281589523809524
+  strategic_depth: 3.69
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  year_published: 2024
+mechanics:
+- name: Chaining
+- name: Hand Management
+- name: Multi-Use Cards
+- name: Solo / Solitaire Game
+- name: Tech Trees / Tech Tracks
+- name: Track Movement
+- name: Variable Set-up
+name: Ezra and Nehemiah
+playing_time: '120'
+publisher_max_players: '4'
+publisher_min_age: '13'
+publisher_min_players: '1'
+publishers:
+- name: Garphill Games
+- name: CHUR GAMES
+- name: CMON Global Limited
+- name: Mosaico Jogos
+- name: Pixie Games
+- name: Renegade Game Studios
+- name: Tesla Games
+- name: 株式会社ケンビル (KenBill)
+ranks:
+- rank: '719'
+  type: boardgame
+- rank: '363'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/MVflz8gmtK1DZy49E-Llog__thumb/img/o7kbhWms7CO3dbgncofPaS4-hwg=/fit-in/200x150/filters:strip_icc()/pic7474410.jpg
+type: boardgame
+weight: '3.8389'
+year_published: '2024'

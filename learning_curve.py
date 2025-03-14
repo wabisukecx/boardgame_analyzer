@@ -247,13 +247,13 @@ def calculate_learning_curve(game_data):
         
     # 初期障壁（ルールの複雑さ）の計算を更新
     initial_barrier = (
-        avg_mechanic_complexity * 0.6 + 
+        avg_mechanic_complexity * 0.5 + 
         base_weight * 0.2 +
         complexity_factor * 0.2  # 推奨年齢の代わりにカテゴリとランキングによる評価
     )
     
     # メカニクス数による初期障壁の調整（多くのメカニクスがあるほど初期学習が難しくなる）
-    mechanics_count_barrier_factor = min(1.4, max(1.0, len(mechanics_names) / 5))
+    mechanics_count_barrier_factor = min(1.25, max(1.0, len(mechanics_names) / 5))
     initial_barrier = initial_barrier * mechanics_count_barrier_factor
     
     # 上限を5.0に設定
