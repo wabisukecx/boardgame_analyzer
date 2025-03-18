@@ -170,3 +170,117 @@ def load_all_game_data():
                     game_data_dict[game_id] = game_data
     
     return game_data_dict
+
+def get_yaml_game_list():
+    """
+    game_dataフォルダ内のYAMLファイルを走査し、ゲームIDとタイトルのリストを返す
+    
+    Returns:
+        list: (ゲームID, ファイル名, 表示名)のタプルのリスト
+    """
+    game_list = []
+    # game_dataフォルダが存在するか確認
+    if not os.path.exists("game_data"):
+        return game_list
+        
+    # YAMLファイルを検索
+    for filename in os.listdir("game_data"):
+        if filename.endswith(".yaml"):
+            # ファイル名からゲームIDを抽出 (例: "167791_テラフォーミング・マーズ.yaml")
+            match = re.match(r"(\d+)_(.*?)\.yaml", filename)
+            if match:
+                game_id = match.group(1)
+                game_name = match.group(2)
+                display_name = f"{game_id} - {game_name}"
+                game_list.append((game_id, filename, display_name))
+    
+    # IDでソート
+    game_list.sort(key=lambda x: int(x[0]))
+    return game_list
+
+def compare_game_data(old_data, new_data):
+    """
+    2つのゲームデータを比較し、重要な変更があるかどうかと変更内容を返す
+    
+    Parameters:
+        old_data (dict): 既存のゲームデータ
+        new_data (dict): 新しく取得したゲームデータ
+    
+    Returns:
+        tuple: (変更があるかどうか, 変更の説明)
+    """
+    if not old_data or not new_data:
+        return True, "データが不完全なため、更新が必要です。"
+    
+    # 重要なキーを定義
+    important_keys = {
+        'name': '英語名',
+        'japanese_name': '日本語名',
+        'year_published': '発行年',
+        'average_rating': '平均評価',
+        'weight': '複雑さ',
+        # メカニクスやカテゴリは複雑な構造なので別途処理
+    }
+    
+    changes = []
+    has_changes = False
+    
+    # 基本的なフィールドの比較
+    for key, display_name in important_keys.items():
+        old_value = old_data.get(key)
+        new_value = new_data.get(key)
+        
+        # データ型の違いを考慮して比較（文字列と数値の場合）
+        if isinstance(old_value, (int, float)) and isinstance(new_value, str):
+            try:
+                new_value = float(new_value) if '.' in new_value else int(new_value)
+            except ValueError:
+                pass
+        elif isinstance(new_value, (int, float)) and isinstance(old_value, str):
+            try:
+                old_value = float(old_value) if '.' in old_value else int(old_value)
+            except ValueError:
+                pass
+        
+        if old_value != new_value:
+            has_changes = True
+            if key in ['average_rating', 'weight'] and isinstance(old_value, (int, float)) and isinstance(new_value, (int, float)):
+                # 数値の場合は小数点2桁で丸める
+                old_str = f"{old_value:.2f}" if isinstance(old_value, float) else str(old_value)
+                new_str = f"{new_value:.2f}" if isinstance(new_value, float) else str(new_value)
+                changes.append(f"- {display_name}: {old_str} → {new_str}")
+            else:
+                changes.append(f"- {display_name}: {old_value} → {new_value}")
+    
+    # メカニクスの比較
+    old_mechanics = set(m.get('name', '') for m in old_data.get('mechanics', []))
+    new_mechanics = set(m.get('name', '') for m in new_data.get('mechanics', []))
+    
+    if old_mechanics != new_mechanics:
+        has_changes = True
+        added = new_mechanics - old_mechanics
+        removed = old_mechanics - new_mechanics
+        
+        if added:
+            changes.append(f"- 追加されたメカニクス: {', '.join(added)}")
+        if removed:
+            changes.append(f"- 削除されたメカニクス: {', '.join(removed)}")
+    
+    # カテゴリの比較
+    old_categories = set(c.get('name', '') for c in old_data.get('categories', []))
+    new_categories = set(c.get('name', '') for c in new_data.get('categories', []))
+    
+    if old_categories != new_categories:
+        has_changes = True
+        added = new_categories - old_categories
+        removed = old_categories - new_categories
+        
+        if added:
+            changes.append(f"- 追加されたカテゴリ: {', '.join(added)}")
+        if removed:
+            changes.append(f"- 削除されたカテゴリ: {', '.join(removed)}")
+    
+    # 変更の説明を結合
+    change_description = '\n'.join(changes) if changes else "変更はありませんでした。"
+    
+    return has_changes, change_description
