@@ -713,3 +713,8 @@ Zone of Control:
   strategic_value: 3.6
   interaction_value: 3.4
   description: 影響圏による空間制御と間接的な領域支配
+Tug of War:
+  complexity: 2.5
+  strategic_value: 3.0
+  interaction_value: 4.0
+  description: 二つの勢力が綱引きのように前後に競り合うバランス調整メカニクス
