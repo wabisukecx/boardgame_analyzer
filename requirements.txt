@@ -4,3 +4,10 @@ requests
 pyyaml
 deepdiff
 plotly
+matplotlib
+seaborn
+scikit-learn
+tqdm
+python-dotenv
+voyageai
+numpy
