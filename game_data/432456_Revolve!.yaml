@@ -1,0 +1,67 @@
+average_rating: '7.48421'
+categories:
+- name: Card Game
+community_best_players: '4'
+community_recommended_players: '3'
+description: Your goal in Revolve! is to empty your hand of cards.&#10;&#10;Each player
+  starts with eight or ten cards in hand, with each card having different numbers
+  (from 1-10) at top and bottom, e.g. 1 and 7. Pick up all your cards at once; you
+  can rearrange cards from left to right at any time, but you can't revolve them.
+  On a turn, first discard any cards on the table in front of you, then you can:&#10;&#10;1.
+  Play cards from your hand.&#10;2. Add one card to the table.&#10;3. Take cards from
+  the table.&#10;4. Revolve all cards in your hand.&#10;&#10;When you play cards,
+  you can play one or more cards of the same value &mdash; but if you play as many
+  cards as another player has in front of them, your cards must be of higher value.
+  If you overplay someone, e.g. playing two 5s when they have two 2s, they must revolve
+  their cards, then return them to their hand.&#10;&#10;When you add one card, you
+  add a card of the same value to someone else's played cards &mdash; but if that
+  player would now have the same number of cards as a third player, the third player's
+  cards must be a lower value, in which case they revolve them and return them to
+  hand.&#10;&#10;When you pick up cards from in front of another player, revolve them,
+  then add them to your hand.&#10;&#10;The first player to empty their hand scores
+  2 points, and cards don't return to their hand, even if beaten. The second player
+  to empty their hand scores 1 point. Play multiple rounds until someone has at least
+  4 points, then whoever has the most points wins.&#10;&#10;
+designers:
+- name: Kei Kajino (梶野 桂)
+learning_analysis:
+  bgg_rank: 15031
+  bgg_weight: 1.6667
+  category_complexity: 2.3
+  decision_points: 3.57
+  initial_barrier: 2.23
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.9
+  mechanics_count: 1
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 0.85
+    decision_density: 0.0
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.1
+  replayability: 2.2
+  rules_complexity: 2.6473400000000002
+  strategic_depth: 2.1
+  strategic_depth_description: 低め（限られた戦略オプション）
+  year_published: 2024
+mechanics:
+- name: Hand Management
+name: Revolve!
+playing_time: '0'
+publisher_max_players: '4'
+publisher_min_age: '12'
+publisher_min_players: '3'
+publishers:
+- name: One More Game!
+ranks:
+- rank: '15031'
+  type: boardgame
+thumbnail_url: https://cf.geekdo-images.com/CgLIiA4ou2n61rF-RylMPg__thumb/img/N3aZFtCbxRc9fW8ldlv_gXvuLV4=/fit-in/200x150/filters:strip_icc()/pic8523446.png
+type: boardgame
+weight: '1.6667'
+year_published: '2024'

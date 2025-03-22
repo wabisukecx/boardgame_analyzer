@@ -1,0 +1,74 @@
+alternate_names:
+- 馬高
+average_rating: '7.76667'
+categories:
+- name: Prehistoric
+community_best_players: '4'
+community_recommended_players: 2, 3
+description: UMATAKA is a board game themed around the Jomon period in Niigata Prefecture,
+  Japan, a region known for its distinctive &quot;flame pottery&quot; artifacts. Players
+  take on the roles of family leaders among the Jomon people, competing through the
+  four seasons&mdash;spring, summer, autumn, and winter&mdash;to earn points by crafting
+  pottery, hunting, and cooking nuts. The region's historical trade value of jade
+  also plays a crucial role, as players must also gather this precious material.&#10;&#10;UMATAKA
+  utilizes a worker placement system where players use human and dog pieces as workers,
+  placing between one and four workers in designated spaces. Dogs, which are relatively
+  easier to acquire during the game, must work alongside humans due to several restrictions.
+  After placing workers and taking actions, the number of workers influences the advancement
+  of a piece on the &quot;Exploration Track.&quot; The action located at the space
+  where this explorer piece stops is also executed. This mechanism forces players
+  to think strategically about the number of workers they deploy, and sometimes strategically
+  placing extra workers can provide an advantage in the game.&#10;&#10;
+designers:
+- name: 無界 (Mukai)
+- name: Napopora
+learning_analysis:
+  bgg_rank: 12074
+  bgg_weight: 2.5
+  category_complexity: 3.0
+  decision_points: 4.840000000000002
+  initial_barrier: 3.4
+  interaction_complexity: 3.0
+  learning_curve_type: gentle_then_moderate
+  mastery_time: medium
+  mechanics_complexity: 3.38
+  mechanics_count: 8
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.12
+  replayability: 3.2
+  rules_complexity: 3.8041666666666667
+  strategic_depth: 3.57
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  year_published: 2024
+mechanics:
+- name: Contracts
+- name: Hidden Victory Points
+- name: Set Collection
+- name: Tech Trees / Tech Tracks
+- name: 'Turn Order: Claim Action'
+- name: Variable Set-up
+- name: Worker Placement
+- name: Worker Placement, Different Worker Types
+name: UMATAKA
+playing_time: '90'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '2'
+publishers:
+- name: bronze bell house(銅鐸舎)
+ranks:
+- rank: '12074'
+  type: boardgame
+thumbnail_url: https://cf.geekdo-images.com/JDChSC_Ri8JCLOwZF9xVjA__thumb/img/DM0WOAOViU13lNnRTnjl1l35MlE=/fit-in/200x150/filters:strip_icc()/pic8169811.png
+type: boardgame
+weight: '2.5'
+year_published: '2024'

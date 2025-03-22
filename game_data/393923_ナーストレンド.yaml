@@ -1,0 +1,58 @@
+alternate_names:
+- ナーストレンド
+average_rating: '7'
+categories:
+- name: Dice
+- name: Fantasy
+- name: Mythology
+description: In this fast-playing riff on Talisman, you play valkyries fighting your
+  way from Midgard through Niflheim to Hvergelmir to hold back the dragon Nidhogg
+  from starting Ragnarok.&#10;&#10;Defeat enemies by beating their strength with a
+  roll of the dice, but score more points by using fewer dice to do so. Enlist the
+  souls of dead warriors from Valhalla to gain dice manipulation abilities, but too
+  many warriors in your band will penalize your score.&#10;&#10;Defeated cards in
+  the board's grid give you bonus dice against other cards in their row and column,
+  so plan ahead and choose your path to the center carefully.&#10;&#10;
+designers:
+- name: Kuro
+japanese_name: ナーストレンド
+learning_analysis:
+  bgg_rank: null
+  bgg_weight: 0.0
+  category_complexity: 3.04
+  decision_points: 2.515
+  initial_barrier: 1.53
+  interaction_complexity: 3.02
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 1.85
+  mechanics_count: 2
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 3.0
+  replayability: 2.7
+  rules_complexity: 1.8653333333333335
+  strategic_depth: 1.69
+  strategic_depth_description: 低い（戦略的要素が少ない）
+  year_published: 2023
+mechanics:
+- name: Dice Rolling
+- name: Push Your Luck
+name: Nastrond
+playing_time: '60'
+publisher_max_players: '4'
+publisher_min_age: '14'
+publisher_min_players: '3'
+publishers:
+- name: Manifest Destiny
+ranks: []
+thumbnail_url: https://cf.geekdo-images.com/maNDYvAKZR6tNZcuxkYpdA__thumb/img/JggiYOMxypno9sIDfpLyANZiE1w=/fit-in/200x150/filters:strip_icc()/pic7609548.jpg
+type: boardgame
+weight: '0'
+year_published: '2023'
