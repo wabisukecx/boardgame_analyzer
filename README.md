@@ -1,4 +1,4 @@
-# BoardGame Analyzer（拡張版）
+# BoardGame Analyzer
 
 BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析、保存するためのStreamlitアプリケーションです。新たに類似性検索機能を追加し、ゲーム間の関連性を分析できるようになりました。
 
