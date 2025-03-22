@@ -12,9 +12,57 @@ from ui.ui_components import (
     display_game_analysis_summary, display_custom_metric
 )
 
+# YAML更新用の関数をインポート
+from src.analysis.mechanic_complexity import (
+    add_missing_mechanic, 
+    flush_pending_mechanics
+)
+from src.analysis.category_complexity import add_missing_category
+from src.analysis.rank_complexity import add_missing_rank_type
+
+def update_yaml_from_game_data(game_data):
+    """
+    ゲームデータからYAML設定を更新する
+    
+    Parameters:
+    game_data (dict): ゲームデータ
+    """
+    # メカニクスの処理
+    if 'mechanics' in game_data and isinstance(game_data['mechanics'], list):
+        for mechanic in game_data['mechanics']:
+            if isinstance(mechanic, dict) and 'name' in mechanic:
+                mechanic_name = mechanic['name']
+                # メカニクスを追加
+                add_missing_mechanic(mechanic_name)
+    
+    # カテゴリの処理
+    if 'categories' in game_data and isinstance(game_data['categories'], list):
+        for category in game_data['categories']:
+            if isinstance(category, dict) and 'name' in category:
+                category_name = category['name']
+                # カテゴリを追加
+                add_missing_category(category_name)
+    
+    # ランキングの処理
+    if 'ranks' in game_data and isinstance(game_data['ranks'], list):
+        for rank in game_data['ranks']:
+            if isinstance(rank, dict) and 'type' in rank:
+                rank_type = rank['type']
+                # ランキング種別を追加
+                add_missing_rank_type(rank_type)
+    
+    # 保留中のメカニクスを保存
+    flush_pending_mechanics()
+    
+    st.session_state['yaml_updated'] = True
+
 def details_page():
     """ゲームIDで詳細情報を取得するページを表示"""
     st.header("ゲームIDで詳細情報を取得")
+    
+    # YAML更新状態を管理
+    if 'yaml_updated' not in st.session_state:
+        st.session_state['yaml_updated'] = False
     
     # 既存のYAMLファイルから選択できるようにする
     yaml_games = get_yaml_game_list()
@@ -53,6 +101,14 @@ def details_page():
             game_details = get_game_details(game_id)
             
             if game_details:
+                # *** 新機能: YAMLデータを更新 ***
+                update_yaml_from_game_data(game_details)
+                
+                # 更新通知を表示
+                if st.session_state['yaml_updated']:
+                    st.success("メカニクス、カテゴリ、ランキング設定が更新されました")
+                    st.session_state['yaml_updated'] = False
+                
                 # アンカータグを追加（サイドバーからのリンク用）
                 st.markdown(f"<div id='{game_id}'></div>", unsafe_allow_html=True)
                 
