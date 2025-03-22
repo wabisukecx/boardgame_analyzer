@@ -1,0 +1,100 @@
+alternate_names:
+- Bosbuit
+- La Forêt de Savernake
+- Orzeszki ze ścieżki
+- Podzimní syslení
+- Осенний лес
+- Савернакський Ліс
+average_rating: '7.09477'
+categories: []
+community_best_players: '4'
+community_min_age: '8'
+community_recommended_players: 2, 3
+description: 'Autumn is coming to an end in the Savernake Forest&hellip; Help the
+  animals gather and store food for the winter! Savernake forest is a game where 2-4
+  players build their own section of the forest with paths where animals and food
+  will appear. To get the highest score, players must ensure that on each path the
+  animals can collect their favorite food.&#10;&#10;Foxes, hedgehogs, beavers, owls,
+  rabbits, woodpeckers, wild cats... Up to 23 different types of animals live together
+  in the Savernake Forest. At the end of autumn, they all prepare to spend the cold
+  winter with enough provisions and here you are to give them a hand&hellip; Or a
+  paw! To play Savernake Forest you have two decks of square cards, one showing the
+  animals and the other with forest paths full of succulent food. Each player is randomly
+  given an animal card, showing how many foods they can store and their preferences.
+  For example, the fox loves eggs, but not berries or nuts. To get the best score,
+  you must try to get each animal to collect its favorite foods.&#10;&#10;During setup,
+  three road cards and one animal card are laid out for all players to see. Each player,
+  on his turn, will choose one of them and add it to his forest, always respecting
+  three rules: there can never be two animals on the same path; cards must be adjacent
+  and no cards can be placed outside of a 4x4 grid. The game ends when all participants
+  have completed their forest, with a total of 16 cards.&#10;&#10;Throughout the game,
+  players will have the help of some animals, depending on the card they choose from
+  the central market. The rooster will help you get up early, so you can be the first
+  to choose a card in the next turn. The armadillo teaches you how to dig better shelters
+  to store more food, so you can take a burrow token and add it to one of your animal
+  cards to increase that animal''s storage capacity by 1. The goat teaches you to
+  hydrate yourself better, offering a water drop token that can be associated with
+  a food and increase its value by 1. Finally, the rabbit helps you attract new animals
+  to your forest.&#10;&#10;For players looking for more advanced challenges, the rulebook
+  includes a two-player variant with some modifications that increase the difficulty.
+  Quite a boost if you already master the basic rules!&#10;&#10;With a dreamy art,
+  Savernake Forest offers a perfect balance between fun and strategy that makes it
+  perfect for any type of playgroup. Family and friends will have a great time helping
+  the animals of the forest, while trying to make the most of their paths to reach
+  the highest score. Stroll through Savernake in the fall and be swept away by the
+  enchantment of its wildlife!&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+designers:
+- name: Rodrigo Rego
+learning_analysis:
+  bgg_rank: 2865
+  bgg_weight: 1.2857
+  category_complexity: 2.5
+  decision_points: 3.69
+  initial_barrier: 2.22
+  interaction_complexity: 2.5
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.98
+  mechanics_count: 5
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.11
+  replayability: 2.5
+  rules_complexity: 3.205806666666666
+  strategic_depth: 2.48
+  strategic_depth_description: 低め（限られた戦略オプション）
+  year_published: 2023
+mechanics:
+- name: Map Addition
+- name: Open Drafting
+- name: Pattern Building
+- name: Tags
+- name: Tile Placement
+name: Savernake Forest
+playing_time: '40'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '2'
+publishers:
+- name: Devir
+- name: 999 Games
+- name: Evrikus
+- name: Games7Days
+- name: IELLO
+- name: Nasza Księgarnia
+- name: TLAMA games
+ranks:
+- rank: '2865'
+  type: boardgame
+- rank: '879'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/pcsfpRyo6tz2r8kcFOkUbg__thumb/img/qJka-CnwzAy-GigqO8HAKZTGSUU=/fit-in/200x150/filters:strip_icc()/pic7676237.jpg
+type: boardgame
+weight: '1.2857'
+year_published: '2023'

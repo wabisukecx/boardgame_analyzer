@@ -7,7 +7,7 @@ alternate_names:
 - 工業革命
 - 工業革命：蘭開夏
 - '브라스: 랭커셔'
-average_rating: '8.19593'
+average_rating: '8.19595'
 categories:
 - name: Economic
 - name: Industry / Manufacturing
@@ -57,17 +57,17 @@ learning_analysis:
   bgg_rank: 21
   bgg_weight: 3.853
   category_complexity: 4.31
-  decision_points: 4.3
-  initial_barrier: 4.92
-  interaction_complexity: 3.05
-  learning_curve_type: steep_then_moderate
+  decision_points: 4.591999999999999
+  initial_barrier: 3.99
+  interaction_complexity: 3.2649999999999997
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.29
   mechanics_count: 7
   player_types:
+  - casual
   - experienced
   - hardcore
-  - strategist
   - system_master
   - replayer
   - trend_follower
@@ -79,7 +79,7 @@ learning_analysis:
   rank_complexity: 3.21
   replayability: 4.56
   rules_complexity: 4.2610761904761905
-  strategic_depth: 3.86
+  strategic_depth: 3.8
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2007
 mechanics:

@@ -3,7 +3,7 @@ alternate_names:
 - 大五月花號
 - 奇伍德花季号
 - 키플라워
-average_rating: '7.71823'
+average_rating: '7.71845'
 categories:
 - name: City Building
 - name: Economic
@@ -40,25 +40,34 @@ designers:
 - name: Richard Breese
 japanese_name: キーフラワー
 learning_analysis:
-  bgg_rank: 120
-  bgg_weight: 3.3353
-  category_complexity: 3.0
-  decision_points: 3.21875
-  initial_barrier: 4.69
-  interaction_complexity: 2.8
-  learning_curve_type: steep_then_shallow
+  bgg_rank: 121
+  bgg_weight: 3.3349
+  category_complexity: 4.39
+  decision_points: 4.8028571428571425
+  initial_barrier: 3.9
+  interaction_complexity: 3.4949999999999997
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.36
   mechanics_count: 16
   player_types:
+  - casual
   - experienced
+  - hardcore
+  - strategist
+  - system_master
   - replayer
   - trend_follower
-  rank_complexity: 3.89
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.12
   replayability: 4.8
-  rules_complexity: 4.087685
-  strategic_depth: 3.34
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  rules_complexity: 4.087605
+  strategic_depth: 3.86
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2012
 mechanics:
 - name: Auction / Bidding
@@ -99,11 +108,11 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: WoodCat
 ranks:
-- rank: '120'
+- rank: '121'
   type: boardgame
 - rank: '101'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/HbfgxDJZQnNEZQKvpmJxQg__thumb/img/5t1MtJEDdhSgtyJlmu3Hu1qR_ZQ=/fit-in/200x150/filters:strip_icc()/pic2278942.jpg
 type: boardgame
-weight: '3.3353'
+weight: '3.3349'
 year_published: '2012'
