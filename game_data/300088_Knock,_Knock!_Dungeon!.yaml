@@ -1,0 +1,59 @@
+alternate_names:
+- Ťuk! Ťuk! Podzemí
+average_rating: '6.28699'
+categories:
+- name: Card Game
+- name: Fantasy
+- name: Real-time
+community_best_players: '4'
+community_min_age: '8'
+community_recommended_players: 1, 2, 3
+description: In the co-operative game Knock! Knock! Dungeon!, you and your companions
+  must explore a dungeon with various dangers and creatures in order to find and beat
+  the Black Knight &mdash; but you have only ten minutes before the curse of the dungeon
+  hits you!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+designers:
+- name: Anthony Perone
+learning_analysis:
+  bgg_rank: 14866
+  bgg_weight: 1.125
+  category_complexity: 2.9
+  decision_points: 3.4699999999999998
+  initial_barrier: 2.19
+  interaction_complexity: 3.1100000000000003
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.9
+  mechanics_count: 1
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 0.85
+    decision_density: 0.0
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.11
+  replayability: 2.64
+  rules_complexity: 2.2056666666666667
+  strategic_depth: 2.12
+  strategic_depth_description: 低め（限られた戦略オプション）
+  year_published: 2020
+mechanics:
+- name: Cooperative Game
+name: Knock, Knock! Dungeon!
+playing_time: '6'
+publisher_max_players: '6'
+publisher_min_age: '7'
+publisher_min_players: '1'
+publishers:
+- name: Blue Orange (EU)
+- name: ADC Blackfire Entertainment
+- name: PaperGames (III)
+ranks:
+- rank: '14866'
+  type: boardgame
+thumbnail_url: https://cf.geekdo-images.com/VBevdiuN_B6qyGZNU_em9Q__thumb/img/zkYLg_0w0Kgqsoitf9Yif2DiPU0=/fit-in/200x150/filters:strip_icc()/pic5661232.png
+type: boardgame
+weight: '1.125'
+year_published: '2020'

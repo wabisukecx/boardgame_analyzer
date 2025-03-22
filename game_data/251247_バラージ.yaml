@@ -7,7 +7,7 @@ alternate_names:
 - バラージ
 - 强国争坝
 - 버라지
-average_rating: '8.15532'
+average_rating: '8.15444'
 categories:
 - name: Economic
 - name: Environmental
@@ -49,7 +49,7 @@ designers:
 japanese_name: バラージ
 learning_analysis:
   bgg_rank: 36
-  bgg_weight: 4.1155
+  bgg_weight: 4.116
   category_complexity: 4.14
   decision_points: 4.599999999999999
   initial_barrier: 3.95
@@ -73,7 +73,7 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 3.2
   replayability: 4.51
-  rules_complexity: 4.203706060606061
+  rules_complexity: 4.203806060606061
   strategic_depth: 3.84
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2019
@@ -116,5 +116,5 @@ ranks:
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/jEPmWvvYpqkWrKOzqIHFsg__thumb/img/kMLIpeqA6UcUvQg2AdMwwQoEIfU=/fit-in/200x150/filters:strip_icc()/pic4336469.png
 type: boardgame
-weight: '4.1155'
+weight: '4.116'
 year_published: '2019'

@@ -1,0 +1,83 @@
+alternate_names:
+- Čtyřmi slovy!
+- Gra w zielone!
+- Secretul Trifoiului!
+- So Kleever!
+- Szókötő
+- Το τετράφυλλο τριφύλλι
+- Так кмітливо!
+- ことばのクローバー！
+- 密語幸運草
+- 쏘 클로버!
+average_rating: '7.59154'
+categories:
+- name: Party Game
+- name: Word Game
+community_best_players: 3, 4
+community_min_age: '10'
+community_recommended_players: 2, 5, 6
+description: So Clover! is a cooperative word-association game. Play as a team to
+  get the highest score. Get Keywords and secretly write their common features on
+  your Clover board; these are your Clues. Then work together to try to figure out
+  each player&rsquo;s Keywords. At the end of the game, add up your score according
+  to how many Keywords you found and write it in the Record of Legends. Try to beat
+  your high score each game!&#10;&#10;-description from the publisher&#10;&#10;
+designers:
+- name: François Romain
+japanese_name: ことばのクローバー！
+learning_analysis:
+  bgg_rank: 293
+  bgg_weight: 1.1056
+  category_complexity: 1.89
+  decision_points: 3.6149999999999998
+  initial_barrier: 2.27
+  interaction_complexity: 3.475
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 3.3
+  mechanics_count: 2
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.0
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.17
+  replayability: 2.8
+  rules_complexity: 2.863786666666666
+  strategic_depth: 2.66
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2021
+mechanics:
+- name: Communication Limits
+- name: Cooperative Game
+name: So Clover!
+playing_time: '30'
+publisher_max_players: '6'
+publisher_min_age: '10'
+publisher_min_players: '3'
+publishers:
+- name: Repos Production
+- name: Gameology (Gameology Romania)
+- name: Gém Klub Kft.
+- name: GoKids 玩樂小子
+- name: Hobby Japan
+- name: Kaissa Chess & Games
+- name: MIPL
+- name: Rebel Sp. z o.o.
+- name: TLAMA games
+- name: YellowBOX
+ranks:
+- rank: '293'
+  type: boardgame
+- rank: '6'
+  type: partygames
+- rank: '53'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/8oipK9-ivkn53h7L5U2Yfg__thumb/img/cBKt41XFKkdphyqZItit4EIC45k=/fit-in/200x150/filters:strip_icc()/pic6588069.png
+type: boardgame
+weight: '1.1056'
+year_published: '2021'

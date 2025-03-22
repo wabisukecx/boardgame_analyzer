@@ -8,7 +8,7 @@ alternate_names:
 - Robin Hood a jeho dobrodružství
 - Приключения Робина Гуда
 - 로빈 후드의 모험
-average_rating: '7.46442'
+average_rating: '7.46429'
 categories:
 - name: Medieval
 community_min_age: '8'
@@ -29,12 +29,12 @@ description: In England in 1193, the county of Nottinghamshire suffers under the
 designers:
 - name: Michael Menzel
 learning_analysis:
-  bgg_rank: 747
-  bgg_weight: 1.828
-  category_complexity: 2.5
-  decision_points: 2.7
-  initial_barrier: 2.7
-  interaction_complexity: 2.5
+  bgg_rank: 746
+  bgg_weight: 1.8302
+  category_complexity: 3.5
+  decision_points: 3.8249999999999997
+  initial_barrier: 2.47
+  interaction_complexity: 3.2
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.93
@@ -42,12 +42,18 @@ learning_analysis:
   player_types:
   - beginner
   - casual
+  - experienced
   - trend_follower
-  rank_complexity: 3.43
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.72
   replayability: 2.8
-  rules_complexity: 2.920266666666667
-  strategic_depth: 2.44
-  strategic_depth_description: 低め（限られた戦略オプション）
+  rules_complexity: 2.920706666666667
+  strategic_depth: 3.0
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2021
 mechanics:
 - name: Cooperative Game
@@ -69,11 +75,11 @@ publishers:
 - name: Korea Boardgames
 - name: Zvezda
 ranks:
-- rank: '747'
+- rank: '746'
   type: boardgame
-- rank: '149'
+- rank: '150'
   type: thematic
 thumbnail_url: https://cf.geekdo-images.com/QOCGlQyx_HU0nG1oRpeGVg__thumb/img/EQ1AGM0CcltWvTHR6Qcy-H7qGNo=/fit-in/200x150/filters:strip_icc()/pic6220819.jpg
 type: boardgame
-weight: '1.828'
+weight: '1.8302'
 year_published: '2021'

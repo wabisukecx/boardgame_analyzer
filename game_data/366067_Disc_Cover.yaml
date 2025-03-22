@@ -1,0 +1,71 @@
+alternate_names:
+- Dyskografia
+- 独家专辑
+- 디스크 커버
+average_rating: '6.5145'
+categories:
+- name: Card Game
+- name: Humor
+- name: Music
+- name: Party Game
+community_best_players: 4, 5, 6
+community_min_age: '8'
+community_recommended_players: 3, 7, 8, 8+
+description: In Disc Cover, turn up the volume and travel through music and images
+  by sharing your playlist:&#10;&#10;1 - Play music of your choice.&#10;2 - Match
+  it with the best cover or identify the one selected by the other players.&#10;3
+  - Reveal your choices to score points.&#10;&#10;Match up with everyone around you
+  to win!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+designers:
+- name: Roberto Fraga
+- name: Juan Manuel Rivero
+learning_analysis:
+  bgg_rank: 8821
+  bgg_weight: 1.1111
+  category_complexity: 2.36
+  decision_points: 3.315
+  initial_barrier: 2.0
+  interaction_complexity: 3.5
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.7
+  mechanics_count: 2
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.0
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 1.85
+  replayability: 2.6
+  rules_complexity: 2.232886666666667
+  strategic_depth: 2.48
+  strategic_depth_description: 低め（限られた戦略オプション）
+  year_published: 2022
+mechanics:
+- name: Cooperative Game
+- name: Voting
+name: Disc Cover
+playing_time: '20'
+publisher_max_players: '8'
+publisher_min_age: '7'
+publisher_min_players: '3'
+publishers:
+- name: Blue Orange (EU)
+- name: Blue Orange Games
+- name: Happy Baobab
+- name: Lautapelit.fi
+- name: Lucky Duck Games
+- name: Mercurio
+- name: PaperGames (III)
+ranks:
+- rank: '8821'
+  type: boardgame
+- rank: '480'
+  type: partygames
+thumbnail_url: https://cf.geekdo-images.com/ZQGLYgmpX5sAz4LjA-dHZA__thumb/img/xTW2DKZK6JE2slSQAFX6Kza-94M=/fit-in/200x150/filters:strip_icc()/pic6941247.png
+type: boardgame
+weight: '1.1111'
+year_published: '2022'

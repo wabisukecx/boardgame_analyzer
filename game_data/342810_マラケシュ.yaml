@@ -1,0 +1,85 @@
+alternate_names:
+- 'Marrakesh: Classic – Special Edition'
+- 'Marrakesh: Edición Básica'
+- 'Marrakesh: Essential Edition'
+- マラケシュ
+- 马拉喀什
+average_rating: '8.13041'
+categories:
+- name: City Building
+community_best_players: '3'
+community_min_age: '14'
+community_recommended_players: 2, 4
+description: Compete with other influential families in the city to achieve the most
+  honorable titles through the skillful use of assistants and resources at your disposal.
+  The player who succeeds in doing this best becomes the new &quot;Obermufti&quot;
+  of Marrakesh.&#10;&#10;Marrakesh is played over three rounds, with each round consisting
+  of four turns. On each turn, players simultaneously and secretly choose three colored
+  cylinders from behind their screen. Then, in turn order, they place matching colored
+  assistants on their player board (these will be the actions they will perform later),
+  then all cylinders are placed in the cube tower. The cube tower randomizes which
+  cylinders are available this round, with some getting stuck and some from previous
+  rounds coming out.&#10;&#10;In turn order, players select a color and take 1-2 of
+  the cylinders that have passed through the tower (or those that were stuck from
+  a previous round but have now emerged) and place them on their player boards. These
+  cylinders will enhance future actions taken in the same color in future rounds.
+  Then, in turn order players will activate the regions where they have placed an
+  assistant.&#10;&#10;Actions allow players to gain wealth, which can be traded for
+  influence in the city. Performing various actions also earns bonuses and enhances
+  actions even more as the game proceeds. The player who scores the most points by
+  the end of the game wins.&#10;&#10;&mdash;description from the publisher&#10;&#10;
+designers:
+- name: Stefan Feld
+japanese_name: マラケシュ
+learning_analysis:
+  bgg_rank: 421
+  bgg_weight: 3.3949
+  category_complexity: 3.8
+  decision_points: 3.5700000000000003
+  initial_barrier: 2.77
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
+  mastery_time: medium
+  mechanics_complexity: 2.77
+  mechanics_count: 4
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.08
+  replayability: 2.9
+  rules_complexity: 3.5433133333333333
+  strategic_depth: 3.23
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2022
+mechanics:
+- name: Cube Tower
+- name: End Game Bonuses
+- name: Open Drafting
+- name: Simultaneous Action Selection
+name: Marrakesh
+playing_time: '120'
+publisher_max_players: '4'
+publisher_min_age: '14'
+publisher_min_players: '2'
+publishers:
+- name: Queen Games
+- name: Devir
+- name: Moon3 Inc.
+- name: Playfun Games
+- name: White Goblin Games
+ranks:
+- rank: '421'
+  type: boardgame
+- rank: '210'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/ug8yV9EVLMdjzg7FjMesSQ__thumb/img/w-hjGWPgMpmSKsn7LbUSKHjCVFg=/fit-in/200x150/filters:strip_icc()/pic7144309.jpg
+type: boardgame
+weight: '3.3949'
+year_published: '2022'

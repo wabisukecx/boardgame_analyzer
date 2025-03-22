@@ -1,0 +1,88 @@
+alternate_names:
+- Atlantes
+- Акватика
+- アクアティカ
+- 大洋之下
+- 아쿠아티카
+average_rating: '7.36833'
+categories:
+- name: Card Game
+- name: Fantasy
+- name: Nautical
+community_best_players: '3'
+community_min_age: '10'
+community_recommended_players: 2, 4
+description: Aquatica  is a deep, but easy to learn family engine builder about underwater
+  kingdoms.&#10;&#10;In the game you will become one of the mighty ocean kings, struggling
+  to bring glory to his realm. To win the game, you need to capture and buy locations,
+  recruit new characters, and complete goals; each of these actions gives you victory
+  points at the end of the game. To do so, you need to play cards from your hand (each
+  with a unique set of actions) and combine them. Don't think it's simple! With a
+  good strategy during your turn, you can take up to ten actions in a row.&#10;&#10;You
+  will encounter plenty of mysterious ocean creatures and take them to your hand.
+  With their help you will explore the unknown locations and raise found resources
+  from the ocean depths to your kingdom. Mechanically this is represented with the
+  help of three-layered player board and the unique mechanism of card-rising.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+designers:
+- name: Ivan Tuzovsky
+japanese_name: アクアティカ
+learning_analysis:
+  bgg_rank: 568
+  bgg_weight: 2.3041
+  category_complexity: 3.19
+  decision_points: 4.095999999999998
+  initial_barrier: 3.33
+  interaction_complexity: 3.1400000000000006
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 3.16
+  mechanics_count: 7
+  player_types:
+  - casual
+  - experienced
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 3.04
+  replayability: 3.74
+  rules_complexity: 3.702248571428571
+  strategic_depth: 3.17
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2019
+mechanics:
+- name: Action Retrieval
+- name: Deck, Bag, and Pool Building
+- name: Hand Management
+- name: Open Drafting
+- name: Slide / Push
+- name: Solo / Solitaire Game
+- name: Variable Player Powers
+name: Aquatica
+playing_time: '60'
+publisher_max_players: '4'
+publisher_min_age: '12'
+publisher_min_players: '1'
+publishers:
+- name: Cosmodrome Games
+- name: Arcane Wonders
+- name: BoardM Factory
+- name: Broadway Toys LTD
+- name: Cranio Creations
+- name: DICE TOWER ESSENTIALS
+- name: Gigamic
+- name: Jumping Turtle Games
+- name: Portal Games
+- name: 数寄ゲームズ (Suki Games)
+ranks:
+- rank: '568'
+  type: boardgame
+- rank: '366'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/_8WvjlAU1_Y0qhwTjXvbnA__thumb/img/8zjeyk9juPqsHIwuPt7wiZFia-M=/fit-in/200x150/filters:strip_icc()/pic5578646.jpg
+type: boardgame
+weight: '2.3041'
+year_published: '2019'

@@ -1,0 +1,93 @@
+alternate_names:
+- Little Town Builders
+- Naše osada
+- Городишко
+- Маленьке містечко
+- เมืองในฝัน
+- リトルタウンビルダーズ
+- 小小村莊
+- 리틀 타운
+average_rating: '7.15774'
+categories:
+- name: City Building
+- name: Medieval
+community_best_players: 3, 4
+community_min_age: '8'
+community_recommended_players: '2'
+description: In Little Town, you lead a team of architects and must dispatch workers
+  to the town, collect resources and money, build buildings, and develop this little
+  town.&#10;&#10;In the game, which lasts four rounds, you can acquire resources such
+  as wood, stones, fish, and wheat from the surrounding squares by putting workers
+  on the board, with three workers being placed each round. When you place a worker,
+  you acquire the resources available in all eight surrounding spaces. You can build
+  buildings by using these resources, and you &mdash; or any other player &mdash;
+  can gain the effect of the building when place a worker next to it; if you place
+  next to a building owned by another, however, you must pay them a coin before you
+  can collect those resources.&#10;&#10;Players collect victory points by using the
+  powers of buildings, by constructing buildings, and by achieving goals dealt to
+  them at the beginning of the game. After four rounds, whoever has the most victory
+  points wins.&#10;&#10;&mdash;description from the publisher&#10;&#10;
+designers:
+- name: Shun Taguchi
+- name: Aya Taguchi
+japanese_name: リトルタウンビルダーズ
+learning_analysis:
+  bgg_rank: 1106
+  bgg_weight: 1.9474
+  category_complexity: 3.83
+  decision_points: 4.615
+  initial_barrier: 2.78
+  interaction_complexity: 3.13
+  learning_curve_type: gentle
+  mastery_time: medium
+  mechanics_complexity: 3.5
+  mechanics_count: 3
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.22
+  replayability: 2.86
+  rules_complexity: 3.386146666666667
+  strategic_depth: 3.27
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2017
+mechanics:
+- name: Contracts
+- name: Tile Placement
+- name: Worker Placement
+name: Little Town
+playing_time: '60'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '2'
+publishers:
+- name: Studio GG
+- name: Arclight Games
+- name: BoardBros
+- name: Buró
+- name: GoKids 玩樂小子
+- name: IELLO
+- name: Korea Boardgames
+- name: Lavka Games
+- name: Mancalamaro
+- name: Portal Games
+- name: Reflexshop
+- name: Siam Board Games
+- name: Switch Games
+- name: TCG Factory
+- name: Ігромаг
+ranks:
+- rank: '1106'
+  type: boardgame
+- rank: '294'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/PhNY4VQAob6x4GjWHmbTsQ__thumb/img/UCbbfnszecog0-L46xQVjMo_RTk=/fit-in/200x150/filters:strip_icc()/pic4624124.jpg
+type: boardgame
+weight: '1.9474'
+year_published: '2017'

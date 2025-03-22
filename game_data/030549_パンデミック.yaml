@@ -1,0 +1,140 @@
+alternate_names:
+- EPIZOotic
+- Pandemia
+- Pandemia 10 Aniversario
+- 'Pandemia: Una Nuova Sfida'
+- Pandemic, 10 Jahre Jubiläumsedition
+- Pandemic, Edición 10º Aniversario
+- 'Pandemic: 10° Anniversario'
+- 'Pandemic: 10th Anniversary Edition'
+- 'Pandemic: Edition 10ème anniversaire'
+- 'Pandemic: Una nuova sfida'
+- Pandémie
+- Pandemie
+- Πανδημία
+- Пандемия
+- Пандемія
+- פנדמיק
+- جائحة
+- เกมโรคระบาด
+- パンデミック
+- パンデミック：10周年記念版
+- パンデミック：新たなる試練
+- 瘟疫危機 (瘟疫危机)
+- 팬데믹
+average_rating: '7.52685'
+categories:
+- name: Medical
+community_best_players: '4'
+community_min_age: '10'
+community_recommended_players: 1, 2, 3
+description: In Pandemic, several virulent diseases have broken out simultaneously
+  all over the world! The players are disease-fighting specialists whose mission is
+  to treat disease hotspots while researching cures for each of four plagues before
+  they get out of hand.&#10;&#10;The game board depicts several major population centers
+  on Earth. On each turn, a player can use up to four actions to travel between cities,
+  treat infected populaces, discover a cure, or build a research station. A deck of
+  cards provides the players with these abilities, but sprinkled throughout this deck
+  are Epidemic! cards that accelerate and intensify the diseases' activity. A second,
+  separate deck of cards controls the &quot;normal&quot; spread of the infections.&#10;&#10;Taking
+  a unique role within the team, players must plan their strategy to mesh with their
+  specialists' strengths in order to conquer the diseases. For example, the Operations
+  Expert can build research stations which are needed to find cures for the diseases
+  and which allow for greater mobility between cities; the Scientist needs only four
+  cards of a particular disease to cure it instead of the normal five&mdash;but the
+  diseases are spreading quickly and time is running out. If one or more diseases
+  spreads beyond recovery or if too much time elapses, the players all lose. If they
+  cure the four diseases, they all win!&#10;&#10;The 2013 edition of Pandemic includes
+  two new characters&mdash;the Contingency Planner and the Quarantine Specialist&mdash;not
+  available in earlier editions of the game.&#10;&#10;Pandemic is the first game in
+  the Pandemic series.&#10;&#10;
+designers:
+- name: Matt Leacock
+japanese_name: パンデミック
+learning_analysis:
+  bgg_rank: 159
+  bgg_weight: 2.3976
+  category_complexity: 3.2
+  decision_points: 4.083999999999999
+  initial_barrier: 3.12
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.81
+  mechanics_count: 7
+  player_types:
+  - casual
+  - experienced
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.84
+  replayability: 4.08
+  rules_complexity: 3.145710476190476
+  strategic_depth: 3.13
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2008
+mechanics:
+- name: Action Points
+- name: Cooperative Game
+- name: Hand Management
+- name: Point to Point Movement
+- name: Set Collection
+- name: Tags
+- name: Variable Player Powers
+name: Pandemic
+playing_time: '45'
+publisher_max_players: '4'
+publisher_min_age: '8'
+publisher_min_players: '2'
+publishers:
+- name: Z-Man Games
+- name: (Unknown)
+- name: ADC Blackfire Entertainment
+- name: Albi
+- name: Asterion Press
+- name: Boardgame Space
+- name: Brain Games
+- name: CoolPlay
+- name: Devir
+- name: Enigma (Bergsala Enigma)
+- name: Filosofia Éditions
+- name: Galápagos Jogos
+- name: Gém Klub Kft.
+- name: HaKubia
+- name: Hobby Japan
+- name: HomoLudicus
+- name: Jolly Thinkers
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Lacerta
+- name: Lautapelit.fi
+- name: Lifestyle Boardgames Ltd
+- name: MINDOK
+- name: Nordic Games GmbH
+- name: Paladium Games
+- name: Pegasus Spiele
+- name: Quined White Goblin Games
+- name: Rebel Sp. z o.o.
+- name: Siam Board Games
+- name: Stratelibri
+- name: Wargames Club Publishing
+- name: White Goblin Games
+- name: Zhiyanjia
+- name: Взрослые дети
+- name: Ігромаг
+ranks:
+- rank: '159'
+  type: boardgame
+- rank: '170'
+  type: strategygames
+- rank: '35'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/S3ybV1LAp-8SnHIXLLjVqA__thumb/img/oqViRj6nVxK3m36NluTxU1PZkrk=/fit-in/200x150/filters:strip_icc()/pic1534148.jpg
+type: boardgame
+weight: '2.3976'
+year_published: '2008'

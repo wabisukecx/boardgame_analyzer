@@ -20,7 +20,7 @@ alternate_names:
 - アルナックの失われし遺跡
 - 阿納克遺蹟|阿纳克遗迹
 - 아르낙의 잊혀진 유적
-average_rating: '8.06842'
+average_rating: '8.06844'
 categories:
 - name: Adventure
 - name: Exploration
@@ -50,24 +50,32 @@ designers:
 japanese_name: アルナックの失われし遺跡
 learning_analysis:
   bgg_rank: 29
-  bgg_weight: 2.927
-  category_complexity: 2.75
-  decision_points: 3.2222222222222223
-  initial_barrier: 4.54
-  interaction_complexity: 2.5
-  learning_curve_type: steep_then_shallow
-  mastery_time: short
+  bgg_weight: 2.925
+  category_complexity: 3.56
+  decision_points: 4.531428571428573
+  initial_barrier: 3.63
+  interaction_complexity: 3.2600000000000002
+  learning_curve_type: moderate
+  mastery_time: medium
   mechanics_complexity: 3.31
   mechanics_count: 9
   player_types:
+  - casual
   - experienced
+  - hardcore
+  - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.23
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.95
   replayability: 4.18
-  rules_complexity: 3.9654
-  strategic_depth: 3.14
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  rules_complexity: 3.965
+  strategic_depth: 3.54
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2020
 mechanics:
 - name: Contracts
@@ -117,5 +125,5 @@ ranks:
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__thumb/img/J8SVmGOJXZGxNjkT3xYNQU7Haxg=/fit-in/200x150/filters:strip_icc()/pic5674958.jpg
 type: boardgame
-weight: '2.927'
+weight: '2.925'
 year_published: '2020'

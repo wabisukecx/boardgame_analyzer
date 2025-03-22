@@ -1,0 +1,71 @@
+alternate_names:
+- Виварий
+average_rating: '7.00392'
+categories:
+- name: Animals
+- name: Card Game
+community_best_players: 2, 4
+community_min_age: '8'
+community_recommended_players: '3'
+description: '1898, Siberia, the seismologist Edgar Vuntaf discovers a continent free
+  of any human presence, sheltering a teeming life, in forms never encountered before!
+  Unknown plants, colossal creatures... Faced with this shocking discovery, the world''s
+  scientific elite, gathered in Paris for the Universal exposition, create the Vivarium
+  Syndicate, and decide to send explorers into this new continent&#10;&#10;An efficient
+  and tense card collection game, with a great artistic direction! Each turn players
+  use dominoes to create coordinates that allow them to build their card collection.
+  After 7 rounds, the player that has successfully completed their objectives and
+  collected the greatest creatures wins the game.&#10;&#10;Cards are placed on the
+  board. Each turn, players use pairs of dominoes to create coordinates and grab the
+  corresponding card on the board. Among this grid of cards: fantastic creatures divided
+  according to their species and biotopes, scientific objectives but also various
+  equipment cards to facilitate the taking of future cards. After 7 rounds, the player
+  that has successfully completed their objectives and collected the greatest creatures
+  wins the game.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+designers:
+- name: Frédéric Vuagnat
+learning_analysis:
+  bgg_rank: 5968
+  bgg_weight: 1.8667
+  category_complexity: 2.15
+  decision_points: 3.5949999999999998
+  initial_barrier: 2.11
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.6
+  mechanics_count: 3
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.2
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.18
+  replayability: 2.5
+  rules_complexity: 2.668006666666667
+  strategic_depth: 2.63
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2022
+mechanics:
+- name: Contracts
+- name: Open Drafting
+- name: Set Collection
+name: Vivarium
+playing_time: '30'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '2'
+publishers:
+- name: Studio H
+- name: Arclight Games
+- name: Evrikus
+ranks:
+- rank: '5968'
+  type: boardgame
+thumbnail_url: https://cf.geekdo-images.com/7VF1TYNS561K5LQNg6DieQ__thumb/img/p4KgKukiSuU0EMe1S_b4bbOJw88=/fit-in/200x150/filters:strip_icc()/pic6920685.jpg
+type: boardgame
+weight: '1.8667'
+year_published: '2022'

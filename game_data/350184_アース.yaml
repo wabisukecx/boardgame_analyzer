@@ -1,0 +1,112 @@
+alternate_names:
+- Erde
+- A Föld
+- Zelená planeta
+- Zemlja
+- Ziemia
+- Земля
+- Земля
+- アース
+- 地球
+- 藍星
+- 어스
+average_rating: '7.64743'
+categories:
+- name: Animals
+- name: Card Game
+- name: Environmental
+community_best_players: 2, 3
+community_min_age: '12'
+community_recommended_players: 1, 4
+description: 'Earth is a tableau builder for 1 to 5 players with simple rules and
+  countless strategic possibilities. With its encyclopedic nature and a near-infinite
+  number of tableau combinations, every single game will allow you to discover new
+  synergies and connections, just as our vast and fascinating world allows us to do!&#10;&#10;Over
+  thousands of years of evolution and adaptation the flora and fauna of this unique
+  planet have grown and developed into amazing life forms, creating symbiotic ecosystems
+  and habitats.&#10;&#10;It&rsquo;s time to jump into these rich environments and
+  create some amazing natural synergies that replicate and extrapolate on Earth&rsquo;s
+  amazing versatility and plethora of natural resources. Create a self-supporting
+  engine of growth, expansion and supply where even your unused plants become compost
+  for future growth.&#10;&#10;&mdash;description from the publisher&#10;&#10;AWARDS
+  &amp; HONORS&#10;&#10;2023 Dice Tower Game of the Year Winner&#10;2023 Dice Tower
+  Strategy Game of the Year Winner&#10;2023 BoardGameOfTheYear.org Game of the Year
+  Winner&#10;2023 People&rsquo;s Choice at Dice Tower #1 Game of the Year, EoY voting)&#10;2023
+  Dice Tower Seal of Excellence&#10;2023 Board Game Arena Best Forest game Winner&#10;2023
+  Deutsher Spiele Preis 4th Place&#10;2023 Best of Gen Con Gaming Trends&#10;2023
+  C&rsquo;ludik expert Game of the Year Winner&#10;2023 Poulie d&rsquo;Or Expert Game
+  of the Year Winner&#10;2023 Coup de coeur Ludovox&#10;2023 Dod d&rsquo;Or Winner&#10;2024
+  Board game Hangover #1 Nature Game&#10;2024 Coup de Coeur Expert Festival Alchimie
+  du jeu de Toulouse&#10;2024 BIG Awards Game of the Year Winner&#10;2024 BIG Awards
+  Best artwork Winner&#10;&#10;'
+designers:
+- name: Maxime Tardif
+japanese_name: アース
+learning_analysis:
+  bgg_rank: 199
+  bgg_weight: 2.8944
+  category_complexity: 2.6
+  decision_points: 4.022222222222221
+  initial_barrier: 3.32
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
+  mastery_time: medium
+  mechanics_complexity: 3.04
+  mechanics_count: 11
+  player_types:
+  - casual
+  - experienced
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.11
+  replayability: 3.6
+  rules_complexity: 3.77827393939394
+  strategic_depth: 3.3
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2023
+mechanics:
+- name: Contracts
+- name: End Game Bonuses
+- name: Follow
+- name: Hand Management
+- name: Pattern Building
+- name: Solo / Solitaire Game
+- name: Tags
+- name: Team-Based Game
+- name: Tile Placement
+- name: Variable Set-up
+- name: Victory Points as a Resource
+name: Earth
+playing_time: '90'
+publisher_max_players: '5'
+publisher_min_age: '13'
+publisher_min_players: '1'
+publishers:
+- name: Inside Up Games
+- name: Board Game Rookie
+- name: CoolPlay
+- name: Gém Klub Kft.
+- name: Geronimo Games
+- name: Lucky Duck Games
+- name: Ludofun
+- name: Maldito Games
+- name: MINDOK
+- name: Rawstone
+- name: リゴレ (rigoler)
+- name: Skellig Games
+- name: Tabletop KZ
+- name: Yellowstar Games
+- name: Ігромаг
+ranks:
+- rank: '199'
+  type: boardgame
+- rank: '153'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/0xqF_KyOb7V26Lu5YT3fxw__thumb/img/ABTwzzMGekkz2jVl01LC4789TcQ=/fit-in/200x150/filters:strip_icc()/pic6699821.jpg
+type: boardgame
+weight: '2.8944'
+year_published: '2023'

@@ -1,0 +1,97 @@
+alternate_names:
+- Cirkus
+- Scout!
+- スカウト！
+- 马戏星探
+- 스카우트
+average_rating: '7.81943'
+categories:
+- name: Card Game
+community_best_players: '4'
+community_min_age: '8'
+community_recommended_players: 3, 5
+description: 'SCOUT is a ladder-climbing game in which cards have two potential values,
+  players may not rearrange their hand of cards, and players may pass their turn to
+  take a card from the current high set of cards into their hand.&#10;&#10;More specifically,
+  cards are dual-indexed, with different values on each half of the card, with the
+  45 cards having all possible combinations of the numbers 1-10. During set-up, whoever
+  is shuffling the cards should randomize both the order of the cards in the deck
+  and their orientation. Once each player has been dealt their entire hand of cards,
+  they pick up that hand without rearranging any of the cards; if they wish, they
+  can rotate their entire hand of cards in order to use the values on the other end
+  of each card, but again they cannot rearrange the order of cards in their hand.&#10;&#10;On
+  a turn, a player takes one of two actions:&#10;&#10;&bull; Play: A player chooses
+  one or more adjacent cards in their hand that have all the same value or that have
+  values in consecutive order (whether ascending or descending), then they play this
+  set of cards to the table. They can do this only if the table is empty (as on the
+  first turn) or the set they''re playing is ranked higher than the set currently
+  on the table; a set is higher if it has more cards or has cards of the same value
+  instead of consecutive cards or has a set of the same quantity and type but with
+  higher values. In this latter case when a player overplays another set, the player
+  captures the cards in this previous set and places them face down in front of themselves.&#10;&#10;&bull;
+  Scout: A player takes a card from either end of the set currently on the table and
+  places it anywhere they wish in their hand in either orientation. Whoever played
+  this previous set receives a 1 VP token as a reward for playing a set that wasn''t
+  beaten.&#10;&#10;Once per round, a player can scout, then immediately play.&#10;&#10;When
+  a player has emptied their hand of cards or all but one player have scouted instead
+  of playing, the round ends. Players receive 1 VP for each face-down card, then subtract
+  one point for each card in their hand (except if they were the player scouted repeatedly
+  to end the game). Play as many rounds as the number of players, then whoever has
+  the most points wins.&#10;&#10;'
+designers:
+- name: Kei Kajino (梶野 桂)
+japanese_name: スカウト！
+learning_analysis:
+  bgg_rank: 100
+  bgg_weight: 1.3564
+  category_complexity: 2.3
+  decision_points: 3.625
+  initial_barrier: 2.16
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.83
+  mechanics_count: 3
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.2
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.39
+  replayability: 3.3
+  rules_complexity: 2.68128
+  strategic_depth: 2.55
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2019
+mechanics:
+- name: Hand Management
+- name: Ladder Climbing
+- name: Score-and-Reset Game
+name: SCOUT
+playing_time: '20'
+publisher_max_players: '5'
+publisher_min_age: '9'
+publisher_min_players: '2'
+publishers:
+- name: Oink Games
+- name: One More Game!
+- name: 4 Kavky
+- name: Asmodee
+- name: Galápagos Jogos
+- name: Gém Klub Kft.
+- name: Lautapelit.fi
+- name: Pixie Games
+- name: Popcorn Games
+ranks:
+- rank: '100'
+  type: boardgame
+- rank: '16'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/cf0xxkevbwTGF3VUZymKjg__thumb/img/NUcMdmZ3_eA1YfIwL8iRgkZKaHw=/fit-in/200x150/filters:strip_icc()/pic6398727.png
+type: boardgame
+weight: '1.3564'
+year_published: '2019'

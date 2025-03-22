@@ -1,0 +1,62 @@
+alternate_names:
+- トリックレイダース
+average_rating: '7.14479'
+categories:
+- name: Card Game
+community_best_players: '4'
+community_recommended_players: '3'
+description: Trick Raiders is a trick-taking game in which a player is dealt some
+  cards as a traditional hand and some cards face up on the table which form both
+  their bid and are the only cards which may be used to lead to tricks. Prior to the
+  game commencing, players may add to, leave alone, or remove cards from this face
+  up group.&#10;&#10;It is a must-follow trick-taking game with a fixed trump suit.&#10;&#10;Players
+  may be eliminated from a hand if it is their turn to lead to a trick and they are
+  out of leading cards or if they need to follow and are out of cards in their hand.
+  Players begin the game with a few life chips and the player with the most remaining
+  when one person is out is the winner.&#10;&#10;A few ranks also have special abilities,
+  for instance, when the 8 or 9 of clubs is played and wins a trick, the trump suit
+  changes.&#10;&#10;
+designers:
+- name: N2
+japanese_name: トリックレイダース
+learning_analysis:
+  bgg_rank: 9438
+  bgg_weight: 2.0
+  category_complexity: 2.3
+  decision_points: 3.4699999999999998
+  initial_barrier: 2.15
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.6
+  mechanics_count: 1
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.0
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.14
+  replayability: 2.2
+  rules_complexity: 2.3826666666666667
+  strategic_depth: 2.62
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2022
+mechanics:
+- name: Trick-taking
+name: Trick Raiders
+playing_time: '30'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '3'
+publishers:
+- name: Southern Cross Games (サザンクロスゲームズ)
+ranks:
+- rank: '9438'
+  type: boardgame
+thumbnail_url: https://cf.geekdo-images.com/S9jN1u9dlp-EiF4qzhp2PQ__thumb/img/Lyo36zTXfPAGqpjvcxOxhP2IwoY=/fit-in/200x150/filters:strip_icc()/pic8439671.png
+type: boardgame
+weight: '2'
+year_published: '2022'

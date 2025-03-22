@@ -1,0 +1,70 @@
+average_rating: '6.9096'
+categories:
+- name: Animals
+- name: Card Game
+community_best_players: '4'
+community_min_age: '6'
+community_recommended_players: 2, 3, 5
+description: Lead the undercover investigation against five criminal groups to gather
+  enough evidence to convict them. However, if you investigate too aggressively, the
+  criminals will smell a rat and go dark!&#10;&#10;In each round of Hot Lead, criminal
+  cards are displayed in a column equal to the number of players. Players then make
+  their bid by simultaneously revealing an investigator card from their hand. The
+  highest investigator bid takes the criminal card closest to the deck, the second
+  highest takes the second closest, and so on. These cards are worth points equal
+  to their face value (0-5).&#10;&#10;Gather enough evidence on one criminal organization
+  to convict them when the game concludes after ten rounds; in game terms, by having
+  exactly three of a suit, you earn 10 bonus points. Ten bonus points are also awarded
+  to those who acquire criminal cards of all five suits. If you investigate too aggressively
+  and grab the fourth card of a suit, those criminals will sense a rat and you'll
+  scare them underground, thereby losing all of those cards. The player with the most
+  points at the end of the game wins.&#10;&#10;&mdash;description from publisher&#10;&#10;
+designers:
+- name: Reiner Knizia
+learning_analysis:
+  bgg_rank: 5459
+  bgg_weight: 1.2727
+  category_complexity: 2.15
+  decision_points: 3.41
+  initial_barrier: 1.86
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.38
+  mechanics_count: 4
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 0.85
+    decision_density: 0.2
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.02
+  replayability: 2.7
+  rules_complexity: 2.382873333333333
+  strategic_depth: 1.99
+  strategic_depth_description: 低い（戦略的要素が少ない）
+  year_published: 2022
+mechanics:
+- name: 'Auction: Sealed Bid'
+- name: Hand Management
+- name: Push Your Luck
+- name: Set Collection
+name: Hot Lead
+playing_time: '15'
+publisher_max_players: '5'
+publisher_min_age: '8'
+publisher_min_players: '2'
+publishers:
+- name: Bitewing Games
+- name: SUNNY BIRD
+ranks:
+- rank: '5459'
+  type: boardgame
+- rank: '1573'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/yM17m8v87Gj_kIpc3hBQXw__thumb/img/y5fP40O-e68gx5WW-c6fKStPI8E=/fit-in/200x150/filters:strip_icc()/pic6231247.png
+type: boardgame
+weight: '1.2727'
+year_published: '2022'

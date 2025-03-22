@@ -1,0 +1,74 @@
+alternate_names:
+- テラノヴァ
+average_rating: '7.14481'
+categories:
+- name: Fantasy
+- name: Territory Building
+community_best_players: 3, 4
+community_min_age: '10'
+community_recommended_players: '2'
+description: Terra Nova is a simplified version of the strategy game Terra Mystica.
+  In the game, up to four players each control one of ten factions, each with different
+  abilities. Compete against one another to explore new territories in peaceful competition,
+  erect buildings, and achieve certain goals from round to round. Use your faction's
+  special abilities in a clever way to control the largest territory at game's end
+  and finish with the most points.&#10;&#10;
+designers:
+- name: Andreas Faul
+japanese_name: テラノヴァ
+learning_analysis:
+  bgg_rank: 1831
+  bgg_weight: 2.86
+  category_complexity: 3.68
+  decision_points: 4.080000000000001
+  initial_barrier: 2.92
+  interaction_complexity: 3.3949999999999996
+  learning_curve_type: gentle
+  mastery_time: medium
+  mechanics_complexity: 3.34
+  mechanics_count: 5
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.91
+  replayability: 2.9
+  rules_complexity: 3.9779999999999998
+  strategic_depth: 3.44
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  year_published: 2022
+mechanics:
+- name: Chaining
+- name: Hexagon Grid
+- name: Network and Route Building
+- name: 'Turn Order: Pass Order'
+- name: Variable Player Powers
+name: Terra Nova
+playing_time: '90'
+publisher_max_players: '4'
+publisher_min_age: '12'
+publisher_min_players: '2'
+publishers:
+- name: KOSMOS
+- name: Capstone Games
+- name: Cranio Creations
+- name: Grok Games
+- name: Maldito Games
+- name: Super Meeple
+- name: Swan Panasia Co., Ltd.
+- name: テンデイズゲームズ (TendaysGames)
+- name: White Goblin Games
+ranks:
+- rank: '1831'
+  type: boardgame
+- rank: '950'
+  type: strategygames
+thumbnail_url: https://cf.geekdo-images.com/vtUlmpCE_ij4Us9hOPPcZw__thumb/img/N1F2Aeld8k0SuCgpgWlOaruXD4A=/fit-in/200x150/filters:strip_icc()/pic6896566.png
+type: boardgame
+weight: '2.86'
+year_published: '2022'

@@ -12,7 +12,7 @@ alternate_names:
 - エバーデール
 - 仙境幽谷
 - 에버델
-average_rating: '8.00737'
+average_rating: '8.00656'
 categories:
 - name: Animals
 - name: Card Game
@@ -46,24 +46,30 @@ designers:
 - name: James A. Wilson
 japanese_name: エバーデール
 learning_analysis:
-  bgg_rank: 38
-  bgg_weight: 2.8237
-  category_complexity: 2.88
-  decision_points: 3.409090909090909
-  initial_barrier: 4.18
-  interaction_complexity: 2.625
-  learning_curve_type: moderate_then_shallow
-  mastery_time: short
+  bgg_rank: 39
+  bgg_weight: 2.824
+  category_complexity: 3.16
+  decision_points: 4.46
+  initial_barrier: 3.29
+  interaction_complexity: 3.0599999999999996
+  learning_curve_type: gentle
+  mastery_time: medium
   mechanics_complexity: 2.9
   mechanics_count: 11
   player_types:
+  - casual
   - experienced
   - replayer
   - trend_follower
-  rank_complexity: 4.2
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.93
   replayability: 4.4
-  rules_complexity: 3.4414066666666665
-  strategic_depth: 3.08
+  rules_complexity: 3.4414666666666665
+  strategic_depth: 3.41
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2018
 mechanics:
@@ -106,7 +112,7 @@ publishers:
 - name: YOKA Games
 - name: Ігромаг
 ranks:
-- rank: '38'
+- rank: '39'
   type: boardgame
 - rank: '46'
   type: strategygames
@@ -114,5 +120,5 @@ ranks:
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__thumb/img/Cf_mYxR_VvdjTEPXseSurni2JNI=/fit-in/200x150/filters:strip_icc()/pic3918905.png
 type: boardgame
-weight: '2.8237'
+weight: '2.824'
 year_published: '2018'

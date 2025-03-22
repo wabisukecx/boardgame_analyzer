@@ -1,0 +1,65 @@
+alternate_names:
+- Say "Adios" to the Villains
+- 成敗
+average_rating: '6.33291'
+categories:
+- name: Card Game
+community_best_players: 3, 4
+community_min_age: '10'
+community_recommended_players: 5, 6
+description: Say Bye to the Villains &ndash; a.k.a., &#230;&#136;&#144;&#230;&#149;&#151;
+  (&quot;Punishment&quot;) in Japanese &ndash; is a cooperative card game in which
+  players share information in limited ways to collectively defeat a villain who has
+  harmed people in some manner. Players can discard certain cards to learn hidden
+  information about the villain, go through special training to increase their attack
+  abilities, and take special actions from other cards in the game.&#10;&#10;
+designers:
+- name: Seiji Kanai
+learning_analysis:
+  bgg_rank: 5977
+  bgg_weight: 2.1622
+  category_complexity: 2.3
+  decision_points: 3.6149999999999998
+  initial_barrier: 2.36
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.9
+  mechanics_count: 2
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.49
+  replayability: 2.76
+  rules_complexity: 3.0537733333333335
+  strategic_depth: 2.94
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2012
+mechanics:
+- name: Cooperative Game
+- name: Hand Management
+name: Say Bye to the Villains
+playing_time: '45'
+publisher_max_players: '8'
+publisher_min_age: '14'
+publisher_min_players: '3'
+publishers:
+- name: Alderac Entertainment Group
+- name: Galápagos Jogos
+- name: Japon Brand
+- name: Kanai Factory
+- name: Swan Panasia Co., Ltd.
+ranks:
+- rank: '5977'
+  type: boardgame
+- rank: '979'
+  type: thematic
+thumbnail_url: https://cf.geekdo-images.com/RuFFxXHHmE-TCf5CRuvXTw__thumb/img/FWZclwm-kV2KcG7EUz4MJvOckTk=/fit-in/200x150/filters:strip_icc()/pic2038963.jpg
+type: boardgame
+weight: '2.1622'
+year_published: '2012'

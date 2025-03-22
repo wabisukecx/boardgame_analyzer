@@ -13,7 +13,7 @@ alternate_names:
 - Легендите на Андор
 - アンドールの伝説
 - 안도르의 전설
-average_rating: '7.09942'
+average_rating: '7.0983'
 categories:
 - name: Adventure
 - name: Fantasy
@@ -43,26 +43,32 @@ designers:
 - name: Michael Menzel
 japanese_name: アンドールの伝説
 learning_analysis:
-  bgg_rank: 625
+  bgg_rank: 627
   bgg_weight: 2.7638
-  category_complexity: 2.88
-  decision_points: 3.0
-  initial_barrier: 2.83
-  interaction_complexity: 2.75
+  category_complexity: 3.51
+  decision_points: 3.893333333333333
+  initial_barrier: 2.57
+  interaction_complexity: 3.38
   learning_curve_type: gentle
-  mastery_time: short
+  mastery_time: medium
   mechanics_complexity: 2.76
   mechanics_count: 5
   player_types:
   - beginner
   - casual
+  - experienced
   - replayer
   - trend_follower
-  rank_complexity: 3.46
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.73
   replayability: 4.32
   rules_complexity: 3.303426666666667
-  strategic_depth: 2.94
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  strategic_depth: 3.3
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2012
 mechanics:
 - name: Area Movement
@@ -91,9 +97,9 @@ publishers:
 - name: Piatnik
 - name: Zvezda
 ranks:
-- rank: '625'
+- rank: '627'
   type: boardgame
-- rank: '188'
+- rank: '189'
   type: thematic
 thumbnail_url: https://cf.geekdo-images.com/IO8_BYKeofnWy8DIjo2RRg__thumb/img/pMbV-KGyO3D9U6hnBzNRfylZvto=/fit-in/200x150/filters:strip_icc()/pic2606106.jpg
 type: boardgame

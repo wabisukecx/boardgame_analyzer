@@ -1,0 +1,75 @@
+alternate_names:
+- Sweet & Spicy. Битва котиків
+- 'Sweet and Spicy: Khi mèo bớt ăn cay'
+- 貓吃酸辣
+- 스위트 스파이시
+average_rating: '6.87261'
+categories:
+- name: Animals
+- name: Bluffing
+- name: Card Game
+community_best_players: '4'
+community_recommended_players: 2, 3, 5
+description: 'Once hungry Kitty craved to eat, but sadly found no yummy meat, instead
+  just found some weird spice, scoffed it down and paid the price. From prickling
+  hot sensation came the grand idea for this sweet game.&#10;&#10;Sweet &amp; Spicy
+  is a bluffing card game for 2-6 players and the kid-friendly variant of Spicy. Instead
+  of Wasabi you can now play with Lemon and there is a new card in the game: The SUPER-JOKER.
+  But the game principle remains the same.&#10;&#10;Just like in Spicy, the cards
+  are played face down, so you can cheat when you announce your card. But it''s not
+  just about bluffing convincingly. You can almost always play a card that is at least
+  half right if you play it skillfully from your hand. It''s a matter of tactically
+  considering which card you can get away with: Do I play a &quot;pepper 9&quot; better
+  than a &quot;chili 10&quot; or a suit joker than a &quot;pepper 10&quot;? Or do
+  I pass better, because I''m sure it will be noticeable that I''ve been thinking
+  about it for so long?&#10;&#10;In Sweet &amp; Spicy, the super joker is added, which
+  can be any spice and any number. It is therefore always correct and cannot be doubted.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;'
+designers:
+- name: Győri Zoltán Gábor
+learning_analysis:
+  bgg_rank: 7286
+  bgg_weight: 1.25
+  category_complexity: 2.53
+  decision_points: 3.57
+  initial_barrier: 2.18
+  interaction_complexity: 4.1
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.9
+  mechanics_count: 1
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 0.85
+    decision_density: 0.0
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.17
+  replayability: 2.4
+  rules_complexity: 2.2973333333333334
+  strategic_depth: 2.09
+  strategic_depth_description: 低め（限られた戦略オプション）
+  year_published: 2022
+mechanics:
+- name: Hand Management
+name: Sweet & Spicy
+playing_time: '15'
+publisher_max_players: '6'
+publisher_min_age: '8'
+publisher_min_players: '2'
+publishers:
+- name: HeidelBÄR Games
+- name: Geekach Games
+- name: Gém Klub Kft.
+- name: Play Plus
+- name: Swan Panasia Co., Ltd.
+- name: UBO CnC
+ranks:
+- rank: '7286'
+  type: boardgame
+thumbnail_url: https://cf.geekdo-images.com/16eiz9vR_Ddncb_DMLSUbA__thumb/img/1sF09BCEtHE8acaMk83c8xNm7DE=/fit-in/200x150/filters:strip_icc()/pic6650853.png
+type: boardgame
+weight: '1.25'
+year_published: '2022'

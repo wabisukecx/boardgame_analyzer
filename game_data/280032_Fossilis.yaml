@@ -1,0 +1,87 @@
+alternate_names:
+- Раскопки
+- 化石之旅
+- 포실리스
+average_rating: '6.98186'
+categories:
+- name: Animals
+- name: Exploration
+- name: Prehistoric
+community_best_players: '3'
+community_min_age: '8'
+community_recommended_players: 2, 4, 5
+description: 'An incredible new dinosaur graveyard has been discovered, and if the
+  early findings are any indication, it could be a treasure trove of fossils and bones
+  like the world has never seen! In Fossilis, 2 to 5 players become paleontologists
+  working the dig site with shovels, whisk brooms, and chisels looking for a find
+  that could make their career.&#10;&#10;Each round, players get two actions to dig
+  at the site or make an extraction. As they remove the top layers of sand, clay,
+  and stone, they''ll discover trace fossils, which can be exchanged for tools, the
+  plaster necessary to extract bones, and discovery points. As they delve deeper,
+  precious bones will be exposed. They can make a careful extraction if they have
+  the right amount of plaster, but sometimes shifting the earth to cover up a find
+  and slow down the competition is the right move. Bones on their own can be valuable,
+  but museums are really interested in more complete specimens. Sets of bones can
+  be exchanged for museum cards worth big points!&#10;&#10;Fossilis features a unique
+  3D dig site board, with recessed pockets filled with dinosaur bones, and thick,
+  chunky terrain tiles that cover the dig site. Players have to use strategy, timing,
+  and a little bit of luck if they want to make the best discoveries, get their name
+  in all the paleontology journals, and of course, win the game.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;Note: The Kickstarter edition supports solo play and
+  includes other game related content. It may be found here Fossilis: Kickstarter
+  Edition.&#10;&#10;'
+designers:
+- name: David Alberto Diaz
+learning_analysis:
+  bgg_rank: 2736
+  bgg_weight: 2.2692
+  category_complexity: 3.01
+  decision_points: 3.8600000000000003
+  initial_barrier: 2.31
+  interaction_complexity: 2.925
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.65
+  mechanics_count: 4
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.12
+  replayability: 2.97
+  rules_complexity: 2.813173333333333
+  strategic_depth: 2.94
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2020
+mechanics:
+- name: Action Points
+- name: Grid Movement
+- name: Set Collection
+- name: Tile Placement
+name: Fossilis
+playing_time: '60'
+publisher_max_players: '5'
+publisher_min_age: '8'
+publisher_min_players: '2'
+publishers:
+- name: KTBG
+- name: 17wanzy (Yihu BG)
+- name: Fabrika Igr
+- name: Gen-X Games
+- name: Happy Meeple Games
+- name: Helaina Cappel
+- name: Popcorn Games
+- name: Treetato Studio
+ranks:
+- rank: '2736'
+  type: boardgame
+- rank: '834'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/rczms2pvajxj5l9Vpo66Hw__thumb/img/-3U6s7tj2ltu-5J6F9lZo2wfH5I=/fit-in/200x150/filters:strip_icc()/pic4754389.png
+type: boardgame
+weight: '2.2692'
+year_published: '2020'
