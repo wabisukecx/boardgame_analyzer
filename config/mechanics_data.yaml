@@ -3,879 +3,768 @@ Action / Event:
   strategic_value: 3.6
   interaction_value: 3.3
   description: アクションと事象の組み合わせによる多様な戦略展開。複合的な因果関係の理解が重要。
-
 Action Drafting:
   complexity: 3.2
   strategic_value: 3.6
   interaction_value: 3.2
   description: プレイヤー間でのアクション選択と競合による戦略的決断。資源の最適配分と優先順位づけが求められる。
-
 Action Points:
   complexity: 3.1
   strategic_value: 4.0
   interaction_value: 2.5
   description: 限られたアクションポイントの戦略的配分。効率的なリソース活用と優先順位決定が鍵となる。
-
 Action Queue:
   complexity: 3.8
   strategic_value: 4.0
   interaction_value: 2.8
   description: アクションを一列に並べて実行する計画的な戦略構築。長期的な連鎖効果と順序最適化が重要。
-
 Action Retrieval:
   complexity: 3.3
   strategic_value: 3.7
   interaction_value: 2.9
   description: 使用したアクションの回収と再利用によるリソース管理。サイクル効率と時機の見極めが求められる。
-
 Action Selection:
   complexity: 3.2
   strategic_value: 4.0
   interaction_value: 3.0
   description: アクション選択による戦略的決断。限られた選択肢の中での最適化と機会費用の判断が重要。
-
 Advantage Token:
   complexity: 2.9
   strategic_value: 3.2
   interaction_value: 2.7
   description: 一時的な優位性を提供するトークンの獲得と戦略的使用。タイミングとリソース配分の判断が鍵となる。
-
 Area Control:
   complexity: 3.9
   strategic_value: 4.1
   interaction_value: 4.3
   description: 領域支配による間接的な陣取り合戦と戦略的配置。空間価値の評価と力の投入バランスが重要。
-
 Area Control / Area Influence:
   complexity: 3.9
   strategic_value: 5.0
   interaction_value: 4.0
   description: 領域支配による高い戦略性と相互作用。地域の価値判断と資源配分の最適化が勝利の鍵。
-
 Area Majority / Influence:
   complexity: 3.9
   strategic_value: 4.2
   interaction_value: 4.5
   description: 地域支配による間接的な競争と戦略的駆け引き。相対的優位性の維持と領域選択が重要。
-
 Area Movement:
   complexity: 2.6
   strategic_value: 3.1
   interaction_value: 3.3
   description: 区域間の移動による位置取りと領域管理。空間認識と移動効率の最適化が求められる。
-
 Auction / Bidding:
   complexity: 3.7
   strategic_value: 4.0
   interaction_value: 5.0
   description: オークションによる高い相互作用と戦略性。価値評価と資源配分の判断が勝敗を左右する。
-
 Auction Compensation:
   complexity: 2.5
   strategic_value: 3.4
   interaction_value: 3.6
   description: オークション敗者への補償による参加意欲の促進。リスク計算と機会損失の評価が戦略の中心となる。
-
 Auction/Bidding:
   complexity: 3.7
   strategic_value: 3.9
   interaction_value: 4.5
   description: 資源やアイテムの競り合いによる価値評価と戦略的入札。優先順位付けと予算管理が重要。
-
 'Auction: Dutch':
   complexity: 3.5
   strategic_value: 3.7
   interaction_value: 4.0
   description: 価格が下がり続けるオークションでのタイミング戦略。価値判断と購入タイミングの駆け引きが特徴。
-
 'Auction: English':
   complexity: 3.3
   strategic_value: 3.5
   interaction_value: 4.2
   description: 価格が上がり続けるオークションでの限界価値判断。継続的な価値再評価と予算管理が求められる。
-
 'Auction: Fixed Placement':
   complexity: 3.9
   strategic_value: 4.0
   interaction_value: 4.2
   description: 固定位置での入札による戦略的リソース配分と競争。位置価値と入札額のバランスが重要。
-
 'Auction: Multiple Lot':
   complexity: 4.1
   strategic_value: 4.2
   interaction_value: 4.3
   description: 複数のオークション対象の同時競り合いによる複雑な戦略。分散投資と集中投資の判断が求められる。
-
 'Auction: Once Around':
   complexity: 2.9
   strategic_value: 3.4
   interaction_value: 3.9
   description: 各プレイヤーが順番に一度だけ入札できるオークション形式。タイミングと価値判断に基づく戦略的決断が特徴。
-
 'Auction: Sealed Bid':
   complexity: 2.8
   strategic_value: 3.6
   interaction_value: 3.6
   description: 全プレイヤーが同時に非公開で入札し、一斉公開する競争形式。価値評価と心理戦による間接的相互作用が特徴。
-
 'Auction: Turn Order Until Pass':
   complexity: 2.5
   strategic_value: 3.3
   interaction_value: 3.7
   description: パスするまでターン順が続くオークションの戦略的緊張感。継続か撤退かの判断と資源管理が鍵となる。
-
 Automatic Resource Growth:
   complexity: 2.7
   strategic_value: 3.0
   interaction_value: 2.3
   description: 自動的に増加するリソースの管理と長期的戦略。成長曲線の理解と計画的活用が求められる。
-
 Betting and Bluffing:
   complexity: 3.1
   strategic_value: 3.1
   interaction_value: 5.0
   description: 賭けや虚勢による心理戦。情報の非対称性の活用と相手の意図読解が勝利の鍵となる。
-
 Bias:
   complexity: 2.9
   strategic_value: 3.2
   interaction_value: 3.0
   description: 偏りのある確率や結果による戦略的適応。不均衡システムへの対応と有利要素の活用が重要。
-
 Bingo:
   complexity: 1.6
   strategic_value: 1.8
   interaction_value: 2.5
   description: パターン完成を目指す運と戦略のバランス。確率理解と優先順位付けが限定的な戦略となる。
-
 Campaign / Battle Card Driven:
   complexity: 3.9
   strategic_value: 4.1
   interaction_value: 3.7
   description: カードによって進行する戦闘や物語展開の戦略的管理。リソース配分と状況適応力が求められる。
-
 Card Drafting:
   complexity: 3.2
   strategic_value: 3.5
   interaction_value: 3.0
   description: カードドラフトによる戦略的選択と相互作用。長期的な組み合わせ構築と妨害判断が重要。
-
 Card Play Conflict Resolution:
   complexity: 4.2
   strategic_value: 4.3
   interaction_value: 4.0
   description: カードプレイによる対立解決と戦略的リソース配分。リスク管理と優先順位の決定が求められる。
-
 Catch the Leader:
   complexity: 2.7
   strategic_value: 2.9
   interaction_value: 4.2
   description: 先行者を追いかけるバランス調整メカニクス。状況判断と追撃戦略の選択が特徴。
-
 Chaining:
   complexity: 3.9
   strategic_value: 3.5
   interaction_value: 3.2
   description: アクションやカードの連鎖効果による複雑な戦略展開。シナジー構築と順序最適化が鍵となる。
-
 Chit-Pull System:
   complexity: 2.9
   strategic_value: 3.2
   interaction_value: 2.5
   description: ランダム要素とチットによる戦略的適応と確率管理。不確実性への対応と柔軟な計画調整が重要。
-
 Closed Drafting:
   complexity: 3.1
   strategic_value: 3.7
   interaction_value: 3.3
   description: 非公開情報でのカード選択による読み合いと予測。情報制限下での価値評価と戦略構築が求められる。
-
 Closed Economy Auction:
   complexity: 2.5
   strategic_value: 3.5
   interaction_value: 3.8
   description: 閉じた経済システム内での入札による資源循環。市場動向予測と価格変動の理解が重要。
-
 Commodity Speculation:
   complexity: 3.8
   strategic_value: 4.0
   interaction_value: 3.5
   description: 価格変動を予測した投資と資源取引の経済戦略。市場分析と投資タイミングの見極めが求められる。
-
 Communication Limits:
   complexity: 3.7
   strategic_value: 3.5
   interaction_value: 4.3
   description: 制限された情報共有下での連携と間接的戦略構築。限られた通信手段での効率的な意思伝達が重要。
-
 Connections:
   complexity: 3.2
   strategic_value: 3.6
   interaction_value: 3.2
   description: 要素間の結合による相乗効果と空間的戦略。ネットワーク形成と優先接続先の判断が鍵となる。
-
 Constrained Bidding:
   complexity: 3.9
   strategic_value: 4.1
   interaction_value: 4.0
   description: 制限された入札条件下での戦略的リソース管理。制約下での最適化と優先順位付けが求められる。
-
 Contracts:
   complexity: 3.2
   strategic_value: 3.5
   interaction_value: 3.3
   description: 契約達成による目標志向のゲームプレイと戦略的計画。長期的な利益と短期的なコストのバランスが重要。
-
 Cooperative Game:
   complexity: 2.9
   strategic_value: 3.4
   interaction_value: 4.5
   description: プレイヤー間の協力によるチームワークと共通目標の達成。役割分担と資源最適配分が成功の鍵となる。
-
 Critical Hits and Failures:
   complexity: 2.5
   strategic_value: 2.8
   interaction_value: 3.4
   description: 極端な成功や失敗によるゲーム展開の急転と対応。リスク管理と確率的思考が求められる。
-
 Cube Tower:
   complexity: 2.6
   strategic_value: 2.4
   interaction_value: 3.5
   description: キューブを落として結果を決める物理的ランダム要素。確率操作と結果への適応戦略が特徴。
-
 Deck Building:
   complexity: 3.8
   strategic_value: 5.0
   interaction_value: 2.0
   description: 戦略的なデッキ構築が中心のメカニクス。カード選択とシナジー最適化による長期的戦略が重要。
-
 Deck Construction:
   complexity: 4.5
   strategic_value: 4.7
   interaction_value: 3.2
   description: プレイ前のカードデッキ構築による高度な戦略最適化。カード間の相互作用と確率計算が求められる。
-
 Deck, Bag, and Pool Building:
   complexity: 3.9
   strategic_value: 4.0
   interaction_value: 3.0
   description: 様々な形式のリソース集合構築と戦略的最適化。確率操作と要素選択による長期的計画が特徴。
-
 Deduction:
   complexity: 3.2
   strategic_value: 3.5
   interaction_value: 3.3
   description: 論理的推理と情報収集による謎解きと戦略構築。排除法と仮説検証による情報処理が求められる。
-
 Delayed Purchase:
   complexity: 3.1
   strategic_value: 3.6
   interaction_value: 2.8
   description: 時間差のある購入システムによる計画的な戦略構築。先行投資と将来価値の評価が重要。
-
 Dice Rolling:
   complexity: 1.5
   strategic_value: 2.0
   interaction_value: 1.5
   description: ダイスロールによる運要素。確率理解とリスク管理による限定的な戦略が特徴。
-
 Enclosure:
   complexity: 3.3
   strategic_value: 3.6
   interaction_value: 3.2
   description: 領域の囲い込みによる空間支配と戦略的配置。効率的な境界形成と領域選択が鍵となる。
-
 End Game Bonuses:
   complexity: 2.9
   strategic_value: 3.5
   interaction_value: 2.5
   description: ゲーム終了時の追加得点による長期的戦略立案の促進。目標達成と資源配分の最適化が求められる。
-
 Engine Building:
   complexity: 4.7
   strategic_value: 5.0
   interaction_value: 2.0
   description: 自己強化システムの構築による戦略的深さ。要素間のシナジー創出と効率最大化が勝利の鍵となる。
-
 Events:
   complexity: 2.7
   strategic_value: 3.0
   interaction_value: 3.4
   description: 予期せぬ出来事への対応と適応戦略の構築。状況変化への柔軟な対応力が重要。
-
 Follow:
   complexity: 2.4
   strategic_value: 2.8
   interaction_value: 3.7
   description: 他プレイヤーのアクションに追随する二次的行動選択。効率的な追従判断と機会活用が求められる。
-
 Force Commitment:
   complexity: 3.5
   strategic_value: 3.8
   interaction_value: 3.5
   description: リソース配分の事前決定による戦略的賭けとリスク管理。先読みと不確実性への備えが重要。
-
 Grid Coverage:
   complexity: 2.9
   strategic_value: 3.4
   interaction_value: 2.7
   description: 格子状の空間を埋めていく配置戦略と空間管理。効率的なパターン形成と領域最適化が求められる。
-
 Grid Movement:
   complexity: 2.5
   strategic_value: 2.8
   interaction_value: 3.0
   description: 格子状のボード上での移動と位置取り戦略。空間認識と移動効率の最適化が重要。
-
 Hand Management:
   complexity: 2.9
   strategic_value: 3.5
   interaction_value: 2.5
   description: 手札管理による戦略的選択。リソースとしてのカードの効率的な使用と保持判断が求められる。
-
 Hexagon Grid:
   complexity: 2.9
   strategic_value: 3.2
   interaction_value: 2.8
   description: 六角形グリッドによる自由度の高い空間的戦略。方向性と移動パターンの複雑さが特徴。
-
 Hidden Victory Points:
   complexity: 2.9
   strategic_value: 3.3
   interaction_value: 2.8
   description: 非公開の勝利条件による間接的な競争と戦略的欺瞞。目標隠蔽と相手の意図読解が重要。
-
 Highest-Lowest Scoring:
   complexity: 2.7
   strategic_value: 3.1
   interaction_value: 3.5
   description: 最高または最低得点による戦略的位置取りと調整。極値管理と戦略的な順位操作が求められる。
-
 Income:
   complexity: 2.6
   strategic_value: 3.7
   interaction_value: 2.5
   description: 定期的な収入獲得による経済的成長と戦略的計画。安定的な資源流入管理と投資判断が重要。
-
 Increase Value of Unchosen Resources:
   complexity: 3.3
   strategic_value: 3.7
   interaction_value: 3.4
   description: 選ばれなかったリソースの価値上昇による動的市場の形成。価値変動の予測と機会コスト評価が求められる。
-
 Interrupts:
   complexity: 3.8
   strategic_value: 3.5
   interaction_value: 4.2
   description: 他プレイヤーのアクションに割り込む能力による高度な相互作用。タイミングと優先順位判断が鍵となる。
-
 Kill Steal:
   complexity: 2.1
   strategic_value: 2.5
   interaction_value: 4.5
   description: 他プレイヤーの獲物や成果を横取りする競争的相互作用。隙を狙った介入と効率的なリソース活用が特徴。
-
 King of the Hill:
   complexity: 3.1
   strategic_value: 3.2
   interaction_value: 4.3
   description: 特定領域の支配を巡る直接的な競争と陣取り戦略。位置価値と資源配分のバランスが重要。
-
 Ladder Climbing:
   complexity: 2.7
   strategic_value: 3.0
   interaction_value: 3.5
   description: 段階的な上昇による競争と戦略的タイミング。進行速度と資源投入の最適化が求められる。
-
 Layering:
   complexity: 3.5
   strategic_value: 3.8
   interaction_value: 2.9
   description: 複数層の要素を重ねることによる複合的な戦略構築。階層的思考と複合効果の最大化が特徴。
-
 Legacy Game:
   complexity: 4.7
   strategic_value: 4.3
   interaction_value: 3.8
   description: ゲーム内容が永続的に変化する物語進行と長期的戦略。意思決定の永続的影響と適応力が求められる。
-
 Line Drawing:
   complexity: 2.9
   strategic_value: 3.2
   interaction_value: 2.7
   description: 線を引いて接続や区画を作る空間的戦略。効率的な経路形成と空間分割が鍵となる。
-
 Line of Sight:
   complexity: 3.2
   strategic_value: 3.4
   interaction_value: 3.3
   description: 視線の通る範囲での行動制限と空間認識戦略。地形や障害物を考慮した配置と行動計画が重要。
-
 Loans:
   complexity: 3.1
   strategic_value: 3.5
   interaction_value: 2.7
   description: 一時的な資金調達と返済リスクによる経済的戦略。投資対効果と返済計画の最適化が求められる。
-
 Lose a Turn:
   complexity: 1.2
   strategic_value: 1.0
   interaction_value: 2.0
   description: ターンスキップによる戦略的要素の低下。ペナルティ回避と時間的不利の最小化が中心となる。
-
 Mancala:
   complexity: 2.5
   strategic_value: 3.3
   interaction_value: 2.9
   description: 石やコマを移動させながら分配する古典的戦略メカニクス。循環パターンと資源分配の最適化が特徴。
-
 Map Addition:
   complexity: 2.9
   strategic_value: 3.4
   interaction_value: 2.8
   description: マップの追加による空間拡大と探索戦略。領域評価と拡張方向の選択が重要。
-
 Market:
   complexity: 3.2
   strategic_value: 3.5
   interaction_value: 3.4
   description: 需給によって変動する市場での売買と価格戦略。市場変動の予測と取引タイミングの最適化が求められる。
-
 Melding and Splaying:
   complexity: 3.7
   strategic_value: 3.9
   interaction_value: 2.8
   description: カードの組み合わせと重ね方による戦略的配置。視覚的パターン形成と情報管理の両立が特徴。
-
 Memory:
   complexity: 1.9
   strategic_value: 2.0
   interaction_value: 1.9
   description: 記憶力に基づくシンプルな戦略。情報の記憶と想起能力が主な挑戦となる。
-
 Modular Board:
   complexity: 2.7
   strategic_value: 3.0
   interaction_value: 2.0
   description: モジュラーボードによる変化する環境。適応力と空間認識能力の活用が求められる。
-
 Movement Points:
   complexity: 2.9
   strategic_value: 3.3
   interaction_value: 3.0
   description: 移動力の消費と管理による戦略的配置と行動計画。リソースとしての移動力の効率的活用が重要。
-
 Multi-Use Cards:
   complexity: 4.1
   strategic_value: 4.0
   interaction_value: 2.5
   description: 多用途カードによる戦略的選択肢の豊富さ。複数の使用法の比較と最適な活用法の判断が求められる。
-
 Narrative Choice / Paragraph:
   complexity: 2.2
   strategic_value: 2.6
   interaction_value: 3.3
   description: 物語的選択による分岐と結果の管理。ストーリー展開と戦略的判断の融合が特徴。
-
 Negotiation:
   complexity: 3.2
   strategic_value: 3.2
   interaction_value: 5.0
   description: 交渉による高い相互作用。説得力と駆け引きのバランス、戦略的妥協点の見極めが求められる。
-
 Neighbor Scope:
   complexity: 2.9
   strategic_value: 3.2
   interaction_value: 3.8
   description: 隣接プレイヤーとの特別な相互作用による局所的戦略。近接関係の評価と選択的協力が重要。
-
 Network and Route Building:
   complexity: 3.5
   strategic_value: 3.8
   interaction_value: 3.5
   description: 接続ネットワークの構築による領域拡大と競争。効率的な接続パターンと要所確保が鍵となる。
-
 Once-Per-Game Abilities:
   complexity: 2.7
   strategic_value: 3.5
   interaction_value: 2.8
   description: 一度限りの強力な能力使用タイミングの戦略的選択。最適な使用時期と効果最大化が重要。
-
 Open Drafting:
   complexity: 2.7
   strategic_value: 3.2
   interaction_value: 3.5
   description: 公開情報下でのカード選択による戦略的駆け引き。選択肢の価値評価と他者の意図予測が求められる。
-
 Ordering:
   complexity: 2.9
   strategic_value: 3.3
   interaction_value: 2.7
   description: 順序付けによる優先度決定と戦略的配列。シーケンス最適化と計画的実行が重要。
-
 Ownership:
   complexity: 2.5
   strategic_value: 3.2
   interaction_value: 3.0
   description: 所有権の獲得と管理による永続的な利益確保。長期的投資と領域価値の評価が求められる。
-
 Paper-and-Pencil:
   complexity: 2.2
   strategic_value: 2.7
   interaction_value: 2.3
   description: 紙と鉛筆を使った記録と計画による永続的な決断。情報の視覚化と記録管理が特徴。
-
 Pattern Building:
   complexity: 3.3
   strategic_value: 3.0
   interaction_value: 2.0
   description: パターン構築による空間的パズル。視覚的思考と計画的配置が求められる。
-
 Pattern Movement:
   complexity: 3.2
   strategic_value: 3.5
   interaction_value: 2.8
   description: 特定のパターンで動くコマの戦略的配置と予測。移動パターンの理解と空間認識が重要。
-
 Pattern Recognition:
   complexity: 2.2
   strategic_value: 2.0
   interaction_value: 1.5
   description: パターン認識による基本的な戦略。視覚的情報処理と構造把握能力が中心となる。
-
 Pick-up and Deliver:
   complexity: 3.1
   strategic_value: 3.4
   interaction_value: 3.0
   description: 物品の収集と配達による経路最適化と効率戦略。輸送ネットワークと時間管理の最適化が求められる。
-
 Player Elimination:
   complexity: 1.9
   strategic_value: 1.0
   interaction_value: 4.0
   description: プレイヤー脱落による高い相互作用。生存戦略と攻撃目標の選択が中心となる。
-
 Point to Point Movement:
   complexity: 2.7
   strategic_value: 3.0
   interaction_value: 3.2
   description: 接続点間の移動による経路選択と戦略的位置取り。ネットワーク理解と経路効率化が重要。
-
 Predictive Bid:
   complexity: 3.5
   strategic_value: 3.8
   interaction_value: 3.7
   description: 結果を予測した入札による戦略的賭けと読み合い。確率評価と他者の行動予測が求められる。
-
 Programmed Movement:
   complexity: 3.8
   strategic_value: 4.1
   interaction_value: 3.0
   description: 事前に計画された動きによる高度な戦略的予測。将来の状況予測と計画的行動シーケンスが特徴。
-
 Push Your Luck:
   complexity: 2.2
   strategic_value: 2.5
   interaction_value: 2.0
   description: 運試しと判断のバランス。リスク評価と利益最大化の境界設定が求められる。
-
 Race:
   complexity: 1.8
   strategic_value: 2.7
   interaction_value: 3.2
   description: 目標への到達を競うシンプルでありながら競争的なメカニクス。速度と効率の最適化が重要。
-
 Random Production:
   complexity: 2.7
   strategic_value: 2.5
   interaction_value: 2.0
   description: ランダム要素による資源生産と対応戦略の構築。不確実性への適応と分散投資が求められる。
-
 Real-Time:
   complexity: 3.3
   strategic_value: 3.0
   interaction_value: 4.0
   description: リアルタイムでの意思決定と実行による即応性と集中力。時間的圧力下での判断力と実行速度が鍵となる。
-
 Re-rolling and Locking:
   complexity: 2.4
   strategic_value: 2.8
   interaction_value: 2.3
   description: ダイスの再振りと固定による確率操作と戦略的リスク管理。確率理解と最適停止問題の解決が特徴。
-
 Resource Management:
   complexity: 3.8
   strategic_value: 4.0
   interaction_value: 2.5
   description: 資源管理による戦略的深さ。限られたリソースの最適配分と効率的な変換が重要。
-
 Resource to Move:
   complexity: 2.9
   strategic_value: 3.3
   interaction_value: 2.8
   description: リソースを消費して移動する経済的移動メカニクス。リソース配分と移動効率のバランスが求められる。
-
 Role Playing:
   complexity: 3.3
   strategic_value: 3.5
   interaction_value: 4.2
   description: 役割や人格を演じることによる没入型ゲームプレイ。キャラクター理解と状況適応力が重要。
-
 Roles with Asymmetric Information:
   complexity: 4.7
   strategic_value: 4.0
   interaction_value: 4.0
   description: 非対称情報による戦略的駆け引き。限定的な情報共有と推論による戦略構築が特徴。
-
 Roll / Spin and Move:
   complexity: 1.0
   strategic_value: 1.0
   interaction_value: 1.5
   description: サイコロを振って進む基本的なメカニクス。運に大きく依存し、戦略的選択肢は最小限。
-
 Rondel:
   complexity: 3.3
   strategic_value: 3.6
   interaction_value: 2.5
   description: 円環状のアクション選択による計画的な手番構成と制限。効率的な循環経路の最適化が求められる。
-
 Route/Network Building:
   complexity: 3.5
   strategic_value: 3.5
   interaction_value: 3.0
   description: ルート構築による間接的な競争。効率的な接続経路と戦略的要所確保が鍵となる。
-
 Scenario / Mission / Campaign Game:
   complexity: 3.5
   strategic_value: 3.8
   interaction_value: 3.6
   description: 一連のシナリオや任務による物語進行と長期的戦略。目標管理と状況適応力が重要。
-
 Score-and-Reset Game:
   complexity: 2.9
   strategic_value: 3.3
   interaction_value: 2.7
   description: 定期的なスコアリングとリセットによる短期的戦略の連続。タイミング把握と周期的最適化が求められる。
-
 Selection Order Bid:
   complexity: 3.5
   strategic_value: 3.7
   interaction_value: 3.8
   description: 選択順序を競り合うことによる優先権の獲得と戦略的優位性。順位価値の評価と資源配分が重要。
-
 Set Collection:
   complexity: 1.9
   strategic_value: 3.0
   interaction_value: 2.5
   description: セット収集による基本的な戦略性。収集優先順位と完成タイミングの判断が求められる。
-
 Simulation:
   complexity: 4.5
   strategic_value: 4.3
   interaction_value: 3.2
   description: 現実世界のシステムを模倣した複雑な相互関係の管理。システム理解と変数管理の最適化が特徴。
-
 Simultaneous Action Selection:
   complexity: 2.9
   strategic_value: 3.3
   interaction_value: 3.9
   description: 全プレイヤーが同時にアクションを選択する予測と読み合い。相手の意図予測と状況適応が求められる。
-
 Singing:
   complexity: 2.1
   strategic_value: 2.0
   interaction_value: 4.5
   description: 歌唱による社交的ゲームプレイと表現力の活用。パフォーマンス能力と即興対応が特徴。
-
 Slide / Push:
   complexity: 2.7
   strategic_value: 3.1
   interaction_value: 3.2
   description: ゲームボード上の要素を押したり、スライドさせたりするメカニクス。空間的思考と配置変更の連鎖効果理解が求められる。
-
 Solo / Solitaire Game:
   complexity: 3.5
   strategic_value: 2.8
   interaction_value: 1.5
   description: 単独プレイ向けの自己挑戦型メカニクスと最適化戦略。システム対策と効率的な資源活用が鍵となる。
-
 Square Grid:
   complexity: 2.7
   strategic_value: 3.0
   interaction_value: 2.8
   description: 四角形のグリッド上での移動と配置による空間戦略。方向性と距離計算の単純化が特徴。
-
 Stacking and Balancing:
   complexity: 2.9
   strategic_value: 2.8
   interaction_value: 3.3
   description: 物理的な積み重ねとバランス取りによる技術的挑戦。手先の器用さと空間認識能力が求められる。
-
 Stock Holding:
   complexity: 3.9
   strategic_value: 3.5
   interaction_value: 4.0
   description: 株式保有による間接的な相互作用。企業価値予測と他者の投資行動分析が重要。
-
 Storytelling:
   complexity: 2.4
   strategic_value: 2.5
   interaction_value: 4.3
   description: 物語を作り出す創造的な相互作用と表現。語り継手とアイデア連鎖が特徴。
-
 Sudden Death Ending:
   complexity: 2.9
   strategic_value: 3.2
   interaction_value: 3.5
   description: 特定条件での即時ゲーム終了による緊張感と戦略的対応。終了条件の管理と状況判断が求められる。
-
 Tags:
   complexity: 2.9
   strategic_value: 3.4
   interaction_value: 2.5
   description: 分類タグによるゲーム要素の関連付けとシナジー構築。関連性の認識とカテゴリ横断的思考が重要。
-
 Take That:
   complexity: 1.6
   strategic_value: 2.0
   interaction_value: 5.0
   description: 直接的な攻撃による高い相互作用。タイミングと標的選択の戦略が中心となる。
-
 Targeted Clues:
   complexity: 3.2
   strategic_value: 3.4
   interaction_value: 4.2
   description: 特定プレイヤーへのヒント提供による協力的相互作用。情報の適切な絞り込みと伝達効率が求められる。
-
 Team-Based Game:
   complexity: 2.9
   strategic_value: 3.3
   interaction_value: 4.5
   description: チームベースの協力による集団戦略と役割分担。チームワークと責任分担の最適化が鍵となる。
-
 Tech Trees / Tech Tracks:
   complexity: 4.5
   strategic_value: 5.0
   interaction_value: 2.0
   description: 長期的な戦略立案と進化経路選択が必要となるメカニクス。技術発展の優先順位と相乗効果の最適化が重要。
-
 Tile Placement:
   complexity: 3.1
   strategic_value: 3.5
   interaction_value: 2.5
   description: タイル配置による空間的戦略。位置選択と将来の拡張性考慮が求められる。
-
 Track Movement:
   complexity: 2.2
   strategic_value: 2.5
   interaction_value: 2.8
   description: 定められた経路上の移動による進行と競争。進行速度と位置取りの戦略が特徴。
-
 Trading:
   complexity: 2.5
   strategic_value: 2.5
   interaction_value: 5.0
   description: トレードによる高い相互作用。交渉力と価値評価能力、需給バランスの把握が重要。
-
 Trick-taking:
   complexity: 2.6
   strategic_value: 3.4
   interaction_value: 3.7
   description: トリックを取り合うカードプレイの読み合いと戦略。手札管理と他者の行動予測が求められる。
-
 Tug of War:
   complexity: 2.5
   strategic_value: 3.0
   interaction_value: 4.0
   description: 二つの勢力が綱引きのように前後に競り合うバランス調整メカニクス。資源配分と攻防転換の判断が特徴。
-
 'Turn Order: Auction':
   complexity: 3.5
   strategic_value: 3.7
   interaction_value: 4.0
   description: ターン順序を競り落とすことによる戦略的優位性の確保。順番の価値評価と入札戦略が求められる。
-
 'Turn Order: Claim Action':
   complexity: 2.9
   strategic_value: 3.4
   interaction_value: 3.5
   description: アクション選択によるターン順序の決定と戦略的優先順位付け。行動と順位のトレードオフ判断が重要。
-
 'Turn Order: Pass Order':
   complexity: 3.1
   strategic_value: 3.5
   interaction_value: 3.3
   description: パスのタイミングによるターン順序の操作と戦略的駆け引き。継続と撤退の判断が鍵となる。
-
 'Turn Order: Progressive':
   complexity: 2.6
   strategic_value: 3.0
   interaction_value: 3.2
   description: 順次進行するターン順序による公平性と計画的アクション。順番効果の理解と先読みが求められる。
-
 'Turn Order: Role Order':
   complexity: 3.1
   strategic_value: 3.4
   interaction_value: 3.3
   description: 役割に基づくターン順序による戦略的役割選択。役割と順位のバランス評価が重要。
-
 'Turn Order: Stat-Based':
   complexity: 3.2
   strategic_value: 3.7
   interaction_value: 3.0
   description: プレイヤーの状態や能力値に基づくターン順序の決定。ステータス管理と順番最適化が求められる。
-
 Variable Phase Order:
   complexity: 3.8
   strategic_value: 3.8
   interaction_value: 3.2
   description: フェーズ順序の変動による適応的な戦略立案の必要性。柔軟な対応力と計画変更能力が特徴。
-
 Variable Player Powers:
   complexity: 3.3
   strategic_value: 4.0
   interaction_value: 3.5
   description: プレイヤーごとの異なる能力による戦略の多様性。固有能力の理解と最適活用が求められる。
-
 Variable Set-up:
   complexity: 2.6
   strategic_value: 3.6
   interaction_value: 2.7
   description: 毎回異なる初期配置によるリプレイ性と適応戦略。状況評価と柔軟な計画立案が重要。
-
 Victory Points as a Resource:
   complexity: 3.7
   strategic_value: 4.0
   interaction_value: 2.8
   description: 勝利点を直接操作可能なリソースとして活用する高度な戦略。短期的損失と長期的利益のバランス判断が求められる。
-
 Voting:
   complexity: 2.5
   strategic_value: 2.5
   interaction_value: 3.5
   description: 投票による相互作用と社会的要素。多数派工作と少数派保護の戦略的バランスが特徴。
-
 Worker Placement:
   complexity: 4.2
   strategic_value: 5.0
   interaction_value: 3.5
   description: 高い戦略性と中程度の相互作用を持つ労働者配置メカニクス。場所の価値判断と優先順位決定が鍵となる。
-
 Worker Placement with Dice Workers:
   complexity: 4.7
   strategic_value: 4.5
   interaction_value: 3.8
   description: ダイス値を持つワーカーの配置による確率と戦略の組み合わせ。不確実性管理と配置最適化が求められる。
-
 Worker Placement, Different Worker Types:
   complexity: 4.8
   strategic_value: 4.8
   interaction_value: 3.7
   description: 多様なワーカータイプによる複雑な戦略。ワーカー特性の理解と相乗効果の最大化が重要。
-
 Zone of Control:
   complexity: 3.2
   strategic_value: 3.6
   interaction_value: 3.4
   description: 影響圏による空間制御と間接的な領域支配。戦略的配置と領域効果の最適化が求められる。
+Investment:
+  complexity: 3.5
+  strategic_value: 4.2
+  interaction_value: 3.3
+  description: 現在のリソースを投資して将来的な利益を得る長期的戦略メカニクス。リスク評価と投資タイミングの見極め、複利効果の最大化が重要となる。
+'Turn Order: Time Track':
+  complexity: 3.7
+  strategic_value: 3.9
+  interaction_value: 3.2
+  description: 行動に要する時間によってターン順序が決まる時間管理型メカニクス。短時間行動と長時間行動のトレードオフ判断や最適なタイミング選択が求められる。
+Area-Impulse:
+  complexity: 3.8
+  strategic_value: 4.0
+  interaction_value: 3.5
+  description: 地域ごとに順番に行動するゾーン活性化システム。限られたアクションポイントでの領域優先順位付けと戦術的集中が特徴。
+Command Cards:
+  complexity: 3.4
+  strategic_value: 3.8
+  interaction_value: 3.0
+  description: 指揮命令を表すカードによるアクション選択と戦略的計画。手札管理とシーケンス構築による作戦立案と実行が求められる。
+Multiple Maps:
+  complexity: 4.2
+  strategic_value: 4.3
+  interaction_value: 3.4
+  description: 複数のマップ間での同時並行的な戦略展開と資源配分。異なる環境での位置取りとマップ間相互作用の理解が重要となる。
+Rock-Paper-Scissors:
+  complexity: 2.3
+  strategic_value: 2.5
+  interaction_value: 4.5
+  description: 循環的な優劣関係による相互牽制と読み合い。心理戦と確率分析による間接的な駆け引きが中心となる要素。
+Secret Unit Deployment:
+  complexity: 3.4
+  strategic_value: 3.8
+  interaction_value: 3.7
+  description: 非公開の初期配置による情報戦と心理的駆け引き。相手の意図予測と偽装戦略の構築、状況推理能力が求められる。
