@@ -12,7 +12,7 @@ alternate_names:
 - 葡萄酒庄园精华版
 - 葡萄酒莊園-精華版
 - 비티컬처 에센셜 에디션
-average_rating: '7.97672'
+average_rating: '7.97439'
 categories:
 - name: Economic
 - name: Farming
@@ -44,24 +44,32 @@ designers:
 japanese_name: ワイナリーの四季
 learning_analysis:
   bgg_rank: 40
-  bgg_weight: 2.8917
-  category_complexity: 2.62
-  decision_points: 3.375
-  initial_barrier: 4.61
-  interaction_complexity: 2.75
-  learning_curve_type: steep_then_shallow
+  bgg_weight: 2.8932
+  category_complexity: 4.04
+  decision_points: 4.706666666666668
+  initial_barrier: 3.8
+  interaction_complexity: 3.825
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.45
   mechanics_count: 8
   player_types:
+  - casual
   - experienced
+  - hardcore
+  - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.13
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.19
   replayability: 4.32
-  rules_complexity: 4.150006666666667
-  strategic_depth: 3.26
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  rules_complexity: 4.150306666666667
+  strategic_depth: 3.78
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2015
 mechanics:
 - name: Contracts
@@ -103,5 +111,5 @@ ranks:
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/l_PRU2lVlX9seScRFcvFlA__thumb/img/pULDtVd75QZgGfvSMhr6Rs07vK8=/fit-in/200x150/filters:strip_icc()/pic6500949.jpg
 type: boardgame
-weight: '2.8917'
+weight: '2.8932'
 year_published: '2015'
