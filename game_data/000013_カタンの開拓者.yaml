@@ -61,7 +61,7 @@ alternate_names:
 - 카탄
 - '카탄: 보드게임의 제왕'
 - 카탄의 개척자
-average_rating: '7.09447'
+average_rating: '7.0939'
 categories:
 - name: Economic
 - name: Negotiation
@@ -98,16 +98,16 @@ designers:
 - name: Klaus Teuber
 japanese_name: カタンの開拓者
 learning_analysis:
-  bgg_rank: 573
-  bgg_weight: 2.2879
+  bgg_rank: 580
+  bgg_weight: 2.2875
   category_complexity: 4.15
-  decision_points: 3.824444444444444
-  initial_barrier: 3.17
+  decision_points: 3.788
+  initial_barrier: 3.11
   interaction_complexity: 4.65
   learning_curve_type: gentle
   mastery_time: medium
-  mechanics_complexity: 2.72
-  mechanics_count: 11
+  mechanics_complexity: 2.63
+  mechanics_count: 12
   player_types:
   - casual
   - experienced
@@ -119,10 +119,10 @@ learning_analysis:
     decision_density: 0.1
     interaction_modifier: 0.0
     strategic_bonus: 0.1
-  rank_complexity: 2.76
+  rank_complexity: 2.75
   replayability: 4.5
-  rules_complexity: 3.170610303030303
-  strategic_depth: 3.3
+  rules_complexity: 3.086666666666667
+  strategic_depth: 3.29
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 1995
 mechanics:
@@ -135,6 +135,7 @@ mechanics:
 - name: Network and Route Building
 - name: Race
 - name: Random Production
+- name: Take That
 - name: Trading
 - name: Variable Set-up
 name: CATAN
@@ -197,13 +198,13 @@ publishers:
 - name: TRY SOFT
 - name: Vennerød Forlag AS
 ranks:
-- rank: '573'
+- rank: '580'
   type: boardgame
-- rank: '534'
+- rank: '536'
   type: strategygames
 - rank: '201'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/PyUol9QxBnZQCJqZI6bmSA__thumb/img/virV2Bm82Dql7gh-LZScBwqByik=/fit-in/200x150/filters:strip_icc()/pic8632666.png
 type: boardgame
-weight: '2.2879'
+weight: '2.2875'
 year_published: '1995'

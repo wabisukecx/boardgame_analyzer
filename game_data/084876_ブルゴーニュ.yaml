@@ -9,7 +9,7 @@ alternate_names:
 - ブルゴーニュの城
 - 勃根地城堡
 - 버건디의 성
-average_rating: '8.14757'
+average_rating: '8.14871'
 categories:
 - name: Animals
 - name: Dice
@@ -60,16 +60,17 @@ designers:
 japanese_name: ブルゴーニュ
 learning_analysis:
   bgg_rank: 16
-  bgg_weight: 2.9737
+  bgg_weight: 2.9726
   category_complexity: 3.16
-  decision_points: 3.5100000000000002
-  initial_barrier: 4.09
-  interaction_complexity: 3.15
-  learning_curve_type: moderate_then_shallow
+  decision_points: 3.84
+  initial_barrier: 3.27
+  interaction_complexity: 2.84
+  learning_curve_type: gentle
   mastery_time: short
-  mechanics_complexity: 2.82
-  mechanics_count: 10
+  mechanics_complexity: 2.76
+  mechanics_count: 11
   player_types:
+  - casual
   - experienced
   - replayer
   - trend_follower
@@ -80,7 +81,7 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 3.22
   replayability: 4.8
-  rules_complexity: 3.5327399999999995
+  rules_complexity: 3.4817927272727274
   strategic_depth: 3.17
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2011
@@ -93,6 +94,7 @@ mechanics:
 - name: Open Drafting
 - name: Pattern Building
 - name: Tile Placement
+- name: Track Movement
 - name: 'Turn Order: Stat-Based'
 - name: Variable Set-up
 name: The Castles of Burgundy
@@ -112,9 +114,9 @@ publishers:
 ranks:
 - rank: '16'
   type: boardgame
-- rank: '17'
+- rank: '16'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/sH2YTQ10dHj1ibfS-KKtGA__thumb/img/f5zFXdTcH9RNY0iMNBppd8D-_r0=/fit-in/200x150/filters:strip_icc()/pic8745814.jpg
 type: boardgame
-weight: '2.9737'
+weight: '2.9726'
 year_published: '2011'

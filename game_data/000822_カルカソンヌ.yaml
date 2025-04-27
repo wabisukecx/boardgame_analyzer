@@ -21,7 +21,7 @@ alternate_names:
 - 卡卡城
 - 卡卡頌
 - 카르카손
-average_rating: '7.41253'
+average_rating: '7.41256'
 categories:
 - name: Medieval
 - name: Territory Building
@@ -47,18 +47,17 @@ designers:
 - name: Klaus-Jürgen Wrede
 japanese_name: カルカソンヌ
 learning_analysis:
-  bgg_rank: 230
-  bgg_weight: 1.8889
+  bgg_rank: 229
+  bgg_weight: 1.8884
   category_complexity: 3.89
-  decision_points: 4.12
-  initial_barrier: 2.68
+  decision_points: 4.462222222222222
+  initial_barrier: 3.15
   interaction_complexity: 3.3949999999999996
   learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.3
-  mechanics_count: 5
+  mastery_time: medium
+  mechanics_complexity: 2.97
+  mechanics_count: 11
   player_types:
-  - beginner
   - casual
   - experienced
   - replayer
@@ -70,17 +69,23 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.0
   rank_complexity: 2.36
-  replayability: 3.88
-  rules_complexity: 3.414446666666666
-  strategic_depth: 3.15
+  replayability: 4.5
+  rules_complexity: 3.119801212121213
+  strategic_depth: 3.28
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2000
 mechanics:
 - name: Area Majority / Influence
 - name: Enclosure
+- name: End Game Bonuses
+- name: Kill Steal
 - name: Map Addition
+- name: Modular Board
 - name: Pattern Building
+- name: Square Grid
+- name: Take That
 - name: Tile Placement
+- name: Worker Placement
 name: Carcassonne
 playing_time: '45'
 publisher_max_players: '5'
@@ -126,11 +131,11 @@ publishers:
 - name: Ventura Games
 - name: Z-Man Games
 ranks:
-- rank: '230'
+- rank: '229'
   type: boardgame
-- rank: '56'
+- rank: '55'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/okM0dq_bEXnbyQTOvHfwRA__thumb/img/88274KiOg94wziybVHyW8AeOiXg=/fit-in/200x150/filters:strip_icc()/pic6544250.png
 type: boardgame
-weight: '1.8889'
+weight: '1.8884'
 year_published: '2000'
