@@ -5,7 +5,7 @@ alternate_names:
 - Гильдия купцов-путешественников
 - ザ・ギルド・オブ・マーチャント・エクスプローラーズ
 - 提戈梅公会
-average_rating: '7.66398'
+average_rating: '7.6574'
 categories:
 - name: Adventure
 - name: Exploration
@@ -32,16 +32,16 @@ designers:
 - name: Brett J. Gilbert
 japanese_name: ザ・ギルド・オブ・マーチャント・エクスプローラーズ
 learning_analysis:
-  bgg_rank: 395
-  bgg_weight: 2.0513
+  bgg_rank: 383
+  bgg_weight: 2.0485
   category_complexity: 3.74
-  decision_points: 3.7700000000000005
-  initial_barrier: 3.0
+  decision_points: 3.8066666666666675
+  initial_barrier: 3.26
   interaction_complexity: 3.0300000000000002
   learning_curve_type: gentle
   mastery_time: short
-  mechanics_complexity: 2.83
-  mechanics_count: 6
+  mechanics_complexity: 3.05
+  mechanics_count: 8
   player_types:
   - casual
   - trend_follower
@@ -51,18 +51,20 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.0
   rank_complexity: 2.81
-  replayability: 3.4
-  rules_complexity: 3.493593333333333
-  strategic_depth: 2.97
+  replayability: 3.5
+  rules_complexity: 3.6880333333333333
+  strategic_depth: 2.99
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2022
 mechanics:
 - name: Bingo
+- name: Chaining
 - name: Hexagon Grid
 - name: Hidden Victory Points
 - name: Line Drawing
 - name: Network and Route Building
 - name: Pattern Movement
+- name: Solo / Solitaire Game
 name: The Guild of Merchant Explorers
 playing_time: '45'
 publisher_max_players: '4'
@@ -79,13 +81,13 @@ publishers:
 - name: YOKA Games
 - name: 株式会社ケンビル (KenBill)
 ranks:
-- rank: '395'
+- rank: '383'
   type: boardgame
-- rank: '246'
+- rank: '240'
   type: strategygames
-- rank: '70'
+- rank: '69'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/HZQAedsq10yAgotyNth4og__thumb/img/56IVwtzXk9WZz750cekqFYWw16g=/fit-in/200x150/filters:strip_icc()/pic6670587.jpg
 type: boardgame
-weight: '2.0513'
+weight: '2.0485'
 year_published: '2022'
