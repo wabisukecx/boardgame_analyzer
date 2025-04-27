@@ -35,8 +35,8 @@ Advantage Token:
   description: 一時的な優位性を提供するトークンの獲得と戦略的使用。タイミングとリソース配分の判断が鍵となる。
 Area Control:
   complexity: 3.9
-  strategic_value: 4.1
-  interaction_value: 4.3
+  strategic_value: 5.0
+  interaction_value: 4.0
   description: 領域支配による間接的な陣取り合戦と戦略的配置。空間価値の評価と力の投入バランスが重要。
 Area Control / Area Influence:
   complexity: 3.9
@@ -65,8 +65,8 @@ Auction Compensation:
   description: オークション敗者への補償による参加意欲の促進。リスク計算と機会損失の評価が戦略の中心となる。
 Auction/Bidding:
   complexity: 3.7
-  strategic_value: 3.9
-  interaction_value: 4.5
+  strategic_value: 4.0
+  interaction_value: 5.0
   description: 資源やアイテムの競り合いによる価値評価と戦略的入札。優先順位付けと予算管理が重要。
 'Auction: Dutch':
   complexity: 3.5
@@ -308,6 +308,11 @@ Interrupts:
   strategic_value: 3.5
   interaction_value: 4.2
   description: 他プレイヤーのアクションに割り込む能力による高度な相互作用。タイミングと優先順位判断が鍵となる。
+Investment:
+  complexity: 3.5
+  strategic_value: 4.2
+  interaction_value: 3.3
+  description: 現在のリソースを投資して将来的な利益を得る長期的戦略メカニクス。リスク評価と投資タイミングの見極め、複利効果の最大化が重要となる。
 Kill Steal:
   complexity: 2.1
   strategic_value: 2.5
@@ -393,6 +398,11 @@ Multi-Use Cards:
   strategic_value: 4.0
   interaction_value: 2.5
   description: 多用途カードによる戦略的選択肢の豊富さ。複数の使用法の比較と最適な活用法の判断が求められる。
+Multiple Maps:
+  complexity: 4.2
+  strategic_value: 4.3
+  interaction_value: 3.4
+  description: 複数のマップ間での同時並行的な戦略展開と資源配分。異なる環境での位置取りとマップ間相互作用の理解が重要となる。
 Narrative Choice / Paragraph:
   complexity: 2.2
   strategic_value: 2.6
@@ -513,6 +523,11 @@ Resource to Move:
   strategic_value: 3.3
   interaction_value: 2.8
   description: リソースを消費して移動する経済的移動メカニクス。リソース配分と移動効率のバランスが求められる。
+Rock-Paper-Scissors:
+  complexity: 2.3
+  strategic_value: 2.5
+  interaction_value: 4.5
+  description: 循環的な優劣関係による相互牽制と読み合い。心理戦と確率分析による間接的な駆け引きが中心となる要素。
 Role Playing:
   complexity: 3.3
   strategic_value: 3.5
@@ -535,8 +550,8 @@ Rondel:
   description: 円環状のアクション選択による計画的な手番構成と制限。効率的な循環経路の最適化が求められる。
 Route/Network Building:
   complexity: 3.5
-  strategic_value: 3.5
-  interaction_value: 3.0
+  strategic_value: 3.8
+  interaction_value: 3.5
   description: ルート構築による間接的な競争。効率的な接続経路と戦略的要所確保が鍵となる。
 Scenario / Mission / Campaign Game:
   complexity: 3.5
@@ -548,6 +563,11 @@ Score-and-Reset Game:
   strategic_value: 3.3
   interaction_value: 2.7
   description: 定期的なスコアリングとリセットによる短期的戦略の連続。タイミング把握と周期的最適化が求められる。
+Secret Unit Deployment:
+  complexity: 3.4
+  strategic_value: 3.8
+  interaction_value: 3.7
+  description: 非公開の初期配置による情報戦と心理的駆け引き。相手の意図予測と偽装戦略の構築、状況推理能力が求められる。
 Selection Order Bid:
   complexity: 3.5
   strategic_value: 3.7
@@ -688,6 +708,11 @@ Tug of War:
   strategic_value: 3.7
   interaction_value: 3.0
   description: プレイヤーの状態や能力値に基づくターン順序の決定。ステータス管理と順番最適化が求められる。
+'Turn Order: Time Track':
+  complexity: 3.7
+  strategic_value: 3.9
+  interaction_value: 3.2
+  description: 行動に要する時間によってターン順序が決まる時間管理型メカニクス。短時間行動と長時間行動のトレードオフ判断や最適なタイミング選択が求められる。
 Variable Phase Order:
   complexity: 3.8
   strategic_value: 3.8
@@ -733,16 +758,6 @@ Zone of Control:
   strategic_value: 3.6
   interaction_value: 3.4
   description: 影響圏による空間制御と間接的な領域支配。戦略的配置と領域効果の最適化が求められる。
-Investment:
-  complexity: 3.5
-  strategic_value: 4.2
-  interaction_value: 3.3
-  description: 現在のリソースを投資して将来的な利益を得る長期的戦略メカニクス。リスク評価と投資タイミングの見極め、複利効果の最大化が重要となる。
-'Turn Order: Time Track':
-  complexity: 3.7
-  strategic_value: 3.9
-  interaction_value: 3.2
-  description: 行動に要する時間によってターン順序が決まる時間管理型メカニクス。短時間行動と長時間行動のトレードオフ判断や最適なタイミング選択が求められる。
 Area-Impulse:
   complexity: 3.8
   strategic_value: 4.0
@@ -753,18 +768,3 @@ Command Cards:
   strategic_value: 3.8
   interaction_value: 3.0
   description: 指揮命令を表すカードによるアクション選択と戦略的計画。手札管理とシーケンス構築による作戦立案と実行が求められる。
-Multiple Maps:
-  complexity: 4.2
-  strategic_value: 4.3
-  interaction_value: 3.4
-  description: 複数のマップ間での同時並行的な戦略展開と資源配分。異なる環境での位置取りとマップ間相互作用の理解が重要となる。
-Rock-Paper-Scissors:
-  complexity: 2.3
-  strategic_value: 2.5
-  interaction_value: 4.5
-  description: 循環的な優劣関係による相互牽制と読み合い。心理戦と確率分析による間接的な駆け引きが中心となる要素。
-Secret Unit Deployment:
-  complexity: 3.4
-  strategic_value: 3.8
-  interaction_value: 3.7
-  description: 非公開の初期配置による情報戦と心理的駆け引き。相手の意図予測と偽装戦略の構築、状況推理能力が求められる。
