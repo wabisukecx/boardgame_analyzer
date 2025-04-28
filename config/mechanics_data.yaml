@@ -768,3 +768,8 @@ Command Cards:
   strategic_value: 3.8
   interaction_value: 3.0
   description: 指揮命令を表すカードによるアクション選択と戦略的計画。手札管理とシーケンス構築による作戦立案と実行が求められる。
+Static Capture:
+  complexity: 2.8
+  strategic_value: 3.3
+  interaction_value: 3.2
+  description: 固定位置での占領や支配による空間戦略と資源確保。既存の場所や要素を獲得することで戦略的優位性を構築。位置価値の評価と占領優先順位の決定が重要。駒や資源の配置による間接的な牽制も特徴。
