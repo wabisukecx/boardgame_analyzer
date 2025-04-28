@@ -12,7 +12,7 @@ alternate_names:
 - Віконти Західного Королівства
 - 西フランク王国の子爵
 - 西國子爵
-average_rating: '7.81881'
+average_rating: '7.81444'
 categories:
 - name: Medieval
 community_best_players: '3'
@@ -38,18 +38,21 @@ designers:
 - name: Shem Phillips
 japanese_name: 西フランク王国の子爵
 learning_analysis:
-  bgg_rank: 188
-  bgg_weight: 3.4564
+  bgg_rank: 189
+  bgg_weight: 3.46
   category_complexity: 3.5
-  decision_points: 3.8100000000000005
-  initial_barrier: 4.54
-  interaction_complexity: 3.0
-  learning_curve_type: steep_then_shallow
+  decision_points: 4.210000000000001
+  initial_barrier: 3.66
+  interaction_complexity: 3.2
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.14
   mechanics_count: 10
   player_types:
+  - casual
   - experienced
+  - hardcore
+  - system_master
   - replayer
   - trend_follower
   playtime_analysis:
@@ -59,9 +62,9 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 3.11
   replayability: 3.96
-  rules_complexity: 3.917279999999999
-  strategic_depth: 3.34
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  rules_complexity: 3.9179999999999993
+  strategic_depth: 3.53
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2020
 mechanics:
 - name: Area Majority / Influence
@@ -99,11 +102,11 @@ publishers:
 - name: Yayoi The Dreamer
 - name: 株式会社ケンビル (KenBill)
 ranks:
-- rank: '188'
+- rank: '189'
   type: boardgame
 - rank: '131'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/kMgSC_kRlJWt3KLj5y0BxQ__thumb/img/2uNYQn2vHuNGrx5-dxc1h7Mh7Do=/fit-in/200x150/filters:strip_icc()/pic5230695.png
 type: boardgame
-weight: '3.4564'
+weight: '3.46'
 year_published: '2020'

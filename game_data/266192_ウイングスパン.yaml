@@ -16,7 +16,7 @@ alternate_names:
 - ウイングスパン
 - 展翅翱翔
 - 윙스팬
-average_rating: '8.02579'
+average_rating: '8.02159'
 categories:
 - name: Animals
 - name: Card Game
@@ -40,25 +40,32 @@ designers:
 - name: Elizabeth Hargrave
 japanese_name: ウイングスパン
 learning_analysis:
-  bgg_rank: 32
-  bgg_weight: 2.4696
-  category_complexity: 2.75
-  decision_points: 3.1666666666666665
-  initial_barrier: 3.91
-  interaction_complexity: 2.1666666666666665
-  learning_curve_type: moderate_then_shallow
+  bgg_rank: 33
+  bgg_weight: 2.4699
+  category_complexity: 2.24
+  decision_points: 3.900000000000001
+  initial_barrier: 2.95
+  interaction_complexity: 2.8499999999999996
+  learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.72
   mechanics_count: 9
   player_types:
+  - beginner
   - casual
+  - experienced
   - replayer
   - trend_follower
-  rank_complexity: 4.21
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.94
   replayability: 4.07
-  rules_complexity: 3.210586666666667
-  strategic_depth: 2.77
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  rules_complexity: 3.210646666666667
+  strategic_depth: 3.04
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2019
 mechanics:
 - name: Action Queue
@@ -106,13 +113,13 @@ publishers:
 - name: Surfin' Meeple China
 - name: Ігромаг
 ranks:
-- rank: '32'
+- rank: '33'
   type: boardgame
-- rank: '44'
+- rank: '45'
   type: strategygames
-- rank: '4'
+- rank: '3'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__thumb/img/VNToqgS2-pOGU6MuvIkMPKn_y-s=/fit-in/200x150/filters:strip_icc()/pic4458123.jpg
 type: boardgame
-weight: '2.4696'
+weight: '2.4699'
 year_published: '2019'

@@ -7,7 +7,7 @@ alternate_names:
 - Trespass
 - バイソン将棋
 - 버펄로 체스
-average_rating: '6.06846'
+average_rating: '6.06745'
 categories:
 - name: Abstract Strategy
 - name: American West
@@ -23,12 +23,12 @@ designers:
 - name: Alex Randolph
 japanese_name: バイソン将棋
 learning_analysis:
-  bgg_rank: 9817
+  bgg_rank: 9897
   bgg_weight: 1.5517
   category_complexity: 2.86
-  decision_points: 2.57
-  initial_barrier: 2.37
-  interaction_complexity: 2.8499999999999996
+  decision_points: 2.8699999999999997
+  initial_barrier: 2.12
+  interaction_complexity: 2.975
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.5
@@ -43,10 +43,10 @@ learning_analysis:
     interaction_modifier: 0.2
     strategic_bonus: 0.0
   rank_complexity: 2.65
-  replayability: 3.0
+  replayability: 2.62
   rules_complexity: 2.0936733333333333
-  strategic_depth: 1.99
-  strategic_depth_description: 低い（戦略的要素が少ない）
+  strategic_depth: 2.11
+  strategic_depth_description: 低め（限られた戦略オプション）
   year_published: 1975
 mechanics:
 - name: Grid Movement
@@ -69,9 +69,9 @@ publishers:
 - name: Venice Connection
 - name: Winning Moves France
 ranks:
-- rank: '9817'
+- rank: '9897'
   type: boardgame
-- rank: '446'
+- rank: '445'
   type: abstracts
 thumbnail_url: https://cf.geekdo-images.com/1FMn5-piF5TwGO1-D_k_ug__thumb/img/vDU9vFKnymnCHOwEcVXFYpDzndM=/fit-in/200x150/filters:strip_icc()/pic7679110.jpg
 type: boardgame

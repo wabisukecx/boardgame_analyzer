@@ -7,7 +7,7 @@ alternate_names:
 - 'Кланк! В! Космосе!: Приключение на звездолёте'
 - クランク！イン・スペース
 - 太空回响
-average_rating: '7.77553'
+average_rating: '7.77167'
 categories:
 - name: Science Fiction
 community_best_players: '3'
@@ -31,25 +31,31 @@ designers:
 - name: Paul Dennen
 japanese_name: クランク！イン・スペース
 learning_analysis:
-  bgg_rank: 150
-  bgg_weight: 2.5812
-  category_complexity: 2.5
-  decision_points: 2.728571428571428
-  initial_barrier: 3.88
-  interaction_complexity: 2.5
-  learning_curve_type: moderate_then_shallow
+  bgg_rank: 151
+  bgg_weight: 2.5806
+  category_complexity: 3.4
+  decision_points: 3.7359999999999984
+  initial_barrier: 3.15
+  interaction_complexity: 3.0
+  learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.74
   mechanics_count: 7
   player_types:
   - casual
+  - experienced
   - replayer
   - trend_follower
-  rank_complexity: 3.91
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.85
   replayability: 3.85
-  rules_complexity: 3.384811428571428
-  strategic_depth: 2.77
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  rules_complexity: 3.3846914285714282
+  strategic_depth: 3.1
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2017
 mechanics:
 - name: Deck, Bag, and Pool Building
@@ -75,13 +81,13 @@ publishers:
 - name: Schwerkraft-Verlag
 - name: Tabletop KZ
 ranks:
-- rank: '150'
+- rank: '151'
   type: boardgame
 - rank: '122'
   type: strategygames
-- rank: '21'
+- rank: '20'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/haDQw7X8Z0VOItfow9eDtg__thumb/img/mn9ypbuCR2pwOSvor46QRXgVImM=/fit-in/200x150/filters:strip_icc()/pic3720843.jpg
 type: boardgame
-weight: '2.5812'
+weight: '2.5806'
 year_published: '2017'

@@ -12,7 +12,7 @@ alternate_names:
 - エバーデール
 - 仙境幽谷
 - 에버델
-average_rating: '8.00656'
+average_rating: '8.00425'
 categories:
 - name: Animals
 - name: Card Game
@@ -47,7 +47,7 @@ designers:
 japanese_name: エバーデール
 learning_analysis:
   bgg_rank: 39
-  bgg_weight: 2.824
+  bgg_weight: 2.8247
   category_complexity: 3.16
   decision_points: 4.46
   initial_barrier: 3.29
@@ -68,7 +68,7 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 2.93
   replayability: 4.4
-  rules_complexity: 3.4414666666666665
+  rules_complexity: 3.4416066666666665
   strategic_depth: 3.41
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2018
@@ -114,11 +114,11 @@ publishers:
 ranks:
 - rank: '39'
   type: boardgame
-- rank: '46'
+- rank: '47'
   type: strategygames
 - rank: '6'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__thumb/img/Cf_mYxR_VvdjTEPXseSurni2JNI=/fit-in/200x150/filters:strip_icc()/pic3918905.png
 type: boardgame
-weight: '2.824'
+weight: '2.8247'
 year_published: '2018'

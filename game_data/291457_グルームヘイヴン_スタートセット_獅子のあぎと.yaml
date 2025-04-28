@@ -13,7 +13,7 @@ alternate_names:
 - グルームヘイヴン スタートセット 獅子のあぎと
 - 幽港迷城：雄狮蛮颚
 - '글룸헤이븐: 사자의 턱'
-average_rating: '8.40277'
+average_rating: '8.39783'
 categories:
 - name: Adventure
 - name: Exploration
@@ -43,25 +43,31 @@ designers:
 japanese_name: グルームヘイヴン スタートセット 獅子のあぎと
 learning_analysis:
   bgg_rank: 11
-  bgg_weight: 3.6387
-  category_complexity: 3.0
-  decision_points: 3.175
-  initial_barrier: 4.78
-  interaction_complexity: 2.9
-  learning_curve_type: steep_then_moderate
+  bgg_weight: 3.6381
+  category_complexity: 4.01
+  decision_points: 4.480000000000004
+  initial_barrier: 3.89
+  interaction_complexity: 3.7225
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.3
   mechanics_count: 20
   player_types:
+  - casual
   - experienced
   - hardcore
   - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.29
-  replayability: 4.95
-  rules_complexity: 4.231073333333333
-  strategic_depth: 3.77
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.22
+  replayability: 4.63
+  rules_complexity: 4.230953333333333
+  strategic_depth: 3.8
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2020
 mechanics:
@@ -113,5 +119,5 @@ ranks:
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/_HhIdavYW-hid20Iq3hhmg__thumb/img/OMkN_E5eyWrkID_cHCnQEbIixGM=/fit-in/200x150/filters:strip_icc()/pic5055631.jpg
 type: boardgame
-weight: '3.6387'
+weight: '3.6381'
 year_published: '2020'

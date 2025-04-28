@@ -42,7 +42,7 @@ alternate_names:
 - 牛頭王
 - 誰是牛頭王？
 - 젝스 님트!
-average_rating: '6.97381'
+average_rating: '6.97507'
 categories:
 - name: Card Game
 - name: Number
@@ -71,12 +71,12 @@ designers:
 - name: Wolfgang Kramer
 japanese_name: ニムト
 learning_analysis:
-  bgg_rank: 666
-  bgg_weight: 1.1921
+  bgg_rank: 670
+  bgg_weight: 1.1913
   category_complexity: 2.57
-  decision_points: 3.4650000000000003
-  initial_barrier: 2.47
-  interaction_complexity: 3.0
+  decision_points: 3.5700000000000003
+  initial_barrier: 2.18
+  interaction_complexity: 2.895
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.9
@@ -93,8 +93,8 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.27
   replayability: 3.38
-  rules_complexity: 2.6337533333333334
-  strategic_depth: 2.62
+  rules_complexity: 2.6335933333333332
+  strategic_depth: 2.6
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 1994
 mechanics:
@@ -150,11 +150,11 @@ publishers:
 - name: U.S. Games Systems, Inc.
 - name: VR Distribution
 ranks:
-- rank: '666'
+- rank: '670'
   type: boardgame
-- rank: '199'
+- rank: '198'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/WuOY1XAIJQ-RGAmT_apW_w__thumb/img/dhNHd8Ztln_lUFAdti6WkPnGTGg=/fit-in/200x150/filters:strip_icc()/pic8632998.jpg
 type: boardgame
-weight: '1.1921'
+weight: '1.1913'
 year_published: '1994'

@@ -5,7 +5,7 @@ alternate_names:
 - イーオンズ・エンド
 - 末日決戰
 - 에이언즈 엔드
-average_rating: '7.88277'
+average_rating: '7.87914'
 categories:
 - name: Card Game
 - name: Fantasy
@@ -31,17 +31,18 @@ designers:
 - name: Kevin Riley
 japanese_name: イーオンズ・エンド
 learning_analysis:
-  bgg_rank: 89
-  bgg_weight: 2.8053
+  bgg_rank: 94
+  bgg_weight: 2.8043
   category_complexity: 3.45
-  decision_points: 3.8750000000000004
-  initial_barrier: 4.37
-  interaction_complexity: 3.5999999999999996
-  learning_curve_type: steep_then_shallow
+  decision_points: 4.155000000000001
+  initial_barrier: 3.51
+  interaction_complexity: 3.6399999999999997
+  learning_curve_type: moderate_then_shallow
   mastery_time: medium
   mechanics_complexity: 3.16
   mechanics_count: 10
   player_types:
+  - casual
   - experienced
   - replayer
   - trend_follower
@@ -50,10 +51,10 @@ learning_analysis:
     decision_density: 0.15
     interaction_modifier: 0.0
     strategic_bonus: 0.0
-  rank_complexity: 3.14
+  rank_complexity: 3.13
   replayability: 4.51
-  rules_complexity: 3.938393333333333
-  strategic_depth: 3.39
+  rules_complexity: 3.938193333333333
+  strategic_depth: 3.4
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2016
 mechanics:
@@ -90,11 +91,11 @@ publishers:
 - name: SD Games
 - name: Surfin' Meeple China
 ranks:
-- rank: '89'
+- rank: '94'
   type: boardgame
-- rank: '87'
+- rank: '88'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/d50LceHj6LIafa4S_qIsCg__thumb/img/KMFA-gXm_LbZpyXSAHbIZm-eAcQ=/fit-in/200x150/filters:strip_icc()/pic3189350.jpg
 type: boardgame
-weight: '2.8053'
+weight: '2.8043'
 year_published: '2016'

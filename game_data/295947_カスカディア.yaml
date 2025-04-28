@@ -9,7 +9,7 @@ alternate_names:
 - カスカディア
 - 卡斯卡迪亚之旅
 - 캐스캐디아
-average_rating: '7.91979'
+average_rating: '7.91947'
 categories:
 - name: Animals
 - name: Environmental
@@ -41,7 +41,7 @@ designers:
 japanese_name: カスカディア
 learning_analysis:
   bgg_rank: 51
-  bgg_weight: 1.8524
+  bgg_weight: 1.8526
   category_complexity: 2.75
   decision_points: 4.000000000000001
   initial_barrier: 3.09
@@ -61,7 +61,7 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.82
   replayability: 3.8
-  rules_complexity: 3.415896666666667
+  rules_complexity: 3.4159366666666666
   strategic_depth: 2.91
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2021
@@ -114,5 +114,5 @@ ranks:
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__thumb/img/tVSFjSxYEcw7sKj3unIIQV8kxoc=/fit-in/200x150/filters:strip_icc()/pic5100691.jpg
 type: boardgame
-weight: '1.8524'
+weight: '1.8526'
 year_published: '2021'

@@ -1,6 +1,6 @@
 alternate_names:
 - 에이언즈 엔드 레거시
-average_rating: '8.05978'
+average_rating: '8.05573'
 categories:
 - name: Card Game
 - name: Fantasy
@@ -30,27 +30,31 @@ designers:
 - name: Nick Little (I)
 - name: Kevin Riley
 learning_analysis:
-  bgg_rank: 240
+  bgg_rank: 241
   bgg_weight: 2.8351
-  category_complexity: 2.75
-  decision_points: 3.4444444444444446
-  initial_barrier: 4.6
-  interaction_complexity: 2.5
-  learning_curve_type: steep_then_moderate
+  category_complexity: 3.23
+  decision_points: 4.320000000000001
+  initial_barrier: 3.67
+  interaction_complexity: 3.1100000000000003
+  learning_curve_type: moderate_then_shallow
   mastery_time: medium
   mechanics_complexity: 3.47
   mechanics_count: 9
   player_types:
+  - casual
   - experienced
-  - hardcore
-  - system_master
   - replayer
   - trend_follower
-  rank_complexity: 3.83
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.1
   replayability: 4.4
   rules_complexity: 4.220353333333334
-  strategic_depth: 3.53
-  strategic_depth_description: 中〜高（多くの戦略が存在）
+  strategic_depth: 3.49
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2019
 mechanics:
 - name: Cooperative Game
@@ -77,9 +81,9 @@ publishers:
 - name: Portal Games
 - name: SD Games
 ranks:
-- rank: '240'
+- rank: '241'
   type: boardgame
-- rank: '141'
+- rank: '140'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/quoCefZvHWeaf31_8HvFSA__thumb/img/FBXSHWkooee1d4biQAbQwSiIu78=/fit-in/200x150/filters:strip_icc()/pic3979852.jpg
 type: boardgame

@@ -7,7 +7,7 @@ alternate_names:
 - リトルタウンビルダーズ
 - 小小村莊
 - 리틀 타운
-average_rating: '7.15774'
+average_rating: '7.15916'
 categories:
 - name: City Building
 - name: Medieval
@@ -32,8 +32,8 @@ designers:
 - name: Aya Taguchi
 japanese_name: リトルタウンビルダーズ
 learning_analysis:
-  bgg_rank: 1106
-  bgg_weight: 1.9474
+  bgg_rank: 1105
+  bgg_weight: 1.9478
   category_complexity: 3.83
   decision_points: 4.615
   initial_barrier: 2.78
@@ -52,8 +52,8 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.0
   rank_complexity: 2.22
-  replayability: 2.86
-  rules_complexity: 3.386146666666667
+  replayability: 2.68
+  rules_complexity: 3.3862266666666665
   strategic_depth: 3.27
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2017
@@ -83,11 +83,11 @@ publishers:
 - name: TCG Factory
 - name: Ігромаг
 ranks:
-- rank: '1106'
+- rank: '1105'
   type: boardgame
-- rank: '294'
+- rank: '297'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/PhNY4VQAob6x4GjWHmbTsQ__thumb/img/UCbbfnszecog0-L46xQVjMo_RTk=/fit-in/200x150/filters:strip_icc()/pic4624124.jpg
 type: boardgame
-weight: '1.9474'
+weight: '1.9478'
 year_published: '2017'

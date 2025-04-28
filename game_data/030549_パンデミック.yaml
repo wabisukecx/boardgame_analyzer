@@ -22,9 +22,10 @@ alternate_names:
 - パンデミック：新たなる試練
 - 瘟疫危機 (瘟疫危机)
 - 팬데믹
-average_rating: '7.52685'
+average_rating: '7.52564'
 categories:
 - name: Medical
+- name: Travel
 community_best_players: '4'
 community_min_age: '10'
 community_recommended_players: 1, 2, 3
@@ -52,16 +53,16 @@ designers:
 - name: Matt Leacock
 japanese_name: パンデミック
 learning_analysis:
-  bgg_rank: 159
-  bgg_weight: 2.3976
-  category_complexity: 3.2
-  decision_points: 4.083999999999999
-  initial_barrier: 3.12
+  bgg_rank: 160
+  bgg_weight: 2.3972
+  category_complexity: 2.89
+  decision_points: 4.266666666666667
+  initial_barrier: 3.25
   interaction_complexity: 3.0
   learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.81
-  mechanics_count: 7
+  mastery_time: medium
+  mechanics_complexity: 3.09
+  mechanics_count: 14
   player_types:
   - casual
   - experienced
@@ -73,19 +74,26 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.0
   rank_complexity: 2.84
-  replayability: 4.08
-  rules_complexity: 3.145710476190476
-  strategic_depth: 3.13
+  replayability: 4.56
+  rules_complexity: 3.38991619047619
+  strategic_depth: 3.24
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2008
 mechanics:
 - name: Action Points
+- name: Chaining
+- name: Contracts
 - name: Cooperative Game
+- name: Events
 - name: Hand Management
+- name: Multi-Use Cards
 - name: Point to Point Movement
 - name: Set Collection
+- name: Simulation
 - name: Tags
+- name: Trading
 - name: Variable Player Powers
+- name: Variable Set-up
 name: Pandemic
 playing_time: '45'
 publisher_max_players: '4'
@@ -128,13 +136,13 @@ publishers:
 - name: Взрослые дети
 - name: Ігромаг
 ranks:
-- rank: '159'
+- rank: '160'
   type: boardgame
-- rank: '170'
+- rank: '172'
   type: strategygames
 - rank: '35'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/S3ybV1LAp-8SnHIXLLjVqA__thumb/img/oqViRj6nVxK3m36NluTxU1PZkrk=/fit-in/200x150/filters:strip_icc()/pic1534148.jpg
 type: boardgame
-weight: '2.3976'
+weight: '2.3972'
 year_published: '2008'

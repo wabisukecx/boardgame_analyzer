@@ -15,7 +15,7 @@ alternate_names:
 - 西国圣武士
 - 西國聖騎士
 - 서쪽 왕국의 성기사
-average_rating: '7.96772'
+average_rating: '7.96725'
 categories:
 - name: Medieval
 community_best_players: '2'
@@ -42,8 +42,8 @@ designers:
 - name: Shem Phillips
 japanese_name: 西フランク王国の聖騎士
 learning_analysis:
-  bgg_rank: 74
-  bgg_weight: 3.7155
+  bgg_rank: 75
+  bgg_weight: 3.7158
   category_complexity: 3.5
   decision_points: 4.660000000000001
   initial_barrier: 3.83
@@ -66,7 +66,7 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 3.16
   replayability: 3.74
-  rules_complexity: 4.3381
+  rules_complexity: 4.33816
   strategic_depth: 3.83
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2019
@@ -102,11 +102,11 @@ publishers:
 - name: White Goblin Games
 - name: 株式会社ケンビル (KenBill)
 ranks:
-- rank: '74'
+- rank: '75'
   type: boardgame
 - rank: '60'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/4nhokcLdYoo6ulbZ1rmGgA__thumb/img/1gEbke_bKTA6D2jjpPm1HowGGHM=/fit-in/200x150/filters:strip_icc()/pic4462987.png
 type: boardgame
-weight: '3.7155'
+weight: '3.7158'
 year_published: '2019'

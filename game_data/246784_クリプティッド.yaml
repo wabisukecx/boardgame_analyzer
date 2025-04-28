@@ -4,7 +4,7 @@ alternate_names:
 - Криптид
 - クリプティッド
 - 詭影尋蹤
-average_rating: '7.43611'
+average_rating: '7.43743'
 categories:
 - name: Deduction
 community_best_players: '4'
@@ -34,7 +34,7 @@ designers:
 - name: Ruth Veevers
 japanese_name: クリプティッド
 learning_analysis:
-  bgg_rank: 317
+  bgg_rank: 320
   bgg_weight: 2.262
   category_complexity: 3.3
   decision_points: 3.44
@@ -82,11 +82,11 @@ publishers:
 - name: Reflexshop
 - name: Skellig Games
 ranks:
-- rank: '317'
+- rank: '320'
   type: boardgame
-- rank: '240'
+- rank: '241'
   type: strategygames
-- rank: '69'
+- rank: '68'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__thumb/img/ZFL0o-lhnuWE21Sa9YS8qi8ayGU=/fit-in/200x150/filters:strip_icc()/pic4037705.jpg
 type: boardgame

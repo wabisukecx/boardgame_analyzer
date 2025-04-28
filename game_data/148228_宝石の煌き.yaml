@@ -8,7 +8,7 @@ alternate_names:
 - 璀璨宝石
 - 璀璨寶石
 - 스플렌더
-average_rating: '7.41843'
+average_rating: '7.41809'
 categories:
 - name: Card Game
 - name: Economic
@@ -34,8 +34,8 @@ designers:
 - name: Marc André
 japanese_name: 宝石の煌き
 learning_analysis:
-  bgg_rank: 233
-  bgg_weight: 1.7794
+  bgg_rank: 234
+  bgg_weight: 1.7776
   category_complexity: 3.7
   decision_points: 3.54
   initial_barrier: 2.19
@@ -55,7 +55,7 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.36
   replayability: 3.72
-  rules_complexity: 2.6385466666666666
+  rules_complexity: 2.638186666666667
   strategic_depth: 2.67
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2014
@@ -98,11 +98,11 @@ publishers:
 - name: Siam Board Games
 - name: Z-Man Games
 ranks:
-- rank: '233'
+- rank: '234'
   type: boardgame
-- rank: '54'
+- rank: '53'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/vNFe4JkhKAERzi4T0Ntwpw__thumb/img/KKU_42Uswt4tKCpf1zY5kTzgr-g=/fit-in/200x150/filters:strip_icc()/pic8234167.png
 type: boardgame
-weight: '1.7794'
+weight: '1.7776'
 year_published: '2014'

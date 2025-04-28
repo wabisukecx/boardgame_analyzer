@@ -9,7 +9,7 @@ alternate_names:
 - カートグラファー 勇者たちの門出
 - '王国制图师: 英雄'
 - '지도 제작자들: 영웅들'
-average_rating: '7.74804'
+average_rating: '7.74418'
 categories:
 - name: Fantasy
 - name: Territory Building
@@ -31,23 +31,28 @@ designers:
 - name: John Brieger
 japanese_name: カートグラファー 勇者たちの門出
 learning_analysis:
-  bgg_rank: 443
+  bgg_rank: 442
   bgg_weight: 2.0
-  category_complexity: 2.62
-  decision_points: 3.0
-  initial_barrier: 3.68
-  interaction_complexity: 2.75
-  learning_curve_type: moderate_then_shallow
+  category_complexity: 3.68
+  decision_points: 3.694285714285715
+  initial_barrier: 3.01
+  interaction_complexity: 3.3949999999999996
+  learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.69
   mechanics_count: 9
   player_types:
   - casual
   - trend_follower
-  rank_complexity: 3.73
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.8
   replayability: 3.5
   rules_complexity: 3.0866666666666664
-  strategic_depth: 2.67
+  strategic_depth: 2.93
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2021
 mechanics:
@@ -82,11 +87,11 @@ publishers:
 - name: Reflexshop
 - name: REXhry
 ranks:
-- rank: '443'
+- rank: '442'
   type: boardgame
-- rank: '265'
+- rank: '269'
   type: strategygames
-- rank: '76'
+- rank: '74'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/HIFpoE6wwuriOREJmqizPw__thumb/img/s-5zTf3OxkhmkZMfNCeLexMW-pU=/fit-in/200x150/filters:strip_icc()/pic5567490.png
 type: boardgame

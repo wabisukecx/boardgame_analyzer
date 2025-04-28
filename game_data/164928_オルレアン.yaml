@@ -4,7 +4,7 @@ alternate_names:
 - オルレアン
 - 奧爾良
 - 오를레앙
-average_rating: '8.05168'
+average_rating: '8.05019'
 categories:
 - name: Medieval
 - name: Religious
@@ -29,24 +29,32 @@ designers:
 japanese_name: オルレアン
 learning_analysis:
   bgg_rank: 34
-  bgg_weight: 3.0239
-  category_complexity: 2.75
-  decision_points: 3.1818181818181817
-  initial_barrier: 4.44
-  interaction_complexity: 2.5
-  learning_curve_type: steep_then_shallow
+  bgg_weight: 3.0219
+  category_complexity: 3.26
+  decision_points: 4.666666666666664
+  initial_barrier: 3.55
+  interaction_complexity: 3.335
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.17
   mechanics_count: 11
   player_types:
+  - casual
   - experienced
+  - hardcore
+  - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.17
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.2
   replayability: 4.68
-  rules_complexity: 3.860234545454545
-  strategic_depth: 3.43
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  rules_complexity: 3.859834545454545
+  strategic_depth: 3.69
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2014
 mechanics:
 - name: Contracts
@@ -87,9 +95,9 @@ publishers:
 ranks:
 - rank: '34'
   type: boardgame
-- rank: '27'
+- rank: '29'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__thumb/img/ykeqdM_Naz4IiqOgyB1arzteOiU=/fit-in/200x150/filters:strip_icc()/pic6228507.jpg
 type: boardgame
-weight: '3.0239'
+weight: '3.0219'
 year_published: '2014'

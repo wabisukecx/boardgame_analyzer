@@ -10,7 +10,7 @@ alternate_names:
 - 'Нескінченна Зима: Палеоамериканці'
 - 無盡寒冬 美洲原野
 - 엔들리스 윈터
-average_rating: '7.68011'
+average_rating: '7.67198'
 categories:
 - name: Adventure
 - name: Prehistoric
@@ -40,26 +40,32 @@ description: 'Designed by Stan Kordonskiy (Dice Hospital, Rurik, Lock Up), devel
 designers:
 - name: Stan Kordonskiy
 learning_analysis:
-  bgg_rank: 291
-  bgg_weight: 3.3164
-  category_complexity: 2.75
-  decision_points: 3.607142857142857
-  initial_barrier: 4.6
-  interaction_complexity: 2.6666666666666665
-  learning_curve_type: steep_then_moderate
+  bgg_rank: 301
+  bgg_weight: 3.3172
+  category_complexity: 3.7
+  decision_points: 4.833333333333332
+  initial_barrier: 3.77
+  interaction_complexity: 3.4250000000000007
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.32
   mechanics_count: 14
   player_types:
+  - casual
   - experienced
   - hardcore
   - system_master
   - replayer
   - trend_follower
-  rank_complexity: 3.79
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.09
   replayability: 4.2
-  rules_complexity: 4.0525657142857145
-  strategic_depth: 3.72
+  rules_complexity: 4.052725714285714
+  strategic_depth: 3.77
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2022
 mechanics:
@@ -102,11 +108,11 @@ publishers:
 - name: White Goblin Games
 - name: Ігромаг
 ranks:
-- rank: '291'
+- rank: '301'
   type: boardgame
-- rank: '201'
+- rank: '208'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/TFX_awTwbJxoG74GtRHytw__thumb/img/gUl5oqRjGtrEIBlTDCDnfm_m1Wg=/fit-in/200x150/filters:strip_icc()/pic5624523.jpg
 type: boardgame
-weight: '3.3164'
+weight: '3.3172'
 year_published: '2022'

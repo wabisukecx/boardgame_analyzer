@@ -2,7 +2,7 @@ alternate_names:
 - Возвращение в Тёмную Башню
 - Вороття до Темної Вежі
 - 重返黑暗之塔
-average_rating: '8.24212'
+average_rating: '8.23061'
 categories:
 - name: Adventure
 - name: Electronic
@@ -34,24 +34,30 @@ designers:
 - name: Justin D. Jacobson
 - name: Brian Neff
 learning_analysis:
-  bgg_rank: 237
-  bgg_weight: 2.6721
-  category_complexity: 2.88
-  decision_points: 3.227272727272727
-  initial_barrier: 4.05
-  interaction_complexity: 3.0
-  learning_curve_type: moderate_then_shallow
-  mastery_time: short
+  bgg_rank: 236
+  bgg_weight: 2.6667
+  category_complexity: 3.54
+  decision_points: 3.9422222222222216
+  initial_barrier: 3.26
+  interaction_complexity: 3.555
+  learning_curve_type: gentle
+  mastery_time: medium
   mechanics_complexity: 2.85
   mechanics_count: 11
   player_types:
+  - casual
   - experienced
   - replayer
   - trend_follower
-  rank_complexity: 3.78
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.82
   replayability: 4.2
-  rules_complexity: 3.3701775757575754
-  strategic_depth: 3.04
+  rules_complexity: 3.3690975757575754
+  strategic_depth: 3.3
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2022
 mechanics:
@@ -78,11 +84,11 @@ publishers:
 - name: Lucky Duck Games
 - name: Ігромаг
 ranks:
-- rank: '237'
+- rank: '236'
   type: boardgame
 - rank: '29'
   type: thematic
 thumbnail_url: https://cf.geekdo-images.com/sd0acHeHj9RE-daXPC7pEg__thumb/img/ZDxL0mhIb3Rg8st8zCVZD9ngnf4=/fit-in/200x150/filters:strip_icc()/pic5153383.jpg
 type: boardgame
-weight: '2.6721'
+weight: '2.6667'
 year_published: '2022'

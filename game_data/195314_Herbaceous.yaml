@@ -6,7 +6,7 @@ alternate_names:
 - Kruidgewas
 - Niezłe Ziółka
 - 香草花园
-average_rating: '7.00378'
+average_rating: '7.00287'
 categories:
 - name: Card Game
 - name: Print & Play
@@ -29,11 +29,11 @@ designers:
 - name: Eduardo Baraf
 - name: Steve Finn
 learning_analysis:
-  bgg_rank: 1111
-  bgg_weight: 1.2012
-  category_complexity: 2.52
+  bgg_rank: 1122
+  bgg_weight: 1.2048
+  category_complexity: 2.36
   decision_points: 3.125
-  initial_barrier: 1.99
+  initial_barrier: 1.97
   interaction_complexity: 3.0
   learning_curve_type: gentle
   mastery_time: short
@@ -49,7 +49,7 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.21
   replayability: 2.86
-  rules_complexity: 2.3495733333333333
+  rules_complexity: 2.350293333333333
   strategic_depth: 2.19
   strategic_depth_description: 低め（限られた戦略オプション）
   year_published: 2017
@@ -73,11 +73,11 @@ publishers:
 - name: Matagot
 - name: Quality Beast
 ranks:
-- rank: '1111'
+- rank: '1122'
   type: boardgame
-- rank: '323'
+- rank: '329'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/0HHqYFhJvOwk8Z0Dt-EvTA__thumb/img/EwiBLR6QywbISk0aGe-Vya4zXws=/fit-in/200x150/filters:strip_icc()/pic7083274.jpg
 type: boardgame
-weight: '1.2012'
+weight: '1.2048'
 year_published: '2017'

@@ -13,7 +13,7 @@ alternate_names:
 - Τα 7 Θαυματα του Κοσμου (2η Εκδοση)
 - 七大奇蹟：第二版
 - 世界の七不思議：第二版
-average_rating: '7.83915'
+average_rating: '7.83685'
 categories:
 - name: Ancient
 - name: Card Game
@@ -50,25 +50,31 @@ designers:
 - name: Antoine Bauza
 japanese_name: 世界の七不思議：第二版
 learning_analysis:
-  bgg_rank: 215
-  bgg_weight: 2.3043
-  category_complexity: 3.0
-  decision_points: 3.55
-  initial_barrier: 3.4
-  interaction_complexity: 2.7
+  bgg_rank: 213
+  bgg_weight: 2.3049
+  category_complexity: 4.44
+  decision_points: 4.040000000000001
+  initial_barrier: 3.17
+  interaction_complexity: 3.545
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.83
   mechanics_count: 6
   player_types:
   - casual
+  - experienced
   - replayer
   - trend_follower
-  rank_complexity: 3.86
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.2
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.84
   replayability: 3.96
-  rules_complexity: 3.2775266666666667
-  strategic_depth: 2.95
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  rules_complexity: 3.2776466666666666
+  strategic_depth: 3.03
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2020
 mechanics:
 - name: Closed Drafting
@@ -96,13 +102,13 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: Ігромаг
 ranks:
-- rank: '215'
+- rank: '213'
   type: boardgame
-- rank: '164'
+- rank: '166'
   type: strategygames
-- rank: '32'
+- rank: '31'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/Naw8y8J_s-8cvq1GoTON6w__thumb/img/ieH8A28KJe3truXqQe1nDXSpxUE=/fit-in/200x150/filters:strip_icc()/pic7416519.jpg
 type: boardgame
-weight: '2.3043'
+weight: '2.3049'
 year_published: '2020'

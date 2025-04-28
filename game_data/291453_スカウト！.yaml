@@ -4,7 +4,7 @@ alternate_names:
 - スカウト！
 - 马戏星探
 - 스카우트
-average_rating: '7.81943'
+average_rating: '7.81822'
 categories:
 - name: Card Game
 community_best_players: '4'
@@ -42,8 +42,8 @@ designers:
 - name: Kei Kajino (梶野 桂)
 japanese_name: スカウト！
 learning_analysis:
-  bgg_rank: 100
-  bgg_weight: 1.3564
+  bgg_rank: 101
+  bgg_weight: 1.3582
   category_complexity: 2.3
   decision_points: 3.625
   initial_barrier: 2.16
@@ -62,8 +62,8 @@ learning_analysis:
     interaction_modifier: 0.2
     strategic_bonus: 0.0
   rank_complexity: 2.39
-  replayability: 3.3
-  rules_complexity: 2.68128
+  replayability: 2.88
+  rules_complexity: 2.6816400000000002
   strategic_depth: 2.55
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2019
@@ -87,11 +87,11 @@ publishers:
 - name: Pixie Games
 - name: Popcorn Games
 ranks:
-- rank: '100'
+- rank: '101'
   type: boardgame
-- rank: '16'
+- rank: '14'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/cf0xxkevbwTGF3VUZymKjg__thumb/img/NUcMdmZ3_eA1YfIwL8iRgkZKaHw=/fit-in/200x150/filters:strip_icc()/pic6398727.png
 type: boardgame
-weight: '1.3564'
+weight: '1.3582'
 year_published: '2019'

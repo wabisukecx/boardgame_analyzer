@@ -3,7 +3,7 @@ alternate_names:
 - テラミスティカ
 - 神秘大地
 - 테라 미스티카
-average_rating: '8.0465'
+average_rating: '8.04358'
 categories:
 - name: Civilization
 - name: Economic
@@ -39,13 +39,13 @@ designers:
 - name: Helge Ostertag
 japanese_name: テラミスティカ
 learning_analysis:
-  bgg_rank: 31
-  bgg_weight: 3.9747
-  category_complexity: 4.4
-  decision_points: 3.3636363636363638
-  initial_barrier: 5.0
-  interaction_complexity: 2.75
-  learning_curve_type: steep_then_moderate
+  bgg_rank: 32
+  bgg_weight: 3.9755
+  category_complexity: 4.51
+  decision_points: 4.644444444444444
+  initial_barrier: 4.05
+  interaction_complexity: 3.6449999999999996
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.3
   mechanics_count: 11
@@ -56,10 +56,15 @@ learning_analysis:
   - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.17
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.2
+  rank_complexity: 3.2
   replayability: 5.0
-  rules_complexity: 4.16494
-  strategic_depth: 3.88
+  rules_complexity: 4.1651
+  strategic_depth: 3.96
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2012
 mechanics:
@@ -97,11 +102,11 @@ publishers:
 - name: Z-Man Games
 - name: Zvezda
 ranks:
-- rank: '31'
+- rank: '32'
   type: boardgame
-- rank: '29'
+- rank: '31'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/bre12I1YiXkZr7elvriz4A__thumb/img/GW-ip0dfeAee7KQqJ04SRZxF1lg=/fit-in/200x150/filters:strip_icc()/pic5375624.jpg
 type: boardgame
-weight: '3.9747'
+weight: '3.9755'
 year_published: '2012'

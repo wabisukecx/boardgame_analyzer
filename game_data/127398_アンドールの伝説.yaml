@@ -13,7 +13,7 @@ alternate_names:
 - Легендите на Андор
 - アンドールの伝説
 - 안도르의 전설
-average_rating: '7.0983'
+average_rating: '7.09657'
 categories:
 - name: Adventure
 - name: Fantasy
@@ -43,18 +43,17 @@ designers:
 - name: Michael Menzel
 japanese_name: アンドールの伝説
 learning_analysis:
-  bgg_rank: 627
-  bgg_weight: 2.7638
+  bgg_rank: 635
+  bgg_weight: 2.7634
   category_complexity: 3.51
-  decision_points: 3.893333333333333
-  initial_barrier: 2.57
+  decision_points: 4.023999999999999
+  initial_barrier: 3.24
   interaction_complexity: 3.38
   learning_curve_type: gentle
   mastery_time: medium
-  mechanics_complexity: 2.76
-  mechanics_count: 5
+  mechanics_complexity: 2.8
+  mechanics_count: 7
   player_types:
-  - beginner
   - casual
   - experienced
   - replayer
@@ -65,15 +64,17 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.1
   rank_complexity: 2.73
-  replayability: 4.32
-  rules_complexity: 3.303426666666667
-  strategic_depth: 3.3
+  replayability: 4.56
+  rules_complexity: 3.3393466666666667
+  strategic_depth: 3.34
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2012
 mechanics:
+- name: Action Points
 - name: Area Movement
 - name: Cooperative Game
 - name: Dice Rolling
+- name: Events
 - name: Scenario / Mission / Campaign Game
 - name: Variable Player Powers
 name: Legends of Andor
@@ -97,11 +98,11 @@ publishers:
 - name: Piatnik
 - name: Zvezda
 ranks:
-- rank: '627'
+- rank: '635'
   type: boardgame
-- rank: '189'
+- rank: '193'
   type: thematic
 thumbnail_url: https://cf.geekdo-images.com/IO8_BYKeofnWy8DIjo2RRg__thumb/img/pMbV-KGyO3D9U6hnBzNRfylZvto=/fit-in/200x150/filters:strip_icc()/pic2606106.jpg
 type: boardgame
-weight: '2.7638'
+weight: '2.7634'
 year_published: '2012'

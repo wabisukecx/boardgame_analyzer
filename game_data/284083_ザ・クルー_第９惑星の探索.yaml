@@ -20,7 +20,7 @@ alternate_names:
 - ザ・クルー 第９惑星の探索
 - 星際探險隊
 - '스페이스 크루: 9번째 행성을 찾아서'
-average_rating: '7.78146'
+average_rating: '7.77919'
 categories:
 - name: Card Game
 - name: Science Fiction
@@ -44,12 +44,12 @@ designers:
 - name: Thomas Sing
 japanese_name: ザ・クルー 第９惑星の探索
 learning_analysis:
-  bgg_rank: 80
-  bgg_weight: 1.9559
-  category_complexity: 2.75
-  decision_points: 3.1999999999999997
-  initial_barrier: 2.9
-  interaction_complexity: 2.5
+  bgg_rank: 82
+  bgg_weight: 1.9533
+  category_complexity: 3.48
+  decision_points: 3.8433333333333333
+  initial_barrier: 2.56
+  interaction_complexity: 3.0
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 3.12
@@ -59,10 +59,15 @@ learning_analysis:
   - casual
   - replayer
   - trend_follower
-  rank_complexity: 3.89
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.2
+    interaction_modifier: 0.2
+    strategic_bonus: 0.0
+  rank_complexity: 2.41
   replayability: 3.96
-  rules_complexity: 3.4658466666666663
-  strategic_depth: 2.74
+  rules_complexity: 3.4653266666666664
+  strategic_depth: 2.89
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2019
 mechanics:
@@ -99,11 +104,11 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: Zvezda
 ranks:
-- rank: '80'
+- rank: '82'
   type: boardgame
 - rank: '13'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__thumb/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg
 type: boardgame
-weight: '1.9559'
+weight: '1.9533'
 year_published: '2019'

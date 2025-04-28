@@ -9,7 +9,7 @@ alternate_names:
 - 花火
 - 花火
 - 하나비
-average_rating: '7.03614'
+average_rating: '7.03456'
 categories:
 - name: Card Game
 - name: Deduction
@@ -33,12 +33,12 @@ description: Hanabi&mdash;named for the Japanese word for &quot;fireworks&quot;&
 designers:
 - name: Antoine Bauza
 learning_analysis:
-  bgg_rank: 556
-  bgg_weight: 1.6889
-  category_complexity: 2.97
+  bgg_rank: 559
+  bgg_weight: 1.6885
+  category_complexity: 2.71
   decision_points: 3.6700000000000004
-  initial_barrier: 2.67
-  interaction_complexity: 3.165
+  initial_barrier: 2.64
+  interaction_complexity: 3.135
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.7
@@ -53,9 +53,9 @@ learning_analysis:
     interaction_modifier: 0.2
     strategic_bonus: 0.0
   rank_complexity: 2.29
-  replayability: 3.72
-  rules_complexity: 2.901113333333333
-  strategic_depth: 2.67
+  replayability: 3.29
+  rules_complexity: 2.901033333333333
+  strategic_depth: 2.66
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2010
 mechanics:
@@ -98,11 +98,11 @@ publishers:
 - name: Spin Master Ltd.
 - name: Swan Panasia Co., Ltd.
 ranks:
-- rank: '556'
+- rank: '559'
   type: boardgame
 - rank: '174'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/JDVksMwfcqoem1k_xtZrOA__thumb/img/amCeCcEKhYGbVtDvpvIMnu3qTg0=/fit-in/200x150/filters:strip_icc()/pic2007286.jpg
 type: boardgame
-weight: '1.6889'
+weight: '1.6885'
 year_published: '2010'

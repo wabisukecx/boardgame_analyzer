@@ -2,7 +2,7 @@ alternate_names:
 - Раскопки
 - 化石之旅
 - 포실리스
-average_rating: '6.98186'
+average_rating: '6.97762'
 categories:
 - name: Animals
 - name: Exploration
@@ -33,7 +33,7 @@ description: 'An incredible new dinosaur graveyard has been discovered, and if t
 designers:
 - name: David Alberto Diaz
 learning_analysis:
-  bgg_rank: 2736
+  bgg_rank: 2756
   bgg_weight: 2.2692
   category_complexity: 3.01
   decision_points: 3.8600000000000003
@@ -77,9 +77,9 @@ publishers:
 - name: Popcorn Games
 - name: Treetato Studio
 ranks:
-- rank: '2736'
+- rank: '2756'
   type: boardgame
-- rank: '834'
+- rank: '846'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/rczms2pvajxj5l9Vpo66Hw__thumb/img/-3U6s7tj2ltu-5J6F9lZo2wfH5I=/fit-in/200x150/filters:strip_icc()/pic4754389.png
 type: boardgame

@@ -2,7 +2,7 @@ alternate_names:
 - Convoi Express
 - Zwrotnice i Semafory
 - Паровозы и Семафоры
-average_rating: '7.12677'
+average_rating: '7.12785'
 categories:
 - name: Trains
 - name: Transportation
@@ -26,8 +26,8 @@ description: All Aboard! &mdash; The Cooperative Train Game&#10;&#10;You begin t
 designers:
 - name: David Thompson (I)
 learning_analysis:
-  bgg_rank: 1993
-  bgg_weight: 2.1087
+  bgg_rank: 1991
+  bgg_weight: 2.1064
   category_complexity: 3.31
   decision_points: 3.8000000000000003
   initial_barrier: 2.61
@@ -46,9 +46,9 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.0
   rank_complexity: 2.64
-  replayability: 2.75
-  rules_complexity: 3.158406666666666
-  strategic_depth: 3.03
+  replayability: 2.58
+  rules_complexity: 3.1579466666666662
+  strategic_depth: 3.02
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2020
 mechanics:
@@ -66,13 +66,13 @@ publishers:
 - name: IELLO
 - name: Zvezda
 ranks:
-- rank: '1993'
+- rank: '1991'
   type: boardgame
-- rank: '1008'
+- rank: '1009'
   type: strategygames
-- rank: '574'
+- rank: '577'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/yRliFmp8SCRMxKVR8cApJg__thumb/img/2G-SpqNWmlyMby7xDybCOo-pAB0=/fit-in/200x150/filters:strip_icc()/pic6630215.jpg
 type: boardgame
-weight: '2.1087'
+weight: '2.1064'
 year_published: '2020'

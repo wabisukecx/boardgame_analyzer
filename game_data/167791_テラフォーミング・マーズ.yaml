@@ -14,7 +14,7 @@ alternate_names:
 - 殖民火星
 - 重塑火星
 - 테라포밍 마스
-average_rating: '8.35107'
+average_rating: '8.3501'
 categories:
 - name: Economic
 - name: Environmental
@@ -61,24 +61,30 @@ designers:
 japanese_name: テラフォーミング・マーズ
 learning_analysis:
   bgg_rank: 7
-  bgg_weight: 3.2665
-  category_complexity: 3.12
-  decision_points: 3.46875
-  initial_barrier: 4.44
-  interaction_complexity: 2.6666666666666665
-  learning_curve_type: steep_then_moderate
+  bgg_weight: 3.2664
+  category_complexity: 4.67
+  decision_points: 4.525714285714285
+  initial_barrier: 3.7
+  interaction_complexity: 3.3416666666666663
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 2.96
   mechanics_count: 16
   player_types:
+  - casual
   - experienced
   - hardcore
   - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.6
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.32
   replayability: 4.62
-  rules_complexity: 3.713925
+  rules_complexity: 3.713905
   strategic_depth: 3.6
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2016
@@ -134,9 +140,9 @@ publishers:
 ranks:
 - rank: '7'
   type: boardgame
-- rank: '7'
+- rank: '8'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__thumb/img/BTxqxgYay5tHJfVoJ2NF5g43_gA=/fit-in/200x150/filters:strip_icc()/pic3536616.jpg
 type: boardgame
-weight: '3.2665'
+weight: '3.2664'
 year_published: '2016'

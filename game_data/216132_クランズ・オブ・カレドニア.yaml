@@ -7,7 +7,7 @@ alternate_names:
 - クランズ・オブ・カレドニア
 - 加勒多尼亞
 - 클랜 오브 칼레도니아
-average_rating: '7.93738'
+average_rating: '7.9369'
 categories:
 - name: Economic
 - name: Farming
@@ -37,29 +37,38 @@ designers:
 - name: Juma Al-JouJou
 japanese_name: クランズ・オブ・カレドニア
 learning_analysis:
-  bgg_rank: 71
-  bgg_weight: 3.4642
-  category_complexity: 2.62
-  decision_points: 3.2777777777777777
-  initial_barrier: 4.56
-  interaction_complexity: 2.75
-  learning_curve_type: steep_then_shallow
+  bgg_rank: 72
+  bgg_weight: 3.4663
+  category_complexity: 4.04
+  decision_points: 4.15
+  initial_barrier: 3.78
+  interaction_complexity: 3.825
+  learning_curve_type: moderate
   mastery_time: medium
-  mechanics_complexity: 3.21
-  mechanics_count: 9
+  mechanics_complexity: 3.18
+  mechanics_count: 10
   player_types:
+  - casual
   - experienced
+  - hardcore
+  - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.03
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.16
   replayability: 4.29
-  rules_complexity: 3.9828399999999995
-  strategic_depth: 3.37
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  rules_complexity: 3.95526
+  strategic_depth: 3.6
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2017
 mechanics:
 - name: Commodity Speculation
 - name: Contracts
+- name: Hexagon Grid
 - name: Income
 - name: Market
 - name: Modular Board
@@ -85,11 +94,11 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: TLAMA games
 ranks:
-- rank: '71'
+- rank: '72'
   type: boardgame
-- rank: '59'
+- rank: '61'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/SPuwc6RJ6y4PnTH36Pegsg__thumb/img/M_6Yxp0A_NbebWk3Mepinsm96WI=/fit-in/200x150/filters:strip_icc()/pic3511783.png
 type: boardgame
-weight: '3.4642'
+weight: '3.4663'
 year_published: '2017'

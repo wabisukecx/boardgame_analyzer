@@ -20,7 +20,7 @@ alternate_names:
 - アルナックの失われし遺跡
 - 阿納克遺蹟|阿纳克遗迹
 - 아르낙의 잊혀진 유적
-average_rating: '8.06844'
+average_rating: '8.07035'
 categories:
 - name: Adventure
 - name: Exploration
@@ -50,10 +50,10 @@ designers:
 japanese_name: アルナックの失われし遺跡
 learning_analysis:
   bgg_rank: 29
-  bgg_weight: 2.925
+  bgg_weight: 2.9257
   category_complexity: 3.56
   decision_points: 4.531428571428573
-  initial_barrier: 3.63
+  initial_barrier: 3.65
   interaction_complexity: 3.2600000000000002
   learning_curve_type: moderate
   mastery_time: medium
@@ -71,9 +71,9 @@ learning_analysis:
     decision_density: 0.1
     interaction_modifier: 0.0
     strategic_bonus: 0.1
-  rank_complexity: 2.95
-  replayability: 4.18
-  rules_complexity: 3.965
+  rank_complexity: 3.2
+  replayability: 3.91
+  rules_complexity: 3.96514
   strategic_depth: 3.54
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2020
@@ -121,9 +121,7 @@ ranks:
   type: boardgame
 - rank: '28'
   type: strategygames
-- rank: '1'
-  type: familygames
 thumbnail_url: https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__thumb/img/J8SVmGOJXZGxNjkT3xYNQU7Haxg=/fit-in/200x150/filters:strip_icc()/pic5674958.jpg
 type: boardgame
-weight: '2.925'
+weight: '2.9257'
 year_published: '2020'

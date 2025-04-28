@@ -12,7 +12,7 @@ alternate_names:
 - 葡萄酒庄园精华版
 - 葡萄酒莊園-精華版
 - 비티컬처 에센셜 에디션
-average_rating: '7.97439'
+average_rating: '7.97387'
 categories:
 - name: Economic
 - name: Farming
@@ -44,7 +44,7 @@ designers:
 japanese_name: ワイナリーの四季
 learning_analysis:
   bgg_rank: 40
-  bgg_weight: 2.8932
+  bgg_weight: 2.8926
   category_complexity: 4.04
   decision_points: 4.706666666666668
   initial_barrier: 3.8
@@ -67,7 +67,7 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 3.19
   replayability: 4.32
-  rules_complexity: 4.150306666666667
+  rules_complexity: 4.1501866666666665
   strategic_depth: 3.78
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2015
@@ -111,5 +111,5 @@ ranks:
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/l_PRU2lVlX9seScRFcvFlA__thumb/img/pULDtVd75QZgGfvSMhr6Rs07vK8=/fit-in/200x150/filters:strip_icc()/pic6500949.jpg
 type: boardgame
-weight: '2.8932'
+weight: '2.8926'
 year_published: '2015'

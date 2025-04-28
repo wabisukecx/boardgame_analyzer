@@ -10,7 +10,7 @@ alternate_names:
 - 隻字片語
 - 隻言片語
 - 딕싯
-average_rating: '7.19231'
+average_rating: '7.19156'
 categories:
 - name: Card Game
 - name: Humor
@@ -36,12 +36,12 @@ designers:
 - name: Jean-Louis Roubira
 japanese_name: ディクシット
 learning_analysis:
-  bgg_rank: 401
-  bgg_weight: 1.1943
+  bgg_rank: 402
+  bgg_weight: 1.1937
   category_complexity: 2.09
-  decision_points: 3.1100000000000003
-  initial_barrier: 2.1
-  interaction_complexity: 3.55
+  decision_points: 3.2333333333333334
+  initial_barrier: 1.86
+  interaction_complexity: 3.8500000000000005
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.4
@@ -49,7 +49,6 @@ learning_analysis:
   player_types:
   - beginner
   - casual
-  - replayer
   - trend_follower
   playtime_analysis:
     complexity_factor: 0.95
@@ -57,10 +56,10 @@ learning_analysis:
     interaction_modifier: 0.2
     strategic_bonus: 0.0
   rank_complexity: 2.14
-  replayability: 3.84
-  rules_complexity: 2.532193333333333
-  strategic_depth: 2.36
-  strategic_depth_description: 低め（限られた戦略オプション）
+  replayability: 3.39
+  rules_complexity: 2.532073333333333
+  strategic_depth: 2.56
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2008
 mechanics:
 - name: Race
@@ -96,11 +95,11 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: Ігромаг
 ranks:
-- rank: '401'
+- rank: '402'
   type: boardgame
 - rank: '27'
   type: partygames
 thumbnail_url: https://cf.geekdo-images.com/J0PlHArkZDJ57H-brXW2Fw__thumb/img/QVwPXskFikQwBQlrdLJBAiRGgdg=/fit-in/200x150/filters:strip_icc()/pic6738336.jpg
 type: boardgame
-weight: '1.1943'
+weight: '1.1937'
 year_published: '2008'

@@ -11,7 +11,7 @@ alternate_names:
 - オーディンの祝祭
 - 奧丁的盛宴
 - 오딘을 위하여
-average_rating: '8.16796'
+average_rating: '8.16541'
 categories:
 - name: Economic
 - name: Farming
@@ -62,25 +62,33 @@ designers:
 - name: Uwe Rosenberg
 japanese_name: オーディンの祝祭
 learning_analysis:
-  bgg_rank: 24
-  bgg_weight: 3.8597
-  category_complexity: 3.0
-  decision_points: 3.2222222222222223
-  initial_barrier: 4.46
-  interaction_complexity: 2.4
-  learning_curve_type: steep_then_shallow
+  bgg_rank: 25
+  bgg_weight: 3.861
+  category_complexity: 4.32
+  decision_points: 4.322857142857144
+  initial_barrier: 3.73
+  interaction_complexity: 3.1675
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 2.87
   mechanics_count: 9
   player_types:
+  - casual
   - experienced
+  - hardcore
+  - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.2
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.21
   replayability: 4.4
-  rules_complexity: 3.7519399999999994
-  strategic_depth: 3.35
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  rules_complexity: 3.7521999999999998
+  strategic_depth: 3.57
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2016
 mechanics:
 - name: Automatic Resource Growth
@@ -115,11 +123,11 @@ publishers:
 - name: White Goblin Games
 - name: Z-Man Games
 ranks:
-- rank: '24'
+- rank: '25'
   type: boardgame
 - rank: '20'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/s9oGMCo1fcfV4Dk3EnqLZw__thumb/img/AKxMMz2DTbBrEynhDROla8fdjJ4=/fit-in/200x150/filters:strip_icc()/pic3146943.png
 type: boardgame
-weight: '3.8597'
+weight: '3.861'
 year_published: '2016'

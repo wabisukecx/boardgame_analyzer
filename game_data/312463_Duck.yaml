@@ -2,7 +2,7 @@ alternate_names:
 - Cuac!
 - Kaczki
 - Утки
-average_rating: '6.59964'
+average_rating: '6.59775'
 categories:
 - name: Card Game
 community_best_players: 3, 4, 5
@@ -27,7 +27,7 @@ description: 'Push your luck at this fast paced, family-friendly card game.&#10;
 designers:
 - name: Johannes Krenner
 learning_analysis:
-  bgg_rank: 8210
+  bgg_rank: 8230
   bgg_weight: 1.25
   category_complexity: 2.3
   decision_points: 3.015
@@ -46,7 +46,7 @@ learning_analysis:
     interaction_modifier: 0.2
     strategic_bonus: 0.0
   rank_complexity: 2.16
-  replayability: 2.64
+  replayability: 2.47
   rules_complexity: 1.859333333333333
   strategic_depth: 1.76
   strategic_depth_description: 低い（戦略的要素が少ない）
@@ -67,7 +67,7 @@ publishers:
 - name: Zacatrus
 - name: Zvezda
 ranks:
-- rank: '8210'
+- rank: '8230'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/WRqZ-OzEojpnV8ursuoSLw__thumb/img/8juU3bvu5jMtYus9PBJCQ-HAbwA=/fit-in/200x150/filters:strip_icc()/pic5495074.jpg
 type: boardgame

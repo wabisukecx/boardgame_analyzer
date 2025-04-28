@@ -89,7 +89,7 @@ alternate_names:
 - 루미큐브 보이저
 - 루미큐브 클래식
 - 루미큐브 클래식 미니
-average_rating: '6.49227'
+average_rating: '6.49498'
 categories:
 - name: Abstract Strategy
 - name: Card Game
@@ -118,12 +118,12 @@ designers:
 - name: Ephraim Hertzano
 japanese_name: ラミィキューブ
 learning_analysis:
-  bgg_rank: 1728
-  bgg_weight: 1.7149
+  bgg_rank: 1730
+  bgg_weight: 1.714
   category_complexity: 3.12
   decision_points: 3.5149999999999997
-  initial_barrier: 2.39
-  interaction_complexity: 2.85
+  initial_barrier: 2.14
+  interaction_complexity: 2.76
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.5
@@ -138,9 +138,9 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.0
   rank_complexity: 2.16
-  replayability: 3.12
-  rules_complexity: 2.2763133333333334
-  strategic_depth: 2.59
+  replayability: 2.73
+  rules_complexity: 2.276133333333333
+  strategic_depth: 2.53
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 1977
 mechanics:
@@ -253,11 +253,11 @@ publishers:
 - name: Yangxin Industrial Company Limited
 - name: 놀이속의세상
 ranks:
-- rank: '1728'
+- rank: '1730'
   type: boardgame
-- rank: '666'
+- rank: '673'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/LeaLDlTTmeN639MfuflcMw__thumb/img/CSPEyoFAcA3WwtzDekp3Mfepcek=/fit-in/200x150/filters:strip_icc()/pic2286966.jpg
 type: boardgame
-weight: '1.7149'
+weight: '1.714'
 year_published: '1977'

@@ -2,7 +2,7 @@ alternate_names:
 - Erőd
 - Форт
 - 捣蛋王国
-average_rating: '7.08663'
+average_rating: '7.08427'
 categories:
 - name: Card Game
 community_best_players: '3'
@@ -21,8 +21,8 @@ description: Fort is a 2-4 player card game about building forts and following f
 designers:
 - name: Grant Rodiek
 learning_analysis:
-  bgg_rank: 751
-  bgg_weight: 2.45
+  bgg_rank: 758
+  bgg_weight: 2.4525
   category_complexity: 2.3
   decision_points: 3.833333333333333
   initial_barrier: 2.37
@@ -41,8 +41,8 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.0
   rank_complexity: 3.01
-  replayability: 3.08
-  rules_complexity: 3.2046666666666668
+  replayability: 2.88
+  rules_complexity: 3.2051666666666665
   strategic_depth: 2.82
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2020
@@ -68,11 +68,11 @@ publishers:
 - name: MS Edizioni
 - name: Portal Games
 ranks:
-- rank: '751'
+- rank: '758'
   type: boardgame
 - rank: '509'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/hAsqLdANmtExR5Zi41v94Q__thumb/img/YqmIsRVLpQqM-r5i1rsN91Q6fzg=/fit-in/200x150/filters:strip_icc()/pic5241325.png
 type: boardgame
-weight: '2.45'
+weight: '2.4525'
 year_published: '2020'

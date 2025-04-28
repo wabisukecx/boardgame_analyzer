@@ -1,7 +1,7 @@
 alternate_names:
 - Say "Adios" to the Villains
 - 成敗
-average_rating: '6.33291'
+average_rating: '6.33529'
 categories:
 - name: Card Game
 community_best_players: 3, 4
@@ -16,7 +16,7 @@ description: Say Bye to the Villains &ndash; a.k.a., &#230;&#136;&#144;&#230;&#1
 designers:
 - name: Seiji Kanai
 learning_analysis:
-  bgg_rank: 5977
+  bgg_rank: 6006
   bgg_weight: 2.1622
   category_complexity: 2.3
   decision_points: 3.6149999999999998
@@ -35,7 +35,7 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.0
   rank_complexity: 2.49
-  replayability: 2.76
+  replayability: 2.44
   rules_complexity: 3.0537733333333335
   strategic_depth: 2.94
   strategic_depth_description: 中〜低（基本的な戦略が存在）
@@ -55,9 +55,9 @@ publishers:
 - name: Kanai Factory
 - name: Swan Panasia Co., Ltd.
 ranks:
-- rank: '5977'
+- rank: '6006'
   type: boardgame
-- rank: '979'
+- rank: '994'
   type: thematic
 thumbnail_url: https://cf.geekdo-images.com/RuFFxXHHmE-TCf5CRuvXTw__thumb/img/FWZclwm-kV2KcG7EUz4MJvOckTk=/fit-in/200x150/filters:strip_icc()/pic2038963.jpg
 type: boardgame

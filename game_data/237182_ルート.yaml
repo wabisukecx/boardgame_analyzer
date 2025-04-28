@@ -4,7 +4,7 @@ alternate_names:
 - ルート
 - 茂林源記
 - 루트
-average_rating: '8.07163'
+average_rating: '8.07155'
 categories:
 - name: Animals
 - name: Fantasy
@@ -38,7 +38,7 @@ designers:
 japanese_name: ルート
 learning_analysis:
   bgg_rank: 30
-  bgg_weight: 3.8228
+  bgg_weight: 3.823
   category_complexity: 4.08
   decision_points: 4.172307692307691
   initial_barrier: 3.72
@@ -61,7 +61,7 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 3.45
   replayability: 4.73
-  rules_complexity: 3.6292266666666655
+  rules_complexity: 3.6292666666666658
   strategic_depth: 3.68
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2018
@@ -112,5 +112,5 @@ ranks:
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__thumb/img/ACovMZzGGIsBRyEQXFnsT8282NM=/fit-in/200x150/filters:strip_icc()/pic4254509.jpg
 type: boardgame
-weight: '3.8228'
+weight: '3.823'
 year_published: '2018'

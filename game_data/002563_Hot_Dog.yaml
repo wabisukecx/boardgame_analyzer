@@ -1,6 +1,6 @@
 alternate_names:
 - HOTDOG
-average_rating: '5.76667'
+average_rating: '5.76063'
 categories:
 - name: Card Game
 community_best_players: 4, 5
@@ -43,7 +43,7 @@ designers:
 - name: Wolfgang Kramer
 - name: Richard Ulrich
 learning_analysis:
-  bgg_rank: 20347
+  bgg_rank: 20549
   bgg_weight: 1.2308
   category_complexity: 2.3
   decision_points: 3.3699999999999997
@@ -63,7 +63,7 @@ learning_analysis:
     interaction_modifier: 0.0
     strategic_bonus: 0.0
   rank_complexity: 2.08
-  replayability: 2.75
+  replayability: 2.4
   rules_complexity: 2.426826666666667
   strategic_depth: 2.66
   strategic_depth_description: 中〜低（基本的な戦略が存在）
@@ -79,7 +79,7 @@ publishers:
 - name: AMIGO
 - name: リゴレ (rigoler)
 ranks:
-- rank: '20347'
+- rank: '20549'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/nqy-o5NxnmfS8lWL5msgBw__thumb/img/-116KN22m_q63au6cl6RlklisbI=/fit-in/200x150/filters:strip_icc()/pic196404.jpg
 type: boardgame

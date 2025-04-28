@@ -3,7 +3,7 @@ alternate_names:
 - マラカイボ
 - 马拉开波
 - 마라카이보
-average_rating: '7.98427'
+average_rating: '7.98032'
 categories:
 - name: Economic
 - name: Exploration
@@ -26,26 +26,32 @@ designers:
 - name: Alexander Pfister
 japanese_name: マラカイボ
 learning_analysis:
-  bgg_rank: 72
-  bgg_weight: 3.9142
-  category_complexity: 2.88
-  decision_points: 3.28125
-  initial_barrier: 4.57
-  interaction_complexity: 2.625
-  learning_curve_type: steep_then_moderate
+  bgg_rank: 74
+  bgg_weight: 3.9125
+  category_complexity: 3.97
+  decision_points: 4.494285714285714
+  initial_barrier: 3.78
+  interaction_complexity: 3.2399999999999998
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.02
   mechanics_count: 16
   player_types:
+  - casual
   - experienced
   - hardcore
   - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.04
-  replayability: 4.73
-  rules_complexity: 3.8997149999999996
-  strategic_depth: 3.76
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.16
+  replayability: 4.43
+  rules_complexity: 3.8993749999999996
+  strategic_depth: 3.73
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2019
 mechanics:
@@ -85,11 +91,11 @@ publishers:
 - name: uplay.it edizioni
 - name: YOKA Games
 ranks:
-- rank: '72'
+- rank: '74'
   type: boardgame
-- rank: '55'
+- rank: '56'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__thumb/img/lVlnhYyxlZb3WuKZJHLoJcFHEjs=/fit-in/200x150/filters:strip_icc()/pic4917407.jpg
 type: boardgame
-weight: '3.9142'
+weight: '3.9125'
 year_published: '2019'

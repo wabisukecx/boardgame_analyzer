@@ -5,7 +5,7 @@ alternate_names:
 - 工业革命：伯明翰(Chinese edition) (2018)
 - 工業革命：伯明翰
 - '브라스: 버밍엄'
-average_rating: '8.58008'
+average_rating: '8.57797'
 categories:
 - name: Age of Reason
 - name: Economic
@@ -40,29 +40,34 @@ designers:
 japanese_name: ブラス：バーミンガム
 learning_analysis:
   bgg_rank: 1
-  bgg_weight: 3.8712
-  category_complexity: 3.12
-  decision_points: 3.5
-  initial_barrier: 4.78
-  interaction_complexity: 2.5833333333333335
-  learning_curve_type: steep_then_moderate
+  bgg_weight: 3.8686
+  category_complexity: 4.62
+  decision_points: 4.58
+  initial_barrier: 4.02
+  interaction_complexity: 3.4766666666666666
+  learning_curve_type: moderate
   mastery_time: medium
-  mechanics_complexity: 3.17
-  mechanics_count: 9
+  mechanics_complexity: 3.24
+  mechanics_count: 10
   player_types:
   - experienced
   - hardcore
-  - strategist
   - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.6
-  replayability: 4.4
-  rules_complexity: 4.157573333333334
-  strategic_depth: 3.86
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 3.32
+  replayability: 4.12
+  rules_complexity: 4.223053333333333
+  strategic_depth: 3.79
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2018
 mechanics:
+- name: Chaining
 - name: Hand Management
 - name: Income
 - name: Loans
@@ -105,5 +110,5 @@ ranks:
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/x3zxjr-Vw5iU4yDPg70Jgw__thumb/img/o18rjEemoWaVru9Y2TyPwuIaRfE=/fit-in/200x150/filters:strip_icc()/pic3490053.jpg
 type: boardgame
-weight: '3.8712'
+weight: '3.8686'
 year_published: '2018'

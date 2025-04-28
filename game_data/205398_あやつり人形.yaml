@@ -15,7 +15,7 @@ alternate_names:
 - 富饒之城
 - 荣耀之城
 - 시타델
-average_rating: '7.24694'
+average_rating: '7.24537'
 categories:
 - name: Bluffing
 - name: Card Game
@@ -53,25 +53,32 @@ designers:
 - name: Bruno Faidutti
 japanese_name: あやつり人形
 learning_analysis:
-  bgg_rank: 531
-  bgg_weight: 2.0575
-  category_complexity: 2.88
-  decision_points: 3.3333333333333335
-  initial_barrier: 3.56
-  interaction_complexity: 3.125
-  learning_curve_type: moderate_then_shallow
+  bgg_rank: 534
+  bgg_weight: 2.0629
+  category_complexity: 3.56
+  decision_points: 3.9000000000000004
+  initial_barrier: 2.85
+  interaction_complexity: 3.6399999999999997
+  learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.51
   mechanics_count: 9
   player_types:
+  - beginner
   - casual
+  - experienced
   - replayer
   - trend_follower
-  rank_complexity: 3.5
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.29
   replayability: 4.07
-  rules_complexity: 2.9381666666666666
-  strategic_depth: 2.83
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  rules_complexity: 2.9392466666666666
+  strategic_depth: 3.1
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2016
 mechanics:
 - name: Action Drafting
@@ -109,11 +116,11 @@ publishers:
 - name: Z-Man Games
 - name: Ігромаг
 ranks:
-- rank: '531'
+- rank: '534'
   type: boardgame
-- rank: '141'
+- rank: '145'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/sHd0jkZZLDgixHjAXtn7kA__thumb/img/HB0Z5D7uwBjf1lCCPjMck-5VP9A=/fit-in/200x150/filters:strip_icc()/pic3119514.jpg
 type: boardgame
-weight: '2.0575'
+weight: '2.0629'
 year_published: '2016'
