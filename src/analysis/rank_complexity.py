@@ -1,14 +1,9 @@
 import os
 import yaml
-import streamlit as st
 import math
 
 # YAMLファイルのパス
 RANK_COMPLEXITY_FILE = "config/rank_complexity.yaml"
-
-def log_error(message):
-    """エラーメッセージをログに記録する関数（Streamlitのページ設定後に呼び出される）"""
-    st.error(message)
 
 def load_rank_complexity_data():
     """
@@ -211,38 +206,3 @@ def calculate_rank_complexity(ranks):
     
     # 1.0〜5.0の範囲に制限
     return min(5.0, max(1.0, avg_score))
-
-# データが空の場合はサンプルデータを提供
-def initialize_rank_complexity_data():
-    """
-    ランキング種別の複雑さデータが存在しない場合、初期データを作成する
-    """
-    if not os.path.exists(RANK_COMPLEXITY_FILE) or os.path.getsize(RANK_COMPLEXITY_FILE) == 0:
-        # サンプルデータ - ランキング種別ごとの複雑さ基準値
-        sample_data = {
-            "boardgame": {
-                'complexity': 3.0,
-                'strategic_value': 3.5,
-                'interaction_value': 3.2,
-                'description': "総合ボードゲームランキング。一般的な複雑さを持つゲームが中心となり、多様なメカニクスとテーマを包含する。"
-            },
-            "strategygames": {
-                'complexity': 4.2,
-                'strategic_value': 4.8,
-                'interaction_value': 3.8,
-                'description': "戦略ゲームのランキング。複雑な意思決定と長期的計画が重視され、深い戦略的思考を要求するゲームが対象。"
-            },
-            "familygames": {
-                'complexity': 2.3,
-                'strategic_value': 2.8,
-                'interaction_value': 3.5,
-                'description': "ファミリーゲームのランキング。やや簡単なルールで幅広い年齢層が楽しめる、アクセシビリティの高いゲームが中心。"
-            },
-        }
-        save_rank_complexity_data(sample_data)
-
-# プログラム起動時にデータの初期化を行う
-initialize_rank_complexity_data()
-
-# 後方互換性のため、グローバル辞書を維持
-COMPLEXITY_BY_RANK_TYPE = load_rank_complexity_data()

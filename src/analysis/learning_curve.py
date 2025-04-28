@@ -52,17 +52,17 @@ def calculate_popularity_factor(rank):
     rank (int or None): BGGのランキング順位
     
     Returns:
-    float: 人気係数（1.0〜1.3の範囲）
+    float: 人気係数（1.0〜1.1の範囲）
     """
     if rank is None:
         return 1.0
         
     if rank <= 100:
-        return 1.3  # トップ100は評価を30%増加
+        return 1.1  # トップ100は評価を10%増加
     elif rank <= 500:
-        return 1.2  # トップ500は評価を20%増加
+        return 1.07  # トップ500は評価を6%増加
     elif rank <= 1000:
-        return 1.1  # トップ1000は評価を10%増加
+        return 1.02  # トップ1000は評価を3%増加
     else:
         return 1.0  # その他はそのまま
 
@@ -96,7 +96,7 @@ def calculate_longevity_factor(year_published):
     year_published (int or None): ゲームの発行年
     
     Returns:
-    float: 長寿命係数（1.0〜1.25の範囲）
+    float: 長寿命係数（1.0〜1.1の範囲）
     """
     if year_published is None:
         return 1.0
@@ -105,11 +105,11 @@ def calculate_longevity_factor(year_published):
     years_since_publication = current_year - year_published
     
     if years_since_publication >= 20:
-        return 1.25  # 20年以上は25%増加（クラシックゲーム）
+        return 1.1   # 20年以上は10%増加（クラシックゲーム）
     elif years_since_publication >= 10:
-        return 1.2   # 10年以上は20%増加（長期的な人気）
+        return 1.07  # 10年以上は7%増加（長期的な人気）
     elif years_since_publication >= 5:
-        return 1.1   # 5年以上は10%増加（定着したゲーム）
+        return 1.05  # 5年以上は5%増加（定着したゲーム）
     else:
         return 1.0   # 新しいゲームはそのまま
 
@@ -140,22 +140,24 @@ def calculate_replayability(game_data):
         'Modular Board', 
         'Variable Player Powers',
         'Deck Building',
-        'Legacy Game',
         'Campaign / Battle Card Driven',
         'Scenario / Mission / Campaign Game',
         'Deck Construction',
-        'Engine Building'
+        'Engine Building',
+        'Hidden Roles',
+        'Asymmetric Gameplay'
     ]
     
     medium_replay_mechanics = [
-        'Dice Rolling',
         'Card Drafting',
         'Worker Placement',
         'Tech Trees / Tech Tracks',
         'Multi-Use Cards',
-        'Push Your Luck',
         'Area Control',
-        'Route/Network Building'
+        'Route/Network Building',
+        'Tile Placement',
+        'Resource Management',
+        'Drafting'
     ]
     
     # リプレイ性の高いメカニクスの数をカウント
@@ -235,7 +237,6 @@ def calculate_learning_curve(game_data):
         mechanics_complexity / max(1, mechanic_count) if mechanic_count > 0 else 3.0
     )
     
-    # 【変更点】推奨年齢からの複雑さ推定を、カテゴリとランキングによる評価に置き換え
     # カテゴリに基づく複雑さを計算
     category_complexity = calculate_category_complexity(game_data.get('categories', []))
     

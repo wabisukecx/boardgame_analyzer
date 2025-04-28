@@ -532,7 +532,6 @@ def get_strategic_depth_description(strategic_depth):
     else:
         return "低い（戦略的要素が少ない）"
 
-# 元のcalculate_learning_curve関数の戦略深度計算部分を置き換えるための関数
 def update_learning_curve_with_improved_strategic_depth(game_data, learning_curve):
     """
     既存の学習曲線データを改善された戦略深度で更新する

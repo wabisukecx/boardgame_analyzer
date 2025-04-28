@@ -20,18 +20,15 @@ import platform
 from src.analysis.mechanic_complexity import (
     add_missing_mechanic, 
     get_complexity, 
-    _save_pending_mechanics,
     flush_pending_mechanics
 )
 from src.analysis.category_complexity import (
     add_missing_category,
-    get_category_complexity,
-    calculate_category_complexity
+    get_category_complexity
 )
 from src.analysis.rank_complexity import (
     add_missing_rank_type,
-    get_rank_complexity_value,
-    calculate_rank_complexity
+    get_rank_complexity_value
 )
 
 # ロギング設定
@@ -341,7 +338,6 @@ def display_game_card(
         
         st.markdown("</div>", unsafe_allow_html=True)
 
-# ダミー関数：display_similar_game_cardは実際にはapp.pyで使用していないため、互換性のために残している
 def display_similar_game_card(
     rank: int,
     idx: int,
@@ -350,8 +346,26 @@ def display_similar_game_card(
     game_data_list: List[Dict[str, Any]],
     similarity_matrix: np.ndarray
 ) -> None:
-    """互換性のために残している関数"""
-    pass
+    """
+    類似ゲームのカードを表示する関数
+    
+    Args:
+        rank (int): 類似度ランク
+        idx (int): ゲームのインデックス
+        selected_index (int): 選択されたゲームのインデックス
+        games (List[Dict[str, Any]]): ゲーム情報のリスト
+        game_data_list (List[Dict[str, Any]]): ゲームデータのリスト
+        similarity_matrix (np.ndarray): 類似度行列
+    """
+    # app.pyでの関数の実際の使用状況に応じて、実装を復元
+    # もしくは互換性のために関数の枠を維持
+    similarity = similarity_matrix[selected_index][idx]
+    
+    # 類似度スコア表示
+    st.markdown(f"<div class='similarity-score'>類似度: {similarity:.4f}</div>", unsafe_allow_html=True)
+    
+    # ゲームカード表示
+    display_game_card(game_data_list[idx])
 
 # 類似ゲームの取得
 def get_similar_indices(

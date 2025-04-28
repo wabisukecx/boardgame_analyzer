@@ -11,11 +11,6 @@ _mechanics_cache = None
 _mechanics_cache_timestamp = None
 _mechanics_cache_ttl = timedelta(minutes=10)  # キャッシュの有効期間（10分）
 
-# ログメッセージ用の関数
-def log_error(message):
-    """エラーメッセージをログに記録する関数（Streamlitのページ設定後に呼び出される）"""
-    st.error(message)
-
 def load_mechanics_data(force_reload=False):
     """
     メカニクスの複雑さデータをYAMLファイルから読み込む
@@ -208,25 +203,3 @@ def get_complexity(mechanic_name, default_value=2.5):
 def flush_pending_mechanics():
     """保留中のすべてのメカニクスを保存する"""
     return _save_pending_mechanics()
-
-# データが空の場合はサンプルデータを提供
-def initialize_mechanics_data():
-    """メカニクスデータが存在しない場合、初期データを作成する"""
-    if not os.path.exists(MECHANICS_DATA_FILE) or os.path.getsize(MECHANICS_DATA_FILE) == 0:
-        # サンプルデータ（省略）
-        sample_data = {
-            "Resource Management": {
-                'complexity': 3.8,
-                'strategic_value': 4.0,
-                'interaction_value': 2.5,
-                'description': "資源管理による戦略的深さ"
-            },
-            # 他のサンプルデータ...
-        }
-        save_mechanics_data(sample_data)
-
-# プログラム起動時にデータの初期化を行う
-initialize_mechanics_data()
-
-# 後方互換性のため、グローバル辞書を維持
-COMPLEXITY_BY_MECHANIC = load_mechanics_data()

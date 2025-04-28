@@ -5,10 +5,6 @@ import streamlit as st
 # YAMLファイルのパス
 CATEGORIES_DATA_FILE = "config/categories_data.yaml"
 
-def log_error(message):
-    """エラーメッセージをログに記録する関数（Streamlitのページ設定後に呼び出される）"""
-    st.error(message)
-
 def load_categories_data():
     """
     カテゴリの複雑さデータをYAMLファイルから読み込む
@@ -142,38 +138,3 @@ def calculate_category_complexity(categories):
     
     # 1.0〜5.0の範囲に制限
     return min(5.0, max(1.0, adjusted_complexity))
-
-# データが空の場合はサンプルデータを提供
-def initialize_categories_data():
-    """
-    カテゴリデータが存在しない場合、初期データを作成する
-    """
-    if not os.path.exists(CATEGORIES_DATA_FILE) or os.path.getsize(CATEGORIES_DATA_FILE) == 0:
-        # サンプルデータ
-        sample_data = {
-            "Abstract Strategy": {
-                'complexity': 3.2,
-                'strategic_value': 3.5,
-                'interaction_value': 2.0,
-                'description': "抽象的なルールによる純粋な戦略。テーマよりもメカニクスが重視され、計算的思考が求められる。"
-            },
-            "Adventure": {
-                'complexity': 3.5,
-                'strategic_value': 3.0,
-                'interaction_value': 3.5,
-                'description': "冒険的要素と戦略のバランス。物語進行とリスク管理の両立が求められる。"
-            },
-            "Animals": {
-                'complexity': 1.8,
-                'strategic_value': 2.7,
-                'interaction_value': 3.0,
-                'description': "動物をテーマにしたゲーム。自然界の行動パターンや生態系を模したメカニクスを含む。"
-            },
-        }
-        save_categories_data(sample_data)
-
-# プログラム起動時にデータの初期化を行う
-initialize_categories_data()
-
-# 後方互換性のため、グローバル辞書を維持
-COMPLEXITY_BY_CATEGORY = load_categories_data()
