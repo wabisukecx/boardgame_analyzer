@@ -1,7 +1,7 @@
 alternate_names:
 - スノープランナー
 - 雪山畫策
-average_rating: '7.54081'
+average_rating: '7.52234'
 categories:
 - name: Dice
 - name: Economic
@@ -23,24 +23,32 @@ designers:
 - name: Akashi
 japanese_name: スノープランナー
 learning_analysis:
-  bgg_rank: 8593
-  bgg_weight: 3.0
-  category_complexity: 2.75
-  decision_points: 3.6
-  initial_barrier: 4.36
-  interaction_complexity: 2.6666666666666665
-  learning_curve_type: steep_then_shallow
+  bgg_rank: 8572
+  bgg_weight: 3.1667
+  category_complexity: 3.04
+  decision_points: 4.635
+  initial_barrier: 3.56
+  interaction_complexity: 3.4
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.36
   mechanics_count: 10
   player_types:
+  - casual
   - experienced
-  rank_complexity: 2.14
+  - hardcore
+  - system_master
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.15
   replayability: 3.3
-  rules_complexity: 4.024000000000001
-  strategic_depth: 3.32
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2025
+  rules_complexity: 4.05734
+  strategic_depth: 3.63
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  year_published: 2023
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -63,9 +71,9 @@ publishers:
 - name: Mysterious Island Games
 - name: Soragame Studio
 ranks:
-- rank: '8593'
+- rank: '8572'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/JOAZiJiHdk3qXsxgEnXfMA__thumb/img/U8TBf9npqlbsdFoc_9H4OCcT-K0=/fit-in/200x150/filters:strip_icc()/pic8366851.png
 type: boardgame
-weight: '3'
-year_published: '2025'
+weight: '3.1667'
+year_published: '2023'

@@ -2,7 +2,7 @@ alternate_names:
 - Dyskografia
 - 独家专辑
 - 디스크 커버
-average_rating: '6.5145'
+average_rating: '6.52074'
 categories:
 - name: Card Game
 - name: Humor
@@ -20,12 +20,12 @@ designers:
 - name: Roberto Fraga
 - name: Juan Manuel Rivero
 learning_analysis:
-  bgg_rank: 8821
+  bgg_rank: 8805
   bgg_weight: 1.1111
-  category_complexity: 2.36
+  category_complexity: 2.3
   decision_points: 3.315
   initial_barrier: 2.0
-  interaction_complexity: 3.5
+  interaction_complexity: 3.6199999999999997
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.7
@@ -41,8 +41,8 @@ learning_analysis:
   rank_complexity: 1.85
   replayability: 2.6
   rules_complexity: 2.232886666666667
-  strategic_depth: 2.48
-  strategic_depth_description: 低め（限られた戦略オプション）
+  strategic_depth: 2.51
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2022
 mechanics:
 - name: Cooperative Game
@@ -55,15 +55,16 @@ publisher_min_players: '3'
 publishers:
 - name: Blue Orange (EU)
 - name: Blue Orange Games
+- name: Desyllas Games
 - name: Happy Baobab
 - name: Lautapelit.fi
 - name: Lucky Duck Games
 - name: Mercurio
 - name: PaperGames (III)
 ranks:
-- rank: '8821'
+- rank: '8805'
   type: boardgame
-- rank: '480'
+- rank: '483'
   type: partygames
 thumbnail_url: https://cf.geekdo-images.com/ZQGLYgmpX5sAz4LjA-dHZA__thumb/img/xTW2DKZK6JE2slSQAFX6Kza-94M=/fit-in/200x150/filters:strip_icc()/pic6941247.png
 type: boardgame

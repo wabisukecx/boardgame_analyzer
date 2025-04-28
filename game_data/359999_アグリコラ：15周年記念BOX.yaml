@@ -1,6 +1,6 @@
 alternate_names:
 - アグリコラ：15周年記念BOX
-average_rating: '7.65818'
+average_rating: '7.67345'
 categories:
 - name: Animals
 - name: Economic
@@ -23,21 +23,29 @@ japanese_name: アグリコラ：15周年記念BOX
 learning_analysis:
   bgg_rank: null
   bgg_weight: 3.5217
-  category_complexity: 2.75
-  decision_points: 3.5
-  initial_barrier: 4.42
-  interaction_complexity: 2.6666666666666665
-  learning_curve_type: steep_then_shallow
+  category_complexity: 3.48
+  decision_points: 4.5520000000000005
+  initial_barrier: 3.66
+  interaction_complexity: 3.7
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.13
   mechanics_count: 12
   player_types:
+  - casual
   - experienced
+  - hardcore
+  - system_master
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
   rank_complexity: 3.0
   replayability: 3.5
   rules_complexity: 3.92434
-  strategic_depth: 3.42
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  strategic_depth: 3.74
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2022
 mechanics:
 - name: Advantage Token

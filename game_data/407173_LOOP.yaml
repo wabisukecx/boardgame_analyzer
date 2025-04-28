@@ -1,4 +1,4 @@
-average_rating: '7.4125'
+average_rating: '7.28983'
 categories:
 - name: Card Game
 community_best_players: '4'
@@ -29,7 +29,7 @@ description: 'How well can you play the same cards as someone else?&#10;&#10;In 
 designers:
 - name: Takashi Saito
 learning_analysis:
-  bgg_rank: 12682
+  bgg_rank: 12863
   bgg_weight: 1.0
   category_complexity: 2.3
   decision_points: 3.5149999999999997
@@ -64,7 +64,7 @@ publisher_min_players: '2'
 publishers:
 - name: BrainBrainGames
 ranks:
-- rank: '12682'
+- rank: '12863'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/5MLtsKvtUgOUTFkg-F_KTw__thumb/img/obfPhk2IUSh7Y4I9vilLL5wSV14=/fit-in/200x150/filters:strip_icc()/pic7875910.jpg
 type: boardgame

@@ -8,7 +8,7 @@ alternate_names:
 - キャット・イン・ザ・ボックス
 - 盒中貓
 - 슈뢰딩거의 고양이
-average_rating: '7.49627'
+average_rating: '7.48747'
 categories:
 - name: Animals
 - name: Card Game
@@ -31,7 +31,7 @@ designers:
 japanese_name: キャット・イン・ザ・ボックス
 learning_analysis:
   bgg_rank: 350
-  bgg_weight: 2.0469
+  bgg_weight: 2.0455
   category_complexity: 2.15
   decision_points: 3.9400000000000004
   initial_barrier: 2.39
@@ -51,7 +51,7 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.33
   replayability: 3.0
-  rules_complexity: 3.4590466666666666
+  rules_complexity: 3.4587666666666665
   strategic_depth: 2.85
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2022
@@ -81,6 +81,7 @@ publishers:
 - name: Maldito Games
 - name: Matagot
 - name: Pegasus Spiele
+- name: Siam Board Games
 - name: TLAMA games
 - name: 盒拍工作室 Hepa Studio
 ranks:
@@ -90,5 +91,5 @@ ranks:
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/M1gT_9LjNqUzAx3RAqdGRQ__thumb/img/3I1JU_hP5YtIg6RzcJePmmNOWAQ=/fit-in/200x150/filters:strip_icc()/pic6731829.jpg
 type: boardgame
-weight: '2.0469'
+weight: '2.0455'
 year_published: '2022'

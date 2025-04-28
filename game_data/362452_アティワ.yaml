@@ -1,7 +1,7 @@
 alternate_names:
 - アティワ
 - 蝙蝠農家
-average_rating: '7.47313'
+average_rating: '7.47074'
 categories:
 - name: Animals
 - name: Economic
@@ -40,23 +40,29 @@ designers:
 - name: Uwe Rosenberg
 japanese_name: アティワ
 learning_analysis:
-  bgg_rank: 1075
-  bgg_weight: 2.7244
-  category_complexity: 3.12
-  decision_points: 3.1999999999999997
-  initial_barrier: 3.04
-  interaction_complexity: 2.5
+  bgg_rank: 1073
+  bgg_weight: 2.7287
+  category_complexity: 3.83
+  decision_points: 4.3533333333333335
+  initial_barrier: 2.78
+  interaction_complexity: 3.3583333333333334
   learning_curve_type: gentle
-  mastery_time: short
+  mastery_time: medium
   mechanics_complexity: 3.08
   mechanics_count: 5
   player_types:
+  - beginner
   - casual
   - experienced
-  rank_complexity: 3.37
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.97
   replayability: 3.2
-  rules_complexity: 3.7168800000000006
-  strategic_depth: 3.02
+  rules_complexity: 3.7177400000000005
+  strategic_depth: 3.41
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2022
 mechanics:
@@ -77,11 +83,11 @@ publishers:
 - name: Hobby Japan
 - name: Rebel Sp. z o.o.
 ranks:
-- rank: '1075'
+- rank: '1073'
   type: boardgame
-- rank: '575'
+- rank: '574'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/9S_Ci89ADHj7sZ4SwHY19w__thumb/img/7d-psHf2a29G1LdGGdBRzqFt5aQ=/fit-in/200x150/filters:strip_icc()/pic7245009.jpg
 type: boardgame
-weight: '2.7244'
+weight: '2.7287'
 year_published: '2022'

@@ -4,7 +4,7 @@ alternate_names:
 - 'Marrakesh: Essential Edition'
 - マラケシュ
 - 马拉喀什
-average_rating: '8.13041'
+average_rating: '8.11491'
 categories:
 - name: City Building
 community_best_players: '3'
@@ -32,8 +32,8 @@ designers:
 - name: Stefan Feld
 japanese_name: マラケシュ
 learning_analysis:
-  bgg_rank: 421
-  bgg_weight: 3.3949
+  bgg_rank: 412
+  bgg_weight: 3.3975
   category_complexity: 3.8
   decision_points: 3.5700000000000003
   initial_barrier: 2.77
@@ -54,7 +54,7 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 3.08
   replayability: 2.9
-  rules_complexity: 3.5433133333333333
+  rules_complexity: 3.543833333333333
   strategic_depth: 3.23
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2022
@@ -75,11 +75,11 @@ publishers:
 - name: Playfun Games
 - name: White Goblin Games
 ranks:
-- rank: '421'
+- rank: '412'
   type: boardgame
-- rank: '210'
+- rank: '201'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/ug8yV9EVLMdjzg7FjMesSQ__thumb/img/w-hjGWPgMpmSKsn7LbUSKHjCVFg=/fit-in/200x150/filters:strip_icc()/pic7144309.jpg
 type: boardgame
-weight: '3.3949'
+weight: '3.3975'
 year_published: '2022'

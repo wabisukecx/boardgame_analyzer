@@ -4,14 +4,14 @@ alternate_names:
 - 核子激盪
 - 核子激荡
 - 뉴클리엄
-average_rating: '8.1518'
+average_rating: '8.14211'
 categories:
 - name: Economic
 - name: Industry / Manufacturing
 - name: Science Fiction
-community_best_players: '3'
+community_best_players: 3, 4
 community_min_age: '14'
-community_recommended_players: 1, 2, 4
+community_recommended_players: 1, 2
 description: When Elsa von Fr&uuml;hlingsfeld presented her invention to King Frederik
   Augustus II of Saxony, people thought it was trickery. She used the recently isolated
   element Uranium to heat up a jar of water and used the resulting steam to power
@@ -37,13 +37,13 @@ designers:
 - name: Dávid Turczi
 japanese_name: ニュークレウム
 learning_analysis:
-  bgg_rank: 169
-  bgg_weight: 4.166
-  category_complexity: 2.75
-  decision_points: 3.65
-  initial_barrier: 4.83
-  interaction_complexity: 2.6666666666666665
-  learning_curve_type: steep_then_moderate
+  bgg_rank: 162
+  bgg_weight: 4.1798
+  category_complexity: 4.29
+  decision_points: 4.6
+  initial_barrier: 4.06
+  interaction_complexity: 3.475
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.29
   mechanics_count: 10
@@ -53,11 +53,16 @@ learning_analysis:
   - strategist
   - system_master
   - trend_follower
-  rank_complexity: 3.87
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.2
+  rank_complexity: 3.12
   replayability: 3.7
-  rules_complexity: 4.327533333333333
-  strategic_depth: 4.04
-  strategic_depth_description: 深い（熟練プレイヤー向け）
+  rules_complexity: 4.3302933333333335
+  strategic_depth: 3.88
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2023
 mechanics:
 - name: Action Retrieval
@@ -91,11 +96,11 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: 狗吠火車
 ranks:
-- rank: '169'
+- rank: '162'
   type: boardgame
-- rank: '99'
+- rank: '97'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/fIVUaMvbfy6GCOgfxt7xaw__thumb/img/jKsO4nKmtNjX5bfH7aCPeK7hsqU=/fit-in/200x150/filters:strip_icc()/pic7647168.jpg
 type: boardgame
-weight: '4.166'
+weight: '4.1798'
 year_published: '2023'

@@ -1,4 +1,4 @@
-average_rating: '7.48421'
+average_rating: '7.57083'
 categories:
 - name: Card Game
 community_best_players: '4'
@@ -25,16 +25,16 @@ description: Your goal in Revolve! is to empty your hand of cards.&#10;&#10;Each
 designers:
 - name: Kei Kajino (梶野 桂)
 learning_analysis:
-  bgg_rank: 15031
-  bgg_weight: 1.6667
+  bgg_rank: 13324
+  bgg_weight: 1.5
   category_complexity: 2.3
-  decision_points: 3.57
-  initial_barrier: 2.23
+  decision_points: 3.5149999999999997
+  initial_barrier: 2.15
   interaction_complexity: 3.0
   learning_curve_type: gentle
   mastery_time: short
-  mechanics_complexity: 2.9
-  mechanics_count: 1
+  mechanics_complexity: 2.8
+  mechanics_count: 2
   player_types:
   - beginner
   - casual
@@ -43,14 +43,15 @@ learning_analysis:
     decision_density: 0.0
     interaction_modifier: 0.2
     strategic_bonus: 0.0
-  rank_complexity: 2.1
-  replayability: 2.2
-  rules_complexity: 2.6473400000000002
-  strategic_depth: 2.1
+  rank_complexity: 2.11
+  replayability: 2.3
+  rules_complexity: 2.716
+  strategic_depth: 2.07
   strategic_depth_description: 低め（限られた戦略オプション）
   year_published: 2024
 mechanics:
 - name: Hand Management
+- name: Ladder Climbing
 name: Revolve!
 playing_time: '0'
 publisher_max_players: '4'
@@ -59,9 +60,9 @@ publisher_min_players: '3'
 publishers:
 - name: One More Game!
 ranks:
-- rank: '15031'
+- rank: '13324'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/CgLIiA4ou2n61rF-RylMPg__thumb/img/N3aZFtCbxRc9fW8ldlv_gXvuLV4=/fit-in/200x150/filters:strip_icc()/pic8523446.png
 type: boardgame
-weight: '1.6667'
+weight: '1.5'
 year_published: '2024'

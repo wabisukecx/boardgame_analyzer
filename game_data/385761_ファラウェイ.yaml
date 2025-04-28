@@ -8,7 +8,7 @@ alternate_names:
 - ファラウェイ
 - 遙遠之地
 - 파러웨이
-average_rating: '7.58474'
+average_rating: '7.58164'
 categories:
 - name: Card Game
 - name: Fantasy
@@ -17,11 +17,11 @@ community_min_age: '10'
 community_recommended_players: 4, 5
 description: Welcome to Alula, a mysterious continent with ever-changing geography,
   shaped after the rhythm of the seasons. Beyond the Sea of Mists lies the mysterious
-  continent of Alula. Roam across the land in search of its secrets, meet its inhabitants
+  continent of Alula. Roam across the land in search of its secrets, meet its inhabitants,
   and list its wonders in order to gain more fame than your opponents.&#10;&#10;Throughout
   a game of Faraway, you will play a row of 8 cards in front of you, from left to
   right. These cards represent the regions you will come across while exploring the
-  lands. Characters on these cards will grant you victory points if you later fulfil
+  lands. Characters on these cards will grant you victory points if you later fulfill
   the conditions they demand. At the end of the game, you walk back the same way,
   scoring cards in the opposite order you played them. There lies the heart of the
   gameplay. Throughout the game, the cards you play will serve both to set new objectives,
@@ -36,16 +36,16 @@ designers:
 - name: Corentin Lebrat
 japanese_name: ファラウェイ
 learning_analysis:
-  bgg_rank: 312
-  bgg_weight: 1.89
+  bgg_rank: 293
+  bgg_weight: 1.8847
   category_complexity: 2.84
-  decision_points: 4.120000000000001
-  initial_barrier: 3.02
+  decision_points: 4.128571428571429
+  initial_barrier: 3.01
   interaction_complexity: 3.13
   learning_curve_type: gentle
   mastery_time: short
-  mechanics_complexity: 3.02
-  mechanics_count: 8
+  mechanics_complexity: 3.01
+  mechanics_count: 9
   player_types:
   - casual
   - trend_follower
@@ -54,14 +54,15 @@ learning_analysis:
     decision_density: 0.2
     interaction_modifier: 0.2
     strategic_bonus: 0.0
-  rank_complexity: 2.34
+  rank_complexity: 2.35
   replayability: 3.3
-  rules_complexity: 3.3671666666666664
-  strategic_depth: 2.94
+  rules_complexity: 3.353606666666666
+  strategic_depth: 2.93
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2023
 mechanics:
 - name: Constrained Bidding
+- name: End Game Bonuses
 - name: Hand Management
 - name: Open Drafting
 - name: Selection Order Bid
@@ -95,11 +96,11 @@ publishers:
 - name: White Goblin Games
 - name: WoodCat
 ranks:
-- rank: '312'
+- rank: '293'
   type: boardgame
-- rank: '60'
+- rank: '58'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/u1cwi9BWSKsPxSkVO0BzbA__thumb/img/5G45GN8CE7pq38fJMMocmPtV4_U=/fit-in/200x150/filters:strip_icc()/pic7570101.png
 type: boardgame
-weight: '1.89'
+weight: '1.8847'
 year_published: '2023'

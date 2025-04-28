@@ -2,7 +2,7 @@ alternate_names:
 - 'Evergreen: зелена планета'
 - Зеленый мир
 - 에버그린
-average_rating: '7.45196'
+average_rating: '7.44794'
 categories:
 - name: Puzzle
 community_best_players: '2'
@@ -20,12 +20,12 @@ description: In Evergreen, your goal is to build a lush ecosystem by planting se
 designers:
 - name: Hjalmar Hach
 learning_analysis:
-  bgg_rank: 951
-  bgg_weight: 2.1327
-  category_complexity: 2.5
-  decision_points: 2.7
-  initial_barrier: 2.7
-  interaction_complexity: 1.5
+  bgg_rank: 941
+  bgg_weight: 2.1373
+  category_complexity: 2.7
+  decision_points: 3.6000000000000005
+  initial_barrier: 2.36
+  interaction_complexity: 2.0
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.85
@@ -34,11 +34,16 @@ learning_analysis:
   - beginner
   - casual
   - trend_follower
-  rank_complexity: 3.29
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.24
   replayability: 2.7
-  rules_complexity: 2.953873333333333
-  strategic_depth: 2.34
-  strategic_depth_description: 低め（限られた戦略オプション）
+  rules_complexity: 2.954793333333333
+  strategic_depth: 2.7
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2022
 mechanics:
 - name: Bias
@@ -61,11 +66,11 @@ publishers:
 - name: IELLO
 - name: Lavka Games
 ranks:
-- rank: '951'
+- rank: '941'
   type: boardgame
-- rank: '219'
+- rank: '213'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/71I0Ku92KgjaW_ZokJidCA__thumb/img/3BpSIoMWf4ig9_S-CTMpoo3KdfU=/fit-in/200x150/filters:strip_icc()/pic6872745.png
 type: boardgame
-weight: '2.1327'
+weight: '2.1373'
 year_published: '2022'

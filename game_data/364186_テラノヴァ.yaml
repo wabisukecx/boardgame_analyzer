@@ -1,6 +1,6 @@
 alternate_names:
 - テラノヴァ
-average_rating: '7.14481'
+average_rating: '7.13847'
 categories:
 - name: Fantasy
 - name: Territory Building
@@ -17,11 +17,11 @@ designers:
 - name: Andreas Faul
 japanese_name: テラノヴァ
 learning_analysis:
-  bgg_rank: 1831
-  bgg_weight: 2.86
+  bgg_rank: 1818
+  bgg_weight: 2.8447
   category_complexity: 3.68
   decision_points: 4.080000000000001
-  initial_barrier: 2.92
+  initial_barrier: 2.91
   interaction_complexity: 3.3949999999999996
   learning_curve_type: gentle
   mastery_time: medium
@@ -38,8 +38,8 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 2.91
   replayability: 2.9
-  rules_complexity: 3.9779999999999998
-  strategic_depth: 3.44
+  rules_complexity: 3.9749399999999997
+  strategic_depth: 3.43
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2022
 mechanics:
@@ -64,11 +64,11 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: White Goblin Games
 ranks:
-- rank: '1831'
+- rank: '1818'
   type: boardgame
-- rank: '950'
+- rank: '938'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/vtUlmpCE_ij4Us9hOPPcZw__thumb/img/N1F2Aeld8k0SuCgpgWlOaruXD4A=/fit-in/200x150/filters:strip_icc()/pic6896566.png
 type: boardgame
-weight: '2.86'
+weight: '2.8447'
 year_published: '2022'

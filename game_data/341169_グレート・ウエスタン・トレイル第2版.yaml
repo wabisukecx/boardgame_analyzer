@@ -7,7 +7,7 @@ alternate_names:
 - グレート・ウエスタン・トレイル第2版
 - 大西部開拓者
 - 그레이트 웨스턴 트레일 (2판)
-average_rating: '8.29956'
+average_rating: '8.29159'
 categories:
 - name: American West
 - name: Animals
@@ -44,7 +44,7 @@ designers:
 japanese_name: グレート・ウエスタン・トレイル第2版
 learning_analysis:
   bgg_rank: 27
-  bgg_weight: 3.7146
+  bgg_weight: 3.7043
   category_complexity: 3.3
   decision_points: 3.9466666666666668
   initial_barrier: 3.49
@@ -65,7 +65,7 @@ learning_analysis:
     strategic_bonus: 0.2
   rank_complexity: 3.21
   replayability: 3.8
-  rules_complexity: 3.6629199999999997
+  rules_complexity: 3.66086
   strategic_depth: 3.5
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2021
@@ -104,5 +104,5 @@ ranks:
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/gDn7AhrDlmfCLSz9ZqoNFQ__thumb/img/0pt6XrFHTXpNetwMo9rdY7PdhfQ=/fit-in/200x150/filters:strip_icc()/pic5988511.jpg
 type: boardgame
-weight: '3.7146'
+weight: '3.7043'
 year_published: '2021'

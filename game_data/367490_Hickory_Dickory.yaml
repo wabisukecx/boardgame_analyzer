@@ -3,7 +3,7 @@ alternate_names:
 - Die Stunde der Maus
 - Гікорі Дікорі
 - 嘀嗒小鼠队
-average_rating: '7.06249'
+average_rating: '7.05349'
 categories:
 - name: Animals
 - name: Racing
@@ -21,23 +21,31 @@ description: In Hickory Dickory, players control a team of mice competing in a r
 designers:
 - name: Sawyer West
 learning_analysis:
-  bgg_rank: 3929
-  bgg_weight: 2.5806
-  category_complexity: 2.62
-  decision_points: 3.3
-  initial_barrier: 4.25
-  interaction_complexity: 2.5
-  learning_curve_type: moderate_then_shallow
-  mastery_time: short
+  bgg_rank: 3903
+  bgg_weight: 2.5938
+  category_complexity: 2.21
+  decision_points: 4.735999999999999
+  initial_barrier: 3.29
+  interaction_complexity: 3.0
+  learning_curve_type: gentle_then_moderate
+  mastery_time: medium
   mechanics_complexity: 3.34
   mechanics_count: 7
   player_types:
+  - casual
   - experienced
-  rank_complexity: 2.49
+  - hardcore
+  - system_master
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.1
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.25
   replayability: 3.0
-  rules_complexity: 3.791358095238095
-  strategic_depth: 3.02
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  rules_complexity: 3.793998095238095
+  strategic_depth: 3.54
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2023
 mechanics:
 - name: Action Retrieval
@@ -58,9 +66,9 @@ publishers:
 - name: Geekach Games
 - name: YOKA Games
 ranks:
-- rank: '3929'
+- rank: '3903'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/wNPQex7ukUTDRO6WK1v0eA__thumb/img/tdOCFZkMaCFbBQGB1_Oz54QkNQY=/fit-in/200x150/filters:strip_icc()/pic6972966.jpg
 type: boardgame
-weight: '2.5806'
+weight: '2.5938'
 year_published: '2023'

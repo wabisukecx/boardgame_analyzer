@@ -4,7 +4,7 @@ alternate_names:
 - チューリングマシン
 - 图灵机
 - 튜링 머신
-average_rating: '7.65449'
+average_rating: '7.64899'
 categories:
 - name: Deduction
 - name: Math
@@ -29,8 +29,8 @@ designers:
 - name: Yoann Levet
 japanese_name: チューリングマシン
 learning_analysis:
-  bgg_rank: 322
-  bgg_weight: 2.4894
+  bgg_rank: 323
+  bgg_weight: 2.5104
   category_complexity: 3.56
   decision_points: 3.465
   initial_barrier: 2.85
@@ -50,7 +50,7 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 3.09
   replayability: 2.9
-  rules_complexity: 3.4432133333333326
+  rules_complexity: 3.4474133333333326
   strategic_depth: 2.69
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2022
@@ -76,11 +76,11 @@ publishers:
 - name: Tabletop KZ
 - name: Tranjis Games
 ranks:
-- rank: '322'
+- rank: '323'
   type: boardgame
-- rank: '233'
+- rank: '232'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/un5yundwtC6q1U9gWTY8Yw__thumb/img/I4QR01ZS6TTIHgW3UpdOYvePRxQ=/fit-in/200x150/filters:strip_icc()/pic6883492.png
 type: boardgame
-weight: '2.4894'
+weight: '2.5104'
 year_published: '2022'

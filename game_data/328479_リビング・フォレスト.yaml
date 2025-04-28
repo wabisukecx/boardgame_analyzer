@@ -1,0 +1,123 @@
+alternate_names:
+- Ébredő erdő
+- Pradawny las
+- Strážcové lesa
+- ΤΟ ΠΝΕΥΜΑ ΤΟΥ ΔΑΣΟΥΣ
+- Живий Ліс
+- Живой лес
+- พฤกษาผู้พิทักษ์
+- リビング・フォレスト
+- 森生不息
+- 灵栖之森
+- 리빙 포레스트
+average_rating: '7.25026'
+categories:
+- name: Animals
+- name: Card Game
+- name: Environmental
+- name: Fantasy
+- name: Mythology
+- name: Territory Building
+community_best_players: '3'
+community_min_age: '10'
+community_recommended_players: 2, 4
+description: 'In Living Forest, you play as a nature spirit who will try to save the
+  forest and its sacred tree from the flames of Onibi. But you are not alone in your
+  mission as the animal guardians have come together to lend a hand around the Circle
+  of Spirits where you progress. Each turn, they bring you valuable elements, so try
+  to combine your team of animal guardians as best as possible to carry out your actions,
+  but be careful: some of them are solitary and do not like to be mixed with others...&#10;&#10;You
+  have one of three ways to achieve your goal: by planting 12 different Protective
+  Trees, by collecting 12 Sacred Flowers to awaken Sanki the great Guardian of the
+  Forest, by extinguishing 12 Fires to permanently repel Onibi.&#10;&#10;Each turn
+  includes 3 phases: &#10;&bull; Guardian Animals (simultaneous push your luck phase)
+  : You draw and turn face up, one after the other, the Guardian Animal cards from
+  your personal stack. You thus form the Animal Guardian Help Line. You can stop drawing
+  cards whenever you want. However, if you reveal a card showing a third solitary
+  symbol, then you must stop drawing cards. This card closes your Help Line.&#10;&bull;
+  Action phase: You play in turn. If your Help Line shows strictly less than three
+  solitary symbols (not canceled by gregarious symbols), you can then perform 2 different
+  Actions. If your Help Line shows three solitary symbols (not canceled by gregarious
+  symbols), you can then perform only 1 Action. The strength of an Action is determined
+  by the number of corresponding Elements visible on the Guardian Animal cards in
+  your Help Line and on your Forest individual board.&#10;&bull; End of the turn:&#10;-
+  Onibi attacks you: If some Fires remain at the center of the Circle of Spirits and
+  you cannot resist them, then add as many Fire Varan cards to your discard stack
+  as there are Fire tiles at the center of the Circle of Spirits.&#10;- Onibi attacks
+  the Sacred Tree: Add as many Fires to the center of the Circle of Spirits as there
+  are Guardian Animal cards taken this turn.&#10;- The arrival of new Guardian Animals:
+  Complete the Guardian Animal reserve by revealing as many new cards per level as
+  there were cards taken this turn.&#10;- Passing the Sacred Tree: Give the Sacred
+  Tree to the next Spirit of Nature clockwise.&#10;- The Return of Guardian Animals:
+  Move all the Animal Guardian cards from your Help Line to your personal discard
+  stack.&#10;&#10;The game stops at the end of a complete turn when one of the Spirits
+  of Nature has managed to collect at least 12 different Protective Trees OR 12 Fires
+  OR 12 Sacred Flowers.&#10;&#10;'
+designers:
+- name: Aske Christiansen
+japanese_name: リビング・フォレスト
+learning_analysis:
+  bgg_rank: 730
+  bgg_weight: 2.2149
+  category_complexity: 3.65
+  decision_points: 3.8333333333333335
+  initial_barrier: 2.45
+  interaction_complexity: 3.22
+  learning_curve_type: gentle
+  mastery_time: short
+  mechanics_complexity: 2.78
+  mechanics_count: 5
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    complexity_factor: 0.95
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.26
+  replayability: 3.2
+  rules_complexity: 3.2116466666666663
+  strategic_depth: 2.78
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  year_published: 2021
+mechanics:
+- name: Deck, Bag, and Pool Building
+- name: Push Your Luck
+- name: Race
+- name: Simultaneous Action Selection
+- name: Tile Placement
+name: Living Forest
+playing_time: '40'
+publisher_max_players: '4'
+publisher_min_age: '10'
+publisher_min_players: '1'
+publishers:
+- name: Ludonaute
+- name: Board Game Rookie
+- name: Brain Games
+- name: CMON Global Limited
+- name: Games7Days
+- name: GateOnGames
+- name: Gém Klub Kft.
+- name: Kaissa Chess & Games
+- name: Lautapelit.fi
+- name: Lavka Games
+- name: Maldito Games
+- name: MeepleBR
+- name: MINDOK
+- name: Pegasus Spiele
+- name: Popcorn Games
+- name: Rebel Sp. z o.o.
+- name: Tower Tactic Games
+- name: 株式会社ケンビル (KenBill)
+ranks:
+- rank: '730'
+  type: boardgame
+- rank: '189'
+  type: familygames
+thumbnail_url: https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__thumb/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg
+type: boardgame
+weight: '2.2149'
+year_published: '2021'

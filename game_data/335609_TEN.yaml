@@ -2,7 +2,7 @@ alternate_names:
 - DIX
 - Ten, czyli dycha
 - 텐텐텐
-average_rating: '7.03032'
+average_rating: '7.02816'
 categories:
 - name: Card Game
 community_best_players: '4'
@@ -20,15 +20,15 @@ designers:
 - name: Robert Melvin
 - name: Shawn Stankewich
 learning_analysis:
-  bgg_rank: 1506
+  bgg_rank: 1510
   bgg_weight: 1.4324
   category_complexity: 2.3
-  decision_points: 3.66
-  initial_barrier: 2.03
+  decision_points: 3.7800000000000002
+  initial_barrier: 2.08
   interaction_complexity: 3.0
   learning_curve_type: gentle
   mastery_time: short
-  mechanics_complexity: 2.58
+  mechanics_complexity: 2.68
   mechanics_count: 4
   player_types:
   - beginner
@@ -40,8 +40,8 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.19
   replayability: 2.6
-  rules_complexity: 2.7161466666666665
-  strategic_depth: 2.6
+  rules_complexity: 2.8001466666666666
+  strategic_depth: 2.68
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2021
 mechanics:
@@ -65,9 +65,9 @@ publishers:
 - name: Trefl
 - name: White Goblin Games
 ranks:
-- rank: '1506'
+- rank: '1510'
   type: boardgame
-- rank: '435'
+- rank: '434'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/74OIxWD8fvpVGILu7s5I0g__thumb/img/pDsxBxqBHtML4GYSskmpGJ4qp3o=/fit-in/200x150/filters:strip_icc()/pic6109559.png
 type: boardgame

@@ -4,7 +4,7 @@ alternate_names:
 - ブラックフォレスト
 - 翠光密林
 - 블랙 포레스트
-average_rating: '7.66309'
+average_rating: '7.65123'
 categories:
 - name: City Building
 - name: Economic
@@ -31,8 +31,8 @@ designers:
 - name: Uwe Rosenberg
 japanese_name: ブラックフォレスト
 learning_analysis:
-  bgg_rank: 1554
-  bgg_weight: 3.2333
+  bgg_rank: 1457
+  bgg_weight: 3.2292
   category_complexity: 4.48
   decision_points: 4.406666666666668
   initial_barrier: 3.62
@@ -51,9 +51,9 @@ learning_analysis:
     decision_density: 0.1
     interaction_modifier: 0.0
     strategic_bonus: 0.1
-  rank_complexity: 2.94
+  rank_complexity: 2.95
   replayability: 3.4
-  rules_complexity: 3.8349933333333333
+  rules_complexity: 3.8341733333333337
   strategic_depth: 3.52
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2024
@@ -83,11 +83,11 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: White Goblin Games
 ranks:
-- rank: '1554'
+- rank: '1457'
   type: boardgame
-- rank: '768'
+- rank: '720'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/zyc92pV4Mn2G6HCegMGPWQ__thumb/img/eBQt7m5f9RtsZfBgCNhJER6f5CA=/fit-in/200x150/filters:strip_icc()/pic8194217.jpg
 type: boardgame
-weight: '3.2333'
+weight: '3.2292'
 year_published: '2024'

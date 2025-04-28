@@ -1,4 +1,4 @@
-average_rating: '6.9096'
+average_rating: '6.87664'
 categories:
 - name: Animals
 - name: Card Game
@@ -22,15 +22,15 @@ description: Lead the undercover investigation against five criminal groups to g
 designers:
 - name: Reiner Knizia
 learning_analysis:
-  bgg_rank: 5459
-  bgg_weight: 1.2727
+  bgg_rank: 5431
+  bgg_weight: 1.2308
   category_complexity: 2.15
-  decision_points: 3.41
-  initial_barrier: 1.86
+  decision_points: 3.6300000000000003
+  initial_barrier: 1.89
   interaction_complexity: 3.0
   learning_curve_type: gentle
   mastery_time: short
-  mechanics_complexity: 2.38
+  mechanics_complexity: 2.45
   mechanics_count: 4
   player_types:
   - beginner
@@ -42,9 +42,9 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.02
   replayability: 2.7
-  rules_complexity: 2.382873333333333
-  strategic_depth: 1.99
-  strategic_depth_description: 低い（戦略的要素が少ない）
+  rules_complexity: 2.437493333333333
+  strategic_depth: 2.06
+  strategic_depth_description: 低め（限られた戦略オプション）
   year_published: 2022
 mechanics:
 - name: 'Auction: Sealed Bid'
@@ -60,11 +60,11 @@ publishers:
 - name: Bitewing Games
 - name: SUNNY BIRD
 ranks:
-- rank: '5459'
+- rank: '5431'
   type: boardgame
-- rank: '1573'
+- rank: '1585'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/yM17m8v87Gj_kIpc3hBQXw__thumb/img/y5fP40O-e68gx5WW-c6fKStPI8E=/fit-in/200x150/filters:strip_icc()/pic6231247.png
 type: boardgame
-weight: '1.2727'
+weight: '1.2308'
 year_published: '2022'

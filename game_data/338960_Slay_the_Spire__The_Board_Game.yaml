@@ -5,11 +5,12 @@ alternate_names:
 - 'Slay The Spire: O Jogo de Tabuleiro'
 - 尖塔奇兵：桌面游戏
 - '슬레이 더 스파이어: 보드게임'
-average_rating: '8.73332'
+average_rating: '8.71861'
 categories:
 - name: Adventure
 - name: Card Game
 - name: Fantasy
+- name: Fighting
 - name: Video Game Theme
 community_best_players: '2'
 community_min_age: '12'
@@ -29,12 +30,12 @@ designers:
 - name: Anthony Giovannetti
 - name: Casey Yano
 learning_analysis:
-  bgg_rank: 69
-  bgg_weight: 2.9372
-  category_complexity: 3.28
+  bgg_rank: 58
+  bgg_weight: 2.9364
+  category_complexity: 3.5
   decision_points: 3.7933333333333334
-  initial_barrier: 2.7
-  interaction_complexity: 3.2199999999999998
+  initial_barrier: 2.73
+  interaction_complexity: 3.765
   learning_curve_type: gentle
   mastery_time: medium
   mechanics_complexity: 2.94
@@ -51,8 +52,8 @@ learning_analysis:
     strategic_bonus: 0.2
   rank_complexity: 3.18
   replayability: 3.6
-  rules_complexity: 3.63344
-  strategic_depth: 3.25
+  rules_complexity: 3.63328
+  strategic_depth: 3.31
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2024
 mechanics:
@@ -76,11 +77,11 @@ publishers:
 - name: Yayoi The Dreamer
 - name: YOKA Games
 ranks:
-- rank: '69'
+- rank: '58'
   type: boardgame
-- rank: '40'
+- rank: '34'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/PQzVclEoOQ_wr4e1V86kxA__thumb/img/cpmsSDagE5RvQ1ERXl-fMJIaUUg=/fit-in/200x150/filters:strip_icc()/pic8157856.png
 type: boardgame
-weight: '2.9372'
+weight: '2.9364'
 year_published: '2024'

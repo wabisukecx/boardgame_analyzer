@@ -3,7 +3,7 @@ alternate_names:
 - 'Empire''s End: Gloire et Déclin'
 - Upadek Imperium
 - 終焉帝國
-average_rating: '6.9757'
+average_rating: '6.96298'
 categories:
 - name: Ancient
 - name: Civilization
@@ -33,23 +33,29 @@ description: You lead a grand civilization at the height of its influence, but c
 designers:
 - name: John D. Clair
 learning_analysis:
-  bgg_rank: 2233
-  bgg_weight: 2.3651
-  category_complexity: 2.62
-  decision_points: 3.2083333333333335
-  initial_barrier: 4.05
-  interaction_complexity: 2.5
-  learning_curve_type: moderate_then_shallow
-  mastery_time: short
+  bgg_rank: 2226
+  bgg_weight: 2.3881
+  category_complexity: 4.3
+  decision_points: 4.312
+  initial_barrier: 3.46
+  interaction_complexity: 3.755
+  learning_curve_type: gentle
+  mastery_time: medium
   mechanics_complexity: 3.09
   mechanics_count: 12
   player_types:
-  - hardcore
-  rank_complexity: 3.09
+  - casual
+  - experienced
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.89
   replayability: 2.9
-  rules_complexity: 3.522186666666666
-  strategic_depth: 2.88
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  rules_complexity: 3.526786666666666
+  strategic_depth: 3.41
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2023
 mechanics:
 - name: Auction / Bidding
@@ -77,11 +83,11 @@ publishers:
 - name: Maldito Games
 - name: Nice Game Publishing
 ranks:
-- rank: '2233'
+- rank: '2226'
   type: boardgame
-- rank: '1089'
+- rank: '1092'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/GnNmkYzVofrHPlKdcqrgUA__thumb/img/vmyqBjaKMiEA2U8DZns3OexchPs=/fit-in/200x150/filters:strip_icc()/pic7090909.jpg
 type: boardgame
-weight: '2.3651'
+weight: '2.3881'
 year_published: '2023'

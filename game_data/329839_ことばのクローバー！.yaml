@@ -9,7 +9,7 @@ alternate_names:
 - ことばのクローバー！
 - 密語幸運草
 - 쏘 클로버!
-average_rating: '7.59154'
+average_rating: '7.58988'
 categories:
 - name: Party Game
 - name: Word Game
@@ -26,8 +26,8 @@ designers:
 - name: François Romain
 japanese_name: ことばのクローバー！
 learning_analysis:
-  bgg_rank: 293
-  bgg_weight: 1.1056
+  bgg_rank: 288
+  bgg_weight: 1.1104
   category_complexity: 1.89
   decision_points: 3.6149999999999998
   initial_barrier: 2.27
@@ -47,7 +47,7 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.17
   replayability: 2.8
-  rules_complexity: 2.863786666666666
+  rules_complexity: 2.864746666666666
   strategic_depth: 2.66
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2021
@@ -71,13 +71,13 @@ publishers:
 - name: TLAMA games
 - name: YellowBOX
 ranks:
-- rank: '293'
+- rank: '288'
   type: boardgame
 - rank: '6'
   type: partygames
-- rank: '53'
+- rank: '52'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/8oipK9-ivkn53h7L5U2Yfg__thumb/img/cBKt41XFKkdphyqZItit4EIC45k=/fit-in/200x150/filters:strip_icc()/pic6588069.png
 type: boardgame
-weight: '1.1056'
+weight: '1.1104'
 year_published: '2021'

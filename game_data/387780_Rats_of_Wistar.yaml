@@ -8,7 +8,8 @@ alternate_names:
 - Szczury z Wistar
 - Побег из Вистара
 - 白鼠特工队
-average_rating: '7.55043'
+- 랫츠 오브 위스타
+average_rating: '7.55051'
 categories:
 - name: Animals
 community_best_players: '3'
@@ -35,27 +36,33 @@ designers:
 - name: Simone Luciani
 - name: Danilo Sabia
 learning_analysis:
-  bgg_rank: 1094
-  bgg_weight: 3.3835
-  category_complexity: 2.5
-  decision_points: 3.3666666666666667
-  initial_barrier: 3.15
-  interaction_complexity: 2.5
-  learning_curve_type: gentle
+  bgg_rank: 1064
+  bgg_weight: 3.3897
+  category_complexity: 1.8
+  decision_points: 4.4
+  initial_barrier: 2.68
+  interaction_complexity: 3.0
+  learning_curve_type: gentle_then_moderate
   mastery_time: medium
-  mechanics_complexity: 3.17
-  mechanics_count: 3
+  mechanics_complexity: 3.1
+  mechanics_count: 4
   player_types:
   - casual
   - experienced
-  rank_complexity: 3.37
-  replayability: 2.7
-  rules_complexity: 3.613366666666667
-  strategic_depth: 3.25
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.97
+  replayability: 2.8
+  rules_complexity: 3.748606666666666
+  strategic_depth: 3.57
+  strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2023
 mechanics:
 - name: Events
+- name: 'Turn Order: Claim Action'
 - name: Variable Set-up
 - name: Worker Placement
 name: Rats of Wistar
@@ -69,17 +76,18 @@ publishers:
 - name: CrowD Games
 - name: DSV Games
 - name: Game Harbor
+- name: HIT Games
 - name: Intrafin Games
 - name: Maldito Games
 - name: PD-Verlag
 - name: Portal Games
 - name: TLAMA games
 ranks:
-- rank: '1094'
+- rank: '1064'
   type: boardgame
-- rank: '581'
+- rank: '565'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/0dIADhzRp00oA4Jk-I-lHg__thumb/img/yfbVmdqkm99nr5hdP6MSv9jSQMg=/fit-in/200x150/filters:strip_icc()/pic7812438.png
 type: boardgame
-weight: '3.3835'
+weight: '3.3897'
 year_published: '2023'

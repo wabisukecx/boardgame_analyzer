@@ -8,7 +8,7 @@ alternate_names:
 - Robin Hood a jeho dobrodružství
 - Приключения Робина Гуда
 - 로빈 후드의 모험
-average_rating: '7.46429'
+average_rating: '7.46175'
 categories:
 - name: Medieval
 community_min_age: '8'
@@ -29,7 +29,7 @@ description: In England in 1193, the county of Nottinghamshire suffers under the
 designers:
 - name: Michael Menzel
 learning_analysis:
-  bgg_rank: 746
+  bgg_rank: 753
   bgg_weight: 1.8302
   category_complexity: 3.5
   decision_points: 3.8249999999999997
@@ -75,9 +75,9 @@ publishers:
 - name: Korea Boardgames
 - name: Zvezda
 ranks:
-- rank: '746'
+- rank: '753'
   type: boardgame
-- rank: '150'
+- rank: '155'
   type: thematic
 thumbnail_url: https://cf.geekdo-images.com/QOCGlQyx_HU0nG1oRpeGVg__thumb/img/EQ1AGM0CcltWvTHR6Qcy-H7qGNo=/fit-in/200x150/filters:strip_icc()/pic6220819.jpg
 type: boardgame

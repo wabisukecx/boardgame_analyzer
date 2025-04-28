@@ -1,6 +1,6 @@
 alternate_names:
 - 馬高
-average_rating: '7.76667'
+average_rating: '7.82833'
 categories:
 - name: Prehistoric
 community_best_players: '4'
@@ -23,11 +23,11 @@ designers:
 - name: 無界 (Mukai)
 - name: Napopora
 learning_analysis:
-  bgg_rank: 12074
-  bgg_weight: 2.5
+  bgg_rank: 11847
+  bgg_weight: 2.6
   category_complexity: 3.0
   decision_points: 4.840000000000002
-  initial_barrier: 3.4
+  initial_barrier: 3.42
   interaction_complexity: 3.0
   learning_curve_type: gentle_then_moderate
   mastery_time: medium
@@ -43,10 +43,10 @@ learning_analysis:
     decision_density: 0.1
     interaction_modifier: 0.0
     strategic_bonus: 0.1
-  rank_complexity: 2.12
+  rank_complexity: 2.13
   replayability: 3.2
-  rules_complexity: 3.8041666666666667
-  strategic_depth: 3.57
+  rules_complexity: 3.8241666666666667
+  strategic_depth: 3.59
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2024
 mechanics:
@@ -66,9 +66,9 @@ publisher_min_players: '2'
 publishers:
 - name: bronze bell house(銅鐸舎)
 ranks:
-- rank: '12074'
+- rank: '11847'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/JDChSC_Ri8JCLOwZF9xVjA__thumb/img/DM0WOAOViU13lNnRTnjl1l35MlE=/fit-in/200x150/filters:strip_icc()/pic8169811.png
 type: boardgame
-weight: '2.5'
+weight: '2.6'
 year_published: '2024'

@@ -3,7 +3,7 @@ alternate_names:
 - Esdras e Neemias
 - Esdras et Néhémie
 - エズラとネヘミヤ
-average_rating: '8.25052'
+average_rating: '8.23357'
 categories:
 - name: Ancient
 - name: City Building
@@ -40,17 +40,18 @@ designers:
 - name: Shem Phillips
 japanese_name: エズラとネヘミヤ
 learning_analysis:
-  bgg_rank: 719
-  bgg_weight: 3.8389
+  bgg_rank: 678
+  bgg_weight: 3.8365
   category_complexity: 3.89
-  decision_points: 4.44
-  initial_barrier: 4.91
-  interaction_complexity: 3.0
-  learning_curve_type: steep_then_moderate
+  decision_points: 4.471999999999999
+  initial_barrier: 3.96
+  interaction_complexity: 3.365
+  learning_curve_type: moderate
   mastery_time: medium
   mechanics_complexity: 3.39
   mechanics_count: 7
   player_types:
+  - casual
   - experienced
   - hardcore
   - system_master
@@ -60,10 +61,10 @@ learning_analysis:
     decision_density: 0.1
     interaction_modifier: 0.0
     strategic_bonus: 0.1
-  rank_complexity: 3.03
+  rank_complexity: 3.04
   replayability: 3.6
-  rules_complexity: 4.281589523809524
-  strategic_depth: 3.69
+  rules_complexity: 4.281109523809524
+  strategic_depth: 3.72
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2024
 mechanics:
@@ -89,11 +90,11 @@ publishers:
 - name: Tesla Games
 - name: 株式会社ケンビル (KenBill)
 ranks:
-- rank: '719'
+- rank: '678'
   type: boardgame
-- rank: '363'
+- rank: '341'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/MVflz8gmtK1DZy49E-Llog__thumb/img/o7kbhWms7CO3dbgncofPaS4-hwg=/fit-in/200x150/filters:strip_icc()/pic7474410.jpg
 type: boardgame
-weight: '3.8389'
+weight: '3.8365'
 year_published: '2024'

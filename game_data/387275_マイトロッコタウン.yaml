@@ -1,6 +1,6 @@
 alternate_names:
 - マイトロッコタウン
-average_rating: '7.21667'
+average_rating: '7.2'
 categories:
 - name: Industry / Manufacturing
 - name: Medieval
@@ -24,7 +24,7 @@ designers:
 - name: Aya Taguchi
 japanese_name: マイトロッコタウン
 learning_analysis:
-  bgg_rank: 16881
+  bgg_rank: 17085
   bgg_weight: 2.5
   category_complexity: 3.99
   decision_points: 3.6149999999999998
@@ -59,7 +59,7 @@ publisher_min_players: '1'
 publishers:
 - name: Studio GG
 ranks:
-- rank: '16881'
+- rank: '17085'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/i78G4ZjY-kB-3G1kNcjv1g__thumb/img/ahuyllPER-t9ecDQVYjQfrfQeqs=/fit-in/200x150/filters:strip_icc()/pic7494768.png
 type: boardgame

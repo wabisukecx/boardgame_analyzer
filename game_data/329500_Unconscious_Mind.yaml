@@ -7,9 +7,11 @@ alternate_names:
 - A tudattalan mélyén
 - Das Unbewusste
 - Бессознательное
-average_rating: '7.961'
+- 梦境潜行
+average_rating: '7.95899'
 categories:
 - name: Medical
+- name: Post-Napoleonic
 community_best_players: 2, 3
 community_min_age: '14'
 community_recommended_players: '1'
@@ -42,20 +44,21 @@ designers:
 - name: Yoma
 - name: Antonio Zax
 learning_analysis:
-  bgg_rank: 490
-  bgg_weight: 3.9545
-  category_complexity: 3.2
-  decision_points: 4.5649999999999995
-  initial_barrier: 3.78
-  interaction_complexity: 3.0
+  bgg_rank: 449
+  bgg_weight: 3.9739
+  category_complexity: 3.73
+  decision_points: 4.5920000000000005
+  initial_barrier: 3.85
+  interaction_complexity: 3.455
   learning_curve_type: moderate
   mastery_time: medium
-  mechanics_complexity: 3.21
-  mechanics_count: 10
+  mechanics_complexity: 3.18
+  mechanics_count: 12
   player_types:
   - casual
   - experienced
   - hardcore
+  - strategist
   - system_master
   - trend_follower
   playtime_analysis:
@@ -63,15 +66,16 @@ learning_analysis:
     decision_density: 0.1
     interaction_modifier: 0.0
     strategic_bonus: 0.1
-  rank_complexity: 3.06
-  replayability: 3.3
-  rules_complexity: 4.079899999999999
-  strategic_depth: 3.74
+  rank_complexity: 3.07
+  replayability: 3.6
+  rules_complexity: 4.05978
+  strategic_depth: 3.81
   strategic_depth_description: 中〜高（多くの戦略が存在）
   year_published: 2024
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
+- name: Layering
 - name: Melding and Splaying
 - name: Open Drafting
 - name: Programmed Movement
@@ -79,6 +83,7 @@ mechanics:
 - name: Set Collection
 - name: Solo / Solitaire Game
 - name: Tags
+- name: Variable Set-up
 - name: Worker Placement
 name: Unconscious Mind
 playing_time: '120'
@@ -97,11 +102,11 @@ publishers:
 - name: Regatul Jocurilor
 - name: TLAMA games
 ranks:
-- rank: '490'
+- rank: '449'
   type: boardgame
-- rank: '272'
+- rank: '252'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/ufkAbhulnKJ7uDpi09TXOQ__thumb/img/XBP7p0D1bkzDXkoOuXSiavW26Ig=/fit-in/200x150/filters:strip_icc()/pic7127448.jpg
 type: boardgame
-weight: '3.9545'
+weight: '3.9739'
 year_published: '2024'

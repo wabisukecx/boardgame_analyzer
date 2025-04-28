@@ -1,6 +1,6 @@
 alternate_names:
 - Виварий
-average_rating: '7.00392'
+average_rating: '7.00519'
 categories:
 - name: Animals
 - name: Card Game
@@ -25,8 +25,8 @@ description: '1898, Siberia, the seismologist Edgar Vuntaf discovers a continent
 designers:
 - name: Frédéric Vuagnat
 learning_analysis:
-  bgg_rank: 5968
-  bgg_weight: 1.8667
+  bgg_rank: 5976
+  bgg_weight: 1.875
   category_complexity: 2.15
   decision_points: 3.5949999999999998
   initial_barrier: 2.11
@@ -45,7 +45,7 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.18
   replayability: 2.5
-  rules_complexity: 2.668006666666667
+  rules_complexity: 2.6696666666666666
   strategic_depth: 2.63
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2022
@@ -63,9 +63,9 @@ publishers:
 - name: Arclight Games
 - name: Evrikus
 ranks:
-- rank: '5968'
+- rank: '5976'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/7VF1TYNS561K5LQNg6DieQ__thumb/img/p4KgKukiSuU0EMe1S_b4bbOJw88=/fit-in/200x150/filters:strip_icc()/pic6920685.jpg
 type: boardgame
-weight: '1.8667'
+weight: '1.875'
 year_published: '2022'

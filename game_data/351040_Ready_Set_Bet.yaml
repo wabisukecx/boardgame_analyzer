@@ -8,7 +8,7 @@ alternate_names:
 - На старт, внимание, вскачь!
 - 賽馬大亨
 - 레디 셋 벳
-average_rating: '7.54543'
+average_rating: '7.54599'
 categories:
 - name: Animals
 - name: Party Game
@@ -29,12 +29,12 @@ description: In Ready Set Bet, you and your friends head to the races for a day 
 designers:
 - name: John D. Clair
 learning_analysis:
-  bgg_rank: 448
-  bgg_weight: 1.3235
-  category_complexity: 2.5
+  bgg_rank: 441
+  bgg_weight: 1.3178
+  category_complexity: 2.62
   decision_points: 3.1300000000000003
-  initial_barrier: 2.0
-  interaction_complexity: 3.3999999999999995
+  initial_barrier: 2.01
+  interaction_complexity: 3.635
   learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 2.52
@@ -50,8 +50,8 @@ learning_analysis:
     strategic_bonus: 0.0
   rank_complexity: 2.14
   replayability: 3.3
-  rules_complexity: 2.9190333333333327
-  strategic_depth: 2.63
+  rules_complexity: 2.917893333333333
+  strategic_depth: 2.67
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   year_published: 2022
 mechanics:
@@ -77,11 +77,11 @@ publishers:
 - name: TLAMA games
 - name: Zito! Ώρα για παιχνίδι
 ranks:
-- rank: '448'
+- rank: '441'
   type: boardgame
 - rank: '13'
   type: partygames
 thumbnail_url: https://cf.geekdo-images.com/4ZCV2o_OiGha0bknXDTfdA__thumb/img/S3t6BJifjuZMOwfnUQ6lcdUx9RA=/fit-in/200x150/filters:strip_icc()/pic6678381.jpg
 type: boardgame
-weight: '1.3235'
+weight: '1.3178'
 year_published: '2022'

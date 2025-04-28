@@ -1,6 +1,6 @@
 alternate_names:
 - 'ヌースフィヨルド: BIG BOX'
-average_rating: '8.30598'
+average_rating: '8.30064'
 categories:
 - name: Economic
 community_best_players: 1, 3, 4, 5
@@ -39,12 +39,12 @@ designers:
 japanese_name: 'ヌースフィヨルド: BIG BOX'
 learning_analysis:
   bgg_rank: null
-  bgg_weight: 2.9231
-  category_complexity: 2.5
-  decision_points: 4.5
-  initial_barrier: 3.64
-  interaction_complexity: 3.0
-  learning_curve_type: moderate
+  bgg_weight: 2.9286
+  category_complexity: 4.2
+  decision_points: 5.0
+  initial_barrier: 3.43
+  interaction_complexity: 4.0
+  learning_curve_type: gentle_then_moderate
   mastery_time: medium
   mechanics_complexity: 4.2
   mechanics_count: 1
@@ -52,11 +52,17 @@ learning_analysis:
   - casual
   - experienced
   - hardcore
+  - strategist
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
   rank_complexity: 3.0
   replayability: 2.3
-  rules_complexity: 3.7566200000000007
-  strategic_depth: 3.58
-  strategic_depth_description: 中〜高（多くの戦略が存在）
+  rules_complexity: 3.757720000000001
+  strategic_depth: 4.02
+  strategic_depth_description: 深い（熟練プレイヤー向け）
   year_published: 2024
 mechanics:
 - name: Worker Placement
@@ -71,5 +77,5 @@ publishers:
 ranks: []
 thumbnail_url: https://cf.geekdo-images.com/_asmaX0NMnJrdZd1TaACSA__thumb/img/o5LCXlZwizeKvEOjmJxPiUZNZf0=/fit-in/200x150/filters:strip_icc()/pic7978202.jpg
 type: boardgame
-weight: '2.9231'
+weight: '2.9286'
 year_published: '2024'

@@ -10,7 +10,7 @@ alternate_names:
 - 'Wsiąść do Pociągu Legacy: Legendy Zachodu'
 - 'Zug um Zug Legacy: Legenden des Westens'
 - チケット・トゥ・ライド・レガシー：西部開拓記
-average_rating: '8.68905'
+average_rating: '8.68266'
 categories:
 - name: Trains
 community_best_players: 4, 5
@@ -37,28 +37,30 @@ designers:
 - name: Alan R. Moon
 japanese_name: チケット・トゥ・ライド・レガシー：西部開拓記
 learning_analysis:
-  bgg_rank: 101
-  bgg_weight: 2.5579
+  bgg_rank: 91
+  bgg_weight: 2.5941
   category_complexity: 3.5
-  decision_points: 3.4814285714285718
-  initial_barrier: 4.12
-  interaction_complexity: 2.5
-  learning_curve_type: moderate_then_shallow
-  mastery_time: short
+  decision_points: 4.182857142857143
+  initial_barrier: 3.31
+  interaction_complexity: 3.3
+  learning_curve_type: gentle
+  mastery_time: medium
   mechanics_complexity: 3.02
   mechanics_count: 9
   player_types:
+  - casual
+  - experienced
   - trend_follower
   playtime_analysis:
     complexity_factor: 1.0
     decision_density: 0.1
     interaction_modifier: 0.0
     strategic_bonus: 0.1
-  rank_complexity: 2.44
-  replayability: 3.5
-  rules_complexity: 3.4982466666666663
-  strategic_depth: 2.98
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  rank_complexity: 2.45
+  replayability: 3.7
+  rules_complexity: 3.505486666666666
+  strategic_depth: 3.36
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2023
 mechanics:
 - name: Connections
@@ -83,11 +85,11 @@ publishers:
 - name: Hobby World
 - name: Rebel Sp. z o.o.
 ranks:
-- rank: '101'
+- rank: '91'
   type: boardgame
-- rank: '8'
+- rank: '5'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/2H0pJddVJA3r6btqRNLG1g__thumb/img/scMQ04r1admTpyvH91g9DbZEncg=/fit-in/200x150/filters:strip_icc()/pic7541330.png
 type: boardgame
-weight: '2.5579'
+weight: '2.5941'
 year_published: '2023'

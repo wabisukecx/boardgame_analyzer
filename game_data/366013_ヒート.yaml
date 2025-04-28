@@ -8,7 +8,7 @@ alternate_names:
 - 火爆狂飙：全速前进
 - 熱力狂飆
 - '히트: 질주의 열기'
-average_rating: '8.02991'
+average_rating: '8.02293'
 categories:
 - name: Racing
 - name: Sports
@@ -32,24 +32,31 @@ designers:
 - name: Daniel Skjold Pedersen
 japanese_name: ヒート
 learning_analysis:
-  bgg_rank: 41
-  bgg_weight: 2.1877
-  category_complexity: 2.62
-  decision_points: 3.1363636363636362
-  initial_barrier: 4.04
-  interaction_complexity: 2.5
-  learning_curve_type: moderate_then_shallow
+  bgg_rank: 42
+  bgg_weight: 2.1906
+  category_complexity: 2.42
+  decision_points: 4.175555555555555
+  initial_barrier: 3.03
+  interaction_complexity: 3.3249999999999997
+  learning_curve_type: gentle
   mastery_time: short
   mechanics_complexity: 3.0
   mechanics_count: 11
   player_types:
+  - casual
+  - experienced
   - replayer
   - trend_follower
-  rank_complexity: 4.14
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.15
+    interaction_modifier: 0.0
+    strategic_bonus: 0.0
+  rank_complexity: 2.48
   replayability: 3.8
-  rules_complexity: 3.404206666666666
-  strategic_depth: 2.78
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  rules_complexity: 3.4047866666666664
+  strategic_depth: 3.2
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2022
 mechanics:
 - name: Catch the Leader
@@ -81,11 +88,11 @@ publishers:
 - name: Korea Boardgames
 - name: Lord of Boards
 ranks:
-- rank: '41'
+- rank: '42'
   type: boardgame
 - rank: '7'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__thumb/img/2GbaKvYOzWIxfgbYTk2R9puiyzo=/fit-in/200x150/filters:strip_icc()/pic6940449.png
 type: boardgame
-weight: '2.1877'
+weight: '2.1906'
 year_published: '2022'

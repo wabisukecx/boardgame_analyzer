@@ -10,7 +10,7 @@ alternate_names:
 - 地球
 - 藍星
 - 어스
-average_rating: '7.64743'
+average_rating: '7.64307'
 categories:
 - name: Animals
 - name: Card Game
@@ -44,7 +44,7 @@ designers:
 japanese_name: アース
 learning_analysis:
   bgg_rank: 199
-  bgg_weight: 2.8944
+  bgg_weight: 2.8942
   category_complexity: 2.6
   decision_points: 4.022222222222221
   initial_barrier: 3.32
@@ -64,7 +64,7 @@ learning_analysis:
     strategic_bonus: 0.1
   rank_complexity: 3.11
   replayability: 3.6
-  rules_complexity: 3.77827393939394
+  rules_complexity: 3.7782339393939397
   strategic_depth: 3.3
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2023
@@ -104,9 +104,9 @@ publishers:
 ranks:
 - rank: '199'
   type: boardgame
-- rank: '153'
+- rank: '156'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/0xqF_KyOb7V26Lu5YT3fxw__thumb/img/ABTwzzMGekkz2jVl01LC4789TcQ=/fit-in/200x150/filters:strip_icc()/pic6699821.jpg
 type: boardgame
-weight: '2.8944'
+weight: '2.8942'
 year_published: '2023'

@@ -1,10 +1,11 @@
 alternate_names:
+- Eleven
 - 'Eleven: Football Manager Gioco da Tavolo'
 - 'Eleven: Juego de Mesa de Gestión de Fútbol'
 - 'Eleven: Juqu''où mènerez vous votre club'
 - 足球經理
 - '일레븐: 풋볼 매니저 보드게임'
-average_rating: '7.2322'
+average_rating: '7.21573'
 categories:
 - name: Economic
 - name: Sports
@@ -32,7 +33,7 @@ description: 'Eleven &mdash; the number of players you have on the pitch at any 
 designers:
 - name: Thomas Jansen
 learning_analysis:
-  bgg_rank: 2034
+  bgg_rank: 2062
   bgg_weight: 3.3516
   category_complexity: 3.36
   decision_points: 3.7533333333333334
@@ -76,9 +77,9 @@ publishers:
 - name: Pendragon Game Studio
 - name: Summon Games
 ranks:
-- rank: '2034'
+- rank: '2062'
   type: boardgame
-- rank: '388'
+- rank: '396'
   type: thematic
 thumbnail_url: https://cf.geekdo-images.com/qweS3tB5vEHg3ECs-QNqrA__thumb/img/5Lu7U4JlzVvpV6_MTv04TtNftlY=/fit-in/200x150/filters:strip_icc()/pic5985744.jpg
 type: boardgame

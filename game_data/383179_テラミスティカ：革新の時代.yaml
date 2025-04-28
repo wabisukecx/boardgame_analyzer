@@ -8,7 +8,7 @@ alternate_names:
 - テラミスティカ：革新の時代
 - 神秘大地：大創造時代
 - 혁신의 시대
-average_rating: '8.56444'
+average_rating: '8.55185'
 categories:
 - name: Civilization
 - name: Fantasy
@@ -33,27 +33,33 @@ designers:
 - name: Helge Ostertag
 japanese_name: テラミスティカ：革新の時代
 learning_analysis:
-  bgg_rank: 66
-  bgg_weight: 4.2605
-  category_complexity: 2.75
-  decision_points: 3.2
-  initial_barrier: 4.68
-  interaction_complexity: 2.6666666666666665
-  learning_curve_type: steep_then_moderate
-  mastery_time: medium
+  bgg_rank: 65
+  bgg_weight: 4.2609
+  category_complexity: 4.22
+  decision_points: 4.19
+  initial_barrier: 3.92
+  interaction_complexity: 3.73
+  learning_curve_type: moderate_then_deep
+  mastery_time: medium_to_long
   mechanics_complexity: 3.05
   mechanics_count: 10
   player_types:
   - experienced
   - hardcore
+  - strategist
   - system_master
   - replayer
   - trend_follower
-  rank_complexity: 4.1
+  playtime_analysis:
+    complexity_factor: 1.1
+    decision_density: 0.0
+    interaction_modifier: 0.1
+    strategic_bonus: 0.3
+  rank_complexity: 3.18
   replayability: 4.2
-  rules_complexity: 4.130433333333333
-  strategic_depth: 3.6
-  strategic_depth_description: 中〜高（多くの戦略が存在）
+  rules_complexity: 4.130513333333333
+  strategic_depth: 4.51
+  strategic_depth_description: 非常に深い（マスターに長い時間を要する）
   year_published: 2023
 mechanics:
 - name: Contracts
@@ -87,11 +93,11 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: White Goblin Games
 ranks:
-- rank: '66'
+- rank: '65'
   type: boardgame
-- rank: '31'
+- rank: '30'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/D1vrcFEptCEoD8Z6s_iRfw__thumb/img/0yBK_DMaSgRVrp2fGuNPgb0Jo7w=/fit-in/200x150/filters:strip_icc()/pic7430993.jpg
 type: boardgame
-weight: '4.2605'
+weight: '4.2609'
 year_published: '2023'

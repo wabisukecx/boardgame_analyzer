@@ -6,7 +6,7 @@ alternate_names:
 - 'Farshore: Ein Spiel in der Welt von Everdell'
 - 'Эверделл: Дальний берег'
 - 遠方海岸
-average_rating: '7.89923'
+average_rating: '7.88153'
 categories:
 - name: Animals
 - name: Card Game
@@ -30,24 +30,29 @@ designers:
 - name: James A. Wilson
 - name: Clarissa A. Wilson
 learning_analysis:
-  bgg_rank: 1160
-  bgg_weight: 2.8776
-  category_complexity: 2.88
-  decision_points: 3.825
-  initial_barrier: 2.93
-  interaction_complexity: 2.625
+  bgg_rank: 1104
+  bgg_weight: 2.8302
+  category_complexity: 3.16
+  decision_points: 4.340000000000001
+  initial_barrier: 2.59
+  interaction_complexity: 3.0599999999999996
   learning_curve_type: gentle
-  mastery_time: short
+  mastery_time: medium
   mechanics_complexity: 2.92
   mechanics_count: 4
   player_types:
   - beginner
   - casual
   - experienced
-  rank_complexity: 3.24
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.0
+    strategic_bonus: 0.1
+  rank_complexity: 2.22
   replayability: 2.9
-  rules_complexity: 3.2991866666666665
-  strategic_depth: 3.2
+  rules_complexity: 3.2897066666666666
+  strategic_depth: 3.37
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2023
 mechanics:
@@ -74,11 +79,11 @@ publishers:
 - name: Tabletop Tycoon Inc.
 - name: White Goblin Games
 ranks:
-- rank: '1160'
+- rank: '1104'
   type: boardgame
-- rank: '260'
+- rank: '248'
   type: familygames
 thumbnail_url: https://cf.geekdo-images.com/JDXU1SebJFXBsP4qT79oYg__thumb/img/wzgfJrJBnw51mfA8YhmnHXolWkM=/fit-in/200x150/filters:strip_icc()/pic7605937.png
 type: boardgame
-weight: '2.8776'
+weight: '2.8302'
 year_published: '2023'

@@ -1,6 +1,6 @@
 alternate_names:
 - エスペライゼーション
-average_rating: '7.95652'
+average_rating: '7.93194'
 categories:
 - name: Word Game
 community_best_players: 4, 5
@@ -18,11 +18,11 @@ designers:
 - name: Keisei
 japanese_name: エスペライゼーション
 learning_analysis:
-  bgg_rank: 8858
+  bgg_rank: 8240
   bgg_weight: 2.7778
-  category_complexity: 2.5
-  decision_points: 2.5
-  initial_barrier: 2.77
+  category_complexity: 2.1
+  decision_points: 3.4699999999999998
+  initial_barrier: 2.43
   interaction_complexity: 2.5
   learning_curve_type: gentle
   mastery_time: short
@@ -31,11 +31,17 @@ learning_analysis:
   player_types:
   - beginner
   - casual
-  rank_complexity: 2.13
+  - experienced
+  playtime_analysis:
+    complexity_factor: 1.0
+    decision_density: 0.0
+    interaction_modifier: 0.1
+    strategic_bonus: 0.2
+  rank_complexity: 2.16
   replayability: 2.2
   rules_complexity: 3.0028933333333336
-  strategic_depth: 2.68
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  strategic_depth: 3.19
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   year_published: 2024
 mechanics:
 - name: Cooperative Game
@@ -47,7 +53,7 @@ publisher_min_players: '3'
 publishers:
 - name: Hobby Japan
 ranks:
-- rank: '8858'
+- rank: '8240'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/m8sYvezW8eVDGvPrDmfOrA__thumb/img/i7izX6aN5Mdz0vEzVywZbUu4BDM=/fit-in/200x150/filters:strip_icc()/pic8337380.png
 type: boardgame

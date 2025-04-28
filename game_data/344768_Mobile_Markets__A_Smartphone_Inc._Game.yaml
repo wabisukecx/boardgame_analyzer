@@ -2,7 +2,7 @@ alternate_names:
 - 'Mobile Markets: นวัตกรรมไร้พรมแดน'
 - Mobile Markets. Игра серии Smartphone Inc.
 - 手機帝國2 商戰
-average_rating: '7.14442'
+average_rating: '7.14099'
 categories:
 - name: Economic
 - name: Industry / Manufacturing
@@ -21,7 +21,7 @@ description: Congratulations! You are the CEO of a multinational consumer electr
 designers:
 - name: Ivan Lashin
 learning_analysis:
-  bgg_rank: 2783
+  bgg_rank: 2804
   bgg_weight: 2.7778
   category_complexity: 4.36
   decision_points: 4.143999999999998
@@ -65,9 +65,9 @@ publishers:
 - name: Lanlalen
 - name: Open Borders Studio
 ranks:
-- rank: '2783'
+- rank: '2804'
   type: boardgame
-- rank: '1244'
+- rank: '1251'
   type: strategygames
 thumbnail_url: https://cf.geekdo-images.com/DI1qfsJsPJr2-Nlgii1wUg__thumb/img/AVH0SsLjwcDfetVsHdbY5i0q9OM=/fit-in/200x150/filters:strip_icc()/pic7338111.png
 type: boardgame

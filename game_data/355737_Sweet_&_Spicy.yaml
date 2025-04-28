@@ -3,7 +3,7 @@ alternate_names:
 - 'Sweet and Spicy: Khi mèo bớt ăn cay'
 - 貓吃酸辣
 - 스위트 스파이시
-average_rating: '6.87261'
+average_rating: '6.87641'
 categories:
 - name: Animals
 - name: Bluffing
@@ -28,7 +28,7 @@ description: 'Once hungry Kitty craved to eat, but sadly found no yummy meat, in
 designers:
 - name: Győri Zoltán Gábor
 learning_analysis:
-  bgg_rank: 7286
+  bgg_rank: 7101
   bgg_weight: 1.25
   category_complexity: 2.53
   decision_points: 3.57
@@ -67,7 +67,7 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: UBO CnC
 ranks:
-- rank: '7286'
+- rank: '7101'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/16eiz9vR_Ddncb_DMLSUbA__thumb/img/1sF09BCEtHE8acaMk83c8xNm7DE=/fit-in/200x150/filters:strip_icc()/pic6650853.png
 type: boardgame

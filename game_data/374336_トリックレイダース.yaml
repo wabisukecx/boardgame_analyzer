@@ -1,6 +1,6 @@
 alternate_names:
 - トリックレイダース
-average_rating: '7.14479'
+average_rating: '7.15762'
 categories:
 - name: Card Game
 community_best_players: '4'
@@ -20,7 +20,7 @@ designers:
 - name: N2
 japanese_name: トリックレイダース
 learning_analysis:
-  bgg_rank: 9438
+  bgg_rank: 9346
   bgg_weight: 2.0
   category_complexity: 2.3
   decision_points: 3.4699999999999998
@@ -38,7 +38,7 @@ learning_analysis:
     decision_density: 0.0
     interaction_modifier: 0.2
     strategic_bonus: 0.0
-  rank_complexity: 2.14
+  rank_complexity: 2.15
   replayability: 2.2
   rules_complexity: 2.3826666666666667
   strategic_depth: 2.62
@@ -54,7 +54,7 @@ publisher_min_players: '3'
 publishers:
 - name: Southern Cross Games (サザンクロスゲームズ)
 ranks:
-- rank: '9438'
+- rank: '9346'
   type: boardgame
 thumbnail_url: https://cf.geekdo-images.com/S9jN1u9dlp-EiF4qzhp2PQ__thumb/img/Lyo36zTXfPAGqpjvcxOxhP2IwoY=/fit-in/200x150/filters:strip_icc()/pic8439671.png
 type: boardgame
