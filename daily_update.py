@@ -20,7 +20,7 @@ from pathlib import Path
 import re
 
 # Boardgame Analyzer のモジュールをインポート
-sys.path.append('/home/pi/boardgame_analyzer')
+sys.path.append('')
 from src.api.bgg_api import get_game_details
 from src.data.data_handler import save_game_data_to_yaml
 
@@ -28,13 +28,13 @@ from src.data.data_handler import save_game_data_to_yaml
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    filename='/home/pi/boardgame_analyzer/logs/daily_update.log',
+    filename='logs/daily_update.log',
     filemode='a'
 )
 logger = logging.getLogger('daily_update')
 
 # 定数
-BASE_DIR = Path('/home/pi/boardgame_analyzer')
+BASE_DIR = Path('')
 GAME_DATA_DIR = BASE_DIR / 'game_data'
 CONFIG_DIR = BASE_DIR / 'config'
 BACKUP_DIR = BASE_DIR / 'backup'
@@ -183,7 +183,7 @@ def get_game_ids_from_local():
         # ファイル名からゲームIDを抽出 (例: "000013_カタンの開拓者.yaml")
         match = re.match(r"(\d+)_.*\.yaml", yaml_file.name)
         if match:
-            game_id = match.group(1).lstrip('0')  # 先頭のゼロを削除
+            game_id = match.group(1)
             if game_id:
                 game_ids.append(game_id)
     
