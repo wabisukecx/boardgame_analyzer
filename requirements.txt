@@ -11,3 +11,4 @@ tqdm
 python-dotenv
 voyageai
 numpy
+paramiko
