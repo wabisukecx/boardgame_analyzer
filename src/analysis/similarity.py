@@ -2,7 +2,6 @@
 src/analysis/similarity.py - ボードゲームの類似性検索機能を提供するモジュール
 """
 
-import streamlit as st
 import numpy as np
 import pickle
 import matplotlib.pyplot as plt

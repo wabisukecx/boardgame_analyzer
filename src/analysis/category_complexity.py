@@ -1,6 +1,5 @@
 import os
 import yaml
-import streamlit as st
 
 # YAMLファイルのパス
 CATEGORIES_DATA_FILE = "config/categories_data.yaml"
