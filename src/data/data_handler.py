@@ -1,25 +1,9 @@
 import os
+import streamlit as st
 import yaml
 import pandas as pd
 import re
 from pathlib import Path
-
-# Streamlitが利用可能かどうかを確認
-STREAMLIT_AVAILABLE = False
-try:
-    import streamlit as st
-    STREAMLIT_AVAILABLE = True
-except ImportError:
-    # Streamlitが利用できない場合（バックグラウンド実行など）
-    pass
-
-# エラー表示用の汎用関数
-def show_error(message):
-    """環境に応じたエラー表示を行う汎用関数"""
-    if STREAMLIT_AVAILABLE:
-        st.error(message)
-    else:
-        print(f"エラー: {message}")
 
 def save_game_data_to_yaml(game_data, custom_filename=None):
     """
@@ -89,11 +73,7 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
                 from src.analysis.learning_curve import calculate_learning_curve
                 game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
             except Exception as e:
-                if STREAMLIT_AVAILABLE:
-                    # UIから実行されている場合のみ表示
                     st.warning(f"学習曲線の計算中にエラーが発生しました: {e}")
-                else:
-                    print(f"警告: 学習曲線の計算中にエラーが発生しました: {e}")
         
         # YAMLに変換して保存する前に全角スペースを半角スペースに変換
         # ディープコピーして全角スペースを変換
@@ -133,7 +113,7 @@ def load_game_data_from_yaml(file_path):
         return game_data
     except Exception as e:
         # Streamlitの有無に依存しないエラー表示に変更
-        show_error(f"ファイル読み込みエラー: {str(e)}")
+        st.warning(f"ファイル読み込みエラー: {str(e)}")
         return None
 
 def search_results_to_dataframe(results):
