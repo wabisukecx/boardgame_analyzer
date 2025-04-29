@@ -2,7 +2,24 @@ import os
 import yaml
 import pandas as pd
 import re
-from src.analysis.learning_curve import calculate_learning_curve
+from pathlib import Path
+
+# Streamlitが利用可能かどうかを確認
+STREAMLIT_AVAILABLE = False
+try:
+    import streamlit as st
+    STREAMLIT_AVAILABLE = True
+except ImportError:
+    # Streamlitが利用できない場合（バックグラウンド実行など）
+    pass
+
+# エラー表示用の汎用関数
+def show_error(message):
+    """環境に応じたエラー表示を行う汎用関数"""
+    if STREAMLIT_AVAILABLE:
+        st.error(message)
+    else:
+        print(f"エラー: {message}")
 
 def save_game_data_to_yaml(game_data, custom_filename=None):
     """
@@ -67,7 +84,16 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
             'description' in game_data_safe and 
             'mechanics' in game_data_safe and 
             'weight' in game_data_safe):
-            game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
+            # このブロック内ではStreamlitに依存しない方法を使用
+            try:
+                from src.analysis.learning_curve import calculate_learning_curve
+                game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
+            except Exception as e:
+                if STREAMLIT_AVAILABLE:
+                    # UIから実行されている場合のみ表示
+                    st.warning(f"学習曲線の計算中にエラーが発生しました: {e}")
+                else:
+                    print(f"警告: 学習曲線の計算中にエラーが発生しました: {e}")
         
         # YAMLに変換して保存する前に全角スペースを半角スペースに変換
         # ディープコピーして全角スペースを変換
@@ -85,7 +111,7 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
         
         # YAMLに変換して保存
         with open(file_path, 'w', encoding='utf-8') as file:
-            yaml.dump(game_data_safe, file, default_flow_style=False, allow_unicode=True)
+            yaml.dump(game_data_safe, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
         
         return True, file_path, None
     except Exception as e:
@@ -106,7 +132,8 @@ def load_game_data_from_yaml(file_path):
             game_data = yaml.safe_load(file)
         return game_data
     except Exception as e:
-        st.error(f"ファイル読み込みエラー: {str(e)}")
+        # Streamlitの有無に依存しないエラー表示に変更
+        show_error(f"ファイル読み込みエラー: {str(e)}")
         return None
 
 def search_results_to_dataframe(results):
