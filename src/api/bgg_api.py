@@ -1,4 +1,3 @@
-import streamlit as st
 import requests
 import xml.etree.ElementTree as ET
 from src.api.rate_limiter import rate_limited_request, ttl_cache

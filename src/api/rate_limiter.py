@@ -1,7 +1,6 @@
 import time
 import random
 import requests
-import streamlit as st
 from functools import wraps
 from datetime import datetime, timedelta
 
