@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 毎日0時に実行するBoardgame Analyzerのデータ更新スクリプト
-- 前日のゲームデータをバックアップする
+- YAMLデータをbackupフォルダにYYMMDD形式で保存する
 - ローカルのYAMLファイルからゲームIDリストを取得する
 - BGG APIを使用して各ゲームの詳細情報を取得し直す
-- configファイルの更新があれば、バックアップフォルダ名を変更する
+- configファイルの更新があれば、変更内容をログに出力する
 """
 
 import os
@@ -15,6 +15,7 @@ import requests
 import time
 import datetime
 import logging
+import difflib
 from pathlib import Path
 import re
 
@@ -36,22 +37,26 @@ logger = logging.getLogger('daily_update')
 BASE_DIR = Path('/home/pi/boardgame_analyzer')
 GAME_DATA_DIR = BASE_DIR / 'game_data'
 CONFIG_DIR = BASE_DIR / 'config'
-CONFIG_BACKUP_DIR = BASE_DIR / 'config_backup'
+BACKUP_DIR = BASE_DIR / 'backup'
 LOGS_DIR = BASE_DIR / 'logs'
 
 def setup_directories():
     """必要なディレクトリを作成"""
     GAME_DATA_DIR.mkdir(exist_ok=True)
-    CONFIG_BACKUP_DIR.mkdir(exist_ok=True)
+    BACKUP_DIR.mkdir(exist_ok=True)
     LOGS_DIR.mkdir(exist_ok=True)
 
 def backup_game_data():
-    """前日までのgame_dataをバックアップする"""
-    today = datetime.datetime.now()
-    yesterday = today - datetime.timedelta(days=1)
-    backup_folder_name = yesterday.strftime('%y%m%d')
+    """
+    game_dataをバックアップする
     
-    backup_dir = BASE_DIR / f'backup_{backup_folder_name}'
+    Returns:
+    tuple: (成功フラグ, バックアップディレクトリのパス)
+    """
+    today = datetime.datetime.now()
+    backup_folder_name = today.strftime('%y%m%d')
+    
+    backup_dir = BACKUP_DIR / backup_folder_name
     
     # game_dataフォルダが存在するか確認
     if not GAME_DATA_DIR.exists():
@@ -69,79 +74,109 @@ def backup_game_data():
     
     logger.info(f"{file_count}個のYAMLファイルをバックアップしました: {backup_dir}")
     
-    # game_dataディレクトリをクリア
-    for file in GAME_DATA_DIR.glob('*.yaml'):
-        os.remove(file)
-    
-    logger.info("game_dataディレクトリをクリアしました")
     return True, backup_dir
 
+def get_file_content(file_path):
+    """ファイルの内容を取得する"""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    except Exception as e:
+        logger.error(f"ファイル読み込みエラー: {str(e)}")
+        return ""
+
 def check_config_updated():
-    """configファイルが更新されたかをチェック"""
-    # 初回実行時のバックアップ作成
-    if not CONFIG_BACKUP_DIR.exists():
-        os.makedirs(CONFIG_BACKUP_DIR, exist_ok=True)
-        for file in CONFIG_DIR.glob('*.yaml'):
-            shutil.copy2(file, CONFIG_BACKUP_DIR / file.name)
-        return False
+    """
+    configファイルが更新されたかをチェック
+    更新があった場合は変更内容をログに出力
+    
+    Returns:
+    tuple: (更新フラグ, 更新内容の説明)
+    """
+    updated = False
+    update_details = []
+    
+    # 前回のバックアップを探す（最新のもの）
+    previous_backups = sorted([d for d in BACKUP_DIR.glob('*') if d.is_dir()], reverse=True)
+    if not previous_backups:
+        logger.info("前回のバックアップが見つかりません。初回実行とみなします。")
+        return False, "初回実行"
+    
+    # 最新のバックアップディレクトリを取得
+    last_backup = previous_backups[0]
+    last_config_backup = last_backup / 'config'
+    
+    # 前回のバックアップにconfigフォルダがない場合
+    if not last_config_backup.exists():
+        logger.info("前回のバックアップにconfigフォルダがありません")
+        return False, "前回のconfigバックアップなし"
     
     # 各configファイルを比較
-    updated = False
     for file in CONFIG_DIR.glob('*.yaml'):
-        backup_file = CONFIG_BACKUP_DIR / file.name
+        old_file = last_config_backup / file.name
         
-        if not backup_file.exists():
-            # バックアップに無いファイルがある場合
-            shutil.copy2(file, backup_file)
+        if not old_file.exists():
+            # 新しいファイルが追加された場合
             updated = True
+            update_details.append(f"新規ファイル追加: {file.name}")
             continue
         
         # ファイル内容を比較
-        with open(file, 'r', encoding='utf-8') as f1, open(backup_file, 'r', encoding='utf-8') as f2:
-            if f1.read() != f2.read():
-                updated = True
-                # バックアップを更新
-                shutil.copy2(file, backup_file)
+        old_content = get_file_content(old_file)
+        new_content = get_file_content(file)
+        
+        if old_content != new_content:
+            updated = True
+            
+            # diffを取得して変更内容を詳細に記録
+            diff = list(difflib.unified_diff(
+                old_content.splitlines(),
+                new_content.splitlines(),
+                fromfile=str(old_file),
+                tofile=str(file),
+                lineterm=''
+            ))
+            
+            update_details.append(f"ファイル変更: {file.name}")
+            for line in diff[:20]:  # 最初の20行のdiffだけ表示（長すぎるのを防ぐ）
+                update_details.append(f"  {line}")
+            
+            if len(diff) > 20:
+                update_details.append(f"  ... その他 {len(diff) - 20} 行の変更があります")
     
-    return updated
+    # CONFIG_DIRにあるがlast_config_backupにないファイルを探す（新規追加）
+    for old_file in last_config_backup.glob('*.yaml'):
+        new_file = CONFIG_DIR / old_file.name
+        if not new_file.exists():
+            updated = True
+            update_details.append(f"ファイル削除: {old_file.name}")
+    
+    return updated, "\n".join(update_details)
 
-def rename_backup_folder_if_config_updated(backup_folder):
-    """configが更新された場合、バックアップフォルダ名を変更"""
-    if check_config_updated():
-        new_name = f"{backup_folder}_config_update"
-        os.rename(backup_folder, new_name)
-        logger.info(f"configファイルが更新されたためフォルダ名を変更: {new_name}")
-        return new_name
-    return backup_folder
+def backup_config_files(backup_dir):
+    """
+    現在のconfigファイルをバックアップする
+    
+    Parameters:
+    backup_dir (Path): バックアップディレクトリ
+    """
+    config_backup_dir = backup_dir / 'config'
+    config_backup_dir.mkdir(exist_ok=True)
+    
+    for file in CONFIG_DIR.glob('*.yaml'):
+        shutil.copy2(file, config_backup_dir)
+    
+    logger.info(f"configファイルをバックアップしました: {config_backup_dir}")
 
 def get_game_ids_from_local():
     """ローカルのYAMLファイルからゲームIDを抽出して返す"""
     game_ids = []
     
-    # backup_フォルダからYAMLファイルを探す（前日のバックアップから取得）
-    today = datetime.datetime.now()
-    yesterday = today - datetime.timedelta(days=1)
-    backup_folder_name = yesterday.strftime('%y%m%d')
-    backup_dir = BASE_DIR / f'backup_{backup_folder_name}'
-    
-    # 前日のバックアップフォルダが見つからない場合は最新のバックアップフォルダを探す
-    if not backup_dir.exists():
-        backup_dirs = list(BASE_DIR.glob('backup_*'))
-        if backup_dirs:
-            # 名前順で最新のバックアップを使用
-            backup_dirs.sort(reverse=True)
-            backup_dir = backup_dirs[0]
-            logger.info(f"昨日のバックアップが見つからないため、最新のバックアップを使用します: {backup_dir}")
-        else:
-            # バックアップが1つも見つからない場合はgame_dataフォルダ内を確認
-            backup_dir = GAME_DATA_DIR
-            logger.info(f"バックアップフォルダが見つからないため、game_dataフォルダを使用します: {backup_dir}")
-    
-    # 指定されたディレクトリ内の全YAMLファイルからゲームIDを抽出
-    yaml_files = list(backup_dir.glob('*.yaml'))
+    # game_dataフォルダからYAMLファイルを探す
+    yaml_files = list(GAME_DATA_DIR.glob('*.yaml'))
     
     if not yaml_files:
-        logger.warning(f"YAMLファイルが見つかりません: {backup_dir}")
+        logger.warning(f"YAMLファイルが見つかりません: {GAME_DATA_DIR}")
         return []
     
     for yaml_file in yaml_files:
@@ -199,11 +234,30 @@ def main():
         # 必要なディレクトリを作成
         setup_directories()
         
-        # 前日までのデータをバックアップ
-        backup_success, backup_folder = backup_game_data()
+        # データをバックアップ
+        backup_success, backup_dir = backup_game_data()
         if not backup_success:
             logger.error("バックアップ処理に失敗しました")
             return
+        
+        # configファイルが更新されたかチェック
+        config_updated, update_details = check_config_updated()
+        
+        # configファイルをバックアップ（毎回行う）
+        backup_config_files(backup_dir)
+        
+        # configの更新があった場合はログに詳細を記録
+        if config_updated:
+            logger.info("configファイルに更新がありました:")
+            logger.info(update_details)
+            
+            # バックアップフォルダにマーカーファイルを作成
+            config_update_marker = backup_dir / 'CONFIG_UPDATED.txt'
+            with open(config_update_marker, 'w', encoding='utf-8') as f:
+                f.write(f"Config files updated on {datetime.datetime.now()}\n\n")
+                f.write(update_details)
+            
+            logger.info(f"configの更新マーカーファイルを作成: {config_update_marker}")
         
         # ローカルYAMLファイルからゲームIDを取得
         game_ids = get_game_ids_from_local()
@@ -214,9 +268,6 @@ def main():
         # ゲームデータを更新
         success_count, error_count = update_game_data(game_ids)
         logger.info(f"データ更新完了 - 成功: {success_count}, 失敗: {error_count}")
-        
-        # configファイルが更新されたかチェックしてバックアップフォルダ名を変更
-        rename_backup_folder_if_config_updated(backup_folder)
         
         logger.info("日次更新処理が完了しました")
     
