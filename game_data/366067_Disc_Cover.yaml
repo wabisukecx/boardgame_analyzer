@@ -45,3 +45,28 @@ ranks:
   rank: '8780'
 - type: partygames
   rank: '482'
+learning_analysis:
+  initial_barrier: 2.0
+  strategic_depth: 2.51
+  replayability: 2.6
+  mechanics_complexity: 2.7
+  mechanics_count: 2
+  bgg_weight: 1.1111
+  bgg_rank: 8780
+  year_published: 2022
+  category_complexity: 2.3
+  rank_complexity: 1.85
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 3.165825
+  interaction_complexity: 4.191495000000001
+  rules_complexity: 2.232886666666667
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.0
+    complexity_factor: 0.95
+  mastery_time: short

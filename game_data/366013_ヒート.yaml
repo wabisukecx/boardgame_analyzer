@@ -69,3 +69,29 @@ ranks:
   rank: '42'
 - type: familygames
   rank: '7'
+learning_analysis:
+  initial_barrier: 3.03
+  strategic_depth: 3.2
+  replayability: 3.7
+  mechanics_complexity: 3.0
+  mechanics_count: 11
+  bgg_weight: 2.1922
+  bgg_rank: 42
+  year_published: 2022
+  category_complexity: 2.42
+  rank_complexity: 2.48
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 4.295555555555555
+  interaction_complexity: 3.4250000000000003
+  rules_complexity: 3.4051066666666663
+  player_types:
+  - casual
+  - experienced
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: short

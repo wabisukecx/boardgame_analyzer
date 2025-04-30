@@ -35,3 +35,28 @@ ranks:
   rank: '1174'
 - type: familygames
   rank: '2004'
+learning_analysis:
+  initial_barrier: 2.76
+  strategic_depth: 2.76
+  replayability: 2.57
+  mechanics_complexity: 3.2
+  mechanics_count: 2
+  bgg_weight: 2.7222
+  bgg_rank: 7572
+  year_published: 2014
+  category_complexity: 3.6
+  rank_complexity: 2.28
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 3.5149999999999997
+  interaction_complexity: 2.2470000000000003
+  rules_complexity: 3.1151066666666667
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: short

@@ -77,3 +77,29 @@ ranks:
   rank: '402'
 - type: partygames
   rank: '27'
+learning_analysis:
+  initial_barrier: 1.86
+  strategic_depth: 2.56
+  replayability: 3.42
+  mechanics_complexity: 2.4
+  mechanics_count: 5
+  bgg_weight: 1.1937
+  bgg_rank: 402
+  year_published: 2008
+  category_complexity: 2.09
+  rank_complexity: 2.14
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 3.2406333333333333
+  interaction_complexity: 4.145273000000001
+  rules_complexity: 2.532073333333333
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.2
+    complexity_factor: 0.95
+  mastery_time: short

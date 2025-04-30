@@ -84,3 +84,31 @@ ranks:
   rank: '1'
 - type: strategygames
   rank: '1'
+learning_analysis:
+  initial_barrier: 4.02
+  strategic_depth: 3.79
+  replayability: 4.2
+  mechanics_complexity: 3.24
+  mechanics_count: 10
+  bgg_weight: 3.8691
+  bgg_rank: 1
+  year_published: 2018
+  category_complexity: 4.62
+  rank_complexity: 3.32
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  learning_curve_type: moderate
+  decision_points: 4.66
+  interaction_complexity: 3.327700000000001
+  rules_complexity: 4.223153333333332
+  player_types:
+  - experienced
+  - hardcore
+  - system_master
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

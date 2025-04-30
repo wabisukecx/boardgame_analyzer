@@ -88,3 +88,29 @@ ranks:
   rank: '51'
 - type: familygames
   rank: '8'
+learning_analysis:
+  initial_barrier: 3.05
+  strategic_depth: 2.91
+  replayability: 3.9
+  mechanics_complexity: 3.09
+  mechanics_count: 8
+  bgg_weight: 1.8521
+  bgg_rank: 51
+  year_published: 2021
+  category_complexity: 2.75
+  rank_complexity: 2.47
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 4.120000000000001
+  interaction_complexity: 2.7980500000000004
+  rules_complexity: 3.415836666666667
+  player_types:
+  - casual
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: short

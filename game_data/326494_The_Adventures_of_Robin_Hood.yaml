@@ -56,3 +56,30 @@ ranks:
   rank: '755'
 - type: thematic
   rank: '155'
+learning_analysis:
+  initial_barrier: 2.47
+  strategic_depth: 3.0
+  replayability: 2.8
+  mechanics_complexity: 2.93
+  mechanics_count: 3
+  bgg_weight: 1.8302
+  bgg_rank: 755
+  year_published: 2021
+  category_complexity: 3.5
+  rank_complexity: 2.72
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 3.8249999999999997
+  interaction_complexity: 3.823466666666667
+  rules_complexity: 2.920706666666667
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: short

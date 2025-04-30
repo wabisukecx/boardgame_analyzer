@@ -59,3 +59,29 @@ ranks:
   rank: '2062'
 - type: thematic
   rank: '396'
+learning_analysis:
+  initial_barrier: 2.55
+  strategic_depth: 3.39
+  replayability: 2.9
+  mechanics_complexity: 2.54
+  mechanics_count: 5
+  bgg_weight: 3.3516
+  bgg_rank: 2062
+  year_published: 2022
+  category_complexity: 3.36
+  rank_complexity: 2.64
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 3.8333333333333335
+  interaction_complexity: 3.6401400000000015
+  rules_complexity: 3.489653333333333
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

@@ -65,3 +65,29 @@ ranks:
   rank: '1073'
 - type: strategygames
   rank: '574'
+learning_analysis:
+  initial_barrier: 2.78
+  strategic_depth: 3.41
+  replayability: 3.2
+  mechanics_complexity: 3.08
+  mechanics_count: 5
+  bgg_weight: 2.7287
+  bgg_rank: 1073
+  year_published: 2022
+  category_complexity: 3.83
+  rank_complexity: 2.97
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 4.433333333333334
+  interaction_complexity: 3.2142800000000014
+  rules_complexity: 3.7177400000000005
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

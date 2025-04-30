@@ -32,3 +32,28 @@ publishers:
 average_rating: '7.4'
 weight: '0'
 ranks: []
+learning_analysis:
+  initial_barrier: 2.01
+  strategic_depth: 2.44
+  replayability: 2.7
+  mechanics_complexity: 2.93
+  mechanics_count: 4
+  bgg_weight: 0.0
+  bgg_rank: null
+  year_published: 2022
+  category_complexity: 2.6
+  rank_complexity: 3.0
+  strategic_depth_description: 低め（限られた戦略オプション）
+  learning_curve_type: gentle
+  decision_points: 4.0301
+  interaction_complexity: 3.2903570000000006
+  rules_complexity: 2.590333333333333
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.2
+    complexity_factor: 0.95
+  mastery_time: short

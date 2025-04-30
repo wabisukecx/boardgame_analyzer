@@ -52,3 +52,30 @@ publishers:
 average_rating: '8.29745'
 weight: '2.9286'
 ranks: []
+learning_analysis:
+  initial_barrier: 3.43
+  strategic_depth: 4.02
+  replayability: 2.3
+  mechanics_complexity: 4.2
+  mechanics_count: 1
+  bgg_weight: 2.9286
+  bgg_rank: null
+  year_published: 2024
+  category_complexity: 4.2
+  rank_complexity: 3.0
+  strategic_depth_description: 深い（熟練プレイヤー向け）
+  learning_curve_type: gentle_then_moderate
+  decision_points: 5.0
+  interaction_complexity: 4.18
+  rules_complexity: 3.757720000000001
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - strategist
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: medium

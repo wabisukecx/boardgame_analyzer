@@ -48,3 +48,28 @@ weight: '1.25'
 ranks:
 - type: boardgame
   rank: '7098'
+learning_analysis:
+  initial_barrier: 2.18
+  strategic_depth: 2.09
+  replayability: 2.4
+  mechanics_complexity: 2.9
+  mechanics_count: 1
+  bgg_weight: 1.25
+  bgg_rank: 7098
+  year_published: 2022
+  category_complexity: 2.53
+  rank_complexity: 2.17
+  strategic_depth_description: 低め（限られた戦略オプション）
+  learning_curve_type: gentle
+  decision_points: 3.08805
+  interaction_complexity: 3.206555
+  rules_complexity: 2.2973333333333334
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.0
+    complexity_factor: 0.85
+  mastery_time: short

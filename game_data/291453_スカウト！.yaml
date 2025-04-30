@@ -69,3 +69,29 @@ ranks:
   rank: '101'
 - type: familygames
   rank: '14'
+learning_analysis:
+  initial_barrier: 2.16
+  strategic_depth: 2.55
+  replayability: 2.94
+  mechanics_complexity: 2.83
+  mechanics_count: 3
+  bgg_weight: 1.3582
+  bgg_rank: 101
+  year_published: 2019
+  category_complexity: 2.3
+  rank_complexity: 2.39
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 3.614675
+  interaction_complexity: 3.288065000000001
+  rules_complexity: 2.6816400000000002
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.2
+    complexity_factor: 0.95
+  mastery_time: short

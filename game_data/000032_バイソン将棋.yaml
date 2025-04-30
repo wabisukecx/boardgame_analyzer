@@ -51,3 +51,29 @@ ranks:
   rank: '9901'
 - type: abstracts
   rank: '444'
+learning_analysis:
+  initial_barrier: 2.12
+  strategic_depth: 2.11
+  replayability: 2.64
+  mechanics_complexity: 2.5
+  mechanics_count: 1
+  bgg_weight: 1.5517
+  bgg_rank: 9901
+  year_published: 1975
+  category_complexity: 2.86
+  rank_complexity: 2.65
+  strategic_depth_description: 低め（限られた戦略オプション）
+  learning_curve_type: gentle
+  decision_points: 2.7408499999999996
+  interaction_complexity: 2.83635
+  rules_complexity: 2.0936733333333333
+  player_types:
+  - beginner
+  - casual
+  - classic_lover
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.0
+    complexity_factor: 0.95
+  mastery_time: short
