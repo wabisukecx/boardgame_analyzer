@@ -1,25 +1,44 @@
 # BoardGame Analyzer
 
-BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析、保存するためのStreamlitアプリケーションです。新たに類似性検索機能を追加し、ゲーム間の関連性を分析できるようになりました。
+BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析、保存するためのStreamlitアプリケーションです。
 
 **デモ:** [Streamlit Community Cloud](https://boardgameanalyzer-gsmlbaspmgvf3arxttip4f.streamlit.app/)（一部文字化けがございます）
 
 ## 目次
 
-- [主な機能](#主な機能)
-- [インストール方法](#インストール方法)
-- [アプリの使い方](#アプリの使い方)
-  - [基本機能](#基本機能)
-  - [類似性検索機能](#類似性検索機能)
-- [埋め込みデータファイル (game_embeddings.pkl)](#埋め込みデータファイル-game_embeddingspkl)
-- [技術的詳細](#技術的詳細)
-  - [学習曲線分析システム](#学習曲線分析システム)
-  - [複雑さデータのカスタマイズ](#複雑さデータのカスタマイズ)
-  - [戦略的価値と相互作用の分析](#戦略的価値と相互作用の分析)
-  - [埋め込みモデルと類似性検索の技術](#埋め込みモデルと類似性検索の技術)
-- [プロジェクト構成](#プロジェクト構成)
-- [注意事項](#注意事項)
-- [謝辞](#謝辞)
+- [BoardGame Analyzer](#boardgame-analyzer)
+  - [目次](#目次)
+  - [主な機能](#主な機能)
+  - [インストール方法](#インストール方法)
+  - [アプリの使い方](#アプリの使い方)
+    - [基本機能](#基本機能)
+      - [ゲーム名で検索](#ゲーム名で検索)
+      - [ゲームIDで詳細情報を取得](#ゲームidで詳細情報を取得)
+      - [YAMLでデータを保存](#yamlでデータを保存)
+      - [ゲーム比較機能](#ゲーム比較機能)
+    - [類似性検索機能](#類似性検索機能)
+  - [自動更新とデータ同期](#自動更新とデータ同期)
+    - [日次更新スクリプト (daily\_update.py)](#日次更新スクリプト-daily_updatepy)
+    - [リモートデータ同期スクリプト (fetch\_boardgame\_data.py)](#リモートデータ同期スクリプト-fetch_boardgame_datapy)
+  - [埋め込みデータファイル (game\_embeddings.pkl)](#埋め込みデータファイル-game_embeddingspkl)
+    - [作成、入手方法](#作成入手方法)
+    - [使用方法](#使用方法)
+    - [注意点](#注意点)
+  - [技術的詳細](#技術的詳細)
+    - [学習曲線分析システム](#学習曲線分析システム)
+      - [分析に使用する要素](#分析に使用する要素)
+      - [分析結果の指標](#分析結果の指標)
+    - [複雑さデータのカスタマイズ](#複雑さデータのカスタマイズ)
+      - [編集時の注意点](#編集時の注意点)
+    - [戦略的価値と相互作用の分析](#戦略的価値と相互作用の分析)
+    - [埋め込みモデルと類似性検索の技術](#埋め込みモデルと類似性検索の技術)
+      - [埋め込みモデルの生成技術](#埋め込みモデルの生成技術)
+      - [類似度計算アルゴリズム](#類似度計算アルゴリズム)
+      - [ファイルの技術的構造](#ファイルの技術的構造)
+      - [類似性理由分析アルゴリズム](#類似性理由分析アルゴリズム)
+  - [プロジェクト構成](#プロジェクト構成)
+  - [注意事項](#注意事項)
+  - [謝辞](#謝辞)
 
 ## 主な機能
 
@@ -44,6 +63,10 @@ BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析
   - ゲーム比較機能: 複数のゲームを選択し、レーダーチャートと数値比較で分析
   - 類似性検索機能: 埋め込みデータを使用して類似ゲームを検索・分析
 
+- **データ管理と自動化**
+  - 日次データ更新: 毎日のゲームデータ自動更新とバックアップ
+  - リモートデータ取得: Raspberry Piなどのリモートサーバーからデータを同期
+
 ## インストール方法
 
 1. このリポジトリをクローンまたはダウンロードします
@@ -62,13 +85,13 @@ pip install -r requirements.txt
 または個別にインストールする場合:
 
 ```bash
-pip install streamlit pandas requests pyyaml deepdiff plotly
+pip install streamlit pandas requests pyyaml deepdiff plotly matplotlib seaborn scikit-learn tqdm python-dotenv
 ```
 
 類似性検索機能を使用する場合は、追加で以下のライブラリが必要です:
 
 ```bash
-pip install voyageai scikit-learn tqdm python-dotenv
+pip install voyageai paramiko
 ```
 
 3. アプリケーションを実行します
@@ -123,6 +146,35 @@ streamlit run app.py
    - 類似ゲーム一覧：類似度スコアと類似の理由を含むゲーム情報
    - 類似度ヒートマップ：ゲーム間の類似関係を視覚化
    - データ分析：最も類似度が高いゲームのリスト、カテゴリとメカニクスの分布分析
+
+## 自動更新とデータ同期
+Raspberry PiなどのLinuxベースのリモートサーバーを用意することで常に最新のゲームデータで解析できます。2025/04時点ではRaspberry Pi Zero 2 Wを推奨します。
+
+### 日次更新スクリプト (daily_update.py)
+
+Raspberry Piなどのリモートサーバーでこのスクリプトを定期実行することで以下の機能を提供します：
+
+- 保存済みのデータをYYMMDD形式でバックアップ
+- 既存のゲームデータを自動的に更新（BGG APIから最新情報を取得）
+- 設定ファイルの変更検出と記録
+
+設定例（crontabを使用）：
+```
+0 1 * * * cd /path/to/boardgame-analyzer && python daily_update.py >> logs/daily_update.log 2>&1
+```
+
+### リモートデータ同期スクリプト (fetch_boardgame_data.py)
+
+Raspberry Piなどのリモートサーバーで更新したBoardGame Analyzerのデータを取得するためのスクリプトです：
+
+- SSH経由でゲームデータと設定ファイルを取得
+- 接続設定のカスタマイズ（ホスト、ポート、認証方法）
+- 既存ファイルの自動クリーンアップ
+
+使用例：
+```bash
+python fetch_boardgame_data.py --host 192.168.50.192 --username pi
+```
 
 ## 埋め込みデータファイル (game_embeddings.pkl)
 
@@ -300,25 +352,46 @@ boardgame-analyzer/
 ├── app.py                         # メインアプリケーション
 ├── requirements.txt               # 必要なパッケージのリスト
 ├── generate_embedding_model.py    # 埋め込みモデル生成スクリプト
+├── daily_update.py                # 毎日のデータ更新スクリプト
+├── fetch_boardgame_data.py        # リモートデータ取得スクリプト
 ├── game_embeddings.pkl            # 埋め込みデータファイル（類似性検索用）
 ├── config/                        # 設定ファイル
 │   ├── mechanics_data.yaml        # メカニクスの複雑さデータ
 │   ├── categories_data.yaml       # カテゴリの複雑さデータ
 │   └── rank_complexity.yaml       # ランキング種別の複雑さデータ
 ├── game_data/                     # 保存されたゲームデータ
+├── backup/                        # バックアップデータ
+├── logs/                          # ログファイル
+│   └── daily_update.log           # 日次更新ログ
 ├── src/                           # ソースコード
 │   ├── api/                       # API関連
+│   │   ├── bgg_api.py             # BoardGameGeek API
+│   │   └── rate_limiter.py        # レート制限とキャッシュ
 │   ├── data/                      # データ処理
+│   │   └── data_handler.py        # データ処理
 │   └── analysis/                  # 分析関連
+│       ├── similarity.py          # 類似性検索
+│       ├── game_analyzer.py       # ゲーム分析
+│       ├── learning_curve.py      # 学習曲線
+│       ├── mechanic_complexity.py # メカニクス複雑さ
+│       ├── category_complexity.py # カテゴリ複雑さ
+│       ├── rank_complexity.py     # ランキング複雑さ
+│       └── strategic_depth.py     # 戦略深度
 └── ui/                            # UI関連
     ├── ui_components.py           # UIコンポーネント関数
     └── pages/                     # ページコンポーネント
+        ├── search_page.py         # 検索ページ
+        ├── details_page.py        # 詳細ページ
+        ├── save_page.py           # 保存ページ
+        └── compare_page.py        # 比較ページ
 ```
 
 ## 注意事項
 
 - ゲーム名に特殊文字（:;など）が含まれていると、ファイル保存に失敗する場合があります
 - このツールは学習曲線分析アルゴリズムに主観的要素を含み、絶対的な評価ではありません
+- エンベディングの生成にはVoyage AIのAPIキーが必要で、使用量に応じた課金が発生します
+- 日次更新スクリプトは、定期的な実行のためにcrontabなどのスケジューラーを設定する必要があります
 
 ## 謝辞
 
