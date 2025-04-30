@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 リモートのRaspberry PiからBoardgame Analyzerのデータを取得するスクリプト
+PC側にあってRaspberry Piにないファイルを同期する機能も提供
 """
 
 import os
@@ -19,8 +20,19 @@ def parse_arguments():
     parser.add_argument('--key-file', type=str, default=None, help='秘密鍵ファイルのパス')
     parser.add_argument('--password', type=str, default=None, help='パスワード（セキュリティ上、非推奨）')
     parser.add_argument('--config', action='store_true', default=True, help='設定ファイルも取得（デフォルトで有効）')
+    parser.add_argument('--no-upload', action='store_true', default=False, help='アップロード処理をスキップ')
     
     return parser.parse_args()
+
+def get_local_yaml_files(directory):
+    """指定されたディレクトリ内のすべてのYAMLファイル名を取得"""
+    if not os.path.exists(directory):
+        return []
+    
+    yaml_files = glob.glob(os.path.join(directory, "*.yaml"))
+    yaml_files.extend(glob.glob(os.path.join(directory, "*.yml")))
+    
+    return [os.path.basename(f) for f in yaml_files]
 
 def clean_local_yaml_files(directory):
     """指定されたディレクトリ内のすべてのYAMLファイルを削除"""
@@ -52,6 +64,69 @@ def connect_ssh(host, port, username, key_file=None, password=None):
         print(f"SSH接続エラー: {e}")
         return None
 
+def get_remote_yaml_files(ssh, remote_path):
+    """リモートディレクトリ内のYAMLファイル名リストを取得"""
+    try:
+        # ディレクトリの存在確認
+        stdin, stdout, stderr = ssh.exec_command(f'[ -d "{remote_path}" ] && echo "exists" || echo "not exists"')
+        if stdout.read().decode().strip() != "exists":
+            print(f"リモートディレクトリが見つかりません: {remote_path}")
+            return []
+        
+        # YAMLファイルを検索してファイル名だけを取得
+        stdin, stdout, stderr = ssh.exec_command(
+            f'find {remote_path} -name "*.yaml" -o -name "*.yml" | xargs -n 1 basename 2>/dev/null || echo ""')
+        
+        files = stdout.read().decode().strip().split('\n')
+        # 空文字列があれば除去
+        files = [f for f in files if f]
+        
+        return files
+    
+    except Exception as e:
+        print(f"リモートファイル一覧の取得エラー: {e}")
+        return []
+
+def upload_files(ssh, local_path, remote_path, file_names):
+    """指定されたファイルをアップロード"""
+    if not file_names:
+        print(f"アップロードするファイルはありません: {local_path}")
+        return True
+    
+    print(f"{len(file_names)}個のファイルをアップロードします...")
+    
+    # アップロード処理
+    sftp = ssh.open_sftp()
+    try:
+        # リモートディレクトリが存在するか確認
+        try:
+            sftp.stat(remote_path)
+        except FileNotFoundError:
+            # リモートディレクトリが存在しない場合は作成
+            stdin, stdout, stderr = ssh.exec_command(f'mkdir -p {remote_path}')
+            stderr_content = stderr.read().decode().strip()
+            if stderr_content:
+                print(f"リモートディレクトリ作成エラー: {stderr_content}")
+                return False
+        
+        # 各ファイルをアップロード
+        for i, filename in enumerate(file_names):
+            local_file = os.path.join(local_path, filename)
+            remote_file = os.path.join(remote_path, filename)
+            
+            print(f"アップロード中 ({i+1}/{len(file_names)}): {filename}")
+            sftp.put(local_file, remote_file)
+        
+        print(f"{len(file_names)}個のファイルをアップロードしました: {remote_path}")
+        return True
+        
+    except Exception as e:
+        print(f"ファイルアップロードエラー: {e}")
+        return False
+        
+    finally:
+        sftp.close()
+
 def download_directory(ssh, remote_path, local_path):
     """ディレクトリ全体をダウンロード"""
     sftp = ssh.open_sftp()
@@ -71,22 +146,30 @@ def download_directory(ssh, remote_path, local_path):
         stdin, stdout, stderr = ssh.exec_command(f'find {remote_path} -name "*.yaml" -type f')
         files = stdout.read().decode().strip().split('\n')
         
-        if not files or files[0] == '':
+        # .ymlファイルも検索
+        stdin, stdout, stderr = ssh.exec_command(f'find {remote_path} -name "*.yml" -type f')
+        yml_files = stdout.read().decode().strip().split('\n')
+        
+        all_files = files + yml_files
+        # 空文字列があれば除去
+        all_files = [f for f in all_files if f]
+        
+        if not all_files:
             print(f"ディレクトリ内にYAMLファイルが見つかりませんでした: {remote_path}")
             return False
         
         # 各ファイルをダウンロード
-        for i, remote_file in enumerate(files):
+        for i, remote_file in enumerate(all_files):
             if not remote_file:  # 空行をスキップ
                 continue
                 
             filename = os.path.basename(remote_file)
             local_file = os.path.join(local_path, filename)
             
-            print(f"ダウンロード中 ({i+1}/{len(files)}): {filename}")
+            print(f"ダウンロード中 ({i+1}/{len(all_files)}): {filename}")
             sftp.get(remote_file, local_file)
         
-        print(f"{len(files)}個のファイルをダウンロードしました: {local_path}")
+        print(f"{len(all_files)}個のファイルをダウンロードしました: {local_path}")
         return True
     
     except Exception as e:
@@ -106,12 +189,6 @@ def main():
     # ローカルの保存先ディレクトリを設定
     game_data_dir = script_dir / "game_data"
     config_dir = script_dir / "config"
-    
-    # ローカルディレクトリのYAMLファイルを削除
-    print("ローカルディレクトリのYAMLファイルを削除しています...")
-    clean_local_yaml_files(game_data_dir)
-    if args.config:
-        clean_local_yaml_files(config_dir)
     
     # SSHの認証情報が指定されているか確認
     if not args.password and not args.key_file:
@@ -136,18 +213,51 @@ def main():
         stdin, stdout, stderr = ssh.exec_command('echo $HOME')
         home_dir = stdout.read().decode().strip()
         
-        # 現在のゲームデータをダウンロード
+        # リモートのパスを設定
         remote_game_data_path = f"{home_dir}/boardgame_analyzer/game_data"
+        remote_config_path = f"{home_dir}/boardgame_analyzer/config"
+        
+        # アップロード処理（no-uploadフラグがセットされていない場合）
+        if not args.no_upload:
+            print("\nPC側にあってラズパイ側にないファイルをアップロードします...")
+            
+            # ローカルとリモートのファイル一覧を取得
+            local_game_files = get_local_yaml_files(game_data_dir)
+            remote_game_files = get_remote_yaml_files(ssh, remote_game_data_path)
+            
+            # リモートに存在しないファイルを特定
+            missing_game_files = [f for f in local_game_files if f not in remote_game_files]
+            
+            # ゲームデータファイルのアップロード
+            upload_files(ssh, game_data_dir, remote_game_data_path, missing_game_files)
+            
+            # 設定ファイルの処理
+            if args.config:
+                local_config_files = get_local_yaml_files(config_dir)
+                remote_config_files = get_remote_yaml_files(ssh, remote_config_path)
+                
+                # リモートに存在しないファイルを特定
+                missing_config_files = [f for f in local_config_files if f not in remote_config_files]
+                
+                # 設定ファイルのアップロード
+                upload_files(ssh, config_dir, remote_config_path, missing_config_files)
+        
+        # ローカルディレクトリのYAMLファイルを削除
+        print("\nローカルディレクトリのYAMLファイルを削除しています...")
+        clean_local_yaml_files(game_data_dir)
+        if args.config:
+            clean_local_yaml_files(config_dir)
+        
+        # 現在のゲームデータをダウンロード
         print(f"\nゲームデータをダウンロードしています... ({remote_game_data_path})")
         download_directory(ssh, remote_game_data_path, game_data_dir)
         
         # 設定ファイルも取得する場合
         if args.config:
-            remote_config_path = f"{home_dir}/boardgame_analyzer/config"
             print(f"\n設定ファイルをダウンロードしています... ({remote_config_path})")
             download_directory(ssh, remote_config_path, config_dir)
         
-        print("\nデータ取得が完了しました")
+        print("\nデータ同期が完了しました")
         print(f"ゲームデータの保存先: {os.path.abspath(game_data_dir)}")
         if args.config:
             print(f"設定ファイルの保存先: {os.path.abspath(config_dir)}")

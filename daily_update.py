@@ -414,17 +414,30 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
     try:
         # YAMLに変換して保存する前にゲーム名に特殊文字がある場合の対応
         game_data_safe = game_data.copy()
-        
+
         # トップレベルのIDを削除
         if 'id' in game_data_safe:
             del game_data_safe['id']
-        
+
         # ネストされた要素からIDを削除
         for category in ['mechanics', 'categories', 'designers', 'publishers', 'ranks']:
             if (category in game_data_safe and isinstance(game_data_safe[category], list)):
                 for item in game_data_safe[category]:
                     if 'id' in item:
                         del item['id']
+
+        # 学習曲線分析の追加（Streamlitの依存なしで実装）
+        if ('learning_analysis' not in game_data_safe and 
+            'description' in game_data_safe and 
+            'mechanics' in game_data_safe and 
+            'weight' in game_data_safe):
+            try:
+                # 独立したモジュールを使用して学習曲線分析を追加
+                from learning_curve_for_daily_update import calculate_learning_curve
+                game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
+                logger.info(f"ゲームID {game_id} の学習曲線分析を追加しました")
+            except Exception as e:
+                logger.warning(f"学習曲線の計算中にエラーが発生しました: {str(e)}")
         
         # YAMLに変換して保存する前に全角スペースを半角スペースに変換
         def replace_fullwidth_spaces(obj):
@@ -443,7 +456,6 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
         with open(file_path, 'w', encoding='utf-8') as file:
             yaml.dump(game_data_safe, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
         
-        logger.info(f"ゲームデータを保存しました: {file_path}")
         return True, file_path, None
     except Exception as e:
         logger.error(f"ファイル保存エラー: {str(e)}")
