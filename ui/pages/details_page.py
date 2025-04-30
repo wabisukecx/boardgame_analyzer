@@ -157,7 +157,7 @@ def details_page():
                 
                 # BGGへのリンク
                 st.markdown(
-                    f"[BoardGameGeekで詳細を見る](https://boardgamegeek.com/boardgame/{game_id})"
+                    f"[BoardGameGeekで詳細を見る](https://boardgamegeek.com/boardgame/{game_id.lstrip('0')})"
                 )
                 
                 # 詳細情報をセッションに保存
