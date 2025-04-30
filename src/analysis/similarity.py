@@ -3,6 +3,7 @@ src/analysis/similarity.py - ボードゲームの類似性検索機能を提供
 """
 
 import numpy as np
+import streamlit as st
 import pickle
 import matplotlib.pyplot as plt
 import matplotlib
