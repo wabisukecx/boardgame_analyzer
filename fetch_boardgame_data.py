@@ -5,6 +5,7 @@ PC側にあってRaspberry Piにないファイルを同期する機能も提供
 """
 
 import os
+import posixpath
 import sys
 import argparse
 import paramiko
@@ -73,19 +74,96 @@ def get_remote_yaml_files(ssh, remote_path):
             print(f"リモートディレクトリが見つかりません: {remote_path}")
             return []
         
-        # YAMLファイルを検索してファイル名だけを取得
+        # findコマンドでファイル名を取得
         stdin, stdout, stderr = ssh.exec_command(
-            f'find {remote_path} -name "*.yaml" -o -name "*.yml" | xargs -n 1 basename 2>/dev/null || echo ""')
+            f'find {remote_path} -type f \\( -name "*.yaml" -o -name "*.yml" \\) -printf "%f\\n" 2>/dev/null')
         
         files = stdout.read().decode().strip().split('\n')
         # 空文字列があれば除去
         files = [f for f in files if f]
         
+        # デバッグ出力: 見つかったファイル数と一部のファイル名
+        print(f"リモート側で{len(files)}個のYAMLファイルを検出しました")
         return files
     
     except Exception as e:
         print(f"リモートファイル一覧の取得エラー: {e}")
         return []
+
+def upload_files(ssh, local_path, remote_path, file_names):
+    """指定されたファイルをアップロード（デバッグ強化版）"""
+    if not file_names:
+        print(f"アップロードするファイルはありません: {local_path}")
+        return True
+    
+    print(f"{len(file_names)}個のファイルをアップロードします: {', '.join(file_names[:5])}...")
+    if len(file_names) > 5:
+        print(f"...および他{len(file_names)-5}個のファイル")
+    
+    # アップロード処理
+    sftp = ssh.open_sftp()
+    upload_success = 0
+    upload_fail = 0
+    
+    try:
+        # リモートディレクトリが存在するか確認（デバッグ出力追加）
+        try:
+            sftp.stat(remote_path)
+            print(f"リモートディレクトリが存在します: {remote_path}")
+        except FileNotFoundError:
+            # リモートディレクトリが存在しない場合は作成
+            print(f"リモートディレクトリを作成します: {remote_path}")
+            stdin, stdout, stderr = ssh.exec_command(f'mkdir -p {remote_path}')
+            stderr_content = stderr.read().decode().strip()
+            if stderr_content:
+                print(f"リモートディレクトリ作成エラー: {stderr_content}")
+                return False
+            else:
+                print(f"リモートディレクトリを作成しました: {remote_path}")
+        
+        # リモートディレクトリの内容を確認（デバッグ）
+        stdin, stdout, stderr = ssh.exec_command(f'ls -la {remote_path}')
+        print(f"リモートディレクトリの内容: \n{stdout.read().decode()}")
+        
+        # 各ファイルをアップロード
+        for i, filename in enumerate(file_names):
+            local_file = os.path.join(local_path, filename)
+            remote_file = posixpath.join(remote_path, filename)
+            
+            try:
+                print(f"アップロード中 ({i+1}/{len(file_names)}): {filename}")
+                print(f"  ローカル: {local_file}")
+                print(f"  リモート: {remote_file}")
+                
+                sftp.put(local_file, remote_file)
+                
+                # アップロードの成功を確認（ファイルの存在チェック）
+                try:
+                    sftp.stat(remote_file)
+                    print(f"  ✓ アップロード成功: {filename}")
+                    upload_success += 1
+                except FileNotFoundError:
+                    print(f"  ✗ アップロード後のファイル確認失敗: {remote_file}")
+                    upload_fail += 1
+                    
+            except Exception as e:
+                print(f"  ✗ ファイル {filename} のアップロード中にエラー: {e}")
+                upload_fail += 1
+        
+        print(f"アップロード完了: 成功={upload_success}, 失敗={upload_fail}")
+        
+        # アップロード後のリモートディレクトリの内容を確認（デバッグ）
+        stdin, stdout, stderr = ssh.exec_command(f'ls -la {remote_path}')
+        print(f"アップロード後のリモートディレクトリの内容: \n{stdout.read().decode()}")
+        
+        return upload_fail == 0
+        
+    except Exception as e:
+        print(f"ファイルアップロード処理全体でエラー: {e}")
+        return False
+        
+    finally:
+        sftp.close()
 
 def upload_files(ssh, local_path, remote_path, file_names):
     """指定されたファイルをアップロード"""
@@ -112,7 +190,7 @@ def upload_files(ssh, local_path, remote_path, file_names):
         # 各ファイルをアップロード
         for i, filename in enumerate(file_names):
             local_file = os.path.join(local_path, filename)
-            remote_file = os.path.join(remote_path, filename)
+            remote_file = posixpath.join(remote_path, filename)
             
             print(f"アップロード中 ({i+1}/{len(file_names)}): {filename}")
             sftp.put(local_file, remote_file)
