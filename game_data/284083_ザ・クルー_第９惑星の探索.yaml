@@ -1,3 +1,5 @@
+type: boardgame
+name: 'The Crew: The Quest for Planet Nine'
 alternate_names:
 - The Crew
 - 'The Crew: Alla Scoperta del Pianeta Nove'
@@ -20,14 +22,16 @@ alternate_names:
 - ザ・クルー 第９惑星の探索
 - 星際探險隊
 - '스페이스 크루: 9번째 행성을 찾아서'
-average_rating: '7.77919'
-categories:
-- name: Card Game
-- name: Science Fiction
-- name: Space Exploration
+japanese_name: ザ・クルー 第９惑星の探索
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__thumb/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '20'
+publisher_min_age: '10'
 community_best_players: '4'
-community_min_age: '10'
 community_recommended_players: 3, 5
+community_min_age: '10'
 description: 'In the co-operative trick-taking game The Crew: The Quest for Planet
   Nine, the players set out as astronauts on an uncertain space adventure. What are
   the rumors regarding the unknown planet about? The eventful journey through space
@@ -40,47 +44,18 @@ description: 'In the co-operative trick-taking game The Crew: The Quest for Plan
   only if every single player is successful in fulfilling their tasks.&#10;&#10;The
   game comes with 50 missions, with three additional missions published in spielbox
   2/2020.&#10;&#10;'
-designers:
-- name: Thomas Sing
-japanese_name: ザ・クルー 第９惑星の探索
-learning_analysis:
-  bgg_rank: 82
-  bgg_weight: 1.9533
-  category_complexity: 3.48
-  decision_points: 3.8433333333333333
-  initial_barrier: 2.56
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.12
-  mechanics_count: 5
-  player_types:
-  - beginner
-  - casual
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.41
-  replayability: 3.96
-  rules_complexity: 3.4653266666666664
-  strategic_depth: 2.89
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2019
 mechanics:
 - name: Communication Limits
 - name: Cooperative Game
 - name: Hand Management
 - name: Scenario / Mission / Campaign Game
 - name: Trick-taking
-name: 'The Crew: The Quest for Planet Nine'
-playing_time: '20'
-publisher_max_players: '5'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Card Game
+- name: Science Fiction
+- name: Space Exploration
+designers:
+- name: Thomas Sing
 publishers:
 - name: KOSMOS
 - name: 999 Games
@@ -103,12 +78,10 @@ publishers:
 - name: Piatnik
 - name: Swan Panasia Co., Ltd.
 - name: Zvezda
-ranks:
-- rank: '82'
-  type: boardgame
-- rank: '13'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__thumb/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg
-type: boardgame
+average_rating: '7.77859'
 weight: '1.9533'
-year_published: '2019'
+ranks:
+- type: boardgame
+  rank: '82'
+- type: familygames
+  rank: '13'

@@ -1,3 +1,5 @@
+type: boardgame
+name: Gloomhaven
 alternate_names:
 - Gloomhaven, aventures à Havrenuit
 - 'Gloomhaven: Мрачная Гавань'
@@ -5,16 +7,16 @@ alternate_names:
 - グルームヘイヴン
 - 幽港迷城
 - 글룸헤이븐
-average_rating: '8.56569'
-categories:
-- name: Adventure
-- name: Exploration
-- name: Fantasy
-- name: Fighting
-- name: Miniatures
+japanese_name: グルームヘイヴン
+year_published: '2017'
+thumbnail_url: https://cf.geekdo-images.com/sZYp_3BTDGjh2unaZfZmuA__thumb/img/veqFeP4d_3zNhFc3GNBkV95rBEQ=/fit-in/200x150/filters:strip_icc()/pic2437871.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '14'
 community_best_players: '3'
-community_min_age: '14'
 community_recommended_players: 1, 2, 4
+community_min_age: '14'
 description: Gloomhaven  is a game of Euro-inspired tactical combat in a persistent
   world of shifting motives. Players will take on the roles of wandering adventurers
   with their own special sets of skills and their own reasons for traveling to this
@@ -35,39 +37,6 @@ description: Gloomhaven  is a game of Euro-inspired tactical combat in a persist
   must be careful, though, because over time they will permanently lose cards from
   their hands. If they take too long to clear a dungeon, they may end up exhausted
   and be forced to retreat.&#10;&#10;
-designers:
-- name: Isaac Childres
-japanese_name: グルームヘイヴン
-learning_analysis:
-  bgg_rank: 4
-  bgg_weight: 3.915
-  category_complexity: 4.01
-  decision_points: 4.505454545454548
-  initial_barrier: 3.95
-  interaction_complexity: 3.7225
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.27
-  mechanics_count: 24
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - strategist
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.29
-  replayability: 4.63
-  rules_complexity: 4.260083333333334
-  strategic_depth: 3.86
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2017
 mechanics:
 - name: Action Queue
 - name: Action Retrieval
@@ -93,11 +62,14 @@ mechanics:
 - name: Storytelling
 - name: Tags
 - name: Variable Player Powers
-name: Gloomhaven
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Adventure
+- name: Exploration
+- name: Fantasy
+- name: Fighting
+- name: Miniatures
+designers:
+- name: Isaac Childres
 publishers:
 - name: Cephalofair Games
 - name: Albi
@@ -110,14 +82,12 @@ publishers:
 - name: Hobby World
 - name: Korea Boardgames
 - name: MYBG Co., Ltd.
-ranks:
-- rank: '4'
-  type: boardgame
-- rank: '2'
-  type: thematic
-- rank: '4'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/sZYp_3BTDGjh2unaZfZmuA__thumb/img/veqFeP4d_3zNhFc3GNBkV95rBEQ=/fit-in/200x150/filters:strip_icc()/pic2437871.jpg
-type: boardgame
+average_rating: '8.5654'
 weight: '3.915'
-year_published: '2017'
+ranks:
+- type: boardgame
+  rank: '4'
+- type: thematic
+  rank: '2'
+- type: strategygames
+  rank: '4'

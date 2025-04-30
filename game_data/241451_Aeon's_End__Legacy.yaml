@@ -1,13 +1,16 @@
+type: boardgame
+name: 'Aeon''s End: Legacy'
 alternate_names:
 - 에이언즈 엔드 레거시
-average_rating: '8.05573'
-categories:
-- name: Card Game
-- name: Fantasy
-- name: Science Fiction
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/quoCefZvHWeaf31_8HvFSA__thumb/img/FBXSHWkooee1d4biQAbQwSiIu78=/fit-in/200x150/filters:strip_icc()/pic3979852.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '90'
+publisher_min_age: '14'
 community_best_players: '2'
-community_min_age: '10'
 community_recommended_players: 1, 3, 4
+community_min_age: '10'
 description: '&ldquo;You are not breach mages yet,&rdquo; Brama lectures as she paces
   down the line of students, her frail form belying her immense power. &ldquo;Breach
   mages have protected us since the beginning &mdash; since the burning of the world
@@ -25,37 +28,6 @@ description: '&ldquo;You are not breach mages yet,&rdquo; Brama lectures as she 
   When you die, it will be in defense of our city. Once you understand this universal
   truth...only then will you be ready to become a breach mage.&rdquo;&#10;&#10;Aeon''s
   End is not required to play Aeon''s End: Legacy.&#10;&#10;'
-designers:
-- name: Jenny Iglesias
-- name: Nick Little (I)
-- name: Kevin Riley
-learning_analysis:
-  bgg_rank: 241
-  bgg_weight: 2.8351
-  category_complexity: 3.23
-  decision_points: 4.320000000000001
-  initial_barrier: 3.67
-  interaction_complexity: 3.1100000000000003
-  learning_curve_type: moderate_then_shallow
-  mastery_time: medium
-  mechanics_complexity: 3.47
-  mechanics_count: 9
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.1
-  replayability: 4.4
-  rules_complexity: 4.220353333333334
-  strategic_depth: 3.49
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2019
 mechanics:
 - name: Cooperative Game
 - name: Deck, Bag, and Pool Building
@@ -66,11 +38,14 @@ mechanics:
 - name: Solo / Solitaire Game
 - name: Variable Phase Order
 - name: Variable Player Powers
-name: 'Aeon''s End: Legacy'
-playing_time: '90'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Card Game
+- name: Fantasy
+- name: Science Fiction
+designers:
+- name: Jenny Iglesias
+- name: Nick Little (I)
+- name: Kevin Riley
 publishers:
 - name: Indie Boards & Cards
 - name: Action Phase Games
@@ -80,12 +55,10 @@ publishers:
 - name: Matagot
 - name: Portal Games
 - name: SD Games
-ranks:
-- rank: '241'
-  type: boardgame
-- rank: '140'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/quoCefZvHWeaf31_8HvFSA__thumb/img/FBXSHWkooee1d4biQAbQwSiIu78=/fit-in/200x150/filters:strip_icc()/pic3979852.jpg
-type: boardgame
+average_rating: '8.0569'
 weight: '2.8351'
-year_published: '2019'
+ranks:
+- type: boardgame
+  rank: '241'
+- type: strategygames
+  rank: '140'

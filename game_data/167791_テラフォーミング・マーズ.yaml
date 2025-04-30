@@ -1,3 +1,5 @@
+type: boardgame
+name: Terraforming Mars
 alternate_names:
 - A Mars terraformálása
 - 'Mars: Teraformace'
@@ -14,17 +16,16 @@ alternate_names:
 - 殖民火星
 - 重塑火星
 - 테라포밍 마스
-average_rating: '8.3501'
-categories:
-- name: Economic
-- name: Environmental
-- name: Industry / Manufacturing
-- name: Science Fiction
-- name: Space Exploration
-- name: Territory Building
+japanese_name: テラフォーミング・マーズ
+year_published: '2016'
+thumbnail_url: https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__thumb/img/BTxqxgYay5tHJfVoJ2NF5g43_gA=/fit-in/200x150/filters:strip_icc()/pic3536616.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: '3'
-community_min_age: '12'
 community_recommended_players: 1, 2, 4
+community_min_age: '12'
 description: 'In the 2400s, mankind begins to terraform the planet Mars. Giant corporations,
   sponsored by the World Government on Earth, initiate huge projects to raise the
   temperature, the oxygen level, and the ocean coverage until the environment is habitable.
@@ -56,38 +57,6 @@ description: 'In the 2400s, mankind begins to terraform the planet Mars. Giant c
   three global parameters (temperature, oxygen, ocean) have all reached their required
   levels, the terraforming is complete, and the game ends after that generation. Combine
   your Terraform Rating and other VPs to determine the winning corporation!&#10;&#10;'
-designers:
-- name: Jacob Fryxelius
-japanese_name: テラフォーミング・マーズ
-learning_analysis:
-  bgg_rank: 7
-  bgg_weight: 3.2664
-  category_complexity: 4.67
-  decision_points: 4.525714285714285
-  initial_barrier: 3.7
-  interaction_complexity: 3.3416666666666663
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 2.96
-  mechanics_count: 16
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.32
-  replayability: 4.62
-  rules_complexity: 3.713905
-  strategic_depth: 3.6
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2016
 mechanics:
 - name: Closed Drafting
 - name: Contracts
@@ -105,11 +74,16 @@ mechanics:
 - name: Variable Player Powers
 - name: Variable Set-up
 - name: Victory Points as a Resource
-name: Terraforming Mars
-playing_time: '120'
-publisher_max_players: '5'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Civilization
+- name: Economic
+- name: Environmental
+- name: Industry / Manufacturing
+- name: Science Fiction
+- name: Space Exploration
+- name: Territory Building
+designers:
+- name: Jacob Fryxelius
 publishers:
 - name: FryxGames
 - name: Arclight Games
@@ -137,12 +111,10 @@ publishers:
 - name: Stronghold Games
 - name: SuperHeated Neurons
 - name: Surfin' Meeple China
-ranks:
-- rank: '7'
-  type: boardgame
-- rank: '8'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__thumb/img/BTxqxgYay5tHJfVoJ2NF5g43_gA=/fit-in/200x150/filters:strip_icc()/pic3536616.jpg
-type: boardgame
+average_rating: '8.35008'
 weight: '3.2664'
-year_published: '2016'
+ranks:
+- type: boardgame
+  rank: '7'
+- type: strategygames
+  rank: '8'

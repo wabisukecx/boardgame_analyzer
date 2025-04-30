@@ -1,3 +1,5 @@
+type: boardgame
+name: 'Clank! In! Space!: A Deck-Building Adventure'
 alternate_names:
 - 'Břink! Ve vesmíru!: Velká galaktická loupež'
 - 'Brzdęk! W! Kosmosie!: Raban w próżni'
@@ -7,12 +9,16 @@ alternate_names:
 - 'Кланк! В! Космосе!: Приключение на звездолёте'
 - クランク！イン・スペース
 - 太空回响
-average_rating: '7.77167'
-categories:
-- name: Science Fiction
+japanese_name: クランク！イン・スペース
+year_published: '2017'
+thumbnail_url: https://cf.geekdo-images.com/haDQw7X8Z0VOItfow9eDtg__thumb/img/mn9ypbuCR2pwOSvor46QRXgVImM=/fit-in/200x150/filters:strip_icc()/pic3720843.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '90'
+publisher_min_age: '12'
 community_best_players: '3'
-community_min_age: '10'
 community_recommended_players: 2, 4
+community_min_age: '10'
 description: 'The evil Lord Eradikus has all but conquered the galaxy and is now on
   a victory lap across the sector in his flagship, Eradikus Prime. He may rule with
   an iron grip, but his most prized artifacts are about to slip through his cyborg
@@ -27,36 +33,6 @@ description: 'The evil Lord Eradikus has all but conquered the galaxy and is now
   throughout the course of the game, with the cards allowing them to move through
   the spaceship, attack things, acquire new cards, and &mdash; oh yeah &mdash; make
   noise to attract Lord Eradikus and potentially seal their own doom.&#10;&#10;'
-designers:
-- name: Paul Dennen
-japanese_name: クランク！イン・スペース
-learning_analysis:
-  bgg_rank: 151
-  bgg_weight: 2.5806
-  category_complexity: 3.4
-  decision_points: 3.7359999999999984
-  initial_barrier: 3.15
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.74
-  mechanics_count: 7
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.85
-  replayability: 3.85
-  rules_complexity: 3.3846914285714282
-  strategic_depth: 3.1
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2017
 mechanics:
 - name: Deck, Bag, and Pool Building
 - name: Delayed Purchase
@@ -65,11 +41,10 @@ mechanics:
 - name: Player Elimination
 - name: Point to Point Movement
 - name: Push Your Luck
-name: 'Clank! In! Space!: A Deck-Building Adventure'
-playing_time: '90'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '2'
+categories:
+- name: Science Fiction
+designers:
+- name: Paul Dennen
 publishers:
 - name: Dire Wolf
 - name: Renegade Game Studios
@@ -80,14 +55,12 @@ publishers:
 - name: REXhry
 - name: Schwerkraft-Verlag
 - name: Tabletop KZ
-ranks:
-- rank: '151'
-  type: boardgame
-- rank: '122'
-  type: strategygames
-- rank: '20'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/haDQw7X8Z0VOItfow9eDtg__thumb/img/mn9ypbuCR2pwOSvor46QRXgVImM=/fit-in/200x150/filters:strip_icc()/pic3720843.jpg
-type: boardgame
+average_rating: '7.77144'
 weight: '2.5806'
-year_published: '2017'
+ranks:
+- type: boardgame
+  rank: '151'
+- type: strategygames
+  rank: '122'
+- type: familygames
+  rank: '20'

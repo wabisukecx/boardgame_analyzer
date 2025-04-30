@@ -1,3 +1,5 @@
+type: boardgame
+name: Faraway
 alternate_names:
 - 'Faraway: Πέρα Μακριά…'
 - Hen daleko
@@ -8,13 +10,16 @@ alternate_names:
 - ファラウェイ
 - 遙遠之地
 - 파러웨이
-average_rating: '7.58164'
-categories:
-- name: Card Game
-- name: Fantasy
+japanese_name: ファラウェイ
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/u1cwi9BWSKsPxSkVO0BzbA__thumb/img/5G45GN8CE7pq38fJMMocmPtV4_U=/fit-in/200x150/filters:strip_icc()/pic7570101.png
+publisher_min_players: '2'
+publisher_max_players: '6'
+playing_time: '30'
+publisher_min_age: '10'
 community_best_players: 2, 3
-community_min_age: '10'
 community_recommended_players: 4, 5
+community_min_age: '10'
 description: Welcome to Alula, a mysterious continent with ever-changing geography,
   shaped after the rhythm of the seasons. Beyond the Sea of Mists lies the mysterious
   continent of Alula. Roam across the land in search of its secrets, meet its inhabitants,
@@ -31,35 +36,6 @@ description: Welcome to Alula, a mysterious continent with ever-changing geograp
   &ndash; being last to pick a card leaves you with fewer options and often less profitable
   choices for the next turns.&#10;&#10;&mdash;description from the publisher&#10;&#10;Related
   Microbadges&#10;&#10;&#10;&#10;&#10;&#10;
-designers:
-- name: Johannes Goupy
-- name: Corentin Lebrat
-japanese_name: ファラウェイ
-learning_analysis:
-  bgg_rank: 293
-  bgg_weight: 1.8847
-  category_complexity: 2.84
-  decision_points: 4.128571428571429
-  initial_barrier: 3.01
-  interaction_complexity: 3.13
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.01
-  mechanics_count: 9
-  player_types:
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.35
-  replayability: 3.3
-  rules_complexity: 3.353606666666666
-  strategic_depth: 2.93
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2023
 mechanics:
 - name: Constrained Bidding
 - name: End Game Bonuses
@@ -70,11 +46,12 @@ mechanics:
 - name: Simultaneous Action Selection
 - name: Tags
 - name: 'Turn Order: Auction'
-name: Faraway
-playing_time: '30'
-publisher_max_players: '6'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Card Game
+- name: Fantasy
+designers:
+- name: Johannes Goupy
+- name: Corentin Lebrat
 publishers:
 - name: Catch Up Games
 - name: BoardM Factory
@@ -95,12 +72,10 @@ publishers:
 - name: Salta Pal Lao
 - name: White Goblin Games
 - name: WoodCat
-ranks:
-- rank: '293'
-  type: boardgame
-- rank: '58'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/u1cwi9BWSKsPxSkVO0BzbA__thumb/img/5G45GN8CE7pq38fJMMocmPtV4_U=/fit-in/200x150/filters:strip_icc()/pic7570101.png
-type: boardgame
+average_rating: '7.57991'
 weight: '1.8847'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '294'
+- type: familygames
+  rank: '58'

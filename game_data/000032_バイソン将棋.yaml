@@ -1,3 +1,5 @@
+type: boardgame
+name: Buffalo Chess
 alternate_names:
 - Bison
 - Buffalo
@@ -7,11 +9,13 @@ alternate_names:
 - Trespass
 - バイソン将棋
 - 버펄로 체스
-average_rating: '6.06745'
-categories:
-- name: Abstract Strategy
-- name: American West
-- name: Children's Game
+japanese_name: バイソン将棋
+year_published: '1975'
+thumbnail_url: https://cf.geekdo-images.com/1FMn5-piF5TwGO1-D_k_ug__thumb/img/vDU9vFKnymnCHOwEcVXFYpDzndM=/fit-in/200x150/filters:strip_icc()/pic7679110.jpg
+publisher_min_players: '2'
+publisher_max_players: '2'
+playing_time: '30'
+publisher_min_age: '8'
 community_best_players: '2'
 community_min_age: '8'
 description: In Buffalo Chess, a.k.a. Bison, one player represents Indians who are
@@ -19,42 +23,14 @@ description: In Buffalo Chess, a.k.a. Bison, one player represents Indians who a
   Indian chief and his dogs while the other player takes charge of the herd of rampaging
   buffalo, all of which are represented by wooden pieces. Each side has its own style
   of play as the pieces move differently.&#10;&#10;
-designers:
-- name: Alex Randolph
-japanese_name: バイソン将棋
-learning_analysis:
-  bgg_rank: 9897
-  bgg_weight: 1.5517
-  category_complexity: 2.86
-  decision_points: 2.8699999999999997
-  initial_barrier: 2.12
-  interaction_complexity: 2.975
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.5
-  mechanics_count: 1
-  player_types:
-  - beginner
-  - casual
-  - classic_lover
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.0
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.65
-  replayability: 2.62
-  rules_complexity: 2.0936733333333333
-  strategic_depth: 2.11
-  strategic_depth_description: 低め（限られた戦略オプション）
-  year_published: 1975
 mechanics:
 - name: Grid Movement
-name: Buffalo Chess
-playing_time: '30'
-publisher_max_players: '2'
-publisher_min_age: '8'
-publisher_min_players: '2'
+categories:
+- name: Abstract Strategy
+- name: American West
+- name: Children's Game
+designers:
+- name: Alex Randolph
 publishers:
 - name: Action GT
 - name: BHS Games
@@ -68,12 +44,10 @@ publishers:
 - name: Schmidt Spiele
 - name: Venice Connection
 - name: Winning Moves France
-ranks:
-- rank: '9897'
-  type: boardgame
-- rank: '445'
-  type: abstracts
-thumbnail_url: https://cf.geekdo-images.com/1FMn5-piF5TwGO1-D_k_ug__thumb/img/vDU9vFKnymnCHOwEcVXFYpDzndM=/fit-in/200x150/filters:strip_icc()/pic7679110.jpg
-type: boardgame
+average_rating: '6.06745'
 weight: '1.5517'
-year_published: '1975'
+ranks:
+- type: boardgame
+  rank: '9901'
+- type: abstracts
+  rank: '444'

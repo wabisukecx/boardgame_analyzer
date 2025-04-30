@@ -1,3 +1,5 @@
+type: boardgame
+name: Viticulture Essential Edition
 alternate_names:
 - Vinohrad
 - Viticultura Editia Revizuita
@@ -12,13 +14,16 @@ alternate_names:
 - 葡萄酒庄园精华版
 - 葡萄酒莊園-精華版
 - 비티컬처 에센셜 에디션
-average_rating: '7.97387'
-categories:
-- name: Economic
-- name: Farming
+japanese_name: ワイナリーの四季
+year_published: '2015'
+thumbnail_url: https://cf.geekdo-images.com/l_PRU2lVlX9seScRFcvFlA__thumb/img/pULDtVd75QZgGfvSMhr6Rs07vK8=/fit-in/200x150/filters:strip_icc()/pic6500949.jpg
+publisher_min_players: '1'
+publisher_max_players: '6'
+playing_time: '90'
+publisher_min_age: '13'
 community_best_players: 3, 4
-community_min_age: '12'
 community_recommended_players: 1, 2, 5
+community_min_age: '12'
 description: In Viticulture, the players find themselves in the roles of people in
   rustic, pre-modern Tuscany who have inherited meagre vineyards. They have a few
   plots of land, an old crush pad, a tiny cellar, and three workers. They each have
@@ -38,39 +43,6 @@ description: In Viticulture, the players find themselves in the roles of people 
   the original Tuscany expansion, including Mamas &amp; Papas, Fields (previously
   known as Properties), expanded and revised Visitors, and Automa cards for a solo
   variant, along with a few minor rule changes.&#10;&#10;
-designers:
-- name: Jamey Stegmaier
-- name: Alan Stone
-japanese_name: ワイナリーの四季
-learning_analysis:
-  bgg_rank: 40
-  bgg_weight: 2.8926
-  category_complexity: 4.04
-  decision_points: 4.706666666666668
-  initial_barrier: 3.8
-  interaction_complexity: 3.825
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.45
-  mechanics_count: 8
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.19
-  replayability: 4.32
-  rules_complexity: 4.1501866666666665
-  strategic_depth: 3.78
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2015
 mechanics:
 - name: Contracts
 - name: Hand Management
@@ -80,11 +52,12 @@ mechanics:
 - name: Victory Points as a Resource
 - name: Worker Placement
 - name: Worker Placement, Different Worker Types
-name: Viticulture Essential Edition
-playing_time: '90'
-publisher_max_players: '6'
-publisher_min_age: '13'
-publisher_min_players: '1'
+categories:
+- name: Economic
+- name: Farming
+designers:
+- name: Jamey Stegmaier
+- name: Alan Stone
 publishers:
 - name: Stonemaier Games
 - name: Albi
@@ -104,12 +77,10 @@ publishers:
 - name: Regatul Jocurilor
 - name: Surfin' Meeple China
 - name: Tower Tactic Games
-ranks:
-- rank: '40'
-  type: boardgame
-- rank: '42'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/l_PRU2lVlX9seScRFcvFlA__thumb/img/pULDtVd75QZgGfvSMhr6Rs07vK8=/fit-in/200x150/filters:strip_icc()/pic6500949.jpg
-type: boardgame
+average_rating: '7.97393'
 weight: '2.8926'
-year_published: '2015'
+ranks:
+- type: boardgame
+  rank: '40'
+- type: strategygames
+  rank: '42'

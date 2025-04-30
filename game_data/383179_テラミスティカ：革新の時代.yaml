@@ -1,3 +1,5 @@
+type: boardgame
+name: Age of Innovation
 alternate_names:
 - Era da Inovação
 - La Era de la Innovación
@@ -8,14 +10,16 @@ alternate_names:
 - テラミスティカ：革新の時代
 - 神秘大地：大創造時代
 - 혁신의 시대
-average_rating: '8.55185'
-categories:
-- name: Civilization
-- name: Fantasy
-- name: Territory Building
+japanese_name: テラミスティカ：革新の時代
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/D1vrcFEptCEoD8Z6s_iRfw__thumb/img/0yBK_DMaSgRVrp2fGuNPgb0Jo7w=/fit-in/200x150/filters:strip_icc()/pic7430993.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '200'
+publisher_min_age: '14'
 community_best_players: '4'
-community_min_age: '14'
 community_recommended_players: 1, 2, 3, 5
+community_min_age: '14'
 description: Age of Innovation is a standalone game set in the world of Terra Mystica.&#10;&#10;Twelve
   factions, each with unique characteristics, populate this world of varying terrains.
   Here you will compete to erect buildings and merge them into cities. Each game allows
@@ -29,38 +33,6 @@ description: Age of Innovation is a standalone game set in the world of Terra My
   use to make innovations. Build your palace to gain a powerful new ability or build
   workshops, guilds, and universities to complete your culture.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
-designers:
-- name: Helge Ostertag
-japanese_name: テラミスティカ：革新の時代
-learning_analysis:
-  bgg_rank: 65
-  bgg_weight: 4.2609
-  category_complexity: 4.22
-  decision_points: 4.19
-  initial_barrier: 3.92
-  interaction_complexity: 3.73
-  learning_curve_type: moderate_then_deep
-  mastery_time: medium_to_long
-  mechanics_complexity: 3.05
-  mechanics_count: 10
-  player_types:
-  - experienced
-  - hardcore
-  - strategist
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.1
-    decision_density: 0.0
-    interaction_modifier: 0.1
-    strategic_bonus: 0.3
-  rank_complexity: 3.18
-  replayability: 4.2
-  rules_complexity: 4.130513333333333
-  strategic_depth: 4.51
-  strategic_depth_description: 非常に深い（マスターに長い時間を要する）
-  year_published: 2023
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -72,11 +44,12 @@ mechanics:
 - name: Variable Player Powers
 - name: Variable Set-up
 - name: Victory Points as a Resource
-name: Age of Innovation
-playing_time: '200'
-publisher_max_players: '5'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Civilization
+- name: Fantasy
+- name: Territory Building
+designers:
+- name: Helge Ostertag
 publishers:
 - name: Capstone Games
 - name: Feuerland Spiele
@@ -92,12 +65,10 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: テンデイズゲームズ (TendaysGames)
 - name: White Goblin Games
-ranks:
-- rank: '65'
-  type: boardgame
-- rank: '30'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/D1vrcFEptCEoD8Z6s_iRfw__thumb/img/0yBK_DMaSgRVrp2fGuNPgb0Jo7w=/fit-in/200x150/filters:strip_icc()/pic7430993.jpg
-type: boardgame
+average_rating: '8.5514'
 weight: '4.2609'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '64'
+- type: strategygames
+  rank: '30'

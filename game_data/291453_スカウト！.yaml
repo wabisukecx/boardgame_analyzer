@@ -1,15 +1,21 @@
+type: boardgame
+name: SCOUT
 alternate_names:
 - Cirkus
 - Scout!
 - スカウト！
 - 马戏星探
 - 스카우트
-average_rating: '7.81822'
-categories:
-- name: Card Game
+japanese_name: スカウト！
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/cf0xxkevbwTGF3VUZymKjg__thumb/img/NUcMdmZ3_eA1YfIwL8iRgkZKaHw=/fit-in/200x150/filters:strip_icc()/pic6398727.png
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '20'
+publisher_min_age: '9'
 community_best_players: '4'
-community_min_age: '8'
 community_recommended_players: 3, 5
+community_min_age: '8'
 description: 'SCOUT is a ladder-climbing game in which cards have two potential values,
   players may not rearrange their hand of cards, and players may pass their turn to
   take a card from the current high set of cards into their hand.&#10;&#10;More specifically,
@@ -38,44 +44,14 @@ description: 'SCOUT is a ladder-climbing game in which cards have two potential 
   one point for each card in their hand (except if they were the player scouted repeatedly
   to end the game). Play as many rounds as the number of players, then whoever has
   the most points wins.&#10;&#10;'
-designers:
-- name: Kei Kajino (梶野 桂)
-japanese_name: スカウト！
-learning_analysis:
-  bgg_rank: 101
-  bgg_weight: 1.3582
-  category_complexity: 2.3
-  decision_points: 3.625
-  initial_barrier: 2.16
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.83
-  mechanics_count: 3
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.39
-  replayability: 2.88
-  rules_complexity: 2.6816400000000002
-  strategic_depth: 2.55
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2019
 mechanics:
 - name: Hand Management
 - name: Ladder Climbing
 - name: Score-and-Reset Game
-name: SCOUT
-playing_time: '20'
-publisher_max_players: '5'
-publisher_min_age: '9'
-publisher_min_players: '2'
+categories:
+- name: Card Game
+designers:
+- name: Kei Kajino (梶野 桂)
 publishers:
 - name: Oink Games
 - name: One More Game!
@@ -86,12 +62,10 @@ publishers:
 - name: Lautapelit.fi
 - name: Pixie Games
 - name: Popcorn Games
-ranks:
-- rank: '101'
-  type: boardgame
-- rank: '14'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/cf0xxkevbwTGF3VUZymKjg__thumb/img/NUcMdmZ3_eA1YfIwL8iRgkZKaHw=/fit-in/200x150/filters:strip_icc()/pic6398727.png
-type: boardgame
+average_rating: '7.8181'
 weight: '1.3582'
-year_published: '2019'
+ranks:
+- type: boardgame
+  rank: '101'
+- type: familygames
+  rank: '14'

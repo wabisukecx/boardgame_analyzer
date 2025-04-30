@@ -1,57 +1,34 @@
+type: boardgame
+name: Disc Cover
 alternate_names:
 - Dyskografia
 - 独家专辑
 - 디스크 커버
-average_rating: '6.52074'
-categories:
-- name: Card Game
-- name: Humor
-- name: Music
-- name: Party Game
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/ZQGLYgmpX5sAz4LjA-dHZA__thumb/img/xTW2DKZK6JE2slSQAFX6Kza-94M=/fit-in/200x150/filters:strip_icc()/pic6941247.png
+publisher_min_players: '3'
+publisher_max_players: '8'
+playing_time: '20'
+publisher_min_age: '7'
 community_best_players: 4, 5, 6
-community_min_age: '8'
 community_recommended_players: 3, 7, 8, 8+
+community_min_age: '8'
 description: In Disc Cover, turn up the volume and travel through music and images
   by sharing your playlist:&#10;&#10;1 - Play music of your choice.&#10;2 - Match
   it with the best cover or identify the one selected by the other players.&#10;3
   - Reveal your choices to score points.&#10;&#10;Match up with everyone around you
   to win!&#10;&#10;&mdash;description from the publisher&#10;&#10;
-designers:
-- name: Roberto Fraga
-- name: Juan Manuel Rivero
-learning_analysis:
-  bgg_rank: 8805
-  bgg_weight: 1.1111
-  category_complexity: 2.3
-  decision_points: 3.315
-  initial_barrier: 2.0
-  interaction_complexity: 3.6199999999999997
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.7
-  mechanics_count: 2
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.0
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 1.85
-  replayability: 2.6
-  rules_complexity: 2.232886666666667
-  strategic_depth: 2.51
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2022
 mechanics:
 - name: Cooperative Game
 - name: Voting
-name: Disc Cover
-playing_time: '20'
-publisher_max_players: '8'
-publisher_min_age: '7'
-publisher_min_players: '3'
+categories:
+- name: Card Game
+- name: Humor
+- name: Music
+- name: Party Game
+designers:
+- name: Roberto Fraga
+- name: Juan Manuel Rivero
 publishers:
 - name: Blue Orange (EU)
 - name: Blue Orange Games
@@ -61,12 +38,10 @@ publishers:
 - name: Lucky Duck Games
 - name: Mercurio
 - name: PaperGames (III)
-ranks:
-- rank: '8805'
-  type: boardgame
-- rank: '483'
-  type: partygames
-thumbnail_url: https://cf.geekdo-images.com/ZQGLYgmpX5sAz4LjA-dHZA__thumb/img/xTW2DKZK6JE2slSQAFX6Kza-94M=/fit-in/200x150/filters:strip_icc()/pic6941247.png
-type: boardgame
+average_rating: '6.52228'
 weight: '1.1111'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '8780'
+- type: partygames
+  rank: '482'

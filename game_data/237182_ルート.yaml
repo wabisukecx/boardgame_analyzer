@@ -1,19 +1,21 @@
+type: boardgame
+name: Root
 alternate_names:
 - 'Root: A Game of Woodland Might and Right'
 - Корни
 - ルート
 - 茂林源記
 - 루트
-average_rating: '8.07155'
-categories:
-- name: Animals
-- name: Fantasy
-- name: Negotiation
-- name: Territory Building
-- name: Wargame
+japanese_name: ルート
+year_published: '2018'
+thumbnail_url: https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__thumb/img/ACovMZzGGIsBRyEQXFnsT8282NM=/fit-in/200x150/filters:strip_icc()/pic4254509.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '90'
+publisher_min_age: '10'
 community_best_players: '4'
-community_min_age: '14'
 community_recommended_players: '3'
+community_min_age: '14'
 description: 'Root is a game of adventure and war in which 2 to 4 (1 to 6 with the
   ''Riverfolk'' expansion) players battle for control of a vast wilderness. Like Vast:
   The Crystal Caverns, each player in Root has unique capabilities and a different
@@ -33,38 +35,6 @@ description: 'Root is a game of adventure and war in which 2 to 4 (1 to 6 with t
   each role create an unparalleled level of interaction and replayability. Leder Games
   invites you and your family to explore the fantastic world of Root!&#10;&#10;&mdash;description
   from the publisher&#10;&#10;'
-designers:
-- name: Cole Wehrle
-japanese_name: ルート
-learning_analysis:
-  bgg_rank: 30
-  bgg_weight: 3.823
-  category_complexity: 4.08
-  decision_points: 4.172307692307691
-  initial_barrier: 3.72
-  interaction_complexity: 3.9099999999999997
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 2.89
-  mechanics_count: 15
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.45
-  replayability: 4.73
-  rules_complexity: 3.6292666666666658
-  strategic_depth: 3.68
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2018
 mechanics:
 - name: Action Points
 - name: Action Queue
@@ -81,11 +51,14 @@ mechanics:
 - name: Take That
 - name: Variable Player Powers
 - name: Variable Set-up
-name: Root
-playing_time: '90'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Animals
+- name: Fantasy
+- name: Negotiation
+- name: Territory Building
+- name: Wargame
+designers:
+- name: Cole Wehrle
 publishers:
 - name: Leder Games
 - name: 2Tomatoes Games
@@ -103,14 +76,12 @@ publishers:
 - name: Spielworxx
 - name: Tower Tactic Games
 - name: YOKA Games
+average_rating: '8.07152'
+weight: '3.8227'
 ranks:
-- rank: '30'
-  type: boardgame
-- rank: '11'
-  type: wargames
-- rank: '36'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__thumb/img/ACovMZzGGIsBRyEQXFnsT8282NM=/fit-in/200x150/filters:strip_icc()/pic4254509.jpg
-type: boardgame
-weight: '3.823'
-year_published: '2018'
+- type: boardgame
+  rank: '30'
+- type: wargames
+  rank: '11'
+- type: strategygames
+  rank: '36'

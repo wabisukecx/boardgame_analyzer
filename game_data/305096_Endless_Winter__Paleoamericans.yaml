@@ -1,3 +1,5 @@
+type: boardgame
+name: 'Endless Winter: Paleoamericans'
 alternate_names:
 - 'Endless Winter: Paleoamericanos'
 - 'Endless Winter: Paleoamerikanci'
@@ -10,14 +12,15 @@ alternate_names:
 - 'Нескінченна Зима: Палеоамериканці'
 - 無盡寒冬 美洲原野
 - 엔들리스 윈터
-average_rating: '7.67198'
-categories:
-- name: Adventure
-- name: Prehistoric
-- name: Territory Building
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/TFX_awTwbJxoG74GtRHytw__thumb/img/gUl5oqRjGtrEIBlTDCDnfm_m1Wg=/fit-in/200x150/filters:strip_icc()/pic5624523.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: '3'
-community_min_age: '12'
 community_recommended_players: 1, 2, 4
+community_min_age: '12'
 description: 'Designed by Stan Kordonskiy (Dice Hospital, Rurik, Lock Up), developed
   by Jonny Pac (Coloma, Sierra West, Lions of Lydia), solo mode by Drake Villareal
   (Solani, Spook Manor), and illustrated by The Mico (Raiders of the North Sea, Paladins
@@ -37,37 +40,6 @@ description: 'Designed by Stan Kordonskiy (Dice Hospital, Rurik, Lock Up), devel
   Plus, there are many viable paths to victory. After four brisk rounds, scores are
   tallied, and the tribe with the most points wins!&#10;&#10;&#10;&mdash;description
   from the publisher&#10;&#10;'
-designers:
-- name: Stan Kordonskiy
-learning_analysis:
-  bgg_rank: 301
-  bgg_weight: 3.3172
-  category_complexity: 3.7
-  decision_points: 4.833333333333332
-  initial_barrier: 3.77
-  interaction_complexity: 3.4250000000000007
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.32
-  mechanics_count: 14
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.09
-  replayability: 4.2
-  rules_complexity: 4.052725714285714
-  strategic_depth: 3.77
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2022
 mechanics:
 - name: Area Majority / Influence
 - name: Deck, Bag, and Pool Building
@@ -83,11 +55,12 @@ mechanics:
 - name: Variable Player Powers
 - name: Variable Set-up
 - name: Worker Placement
-name: 'Endless Winter: Paleoamericans'
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Adventure
+- name: Prehistoric
+- name: Territory Building
+designers:
+- name: Stan Kordonskiy
 publishers:
 - name: Fantasia Games
 - name: Broadway Toys LTD
@@ -107,12 +80,10 @@ publishers:
 - name: TLAMA games
 - name: White Goblin Games
 - name: Ігромаг
-ranks:
-- rank: '301'
-  type: boardgame
-- rank: '208'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/TFX_awTwbJxoG74GtRHytw__thumb/img/gUl5oqRjGtrEIBlTDCDnfm_m1Wg=/fit-in/200x150/filters:strip_icc()/pic5624523.jpg
-type: boardgame
+average_rating: '7.67137'
 weight: '3.3172'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '300'
+- type: strategygames
+  rank: '208'

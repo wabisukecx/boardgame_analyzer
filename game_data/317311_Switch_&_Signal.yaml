@@ -1,14 +1,18 @@
+type: boardgame
+name: Switch & Signal
 alternate_names:
 - Convoi Express
 - Zwrotnice i Semafory
 - Паровозы и Семафоры
-average_rating: '7.12785'
-categories:
-- name: Trains
-- name: Transportation
+year_published: '2020'
+thumbnail_url: https://cf.geekdo-images.com/yRliFmp8SCRMxKVR8cApJg__thumb/img/2G-SpqNWmlyMby7xDybCOo-pAB0=/fit-in/200x150/filters:strip_icc()/pic6630215.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '45'
+publisher_min_age: '10'
 community_best_players: '2'
-community_min_age: '8'
 community_recommended_players: 1, 3, 4
+community_min_age: '8'
 description: All Aboard! &mdash; The Cooperative Train Game&#10;&#10;You begin this
   cooperative, family-friendly train game by controlling just a few trains on the
   tracks. At first, it&rsquo;s easy to make them travel where you like. As more trains
@@ -23,56 +27,26 @@ description: All Aboard! &mdash; The Cooperative Train Game&#10;&#10;You begin t
   rules that are easy to learn and allow you to jump right into the action. Switch
   &amp; Signal features a double-sided game board, city tile variants, and customizable
   difficulty levels.&#10;&#10;
-designers:
-- name: David Thompson (I)
-learning_analysis:
-  bgg_rank: 1991
-  bgg_weight: 2.1064
-  category_complexity: 3.31
-  decision_points: 3.8000000000000003
-  initial_barrier: 2.61
-  interaction_complexity: 3.195
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.17
-  mechanics_count: 3
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.64
-  replayability: 2.58
-  rules_complexity: 3.1579466666666662
-  strategic_depth: 3.02
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2020
 mechanics:
 - name: Cooperative Game
 - name: Network and Route Building
 - name: Pick-up and Deliver
-name: Switch & Signal
-playing_time: '45'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Trains
+- name: Transportation
+designers:
+- name: David Thompson (I)
 publishers:
 - name: KOSMOS
 - name: Galakta
 - name: IELLO
 - name: Zvezda
-ranks:
-- rank: '1991'
-  type: boardgame
-- rank: '1009'
-  type: strategygames
-- rank: '577'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/yRliFmp8SCRMxKVR8cApJg__thumb/img/2G-SpqNWmlyMby7xDybCOo-pAB0=/fit-in/200x150/filters:strip_icc()/pic6630215.jpg
-type: boardgame
+average_rating: '7.12641'
 weight: '2.1064'
-year_published: '2020'
+ranks:
+- type: boardgame
+  rank: '1996'
+- type: strategygames
+  rank: '1011'
+- type: familygames
+  rank: '577'

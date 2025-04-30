@@ -1,15 +1,21 @@
+type: boardgame
+name: Marrakesh
 alternate_names:
 - 'Marrakesh: Classic – Special Edition'
 - 'Marrakesh: Edición Básica'
 - 'Marrakesh: Essential Edition'
 - マラケシュ
 - 马拉喀什
-average_rating: '8.11491'
-categories:
-- name: City Building
+japanese_name: マラケシュ
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/ug8yV9EVLMdjzg7FjMesSQ__thumb/img/w-hjGWPgMpmSKsn7LbUSKHjCVFg=/fit-in/200x150/filters:strip_icc()/pic7144309.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '14'
 community_best_players: '3'
-community_min_age: '14'
 community_recommended_players: 2, 4
+community_min_age: '14'
 description: Compete with other influential families in the city to achieve the most
   honorable titles through the skillful use of assistants and resources at your disposal.
   The player who succeeds in doing this best becomes the new &quot;Obermufti&quot;
@@ -28,58 +34,25 @@ description: Compete with other influential families in the city to achieve the 
   influence in the city. Performing various actions also earns bonuses and enhances
   actions even more as the game proceeds. The player who scores the most points by
   the end of the game wins.&#10;&#10;&mdash;description from the publisher&#10;&#10;
-designers:
-- name: Stefan Feld
-japanese_name: マラケシュ
-learning_analysis:
-  bgg_rank: 412
-  bgg_weight: 3.3975
-  category_complexity: 3.8
-  decision_points: 3.5700000000000003
-  initial_barrier: 2.77
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.77
-  mechanics_count: 4
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.08
-  replayability: 2.9
-  rules_complexity: 3.543833333333333
-  strategic_depth: 3.23
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2022
 mechanics:
 - name: Cube Tower
 - name: End Game Bonuses
 - name: Open Drafting
 - name: Simultaneous Action Selection
-name: Marrakesh
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '2'
+categories:
+- name: City Building
+designers:
+- name: Stefan Feld
 publishers:
 - name: Queen Games
 - name: Devir
 - name: Moon3 Inc.
 - name: Playfun Games
 - name: White Goblin Games
-ranks:
-- rank: '412'
-  type: boardgame
-- rank: '201'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/ug8yV9EVLMdjzg7FjMesSQ__thumb/img/w-hjGWPgMpmSKsn7LbUSKHjCVFg=/fit-in/200x150/filters:strip_icc()/pic7144309.jpg
-type: boardgame
+average_rating: '8.115'
 weight: '3.3975'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '411'
+- type: strategygames
+  rank: '201'

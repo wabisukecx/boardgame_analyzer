@@ -1,3 +1,5 @@
+type: boardgame
+name: 'Eleven: Football Manager Board Game'
 alternate_names:
 - Eleven
 - 'Eleven: Football Manager Gioco da Tavolo'
@@ -5,13 +7,15 @@ alternate_names:
 - 'Eleven: Juqu''où mènerez vous votre club'
 - 足球經理
 - '일레븐: 풋볼 매니저 보드게임'
-average_rating: '7.21573'
-categories:
-- name: Economic
-- name: Sports
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/qweS3tB5vEHg3ECs-QNqrA__thumb/img/5Lu7U4JlzVvpV6_MTv04TtNftlY=/fit-in/200x150/filters:strip_icc()/pic5985744.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '14'
 community_best_players: '1'
-community_min_age: '12'
 community_recommended_players: '2'
+community_min_age: '12'
 description: 'Eleven &mdash; the number of players you have on the pitch at any given
   time, with those players making all the difference between being the best team and
   the worst. But every team knows that to be the best in the league it takes a lot
@@ -30,45 +34,17 @@ description: 'Eleven &mdash; the number of players you have on the pitch at any 
   a football team of players that are not so young anymore. You may also have to fight
   against time to try to complete the stadium before the deadline!&#10;&#10;&mdash;description
   from publisher&#10;&#10;'
-designers:
-- name: Thomas Jansen
-learning_analysis:
-  bgg_rank: 2062
-  bgg_weight: 3.3516
-  category_complexity: 3.36
-  decision_points: 3.7533333333333334
-  initial_barrier: 2.55
-  interaction_complexity: 3.825
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.54
-  mechanics_count: 5
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.64
-  replayability: 3.0
-  rules_complexity: 3.489653333333333
-  strategic_depth: 3.39
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2022
 mechanics:
 - name: Closed Drafting
 - name: Dice Rolling
 - name: Open Drafting
 - name: Scenario / Mission / Campaign Game
 - name: Set Collection
-name: 'Eleven: Football Manager Board Game'
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Economic
+- name: Sports
+designers:
+- name: Thomas Jansen
 publishers:
 - name: Portal Games
 - name: Broadway Toys LTD
@@ -76,12 +52,10 @@ publishers:
 - name: Maldito Games
 - name: Pendragon Game Studio
 - name: Summon Games
-ranks:
-- rank: '2062'
-  type: boardgame
-- rank: '396'
-  type: thematic
-thumbnail_url: https://cf.geekdo-images.com/qweS3tB5vEHg3ECs-QNqrA__thumb/img/5Lu7U4JlzVvpV6_MTv04TtNftlY=/fit-in/200x150/filters:strip_icc()/pic5985744.jpg
-type: boardgame
+average_rating: '7.21573'
 weight: '3.3516'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '2062'
+- type: thematic
+  rank: '396'

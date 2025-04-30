@@ -1,6 +1,11 @@
-average_rating: '7.57083'
-categories:
-- name: Card Game
+type: boardgame
+name: Revolve!
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/CgLIiA4ou2n61rF-RylMPg__thumb/img/N3aZFtCbxRc9fW8ldlv_gXvuLV4=/fit-in/200x150/filters:strip_icc()/pic8523446.png
+publisher_min_players: '3'
+publisher_max_players: '4'
+playing_time: '0'
+publisher_min_age: '12'
 community_best_players: '4'
 community_recommended_players: '3'
 description: Your goal in Revolve! is to empty your hand of cards.&#10;&#10;Each player
@@ -22,47 +27,17 @@ description: Your goal in Revolve! is to empty your hand of cards.&#10;&#10;Each
   2 points, and cards don't return to their hand, even if beaten. The second player
   to empty their hand scores 1 point. Play multiple rounds until someone has at least
   4 points, then whoever has the most points wins.&#10;&#10;
-designers:
-- name: Kei Kajino (梶野 桂)
-learning_analysis:
-  bgg_rank: 13324
-  bgg_weight: 1.5
-  category_complexity: 2.3
-  decision_points: 3.5149999999999997
-  initial_barrier: 2.15
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.8
-  mechanics_count: 2
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 0.85
-    decision_density: 0.0
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.11
-  replayability: 2.3
-  rules_complexity: 2.716
-  strategic_depth: 2.07
-  strategic_depth_description: 低め（限られた戦略オプション）
-  year_published: 2024
 mechanics:
 - name: Hand Management
 - name: Ladder Climbing
-name: Revolve!
-playing_time: '0'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '3'
+categories:
+- name: Card Game
+designers:
+- name: Kei Kajino (梶野 桂)
 publishers:
 - name: One More Game!
-ranks:
-- rank: '13324'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/CgLIiA4ou2n61rF-RylMPg__thumb/img/N3aZFtCbxRc9fW8ldlv_gXvuLV4=/fit-in/200x150/filters:strip_icc()/pic8523446.png
-type: boardgame
+average_rating: '7.52641'
 weight: '1.5'
-year_published: '2024'
+ranks:
+- type: boardgame
+  rank: '12826'

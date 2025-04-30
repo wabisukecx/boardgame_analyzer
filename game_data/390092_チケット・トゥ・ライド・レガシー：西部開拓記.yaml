@@ -1,3 +1,5 @@
+type: boardgame
+name: 'Ticket to Ride Legacy: Legends of the West'
 alternate_names:
 - '¡Aventureros al Tren! Legacy: Leyendas del Oeste'
 - 'Les Aventuriers du Rail Legacy: Légendes de L''Ouest'
@@ -10,12 +12,16 @@ alternate_names:
 - 'Wsiąść do Pociągu Legacy: Legendy Zachodu'
 - 'Zug um Zug Legacy: Legenden des Westens'
 - チケット・トゥ・ライド・レガシー：西部開拓記
-average_rating: '8.68266'
-categories:
-- name: Trains
+japanese_name: チケット・トゥ・ライド・レガシー：西部開拓記
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/2H0pJddVJA3r6btqRNLG1g__thumb/img/scMQ04r1admTpyvH91g9DbZEncg=/fit-in/200x150/filters:strip_icc()/pic7541330.png
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '90'
+publisher_min_age: '10'
 community_best_players: 4, 5
-community_min_age: '10'
 community_recommended_players: '3'
+community_min_age: '10'
 description: 'In Ticket to Ride Legacy: Legends of the West, players embark on twelve
   journeys across North America as 19th century pioneers. The campaign begins on the
   East Coast, with players working their way to the West from one adventure to the
@@ -31,37 +37,6 @@ description: 'In Ticket to Ride Legacy: Legends of the West, players embark on t
   they gather around the board.&#10;&#10;At the end of the twelve games in this legacy
   campaign, you will have transformed your game into a unique copy that you can continue
   playing for a lifetime..&#10;&#10;&mdash;description from the publisher&#10;&#10;'
-designers:
-- name: Rob Daviau
-- name: Matt Leacock
-- name: Alan R. Moon
-japanese_name: チケット・トゥ・ライド・レガシー：西部開拓記
-learning_analysis:
-  bgg_rank: 91
-  bgg_weight: 2.5941
-  category_complexity: 3.5
-  decision_points: 4.182857142857143
-  initial_barrier: 3.31
-  interaction_complexity: 3.3
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 3.02
-  mechanics_count: 9
-  player_types:
-  - casual
-  - experienced
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.45
-  replayability: 3.7
-  rules_complexity: 3.505486666666666
-  strategic_depth: 3.36
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2023
 mechanics:
 - name: Connections
 - name: Contracts
@@ -72,11 +47,12 @@ mechanics:
 - name: Open Drafting
 - name: Push Your Luck
 - name: Set Collection
-name: 'Ticket to Ride Legacy: Legends of the West'
-playing_time: '90'
-publisher_max_players: '5'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Trains
+designers:
+- name: Rob Daviau
+- name: Matt Leacock
+- name: Alan R. Moon
 publishers:
 - name: Days of Wonder
 - name: Galápagos Jogos
@@ -84,12 +60,10 @@ publishers:
 - name: Hobby Japan
 - name: Hobby World
 - name: Rebel Sp. z o.o.
-ranks:
-- rank: '91'
-  type: boardgame
-- rank: '5'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/2H0pJddVJA3r6btqRNLG1g__thumb/img/scMQ04r1admTpyvH91g9DbZEncg=/fit-in/200x150/filters:strip_icc()/pic7541330.png
-type: boardgame
+average_rating: '8.68273'
 weight: '2.5941'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '90'
+- type: familygames
+  rank: '5'

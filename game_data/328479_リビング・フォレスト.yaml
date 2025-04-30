@@ -1,3 +1,5 @@
+type: boardgame
+name: Living Forest
 alternate_names:
 - Ébredő erdő
 - Pradawny las
@@ -10,17 +12,16 @@ alternate_names:
 - 森生不息
 - 灵栖之森
 - 리빙 포레스트
-average_rating: '7.25026'
-categories:
-- name: Animals
-- name: Card Game
-- name: Environmental
-- name: Fantasy
-- name: Mythology
-- name: Territory Building
+japanese_name: リビング・フォレスト
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__thumb/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '40'
+publisher_min_age: '10'
 community_best_players: '3'
-community_min_age: '10'
 community_recommended_players: 2, 4
+community_min_age: '10'
 description: 'In Living Forest, you play as a nature spirit who will try to save the
   forest and its sacred tree from the flames of Onibi. But you are not alone in your
   mission as the animal guardians have come together to lend a hand around the Circle
@@ -53,46 +54,21 @@ description: 'In Living Forest, you play as a nature spirit who will try to save
   stack.&#10;&#10;The game stops at the end of a complete turn when one of the Spirits
   of Nature has managed to collect at least 12 different Protective Trees OR 12 Fires
   OR 12 Sacred Flowers.&#10;&#10;'
-designers:
-- name: Aske Christiansen
-japanese_name: リビング・フォレスト
-learning_analysis:
-  bgg_rank: 730
-  bgg_weight: 2.2149
-  category_complexity: 3.65
-  decision_points: 3.8333333333333335
-  initial_barrier: 2.45
-  interaction_complexity: 3.22
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.78
-  mechanics_count: 5
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.26
-  replayability: 3.2
-  rules_complexity: 3.2116466666666663
-  strategic_depth: 2.78
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2021
 mechanics:
 - name: Deck, Bag, and Pool Building
 - name: Push Your Luck
 - name: Race
 - name: Simultaneous Action Selection
 - name: Tile Placement
-name: Living Forest
-playing_time: '40'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Animals
+- name: Card Game
+- name: Environmental
+- name: Fantasy
+- name: Mythology
+- name: Territory Building
+designers:
+- name: Aske Christiansen
 publishers:
 - name: Ludonaute
 - name: Board Game Rookie
@@ -112,12 +88,10 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: Tower Tactic Games
 - name: 株式会社ケンビル (KenBill)
-ranks:
-- rank: '730'
-  type: boardgame
-- rank: '189'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__thumb/img/v8irnVxaCdK29XPtqEbtlKkLY4c=/fit-in/200x150/filters:strip_icc()/pic5899025.jpg
-type: boardgame
+average_rating: '7.2505'
 weight: '2.2149'
-year_published: '2021'
+ranks:
+- type: boardgame
+  rank: '730'
+- type: familygames
+  rank: '190'

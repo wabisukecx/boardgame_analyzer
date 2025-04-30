@@ -1,3 +1,5 @@
+type: boardgame
+name: Cascadia
 alternate_names:
 - Cascadia vadvilága
 - Kaskadia
@@ -9,14 +11,16 @@ alternate_names:
 - カスカディア
 - 卡斯卡迪亚之旅
 - 캐스캐디아
-average_rating: '7.91947'
-categories:
-- name: Animals
-- name: Environmental
-- name: Puzzle
+japanese_name: カスカディア
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__thumb/img/tVSFjSxYEcw7sKj3unIIQV8kxoc=/fit-in/200x150/filters:strip_icc()/pic5100691.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '45'
+publisher_min_age: '10'
 community_best_players: 2, 3
-community_min_age: '8'
 community_recommended_players: 1, 4
+community_min_age: '8'
 description: Cascadia is a puzzly tile-laying and token-drafting game featuring the
   habitats and wildlife of the Pacific Northwest.&#10;&#10;In the game, you take turns
   building out your own terrain area and populating it with wildlife. You start with
@@ -36,35 +40,6 @@ description: Cascadia is a puzzly tile-laying and token-drafting game featuring 
   four scoring cards for each type of wildlife. Maybe hawks want to be separate from
   other hawks, while foxes want lots of different animals surrounding them and bears
   want to be in pairs. Can you make it happen?&#10;&#10;
-designers:
-- name: Randy Flynn
-japanese_name: カスカディア
-learning_analysis:
-  bgg_rank: 51
-  bgg_weight: 1.8526
-  category_complexity: 2.75
-  decision_points: 4.000000000000001
-  initial_barrier: 3.09
-  interaction_complexity: 2.8499999999999996
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.09
-  mechanics_count: 8
-  player_types:
-  - casual
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.82
-  replayability: 3.8
-  rules_complexity: 3.4159366666666666
-  strategic_depth: 2.91
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2021
 mechanics:
 - name: End Game Bonuses
 - name: Hexagon Grid
@@ -74,11 +49,12 @@ mechanics:
 - name: Tile Placement
 - name: Variable Set-up
 - name: Victory Points as a Resource
-name: Cascadia
-playing_time: '45'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Animals
+- name: Environmental
+- name: Puzzle
+designers:
+- name: Randy Flynn
 publishers:
 - name: Flatout Games
 - name: Alderac Entertainment Group
@@ -105,14 +81,10 @@ publishers:
 - name: Tower Tactic Games
 - name: White Goblin Games
 - name: 株式会社ケンビル (KenBill)
+average_rating: '7.91939'
+weight: '1.8521'
 ranks:
-- rank: '51'
-  type: boardgame
-- rank: '1'
-  type: abstracts
-- rank: '8'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__thumb/img/tVSFjSxYEcw7sKj3unIIQV8kxoc=/fit-in/200x150/filters:strip_icc()/pic5100691.jpg
-type: boardgame
-weight: '1.8526'
-year_published: '2021'
+- type: boardgame
+  rank: '51'
+- type: familygames
+  rank: '8'

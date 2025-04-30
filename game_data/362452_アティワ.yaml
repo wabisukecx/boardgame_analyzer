@@ -1,17 +1,18 @@
+type: boardgame
+name: Atiwa
 alternate_names:
 - アティワ
 - 蝙蝠農家
-average_rating: '7.47074'
-categories:
-- name: Animals
-- name: Economic
-- name: Educational
-- name: Environmental
-- name: Farming
-- name: Territory Building
+japanese_name: アティワ
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/9S_Ci89ADHj7sZ4SwHY19w__thumb/img/7d-psHf2a29G1LdGGdBRzqFt5aQ=/fit-in/200x150/filters:strip_icc()/pic7245009.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: 3, 4
-community_min_age: '12'
 community_recommended_players: 1, 2
+community_min_age: '12'
 description: 'The Atiwa Range is a region of southeastern Ghana in Africa consisting
   of steep-sided hills with rather flat summits. A large portion of the range comprises
   an evergreen forest reserve, which is home to many endangered species. However,
@@ -36,58 +37,31 @@ description: 'The Atiwa Range is a region of southeastern Ghana in Africa consis
   of mining and the importance that the fruit bats have for the environment. You must
   acquire new land, manage your animals and resources, and make your community prosper.
   The player who best balances the needs of their community and the environment wins.&#10;&#10;'
-designers:
-- name: Uwe Rosenberg
-japanese_name: アティワ
-learning_analysis:
-  bgg_rank: 1073
-  bgg_weight: 2.7287
-  category_complexity: 3.83
-  decision_points: 4.3533333333333335
-  initial_barrier: 2.78
-  interaction_complexity: 3.3583333333333334
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 3.08
-  mechanics_count: 5
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.97
-  replayability: 3.2
-  rules_complexity: 3.7177400000000005
-  strategic_depth: 3.41
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2022
 mechanics:
 - name: Automatic Resource Growth
 - name: End Game Bonuses
 - name: Modular Board
 - name: 'Turn Order: Claim Action'
 - name: Worker Placement
-name: Atiwa
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Animals
+- name: Economic
+- name: Educational
+- name: Environmental
+- name: Farming
+- name: Territory Building
+designers:
+- name: Uwe Rosenberg
 publishers:
 - name: Lookout Games
 - name: 999 Games
 - name: GoKids 玩樂小子
 - name: Hobby Japan
 - name: Rebel Sp. z o.o.
-ranks:
-- rank: '1073'
-  type: boardgame
-- rank: '574'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/9S_Ci89ADHj7sZ4SwHY19w__thumb/img/7d-psHf2a29G1LdGGdBRzqFt5aQ=/fit-in/200x150/filters:strip_icc()/pic7245009.jpg
-type: boardgame
+average_rating: '7.47092'
 weight: '2.7287'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '1073'
+- type: strategygames
+  rank: '574'

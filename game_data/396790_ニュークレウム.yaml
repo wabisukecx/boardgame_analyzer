@@ -1,17 +1,21 @@
+type: boardgame
+name: Nucleum
 alternate_names:
 - Nukleum
 - ニュークレウム
 - 核子激盪
 - 核子激荡
 - 뉴클리엄
-average_rating: '8.14211'
-categories:
-- name: Economic
-- name: Industry / Manufacturing
-- name: Science Fiction
+japanese_name: ニュークレウム
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/fIVUaMvbfy6GCOgfxt7xaw__thumb/img/jKsO4nKmtNjX5bfH7aCPeK7hsqU=/fit-in/200x150/filters:strip_icc()/pic7647168.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '150'
+publisher_min_age: '14'
 community_best_players: 3, 4
-community_min_age: '14'
 community_recommended_players: 1, 2
+community_min_age: '14'
 description: When Elsa von Fr&uuml;hlingsfeld presented her invention to King Frederik
   Augustus II of Saxony, people thought it was trickery. She used the recently isolated
   element Uranium to heat up a jar of water and used the resulting steam to power
@@ -32,38 +36,6 @@ description: When Elsa von Fr&uuml;hlingsfeld presented her invention to King Fr
   giving them special powers when unlocked. Gameplay is continuous; players take turns
   one after another with no rounds or phases.&#10;&#10;&mdash;description from the
   publisher&#10;&#10;
-designers:
-- name: Simone Luciani
-- name: Dávid Turczi
-japanese_name: ニュークレウム
-learning_analysis:
-  bgg_rank: 162
-  bgg_weight: 4.1798
-  category_complexity: 4.29
-  decision_points: 4.6
-  initial_barrier: 4.06
-  interaction_complexity: 3.475
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.29
-  mechanics_count: 10
-  player_types:
-  - experienced
-  - hardcore
-  - strategist
-  - system_master
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.2
-  rank_complexity: 3.12
-  replayability: 3.7
-  rules_complexity: 4.3302933333333335
-  strategic_depth: 3.88
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2023
 mechanics:
 - name: Action Retrieval
 - name: Contracts
@@ -75,11 +47,13 @@ mechanics:
 - name: Solo / Solitaire Game
 - name: Tech Trees / Tech Tracks
 - name: Variable Player Powers
-name: Nucleum
-playing_time: '150'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Economic
+- name: Industry / Manufacturing
+- name: Science Fiction
+designers:
+- name: Simone Luciani
+- name: Dávid Turczi
 publishers:
 - name: Board&Dice
 - name: Board Bound
@@ -95,12 +69,10 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: テンデイズゲームズ (TendaysGames)
 - name: 狗吠火車
+average_rating: '8.14214'
+weight: '4.179'
 ranks:
-- rank: '162'
-  type: boardgame
-- rank: '97'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/fIVUaMvbfy6GCOgfxt7xaw__thumb/img/jKsO4nKmtNjX5bfH7aCPeK7hsqU=/fit-in/200x150/filters:strip_icc()/pic7647168.jpg
-type: boardgame
-weight: '4.1798'
-year_published: '2023'
+- type: boardgame
+  rank: '162'
+- type: strategygames
+  rank: '97'

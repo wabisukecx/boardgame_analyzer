@@ -1,3 +1,5 @@
+type: boardgame
+name: Sky Team
 alternate_names:
 - Halo wieża
 - A légi társaság
@@ -8,9 +10,13 @@ alternate_names:
 - スカイチーム
 - 天合小队
 - 스카이 팀
-average_rating: '8.16793'
-categories:
-- name: Aviation / Flight
+japanese_name: スカイチーム
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__thumb/img/WyPClajMWU9lV5BdCXiZnqdZgmU=/fit-in/200x150/filters:strip_icc()/pic7398904.jpg
+publisher_min_players: '2'
+publisher_max_players: '2'
+playing_time: '15'
+publisher_min_age: '12'
 community_best_players: '2'
 community_min_age: '10'
 description: Sky Team is a co-operative game, exclusively for two players, in which
@@ -46,35 +52,6 @@ description: Sky Team is a co-operative game, exclusively for two players, in wh
   Awards&#10;2023 - Best Board Game - Dicebreaker Tabletop Awards&#10;2023 - Two Player
   Board Game Winner - Game Boy Geek    &#10;2023 - Best Co-Op Game - Gaming Trend    &#10;2023
   - Seal of Excellence - Dice Tower&#10;&#10;&mdash;description from the publisher&#10;&#10;
-designers:
-- name: Luc Rémond
-japanese_name: スカイチーム
-learning_analysis:
-  bgg_rank: 37
-  bgg_weight: 2.0454
-  category_complexity: 3.5
-  decision_points: 4.3914285714285715
-  initial_barrier: 3.34
-  interaction_complexity: 3.2
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.26
-  mechanics_count: 9
-  player_types:
-  - casual
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.85
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.7
-  replayability: 4.1
-  rules_complexity: 3.73908
-  strategic_depth: 2.55
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2023
 mechanics:
 - name: Communication Limits
 - name: Cooperative Game
@@ -85,11 +62,10 @@ mechanics:
 - name: Variable Player Powers
 - name: Variable Set-up
 - name: Worker Placement with Dice Workers
-name: Sky Team
-playing_time: '15'
-publisher_max_players: '2'
-publisher_min_age: '12'
-publisher_min_players: '2'
+categories:
+- name: Aviation / Flight
+designers:
+- name: Luc Rémond
 publishers:
 - name: Scorpion Masqué
 - name: 999 Games
@@ -109,14 +85,12 @@ publishers:
 - name: Sugorokuya
 - name: Tabletop KZ
 - name: YOKA Games
+average_rating: '8.16733'
+weight: '2.0473'
 ranks:
-- rank: '37'
-  type: boardgame
-- rank: '16'
-  type: thematic
-- rank: '1'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__thumb/img/WyPClajMWU9lV5BdCXiZnqdZgmU=/fit-in/200x150/filters:strip_icc()/pic7398904.jpg
-type: boardgame
-weight: '2.0454'
-year_published: '2023'
+- type: boardgame
+  rank: '37'
+- type: thematic
+  rank: '16'
+- type: familygames
+  rank: '1'

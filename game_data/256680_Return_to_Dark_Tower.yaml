@@ -1,16 +1,18 @@
+type: boardgame
+name: Return to Dark Tower
 alternate_names:
 - Возвращение в Тёмную Башню
 - Вороття до Темної Вежі
 - 重返黑暗之塔
-average_rating: '8.23061'
-categories:
-- name: Adventure
-- name: Electronic
-- name: Fantasy
-- name: Fighting
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/sd0acHeHj9RE-daXPC7pEg__thumb/img/ZDxL0mhIb3Rg8st8zCVZD9ngnf4=/fit-in/200x150/filters:strip_icc()/pic5153383.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '10'
 community_best_players: '4'
-community_min_age: '10'
 community_recommended_players: 1, 2, 3
+community_min_age: '10'
 description: 'For an age, the tower lay in ruins. Unbeknownst to the people of the
   realm, a great evil stirred in its bowels. It started with strange sightings: a
   flock of crows flying in circles until they dropped from the sky, the lake frozen
@@ -26,40 +28,6 @@ description: 'For an age, the tower lay in ruins. Unbeknownst to the people of t
   game mechanisms, such as engine building and resource management, paired with a
   technological interface unlike any seen before in games, including the titular tower,
   which holds more than a few secrets.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
-designers:
-- name: Tim Burrell-Saward
-- name: Isaac Childres
-- name: Noah Cohen
-- name: Rob Daviau
-- name: Justin D. Jacobson
-- name: Brian Neff
-learning_analysis:
-  bgg_rank: 236
-  bgg_weight: 2.6667
-  category_complexity: 3.54
-  decision_points: 3.9422222222222216
-  initial_barrier: 3.26
-  interaction_complexity: 3.555
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.85
-  mechanics_count: 11
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.82
-  replayability: 4.2
-  rules_complexity: 3.3690975757575754
-  strategic_depth: 3.3
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2022
 mechanics:
 - name: Area Movement
 - name: Cooperative Game
@@ -72,23 +40,28 @@ mechanics:
 - name: Trading
 - name: Variable Player Powers
 - name: Variable Set-up
-name: Return to Dark Tower
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Adventure
+- name: Electronic
+- name: Fantasy
+- name: Fighting
+designers:
+- name: Tim Burrell-Saward
+- name: Isaac Childres
+- name: Noah Cohen
+- name: Rob Daviau
+- name: Justin D. Jacobson
+- name: Brian Neff
 publishers:
 - name: Restoration Games
 - name: Broadway Toys LTD
 - name: Choo Choo Games
 - name: Lucky Duck Games
 - name: Ігромаг
-ranks:
-- rank: '236'
-  type: boardgame
-- rank: '29'
-  type: thematic
-thumbnail_url: https://cf.geekdo-images.com/sd0acHeHj9RE-daXPC7pEg__thumb/img/ZDxL0mhIb3Rg8st8zCVZD9ngnf4=/fit-in/200x150/filters:strip_icc()/pic5153383.jpg
-type: boardgame
+average_rating: '8.22976'
 weight: '2.6667'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '236'
+- type: thematic
+  rank: '29'

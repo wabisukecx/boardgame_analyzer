@@ -1,3 +1,5 @@
+type: boardgame
+name: Ark Nova
 alternate_names:
 - Archa Nova
 - Arche Nova
@@ -7,14 +9,16 @@ alternate_names:
 - 方舟动物园
 - 方舟動物園
 - 아크 노바
-average_rating: '8.5356'
-categories:
-- name: Animals
-- name: Economic
-- name: Environmental
+japanese_name: アーク・ノヴァ 新たなる方舟
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__thumb/img/4KuHNTWSMPf8vTNDKSRMMI3oOv8=/fit-in/200x150/filters:strip_icc()/pic6293412.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '150'
+publisher_min_age: '14'
 community_best_players: '2'
-community_min_age: '14'
 community_recommended_players: 1, 3
+community_min_age: '14'
 description: 'In Ark Nova, you will plan and design a modern, scientifically managed
   zoo. With the ultimate goal of owning the most successful zoological establishment,
   you will build enclosures, accommodate animals, and support conservation projects
@@ -31,38 +35,6 @@ description: 'In Ark Nova, you will plan and design a modern, scientifically man
   at the heart of Ark Nova. Use them to increase the appeal and scientific reputation
   of your zoo and collect conservation points.&#10;&#10;&mdash;description from the
   publisher&#10;&#10;'
-designers:
-- name: Mathias Wigge
-japanese_name: アーク・ノヴァ 新たなる方舟
-learning_analysis:
-  bgg_rank: 3
-  bgg_weight: 3.7826
-  category_complexity: 3.3
-  decision_points: 4.1499999999999995
-  initial_barrier: 3.62
-  interaction_complexity: 3.55
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 2.95
-  mechanics_count: 14
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.2
-  rank_complexity: 3.32
-  replayability: 4.0
-  rules_complexity: 3.944853333333333
-  strategic_depth: 3.6
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2021
 mechanics:
 - name: Action Queue
 - name: End Game Bonuses
@@ -78,11 +50,12 @@ mechanics:
 - name: Tile Placement
 - name: Variable Player Powers
 - name: Variable Set-up
-name: Ark Nova
-playing_time: '150'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Animals
+- name: Economic
+- name: Environmental
+designers:
+- name: Mathias Wigge
 publishers:
 - name: Feuerland Spiele
 - name: Capstone Games
@@ -104,12 +77,10 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: Tower Tactic Games
 - name: White Goblin Games
+average_rating: '8.53554'
+weight: '3.7831'
 ranks:
-- rank: '3'
-  type: boardgame
-- rank: '3'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__thumb/img/4KuHNTWSMPf8vTNDKSRMMI3oOv8=/fit-in/200x150/filters:strip_icc()/pic6293412.jpg
-type: boardgame
-weight: '3.7826'
-year_published: '2021'
+- type: boardgame
+  rank: '3'
+- type: strategygames
+  rank: '3'

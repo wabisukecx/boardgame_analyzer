@@ -1,3 +1,5 @@
+type: boardgame
+name: The Adventures of Robin Hood
 alternate_names:
 - Die Abenteuer des Robin Hood
 - Las Aventuras de Robin Hood
@@ -8,11 +10,14 @@ alternate_names:
 - Robin Hood a jeho dobrodružství
 - Приключения Робина Гуда
 - 로빈 후드의 모험
-average_rating: '7.46175'
-categories:
-- name: Medieval
-community_min_age: '8'
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/QOCGlQyx_HU0nG1oRpeGVg__thumb/img/EQ1AGM0CcltWvTHR6Qcy-H7qGNo=/fit-in/200x150/filters:strip_icc()/pic6220819.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '10'
 community_recommended_players: 1, 2, 3, 4
+community_min_age: '8'
 description: In England in 1193, the county of Nottinghamshire suffers under the yoke
   of evil Prince John and his henchmen. Can Robin Hood and his companions escape the
   sheriff's guards and complete their adventures successfully?&#10;&#10;In The Adventures
@@ -26,44 +31,14 @@ description: In England in 1193, the county of Nottinghamshire suffers under the
   game can be set up and dismantled quickly.&#10;&#10;Instead of using cards as in
   the author's Legends of Andor, the game tells the story of Robin Hood in a high-quality
   hardcover book, and depending on the decisions the players make, the story changes...&#10;&#10;
-designers:
-- name: Michael Menzel
-learning_analysis:
-  bgg_rank: 753
-  bgg_weight: 1.8302
-  category_complexity: 3.5
-  decision_points: 3.8249999999999997
-  initial_barrier: 2.47
-  interaction_complexity: 3.2
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.93
-  mechanics_count: 3
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.72
-  replayability: 2.8
-  rules_complexity: 2.920706666666667
-  strategic_depth: 3.0
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2021
 mechanics:
 - name: Cooperative Game
 - name: Scenario / Mission / Campaign Game
 - name: Storytelling
-name: The Adventures of Robin Hood
-playing_time: '60'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Medieval
+designers:
+- name: Michael Menzel
 publishers:
 - name: KOSMOS
 - name: 999 Games
@@ -74,12 +49,10 @@ publishers:
 - name: IELLO
 - name: Korea Boardgames
 - name: Zvezda
-ranks:
-- rank: '753'
-  type: boardgame
-- rank: '155'
-  type: thematic
-thumbnail_url: https://cf.geekdo-images.com/QOCGlQyx_HU0nG1oRpeGVg__thumb/img/EQ1AGM0CcltWvTHR6Qcy-H7qGNo=/fit-in/200x150/filters:strip_icc()/pic6220819.jpg
-type: boardgame
+average_rating: '7.46026'
 weight: '1.8302'
-year_published: '2021'
+ranks:
+- type: boardgame
+  rank: '755'
+- type: thematic
+  rank: '155'

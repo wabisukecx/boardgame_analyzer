@@ -1,3 +1,5 @@
+type: boardgame
+name: Rats of Wistar
 alternate_names:
 - Krysy z Wistaru
 - Ratas de Wistar
@@ -9,12 +11,15 @@ alternate_names:
 - Побег из Вистара
 - 白鼠特工队
 - 랫츠 오브 위스타
-average_rating: '7.55051'
-categories:
-- name: Animals
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/0dIADhzRp00oA4Jk-I-lHg__thumb/img/yfbVmdqkm99nr5hdP6MSv9jSQMg=/fit-in/200x150/filters:strip_icc()/pic7812438.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '90'
+publisher_min_age: '13'
 community_best_players: '3'
-community_min_age: '12'
 community_recommended_players: 1, 2, 4
+community_min_age: '12'
 description: 'In Rats of Wistar, you play the role of one of the four rats who organized
   the escape from a lab. As such, you will have to lead your family to prove that
   you are the most deserving of leading the entire colony. Thanks to your extraordinary
@@ -32,44 +37,16 @@ description: 'In Rats of Wistar, you play the role of one of the four rats who o
   order wins.&#10;&#10;Note: Rats of Wistar is not affiliated, associated, authorized,
   endorsed by, or in any way officially connected with The Wistar Institute of Anatomy
   and Biology.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
-designers:
-- name: Simone Luciani
-- name: Danilo Sabia
-learning_analysis:
-  bgg_rank: 1064
-  bgg_weight: 3.3897
-  category_complexity: 1.8
-  decision_points: 4.4
-  initial_barrier: 2.68
-  interaction_complexity: 3.0
-  learning_curve_type: gentle_then_moderate
-  mastery_time: medium
-  mechanics_complexity: 3.1
-  mechanics_count: 4
-  player_types:
-  - casual
-  - experienced
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.97
-  replayability: 2.8
-  rules_complexity: 3.748606666666666
-  strategic_depth: 3.57
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2023
 mechanics:
 - name: Events
 - name: 'Turn Order: Claim Action'
 - name: Variable Set-up
 - name: Worker Placement
-name: Rats of Wistar
-playing_time: '90'
-publisher_max_players: '4'
-publisher_min_age: '13'
-publisher_min_players: '1'
+categories:
+- name: Animals
+designers:
+- name: Simone Luciani
+- name: Danilo Sabia
 publishers:
 - name: Cranio Creations
 - name: Capstone Games
@@ -82,12 +59,10 @@ publishers:
 - name: PD-Verlag
 - name: Portal Games
 - name: TLAMA games
+average_rating: '7.54954'
+weight: '3.3942'
 ranks:
-- rank: '1064'
-  type: boardgame
-- rank: '565'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/0dIADhzRp00oA4Jk-I-lHg__thumb/img/yfbVmdqkm99nr5hdP6MSv9jSQMg=/fit-in/200x150/filters:strip_icc()/pic7812438.png
-type: boardgame
-weight: '3.3897'
-year_published: '2023'
+- type: boardgame
+  rank: '1065'
+- type: strategygames
+  rank: '564'

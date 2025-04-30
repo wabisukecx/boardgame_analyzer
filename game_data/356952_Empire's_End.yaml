@@ -1,15 +1,19 @@
+type: boardgame
+name: Empire's End
 alternate_names:
 - A Birodalom Alkonya
 - 'Empire''s End: Gloire et Déclin'
 - Upadek Imperium
 - 終焉帝國
-average_rating: '6.96298'
-categories:
-- name: Ancient
-- name: Civilization
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/GnNmkYzVofrHPlKdcqrgUA__thumb/img/vmyqBjaKMiEA2U8DZns3OexchPs=/fit-in/200x150/filters:strip_icc()/pic7090909.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '10'
 community_best_players: 3, 4
-community_min_age: '12'
 community_recommended_players: '2'
+community_min_age: '12'
 description: You lead a grand civilization at the height of its influence, but can
   you save it from collapse? In Empire's End, 2-4 players compete to keep calamity
   at bay. Empire's End marries the intuitive and elegant mechanism of reverse-bidding
@@ -30,33 +34,6 @@ description: You lead a grand civilization at the height of its influence, but c
   At the end of the progress track, the game is concluded and the winner is the civilization
   with the greatest number of victory points. Intact territories contribute points,
   but innovations and military successes can provide alternative ways to win.&#10;&#10;
-designers:
-- name: John D. Clair
-learning_analysis:
-  bgg_rank: 2226
-  bgg_weight: 2.3881
-  category_complexity: 4.3
-  decision_points: 4.312
-  initial_barrier: 3.46
-  interaction_complexity: 3.755
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 3.09
-  mechanics_count: 12
-  player_types:
-  - casual
-  - experienced
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.89
-  replayability: 2.9
-  rules_complexity: 3.526786666666666
-  strategic_depth: 3.41
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2023
 mechanics:
 - name: Auction / Bidding
 - name: Auction Compensation
@@ -70,11 +47,11 @@ mechanics:
 - name: Income
 - name: Increase Value of Unchosen Resources
 - name: 'Turn Order: Auction'
-name: Empire's End
-playing_time: '60'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Ancient
+- name: Civilization
+designers:
+- name: John D. Clair
 publishers:
 - name: Brotherwise Games
 - name: Broadway Toys LTD
@@ -82,12 +59,10 @@ publishers:
 - name: Lucky Duck Games
 - name: Maldito Games
 - name: Nice Game Publishing
-ranks:
-- rank: '2226'
-  type: boardgame
-- rank: '1092'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/GnNmkYzVofrHPlKdcqrgUA__thumb/img/vmyqBjaKMiEA2U8DZns3OexchPs=/fit-in/200x150/filters:strip_icc()/pic7090909.jpg
-type: boardgame
+average_rating: '6.96252'
 weight: '2.3881'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '2226'
+- type: strategygames
+  rank: '1093'

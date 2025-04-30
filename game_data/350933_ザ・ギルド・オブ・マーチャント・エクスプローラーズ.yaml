@@ -1,3 +1,5 @@
+type: boardgame
+name: The Guild of Merchant Explorers
 alternate_names:
 - Die Gilde der Fahrenden Händler
 - Gildia wielkich odkrywców
@@ -5,15 +7,16 @@ alternate_names:
 - Гильдия купцов-путешественников
 - ザ・ギルド・オブ・マーチャント・エクスプローラーズ
 - 提戈梅公会
-average_rating: '7.6574'
-categories:
-- name: Adventure
-- name: Exploration
-- name: Fantasy
-- name: Nautical
+japanese_name: ザ・ギルド・オブ・マーチャント・エクスプローラーズ
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/HZQAedsq10yAgotyNth4og__thumb/img/56IVwtzXk9WZz750cekqFYWw16g=/fit-in/200x150/filters:strip_icc()/pic6670587.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '45'
+publisher_min_age: '14'
 community_best_players: '2'
-community_min_age: '10'
 community_recommended_players: 1, 3, 4
+community_min_age: '10'
 description: In The Guild of Merchant Explorers, each player starts with one city
   on their personal map board.&#10;&#10;Shuffle the deck of terrain cards, then reveal
   most of these cards one by one. Based on the terrain revealed, each player places
@@ -27,35 +30,6 @@ description: In The Guild of Merchant Explorers, each player starts with one cit
   don't establish new cities, you'll be stuck in the same places.&#10;&#10;The Guild
   of Merchant Explorers contains multiple copies of four different maps, and the game
   is designed so that you can play remotely with one or more copies.&#10;&#10;
-designers:
-- name: Matthew Dunstan
-- name: Brett J. Gilbert
-japanese_name: ザ・ギルド・オブ・マーチャント・エクスプローラーズ
-learning_analysis:
-  bgg_rank: 383
-  bgg_weight: 2.0485
-  category_complexity: 3.74
-  decision_points: 3.8066666666666675
-  initial_barrier: 3.26
-  interaction_complexity: 3.0300000000000002
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.05
-  mechanics_count: 8
-  player_types:
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.81
-  replayability: 3.5
-  rules_complexity: 3.6880333333333333
-  strategic_depth: 2.99
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2022
 mechanics:
 - name: Bingo
 - name: Chaining
@@ -65,11 +39,14 @@ mechanics:
 - name: Network and Route Building
 - name: Pattern Movement
 - name: Solo / Solitaire Game
-name: The Guild of Merchant Explorers
-playing_time: '45'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Adventure
+- name: Exploration
+- name: Fantasy
+- name: Nautical
+designers:
+- name: Matthew Dunstan
+- name: Brett J. Gilbert
 publishers:
 - name: Alderac Entertainment Group
 - name: CMON Global Limited
@@ -80,14 +57,12 @@ publishers:
 - name: Tabletop KZ
 - name: YOKA Games
 - name: 株式会社ケンビル (KenBill)
+average_rating: '7.65743'
+weight: '2.0482'
 ranks:
-- rank: '383'
-  type: boardgame
-- rank: '240'
-  type: strategygames
-- rank: '69'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/HZQAedsq10yAgotyNth4og__thumb/img/56IVwtzXk9WZz750cekqFYWw16g=/fit-in/200x150/filters:strip_icc()/pic6670587.jpg
-type: boardgame
-weight: '2.0485'
-year_published: '2022'
+- type: boardgame
+  rank: '382'
+- type: strategygames
+  rank: '239'
+- type: familygames
+  rank: '69'

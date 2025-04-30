@@ -1,3 +1,5 @@
+type: boardgame
+name: 'Heat: Pedal to the Metal'
 alternate_names:
 - Heat
 - 'Heat: Padlógáz'
@@ -8,13 +10,16 @@ alternate_names:
 - 火爆狂飙：全速前进
 - 熱力狂飆
 - '히트: 질주의 열기'
-average_rating: '8.02293'
-categories:
-- name: Racing
-- name: Sports
+japanese_name: ヒート
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__thumb/img/2GbaKvYOzWIxfgbYTk2R9puiyzo=/fit-in/200x150/filters:strip_icc()/pic6940449.png
+publisher_min_players: '1'
+publisher_max_players: '6'
+playing_time: '60'
+publisher_min_age: '10'
 community_best_players: 5, 6
-community_min_age: '8'
 community_recommended_players: 1, 2, 3, 4
+community_min_age: '8'
 description: 'Based on simple and intuitive hand management, Heat: Pedal to the Metal
   puts players in the driver''s seat of intense car races, jockeying for position
   to cross the finish line first, while managing their car''s speed if they don''t
@@ -27,37 +32,6 @@ description: 'Based on simple and intuitive hand management, Heat: Pedal to the 
   will change every race to spice up their championship. Players can also enjoy a
   solo mode with the Legends Module or add automated drivers as additional opponents
   in multiplayer games.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
-designers:
-- name: Asger Harding Granerud
-- name: Daniel Skjold Pedersen
-japanese_name: ヒート
-learning_analysis:
-  bgg_rank: 42
-  bgg_weight: 2.1906
-  category_complexity: 2.42
-  decision_points: 4.175555555555555
-  initial_barrier: 3.03
-  interaction_complexity: 3.3249999999999997
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.0
-  mechanics_count: 11
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.48
-  replayability: 3.8
-  rules_complexity: 3.4047866666666664
-  strategic_depth: 3.2
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2022
 mechanics:
 - name: Catch the Leader
 - name: Deck, Bag, and Pool Building
@@ -70,11 +44,12 @@ mechanics:
 - name: Solo / Solitaire Game
 - name: Track Movement
 - name: Variable Set-up
-name: 'Heat: Pedal to the Metal'
-playing_time: '60'
-publisher_max_players: '6'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Racing
+- name: Sports
+designers:
+- name: Asger Harding Granerud
+- name: Daniel Skjold Pedersen
 publishers:
 - name: Days of Wonder
 - name: ADC Blackfire Entertainment
@@ -87,12 +62,10 @@ publishers:
 - name: Kaissa Chess & Games
 - name: Korea Boardgames
 - name: Lord of Boards
+average_rating: '8.02254'
+weight: '2.1922'
 ranks:
-- rank: '42'
-  type: boardgame
-- rank: '7'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__thumb/img/2GbaKvYOzWIxfgbYTk2R9puiyzo=/fit-in/200x150/filters:strip_icc()/pic6940449.png
-type: boardgame
-weight: '2.1906'
-year_published: '2022'
+- type: boardgame
+  rank: '42'
+- type: familygames
+  rank: '7'

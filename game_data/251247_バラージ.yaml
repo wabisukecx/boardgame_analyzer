@@ -1,3 +1,5 @@
+type: boardgame
+name: Barrage
 alternate_names:
 - Duzzasztómű
 - Přehrada
@@ -7,14 +9,16 @@ alternate_names:
 - バラージ
 - 强国争坝
 - 버라지
-average_rating: '8.15082'
-categories:
-- name: Economic
-- name: Environmental
-- name: Industry / Manufacturing
+japanese_name: バラージ
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/jEPmWvvYpqkWrKOzqIHFsg__thumb/img/kMLIpeqA6UcUvQg2AdMwwQoEIfU=/fit-in/200x150/filters:strip_icc()/pic4336469.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '14'
 community_best_players: '4'
-community_min_age: '14'
 community_recommended_players: 2, 3
+community_min_age: '14'
 description: In the dystopic 1930s, the industrial revolution pushed the exploitation
   of fossil-based resources to the limit, and now the only thing powerful enough to
   quench the thirst for power of the massive machines and of the unstoppable engineering
@@ -43,40 +47,6 @@ description: In the dystopic 1930s, the industrial revolution pushed the exploit
   they attempt to enhance their machinery to acquire new and more efficient construction
   actions and to build and activate special unique-effect buildings to forward their
   own developing strategy.&#10;&#10;
-designers:
-- name: Tommaso Battista
-- name: Simone Luciani
-japanese_name: バラージ
-learning_analysis:
-  bgg_rank: 36
-  bgg_weight: 4.1163
-  category_complexity: 4.14
-  decision_points: 4.599999999999999
-  initial_barrier: 3.95
-  interaction_complexity: 3.475
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.16
-  mechanics_count: 11
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - strategist
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.2
-  replayability: 4.51
-  rules_complexity: 4.203866060606061
-  strategic_depth: 3.84
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2019
 mechanics:
 - name: Action Retrieval
 - name: Contracts
@@ -89,11 +59,13 @@ mechanics:
 - name: Variable Player Powers
 - name: Variable Set-up
 - name: Worker Placement
-name: Barrage
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Economic
+- name: Environmental
+- name: Industry / Manufacturing
+designers:
+- name: Tommaso Battista
+- name: Simone Luciani
 publishers:
 - name: Cranio Creations
 - name: CrowD Games
@@ -109,12 +81,10 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: TLAMA games
 - name: WoodCat
-ranks:
-- rank: '36'
-  type: boardgame
-- rank: '26'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/jEPmWvvYpqkWrKOzqIHFsg__thumb/img/kMLIpeqA6UcUvQg2AdMwwQoEIfU=/fit-in/200x150/filters:strip_icc()/pic4336469.png
-type: boardgame
+average_rating: '8.15051'
 weight: '4.1163'
-year_published: '2019'
+ranks:
+- type: boardgame
+  rank: '36'
+- type: strategygames
+  rank: '26'

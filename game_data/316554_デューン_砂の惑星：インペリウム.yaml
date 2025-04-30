@@ -1,3 +1,5 @@
+type: boardgame
+name: 'Dune: Imperium'
 alternate_names:
 - 'Dina: Imperijum'
 - 'Diuna: Imperium'
@@ -9,15 +11,16 @@ alternate_names:
 - デューン 砂の惑星：インペリウム
 - 沙丘：帝国
 - '듄: 임페리움'
-average_rating: '8.42173'
-categories:
-- name: Movies / TV / Radio theme
-- name: Novel-based
-- name: Political
-- name: Science Fiction
+japanese_name: デューン 砂の惑星：インペリウム
+year_published: '2020'
+thumbnail_url: https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__thumb/img/JGgY-nBmkyB8WRp8vcoBLlNMQ5U=/fit-in/200x150/filters:strip_icc()/pic5666597.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '14'
 community_best_players: 3, 4
-community_min_age: '12'
 community_recommended_players: 1, 2
+community_min_age: '12'
 description: 'Dune: Imperium is a game that uses deck building to add a hidden information
   angle to traditional worker placement. It finds inspiration in elements and characters
   from the Dune legacy, both the new film from Legendary Pictures and the seminal
@@ -42,38 +45,6 @@ description: 'Dune: Imperium is a game that uses deck building to add a hidden i
   your rivals in combat, shrewdly navigate the political factions, and acquire precious
   cards. The Spice must flow to lead your House to victory!&#10;&#10;Some important
   links: The Official FAQ, the Unofficial FAQ, and an Automa (solo and 2p) Overview&#10;&#10;'
-designers:
-- name: Paul Dennen
-japanese_name: デューン 砂の惑星：インペリウム
-learning_analysis:
-  bgg_rank: 6
-  bgg_weight: 3.0634
-  category_complexity: 3.68
-  decision_points: 4.6
-  initial_barrier: 3.65
-  interaction_complexity: 3.73
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.19
-  mechanics_count: 14
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.32
-  replayability: 4.22
-  rules_complexity: 4.0195847619047615
-  strategic_depth: 3.73
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2020
 mechanics:
 - name: Card Play Conflict Resolution
 - name: Deck, Bag, and Pool Building
@@ -89,11 +60,13 @@ mechanics:
 - name: 'Turn Order: Progressive'
 - name: Variable Player Powers
 - name: Worker Placement
-name: 'Dune: Imperium'
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Movies / TV / Radio theme
+- name: Novel-based
+- name: Political
+- name: Science Fiction
+designers:
+- name: Paul Dennen
 publishers:
 - name: Dire Wolf
 - name: Arclight Games
@@ -108,12 +81,10 @@ publishers:
 - name: sternenschimmermeer
 - name: Tabletop KZ
 - name: YingDi (旅法师营地)
+average_rating: '8.42188'
+weight: '3.0633'
 ranks:
-- rank: '6'
-  type: boardgame
-- rank: '6'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__thumb/img/JGgY-nBmkyB8WRp8vcoBLlNMQ5U=/fit-in/200x150/filters:strip_icc()/pic5666597.jpg
-type: boardgame
-weight: '3.0634'
-year_published: '2020'
+- type: boardgame
+  rank: '6'
+- type: strategygames
+  rank: '6'

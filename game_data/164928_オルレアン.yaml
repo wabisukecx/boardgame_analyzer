@@ -1,17 +1,21 @@
+type: boardgame
+name: Orléans
 alternate_names:
 - Orlean
 - Орлеан
 - オルレアン
 - 奧爾良
 - 오를레앙
-average_rating: '8.05019'
-categories:
-- name: Medieval
-- name: Religious
-- name: Travel
+japanese_name: オルレアン
+year_published: '2014'
+thumbnail_url: https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__thumb/img/ykeqdM_Naz4IiqOgyB1arzteOiU=/fit-in/200x150/filters:strip_icc()/pic6228507.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '90'
+publisher_min_age: '12'
 community_best_players: '4'
-community_min_age: '12'
 community_recommended_players: 2, 3
+community_min_age: '12'
 description: During the medieval goings-on around Orl&eacute;ans, you must assemble
   a following of farmers, merchants, knights, monks, etc. to gain supremacy through
   trade, construction and science in medieval France.&#10;&#10;In Orl&eacute;ans,
@@ -24,38 +28,6 @@ description: During the medieval goings-on around Orl&eacute;ans, you must assem
   to fall prey to fate.&#10;&#10;You will always want to take more actions than possible,
   and there are many paths to victory. The challenge is to combine all elements as
   best as possible with regard to your strategy.&#10;&#10;
-designers:
-- name: Reiner Stockhausen
-japanese_name: オルレアン
-learning_analysis:
-  bgg_rank: 34
-  bgg_weight: 3.0219
-  category_complexity: 3.26
-  decision_points: 4.666666666666664
-  initial_barrier: 3.55
-  interaction_complexity: 3.335
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.17
-  mechanics_count: 11
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.2
-  replayability: 4.68
-  rules_complexity: 3.859834545454545
-  strategic_depth: 3.69
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2014
 mechanics:
 - name: Contracts
 - name: Deck, Bag, and Pool Building
@@ -68,11 +40,12 @@ mechanics:
 - name: 'Turn Order: Progressive'
 - name: Variable Set-up
 - name: Worker Placement, Different Worker Types
-name: Orléans
-playing_time: '90'
-publisher_max_players: '5'
-publisher_min_age: '12'
-publisher_min_players: '2'
+categories:
+- name: Medieval
+- name: Religious
+- name: Travel
+designers:
+- name: Reiner Stockhausen
 publishers:
 - name: dlp games
 - name: Arclight Games
@@ -92,12 +65,10 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: Tasty Minstrel Games
 - name: White Goblin Games
-ranks:
-- rank: '34'
-  type: boardgame
-- rank: '29'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/nagl1li6kYt9elV9jbfVQw__thumb/img/ykeqdM_Naz4IiqOgyB1arzteOiU=/fit-in/200x150/filters:strip_icc()/pic6228507.jpg
-type: boardgame
+average_rating: '8.05003'
 weight: '3.0219'
-year_published: '2014'
+ranks:
+- type: boardgame
+  rank: '34'
+- type: strategygames
+  rank: '29'

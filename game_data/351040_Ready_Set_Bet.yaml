@@ -1,3 +1,5 @@
+type: boardgame
+name: Ready Set Bet
 alternate_names:
 - Un Día en las Carreras
 - A dübörgő derby
@@ -8,16 +10,15 @@ alternate_names:
 - На старт, внимание, вскачь!
 - 賽馬大亨
 - 레디 셋 벳
-average_rating: '7.54599'
-categories:
-- name: Animals
-- name: Party Game
-- name: Racing
-- name: Real-time
-- name: Sports
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/4ZCV2o_OiGha0bknXDTfdA__thumb/img/S3t6BJifjuZMOwfnUQ6lcdUx9RA=/fit-in/200x150/filters:strip_icc()/pic6678381.jpg
+publisher_min_players: '2'
+publisher_max_players: '9'
+playing_time: '60'
+publisher_min_age: '14'
 community_best_players: 6, 7, 8
-community_min_age: '10'
 community_recommended_players: 4, 5, 9
+community_min_age: '10'
 description: In Ready Set Bet, you and your friends head to the races for a day of
   cheering, jeering, and betting on your favorite horses, whose fates hang on every
   roll of the dice.&#10;&#10;Ready Set Bet is played over four rounds. Each round
@@ -26,44 +27,19 @@ description: In Ready Set Bet, you and your friends head to the races for a day 
   players win or lose money for each of their placed bet tokens, then receive a VIP
   Club Card to help them win more money in the following races. After four rounds,
   the player with the most money wins!&#10;&#10;&mdash;description from the publisher&#10;&#10;
-designers:
-- name: John D. Clair
-learning_analysis:
-  bgg_rank: 441
-  bgg_weight: 1.3178
-  category_complexity: 2.62
-  decision_points: 3.1300000000000003
-  initial_barrier: 2.01
-  interaction_complexity: 3.635
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.52
-  mechanics_count: 4
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.14
-  replayability: 3.3
-  rules_complexity: 2.917893333333333
-  strategic_depth: 2.67
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2022
 mechanics:
 - name: Betting and Bluffing
 - name: Dice Rolling
 - name: Real-Time
 - name: Track Movement
-name: Ready Set Bet
-playing_time: '60'
-publisher_max_players: '9'
-publisher_min_age: '14'
-publisher_min_players: '2'
+categories:
+- name: Animals
+- name: Party Game
+- name: Racing
+- name: Real-time
+- name: Sports
+designers:
+- name: John D. Clair
 publishers:
 - name: Alderac Entertainment Group
 - name: Boardgame Mall
@@ -76,12 +52,10 @@ publishers:
 - name: Strohmann Games
 - name: TLAMA games
 - name: Zito! Ώρα για παιχνίδι
-ranks:
-- rank: '441'
-  type: boardgame
-- rank: '13'
-  type: partygames
-thumbnail_url: https://cf.geekdo-images.com/4ZCV2o_OiGha0bknXDTfdA__thumb/img/S3t6BJifjuZMOwfnUQ6lcdUx9RA=/fit-in/200x150/filters:strip_icc()/pic6678381.jpg
-type: boardgame
+average_rating: '7.54573'
 weight: '1.3178'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '441'
+- type: partygames
+  rank: '13'

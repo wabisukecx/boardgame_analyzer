@@ -1,3 +1,5 @@
+type: boardgame
+name: Earth
 alternate_names:
 - Erde
 - A Föld
@@ -10,14 +12,16 @@ alternate_names:
 - 地球
 - 藍星
 - 어스
-average_rating: '7.64307'
-categories:
-- name: Animals
-- name: Card Game
-- name: Environmental
+japanese_name: アース
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/0xqF_KyOb7V26Lu5YT3fxw__thumb/img/ABTwzzMGekkz2jVl01LC4789TcQ=/fit-in/200x150/filters:strip_icc()/pic6699821.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '90'
+publisher_min_age: '13'
 community_best_players: 2, 3
-community_min_age: '12'
 community_recommended_players: 1, 4
+community_min_age: '12'
 description: 'Earth is a tableau builder for 1 to 5 players with simple rules and
   countless strategic possibilities. With its encyclopedic nature and a near-infinite
   number of tableau combinations, every single game will allow you to discover new
@@ -39,35 +43,6 @@ description: 'Earth is a tableau builder for 1 to 5 players with simple rules an
   Board game Hangover #1 Nature Game&#10;2024 Coup de Coeur Expert Festival Alchimie
   du jeu de Toulouse&#10;2024 BIG Awards Game of the Year Winner&#10;2024 BIG Awards
   Best artwork Winner&#10;&#10;'
-designers:
-- name: Maxime Tardif
-japanese_name: アース
-learning_analysis:
-  bgg_rank: 199
-  bgg_weight: 2.8942
-  category_complexity: 2.6
-  decision_points: 4.022222222222221
-  initial_barrier: 3.32
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 3.04
-  mechanics_count: 11
-  player_types:
-  - casual
-  - experienced
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.11
-  replayability: 3.6
-  rules_complexity: 3.7782339393939397
-  strategic_depth: 3.3
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2023
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -80,11 +55,12 @@ mechanics:
 - name: Tile Placement
 - name: Variable Set-up
 - name: Victory Points as a Resource
-name: Earth
-playing_time: '90'
-publisher_max_players: '5'
-publisher_min_age: '13'
-publisher_min_players: '1'
+categories:
+- name: Animals
+- name: Card Game
+- name: Environmental
+designers:
+- name: Maxime Tardif
 publishers:
 - name: Inside Up Games
 - name: Board Game Rookie
@@ -101,12 +77,10 @@ publishers:
 - name: Tabletop KZ
 - name: Yellowstar Games
 - name: Ігромаг
+average_rating: '7.64276'
+weight: '2.8946'
 ranks:
-- rank: '199'
-  type: boardgame
-- rank: '156'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/0xqF_KyOb7V26Lu5YT3fxw__thumb/img/ABTwzzMGekkz2jVl01LC4789TcQ=/fit-in/200x150/filters:strip_icc()/pic6699821.jpg
-type: boardgame
-weight: '2.8942'
-year_published: '2023'
+- type: boardgame
+  rank: '199'
+- type: strategygames
+  rank: '156'

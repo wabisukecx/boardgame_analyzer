@@ -1,3 +1,5 @@
+type: boardgame
+name: CATAN
 alternate_names:
 - Catan
 - Catan (Колонизаторы)
@@ -61,13 +63,16 @@ alternate_names:
 - 카탄
 - '카탄: 보드게임의 제왕'
 - 카탄의 개척자
-average_rating: '7.0939'
-categories:
-- name: Economic
-- name: Negotiation
+japanese_name: カタンの開拓者
+year_published: '1995'
+thumbnail_url: https://cf.geekdo-images.com/PyUol9QxBnZQCJqZI6bmSA__thumb/img/virV2Bm82Dql7gh-LZScBwqByik=/fit-in/200x150/filters:strip_icc()/pic8632666.png
+publisher_min_players: '3'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '10'
 community_best_players: '4'
-community_min_age: '8'
 community_recommended_players: '3'
+community_min_age: '8'
 description: 'In CATAN (formerly The Settlers of Catan), players try to be the dominant
   force on the island of Catan by building settlements, cities and roads. On each
   turn dice are rolled to determine which resources the island produces. Players build
@@ -94,37 +99,6 @@ description: 'In CATAN (formerly The Settlers of Catan), players try to be the d
   and gathering certain development cards that simply award victory points. When a
   player has gathered 10 points (some of which may be held in secret), s/he announces
   this and claims the win.&#10;&#10;'
-designers:
-- name: Klaus Teuber
-japanese_name: カタンの開拓者
-learning_analysis:
-  bgg_rank: 580
-  bgg_weight: 2.2875
-  category_complexity: 4.15
-  decision_points: 3.788
-  initial_barrier: 3.11
-  interaction_complexity: 4.65
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.63
-  mechanics_count: 12
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  - classic_lover
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.75
-  replayability: 4.5
-  rules_complexity: 3.086666666666667
-  strategic_depth: 3.29
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 1995
 mechanics:
 - name: Chaining
 - name: Dice Rolling
@@ -138,11 +112,11 @@ mechanics:
 - name: Take That
 - name: Trading
 - name: Variable Set-up
-name: CATAN
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '3'
+categories:
+- name: Economic
+- name: Negotiation
+designers:
+- name: Klaus Teuber
 publishers:
 - name: KOSMOS
 - name: 64 Ounce Games
@@ -197,14 +171,12 @@ publishers:
 - name: Top Toys
 - name: TRY SOFT
 - name: Vennerød Forlag AS
-ranks:
-- rank: '580'
-  type: boardgame
-- rank: '536'
-  type: strategygames
-- rank: '201'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/PyUol9QxBnZQCJqZI6bmSA__thumb/img/virV2Bm82Dql7gh-LZScBwqByik=/fit-in/200x150/filters:strip_icc()/pic8632666.png
-type: boardgame
+average_rating: '7.09376'
 weight: '2.2875'
-year_published: '1995'
+ranks:
+- type: boardgame
+  rank: '580'
+- type: strategygames
+  rank: '536'
+- type: familygames
+  rank: '203'

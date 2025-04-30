@@ -1,11 +1,16 @@
+type: boardgame
+name: Hot Dog
 alternate_names:
 - HOTDOG
-average_rating: '5.76063'
-categories:
-- name: Card Game
+year_published: '1996'
+thumbnail_url: https://cf.geekdo-images.com/nqy-o5NxnmfS8lWL5msgBw__thumb/img/-116KN22m_q63au6cl6RlklisbI=/fit-in/200x150/filters:strip_icc()/pic196404.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '45'
+publisher_min_age: '10'
 community_best_players: 4, 5
-community_min_age: '8'
 community_recommended_players: '3'
+community_min_age: '8'
 description: 'Theme&#10;Players attempt to earn the most money by selling their hot
   dog cards as quickly as possible and for the best price at carefully selected tables.&#10;&#10;Goal&#10;Having
   the most dollars after three games.&#10;&#10;Game play&#10;Each player gets 10 hot
@@ -39,49 +44,18 @@ description: 'Theme&#10;Players attempt to earn the most money by selling their 
   hot dogs, the game ends. If tables have become full that round, there is a last
   payout.&#10;Then all players count their dollars and write down their points. After
   three games, the richest player wins.&#10;&#10;'
+mechanics:
+- name: Simultaneous Action Selection
+categories:
+- name: Card Game
 designers:
 - name: Wolfgang Kramer
 - name: Richard Ulrich
-learning_analysis:
-  bgg_rank: 20549
-  bgg_weight: 1.2308
-  category_complexity: 2.3
-  decision_points: 3.3699999999999997
-  initial_barrier: 2.14
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.9
-  mechanics_count: 1
-  player_types:
-  - beginner
-  - casual
-  - classic_lover
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.08
-  replayability: 2.4
-  rules_complexity: 2.426826666666667
-  strategic_depth: 2.66
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 1996
-mechanics:
-- name: Simultaneous Action Selection
-name: Hot Dog
-playing_time: '45'
-publisher_max_players: '5'
-publisher_min_age: '10'
-publisher_min_players: '2'
 publishers:
 - name: AMIGO
 - name: リゴレ (rigoler)
-ranks:
-- rank: '20549'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/nqy-o5NxnmfS8lWL5msgBw__thumb/img/-116KN22m_q63au6cl6RlklisbI=/fit-in/200x150/filters:strip_icc()/pic196404.jpg
-type: boardgame
+average_rating: '5.76063'
 weight: '1.2308'
-year_published: '1996'
+ranks:
+- type: boardgame
+  rank: '20559'

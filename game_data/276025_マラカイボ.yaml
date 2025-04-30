@@ -1,17 +1,20 @@
+type: boardgame
+name: Maracaibo
 alternate_names:
 - Маракайбо
 - マラカイボ
 - 马拉开波
 - 마라카이보
-average_rating: '7.98032'
-categories:
-- name: Economic
-- name: Exploration
-- name: Nautical
-- name: Pirates
+japanese_name: マラカイボ
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__thumb/img/lVlnhYyxlZb3WuKZJHLoJcFHEjs=/fit-in/200x150/filters:strip_icc()/pic4917407.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: '3'
-community_min_age: '14'
 community_recommended_players: 1, 2, 4
+community_min_age: '14'
 description: 'Maracaibo, a strategy game for 1-4 players by Alexander Pfister, is
   set in the Caribbean during the 17th century. The players try to increase their
   influence in three nations in four rounds with a play time of 40 minutes per player.&#10;&#10;The
@@ -22,38 +25,6 @@ description: 'Maracaibo, a strategy game for 1-4 players by Alexander Pfister, i
   your ship around the course, managing it by using cards like in other games from
   Alexander Pfister.&#10;&#10;&#10;NOTE: The Spanish and Portuguese editions of Maracaibo
   contain La Armada mini-expansion packaged inside the base game''s box.&#10;&#10;'
-designers:
-- name: Alexander Pfister
-japanese_name: マラカイボ
-learning_analysis:
-  bgg_rank: 74
-  bgg_weight: 3.9125
-  category_complexity: 3.97
-  decision_points: 4.494285714285714
-  initial_barrier: 3.78
-  interaction_complexity: 3.2399999999999998
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.02
-  mechanics_count: 16
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.16
-  replayability: 4.43
-  rules_complexity: 3.8993749999999996
-  strategic_depth: 3.73
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2019
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -71,11 +42,13 @@ mechanics:
 - name: Tech Trees / Tech Tracks
 - name: Track Movement
 - name: Variable Set-up
-name: Maracaibo
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Economic
+- name: Exploration
+- name: Nautical
+- name: Pirates
+designers:
+- name: Alexander Pfister
 publishers:
 - name: Game's Up
 - name: BoardM Factory
@@ -90,12 +63,10 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: uplay.it edizioni
 - name: YOKA Games
-ranks:
-- rank: '74'
-  type: boardgame
-- rank: '56'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__thumb/img/lVlnhYyxlZb3WuKZJHLoJcFHEjs=/fit-in/200x150/filters:strip_icc()/pic4917407.jpg
-type: boardgame
+average_rating: '7.98007'
 weight: '3.9125'
-year_published: '2019'
+ranks:
+- type: boardgame
+  rank: '74'
+- type: strategygames
+  rank: '56'

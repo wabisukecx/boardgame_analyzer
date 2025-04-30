@@ -1,3 +1,5 @@
+type: boardgame
+name: Clans of Caledonia
 alternate_names:
 - Clan di Caledonia
 - Clanes de Caledonia
@@ -7,13 +9,16 @@ alternate_names:
 - クランズ・オブ・カレドニア
 - 加勒多尼亞
 - 클랜 오브 칼레도니아
-average_rating: '7.9369'
-categories:
-- name: Economic
-- name: Farming
+japanese_name: クランズ・オブ・カレドニア
+year_published: '2017'
+thumbnail_url: https://cf.geekdo-images.com/SPuwc6RJ6y4PnTH36Pegsg__thumb/img/M_6Yxp0A_NbebWk3Mepinsm96WI=/fit-in/200x150/filters:strip_icc()/pic3511783.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: '4'
-community_min_age: '12'
 community_recommended_players: 1, 2, 3
+community_min_age: '12'
 description: Clans of Caledonia is a mid-to-heavy economic game set in 19th-century
   Scotland. At this time, Scotland made the transition from an agricultural to an
   industrialized country that heavily relied on trade and export. In the following
@@ -33,38 +38,6 @@ description: Clans of Caledonia is a mid-to-heavy economic game set in 19th-cent
   VPs depending on the scoring tile of the current round.&#10;&#10;The game comes
   with eight different clans, a modular board with 16 configurations, eight port bonuses
   and eight round scoring tiles.&#10;&#10;
-designers:
-- name: Juma Al-JouJou
-japanese_name: クランズ・オブ・カレドニア
-learning_analysis:
-  bgg_rank: 72
-  bgg_weight: 3.4663
-  category_complexity: 4.04
-  decision_points: 4.15
-  initial_barrier: 3.78
-  interaction_complexity: 3.825
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.18
-  mechanics_count: 10
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.16
-  replayability: 4.29
-  rules_complexity: 3.95526
-  strategic_depth: 3.6
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2017
 mechanics:
 - name: Commodity Speculation
 - name: Contracts
@@ -76,11 +49,11 @@ mechanics:
 - name: Solo / Solitaire Game
 - name: 'Turn Order: Pass Order'
 - name: Variable Player Powers
-name: Clans of Caledonia
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Economic
+- name: Farming
+designers:
+- name: Juma Al-JouJou
 publishers:
 - name: Karma Games
 - name: BoardM Factory
@@ -93,12 +66,10 @@ publishers:
 - name: Red Glove
 - name: テンデイズゲームズ (TendaysGames)
 - name: TLAMA games
-ranks:
-- rank: '72'
-  type: boardgame
-- rank: '61'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/SPuwc6RJ6y4PnTH36Pegsg__thumb/img/M_6Yxp0A_NbebWk3Mepinsm96WI=/fit-in/200x150/filters:strip_icc()/pic3511783.png
-type: boardgame
+average_rating: '7.93697'
 weight: '3.4663'
-year_published: '2017'
+ranks:
+- type: boardgame
+  rank: '72'
+- type: strategygames
+  rank: '61'

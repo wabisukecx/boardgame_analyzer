@@ -1,3 +1,5 @@
+type: boardgame
+name: Forest Shuffle
 alternate_names:
 - Embosca't
 - Az erdő
@@ -18,15 +20,16 @@ alternate_names:
 - フォレストシャッフル
 - 森森不息
 - 포레스트 셔플
-average_rating: '7.71301'
-categories:
-- name: Animals
-- name: Card Game
-- name: Educational
-- name: Environmental
+japanese_name: フォレストシャッフル
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/08bC8NviSTNc4Zvur4pueA__thumb/img/Xq8TNBmMl3Z7DoynvbUXchFAztc=/fit-in/200x150/filters:strip_icc()/pic7578350.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '60'
+publisher_min_age: '10'
 community_best_players: '2'
-community_min_age: '10'
 community_recommended_players: 3, 4
+community_min_age: '10'
 description: In Forest Shuffle, players compete to gather the most valuable trees,
   then attract species to these trees, thus creating an ecologically balanced habitat
   for flora and fauna.&#10;&#10;To start, each player has six cards in hand, with
@@ -41,35 +44,6 @@ description: In Forest Shuffle, players compete to gather the most valuable tree
   in their forest. Whoever scores the most points wins.&#10;&#10;Forest Shuffle is
   the first in a line of Lookout games sporting the Lookout Greenline label, produced
   on FSC certified paper and avoiding plastic completely.&#10;&#10;
-designers:
-- name: Kosch
-japanese_name: フォレストシャッフル
-learning_analysis:
-  bgg_rank: 206
-  bgg_weight: 2.1977
-  category_complexity: 2.62
-  decision_points: 4.140000000000001
-  initial_barrier: 3.15
-  interaction_complexity: 2.65
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.07
-  mechanics_count: 8
-  player_types:
-  - casual
-  - experienced
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.84
-  replayability: 3.6
-  rules_complexity: 3.4737066666666663
-  strategic_depth: 3.09
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2023
 mechanics:
 - name: End Game Bonuses
 - name: Hand Management
@@ -79,11 +53,13 @@ mechanics:
 - name: Open Drafting
 - name: Set Collection
 - name: Tags
-name: Forest Shuffle
-playing_time: '60'
-publisher_max_players: '5'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Animals
+- name: Card Game
+- name: Educational
+- name: Environmental
+designers:
+- name: Kosch
 publishers:
 - name: Lookout Games
 - name: ADC Blackfire Entertainment
@@ -98,14 +74,12 @@ publishers:
 - name: MEBO Games
 - name: Rebel Sp. z o.o.
 - name: Well Designed Game
-ranks:
-- rank: '206'
-  type: boardgame
-- rank: '153'
-  type: strategygames
-- rank: '27'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/08bC8NviSTNc4Zvur4pueA__thumb/img/Xq8TNBmMl3Z7DoynvbUXchFAztc=/fit-in/200x150/filters:strip_icc()/pic7578350.jpg
-type: boardgame
+average_rating: '7.71263'
 weight: '2.1977'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '206'
+- type: strategygames
+  rank: '153'
+- type: familygames
+  rank: '27'

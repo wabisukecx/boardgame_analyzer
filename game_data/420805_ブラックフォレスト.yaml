@@ -1,18 +1,21 @@
+type: boardgame
+name: Black Forest
 alternate_names:
 - Czarny las
 - Selva negra
 - ブラックフォレスト
 - 翠光密林
 - 블랙 포레스트
-average_rating: '7.65123'
-categories:
-- name: City Building
-- name: Economic
-- name: Industry / Manufacturing
-- name: Medieval
+japanese_name: ブラックフォレスト
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/zyc92pV4Mn2G6HCegMGPWQ__thumb/img/eBQt7m5f9RtsZfBgCNhJER6f5CA=/fit-in/200x150/filters:strip_icc()/pic8194217.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '14'
 community_best_players: 1, 3
-community_min_age: '12'
 community_recommended_players: 2, 4
+community_min_age: '12'
 description: In Black Forest, you start out with a small domain in need of new buildings
   and livestock. You&rsquo;ll travel from village to village, to enlist the aid of
   the best specialists.  Exploiting the abilities of these specialists lets you collect
@@ -26,37 +29,6 @@ description: In Black Forest, you start out with a small domain in need of new b
   in Black Forest  instead of simultaneous action selection.&#10;&#10;A wide selection
   of buildings and their different effects offer many different paths to victory.&#10;&#10;&mdash;description
   from publisher&#10;&#10;
-designers:
-- name: Tido Lorenz
-- name: Uwe Rosenberg
-japanese_name: ブラックフォレスト
-learning_analysis:
-  bgg_rank: 1457
-  bgg_weight: 3.2292
-  category_complexity: 4.48
-  decision_points: 4.406666666666668
-  initial_barrier: 3.62
-  interaction_complexity: 3.165
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 2.95
-  mechanics_count: 8
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.95
-  replayability: 3.4
-  rules_complexity: 3.8341733333333337
-  strategic_depth: 3.52
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2024
 mechanics:
 - name: Automatic Resource Growth
 - name: End Game Bonuses
@@ -66,11 +38,14 @@ mechanics:
 - name: Tile Placement
 - name: Variable Set-up
 - name: Worker Placement
-name: Black Forest
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: City Building
+- name: Economic
+- name: Industry / Manufacturing
+- name: Medieval
+designers:
+- name: Tido Lorenz
+- name: Uwe Rosenberg
 publishers:
 - name: Feuerland Spiele
 - name: Capstone Games
@@ -82,12 +57,10 @@ publishers:
 - name: Super Meeple
 - name: テンデイズゲームズ (TendaysGames)
 - name: White Goblin Games
-ranks:
-- rank: '1457'
-  type: boardgame
-- rank: '720'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/zyc92pV4Mn2G6HCegMGPWQ__thumb/img/eBQt7m5f9RtsZfBgCNhJER6f5CA=/fit-in/200x150/filters:strip_icc()/pic8194217.jpg
-type: boardgame
+average_rating: '7.64676'
 weight: '3.2292'
-year_published: '2024'
+ranks:
+- type: boardgame
+  rank: '1454'
+- type: strategygames
+  rank: '719'

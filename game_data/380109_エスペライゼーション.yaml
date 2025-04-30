@@ -1,11 +1,17 @@
+type: boardgame
+name: 'Gibberers: The Word Game of Language Invention and Civilization Development'
 alternate_names:
 - エスペライゼーション
-average_rating: '7.93194'
-categories:
-- name: Word Game
+japanese_name: エスペライゼーション
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/m8sYvezW8eVDGvPrDmfOrA__thumb/img/i7izX6aN5Mdz0vEzVywZbUu4BDM=/fit-in/200x150/filters:strip_icc()/pic8337380.png
+publisher_min_players: '3'
+publisher_max_players: '5'
+playing_time: '180'
+publisher_min_age: '14'
 community_best_players: 4, 5
-community_min_age: '8'
 community_recommended_players: 2, 3, 5+
+community_min_age: '8'
 description: 'People with different knowledge and languages met and united as a new
   tribe, creating a new language and developing civilization.&#10;&#10;Gibberers:
   Invention of Language and Civilization is an expert word game akin to field linguistics.
@@ -14,48 +20,16 @@ description: 'People with different knowledge and languages met and united as a 
   new language evolves like a tech tree.&#10;&#10;Gibberers includes short rules that
   allow for a 60-minute game and full &quot;expert&quot; rules that generate a 180-minute
   experience not like any other word games.&#10;&#10;'
-designers:
-- name: Keisei
-japanese_name: エスペライゼーション
-learning_analysis:
-  bgg_rank: 8240
-  bgg_weight: 2.7778
-  category_complexity: 2.1
-  decision_points: 3.4699999999999998
-  initial_barrier: 2.43
-  interaction_complexity: 2.5
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.9
-  mechanics_count: 1
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.1
-    strategic_bonus: 0.2
-  rank_complexity: 2.16
-  replayability: 2.2
-  rules_complexity: 3.0028933333333336
-  strategic_depth: 3.19
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2024
 mechanics:
 - name: Cooperative Game
-name: 'Gibberers: The Word Game of Language Invention and Civilization Development'
-playing_time: '180'
-publisher_max_players: '5'
-publisher_min_age: '14'
-publisher_min_players: '3'
+categories:
+- name: Word Game
+designers:
+- name: Keisei
 publishers:
 - name: Hobby Japan
-ranks:
-- rank: '8240'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/m8sYvezW8eVDGvPrDmfOrA__thumb/img/i7izX6aN5Mdz0vEzVywZbUu4BDM=/fit-in/200x150/filters:strip_icc()/pic8337380.png
-type: boardgame
+average_rating: '7.93194'
 weight: '2.7778'
-year_published: '2024'
+ranks:
+- type: boardgame
+  rank: '8247'

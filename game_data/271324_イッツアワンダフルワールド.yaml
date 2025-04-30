@@ -1,3 +1,5 @@
+type: boardgame
+name: It's a Wonderful World
 alternate_names:
 - É Um Maravilhoso Mundo
 - Nowy wspaniały świat
@@ -11,15 +13,16 @@ alternate_names:
 - イッツアワンダフルワールド
 - 美丽新世界
 - 원더풀 월드
-average_rating: '7.6496'
-categories:
-- name: Card Game
-- name: Civilization
-- name: Economic
-- name: Science Fiction
+japanese_name: イッツアワンダフルワールド
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/od4vDTdXGPSVc-kjLqM11w__thumb/img/T2ukKoCUNv2LMxg5GOlOb8WTzNI=/fit-in/200x150/filters:strip_icc()/pic4651175.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '45'
+publisher_min_age: '14'
 community_best_players: '4'
-community_min_age: '10'
 community_recommended_players: 1, 2, 3, 5
+community_min_age: '10'
 description: 'In It&rsquo;s a Wonderful World, you are an expanding Empire and must
   choose your path to your future. You must develop faster and better than your competitors.
   You&rsquo;ll carefully plan your expansion to develop your production power and
@@ -39,36 +42,6 @@ description: 'In It&rsquo;s a Wonderful World, you are an expanding Empire and m
   during the campaign. All the campaigns can be replayed and don&rsquo;t imply game
   components destruction.&#10;&#10;More info on the Campaign mode : It''s a Wonderful
   World - Campaign Mode &#10;&#10;&mdash;description from the publisher&#10;&#10;'
-designers:
-- name: Frédéric Guérard
-japanese_name: イッツアワンダフルワールド
-learning_analysis:
-  bgg_rank: 172
-  bgg_weight: 2.3191
-  category_complexity: 4.14
-  decision_points: 4.060000000000001
-  initial_barrier: 3.32
-  interaction_complexity: 3.5
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.89
-  mechanics_count: 8
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 3.11
-  replayability: 4.07
-  rules_complexity: 3.5959033333333337
-  strategic_depth: 3.23
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2019
 mechanics:
 - name: Closed Drafting
 - name: End Game Bonuses
@@ -78,11 +51,13 @@ mechanics:
 - name: Simultaneous Action Selection
 - name: Solo / Solitaire Game
 - name: Variable Player Powers
-name: It's a Wonderful World
-playing_time: '45'
-publisher_max_players: '5'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Card Game
+- name: Civilization
+- name: Economic
+- name: Science Fiction
+designers:
+- name: Frédéric Guérard
 publishers:
 - name: La Boîte de Jeu
 - name: Blackrock Games
@@ -104,12 +79,10 @@ publishers:
 - name: Studio Supernova
 - name: TLAMA games
 - name: Tranjis Games
-ranks:
-- rank: '172'
-  type: boardgame
-- rank: '142'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/od4vDTdXGPSVc-kjLqM11w__thumb/img/T2ukKoCUNv2LMxg5GOlOb8WTzNI=/fit-in/200x150/filters:strip_icc()/pic4651175.jpg
-type: boardgame
+average_rating: '7.64949'
 weight: '2.3191'
-year_published: '2019'
+ranks:
+- type: boardgame
+  rank: '172'
+- type: strategygames
+  rank: '142'

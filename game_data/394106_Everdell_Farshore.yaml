@@ -1,3 +1,5 @@
+type: boardgame
+name: Everdell Farshore
 alternate_names:
 - 'Divukraj: Dálava'
 - 'Everdell Farshore: Essentials Edition'
@@ -6,15 +8,15 @@ alternate_names:
 - 'Farshore: Ein Spiel in der Welt von Everdell'
 - 'Эверделл: Дальний берег'
 - 遠方海岸
-average_rating: '7.88153'
-categories:
-- name: Animals
-- name: Card Game
-- name: City Building
-- name: Fantasy
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/JDXU1SebJFXBsP4qT79oYg__thumb/img/wzgfJrJBnw51mfA8YhmnHXolWkM=/fit-in/200x150/filters:strip_icc()/pic7605937.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '80'
+publisher_min_age: '10'
 community_best_players: 2, 3
-community_min_age: '10'
 community_recommended_players: 1, 4
+community_min_age: '10'
 description: The Forever Sea is calling...&#10;&#10;The rugged coast north of Everdell
   Valley is a land brimming with adventure and mystery. Stalwart sailors search for
   bountiful islands and valuable treasures. Dutiful monks inhabit abbeys and scriptoriums,
@@ -26,45 +28,19 @@ description: The Forever Sea is calling...&#10;&#10;The rugged coast north of Ev
   order to build and to sail, for only by adapting to the winds of change will you
   succeed.&#10;&#10;The wind is high. The sun is breaking the horizon. It is time
   to set sail for adventure!&#10;&#10;&mdash;description from the publisher&#10;&#10;
-designers:
-- name: James A. Wilson
-- name: Clarissa A. Wilson
-learning_analysis:
-  bgg_rank: 1104
-  bgg_weight: 2.8302
-  category_complexity: 3.16
-  decision_points: 4.340000000000001
-  initial_barrier: 2.59
-  interaction_complexity: 3.0599999999999996
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.92
-  mechanics_count: 4
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.22
-  replayability: 2.9
-  rules_complexity: 3.2897066666666666
-  strategic_depth: 3.37
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2023
 mechanics:
 - name: Hand Management
 - name: Open Drafting
 - name: Set Collection
 - name: Worker Placement
-name: Everdell Farshore
-playing_time: '80'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Animals
+- name: Card Game
+- name: City Building
+- name: Fantasy
+designers:
+- name: James A. Wilson
+- name: Clarissa A. Wilson
 publishers:
 - name: Starling Games (II)
 - name: CMON Global Limited
@@ -78,12 +54,10 @@ publishers:
 - name: REXhry
 - name: Tabletop Tycoon Inc.
 - name: White Goblin Games
-ranks:
-- rank: '1104'
-  type: boardgame
-- rank: '248'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/JDXU1SebJFXBsP4qT79oYg__thumb/img/wzgfJrJBnw51mfA8YhmnHXolWkM=/fit-in/200x150/filters:strip_icc()/pic7605937.png
-type: boardgame
+average_rating: '7.8826'
 weight: '2.8302'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '1102'
+- type: familygames
+  rank: '247'

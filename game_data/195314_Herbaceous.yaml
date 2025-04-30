@@ -1,3 +1,5 @@
+type: boardgame
+name: Herbaceous
 alternate_names:
 - Fűszerkert
 - Herbáceas
@@ -6,13 +8,15 @@ alternate_names:
 - Kruidgewas
 - Niezłe Ziółka
 - 香草花园
-average_rating: '7.00287'
-categories:
-- name: Card Game
-- name: Print & Play
+year_published: '2017'
+thumbnail_url: https://cf.geekdo-images.com/0HHqYFhJvOwk8Z0Dt-EvTA__thumb/img/EwiBLR6QywbISk0aGe-Vya4zXws=/fit-in/200x150/filters:strip_icc()/pic7083274.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '20'
+publisher_min_age: '8'
 community_best_players: '4'
-community_min_age: '6'
 community_recommended_players: 1, 2, 3
+community_min_age: '6'
 description: In Herbaceous, herb collectors compete to grow and store the most valuable
   medley of herbs. Everyone starts with four containers, each of which allows a different
   grouping action:&#10;&#10;&#10;     Group herbs of same type&#10;     Group different
@@ -25,43 +29,16 @@ description: In Herbaceous, herb collectors compete to grow and store the most v
   then &quot;collected&quot; those and can't use the container again.&#10;&#10;At
   the end of the game, collectors determine the best collection as a combination of
   value from their collection, matching herbs, and herb sets.&#10;&#10;
-designers:
-- name: Eduardo Baraf
-- name: Steve Finn
-learning_analysis:
-  bgg_rank: 1122
-  bgg_weight: 1.2048
-  category_complexity: 2.36
-  decision_points: 3.125
-  initial_barrier: 1.97
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.53
-  mechanics_count: 3
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.21
-  replayability: 2.86
-  rules_complexity: 2.350293333333333
-  strategic_depth: 2.19
-  strategic_depth_description: 低め（限られた戦略オプション）
-  year_published: 2017
 mechanics:
 - name: Push Your Luck
 - name: Set Collection
 - name: Solo / Solitaire Game
-name: Herbaceous
-playing_time: '20'
-publisher_max_players: '4'
-publisher_min_age: '8'
-publisher_min_players: '1'
+categories:
+- name: Card Game
+- name: Print & Play
+designers:
+- name: Eduardo Baraf
+- name: Steve Finn
 publishers:
 - name: Dr. Finn's Games
 - name: Pencil First Games, LLC
@@ -72,12 +49,10 @@ publishers:
 - name: Maldito Games
 - name: Matagot
 - name: Quality Beast
-ranks:
-- rank: '1122'
-  type: boardgame
-- rank: '329'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/0HHqYFhJvOwk8Z0Dt-EvTA__thumb/img/EwiBLR6QywbISk0aGe-Vya4zXws=/fit-in/200x150/filters:strip_icc()/pic7083274.jpg
-type: boardgame
+average_rating: '7.00291'
 weight: '1.2048'
-year_published: '2017'
+ranks:
+- type: boardgame
+  rank: '1123'
+- type: familygames
+  rank: '329'

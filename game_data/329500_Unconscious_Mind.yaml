@@ -1,3 +1,5 @@
+type: boardgame
+name: Unconscious Mind
 alternate_names:
 - Cesta do nevědomí
 - Mintea Inconstienta
@@ -8,13 +10,15 @@ alternate_names:
 - Das Unbewusste
 - Бессознательное
 - 梦境潜行
-average_rating: '7.95899'
-categories:
-- name: Medical
-- name: Post-Napoleonic
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/ufkAbhulnKJ7uDpi09TXOQ__thumb/img/XBP7p0D1bkzDXkoOuXSiavW26Ig=/fit-in/200x150/filters:strip_icc()/pic7127448.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: 2, 3
-community_min_age: '14'
 community_recommended_players: '1'
+community_min_age: '14'
 description: In the early 1900s, the Austrian neurologist Sigmund Freud established
   a revolutionary theory called psychoanalysis, related to the study of the unconscious
   mind. As his work took hold, supporters met at Freud's apartment every Wednesday
@@ -38,40 +42,6 @@ description: In the early 1900s, the Austrian neurologist Sigmund Freud establis
   special abilities and end-game scoring opportunities.&#10;&#10;Once the group has
   solidified its reputation, the end of the game is signaled, and the member with
   the most points wins.&#10;&#10;&mdash;description from the publisher&#10;&#10;
-designers:
-- name: Laskas
-- name: Jonny Pac
-- name: Yoma
-- name: Antonio Zax
-learning_analysis:
-  bgg_rank: 449
-  bgg_weight: 3.9739
-  category_complexity: 3.73
-  decision_points: 4.5920000000000005
-  initial_barrier: 3.85
-  interaction_complexity: 3.455
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.18
-  mechanics_count: 12
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - strategist
-  - system_master
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.07
-  replayability: 3.6
-  rules_complexity: 4.05978
-  strategic_depth: 3.81
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2024
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -85,11 +55,14 @@ mechanics:
 - name: Tags
 - name: Variable Set-up
 - name: Worker Placement
-name: Unconscious Mind
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Medical
+- name: Post-Napoleonic
+designers:
+- name: Laskas
+- name: Jonny Pac
+- name: Yoma
+- name: Antonio Zax
 publishers:
 - name: Fantasia Games
 - name: Frosted Games
@@ -101,12 +74,10 @@ publishers:
 - name: Mosaico Jogos
 - name: Regatul Jocurilor
 - name: TLAMA games
+average_rating: '7.95953'
+weight: '3.9717'
 ranks:
-- rank: '449'
-  type: boardgame
-- rank: '252'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/ufkAbhulnKJ7uDpi09TXOQ__thumb/img/XBP7p0D1bkzDXkoOuXSiavW26Ig=/fit-in/200x150/filters:strip_icc()/pic7127448.jpg
-type: boardgame
-weight: '3.9739'
-year_published: '2024'
+- type: boardgame
+  rank: '448'
+- type: strategygames
+  rank: '251'

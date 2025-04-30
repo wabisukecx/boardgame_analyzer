@@ -1,9 +1,14 @@
+type: boardgame
+name: My Trolley Town
 alternate_names:
 - マイトロッコタウン
-average_rating: '7.2'
-categories:
-- name: Industry / Manufacturing
-- name: Medieval
+japanese_name: マイトロッコタウン
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/i78G4ZjY-kB-3G1kNcjv1g__thumb/img/ahuyllPER-t9ecDQVYjQfrfQeqs=/fit-in/200x150/filters:strip_icc()/pic7494768.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '10'
 description: '&quot;My Trolley Town&quot; is a tile placement game for 1-4 players,
   with a play time of about 45 minutes.&#10;Players produce resources, construct buildings
   and tracks, transport and process resources to get victory points.&#10;&#10;In this
@@ -19,49 +24,19 @@ description: '&quot;My Trolley Town&quot; is a tile placement game for 1-4 playe
   the Processing phase, each player activates the processing effects of all the buildings
   he owns as many times as possible.&#10;&#10;The winner is the player who scores
   the highest victory points.&#10;&#10;-description from designer&#10;&#10;'
-designers:
-- name: Shun Taguchi
-- name: Aya Taguchi
-japanese_name: マイトロッコタウン
-learning_analysis:
-  bgg_rank: 17085
-  bgg_weight: 2.5
-  category_complexity: 3.99
-  decision_points: 3.6149999999999998
-  initial_barrier: 2.7
-  interaction_complexity: 2.955
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.1
-  mechanics_count: 2
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.09
-  replayability: 2.4
-  rules_complexity: 2.9986666666666664
-  strategic_depth: 2.88
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2023
 mechanics:
 - name: Pick-up and Deliver
 - name: Tile Placement
-name: My Trolley Town
-playing_time: '60'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Industry / Manufacturing
+- name: Medieval
+designers:
+- name: Shun Taguchi
+- name: Aya Taguchi
 publishers:
 - name: Studio GG
-ranks:
-- rank: '17085'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/i78G4ZjY-kB-3G1kNcjv1g__thumb/img/ahuyllPER-t9ecDQVYjQfrfQeqs=/fit-in/200x150/filters:strip_icc()/pic7494768.png
-type: boardgame
+average_rating: '7.2'
 weight: '2.5'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '17086'

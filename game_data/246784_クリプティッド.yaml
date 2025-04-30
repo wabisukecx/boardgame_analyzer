@@ -1,15 +1,21 @@
+type: boardgame
+name: Cryptid
 alternate_names:
 - Cryptide
 - Kryptyda
 - Криптид
 - クリプティッド
 - 詭影尋蹤
-average_rating: '7.43743'
-categories:
-- name: Deduction
+japanese_name: クリプティッド
+year_published: '2018'
+thumbnail_url: https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__thumb/img/ZFL0o-lhnuWE21Sa9YS8qi8ayGU=/fit-in/200x150/filters:strip_icc()/pic4037705.jpg
+publisher_min_players: '3'
+publisher_max_players: '5'
+playing_time: '50'
+publisher_min_age: '10'
 community_best_players: '4'
-community_min_age: '10'
 community_recommended_players: 3, 5
+community_min_age: '10'
 description: 'You''ve studied the footage, connected the dots, and gathered what meager
   evidence you could. You''re close &mdash; soon the whole world will know the truth
   behind the Cryptid. A group of like-minded cryptozoologists have come together to
@@ -29,46 +35,16 @@ description: 'You''ve studied the footage, connected the dots, and gathered what
   in eight clues:&#10;&#10;    2,#9,#13,#64 states cougar, should be bear&#10;    3,#63,#72,#95
   states bear, should be cougar&#10;&#10;&#10;The official website with an online
   tool to randomly generate more clues is http://playcryptid.com/&#10;&#10;'
-designers:
-- name: Hal Duncan
-- name: Ruth Veevers
-japanese_name: クリプティッド
-learning_analysis:
-  bgg_rank: 320
-  bgg_weight: 2.262
-  category_complexity: 3.3
-  decision_points: 3.44
-  initial_barrier: 2.45
-  interaction_complexity: 3.3
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.75
-  mechanics_count: 4
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.82
-  replayability: 3.41
-  rules_complexity: 3.029066666666666
-  strategic_depth: 2.85
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2018
 mechanics:
 - name: Deduction
 - name: Hexagon Grid
 - name: Modular Board
 - name: Pattern Recognition
-name: Cryptid
-playing_time: '50'
-publisher_max_players: '5'
-publisher_min_age: '10'
-publisher_min_players: '3'
+categories:
+- name: Deduction
+designers:
+- name: Hal Duncan
+- name: Ruth Veevers
 publishers:
 - name: Osprey Games
 - name: 17wanzy (Yihu BG)
@@ -81,14 +57,12 @@ publishers:
 - name: Playagame Edizioni
 - name: Reflexshop
 - name: Skellig Games
-ranks:
-- rank: '320'
-  type: boardgame
-- rank: '241'
-  type: strategygames
-- rank: '68'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/qrPLpAnhFgc470ZRuXlvbg__thumb/img/ZFL0o-lhnuWE21Sa9YS8qi8ayGU=/fit-in/200x150/filters:strip_icc()/pic4037705.jpg
-type: boardgame
+average_rating: '7.43736'
 weight: '2.262'
-year_published: '2018'
+ranks:
+- type: boardgame
+  rank: '320'
+- type: strategygames
+  rank: '241'
+- type: familygames
+  rank: '68'

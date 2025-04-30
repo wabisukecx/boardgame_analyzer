@@ -1,11 +1,15 @@
+type: boardgame
+name: Snow Planner
 alternate_names:
 - スノープランナー
 - 雪山畫策
-average_rating: '7.52234'
-categories:
-- name: Dice
-- name: Economic
-- name: Travel
+japanese_name: スノープランナー
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/JOAZiJiHdk3qXsxgEnXfMA__thumb/img/U8TBf9npqlbsdFoc_9H4OCcT-K0=/fit-in/200x150/filters:strip_icc()/pic8366851.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: 2, 4
 community_recommended_players: 1, 3
 description: Snow Planner is a dice-placement game for 1-4 players who each take the
@@ -19,36 +23,6 @@ description: Snow Planner is a dice-placement game for 1-4 players who each take
   player starts with one of the talent cards, giving them unique powers during the
   game. By using this power and their dice, players can fulfill goals and projects
   or attract VIP guests.&#10;&#10;In the end, whoever earns the most points wins.&#10;&#10;
-designers:
-- name: Akashi
-japanese_name: スノープランナー
-learning_analysis:
-  bgg_rank: 8572
-  bgg_weight: 3.1667
-  category_complexity: 3.04
-  decision_points: 4.635
-  initial_barrier: 3.56
-  interaction_complexity: 3.4
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.36
-  mechanics_count: 10
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.15
-  replayability: 3.3
-  rules_complexity: 4.05734
-  strategic_depth: 3.63
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2023
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -60,20 +34,19 @@ mechanics:
 - name: Variable Player Powers
 - name: Worker Placement
 - name: Worker Placement with Dice Workers
-name: Snow Planner
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Dice
+- name: Economic
+- name: Travel
+designers:
+- name: Akashi
 publishers:
 - name: 14games
 - name: JJ Board game
 - name: Mysterious Island Games
 - name: Soragame Studio
-ranks:
-- rank: '8572'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/JOAZiJiHdk3qXsxgEnXfMA__thumb/img/U8TBf9npqlbsdFoc_9H4OCcT-K0=/fit-in/200x150/filters:strip_icc()/pic8366851.png
-type: boardgame
+average_rating: '7.52234'
 weight: '3.1667'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '8570'

@@ -1,3 +1,5 @@
+type: boardgame
+name: Dominion (Second Edition)
 alternate_names:
 - Dominion (II edycja)
 - Dominion (Második Kiadás)
@@ -10,13 +12,16 @@ alternate_names:
 - Домініон (друге видання)
 - ドミニオン：第二版
 - 도미니언 (2018년 개정판)
-average_rating: '7.8308'
-categories:
-- name: Card Game
-- name: Medieval
+japanese_name: ドミニオン：第二版
+year_published: '2016'
+thumbnail_url: https://cf.geekdo-images.com/4dmyKfqQm_uxA1-chh4JeQ__thumb/img/Td5CxjO0ZTIbwHNhk2ETEy1qYyg=/fit-in/200x150/filters:strip_icc()/pic3187001.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '30'
+publisher_min_age: '14'
 community_best_players: 2, 3
-community_min_age: '8'
 community_recommended_players: '4'
+community_min_age: '8'
 description: '&quot;You are a monarch, like your parents before you, a ruler of a
   small pleasant kingdom of rivers and evergreens. Unlike your parents, however, you
   have hopes and dreams! You want a bigger and more pleasant kingdom, with more rivers
@@ -46,35 +51,6 @@ description: '&quot;You are a monarch, like your parents before you, a ruler of 
   the seven new kingdom cards introduced in the second edition of Dominion, thereby
   allowing owners of the first edition to obtain these new cards without needing to
   repurchase the entire game.&#10;&#10;'
-designers:
-- name: Donald X. Vaccarino
-japanese_name: ドミニオン：第二版
-learning_analysis:
-  bgg_rank: 183
-  bgg_weight: 2.1793
-  category_complexity: 3.04
-  decision_points: 3.9500000000000006
-  initial_barrier: 2.94
-  interaction_complexity: 3.13
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.8
-  mechanics_count: 6
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 3.11
-  replayability: 3.74
-  rules_complexity: 3.489193333333333
-  strategic_depth: 2.92
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2016
 mechanics:
 - name: Deck, Bag, and Pool Building
 - name: Delayed Purchase
@@ -82,11 +58,11 @@ mechanics:
 - name: Open Drafting
 - name: Take That
 - name: Variable Set-up
-name: Dominion (Second Edition)
-playing_time: '30'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '2'
+categories:
+- name: Card Game
+- name: Medieval
+designers:
+- name: Donald X. Vaccarino
 publishers:
 - name: Rio Grande Games
 - name: 999 Games
@@ -100,12 +76,10 @@ publishers:
 - name: IUVI Games
 - name: Korea Boardgames
 - name: Laguna
-ranks:
-- rank: '183'
-  type: boardgame
-- rank: '144'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/4dmyKfqQm_uxA1-chh4JeQ__thumb/img/Td5CxjO0ZTIbwHNhk2ETEy1qYyg=/fit-in/200x150/filters:strip_icc()/pic3187001.jpg
-type: boardgame
+average_rating: '7.83075'
 weight: '2.1793'
-year_published: '2016'
+ranks:
+- type: boardgame
+  rank: '183'
+- type: strategygames
+  rank: '144'

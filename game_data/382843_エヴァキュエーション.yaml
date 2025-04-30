@@ -1,3 +1,5 @@
+type: boardgame
+name: Evacuation
 alternate_names:
 - Evakuace
 - Ewakuacja
@@ -6,15 +8,16 @@ alternate_names:
 - エヴァキュエーション
 - 撤离计划
 - 이베큐에이션
-average_rating: '7.57089'
-categories:
-- name: Industry / Manufacturing
-- name: Racing
-- name: Science Fiction
-- name: Territory Building
+japanese_name: エヴァキュエーション
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/tNO7HW6Hn_O3xY11R80pFA__thumb/img/XAQYaQnO9WiZ-dVy4QV2jN8IjYI=/fit-in/200x150/filters:strip_icc()/pic7672387.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '150'
+publisher_min_age: '12'
 community_best_players: 2, 3
-community_min_age: '14'
 community_recommended_players: 1, 4
+community_min_age: '14'
 description: '&quot;Hurry to the ship! Twelve houses from our town have already burned
   down!&quot;&#10;&#10;In Evacuation, life on our planet is being burned away thanks
   to increasingly intense sunlight, so everyone is trying to move all the people and
@@ -34,47 +37,19 @@ description: '&quot;Hurry to the ship! Twelve houses from our town have already 
   scores after four rounds. Evacuation includes modules to add new play options.&#10;&#10;NOTE:
   A community FAQ is available here to provide some clarity on Frequently Misplayed
   Rules.&#10;&#10;'
-designers:
-- name: Vladimír Suchý
-japanese_name: エヴァキュエーション
-learning_analysis:
-  bgg_rank: 950
-  bgg_weight: 3.972
-  category_complexity: 3.97
-  decision_points: 3.82
-  initial_barrier: 2.99
-  interaction_complexity: 2.975
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.96
-  mechanics_count: 5
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.2
-  rank_complexity: 2.99
-  replayability: 3.1
-  rules_complexity: 3.8583999999999996
-  strategic_depth: 3.45
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2023
 mechanics:
 - name: Hand Management
 - name: Highest-Lowest Scoring
 - name: Income
 - name: Pick-up and Deliver
 - name: Solo / Solitaire Game
-name: Evacuation
-playing_time: '150'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Industry / Manufacturing
+- name: Racing
+- name: Science Fiction
+- name: Territory Building
+designers:
+- name: Vladimír Suchý
 publishers:
 - name: Delicious Games
 - name: Arrakis Games
@@ -89,12 +64,10 @@ publishers:
 - name: 数寄ゲームズ (Suki Games)
 - name: Tesla Games
 - name: YOKA Games
-ranks:
-- rank: '950'
-  type: boardgame
-- rank: '502'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/tNO7HW6Hn_O3xY11R80pFA__thumb/img/XAQYaQnO9WiZ-dVy4QV2jN8IjYI=/fit-in/200x150/filters:strip_icc()/pic7672387.jpg
-type: boardgame
+average_rating: '7.57048'
 weight: '3.972'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '950'
+- type: strategygames
+  rank: '502'

@@ -1,10 +1,15 @@
+type: boardgame
+name: Duck
 alternate_names:
 - Cuac!
 - Kaczki
 - Утки
-average_rating: '6.59775'
-categories:
-- name: Card Game
+year_published: '2020'
+thumbnail_url: https://cf.geekdo-images.com/WRqZ-OzEojpnV8ursuoSLw__thumb/img/8juU3bvu5jMtYus9PBJCQ-HAbwA=/fit-in/200x150/filters:strip_icc()/pic5495074.jpg
+publisher_min_players: '3'
+publisher_max_players: '5'
+playing_time: '15'
+publisher_min_age: '8'
 community_best_players: 3, 4, 5
 community_min_age: '8'
 description: 'Push your luck at this fast paced, family-friendly card game.&#10;&#10;Take
@@ -24,41 +29,13 @@ description: 'Push your luck at this fast paced, family-friendly card game.&#10;
   Denn wenn du alle unterbietest holst du dir wertvolle Siegpunkte. Handkarten abspielen
   oder clever DUCKen &hellip; was ist dein Move?&#10;&#10;&mdash;description from
   the publisher (German)&#10;&#10;'
-designers:
-- name: Johannes Krenner
-learning_analysis:
-  bgg_rank: 8230
-  bgg_weight: 1.25
-  category_complexity: 2.3
-  decision_points: 3.015
-  initial_barrier: 1.72
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.05
-  mechanics_count: 2
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 0.85
-    decision_density: 0.0
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.16
-  replayability: 2.47
-  rules_complexity: 1.859333333333333
-  strategic_depth: 1.76
-  strategic_depth_description: 低い（戦略的要素が少ない）
-  year_published: 2020
 mechanics:
 - name: Push Your Luck
 - name: Set Collection
-name: Duck
-playing_time: '15'
-publisher_max_players: '5'
-publisher_min_age: '8'
-publisher_min_players: '3'
+categories:
+- name: Card Game
+designers:
+- name: Johannes Krenner
 publishers:
 - name: HUCH!
 - name: Brain Picnic
@@ -66,10 +43,8 @@ publishers:
 - name: White Goblin Games
 - name: Zacatrus
 - name: Zvezda
-ranks:
-- rank: '8230'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/WRqZ-OzEojpnV8ursuoSLw__thumb/img/8juU3bvu5jMtYus9PBJCQ-HAbwA=/fit-in/200x150/filters:strip_icc()/pic5495074.jpg
-type: boardgame
+average_rating: '6.59775'
 weight: '1.25'
-year_published: '2020'
+ranks:
+- type: boardgame
+  rank: '8235'

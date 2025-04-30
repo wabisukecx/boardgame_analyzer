@@ -1,11 +1,17 @@
+type: boardgame
+name: 'Nusfjord: Big Box'
 alternate_names:
 - 'ヌースフィヨルド: BIG BOX'
-average_rating: '8.30064'
-categories:
-- name: Economic
+japanese_name: 'ヌースフィヨルド: BIG BOX'
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/_asmaX0NMnJrdZd1TaACSA__thumb/img/o5LCXlZwizeKvEOjmJxPiUZNZf0=/fit-in/200x150/filters:strip_icc()/pic7978202.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: 1, 3, 4, 5
-community_min_age: '12'
 community_recommended_players: '2'
+community_min_age: '12'
 description: Nusfjord is a tranquil fishing village in the Lofoten archipelago in
   northern Norway. Fifty years ago, business was blooming when the codfish would come
   for spawning. Today, Nusfjord is more of a museum than a village, with less than
@@ -34,48 +40,15 @@ description: Nusfjord is a tranquil fishing village in the Lofoten archipelago i
   the Nusfjord base game, two previously released expansions (Plaice deck and Salmon
   deck), and two new expansions (Trout deck and Besoekende deck), along with extra
   components, among them new guest meeples.&#10;&#10;
-designers:
-- name: Uwe Rosenberg
-japanese_name: 'ヌースフィヨルド: BIG BOX'
-learning_analysis:
-  bgg_rank: null
-  bgg_weight: 2.9286
-  category_complexity: 4.2
-  decision_points: 5.0
-  initial_barrier: 3.43
-  interaction_complexity: 4.0
-  learning_curve_type: gentle_then_moderate
-  mastery_time: medium
-  mechanics_complexity: 4.2
-  mechanics_count: 1
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - strategist
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.0
-  replayability: 2.3
-  rules_complexity: 3.757720000000001
-  strategic_depth: 4.02
-  strategic_depth_description: 深い（熟練プレイヤー向け）
-  year_published: 2024
 mechanics:
 - name: Worker Placement
-name: 'Nusfjord: Big Box'
-playing_time: '120'
-publisher_max_players: '5'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Economic
+designers:
+- name: Uwe Rosenberg
 publishers:
 - name: Lookout Games
 - name: Hobby Japan
-ranks: []
-thumbnail_url: https://cf.geekdo-images.com/_asmaX0NMnJrdZd1TaACSA__thumb/img/o5LCXlZwizeKvEOjmJxPiUZNZf0=/fit-in/200x150/filters:strip_icc()/pic7978202.jpg
-type: boardgame
+average_rating: '8.29745'
 weight: '2.9286'
-year_published: '2024'
+ranks: []

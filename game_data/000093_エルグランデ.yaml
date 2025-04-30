@@ -1,14 +1,20 @@
+type: boardgame
+name: El Grande
 alternate_names:
 - エルグランデ
 - 城主
 - 大王
-average_rating: '7.76316'
-categories:
-- name: Medieval
-- name: Renaissance
+- 大领主
+japanese_name: エルグランデ
+year_published: '1995'
+thumbnail_url: https://cf.geekdo-images.com/RRKDHaYtFPHhczkUDcHOmg__thumb/img/XPcVtsZPITv5qe3IXpzMKa5RSYA=/fit-in/200x150/filters:strip_icc()/pic7906240.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: '5'
-community_min_age: '12'
 community_recommended_players: 3, 4
+community_min_age: '12'
 description: In this award-winning game, players take on the roles of Grandes in medieval
   Spain.  The king's power is flagging, and these powerful lords are vying for control
   of the various regions.  To that end, you draft caballeros (knights) into your court
@@ -31,37 +37,6 @@ description: In this award-winning game, players take on the roles of Grandes in
   is then scored individually according to a table printed in that region. Two-point
   bonuses are awarded for having sole majority in the region containing your Grande
   and in the region containing the king.&#10;&#10;
-designers:
-- name: Wolfgang Kramer
-- name: Richard Ulrich
-japanese_name: エルグランデ
-learning_analysis:
-  bgg_rank: 94
-  bgg_weight: 2.9461
-  category_complexity: 3.73
-  decision_points: 3.82
-  initial_barrier: 4.34
-  interaction_complexity: 3.0
-  learning_curve_type: steep_then_shallow
-  mastery_time: medium
-  mechanics_complexity: 3.02
-  mechanics_count: 12
-  player_types:
-  - experienced
-  - replayer
-  - trend_follower
-  - classic_lover
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.14
-  replayability: 4.38
-  rules_complexity: 3.7042199999999994
-  strategic_depth: 3.39
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 1995
 mechanics:
 - name: Action Drafting
 - name: Area Majority / Influence
@@ -75,11 +50,12 @@ mechanics:
 - name: Simultaneous Action Selection
 - name: Take That
 - name: 'Turn Order: Auction'
-name: El Grande
-playing_time: '120'
-publisher_max_players: '5'
-publisher_min_age: '12'
-publisher_min_players: '2'
+categories:
+- name: Medieval
+- name: Renaissance
+designers:
+- name: Wolfgang Kramer
+- name: Richard Ulrich
 publishers:
 - name: Hans im Glück
 - name: 999 Games
@@ -89,6 +65,7 @@ publishers:
 - name: Feelindigo
 - name: Filosofia Éditions
 - name: Gabinete Lúdico
+- name: Game Harbor
 - name: Gém Klub Kft.
 - name: Giochi Uniti
 - name: Lautapelit.fi
@@ -96,12 +73,10 @@ publishers:
 - name: MINDOK
 - name: Möbius Games
 - name: Rio Grande Games
+average_rating: '7.7644'
+weight: '2.9419'
 ranks:
-- rank: '94'
-  type: boardgame
-- rank: '83'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/RRKDHaYtFPHhczkUDcHOmg__thumb/img/XPcVtsZPITv5qe3IXpzMKa5RSYA=/fit-in/200x150/filters:strip_icc()/pic7906240.jpg
-type: boardgame
-weight: '2.9461'
-year_published: '1995'
+- type: boardgame
+  rank: '97'
+- type: strategygames
+  rank: '84'

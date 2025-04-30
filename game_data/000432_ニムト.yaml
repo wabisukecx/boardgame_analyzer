@@ -1,3 +1,5 @@
+type: boardgame
+name: Take 5
 alternate_names:
 - '!شیش قلو'
 - ¡Toma 6!
@@ -42,13 +44,16 @@ alternate_names:
 - 牛頭王
 - 誰是牛頭王？
 - 젝스 님트!
-average_rating: '6.97507'
-categories:
-- name: Card Game
-- name: Number
+japanese_name: ニムト
+year_published: '1994'
+thumbnail_url: https://cf.geekdo-images.com/WuOY1XAIJQ-RGAmT_apW_w__thumb/img/dhNHd8Ztln_lUFAdti6WkPnGTGg=/fit-in/200x150/filters:strip_icc()/pic8632998.jpg
+publisher_min_players: '2'
+publisher_max_players: '10'
+playing_time: '45'
+publisher_min_age: '8'
 community_best_players: 5, 6
-community_min_age: '8'
 community_recommended_players: 4, 7, 8, 9, 10
+community_min_age: '8'
 description: In 6 nimmt!, a.k.a. Category 5 and many other names, you want to score
   as few points as possible.&#10;&#10;To play the game, you shuffle the 104 number
   cards, lay out four cards face-up to start the four rows, then deal ten cards to
@@ -67,45 +72,16 @@ description: In 6 nimmt!, a.k.a. Category 5 and many other names, you want to sc
   cards) when you have three, four, five, etc. players. This change allows you to
   know which cards are in play, thereby allowing you to track which cards have been
   played and (theoretically) make better choices as to which card to play when.&#10;&#10;
-designers:
-- name: Wolfgang Kramer
-japanese_name: ニムト
-learning_analysis:
-  bgg_rank: 670
-  bgg_weight: 1.1913
-  category_complexity: 2.57
-  decision_points: 3.5700000000000003
-  initial_barrier: 2.18
-  interaction_complexity: 2.895
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.9
-  mechanics_count: 3
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  - classic_lover
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.27
-  replayability: 3.38
-  rules_complexity: 2.6335933333333332
-  strategic_depth: 2.6
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 1994
 mechanics:
 - name: Hand Management
 - name: Score-and-Reset Game
 - name: Simultaneous Action Selection
-name: Take 5
-playing_time: '45'
-publisher_max_players: '10'
-publisher_min_age: '8'
-publisher_min_players: '2'
+categories:
+- name: Card Game
+- name: Number
+- name: Party Game
+designers:
+- name: Wolfgang Kramer
 publishers:
 - name: AMIGO
 - name: 999 Games
@@ -149,12 +125,10 @@ publishers:
 - name: Tempo Games (I)
 - name: U.S. Games Systems, Inc.
 - name: VR Distribution
-ranks:
-- rank: '670'
-  type: boardgame
-- rank: '198'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/WuOY1XAIJQ-RGAmT_apW_w__thumb/img/dhNHd8Ztln_lUFAdti6WkPnGTGg=/fit-in/200x150/filters:strip_icc()/pic8632998.jpg
-type: boardgame
+average_rating: '6.97504'
 weight: '1.1913'
-year_published: '1994'
+ranks:
+- type: boardgame
+  rank: '670'
+- type: familygames
+  rank: '198'

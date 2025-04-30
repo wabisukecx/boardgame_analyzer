@@ -1,17 +1,21 @@
+type: boardgame
+name: Turing Machine
 alternate_names:
 - Машина Тьюринга
 - Машина Тюрінга
 - チューリングマシン
 - 图灵机
 - 튜링 머신
-average_rating: '7.64899'
-categories:
-- name: Deduction
-- name: Math
-- name: Spies / Secret Agents
+japanese_name: チューリングマシン
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/un5yundwtC6q1U9gWTY8Yw__thumb/img/I4QR01ZS6TTIHgW3UpdOYvePRxQ=/fit-in/200x150/filters:strip_icc()/pic6883492.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '20'
+publisher_min_age: '14'
 community_best_players: '1'
-community_min_age: '12'
 community_recommended_players: 2, 3, 4
+community_min_age: '12'
 description: '&quot;Codes are a puzzle. A game, just like any other game.&quot;&#10;&#10;-
   Alan Turing in The Imitation Game.&#10;&#10;Turing Machine is a fascinating and
   competitive deduction game. It offers a unique experience of questioning a proto-computer
@@ -24,44 +28,16 @@ description: '&quot;Codes are a puzzle. A game, just like any other game.&quot;&
   the original competitive mode, you can combine your brain power as a team or try
   to beat the game itself while playing solo.&#10;&#10;Are you ready for an intense
   cerebral gaming experience?&#10;&#10;'
-designers:
-- name: Fabien Gridel
-- name: Yoann Levet
-japanese_name: チューリングマシン
-learning_analysis:
-  bgg_rank: 323
-  bgg_weight: 2.5104
-  category_complexity: 3.56
-  decision_points: 3.465
-  initial_barrier: 2.85
-  interaction_complexity: 3.4
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 3.35
-  mechanics_count: 2
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.0
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 3.09
-  replayability: 2.9
-  rules_complexity: 3.4474133333333326
-  strategic_depth: 2.69
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2022
 mechanics:
 - name: Deduction
 - name: Solo / Solitaire Game
-name: Turing Machine
-playing_time: '20'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Deduction
+- name: Math
+- name: Spies / Secret Agents
+designers:
+- name: Fabien Gridel
+- name: Yoann Levet
 publishers:
 - name: Scorpion Masqué
 - name: Galápagos Jogos
@@ -75,12 +51,10 @@ publishers:
 - name: Sugorokuya
 - name: Tabletop KZ
 - name: Tranjis Games
+average_rating: '7.64958'
+weight: '2.5078'
 ranks:
-- rank: '323'
-  type: boardgame
-- rank: '232'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/un5yundwtC6q1U9gWTY8Yw__thumb/img/I4QR01ZS6TTIHgW3UpdOYvePRxQ=/fit-in/200x150/filters:strip_icc()/pic6883492.png
-type: boardgame
-weight: '2.5104'
-year_published: '2022'
+- type: boardgame
+  rank: '323'
+- type: strategygames
+  rank: '232'

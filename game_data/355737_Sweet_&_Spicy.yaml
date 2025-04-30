@@ -1,13 +1,16 @@
+type: boardgame
+name: Sweet & Spicy
 alternate_names:
 - Sweet & Spicy. Битва котиків
 - 'Sweet and Spicy: Khi mèo bớt ăn cay'
 - 貓吃酸辣
 - 스위트 스파이시
-average_rating: '6.87641'
-categories:
-- name: Animals
-- name: Bluffing
-- name: Card Game
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/16eiz9vR_Ddncb_DMLSUbA__thumb/img/1sF09BCEtHE8acaMk83c8xNm7DE=/fit-in/200x150/filters:strip_icc()/pic6650853.png
+publisher_min_players: '2'
+publisher_max_players: '6'
+playing_time: '15'
+publisher_min_age: '8'
 community_best_players: '4'
 community_recommended_players: 2, 3, 5
 description: 'Once hungry Kitty craved to eat, but sadly found no yummy meat, instead
@@ -25,40 +28,14 @@ description: 'Once hungry Kitty craved to eat, but sadly found no yummy meat, in
   about it for so long?&#10;&#10;In Sweet &amp; Spicy, the super joker is added, which
   can be any spice and any number. It is therefore always correct and cannot be doubted.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;'
-designers:
-- name: Győri Zoltán Gábor
-learning_analysis:
-  bgg_rank: 7101
-  bgg_weight: 1.25
-  category_complexity: 2.53
-  decision_points: 3.57
-  initial_barrier: 2.18
-  interaction_complexity: 4.1
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.9
-  mechanics_count: 1
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 0.85
-    decision_density: 0.0
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.17
-  replayability: 2.4
-  rules_complexity: 2.2973333333333334
-  strategic_depth: 2.09
-  strategic_depth_description: 低め（限られた戦略オプション）
-  year_published: 2022
 mechanics:
 - name: Hand Management
-name: Sweet & Spicy
-playing_time: '15'
-publisher_max_players: '6'
-publisher_min_age: '8'
-publisher_min_players: '2'
+categories:
+- name: Animals
+- name: Bluffing
+- name: Card Game
+designers:
+- name: Győri Zoltán Gábor
 publishers:
 - name: HeidelBÄR Games
 - name: Geekach Games
@@ -66,10 +43,8 @@ publishers:
 - name: Play Plus
 - name: Swan Panasia Co., Ltd.
 - name: UBO CnC
-ranks:
-- rank: '7101'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/16eiz9vR_Ddncb_DMLSUbA__thumb/img/1sF09BCEtHE8acaMk83c8xNm7DE=/fit-in/200x150/filters:strip_icc()/pic6650853.png
-type: boardgame
+average_rating: '6.87352'
 weight: '1.25'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '7098'

@@ -1,3 +1,5 @@
+type: boardgame
+name: Lost Ruins of Arnak
 alternate_names:
 - Arnak elveszett romjai
 - Arnak Harabeleri
@@ -20,14 +22,16 @@ alternate_names:
 - アルナックの失われし遺跡
 - 阿納克遺蹟|阿纳克遗迹
 - 아르낙의 잊혀진 유적
-average_rating: '8.07035'
-categories:
-- name: Adventure
-- name: Exploration
-- name: Fantasy
+japanese_name: アルナックの失われし遺跡
+year_published: '2020'
+thumbnail_url: https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__thumb/img/J8SVmGOJXZGxNjkT3xYNQU7Haxg=/fit-in/200x150/filters:strip_icc()/pic5674958.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: '3'
-community_min_age: '10'
 community_recommended_players: 1, 2, 4
+community_min_age: '10'
 description: On an uninhabited island in uncharted seas, explorers have found traces
   of a great civilization. Now you will lead an expedition to explore the island,
   find lost artifacts, and face fearsome guardians, all in a quest to learn the island's
@@ -44,39 +48,6 @@ description: On an uninhabited island in uncharted seas, explorers have found tr
   set-up for each game will be unique, encouraging players to explore new strategies
   to meet the challenge.&#10;&#10;Discover the Lost Ruins of Arnak!&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
-designers:
-- name: Elwen
-- name: Mín
-japanese_name: アルナックの失われし遺跡
-learning_analysis:
-  bgg_rank: 29
-  bgg_weight: 2.9257
-  category_complexity: 3.56
-  decision_points: 4.531428571428573
-  initial_barrier: 3.65
-  interaction_complexity: 3.2600000000000002
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.31
-  mechanics_count: 9
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.2
-  replayability: 3.91
-  rules_complexity: 3.96514
-  strategic_depth: 3.54
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2020
 mechanics:
 - name: Contracts
 - name: Deck, Bag, and Pool Building
@@ -87,11 +58,13 @@ mechanics:
 - name: Solo / Solitaire Game
 - name: 'Turn Order: Progressive'
 - name: Worker Placement
-name: Lost Ruins of Arnak
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Adventure
+- name: Exploration
+- name: Fantasy
+designers:
+- name: Elwen
+- name: Mín
 publishers:
 - name: Czech Games Edition
 - name: Brädspel.se
@@ -116,12 +89,10 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: Spilbræt.dk
 - name: White Goblin Games
-ranks:
-- rank: '29'
-  type: boardgame
-- rank: '28'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__thumb/img/J8SVmGOJXZGxNjkT3xYNQU7Haxg=/fit-in/200x150/filters:strip_icc()/pic5674958.jpg
-type: boardgame
+average_rating: '8.07061'
 weight: '2.9257'
-year_published: '2020'
+ranks:
+- type: boardgame
+  rank: '29'
+- type: strategygames
+  rank: '28'

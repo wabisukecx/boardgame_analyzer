@@ -1,8 +1,14 @@
+type: boardgame
+name: Trick Raiders
 alternate_names:
 - トリックレイダース
-average_rating: '7.15762'
-categories:
-- name: Card Game
+japanese_name: トリックレイダース
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/S9jN1u9dlp-EiF4qzhp2PQ__thumb/img/Lyo36zTXfPAGqpjvcxOxhP2IwoY=/fit-in/200x150/filters:strip_icc()/pic8439671.png
+publisher_min_players: '3'
+publisher_max_players: '4'
+playing_time: '30'
+publisher_min_age: '10'
 community_best_players: '4'
 community_recommended_players: '3'
 description: Trick Raiders is a trick-taking game in which a player is dealt some
@@ -16,47 +22,16 @@ description: Trick Raiders is a trick-taking game in which a player is dealt som
   when one person is out is the winner.&#10;&#10;A few ranks also have special abilities,
   for instance, when the 8 or 9 of clubs is played and wins a trick, the trump suit
   changes.&#10;&#10;
-designers:
-- name: N2
-japanese_name: トリックレイダース
-learning_analysis:
-  bgg_rank: 9346
-  bgg_weight: 2.0
-  category_complexity: 2.3
-  decision_points: 3.4699999999999998
-  initial_barrier: 2.15
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.6
-  mechanics_count: 1
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.0
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.15
-  replayability: 2.2
-  rules_complexity: 2.3826666666666667
-  strategic_depth: 2.62
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2022
 mechanics:
 - name: Trick-taking
-name: Trick Raiders
-playing_time: '30'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '3'
+categories:
+- name: Card Game
+designers:
+- name: N2
 publishers:
 - name: Southern Cross Games (サザンクロスゲームズ)
-ranks:
-- rank: '9346'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/S9jN1u9dlp-EiF4qzhp2PQ__thumb/img/Lyo36zTXfPAGqpjvcxOxhP2IwoY=/fit-in/200x150/filters:strip_icc()/pic8439671.png
-type: boardgame
+average_rating: '7.15634'
 weight: '2'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '9310'

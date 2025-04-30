@@ -1,3 +1,5 @@
+type: boardgame
+name: 'Brass: Lancashire'
 alternate_names:
 - Brass
 - Brass Deluxe
@@ -7,15 +9,16 @@ alternate_names:
 - 工業革命
 - 工業革命：蘭開夏
 - '브라스: 랭커셔'
-average_rating: '8.19633'
-categories:
-- name: Economic
-- name: Industry / Manufacturing
-- name: Post-Napoleonic
-- name: Transportation
+japanese_name: ブラス：ランカシャー
+year_published: '2007'
+thumbnail_url: https://cf.geekdo-images.com/tHVtPzu82mBpeQbbZkV6EA__thumb/img/AghH1bAEhqzvyRcP3cy5G-rz0So=/fit-in/200x150/filters:strip_icc()/pic3469216.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '14'
 community_best_players: '4'
-community_min_age: '14'
 community_recommended_players: 2, 3
+community_min_age: '14'
 description: 'Brass: Lancashire &mdash; first published as Brass &mdash; is an economic
   strategy game that tells the story of competing cotton entrepreneurs in Lancashire
   during the industrial revolution. You must develop, build and establish your industries
@@ -50,38 +53,6 @@ description: 'Brass: Lancashire &mdash; first published as Brass &mdash; is an e
   slightly to ensure a consistent experience.&#10;     Two-player rules have been
   created and are playable without the need of an alternate board.&#10;     The level
   1 cotton mill is now worth 5 VP to make it slightly less terrible.&#10;&#10;&#10;'
-designers:
-- name: Martin Wallace
-japanese_name: ブラス：ランカシャー
-learning_analysis:
-  bgg_rank: 21
-  bgg_weight: 3.8526
-  category_complexity: 4.31
-  decision_points: 4.591999999999999
-  initial_barrier: 3.98
-  interaction_complexity: 3.2649999999999997
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.29
-  mechanics_count: 7
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.21
-  replayability: 4.56
-  rules_complexity: 4.260996190476191
-  strategic_depth: 3.8
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2007
 mechanics:
 - name: Hand Management
 - name: Income
@@ -90,11 +61,14 @@ mechanics:
 - name: Network and Route Building
 - name: Tech Trees / Tech Tracks
 - name: 'Turn Order: Stat-Based'
-name: 'Brass: Lancashire'
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '2'
+categories:
+- name: Economic
+- name: Educational
+- name: Industry / Manufacturing
+- name: Post-Napoleonic
+- name: Transportation
+designers:
+- name: Martin Wallace
 publishers:
 - name: Roxley
 - name: Warfrog Games
@@ -114,12 +88,10 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: Wargames Club Publishing
 - name: White Goblin Games
-ranks:
-- rank: '21'
-  type: boardgame
-- rank: '18'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/tHVtPzu82mBpeQbbZkV6EA__thumb/img/AghH1bAEhqzvyRcP3cy5G-rz0So=/fit-in/200x150/filters:strip_icc()/pic3469216.jpg
-type: boardgame
+average_rating: '8.19621'
 weight: '3.8526'
-year_published: '2007'
+ranks:
+- type: boardgame
+  rank: '21'
+- type: strategygames
+  rank: '18'

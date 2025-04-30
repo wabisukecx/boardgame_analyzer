@@ -1,13 +1,18 @@
+type: boardgame
+name: TEN
 alternate_names:
 - DIX
 - Ten, czyli dycha
 - 텐텐텐
-average_rating: '7.02816'
-categories:
-- name: Card Game
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/74OIxWD8fvpVGILu7s5I0g__thumb/img/pDsxBxqBHtML4GYSskmpGJ4qp3o=/fit-in/200x150/filters:strip_icc()/pic6109559.png
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '30'
+publisher_min_age: '10'
 community_best_players: '4'
-community_min_age: '10'
 community_recommended_players: 2, 3, 5
+community_min_age: '10'
 description: TEN is an exciting push-your-luck and auction game for the whole family!
   Players draw cards one-at-a-time, trying to add as many as they can without exceeding
   a total value of TEN, or they bust!&#10;&#10;Players may push their luck to draw
@@ -15,45 +20,17 @@ description: TEN is an exciting push-your-luck and auction game for the whole fa
   longest number sequence in each color. When valuable wildcards emerge from the deck,
   players compete in auctions to obtain them in order to fill gaps in their sequences&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
-designers:
-- name: Molly Johnson
-- name: Robert Melvin
-- name: Shawn Stankewich
-learning_analysis:
-  bgg_rank: 1510
-  bgg_weight: 1.4324
-  category_complexity: 2.3
-  decision_points: 3.7800000000000002
-  initial_barrier: 2.08
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.68
-  mechanics_count: 4
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.19
-  replayability: 2.6
-  rules_complexity: 2.8001466666666666
-  strategic_depth: 2.68
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2021
 mechanics:
 - name: Auction / Bidding
 - name: 'Auction: Once Around'
 - name: Push Your Luck
 - name: Set Collection
-name: TEN
-playing_time: '30'
-publisher_max_players: '5'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Card Game
+designers:
+- name: Molly Johnson
+- name: Robert Melvin
+- name: Shawn Stankewich
 publishers:
 - name: Alderac Entertainment Group
 - name: Flatout Games
@@ -64,12 +41,10 @@ publishers:
 - name: Popcorn Games
 - name: Trefl
 - name: White Goblin Games
-ranks:
-- rank: '1510'
-  type: boardgame
-- rank: '434'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/74OIxWD8fvpVGILu7s5I0g__thumb/img/pDsxBxqBHtML4GYSskmpGJ4qp3o=/fit-in/200x150/filters:strip_icc()/pic6109559.png
-type: boardgame
+average_rating: '7.02816'
 weight: '1.4324'
-year_published: '2021'
+ranks:
+- type: boardgame
+  rank: '1512'
+- type: familygames
+  rank: '434'

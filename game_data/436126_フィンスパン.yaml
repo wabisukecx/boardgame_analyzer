@@ -1,3 +1,5 @@
+type: boardgame
+name: Finspan
 alternate_names:
 - Flossenschlag
 - Mélytáv
@@ -5,13 +7,16 @@ alternate_names:
 - Na ploutvích
 - フィンスパン
 - 展翅遨游
-average_rating: '7.79813'
-categories:
-- name: Animals
-- name: Card Game
+japanese_name: フィンスパン
+year_published: '2025'
+thumbnail_url: https://cf.geekdo-images.com/BBefMnVYBDS3EbJ9fPaC8A__thumb/img/Wo2snzBQJMaVXkFdYl-zXL8PrbA=/fit-in/200x150/filters:strip_icc()/pic8634453.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '60'
+publisher_min_age: '10'
 community_best_players: 2, 3
-community_min_age: '10'
 community_recommended_players: 1, 4
+community_min_age: '10'
 description: You are a marine researcher seeking to find and observe an array of aquatic
   life in the colorful Sunlight Zone, ghostly Twilight Zone, and pitch-black Midnight
   Zone of the world's seas and oceans. In Finspan, the fish you discover over four
@@ -21,46 +26,18 @@ description: You are a marine researcher seeking to find and observe an array of
   into young and consolidate young to form schools.&#10;&#10;&#10;The winner is the
   player with the most points gained from fish, eggs, young, schools, and achievements.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
-designers:
-- name: David Gordon (I)
-- name: Michael O'Connell (II)
-japanese_name: フィンスパン
-learning_analysis:
-  bgg_rank: 1128
-  bgg_weight: 2.3662
-  category_complexity: 2.15
-  decision_points: 3.673333333333334
-  initial_barrier: 2.44
-  interaction_complexity: 3.0
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.98
-  mechanics_count: 5
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.71
-  replayability: 2.7
-  rules_complexity: 3.4219066666666667
-  strategic_depth: 2.94
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2025
 mechanics:
 - name: End Game Bonuses
 - name: Hand Management
 - name: Once-Per-Game Abilities
 - name: Solo / Solitaire Game
 - name: Tags
-name: Finspan
-playing_time: '60'
-publisher_max_players: '5'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Animals
+- name: Card Game
+designers:
+- name: David Gordon (I)
+- name: Michael O'Connell (II)
 publishers:
 - name: Stonemaier Games
 - name: 999 Games
@@ -75,14 +52,12 @@ publishers:
 - name: MIPL
 - name: Rebel Sp. z o.o.
 - name: Surfin' Meeple China
+average_rating: '7.7997'
+weight: '2.3611'
 ranks:
-- rank: '1128'
-  type: boardgame
-- rank: '616'
-  type: strategygames
-- rank: '260'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/BBefMnVYBDS3EbJ9fPaC8A__thumb/img/Wo2snzBQJMaVXkFdYl-zXL8PrbA=/fit-in/200x150/filters:strip_icc()/pic8634453.jpg
-type: boardgame
-weight: '2.3662'
-year_published: '2025'
+- type: boardgame
+  rank: '1115'
+- type: strategygames
+  rank: '611'
+- type: familygames
+  rank: '257'

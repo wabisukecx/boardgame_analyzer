@@ -1,3 +1,5 @@
+type: boardgame
+name: Cartographers Heroes
 alternate_names:
 - Cartógrafos Heróis
 - 'Cartógrafos: Héroes'
@@ -9,13 +11,16 @@ alternate_names:
 - カートグラファー 勇者たちの門出
 - '王国制图师: 英雄'
 - '지도 제작자들: 영웅들'
-average_rating: '7.74418'
-categories:
-- name: Fantasy
-- name: Territory Building
+japanese_name: カートグラファー 勇者たちの門出
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/HIFpoE6wwuriOREJmqizPw__thumb/img/s-5zTf3OxkhmkZMfNCeLexMW-pU=/fit-in/200x150/filters:strip_icc()/pic5567490.png
+publisher_min_players: '1'
+publisher_max_players: '100'
+playing_time: '45'
+publisher_min_age: '10'
 community_best_players: 3, 4
-community_min_age: '10'
 community_recommended_players: 1, 2, 5, 6, 7, 8, 9, 10
+community_min_age: '10'
 description: The expedition to the Western Lands is the kind of honor that comes once
   in a lifetime for a royal cartographer. But these are dangerous times. War ravages
   the land, and you are sure to encounter Dragul forces determined to thwart Queen
@@ -26,35 +31,6 @@ description: The expedition to the Western Lands is the kind of honor that comes
   scoring cards, explore cards, and ambush cards with unique abilities.&#10;&#10;Cartographers
   Heroes can be played on its own or mixed with components from the original game
   for a greater variety of gameplay possibilities.&#10;&#10;-description from publisher&#10;&#10;
-designers:
-- name: Jordy Adan
-- name: John Brieger
-japanese_name: カートグラファー 勇者たちの門出
-learning_analysis:
-  bgg_rank: 442
-  bgg_weight: 2.0
-  category_complexity: 3.68
-  decision_points: 3.694285714285715
-  initial_barrier: 3.01
-  interaction_complexity: 3.3949999999999996
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.69
-  mechanics_count: 9
-  player_types:
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.8
-  replayability: 3.5
-  rules_complexity: 3.0866666666666664
-  strategic_depth: 2.93
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2021
 mechanics:
 - name: Bingo
 - name: End Game Bonuses
@@ -65,11 +41,12 @@ mechanics:
 - name: Solo / Solitaire Game
 - name: Square Grid
 - name: Variable Set-up
-name: Cartographers Heroes
-playing_time: '45'
-publisher_max_players: '100'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Fantasy
+- name: Territory Building
+designers:
+- name: Jordy Adan
+- name: John Brieger
 publishers:
 - name: Thunderworks Games
 - name: Arclight Games
@@ -86,14 +63,12 @@ publishers:
 - name: Raven Distribution
 - name: Reflexshop
 - name: REXhry
-ranks:
-- rank: '442'
-  type: boardgame
-- rank: '269'
-  type: strategygames
-- rank: '74'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/HIFpoE6wwuriOREJmqizPw__thumb/img/s-5zTf3OxkhmkZMfNCeLexMW-pU=/fit-in/200x150/filters:strip_icc()/pic5567490.png
-type: boardgame
+average_rating: '7.74408'
 weight: '2'
-year_published: '2021'
+ranks:
+- type: boardgame
+  rank: '442'
+- type: strategygames
+  rank: '270'
+- type: familygames
+  rank: '74'

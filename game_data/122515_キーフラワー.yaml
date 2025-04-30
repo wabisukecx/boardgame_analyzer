@@ -1,18 +1,20 @@
+type: boardgame
+name: Keyflower
 alternate_names:
 - キーフラワー
 - 大五月花號
 - 奇伍德花季号
 - 키플라워
-average_rating: '7.71724'
-categories:
-- name: City Building
-- name: Economic
-- name: Renaissance
-- name: Territory Building
-- name: Transportation
+japanese_name: キーフラワー
+year_published: '2012'
+thumbnail_url: https://cf.geekdo-images.com/HbfgxDJZQnNEZQKvpmJxQg__thumb/img/5t1MtJEDdhSgtyJlmu3Hu1qR_ZQ=/fit-in/200x150/filters:strip_icc()/pic2278942.jpg
+publisher_min_players: '2'
+publisher_max_players: '6'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: '4'
-community_min_age: '12'
 community_recommended_players: 2, 3, 5, 6
+community_min_age: '12'
 description: 'Keyflower is a game for two to six players played over four rounds.
   Each round represents a season: spring, summer, autumn, and finally winter. Each
   player starts the game with a &quot;home&quot; tile and an initial team of eight
@@ -35,40 +37,6 @@ description: 'Keyflower is a game for two to six players played over four rounds
   a joint design between Richard Breese and Sebastian Bleasdale, is the seventh game
   in the &quot;Key&quot; series from R&amp;D Games set in the medieval &quot;Key&quot;
   land.&#10;&#10;'
-designers:
-- name: Sebastian Bleasdale
-- name: Richard Breese
-japanese_name: キーフラワー
-learning_analysis:
-  bgg_rank: 123
-  bgg_weight: 3.3362
-  category_complexity: 4.39
-  decision_points: 4.8028571428571425
-  initial_barrier: 3.9
-  interaction_complexity: 3.4949999999999997
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.36
-  mechanics_count: 16
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - strategist
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.12
-  replayability: 4.8
-  rules_complexity: 4.087865
-  strategic_depth: 3.86
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2012
 mechanics:
 - name: Auction / Bidding
 - name: 'Auction: Fixed Placement'
@@ -86,11 +54,15 @@ mechanics:
 - name: Variable Set-up
 - name: Worker Placement
 - name: Worker Placement, Different Worker Types
-name: Keyflower
-playing_time: '120'
-publisher_max_players: '6'
-publisher_min_age: '12'
-publisher_min_players: '2'
+categories:
+- name: City Building
+- name: Economic
+- name: Renaissance
+- name: Territory Building
+- name: Transportation
+designers:
+- name: Sebastian Bleasdale
+- name: Richard Breese
 publishers:
 - name: R&D Games
 - name: Arclight Games
@@ -107,12 +79,10 @@ publishers:
 - name: Red Glove
 - name: Swan Panasia Co., Ltd.
 - name: WoodCat
-ranks:
-- rank: '123'
-  type: boardgame
-- rank: '101'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/HbfgxDJZQnNEZQKvpmJxQg__thumb/img/5t1MtJEDdhSgtyJlmu3Hu1qR_ZQ=/fit-in/200x150/filters:strip_icc()/pic2278942.jpg
-type: boardgame
+average_rating: '7.71733'
 weight: '3.3362'
-year_published: '2012'
+ranks:
+- type: boardgame
+  rank: '123'
+- type: strategygames
+  rank: '101'

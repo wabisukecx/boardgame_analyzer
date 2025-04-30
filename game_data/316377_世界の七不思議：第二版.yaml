@@ -1,3 +1,5 @@
+type: boardgame
+name: 7 Wonders (Second Edition)
 alternate_names:
 - 7 Csoda (2021-es kiadás)
 - 7 Cudów Świata (Druga Edycja)
@@ -13,16 +15,16 @@ alternate_names:
 - Τα 7 Θαυματα του Κοσμου (2η Εκδοση)
 - 七大奇蹟：第二版
 - 世界の七不思議：第二版
-average_rating: '7.83685'
-categories:
-- name: Ancient
-- name: Card Game
-- name: City Building
-- name: Civilization
-- name: Economic
+japanese_name: 世界の七不思議：第二版
+year_published: '2020'
+thumbnail_url: https://cf.geekdo-images.com/Naw8y8J_s-8cvq1GoTON6w__thumb/img/ieH8A28KJe3truXqQe1nDXSpxUE=/fit-in/200x150/filters:strip_icc()/pic7416519.jpg
+publisher_min_players: '3'
+publisher_max_players: '7'
+playing_time: '30'
+publisher_min_age: '10'
 community_best_players: 4, 5
-community_min_age: '10'
 community_recommended_players: 3, 6, 7
+community_min_age: '10'
 description: '7 Wonders&#10;The board game with more awards than any other game on
   the planet.&#10;With over 30 international awards, and over a million copies sold
   throughout the world, rediscover 7 Wonders, the game which has won more awards than
@@ -46,36 +48,6 @@ description: '7 Wonders&#10;The board game with more awards than any other game 
   Coins of value 3&#10;48 Military Conflict tokens: 24 Defeats and 24 Victories (8
   per Age)&#10;1 pad of score sheets&#10;3 quick reference sheets describing the effects
   of the cards&#10;1 List of cards and chaining leaflet&#10;1 rulebook&#10;&#10;'
-designers:
-- name: Antoine Bauza
-japanese_name: 世界の七不思議：第二版
-learning_analysis:
-  bgg_rank: 213
-  bgg_weight: 2.3049
-  category_complexity: 4.44
-  decision_points: 4.040000000000001
-  initial_barrier: 3.17
-  interaction_complexity: 3.545
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.83
-  mechanics_count: 6
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.84
-  replayability: 3.96
-  rules_complexity: 3.2776466666666666
-  strategic_depth: 3.03
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2020
 mechanics:
 - name: Closed Drafting
 - name: Hand Management
@@ -83,11 +55,14 @@ mechanics:
 - name: Set Collection
 - name: Simultaneous Action Selection
 - name: Variable Player Powers
-name: 7 Wonders (Second Edition)
-playing_time: '30'
-publisher_max_players: '7'
-publisher_min_age: '10'
-publisher_min_players: '3'
+categories:
+- name: Ancient
+- name: Card Game
+- name: City Building
+- name: Civilization
+- name: Economic
+designers:
+- name: Antoine Bauza
 publishers:
 - name: Repos Production
 - name: ADC Blackfire Entertainment
@@ -101,14 +76,12 @@ publishers:
 - name: Lifestyle Boardgames Ltd
 - name: Rebel Sp. z o.o.
 - name: Ігромаг
+average_rating: '7.83676'
+weight: '2.304'
 ranks:
-- rank: '213'
-  type: boardgame
-- rank: '166'
-  type: strategygames
-- rank: '31'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/Naw8y8J_s-8cvq1GoTON6w__thumb/img/ieH8A28KJe3truXqQe1nDXSpxUE=/fit-in/200x150/filters:strip_icc()/pic7416519.jpg
-type: boardgame
-weight: '2.3049'
-year_published: '2020'
+- type: boardgame
+  rank: '213'
+- type: strategygames
+  rank: '166'
+- type: familygames
+  rank: '31'

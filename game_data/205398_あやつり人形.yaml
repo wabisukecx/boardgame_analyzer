@@ -1,3 +1,5 @@
+type: boardgame
+name: Citadels
 alternate_names:
 - Citadela
 - Citadela DeLuxe
@@ -15,15 +17,16 @@ alternate_names:
 - 富饒之城
 - 荣耀之城
 - 시타델
-average_rating: '7.24537'
-categories:
-- name: Bluffing
-- name: Card Game
-- name: City Building
-- name: Medieval
+japanese_name: あやつり人形
+year_published: '2016'
+thumbnail_url: https://cf.geekdo-images.com/sHd0jkZZLDgixHjAXtn7kA__thumb/img/HB0Z5D7uwBjf1lCCPjMck-5VP9A=/fit-in/200x150/filters:strip_icc()/pic3119514.jpg
+publisher_min_players: '2'
+publisher_max_players: '8'
+playing_time: '60'
+publisher_min_age: '10'
 community_best_players: 5, 6
-community_min_age: '8'
 community_recommended_players: 3, 4, 7
+community_min_age: '8'
 description: 'In Citadels, players take on new roles each round to represent characters
   they hire in order to help them acquire gold and erect buildings. The game ends
   at the close of a round in which a player erects their seventh building. Players
@@ -49,37 +52,6 @@ description: 'In Citadels, players take on new roles each round to represent cha
   and nine new ones &mdash; along with thirty unique building districts, and the rulebook
   includes six preset lists of characters and districts beyond the starter list, each
   crafted to encourage a different style and intensity of gameplay.&#10;&#10;'
-designers:
-- name: Bruno Faidutti
-japanese_name: あやつり人形
-learning_analysis:
-  bgg_rank: 534
-  bgg_weight: 2.0629
-  category_complexity: 3.56
-  decision_points: 3.9000000000000004
-  initial_barrier: 2.85
-  interaction_complexity: 3.6399999999999997
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.51
-  mechanics_count: 9
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.29
-  replayability: 4.07
-  rules_complexity: 2.9392466666666666
-  strategic_depth: 3.1
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2016
 mechanics:
 - name: Action Drafting
 - name: Closed Drafting
@@ -90,11 +62,13 @@ mechanics:
 - name: 'Turn Order: Role Order'
 - name: Variable Player Powers
 - name: Variable Set-up
-name: Citadels
-playing_time: '60'
-publisher_max_players: '8'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Bluffing
+- name: Card Game
+- name: City Building
+- name: Medieval
+designers:
+- name: Bruno Faidutti
 publishers:
 - name: Windrider Games
 - name: 999 Games
@@ -115,12 +89,10 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: Z-Man Games
 - name: Ігромаг
-ranks:
-- rank: '534'
-  type: boardgame
-- rank: '145'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/sHd0jkZZLDgixHjAXtn7kA__thumb/img/HB0Z5D7uwBjf1lCCPjMck-5VP9A=/fit-in/200x150/filters:strip_icc()/pic3119514.jpg
-type: boardgame
+average_rating: '7.24527'
 weight: '2.0629'
-year_published: '2016'
+ranks:
+- type: boardgame
+  rank: '533'
+- type: familygames
+  rank: '144'

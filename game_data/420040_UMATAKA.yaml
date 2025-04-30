@@ -1,8 +1,13 @@
+type: boardgame
+name: UMATAKA
 alternate_names:
 - 馬高
-average_rating: '7.82833'
-categories:
-- name: Prehistoric
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/JDChSC_Ri8JCLOwZF9xVjA__thumb/img/DM0WOAOViU13lNnRTnjl1l35MlE=/fit-in/200x150/filters:strip_icc()/pic8169811.png
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '90'
+publisher_min_age: '10'
 community_best_players: '4'
 community_recommended_players: 2, 3
 description: UMATAKA is a board game themed around the Jomon period in Niigata Prefecture,
@@ -19,36 +24,6 @@ description: UMATAKA is a board game themed around the Jomon period in Niigata P
   where this explorer piece stops is also executed. This mechanism forces players
   to think strategically about the number of workers they deploy, and sometimes strategically
   placing extra workers can provide an advantage in the game.&#10;&#10;
-designers:
-- name: 無界 (Mukai)
-- name: Napopora
-learning_analysis:
-  bgg_rank: 11847
-  bgg_weight: 2.6
-  category_complexity: 3.0
-  decision_points: 4.840000000000002
-  initial_barrier: 3.42
-  interaction_complexity: 3.0
-  learning_curve_type: gentle_then_moderate
-  mastery_time: medium
-  mechanics_complexity: 3.38
-  mechanics_count: 8
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.13
-  replayability: 3.2
-  rules_complexity: 3.8241666666666667
-  strategic_depth: 3.59
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2024
 mechanics:
 - name: Contracts
 - name: Hidden Victory Points
@@ -58,17 +33,15 @@ mechanics:
 - name: Variable Set-up
 - name: Worker Placement
 - name: Worker Placement, Different Worker Types
-name: UMATAKA
-playing_time: '90'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Prehistoric
+designers:
+- name: 無界 (Mukai)
+- name: Napopora
 publishers:
 - name: bronze bell house(銅鐸舎)
-ranks:
-- rank: '11847'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/JDChSC_Ri8JCLOwZF9xVjA__thumb/img/DM0WOAOViU13lNnRTnjl1l35MlE=/fit-in/200x150/filters:strip_icc()/pic8169811.png
-type: boardgame
+average_rating: '7.82833'
 weight: '2.6'
-year_published: '2024'
+ranks:
+- type: boardgame
+  rank: '11850'

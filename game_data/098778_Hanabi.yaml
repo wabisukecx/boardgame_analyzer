@@ -1,3 +1,5 @@
+type: boardgame
+name: Hanabi
 alternate_names:
 - Hanabi Deluxe
 - Hanabi Extra
@@ -9,14 +11,15 @@ alternate_names:
 - 花火
 - 花火
 - 하나비
-average_rating: '7.03456'
-categories:
-- name: Card Game
-- name: Deduction
-- name: Memory
+year_published: '2010'
+thumbnail_url: https://cf.geekdo-images.com/JDVksMwfcqoem1k_xtZrOA__thumb/img/amCeCcEKhYGbVtDvpvIMnu3qTg0=/fit-in/200x150/filters:strip_icc()/pic2007286.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '25'
+publisher_min_age: '8'
 community_best_players: '4'
-community_min_age: '10'
 community_recommended_players: 2, 3, 5
+community_min_age: '10'
 description: Hanabi&mdash;named for the Japanese word for &quot;fireworks&quot;&mdash;is
   a cooperative game in which players try to create the perfect fireworks show by
   placing the cards on the table in the right order. (In Japanese, hanabi is written
@@ -30,34 +33,6 @@ description: Hanabi&mdash;named for the Japanese word for &quot;fireworks&quot;&
   finish the fireworks display before they run out of cards.&#10;&#10;An extra suit
   of cards, rainbow colored, is also provided for advanced or variant play.&#10;&#10;Hanabi
   was originally published as part of Hanabi & Ikebana.&#10;&#10;
-designers:
-- name: Antoine Bauza
-learning_analysis:
-  bgg_rank: 559
-  bgg_weight: 1.6885
-  category_complexity: 2.71
-  decision_points: 3.6700000000000004
-  initial_barrier: 2.64
-  interaction_complexity: 3.135
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.7
-  mechanics_count: 6
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.29
-  replayability: 3.29
-  rules_complexity: 2.901033333333333
-  strategic_depth: 2.66
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2010
 mechanics:
 - name: Communication Limits
 - name: Cooperative Game
@@ -65,11 +40,12 @@ mechanics:
 - name: Memory
 - name: Ordering
 - name: Set Collection
-name: Hanabi
-playing_time: '25'
-publisher_max_players: '5'
-publisher_min_age: '8'
-publisher_min_players: '2'
+categories:
+- name: Card Game
+- name: Deduction
+- name: Memory
+designers:
+- name: Antoine Bauza
 publishers:
 - name: ABACUSSPIELE
 - name: Cocktail Games
@@ -97,12 +73,10 @@ publishers:
 - name: REXhry
 - name: Spin Master Ltd.
 - name: Swan Panasia Co., Ltd.
-ranks:
-- rank: '559'
-  type: boardgame
-- rank: '174'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/JDVksMwfcqoem1k_xtZrOA__thumb/img/amCeCcEKhYGbVtDvpvIMnu3qTg0=/fit-in/200x150/filters:strip_icc()/pic2007286.jpg
-type: boardgame
+average_rating: '7.03437'
 weight: '1.6885'
-year_published: '2010'
+ranks:
+- type: boardgame
+  rank: '560'
+- type: familygames
+  rank: '174'

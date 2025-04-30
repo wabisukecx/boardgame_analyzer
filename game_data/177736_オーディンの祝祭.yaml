@@ -1,3 +1,5 @@
+type: boardgame
+name: A Feast for Odin
 alternate_names:
 - À la gloire d'Odin
 - Um Banquete a Odin
@@ -11,16 +13,16 @@ alternate_names:
 - オーディンの祝祭
 - 奧丁的盛宴
 - 오딘을 위하여
-average_rating: '8.16541'
-categories:
-- name: Economic
-- name: Farming
-- name: Industry / Manufacturing
-- name: Medieval
-- name: Puzzle
+japanese_name: オーディンの祝祭
+year_published: '2016'
+thumbnail_url: https://cf.geekdo-images.com/s9oGMCo1fcfV4Dk3EnqLZw__thumb/img/AKxMMz2DTbBrEynhDROla8fdjJ4=/fit-in/200x150/filters:strip_icc()/pic3146943.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
 community_best_players: '3'
-community_min_age: '12'
 community_recommended_players: 1, 2, 4
+community_min_age: '12'
 description: 'A Feast for Odin is a saga in the form of a board game. You are reliving
   the cultural achievements, mercantile expeditions, and pillages of those tribes
   we know as Viking today &mdash; a term that was used quite differently towards the
@@ -58,38 +60,6 @@ description: 'A Feast for Odin is a saga in the form of a board game. You are re
   all comes down to how much you&rsquo;re willing to take on at any one time, and
   what risks you&rsquo;re willing to set yourself up with for their rewards.&#10;&#10;UPC
   681706716909&#10;&#10;'
-designers:
-- name: Uwe Rosenberg
-japanese_name: オーディンの祝祭
-learning_analysis:
-  bgg_rank: 25
-  bgg_weight: 3.861
-  category_complexity: 4.32
-  decision_points: 4.322857142857144
-  initial_barrier: 3.73
-  interaction_complexity: 3.1675
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 2.87
-  mechanics_count: 9
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.21
-  replayability: 4.4
-  rules_complexity: 3.7521999999999998
-  strategic_depth: 3.57
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2016
 mechanics:
 - name: Automatic Resource Growth
 - name: Dice Rolling
@@ -100,11 +70,14 @@ mechanics:
 - name: Tile Placement
 - name: 'Turn Order: Pass Order'
 - name: Worker Placement
-name: A Feast for Odin
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Economic
+- name: Farming
+- name: Industry / Manufacturing
+- name: Medieval
+- name: Puzzle
+designers:
+- name: Uwe Rosenberg
 publishers:
 - name: Feuerland Spiele
 - name: Cranio Creations
@@ -122,12 +95,10 @@ publishers:
 - name: TLAMA games
 - name: White Goblin Games
 - name: Z-Man Games
-ranks:
-- rank: '25'
-  type: boardgame
-- rank: '20'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/s9oGMCo1fcfV4Dk3EnqLZw__thumb/img/AKxMMz2DTbBrEynhDROla8fdjJ4=/fit-in/200x150/filters:strip_icc()/pic3146943.png
-type: boardgame
+average_rating: '8.16529'
 weight: '3.861'
-year_published: '2016'
+ranks:
+- type: boardgame
+  rank: '25'
+- type: strategygames
+  rank: '20'

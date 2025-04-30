@@ -1,7 +1,11 @@
-average_rating: '6.60474'
-categories:
-- name: Bluffing
-- name: Card Game
+type: boardgame
+name: OPEN
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/nLhh6E_McD5zWJ7c7mzZwg__thumb/img/ZNbMdUnld1JgE6uzvlyCnuCqDG0=/fit-in/200x150/filters:strip_icc()/pic8260714.png
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '15'
+publisher_min_age: '8'
 community_best_players: '4'
 community_recommended_players: '3'
 description: OPEN is a climbing and shedding game in which each person plays with
@@ -11,48 +15,19 @@ description: OPEN is a climbing and shedding game in which each person plays wit
   awarded to players who accurately predicted who would go out first.&#10;&#10;Rounds
   are played until one player reaches a given score, then the player with the most
   points wins.&#10;&#10;
-designers:
-- name: Takashi Saito
-learning_analysis:
-  bgg_rank: 12112
-  bgg_weight: 1.5
-  category_complexity: 2.68
-  decision_points: 3.07
-  initial_barrier: 2.14
-  interaction_complexity: 4.3
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.7
-  mechanics_count: 1
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 0.85
-    decision_density: 0.0
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 2.12
-  replayability: 2.3
-  rules_complexity: 2.2153333333333336
-  strategic_depth: 2.07
-  strategic_depth_description: 低め（限られた戦略オプション）
-  year_published: 2022
 mechanics:
 - name: Ladder Climbing
-name: OPEN
-playing_time: '15'
-publisher_max_players: '4'
-publisher_min_age: '8'
-publisher_min_players: '2'
+categories:
+- name: Bluffing
+- name: Card Game
+designers:
+- name: Takashi Saito
 publishers:
 - name: BrainBrainGames
 - name: Mandoo Games
 - name: SUNNY BIRD
-ranks:
-- rank: '12112'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/nLhh6E_McD5zWJ7c7mzZwg__thumb/img/ZNbMdUnld1JgE6uzvlyCnuCqDG0=/fit-in/200x150/filters:strip_icc()/pic8260714.png
-type: boardgame
+average_rating: '6.57678'
 weight: '1.5'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '12055'

@@ -1,3 +1,5 @@
+type: boardgame
+name: 'Hegemony: Lead Your Class to Victory – Extended Edition'
 alternate_names:
 - 'Hegemonie: Doveďte svou třídu k vítězství – Rozšířené vydání'
 - 'Hegemony: Conduza Sua Classe À Vitória – Edição Ampliada'
@@ -8,15 +10,16 @@ alternate_names:
 - Гегемонія. Твій клас. Твої правила. Твоя перемога
 - ヘゲモニー
 - '헤게모니: 당신의 사회 계층을 승리로 이끄세요'
-average_rating: '8.86967'
-categories:
-- name: Economic
-- name: Educational
-- name: Negotiation
-- name: Political
+japanese_name: ヘゲモニー
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/E-iBB-oZKIxrQQX7pbdiMg__thumb/img/9ZDM1OUn2I6sIhZG2QroiZEvTYk=/fit-in/200x150/filters:strip_icc()/pic7482447.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '180'
+publisher_min_age: '14'
 community_best_players: '4'
-community_min_age: '14'
 community_recommended_players: '2'
+community_min_age: '14'
 description: 'This Extended Edition includes Hegemony: Lead Your Class to Victory
   base game + Crisis &amp; Control expansion.&#10;&#10;&#10;Put another way, the Crisis
   &amp; Control &quot;expansion&quot; includes the components from the Kickstarter
@@ -61,37 +64,6 @@ description: 'This Extended Edition includes Hegemony: Lead Your Class to Victor
   that was given in the form of stretch goals during Hegemony''s Kickstarter campaign.
   All that content was included in the Extended Edition of Hegemony which is what
   the campaign''s backers received.&#10;&#10;'
-designers:
-- name: Vangelis Bagiartakis
-- name: Varnavas Timotheou
-japanese_name: ヘゲモニー
-learning_analysis:
-  bgg_rank: null
-  bgg_weight: 4.3077
-  category_complexity: 4.05
-  decision_points: 4.587999999999999
-  initial_barrier: 4.32
-  interaction_complexity: 3.8
-  learning_curve_type: steep_then_moderate
-  mastery_time: medium
-  mechanics_complexity: 3.74
-  mechanics_count: 7
-  player_types:
-  - experienced
-  - hardcore
-  - strategist
-  - system_master
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.1
-    strategic_bonus: 0.2
-  rank_complexity: 3.0
-  replayability: 3.3
-  rules_complexity: 4.763444761904762
-  strategic_depth: 4.18
-  strategic_depth_description: 深い（熟練プレイヤー向け）
-  year_published: 2023
 mechanics:
 - name: Action / Event
 - name: Hand Management
@@ -100,11 +72,14 @@ mechanics:
 - name: Variable Player Powers
 - name: Voting
 - name: Worker Placement, Different Worker Types
-name: 'Hegemony: Lead Your Class to Victory – Extended Edition'
-playing_time: '180'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Economic
+- name: Educational
+- name: Negotiation
+- name: Political
+designers:
+- name: Vangelis Bagiartakis
+- name: Varnavas Timotheou
 publishers:
 - name: Hegemonic Project Games
 - name: BoardM Factory
@@ -117,8 +92,6 @@ publishers:
 - name: Giant Roc
 - name: MINDOK
 - name: Ігромаг
-ranks: []
-thumbnail_url: https://cf.geekdo-images.com/E-iBB-oZKIxrQQX7pbdiMg__thumb/img/9ZDM1OUn2I6sIhZG2QroiZEvTYk=/fit-in/200x150/filters:strip_icc()/pic7482447.jpg
-type: boardgame
+average_rating: '8.86344'
 weight: '4.3077'
-year_published: '2023'
+ranks: []

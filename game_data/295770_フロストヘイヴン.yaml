@@ -1,17 +1,19 @@
+type: boardgame
+name: Frosthaven
 alternate_names:
 - 'Frosthaven: Sale Temps à Havreblanc'
 - フロストヘイヴン
 - 프로스트헤이븐
-average_rating: '8.7889'
-categories:
-- name: Adventure
-- name: Exploration
-- name: Fantasy
-- name: Fighting
-- name: Miniatures
+japanese_name: フロストヘイヴン
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/cwUgf-f-qwri8UHBUnifuQ__thumb/img/3o2Hc_N5mmfpOt8s9kP0ap8Jti8=/fit-in/200x150/filters:strip_icc()/pic5092291.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '180'
+publisher_min_age: '14'
 community_best_players: '3'
-community_min_age: '14'
 community_recommended_players: 1, 2, 4
+community_min_age: '14'
 description: 'Frosthaven is the story of a small outpost far to the north of the capital
   city of White Oak.  It''s an outpost barely surviving the harsh weather let alone
   invasions from forces both known and unknown. However, a group of mercenaries, at
@@ -36,38 +38,6 @@ description: 'Frosthaven is the story of a small outpost far to the north of the
   as standard items. Resources are much more valuable and you have to build items
   through a crafting system rather than just buying them.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;'
-designers:
-- name: Isaac Childres
-japanese_name: フロストヘイヴン
-learning_analysis:
-  bgg_rank: 23
-  bgg_weight: 4.4139
-  category_complexity: 4.01
-  decision_points: 4.513333333333332
-  initial_barrier: 4.11
-  interaction_complexity: 3.7225
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.34
-  mechanics_count: 17
-  player_types:
-  - experienced
-  - hardcore
-  - strategist
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.1
-    strategic_bonus: 0.2
-  rank_complexity: 3.21
-  replayability: 4.5
-  rules_complexity: 4.423172156862745
-  strategic_depth: 4.03
-  strategic_depth_description: 深い（熟練プレイヤー向け）
-  year_published: 2022
 mechanics:
 - name: Campaign / Battle Card Driven
 - name: Communication Limits
@@ -86,11 +56,14 @@ mechanics:
 - name: Simultaneous Action Selection
 - name: Solo / Solitaire Game
 - name: Variable Player Powers
-name: Frosthaven
-playing_time: '180'
-publisher_max_players: '4'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Adventure
+- name: Exploration
+- name: Fantasy
+- name: Fighting
+- name: Miniatures
+designers:
+- name: Isaac Childres
 publishers:
 - name: Cephalofair Games
 - name: Albi
@@ -99,14 +72,12 @@ publishers:
 - name: Delta Vision Publishing
 - name: Feuerland Spiele
 - name: Korea Boardgames
-ranks:
-- rank: '23'
-  type: boardgame
-- rank: '5'
-  type: thematic
-- rank: '12'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/cwUgf-f-qwri8UHBUnifuQ__thumb/img/3o2Hc_N5mmfpOt8s9kP0ap8Jti8=/fit-in/200x150/filters:strip_icc()/pic5092291.png
-type: boardgame
+average_rating: '8.78903'
 weight: '4.4139'
-year_published: '2022'
+ranks:
+- type: boardgame
+  rank: '23'
+- type: thematic
+  rank: '5'
+- type: strategygames
+  rank: '12'

@@ -1,3 +1,5 @@
+type: boardgame
+name: 'Slay the Spire: The Board Game'
 alternate_names:
 - 'Slay the Spire: Das Brettspiel'
 - 'Slay the Spire: El Juego de Mesa'
@@ -5,16 +7,15 @@ alternate_names:
 - 'Slay The Spire: O Jogo de Tabuleiro'
 - 尖塔奇兵：桌面游戏
 - '슬레이 더 스파이어: 보드게임'
-average_rating: '8.71861'
-categories:
-- name: Adventure
-- name: Card Game
-- name: Fantasy
-- name: Fighting
-- name: Video Game Theme
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/PQzVclEoOQ_wr4e1V86kxA__thumb/img/cpmsSDagE5RvQ1ERXl-fMJIaUUg=/fit-in/200x150/filters:strip_icc()/pic8157856.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '150'
+publisher_min_age: '12'
 community_best_players: '2'
-community_min_age: '12'
 community_recommended_players: 1, 3, 4
+community_min_age: '12'
 description: 'Slay the Spire: The Board Game is a co-operative deck-building adventure.
   Craft a unique deck, encounter bizarre creatures, discover relics of immense power,
   and finally become strong enough to slay the Spire!&#10;&#10;Slay the Spire: The
@@ -25,48 +26,22 @@ description: 'Slay the Spire: The Board Game is a co-operative deck-building adv
   Merchant bag&#10;Metal coins&#10;&#10;Kickstarter exclusives and Stretch goals:&#10;1x
   Merchant pat&#10;Claw die&#10;8x Claw cards&#10;28x Foil Cards&#10;3x Acrylic heart
   tokens&#10;&#10;'
-designers:
-- name: Gary Dworetsky
-- name: Anthony Giovannetti
-- name: Casey Yano
-learning_analysis:
-  bgg_rank: 58
-  bgg_weight: 2.9364
-  category_complexity: 3.5
-  decision_points: 3.7933333333333334
-  initial_barrier: 2.73
-  interaction_complexity: 3.765
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.94
-  mechanics_count: 5
-  player_types:
-  - beginner
-  - casual
-  - experienced
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.2
-  rank_complexity: 3.18
-  replayability: 3.6
-  rules_complexity: 3.63328
-  strategic_depth: 3.31
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2024
 mechanics:
 - name: Cooperative Game
 - name: Deck, Bag, and Pool Building
 - name: Dice Rolling
 - name: Hand Management
 - name: Solo / Solitaire Game
-name: 'Slay the Spire: The Board Game'
-playing_time: '150'
-publisher_max_players: '4'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: Adventure
+- name: Card Game
+- name: Fantasy
+- name: Fighting
+- name: Video Game Theme
+designers:
+- name: Gary Dworetsky
+- name: Anthony Giovannetti
+- name: Casey Yano
 publishers:
 - name: Contention Games
 - name: Ediciones MasQueOca
@@ -76,12 +51,10 @@ publishers:
 - name: Portal Games
 - name: Yayoi The Dreamer
 - name: YOKA Games
+average_rating: '8.71691'
+weight: '2.9462'
 ranks:
-- rank: '58'
-  type: boardgame
-- rank: '34'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/PQzVclEoOQ_wr4e1V86kxA__thumb/img/cpmsSDagE5RvQ1ERXl-fMJIaUUg=/fit-in/200x150/filters:strip_icc()/pic8157856.png
-type: boardgame
-weight: '2.9364'
-year_published: '2024'
+- type: boardgame
+  rank: '57'
+- type: strategygames
+  rank: '34'

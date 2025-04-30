@@ -1,15 +1,20 @@
+type: boardgame
+name: Expeditions
 alternate_names:
 - Ekspedycyje
 - Expedice
 - Expedíciók
 - Expediciones
 - Експедиції
-average_rating: '7.65351'
-categories:
-- name: Exploration
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/9eBww9iAi472T2goijVqwQ__thumb/img/xR6PqvTMNBFaGlnN9WDAeIooBNM=/fit-in/200x150/filters:strip_icc()/pic7320023.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '90'
+publisher_min_age: '14'
 community_best_players: '3'
-community_min_age: '12'
 community_recommended_players: 1, 2
+community_min_age: '12'
 description: The sequel to Scythe sends players on a new adventure into Siberia, where
   a massive meteorite crashed near the Tunguska River, awakening ancient corruption.
   An expedition led by Dr. Tarkovsky ventures into the taiga to learn about the meteorite
@@ -23,35 +28,6 @@ description: The sequel to Scythe sends players on a new adventure into Siberia,
   found among the tiles; use workers, items, meteorites, and quests to enhance your
   mech; and use power and guile to vanquish corruption.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
-designers:
-- name: Jamey Stegmaier
-learning_analysis:
-  bgg_rank: 406
-  bgg_weight: 3.0521
-  category_complexity: 3.4
-  decision_points: 4.527272727272728
-  initial_barrier: 3.69
-  interaction_complexity: 2.5
-  learning_curve_type: moderate_then_shallow
-  mastery_time: medium
-  mechanics_complexity: 3.38
-  mechanics_count: 13
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.07
-  replayability: 3.9
-  rules_complexity: 4.182984102564102
-  strategic_depth: 3.49
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2023
 mechanics:
 - name: Action Retrieval
 - name: Deck, Bag, and Pool Building
@@ -66,11 +42,10 @@ mechanics:
 - name: Variable Set-up
 - name: Victory Points as a Resource
 - name: Worker Placement, Different Worker Types
-name: Expeditions
-playing_time: '90'
-publisher_max_players: '5'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Exploration
+designers:
+- name: Jamey Stegmaier
 publishers:
 - name: Stonemaier Games
 - name: Albi
@@ -83,12 +58,10 @@ publishers:
 - name: Maldito Games
 - name: Matagot
 - name: PHALANX
-ranks:
-- rank: '406'
-  type: boardgame
-- rank: '254'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/9eBww9iAi472T2goijVqwQ__thumb/img/xR6PqvTMNBFaGlnN9WDAeIooBNM=/fit-in/200x150/filters:strip_icc()/pic7320023.jpg
-type: boardgame
+average_rating: '7.65312'
 weight: '3.0521'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '406'
+- type: strategygames
+  rank: '255'

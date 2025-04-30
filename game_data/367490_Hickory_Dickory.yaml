@@ -1,15 +1,19 @@
+type: boardgame
+name: Hickory Dickory
 alternate_names:
 - Cupity Dupity
 - Die Stunde der Maus
 - Гікорі Дікорі
 - 嘀嗒小鼠队
-average_rating: '7.05349'
-categories:
-- name: Animals
-- name: Racing
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/wNPQex7ukUTDRO6WK1v0eA__thumb/img/tdOCFZkMaCFbBQGB1_Oz54QkNQY=/fit-in/200x150/filters:strip_icc()/pic6972966.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '10'
 community_best_players: '3'
-community_min_age: '8'
 community_recommended_players: 1, 2, 4
+community_min_age: '8'
 description: In Hickory Dickory, players control a team of mice competing in a royal
   scavenger hunt hosted by Lord Cuckoo! The mice will ride on a cuckoo clock's minute
   hand as they search for items that match their hunt card. The adorable mice will
@@ -18,35 +22,6 @@ description: In Hickory Dickory, players control a team of mice competing in a r
   the hunt is over and the mice will show off their scavenger hunt cards to Lord Cuckoo.
   Berries will be rewarded for rows and columns completed on their hunt card, and
   the mice team with the most berries wins!&#10;&#10;&mdash;description from publisher&#10;&#10;
-designers:
-- name: Sawyer West
-learning_analysis:
-  bgg_rank: 3903
-  bgg_weight: 2.5938
-  category_complexity: 2.21
-  decision_points: 4.735999999999999
-  initial_barrier: 3.29
-  interaction_complexity: 3.0
-  learning_curve_type: gentle_then_moderate
-  mastery_time: medium
-  mechanics_complexity: 3.34
-  mechanics_count: 7
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.25
-  replayability: 3.0
-  rules_complexity: 3.793998095238095
-  strategic_depth: 3.54
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2023
 mechanics:
 - name: Action Retrieval
 - name: End Game Bonuses
@@ -55,20 +30,18 @@ mechanics:
 - name: Tile Placement
 - name: Worker Placement
 - name: Worker Placement, Different Worker Types
-name: Hickory Dickory
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Animals
+- name: Racing
+designers:
+- name: Sawyer West
 publishers:
 - name: Plaid Hat Games
 - name: ADC Blackfire Entertainment
 - name: Geekach Games
 - name: YOKA Games
-ranks:
-- rank: '3903'
-  type: boardgame
-thumbnail_url: https://cf.geekdo-images.com/wNPQex7ukUTDRO6WK1v0eA__thumb/img/tdOCFZkMaCFbBQGB1_Oz54QkNQY=/fit-in/200x150/filters:strip_icc()/pic6972966.jpg
-type: boardgame
+average_rating: '7.05341'
 weight: '2.5938'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '3899'

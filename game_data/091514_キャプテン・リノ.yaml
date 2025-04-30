@@ -1,3 +1,5 @@
+type: boardgame
+name: Rhino Hero
 alternate_names:
 - Rhino Hero Giant Edition
 - 'Rhino Hero: XXL-Version'
@@ -10,15 +12,16 @@ alternate_names:
 - キャプテン・リノ
 - 超級犀牛
 - 슈퍼 라이노
-average_rating: '6.89914'
-categories:
-- name: Action / Dexterity
-- name: Animals
-- name: Children's Game
-- name: Party Game
+japanese_name: キャプテン・リノ
+year_published: '2011'
+thumbnail_url: https://cf.geekdo-images.com/jRg6horhSAWDITN_tSJuhg__thumb/img/AIJuadutdwZfVWSBQGD0x1KneMA=/fit-in/200x150/filters:strip_icc()/pic6974609.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '15'
+publisher_min_age: '5'
 community_best_players: '3'
-community_min_age: '4'
 community_recommended_players: 2, 4, 5
+community_min_age: '4'
 description: Super Rhino! presents players with an incredibly heroic &ndash; and regrettably
   heavy &ndash; rhinoceros who is eager to climb a tall building and leap other tall
   buildings in a single bound. First, though, you need to construct that building.&#10;&#10;Players
@@ -32,46 +35,20 @@ description: Super Rhino! presents players with an incredibly heroic &ndash; and
   roof cards wins the game. Alternatively, if the building collapses, the player who
   caused the collapse automatically loses, and the player with the fewest roof cards
   in hand wins.&#10;&#10;Similar to Turmbau zu Babel&#10;&#10;
-designers:
-- name: Scott Frisco
-- name: Steven Strumpf
-japanese_name: キャプテン・リノ
-learning_analysis:
-  bgg_rank: 981
-  bgg_weight: 1.0211
-  category_complexity: 1.87
-  decision_points: 3.22
-  initial_barrier: 1.82
-  interaction_complexity: 3.2649999999999997
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.48
-  mechanics_count: 4
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 0.85
-    decision_density: 0.2
-    interaction_modifier: 0.2
-    strategic_bonus: 0.0
-  rank_complexity: 1.97
-  replayability: 3.18
-  rules_complexity: 2.2165533333333327
-  strategic_depth: 1.93
-  strategic_depth_description: 低い（戦略的要素が少ない）
-  year_published: 2011
 mechanics:
 - name: Hand Management
 - name: Lose a Turn
 - name: Score-and-Reset Game
 - name: Stacking and Balancing
-name: Rhino Hero
-playing_time: '15'
-publisher_max_players: '5'
-publisher_min_age: '5'
-publisher_min_players: '2'
+categories:
+- name: Action / Dexterity
+- name: Animals
+- name: Card Game
+- name: Children's Game
+- name: Party Game
+designers:
+- name: Scott Frisco
+- name: Steven Strumpf
 publishers:
 - name: HABA
 - name: Hobby World
@@ -80,14 +57,12 @@ publishers:
 - name: Reflexshop
 - name: Sugorokuya
 - name: Swan Panasia Co., Ltd.
+average_rating: '6.89915'
+weight: '1.021'
 ranks:
-- rank: '981'
-  type: boardgame
-- rank: '20'
-  type: childrensgames
-- rank: '292'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/jRg6horhSAWDITN_tSJuhg__thumb/img/AIJuadutdwZfVWSBQGD0x1KneMA=/fit-in/200x150/filters:strip_icc()/pic6974609.jpg
-type: boardgame
-weight: '1.0211'
-year_published: '2011'
+- type: boardgame
+  rank: '981'
+- type: childrensgames
+  rank: '20'
+- type: familygames
+  rank: '292'

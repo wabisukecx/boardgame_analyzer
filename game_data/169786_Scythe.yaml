@@ -1,3 +1,5 @@
+type: boardgame
+name: Scythe
 alternate_names:
 - Sçythe
 - Коса
@@ -6,15 +8,15 @@ alternate_names:
 - 鐮刀戰爭
 - 사이드
 - 사이쓰
-average_rating: '8.12135'
-categories:
-- name: Economic
-- name: Fighting
-- name: Science Fiction
-- name: Territory Building
+year_published: '2016'
+thumbnail_url: https://cf.geekdo-images.com/7k_nOxpO9OGIjhLq2BUZdA__thumb/img/eQ69OEDdjYjfKg6q5Navee87skU=/fit-in/200x150/filters:strip_icc()/pic3163924.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '115'
+publisher_min_age: '14'
 community_best_players: '4'
-community_min_age: '14'
 community_recommended_players: 1, 2, 3, 5
+community_min_age: '14'
 description: It is a time of unrest in 1920s Europa. The ashes from the first great
   war still darken the snow. The capitalistic city-state known simply as &ldquo;The
   Factory&rdquo;, which fueled the war with heavily armored mechs, has closed its
@@ -45,38 +47,6 @@ description: It is a time of unrest in 1920s Europa. The ashes from the first gr
   a sense of momentum and progress throughout the game. The order in which players
   improve their engines adds to the unique feel of each game, even if having played
   one faction multiple times.&#10;&#10;
-designers:
-- name: Jamey Stegmaier
-learning_analysis:
-  bgg_rank: 18
-  bgg_weight: 3.4531
-  category_complexity: 4.23
-  decision_points: 4.595999999999999
-  initial_barrier: 3.79
-  interaction_complexity: 3.8749999999999996
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.16
-  mechanics_count: 17
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - strategist
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.21
-  replayability: 4.33
-  rules_complexity: 4.066894509803921
-  strategic_depth: 3.87
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2016
 mechanics:
 - name: Area Majority / Influence
 - name: Card Play Conflict Resolution
@@ -95,11 +65,13 @@ mechanics:
 - name: Variable Set-up
 - name: Victory Points as a Resource
 - name: Zone of Control
-name: Scythe
-playing_time: '115'
-publisher_max_players: '5'
-publisher_min_age: '14'
-publisher_min_players: '1'
+categories:
+- name: Economic
+- name: Fighting
+- name: Science Fiction
+- name: Territory Building
+designers:
+- name: Jamey Stegmaier
 publishers:
 - name: Stonemaier Games
 - name: Albi
@@ -121,12 +93,10 @@ publishers:
 - name: Planeta Igor
 - name: Playfun Games
 - name: Surfin' Meeple China
-ranks:
-- rank: '18'
-  type: boardgame
-- rank: '22'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/7k_nOxpO9OGIjhLq2BUZdA__thumb/img/eQ69OEDdjYjfKg6q5Navee87skU=/fit-in/200x150/filters:strip_icc()/pic3163924.jpg
-type: boardgame
+average_rating: '8.12121'
 weight: '3.4531'
-year_published: '2016'
+ranks:
+- type: boardgame
+  rank: '19'
+- type: strategygames
+  rank: '22'

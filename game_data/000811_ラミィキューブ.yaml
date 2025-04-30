@@ -1,3 +1,5 @@
+type: boardgame
+name: Rummikub
 alternate_names:
 - Challenge Rummy
 - Classic Rummy
@@ -16,7 +18,9 @@ alternate_names:
 - Original Rummikub
 - The Original Rummikub
 - The Original Rummikub Classic
+- Original Rummikub Classic mit Cassette
 - The Original Rummikub Intro
+- Original Rummikub Klassik
 - Het originele Rummikub
 - Pocket Rummikub
 - Rack Rummy
@@ -89,14 +93,16 @@ alternate_names:
 - 루미큐브 보이저
 - 루미큐브 클래식
 - 루미큐브 클래식 미니
-average_rating: '6.49498'
-categories:
-- name: Abstract Strategy
-- name: Card Game
-- name: Number
+japanese_name: ラミィキューブ
+year_published: '1977'
+thumbnail_url: https://cf.geekdo-images.com/LeaLDlTTmeN639MfuflcMw__thumb/img/CSPEyoFAcA3WwtzDekp3Mfepcek=/fit-in/200x150/filters:strip_icc()/pic2286966.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '8'
 community_best_players: '4'
-community_min_age: '8'
 community_recommended_players: 2, 3
+community_min_age: '8'
 description: 'Rummikub is similar to several central European card games which are
   played with two decks of playing cards, including Machiavelli and Vatikan. Ephraim
   Hertzano invented the tile game Rummikub in the 1940s when card-playing was outlawed
@@ -114,43 +120,15 @@ description: 'Rummikub is similar to several central European card games which a
   uneventfully, but when the players start putting more and more tiles in play, the
   options for your upcoming turns can become more complex, challenging, and exciting
   (from areyougame.com).&#10;&#10;'
-designers:
-- name: Ephraim Hertzano
-japanese_name: ラミィキューブ
-learning_analysis:
-  bgg_rank: 1730
-  bgg_weight: 1.714
-  category_complexity: 3.12
-  decision_points: 3.5149999999999997
-  initial_barrier: 2.14
-  interaction_complexity: 2.76
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.5
-  mechanics_count: 2
-  player_types:
-  - beginner
-  - casual
-  - classic_lover
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.0
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.16
-  replayability: 2.73
-  rules_complexity: 2.276133333333333
-  strategic_depth: 2.53
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 1977
 mechanics:
 - name: Set Collection
 - name: Tile Placement
-name: Rummikub
-playing_time: '60'
-publisher_max_players: '4'
-publisher_min_age: '8'
-publisher_min_players: '2'
+categories:
+- name: Abstract Strategy
+- name: Card Game
+- name: Number
+designers:
+- name: Ephraim Hertzano
 publishers:
 - name: (Unknown)
 - name: Alga
@@ -252,12 +230,10 @@ publishers:
 - name: Wood Expressions
 - name: Yangxin Industrial Company Limited
 - name: 놀이속의세상
-ranks:
-- rank: '1730'
-  type: boardgame
-- rank: '673'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/LeaLDlTTmeN639MfuflcMw__thumb/img/CSPEyoFAcA3WwtzDekp3Mfepcek=/fit-in/200x150/filters:strip_icc()/pic2286966.jpg
-type: boardgame
+average_rating: '6.49531'
 weight: '1.714'
-year_published: '1977'
+ranks:
+- type: boardgame
+  rank: '1731'
+- type: familygames
+  rank: '673'

@@ -1,3 +1,5 @@
+type: boardgame
+name: Everdell
 alternate_names:
 - Divukraj
 - Everdel
@@ -12,15 +14,16 @@ alternate_names:
 - エバーデール
 - 仙境幽谷
 - 에버델
-average_rating: '8.00425'
-categories:
-- name: Animals
-- name: Card Game
-- name: City Building
-- name: Fantasy
+japanese_name: エバーデール
+year_published: '2018'
+thumbnail_url: https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__thumb/img/Cf_mYxR_VvdjTEPXseSurni2JNI=/fit-in/200x150/filters:strip_icc()/pic3918905.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '80'
+publisher_min_age: '10'
 community_best_players: '3'
-community_min_age: '12'
 community_recommended_players: 1, 2, 4
+community_min_age: '12'
 description: 'Within the charming valley of Everdell, beneath the boughs of towering
   trees, among meandering streams and mossy hollows, a civilization of forest critters
   is thriving and expanding. From Everfrost to Bellsong, many a year have come and
@@ -42,36 +45,6 @@ description: 'Within the charming valley of Everdell, beneath the boughs of towe
   the next Season: Workers are returned to the players supply and new workers are
   added. The game is played from Winter through to the onset of the following winter,
   at which point the player with the city with the most points wins.&#10;&#10;'
-designers:
-- name: James A. Wilson
-japanese_name: エバーデール
-learning_analysis:
-  bgg_rank: 39
-  bgg_weight: 2.8247
-  category_complexity: 3.16
-  decision_points: 4.46
-  initial_barrier: 3.29
-  interaction_complexity: 3.0599999999999996
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.9
-  mechanics_count: 11
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 2.93
-  replayability: 4.4
-  rules_complexity: 3.4416066666666665
-  strategic_depth: 3.41
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2018
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -84,11 +57,13 @@ mechanics:
 - name: Tags
 - name: Variable Set-up
 - name: Worker Placement
-name: Everdell
-playing_time: '80'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '1'
+categories:
+- name: Animals
+- name: Card Game
+- name: City Building
+- name: Fantasy
+designers:
+- name: James A. Wilson
 publishers:
 - name: Starling Games (II)
 - name: Abraxas
@@ -111,14 +86,12 @@ publishers:
 - name: White Goblin Games
 - name: YOKA Games
 - name: Ігромаг
-ranks:
-- rank: '39'
-  type: boardgame
-- rank: '47'
-  type: strategygames
-- rank: '6'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__thumb/img/Cf_mYxR_VvdjTEPXseSurni2JNI=/fit-in/200x150/filters:strip_icc()/pic3918905.png
-type: boardgame
+average_rating: '8.00408'
 weight: '2.8247'
-year_published: '2018'
+ranks:
+- type: boardgame
+  rank: '39'
+- type: strategygames
+  rank: '47'
+- type: familygames
+  rank: '6'

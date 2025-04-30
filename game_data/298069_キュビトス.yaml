@@ -1,3 +1,5 @@
+type: boardgame
+name: Cubitos
 alternate_names:
 - 'Cubitos: Ryzykowny Wyścig'
 - Кубитос
@@ -5,13 +7,16 @@ alternate_names:
 - キュビトス
 - 方块向前冲
 - 큐비토스
-average_rating: '7.39112'
-categories:
-- name: Dice
-- name: Racing
+japanese_name: キュビトス
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/_WY_JrQQRrSUlVof11hMpQ__thumb/img/YBgLAPTM5xOW3fDj_if3-r3oDs0=/fit-in/200x150/filters:strip_icc()/pic5226311.png
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '10'
 community_best_players: 3, 4
-community_min_age: '8'
 community_recommended_players: '2'
+community_min_age: '8'
 description: Be fast or be last!&#10;&#10;In Cubitos, players take on the role of
   participants in the annual Cube Cup, a race of strategy and luck to determine the
   Cubitos Champion. Each player has a runner on the racetrack and a support team,
@@ -19,35 +24,6 @@ description: Be fast or be last!&#10;&#10;In Cubitos, players take on the role o
   their results to move along the racetrack, buy new dice, and use abilities &mdash;
   but you must be careful not to push your luck rolling too much or you could bust!&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
-designers:
-- name: John D. Clair
-japanese_name: キュビトス
-learning_analysis:
-  bgg_rank: 466
-  bgg_weight: 2.1768
-  category_complexity: 2.21
-  decision_points: 3.8600000000000003
-  initial_barrier: 2.72
-  interaction_complexity: 2.6500000000000004
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.59
-  mechanics_count: 10
-  player_types:
-  - beginner
-  - casual
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.31
-  replayability: 3.7
-  rules_complexity: 3.0330266666666668
-  strategic_depth: 2.89
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2021
 mechanics:
 - name: Catch the Leader
 - name: Deck, Bag, and Pool Building
@@ -59,11 +35,11 @@ mechanics:
 - name: Race
 - name: Re-rolling and Locking
 - name: Variable Set-up
-name: Cubitos
-playing_time: '60'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Dice
+- name: Racing
+designers:
+- name: John D. Clair
 publishers:
 - name: Alderac Entertainment Group
 - name: Boardgame Mall
@@ -75,12 +51,10 @@ publishers:
 - name: Pegasus Spiele
 - name: White Goblin Games
 - name: YOKA Games
-ranks:
-- rank: '466'
-  type: boardgame
-- rank: '104'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/_WY_JrQQRrSUlVof11hMpQ__thumb/img/YBgLAPTM5xOW3fDj_if3-r3oDs0=/fit-in/200x150/filters:strip_icc()/pic5226311.png
-type: boardgame
+average_rating: '7.39109'
 weight: '2.1768'
-year_published: '2021'
+ranks:
+- type: boardgame
+  rank: '466'
+- type: familygames
+  rank: '105'

@@ -1,15 +1,18 @@
+type: boardgame
+name: Fossilis
 alternate_names:
 - Раскопки
 - 化石之旅
 - 포실리스
-average_rating: '6.97762'
-categories:
-- name: Animals
-- name: Exploration
-- name: Prehistoric
+year_published: '2020'
+thumbnail_url: https://cf.geekdo-images.com/rczms2pvajxj5l9Vpo66Hw__thumb/img/-3U6s7tj2ltu-5J6F9lZo2wfH5I=/fit-in/200x150/filters:strip_icc()/pic4754389.png
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '60'
+publisher_min_age: '8'
 community_best_players: '3'
-community_min_age: '8'
 community_recommended_players: 2, 4, 5
+community_min_age: '8'
 description: 'An incredible new dinosaur graveyard has been discovered, and if the
   early findings are any indication, it could be a treasure trove of fossils and bones
   like the world has never seen! In Fossilis, 2 to 5 players become paleontologists
@@ -30,43 +33,17 @@ description: 'An incredible new dinosaur graveyard has been discovered, and if t
   from the publisher&#10;&#10;Note: The Kickstarter edition supports solo play and
   includes other game related content. It may be found here Fossilis: Kickstarter
   Edition.&#10;&#10;'
-designers:
-- name: David Alberto Diaz
-learning_analysis:
-  bgg_rank: 2756
-  bgg_weight: 2.2692
-  category_complexity: 3.01
-  decision_points: 3.8600000000000003
-  initial_barrier: 2.31
-  interaction_complexity: 2.925
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.65
-  mechanics_count: 4
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.12
-  replayability: 2.97
-  rules_complexity: 2.813173333333333
-  strategic_depth: 2.94
-  strategic_depth_description: 中〜低（基本的な戦略が存在）
-  year_published: 2020
 mechanics:
 - name: Action Points
 - name: Grid Movement
 - name: Set Collection
 - name: Tile Placement
-name: Fossilis
-playing_time: '60'
-publisher_max_players: '5'
-publisher_min_age: '8'
-publisher_min_players: '2'
+categories:
+- name: Animals
+- name: Exploration
+- name: Prehistoric
+designers:
+- name: David Alberto Diaz
 publishers:
 - name: KTBG
 - name: 17wanzy (Yihu BG)
@@ -76,12 +53,10 @@ publishers:
 - name: Helaina Cappel
 - name: Popcorn Games
 - name: Treetato Studio
-ranks:
-- rank: '2756'
-  type: boardgame
-- rank: '846'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/rczms2pvajxj5l9Vpo66Hw__thumb/img/-3U6s7tj2ltu-5J6F9lZo2wfH5I=/fit-in/200x150/filters:strip_icc()/pic4754389.png
-type: boardgame
+average_rating: '6.97762'
 weight: '2.2692'
-year_published: '2020'
+ranks:
+- type: boardgame
+  rank: '2758'
+- type: familygames
+  rank: '846'

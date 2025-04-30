@@ -1,16 +1,20 @@
+type: boardgame
+name: Ezra and Nehemiah
 alternate_names:
 - Esdra e Neemia
 - Esdras e Neemias
 - Esdras et Néhémie
 - エズラとネヘミヤ
-average_rating: '8.23357'
-categories:
-- name: Ancient
-- name: City Building
-- name: Religious
+japanese_name: エズラとネヘミヤ
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/MVflz8gmtK1DZy49E-Llog__thumb/img/o7kbhWms7CO3dbgncofPaS4-hwg=/fit-in/200x150/filters:strip_icc()/pic7474410.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '13'
 community_best_players: '3'
-community_min_age: '12'
 community_recommended_players: 1, 2, 4
+community_min_age: '12'
 description: In his first year as king of Persia, Cyrus the Great issued a decree
   in writing to the Israelite exiles living under his rule:&#10;&#10;The God of heaven
   has given me all the kingdoms of the earth and has appointed me to build a temple
@@ -35,38 +39,6 @@ description: In his first year as king of Persia, Cyrus the Great issued a decre
   comes a Sabbath day of rest when food will be needed, and the week's work will be
   reflected upon. The game ends after the third Sabbath has been completed.&#10;&#10;&mdash;description
   from the designer&#10;&#10;
-designers:
-- name: S J Macdonald
-- name: Shem Phillips
-japanese_name: エズラとネヘミヤ
-learning_analysis:
-  bgg_rank: 678
-  bgg_weight: 3.8365
-  category_complexity: 3.89
-  decision_points: 4.471999999999999
-  initial_barrier: 3.96
-  interaction_complexity: 3.365
-  learning_curve_type: moderate
-  mastery_time: medium
-  mechanics_complexity: 3.39
-  mechanics_count: 7
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.04
-  replayability: 3.6
-  rules_complexity: 4.281109523809524
-  strategic_depth: 3.72
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2024
 mechanics:
 - name: Chaining
 - name: Hand Management
@@ -75,11 +47,13 @@ mechanics:
 - name: Tech Trees / Tech Tracks
 - name: Track Movement
 - name: Variable Set-up
-name: Ezra and Nehemiah
-playing_time: '120'
-publisher_max_players: '4'
-publisher_min_age: '13'
-publisher_min_players: '1'
+categories:
+- name: Ancient
+- name: City Building
+- name: Religious
+designers:
+- name: S J Macdonald
+- name: Shem Phillips
 publishers:
 - name: Garphill Games
 - name: CHUR GAMES
@@ -89,12 +63,10 @@ publishers:
 - name: Renegade Game Studios
 - name: Tesla Games
 - name: 株式会社ケンビル (KenBill)
+average_rating: '8.2323'
+weight: '3.8375'
 ranks:
-- rank: '678'
-  type: boardgame
-- rank: '341'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/MVflz8gmtK1DZy49E-Llog__thumb/img/o7kbhWms7CO3dbgncofPaS4-hwg=/fit-in/200x150/filters:strip_icc()/pic7474410.jpg
-type: boardgame
-weight: '3.8365'
-year_published: '2024'
+- type: boardgame
+  rank: '678'
+- type: strategygames
+  rank: '341'

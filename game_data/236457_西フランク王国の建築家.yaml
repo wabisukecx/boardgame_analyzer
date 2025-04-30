@@ -1,3 +1,5 @@
+type: boardgame
+name: Architects of the West Kingdom
 alternate_names:
 - Architecten van het Westelijk Koninkrijk
 - Architectes du Royaume de l'Ouest
@@ -17,14 +19,16 @@ alternate_names:
 - 西國建築師 Architects of the West Kingdom
 - 西方王国建筑师
 - 서쪽 왕국의 건축가
-average_rating: '7.71989'
-categories:
-- name: City Building
-- name: Economic
-- name: Medieval
+japanese_name: 西フランク王国の建築家
+year_published: '2018'
+thumbnail_url: https://cf.geekdo-images.com/OAX7HfOz-9N60StgADzd0g__thumb/img/sBMaoJ-Kz74lJ6djcl-NNMTr0Wo=/fit-in/200x150/filters:strip_icc()/pic3781944.png
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '80'
+publisher_min_age: '12'
 community_best_players: '4'
-community_min_age: '10'
 community_recommended_players: 1, 2, 3, 5
+community_min_age: '10'
 description: Architects of the West Kingdom is set at the end of the Carolingian Empire,
   circa 850 AD. As royal architects, players compete to impress their King and maintain
   their noble status by constructing various landmarks throughout his newly appointed
@@ -39,39 +43,6 @@ description: Architects of the West Kingdom is set at the end of the Carolingian
   might not seem like much, but fall too far and you will be punished. The game ends
   once a set number of constructions have been completed.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
-designers:
-- name: S J Macdonald
-- name: Shem Phillips
-japanese_name: 西フランク王国の建築家
-learning_analysis:
-  bgg_rank: 119
-  bgg_weight: 2.7567
-  category_complexity: 4.22
-  decision_points: 4.418461538461538
-  initial_barrier: 3.39
-  interaction_complexity: 3.6100000000000003
-  learning_curve_type: gentle_then_moderate
-  mastery_time: medium
-  mechanics_complexity: 2.81
-  mechanics_count: 15
-  player_types:
-  - casual
-  - experienced
-  - hardcore
-  - system_master
-  - replayer
-  - trend_follower
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.1
-    interaction_modifier: 0.0
-    strategic_bonus: 0.1
-  rank_complexity: 3.12
-  replayability: 4.29
-  rules_complexity: 3.47734
-  strategic_depth: 3.51
-  strategic_depth_description: 中〜高（多くの戦略が存在）
-  year_published: 2018
 mechanics:
 - name: Area Movement
 - name: Contracts
@@ -88,11 +59,13 @@ mechanics:
 - name: Variable Player Powers
 - name: Variable Set-up
 - name: Worker Placement
-name: Architects of the West Kingdom
-playing_time: '80'
-publisher_max_players: '5'
-publisher_min_age: '12'
-publisher_min_players: '1'
+categories:
+- name: City Building
+- name: Economic
+- name: Medieval
+designers:
+- name: S J Macdonald
+- name: Shem Phillips
 publishers:
 - name: Garphill Games
 - name: Angry Lion Games
@@ -115,12 +88,10 @@ publishers:
 - name: White Goblin Games
 - name: Yayoi The Dreamer
 - name: 株式会社ケンビル (KenBill)
+average_rating: '7.71972'
+weight: '2.7577'
 ranks:
-- rank: '119'
-  type: boardgame
-- rank: '103'
-  type: strategygames
-thumbnail_url: https://cf.geekdo-images.com/OAX7HfOz-9N60StgADzd0g__thumb/img/sBMaoJ-Kz74lJ6djcl-NNMTr0Wo=/fit-in/200x150/filters:strip_icc()/pic3781944.png
-type: boardgame
-weight: '2.7567'
-year_published: '2018'
+- type: boardgame
+  rank: '119'
+- type: strategygames
+  rank: '103'

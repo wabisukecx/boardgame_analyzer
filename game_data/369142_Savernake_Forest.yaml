@@ -1,3 +1,5 @@
+type: boardgame
+name: Savernake Forest
 alternate_names:
 - Bosbuit
 - La Forêt de Savernake
@@ -5,11 +7,15 @@ alternate_names:
 - Podzimní syslení
 - Осенний лес
 - Савернакський Ліс
-average_rating: '7.09345'
-categories: []
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/pcsfpRyo6tz2r8kcFOkUbg__thumb/img/qJka-CnwzAy-GigqO8HAKZTGSUU=/fit-in/200x150/filters:strip_icc()/pic7676237.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '40'
+publisher_min_age: '10'
 community_best_players: '4'
-community_min_age: '8'
 community_recommended_players: 2, 3
+community_min_age: '8'
 description: 'Autumn is coming to an end in the Savernake Forest&hellip; Help the
   animals gather and store food for the winter! Savernake forest is a game where 2-4
   players build their own section of the forest with paths where animals and food
@@ -43,44 +49,16 @@ description: 'Autumn is coming to an end in the Savernake Forest&hellip; Help th
   the animals of the forest, while trying to make the most of their paths to reach
   the highest score. Stroll through Savernake in the fall and be swept away by the
   enchantment of its wildlife!&#10;&#10;&mdash;description from the publisher&#10;&#10;'
-designers:
-- name: Rodrigo Rego
-learning_analysis:
-  bgg_rank: 2851
-  bgg_weight: 1.2703
-  category_complexity: 2.5
-  decision_points: 3.69
-  initial_barrier: 2.21
-  interaction_complexity: 2.5
-  learning_curve_type: gentle
-  mastery_time: short
-  mechanics_complexity: 2.98
-  mechanics_count: 5
-  player_types:
-  - beginner
-  - casual
-  playtime_analysis:
-    complexity_factor: 0.95
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.11
-  replayability: 2.5
-  rules_complexity: 3.2027266666666656
-  strategic_depth: 2.48
-  strategic_depth_description: 低め（限られた戦略オプション）
-  year_published: 2023
 mechanics:
 - name: Map Addition
 - name: Open Drafting
 - name: Pattern Building
 - name: Tags
 - name: Tile Placement
-name: Savernake Forest
-playing_time: '40'
-publisher_max_players: '4'
-publisher_min_age: '10'
-publisher_min_players: '2'
+categories:
+- name: Animals
+designers:
+- name: Rodrigo Rego
 publishers:
 - name: Devir
 - name: 999 Games
@@ -89,12 +67,10 @@ publishers:
 - name: IELLO
 - name: Nasza Księgarnia
 - name: TLAMA games
-ranks:
-- rank: '2851'
-  type: boardgame
-- rank: '885'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/pcsfpRyo6tz2r8kcFOkUbg__thumb/img/qJka-CnwzAy-GigqO8HAKZTGSUU=/fit-in/200x150/filters:strip_icc()/pic7676237.jpg
-type: boardgame
+average_rating: '7.09297'
 weight: '1.2703'
-year_published: '2023'
+ranks:
+- type: boardgame
+  rank: '2849'
+- type: familygames
+  rank: '884'

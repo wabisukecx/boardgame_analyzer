@@ -1,3 +1,5 @@
+type: boardgame
+name: Carcassonne
 alternate_names:
 - Carcassonne da viaggio
 - Carcassonne de voyage
@@ -21,13 +23,16 @@ alternate_names:
 - 卡卡城
 - 卡卡頌
 - 카르카손
-average_rating: '7.41256'
-categories:
-- name: Medieval
-- name: Territory Building
+japanese_name: カルカソンヌ
+year_published: '2000'
+thumbnail_url: https://cf.geekdo-images.com/okM0dq_bEXnbyQTOvHfwRA__thumb/img/88274KiOg94wziybVHyW8AeOiXg=/fit-in/200x150/filters:strip_icc()/pic6544250.png
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '45'
+publisher_min_age: '7'
 community_best_players: 2, 3
-community_min_age: '8'
 community_recommended_players: 4, 5
+community_min_age: '8'
 description: 'Carcassonne is a tile placement game in which the players draw and place
   a tile with a piece of southern French landscape represented on it. The tile might
   feature a city, a road, a cloister, grassland or some combination thereof, and it
@@ -43,37 +48,6 @@ description: 'Carcassonne is a tile placement game in which the players draw and
   place only one tile and have the option to place one meeple on it, turns proceed
   quickly even if it is a game full of options and possibilities.&#10;&#10;First game
   in the Carcassonne series.&#10;&#10;'
-designers:
-- name: Klaus-Jürgen Wrede
-japanese_name: カルカソンヌ
-learning_analysis:
-  bgg_rank: 229
-  bgg_weight: 1.8884
-  category_complexity: 3.89
-  decision_points: 4.462222222222222
-  initial_barrier: 3.15
-  interaction_complexity: 3.3949999999999996
-  learning_curve_type: gentle
-  mastery_time: medium
-  mechanics_complexity: 2.97
-  mechanics_count: 11
-  player_types:
-  - casual
-  - experienced
-  - replayer
-  - trend_follower
-  - classic_lover
-  playtime_analysis:
-    complexity_factor: 1.0
-    decision_density: 0.15
-    interaction_modifier: 0.0
-    strategic_bonus: 0.0
-  rank_complexity: 2.36
-  replayability: 4.5
-  rules_complexity: 3.119801212121213
-  strategic_depth: 3.28
-  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
-  year_published: 2000
 mechanics:
 - name: Area Majority / Influence
 - name: Enclosure
@@ -86,11 +60,11 @@ mechanics:
 - name: Take That
 - name: Tile Placement
 - name: Worker Placement
-name: Carcassonne
-playing_time: '45'
-publisher_max_players: '5'
-publisher_min_age: '7'
-publisher_min_players: '2'
+categories:
+- name: Medieval
+- name: Territory Building
+designers:
+- name: Klaus-Jürgen Wrede
 publishers:
 - name: Hans im Glück
 - name: 64 Ounce Games
@@ -130,12 +104,10 @@ publishers:
 - name: Venice Connection
 - name: Ventura Games
 - name: Z-Man Games
+average_rating: '7.41255'
+weight: '1.8885'
 ranks:
-- rank: '229'
-  type: boardgame
-- rank: '55'
-  type: familygames
-thumbnail_url: https://cf.geekdo-images.com/okM0dq_bEXnbyQTOvHfwRA__thumb/img/88274KiOg94wziybVHyW8AeOiXg=/fit-in/200x150/filters:strip_icc()/pic6544250.png
-type: boardgame
-weight: '1.8884'
-year_published: '2000'
+- type: boardgame
+  rank: '229'
+- type: familygames
+  rank: '55'
