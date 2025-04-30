@@ -82,18 +82,6 @@ cd boardgame-analyzer
 pip install -r requirements.txt
 ```
 
-または個別にインストールする場合:
-
-```bash
-pip install streamlit pandas requests pyyaml deepdiff plotly matplotlib seaborn scikit-learn tqdm python-dotenv
-```
-
-類似性検索機能を使用する場合は、追加で以下のライブラリが必要です:
-
-```bash
-pip install voyageai paramiko
-```
-
 3. アプリケーションを実行します
 
 ```bash
@@ -355,6 +343,7 @@ boardgame-analyzer/
 ├── daily_update.py                # 毎日のデータ更新スクリプト
 ├── fetch_boardgame_data.py        # リモートデータ取得スクリプト
 ├── game_embeddings.pkl            # 埋め込みデータファイル（類似性検索用）
+├── learning_curve_for_daily_update.py # 学習曲線分析モジュール
 ├── config/                        # 設定ファイル
 │   ├── mechanics_data.yaml        # メカニクスの複雑さデータ
 │   ├── categories_data.yaml       # カテゴリの複雑さデータ
