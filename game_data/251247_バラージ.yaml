@@ -82,10 +82,10 @@ publishers:
 - name: TLAMA games
 - name: WoodCat
 average_rating: '8.15051'
-weight: '4.1163'
+weight: '4.1162'
 ranks:
 - type: boardgame
-  rank: '36'
+  rank: '37'
 - type: strategygames
   rank: '26'
 learning_analysis:
@@ -94,8 +94,8 @@ learning_analysis:
   replayability: 4.3
   mechanics_complexity: 3.16
   mechanics_count: 11
-  bgg_weight: 4.1163
-  bgg_rank: 36
+  bgg_weight: 4.1162
+  bgg_rank: 37
   year_published: 2019
   category_complexity: 4.14
   rank_complexity: 3.2
@@ -103,7 +103,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.679999999999999
   interaction_complexity: 3.2741999999999996
-  rules_complexity: 4.203866060606061
+  rules_complexity: 4.203846060606061
   player_types:
   - casual
   - experienced

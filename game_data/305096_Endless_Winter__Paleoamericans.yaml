@@ -80,11 +80,11 @@ publishers:
 - name: TLAMA games
 - name: White Goblin Games
 - name: Ігромаг
-average_rating: '7.67137'
+average_rating: '7.67154'
 weight: '3.3172'
 ranks:
 - type: boardgame
-  rank: '300'
+  rank: '299'
 - type: strategygames
   rank: '208'
 learning_analysis:
@@ -94,7 +94,7 @@ learning_analysis:
   mechanics_complexity: 3.32
   mechanics_count: 14
   bgg_weight: 3.3172
-  bgg_rank: 300
+  bgg_rank: 299
   year_published: 2022
   category_complexity: 3.7
   rank_complexity: 3.09

@@ -77,13 +77,13 @@ publishers:
 - name: Regatul Jocurilor
 - name: Surfin' Meeple China
 - name: Tower Tactic Games
-average_rating: '7.97393'
+average_rating: '7.97373'
 weight: '2.8926'
 ranks:
 - type: boardgame
   rank: '40'
 - type: strategygames
-  rank: '42'
+  rank: '43'
 learning_analysis:
   initial_barrier: 3.8
   strategic_depth: 3.78

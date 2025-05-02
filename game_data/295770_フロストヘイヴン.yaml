@@ -72,11 +72,11 @@ publishers:
 - name: Delta Vision Publishing
 - name: Feuerland Spiele
 - name: Korea Boardgames
-average_rating: '8.78903'
+average_rating: '8.7894'
 weight: '4.4139'
 ranks:
 - type: boardgame
-  rank: '23'
+  rank: '22'
 - type: thematic
   rank: '5'
 - type: strategygames
@@ -88,7 +88,7 @@ learning_analysis:
   mechanics_complexity: 3.34
   mechanics_count: 17
   bgg_weight: 4.4139
-  bgg_rank: 23
+  bgg_rank: 22
   year_published: 2022
   category_complexity: 4.01
   rank_complexity: 3.21

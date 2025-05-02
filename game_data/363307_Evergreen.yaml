@@ -41,13 +41,13 @@ publishers:
 - name: HIT Games
 - name: IELLO
 - name: Lavka Games
-average_rating: '7.44816'
+average_rating: '7.4476'
 weight: '2.1373'
 ranks:
 - type: boardgame
-  rank: '940'
+  rank: '937'
 - type: familygames
-  rank: '213'
+  rank: '214'
 learning_analysis:
   initial_barrier: 2.36
   strategic_depth: 2.7
@@ -55,7 +55,7 @@ learning_analysis:
   mechanics_complexity: 2.85
   mechanics_count: 4
   bgg_weight: 2.1373
-  bgg_rank: 940
+  bgg_rank: 937
   year_published: 2022
   category_complexity: 2.7
   rank_complexity: 2.24

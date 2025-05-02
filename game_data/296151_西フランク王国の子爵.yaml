@@ -74,13 +74,13 @@ publishers:
 - name: White Goblin Games
 - name: Yayoi The Dreamer
 - name: 株式会社ケンビル (KenBill)
-average_rating: '7.81404'
+average_rating: '7.81389'
 weight: '3.46'
 ranks:
 - type: boardgame
   rank: '189'
 - type: strategygames
-  rank: '132'
+  rank: '131'
 learning_analysis:
   initial_barrier: 3.66
   strategic_depth: 3.53

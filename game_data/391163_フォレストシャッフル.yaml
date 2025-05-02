@@ -74,11 +74,11 @@ publishers:
 - name: MEBO Games
 - name: Rebel Sp. z o.o.
 - name: Well Designed Game
-average_rating: '7.71263'
+average_rating: '7.71198'
 weight: '2.1977'
 ranks:
 - type: boardgame
-  rank: '206'
+  rank: '203'
 - type: strategygames
   rank: '153'
 - type: familygames
@@ -90,7 +90,7 @@ learning_analysis:
   mechanics_complexity: 3.07
   mechanics_count: 8
   bgg_weight: 2.1977
-  bgg_rank: 206
+  bgg_rank: 203
   year_published: 2023
   category_complexity: 2.62
   rank_complexity: 2.84

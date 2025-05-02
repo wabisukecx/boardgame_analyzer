@@ -81,8 +81,8 @@ publishers:
 - name: sternenschimmermeer
 - name: Tabletop KZ
 - name: YingDi (旅法师营地)
-average_rating: '8.42188'
-weight: '3.0633'
+average_rating: '8.42187'
+weight: '3.0639'
 ranks:
 - type: boardgame
   rank: '6'
@@ -94,7 +94,7 @@ learning_analysis:
   replayability: 4.3
   mechanics_complexity: 3.19
   mechanics_count: 14
-  bgg_weight: 3.0633
+  bgg_weight: 3.0639
   bgg_rank: 6
   year_published: 2020
   category_complexity: 3.68
@@ -103,7 +103,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.68
   interaction_complexity: 3.73812142857143
-  rules_complexity: 4.019564761904762
+  rules_complexity: 4.019684761904762
   player_types:
   - casual
   - experienced

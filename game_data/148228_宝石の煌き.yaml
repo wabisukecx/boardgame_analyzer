@@ -73,8 +73,8 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: Siam Board Games
 - name: Z-Man Games
-average_rating: '7.41809'
-weight: '1.7776'
+average_rating: '7.41805'
+weight: '1.7777'
 ranks:
 - type: boardgame
   rank: '234'
@@ -86,7 +86,7 @@ learning_analysis:
   replayability: 3.32
   mechanics_complexity: 2.4
   mechanics_count: 4
-  bgg_weight: 1.7776
+  bgg_weight: 1.7777
   bgg_rank: 234
   year_published: 2014
   category_complexity: 3.7
@@ -95,7 +95,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.5335
   interaction_complexity: 3.617349000000001
-  rules_complexity: 2.638186666666667
+  rules_complexity: 2.6382066666666666
   player_types:
   - beginner
   - casual

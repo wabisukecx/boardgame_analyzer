@@ -83,8 +83,8 @@ publishers:
 - name: Lord of Boards
 - name: Meanbook Games
 - name: Siam Board Games
-average_rating: '8.39731'
-weight: '3.6385'
+average_rating: '8.39724'
+weight: '3.6388'
 ranks:
 - type: boardgame
   rank: '11'
@@ -98,7 +98,7 @@ learning_analysis:
   replayability: 4.73
   mechanics_complexity: 3.3
   mechanics_count: 20
-  bgg_weight: 3.6385
+  bgg_weight: 3.6388
   bgg_rank: 11
   year_published: 2020
   category_complexity: 4.01
@@ -107,7 +107,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.560000000000004
   interaction_complexity: 3.689359999999999
-  rules_complexity: 4.2310333333333325
+  rules_complexity: 4.231093333333332
   player_types:
   - casual
   - experienced

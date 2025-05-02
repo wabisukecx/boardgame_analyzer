@@ -52,15 +52,15 @@ publishers:
 - name: MIPL
 - name: Rebel Sp. z o.o.
 - name: Surfin' Meeple China
-average_rating: '7.7997'
+average_rating: '7.78839'
 weight: '2.3611'
 ranks:
 - type: boardgame
-  rank: '1115'
+  rank: '1086'
 - type: strategygames
-  rank: '611'
+  rank: '606'
 - type: familygames
-  rank: '257'
+  rank: '254'
 learning_analysis:
   initial_barrier: 2.44
   strategic_depth: 2.94
@@ -68,7 +68,7 @@ learning_analysis:
   mechanics_complexity: 2.98
   mechanics_count: 5
   bgg_weight: 2.3611
-  bgg_rank: 1115
+  bgg_rank: 1086
   year_published: 2025
   category_complexity: 2.15
   rank_complexity: 2.71

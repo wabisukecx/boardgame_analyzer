@@ -40,11 +40,11 @@ publishers:
 - name: ADC Blackfire Entertainment
 - name: Geekach Games
 - name: YOKA Games
-average_rating: '7.05341'
+average_rating: '7.05469'
 weight: '2.5938'
 ranks:
 - type: boardgame
-  rank: '3899'
+  rank: '3901'
 learning_analysis:
   initial_barrier: 3.29
   strategic_depth: 3.54
@@ -52,10 +52,10 @@ learning_analysis:
   mechanics_complexity: 3.34
   mechanics_count: 7
   bgg_weight: 2.5938
-  bgg_rank: 3899
+  bgg_rank: 3901
   year_published: 2023
   category_complexity: 2.21
-  rank_complexity: 2.26
+  rank_complexity: 2.25
   strategic_depth_description: 中〜高（多くの戦略が存在）
   learning_curve_type: gentle_then_moderate
   decision_points: 4.815999999999999

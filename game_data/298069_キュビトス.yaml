@@ -51,13 +51,13 @@ publishers:
 - name: Pegasus Spiele
 - name: White Goblin Games
 - name: YOKA Games
-average_rating: '7.39109'
+average_rating: '7.39129'
 weight: '2.1768'
 ranks:
 - type: boardgame
-  rank: '466'
+  rank: '463'
 - type: familygames
-  rank: '105'
+  rank: '106'
 learning_analysis:
   initial_barrier: 2.72
   strategic_depth: 2.89
@@ -65,7 +65,7 @@ learning_analysis:
   mechanics_complexity: 2.59
   mechanics_count: 10
   bgg_weight: 2.1768
-  bgg_rank: 466
+  bgg_rank: 463
   year_published: 2021
   category_complexity: 2.21
   rank_complexity: 2.31

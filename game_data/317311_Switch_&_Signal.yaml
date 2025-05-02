@@ -41,15 +41,15 @@ publishers:
 - name: Galakta
 - name: IELLO
 - name: Zvezda
-average_rating: '7.12641'
+average_rating: '7.12647'
 weight: '2.1064'
 ranks:
 - type: boardgame
-  rank: '1996'
+  rank: '2000'
 - type: strategygames
   rank: '1011'
 - type: familygames
-  rank: '577'
+  rank: '579'
 learning_analysis:
   initial_barrier: 2.61
   strategic_depth: 3.02
@@ -57,7 +57,7 @@ learning_analysis:
   mechanics_complexity: 3.17
   mechanics_count: 3
   bgg_weight: 2.1064
-  bgg_rank: 1996
+  bgg_rank: 2000
   year_published: 2020
   category_complexity: 3.31
   rank_complexity: 2.64

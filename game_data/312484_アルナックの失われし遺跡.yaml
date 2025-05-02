@@ -89,11 +89,11 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: Spilbræt.dk
 - name: White Goblin Games
-average_rating: '8.07061'
+average_rating: '8.07077'
 weight: '2.9257'
 ranks:
 - type: boardgame
-  rank: '29'
+  rank: '28'
 - type: strategygames
   rank: '28'
 learning_analysis:
@@ -103,7 +103,7 @@ learning_analysis:
   mechanics_complexity: 3.31
   mechanics_count: 9
   bgg_weight: 2.9257
-  bgg_rank: 29
+  bgg_rank: 28
   year_published: 2020
   category_complexity: 3.56
   rank_complexity: 3.2

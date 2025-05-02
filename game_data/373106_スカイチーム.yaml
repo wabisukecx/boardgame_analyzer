@@ -85,13 +85,13 @@ publishers:
 - name: Sugorokuya
 - name: Tabletop KZ
 - name: YOKA Games
-average_rating: '8.16733'
-weight: '2.0473'
+average_rating: '8.167'
+weight: '2.0471'
 ranks:
 - type: boardgame
-  rank: '37'
+  rank: '36'
 - type: thematic
-  rank: '16'
+  rank: '15'
 - type: familygames
   rank: '1'
 learning_analysis:
@@ -100,8 +100,8 @@ learning_analysis:
   replayability: 4.0
   mechanics_complexity: 3.26
   mechanics_count: 9
-  bgg_weight: 2.0473
-  bgg_rank: 37
+  bgg_weight: 2.0471
+  bgg_rank: 36
   year_published: 2023
   category_complexity: 3.5
   rank_complexity: 2.7
@@ -109,7 +109,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.9369857142857145
   interaction_complexity: 2.9727166666666673
-  rules_complexity: 3.7394600000000002
+  rules_complexity: 3.73942
   player_types:
   - casual
   - replayer

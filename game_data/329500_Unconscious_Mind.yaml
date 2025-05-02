@@ -74,21 +74,21 @@ publishers:
 - name: Mosaico Jogos
 - name: Regatul Jocurilor
 - name: TLAMA games
-average_rating: '7.95953'
-weight: '3.9717'
+average_rating: '7.95991'
+weight: '3.974'
 ranks:
 - type: boardgame
-  rank: '448'
+  rank: '443'
 - type: strategygames
-  rank: '251'
+  rank: '250'
 learning_analysis:
   initial_barrier: 3.85
   strategic_depth: 3.81
   replayability: 3.6
   mechanics_complexity: 3.18
   mechanics_count: 12
-  bgg_weight: 3.9717
-  bgg_rank: 448
+  bgg_weight: 3.974
+  bgg_rank: 443
   year_published: 2024
   category_complexity: 3.73
   rank_complexity: 3.07
@@ -96,7 +96,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.672000000000001
   interaction_complexity: 3.3348333333333344
-  rules_complexity: 4.059340000000001
+  rules_complexity: 4.0598
   player_types:
   - casual
   - experienced

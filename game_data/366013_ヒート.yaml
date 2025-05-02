@@ -62,8 +62,8 @@ publishers:
 - name: Kaissa Chess & Games
 - name: Korea Boardgames
 - name: Lord of Boards
-average_rating: '8.02254'
-weight: '2.1922'
+average_rating: '8.02205'
+weight: '2.192'
 ranks:
 - type: boardgame
   rank: '42'
@@ -75,7 +75,7 @@ learning_analysis:
   replayability: 3.7
   mechanics_complexity: 3.0
   mechanics_count: 11
-  bgg_weight: 2.1922
+  bgg_weight: 2.192
   bgg_rank: 42
   year_published: 2022
   category_complexity: 2.42
@@ -84,7 +84,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 4.295555555555555
   interaction_complexity: 3.4250000000000003
-  rules_complexity: 3.4051066666666663
+  rules_complexity: 3.4050666666666665
   player_types:
   - casual
   - experienced

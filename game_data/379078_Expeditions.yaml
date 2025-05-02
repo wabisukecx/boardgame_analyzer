@@ -58,13 +58,13 @@ publishers:
 - name: Maldito Games
 - name: Matagot
 - name: PHALANX
-average_rating: '7.65312'
+average_rating: '7.65338'
 weight: '3.0521'
 ranks:
 - type: boardgame
-  rank: '406'
+  rank: '404'
 - type: strategygames
-  rank: '255'
+  rank: '254'
 learning_analysis:
   initial_barrier: 3.69
   strategic_depth: 3.49
@@ -72,7 +72,7 @@ learning_analysis:
   mechanics_complexity: 3.38
   mechanics_count: 13
   bgg_weight: 3.0521
-  bgg_rank: 406
+  bgg_rank: 404
   year_published: 2023
   category_complexity: 3.4
   rank_complexity: 3.07

@@ -76,13 +76,13 @@ publishers:
 - name: Lifestyle Boardgames Ltd
 - name: Rebel Sp. z o.o.
 - name: Ігромаг
-average_rating: '7.83676'
+average_rating: '7.83722'
 weight: '2.304'
 ranks:
 - type: boardgame
   rank: '213'
 - type: strategygames
-  rank: '166'
+  rank: '164'
 - type: familygames
   rank: '31'
 learning_analysis:

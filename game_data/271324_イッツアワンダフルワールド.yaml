@@ -79,11 +79,11 @@ publishers:
 - name: Studio Supernova
 - name: TLAMA games
 - name: Tranjis Games
-average_rating: '7.64949'
+average_rating: '7.64922'
 weight: '2.3191'
 ranks:
 - type: boardgame
-  rank: '172'
+  rank: '173'
 - type: strategygames
   rank: '142'
 learning_analysis:
@@ -93,7 +93,7 @@ learning_analysis:
   mechanics_complexity: 2.89
   mechanics_count: 8
   bgg_weight: 2.3191
-  bgg_rank: 172
+  bgg_rank: 173
   year_published: 2019
   category_complexity: 4.14
   rank_complexity: 3.11

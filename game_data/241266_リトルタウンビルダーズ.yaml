@@ -58,20 +58,20 @@ publishers:
 - name: Switch Games
 - name: TCG Factory
 - name: Ігромаг
-average_rating: '7.15916'
-weight: '1.9478'
+average_rating: '7.15957'
+weight: '1.9481'
 ranks:
 - type: boardgame
   rank: '1105'
 - type: familygames
-  rank: '297'
+  rank: '298'
 learning_analysis:
   initial_barrier: 2.78
   strategic_depth: 3.27
   replayability: 2.84
   mechanics_complexity: 3.5
   mechanics_count: 3
-  bgg_weight: 1.9478
+  bgg_weight: 1.9481
   bgg_rank: 1105
   year_published: 2017
   category_complexity: 3.83
@@ -80,7 +80,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 4.615
   interaction_complexity: 3.317
-  rules_complexity: 3.3862266666666665
+  rules_complexity: 3.3862866666666664
   player_types:
   - beginner
   - casual

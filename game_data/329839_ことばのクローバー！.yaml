@@ -46,11 +46,11 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: TLAMA games
 - name: YellowBOX
-average_rating: '7.58903'
+average_rating: '7.5884'
 weight: '1.1159'
 ranks:
 - type: boardgame
-  rank: '289'
+  rank: '290'
 - type: partygames
   rank: '6'
 - type: familygames
@@ -62,7 +62,7 @@ learning_analysis:
   mechanics_complexity: 3.3
   mechanics_count: 2
   bgg_weight: 1.1159
-  bgg_rank: 289
+  bgg_rank: 290
   year_published: 2021
   category_complexity: 1.89
   rank_complexity: 2.17

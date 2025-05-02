@@ -77,20 +77,20 @@ publishers:
 - name: Tabletop KZ
 - name: Yellowstar Games
 - name: Ігромаг
-average_rating: '7.64276'
-weight: '2.8946'
+average_rating: '7.64141'
+weight: '2.8965'
 ranks:
 - type: boardgame
   rank: '199'
 - type: strategygames
-  rank: '156'
+  rank: '157'
 learning_analysis:
   initial_barrier: 3.32
   strategic_depth: 3.3
   replayability: 3.7
   mechanics_complexity: 3.04
   mechanics_count: 11
-  bgg_weight: 2.8946
+  bgg_weight: 2.8965
   bgg_rank: 199
   year_published: 2023
   category_complexity: 2.6
@@ -99,7 +99,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 4.102222222222221
   interaction_complexity: 3.2
-  rules_complexity: 3.77831393939394
+  rules_complexity: 3.7786939393939396
   player_types:
   - casual
   - experienced

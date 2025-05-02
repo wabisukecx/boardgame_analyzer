@@ -77,8 +77,8 @@ publishers:
 - name: TLAMA games
 - name: White Goblin Games
 - name: 盒拍工作室 Hepa Studio
-average_rating: '8.57779'
-weight: '3.8691'
+average_rating: '8.57763'
+weight: '3.8695'
 ranks:
 - type: boardgame
   rank: '1'
@@ -90,7 +90,7 @@ learning_analysis:
   replayability: 4.2
   mechanics_complexity: 3.24
   mechanics_count: 10
-  bgg_weight: 3.8691
+  bgg_weight: 3.8695
   bgg_rank: 1
   year_published: 2018
   category_complexity: 4.62
@@ -99,7 +99,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.66
   interaction_complexity: 3.327700000000001
-  rules_complexity: 4.223153333333332
+  rules_complexity: 4.223233333333333
   player_types:
   - experienced
   - hardcore
