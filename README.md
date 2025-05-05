@@ -86,7 +86,7 @@ BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析
 1. このリポジトリをクローンまたはダウンロードします
 
 ```bash
-git clone https://github.com/yourusername/boardgame-analyzer.git
+git clone https://github.com/wabisukecx/boardgame_analyzer.git
 cd boardgame-analyzer
 ```
 
@@ -101,8 +101,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-
-ブラウザで自動的に開かれるアプリケーションにアクセスします（通常は <http://localhost:8501>）
 
 ## アプリの使い方
 
@@ -202,6 +200,12 @@ python fetch_boardgame_data.py --host 192.168.50.192 --username pi
      export VOYAGE_API_KEY="your_api_key_here"
      python generate_embedding_model.py --data_path "game_data/*.yaml" --output "game_embeddings.pkl"
      ```
+   - 重要なオプションパラメータ：
+     - `--batch_size` - APIリクエストのバッチサイズ（デフォルト: 128）。大きすぎると失敗する可能性があるため、処理が失敗する場合は小さい値（例：64か32）に設定してください
+     - `--max_retries` - APIリクエスト失敗時の再試行回数（デフォルト: 5）
+     - `--request_interval` - リクエスト間の待機時間（秒、デフォルト: 0.5）
+     - `--timeout` - APIリクエストのタイムアウト時間（秒、デフォルト: 15）
+     - `--limit` - 処理するファイル数の上限（0=すべて処理、デフォルト: 0）
 
 ### 使用方法
 
