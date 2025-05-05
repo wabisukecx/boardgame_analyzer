@@ -66,13 +66,13 @@ publishers:
 - name: Red Glove
 - name: テンデイズゲームズ (TendaysGames)
 - name: TLAMA games
-average_rating: '7.9366'
+average_rating: '7.93641'
 weight: '3.4663'
 ranks:
 - type: boardgame
   rank: '72'
 - type: strategygames
-  rank: '61'
+  rank: '62'
 learning_analysis:
   initial_barrier: 3.78
   strategic_depth: 3.6

@@ -55,11 +55,11 @@ publishers:
 - name: REXhry
 - name: Schwerkraft-Verlag
 - name: Tabletop KZ
-average_rating: '7.77165'
+average_rating: '7.77164'
 weight: '2.5806'
 ranks:
 - type: boardgame
-  rank: '151'
+  rank: '150'
 - type: strategygames
   rank: '122'
 - type: familygames
@@ -71,7 +71,7 @@ learning_analysis:
   mechanics_complexity: 2.74
   mechanics_count: 7
   bgg_weight: 2.5806
-  bgg_rank: 151
+  bgg_rank: 150
   year_published: 2017
   category_complexity: 3.4
   rank_complexity: 2.85

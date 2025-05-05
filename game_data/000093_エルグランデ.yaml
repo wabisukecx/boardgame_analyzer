@@ -73,13 +73,13 @@ publishers:
 - name: MINDOK
 - name: Möbius Games
 - name: Rio Grande Games
-average_rating: '7.76423'
+average_rating: '7.76446'
 weight: '2.9419'
 ranks:
 - type: boardgame
   rank: '97'
 - type: strategygames
-  rank: '84'
+  rank: '83'
 learning_analysis:
   initial_barrier: 3.49
   strategic_depth: 3.53
@@ -90,7 +90,7 @@ learning_analysis:
   bgg_rank: 97
   year_published: 1995
   category_complexity: 3.73
-  rank_complexity: 3.13
+  rank_complexity: 3.14
   strategic_depth_description: 中〜高（多くの戦略が存在）
   learning_curve_type: gentle_then_moderate
   decision_points: 4.224

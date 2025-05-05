@@ -78,8 +78,8 @@ publishers:
 - name: Piatnik
 - name: Swan Panasia Co., Ltd.
 - name: Zvezda
-average_rating: '7.7786'
-weight: '1.9533'
+average_rating: '7.77854'
+weight: '1.9534'
 ranks:
 - type: boardgame
   rank: '82'
@@ -91,7 +91,7 @@ learning_analysis:
   replayability: 3.78
   mechanics_complexity: 3.12
   mechanics_count: 5
-  bgg_weight: 1.9533
+  bgg_weight: 1.9534
   bgg_rank: 82
   year_published: 2019
   category_complexity: 3.48
@@ -100,7 +100,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.8231833333333327
   interaction_complexity: 3.6326290000000006
-  rules_complexity: 3.4653266666666664
+  rules_complexity: 3.4653466666666666
   player_types:
   - beginner
   - casual

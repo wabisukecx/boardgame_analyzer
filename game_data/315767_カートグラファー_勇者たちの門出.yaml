@@ -63,13 +63,13 @@ publishers:
 - name: Raven Distribution
 - name: Reflexshop
 - name: REXhry
-average_rating: '7.74463'
+average_rating: '7.74437'
 weight: '2'
 ranks:
 - type: boardgame
   rank: '442'
 - type: strategygames
-  rank: '268'
+  rank: '269'
 - type: familygames
   rank: '74'
 learning_analysis:

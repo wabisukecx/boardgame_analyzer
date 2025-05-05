@@ -66,8 +66,8 @@ publishers:
 - name: Regatul Jocurilor
 - name: REXhry
 - name: Tabletop KZ
-average_rating: '8.72213'
-weight: '3.4855'
+average_rating: '8.72197'
+weight: '3.4856'
 ranks:
 - type: boardgame
   rank: '12'
@@ -79,7 +79,7 @@ learning_analysis:
   replayability: 4.1
   mechanics_complexity: 3.38
   mechanics_count: 13
-  bgg_weight: 3.4855
+  bgg_weight: 3.4856
   bgg_rank: 12
   year_published: 2023
   category_complexity: 3.68
@@ -88,7 +88,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.736363636363638
   interaction_complexity: 3.8199615384615386
-  rules_complexity: 4.209920512820513
+  rules_complexity: 4.209940512820513
   player_types:
   - casual
   - experienced

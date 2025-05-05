@@ -58,11 +58,11 @@ publishers:
 - name: Choo Choo Games
 - name: Lucky Duck Games
 - name: Ігромаг
-average_rating: '8.22877'
+average_rating: '8.22961'
 weight: '2.6667'
 ranks:
 - type: boardgame
-  rank: '236'
+  rank: '235'
 - type: thematic
   rank: '29'
 learning_analysis:
@@ -72,7 +72,7 @@ learning_analysis:
   mechanics_complexity: 2.85
   mechanics_count: 11
   bgg_weight: 2.6667
-  bgg_rank: 236
+  bgg_rank: 235
   year_published: 2022
   category_complexity: 3.54
   rank_complexity: 2.82

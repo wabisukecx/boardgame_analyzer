@@ -57,8 +57,8 @@ publishers:
 - name: Tabletop KZ
 - name: YOKA Games
 - name: 株式会社ケンビル (KenBill)
-average_rating: '7.65647'
-weight: '2.0482'
+average_rating: '7.65612'
+weight: '2.0479'
 ranks:
 - type: boardgame
   rank: '383'
@@ -72,7 +72,7 @@ learning_analysis:
   replayability: 3.5
   mechanics_complexity: 3.05
   mechanics_count: 8
-  bgg_weight: 2.0482
+  bgg_weight: 2.0479
   bgg_rank: 383
   year_published: 2022
   category_complexity: 3.74
@@ -81,7 +81,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.9266666666666676
   interaction_complexity: 3.14045
-  rules_complexity: 3.6879733333333333
+  rules_complexity: 3.6879133333333334
   player_types:
   - casual
   - trend_follower

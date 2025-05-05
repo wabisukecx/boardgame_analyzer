@@ -62,8 +62,8 @@ publishers:
 - name: Lautapelit.fi
 - name: Pixie Games
 - name: Popcorn Games
-average_rating: '7.8182'
-weight: '1.3669'
+average_rating: '7.81757'
+weight: '1.3684'
 ranks:
 - type: boardgame
   rank: '101'
@@ -75,7 +75,7 @@ learning_analysis:
   replayability: 2.94
   mechanics_complexity: 2.83
   mechanics_count: 3
-  bgg_weight: 1.3669
+  bgg_weight: 1.3684
   bgg_rank: 101
   year_published: 2019
   category_complexity: 2.3
@@ -84,7 +84,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.614675
   interaction_complexity: 3.288065000000001
-  rules_complexity: 2.68338
+  rules_complexity: 2.6836800000000003
   player_types:
   - beginner
   - casual

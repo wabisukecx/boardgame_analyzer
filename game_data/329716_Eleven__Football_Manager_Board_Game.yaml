@@ -52,20 +52,20 @@ publishers:
 - name: Maldito Games
 - name: Pendragon Game Studio
 - name: Summon Games
-average_rating: '7.21634'
-weight: '3.3516'
+average_rating: '7.21655'
+weight: '3.3478'
 ranks:
 - type: boardgame
   rank: '2044'
 - type: thematic
-  rank: '396'
+  rank: '395'
 learning_analysis:
   initial_barrier: 2.55
-  strategic_depth: 3.39
+  strategic_depth: 3.38
   replayability: 2.9
   mechanics_complexity: 2.54
   mechanics_count: 5
-  bgg_weight: 3.3516
+  bgg_weight: 3.3478
   bgg_rank: 2044
   year_published: 2022
   category_complexity: 3.36
@@ -74,7 +74,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.8333333333333335
   interaction_complexity: 3.6401400000000015
-  rules_complexity: 3.489653333333333
+  rules_complexity: 3.4888933333333334
   player_types:
   - beginner
   - casual

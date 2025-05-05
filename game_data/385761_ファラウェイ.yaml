@@ -72,8 +72,8 @@ publishers:
 - name: Salta Pal Lao
 - name: White Goblin Games
 - name: WoodCat
-average_rating: '7.57845'
-weight: '1.8889'
+average_rating: '7.57849'
+weight: '1.8865'
 ranks:
 - type: boardgame
   rank: '293'
@@ -85,7 +85,7 @@ learning_analysis:
   replayability: 3.3
   mechanics_complexity: 3.01
   mechanics_count: 9
-  bgg_weight: 1.8889
+  bgg_weight: 1.8865
   bgg_rank: 293
   year_published: 2023
   category_complexity: 2.84
@@ -94,7 +94,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 4.095585714285715
   interaction_complexity: 3.4958305555555564
-  rules_complexity: 3.354446666666666
+  rules_complexity: 3.353966666666666
   player_types:
   - casual
   - trend_follower

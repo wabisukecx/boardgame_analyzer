@@ -85,13 +85,13 @@ publishers:
 - name: Sugorokuya
 - name: Tabletop KZ
 - name: YOKA Games
-average_rating: '8.167'
+average_rating: '8.166'
 weight: '2.0471'
 ranks:
 - type: boardgame
   rank: '36'
 - type: thematic
-  rank: '15'
+  rank: '16'
 - type: familygames
   rank: '1'
 learning_analysis:

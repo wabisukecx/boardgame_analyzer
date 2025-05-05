@@ -72,8 +72,8 @@ publishers:
 - name: Yayoi The Dreamer
 - name: Zvezda
 - name: 本长文化
-average_rating: '8.2912'
-weight: '3.7013'
+average_rating: '8.29091'
+weight: '3.6998'
 ranks:
 - type: boardgame
   rank: '27'
@@ -85,7 +85,7 @@ learning_analysis:
   replayability: 3.8
   mechanics_complexity: 2.8
   mechanics_count: 8
-  bgg_weight: 3.7013
+  bgg_weight: 3.6998
   bgg_rank: 27
   year_published: 2021
   category_complexity: 3.3
@@ -94,7 +94,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.9466666666666668
   interaction_complexity: 3.343749999999999
-  rules_complexity: 3.66026
+  rules_complexity: 3.65996
   player_types:
   - casual
   - experienced

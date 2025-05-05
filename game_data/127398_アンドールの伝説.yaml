@@ -72,13 +72,13 @@ publishers:
 - name: Korea Boardgames
 - name: Piatnik
 - name: Zvezda
-average_rating: '7.09651'
+average_rating: '7.09645'
 weight: '2.764'
 ranks:
 - type: boardgame
   rank: '635'
 - type: thematic
-  rank: '193'
+  rank: '194'
 learning_analysis:
   initial_barrier: 3.24
   strategic_depth: 3.34

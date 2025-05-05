@@ -44,7 +44,7 @@ average_rating: '7.28983'
 weight: '1'
 ranks:
 - type: boardgame
-  rank: '12891'
+  rank: '12893'
 learning_analysis:
   initial_barrier: 2.05
   strategic_depth: 1.91
@@ -52,7 +52,7 @@ learning_analysis:
   mechanics_complexity: 2.8
   mechanics_count: 2
   bgg_weight: 1.0
-  bgg_rank: 12891
+  bgg_rank: 12893
   year_published: 2023
   category_complexity: 2.3
   rank_complexity: 2.12

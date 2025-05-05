@@ -64,13 +64,13 @@ publishers:
 - name: 数寄ゲームズ (Suki Games)
 - name: Tesla Games
 - name: YOKA Games
-average_rating: '7.56906'
+average_rating: '7.56974'
 weight: '3.972'
 ranks:
 - type: boardgame
-  rank: '949'
+  rank: '947'
 - type: strategygames
-  rank: '501'
+  rank: '502'
 learning_analysis:
   initial_barrier: 2.99
   strategic_depth: 3.45
@@ -78,7 +78,7 @@ learning_analysis:
   mechanics_complexity: 2.96
   mechanics_count: 5
   bgg_weight: 3.972
-  bgg_rank: 949
+  bgg_rank: 947
   year_published: 2023
   category_complexity: 3.97
   rank_complexity: 2.99

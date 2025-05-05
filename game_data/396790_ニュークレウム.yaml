@@ -13,8 +13,8 @@ publisher_min_players: '1'
 publisher_max_players: '4'
 playing_time: '150'
 publisher_min_age: '14'
-community_best_players: 3, 4
-community_recommended_players: 1, 2
+community_best_players: '3'
+community_recommended_players: 1, 2, 4
 community_min_age: '14'
 description: When Elsa von Fr&uuml;hlingsfeld presented her invention to King Frederik
   Augustus II of Saxony, people thought it was trickery. She used the recently isolated
@@ -69,11 +69,11 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: テンデイズゲームズ (TendaysGames)
 - name: 狗吠火車
-average_rating: '8.1388'
+average_rating: '8.13908'
 weight: '4.179'
 ranks:
 - type: boardgame
-  rank: '162'
+  rank: '161'
 - type: strategygames
   rank: '97'
 learning_analysis:
@@ -83,7 +83,7 @@ learning_analysis:
   mechanics_complexity: 3.29
   mechanics_count: 10
   bgg_weight: 4.179
-  bgg_rank: 162
+  bgg_rank: 161
   year_published: 2023
   category_complexity: 4.29
   rank_complexity: 3.12

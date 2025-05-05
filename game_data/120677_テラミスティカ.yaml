@@ -74,8 +74,8 @@ publishers:
 - name: White Goblin Games
 - name: Z-Man Games
 - name: Zvezda
-average_rating: '8.04331'
-weight: '3.9755'
+average_rating: '8.04315'
+weight: '3.9752'
 ranks:
 - type: boardgame
   rank: '32'
@@ -87,7 +87,7 @@ learning_analysis:
   replayability: 4.49
   mechanics_complexity: 3.3
   mechanics_count: 11
-  bgg_weight: 3.9755
+  bgg_weight: 3.9752
   bgg_rank: 32
   year_published: 2012
   category_complexity: 4.51
@@ -96,7 +96,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.644444444444444
   interaction_complexity: 3.7135000000000002
-  rules_complexity: 4.1651
+  rules_complexity: 4.16504
   player_types:
   - experienced
   - hardcore

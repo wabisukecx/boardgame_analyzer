@@ -49,11 +49,11 @@ publishers:
 - name: IELLO
 - name: Korea Boardgames
 - name: Zvezda
-average_rating: '7.46023'
+average_rating: '7.46081'
 weight: '1.8302'
 ranks:
 - type: boardgame
-  rank: '752'
+  rank: '753'
 - type: thematic
   rank: '154'
 learning_analysis:
@@ -63,7 +63,7 @@ learning_analysis:
   mechanics_complexity: 2.93
   mechanics_count: 3
   bgg_weight: 1.8302
-  bgg_rank: 752
+  bgg_rank: 753
   year_published: 2021
   category_complexity: 3.5
   rank_complexity: 2.72

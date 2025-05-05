@@ -81,29 +81,31 @@ publishers:
 - name: Tower Tactic Games
 - name: White Goblin Games
 - name: 株式会社ケンビル (KenBill)
-average_rating: '7.91891'
-weight: '1.8514'
+average_rating: '7.91832'
+weight: '1.8517'
 ranks:
 - type: boardgame
   rank: '51'
+- type: abstracts
+  rank: '1'
 - type: familygames
   rank: '9'
 learning_analysis:
-  initial_barrier: 3.05
+  initial_barrier: 3.09
   strategic_depth: 2.91
   replayability: 3.9
   mechanics_complexity: 3.09
   mechanics_count: 8
-  bgg_weight: 1.8514
+  bgg_weight: 1.8517
   bgg_rank: 51
   year_published: 2021
   category_complexity: 2.75
-  rank_complexity: 2.47
+  rank_complexity: 2.82
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   learning_curve_type: gentle
   decision_points: 4.120000000000001
   interaction_complexity: 2.7980500000000004
-  rules_complexity: 3.415696666666667
+  rules_complexity: 3.4157566666666668
   player_types:
   - casual
   - replayer

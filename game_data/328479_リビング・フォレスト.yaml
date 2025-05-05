@@ -88,11 +88,11 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: Tower Tactic Games
 - name: 株式会社ケンビル (KenBill)
-average_rating: '7.24985'
-weight: '2.2149'
+average_rating: '7.24997'
+weight: '2.214'
 ranks:
 - type: boardgame
-  rank: '732'
+  rank: '733'
 - type: familygames
   rank: '191'
 learning_analysis:
@@ -101,8 +101,8 @@ learning_analysis:
   replayability: 3.2
   mechanics_complexity: 2.78
   mechanics_count: 5
-  bgg_weight: 2.2149
-  bgg_rank: 732
+  bgg_weight: 2.214
+  bgg_rank: 733
   year_published: 2021
   category_complexity: 3.65
   rank_complexity: 2.26
@@ -110,7 +110,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.7754333333333334
   interaction_complexity: 3.124817300000001
-  rules_complexity: 3.2116466666666663
+  rules_complexity: 3.2114666666666665
   player_types:
   - beginner
   - casual

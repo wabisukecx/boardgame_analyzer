@@ -44,13 +44,13 @@ publishers:
 - name: Schmidt Spiele
 - name: Venice Connection
 - name: Winning Moves France
-average_rating: '6.06745'
+average_rating: '6.07711'
 weight: '1.5517'
 ranks:
 - type: boardgame
-  rank: '9925'
+  rank: '9924'
 - type: abstracts
-  rank: '449'
+  rank: '450'
 learning_analysis:
   initial_barrier: 2.12
   strategic_depth: 2.11
@@ -58,7 +58,7 @@ learning_analysis:
   mechanics_complexity: 2.5
   mechanics_count: 1
   bgg_weight: 1.5517
-  bgg_rank: 9925
+  bgg_rank: 9924
   year_published: 1975
   category_complexity: 2.86
   rank_complexity: 2.65

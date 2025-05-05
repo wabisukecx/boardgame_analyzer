@@ -63,11 +63,11 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: uplay.it edizioni
 - name: YOKA Games
-average_rating: '7.97948'
+average_rating: '7.9788'
 weight: '3.9125'
 ranks:
 - type: boardgame
-  rank: '75'
+  rank: '76'
 - type: strategygames
   rank: '56'
 learning_analysis:
@@ -77,7 +77,7 @@ learning_analysis:
   mechanics_complexity: 3.02
   mechanics_count: 16
   bgg_weight: 3.9125
-  bgg_rank: 75
+  bgg_rank: 76
   year_published: 2019
   category_complexity: 3.97
   rank_complexity: 3.16

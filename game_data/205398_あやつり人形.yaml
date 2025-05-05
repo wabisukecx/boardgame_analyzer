@@ -89,11 +89,11 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: Z-Man Games
 - name: Ігромаг
-average_rating: '7.2456'
+average_rating: '7.24498'
 weight: '2.0629'
 ranks:
 - type: boardgame
-  rank: '531'
+  rank: '530'
 - type: familygames
   rank: '143'
 learning_analysis:
@@ -103,7 +103,7 @@ learning_analysis:
   mechanics_complexity: 2.51
   mechanics_count: 9
   bgg_weight: 2.0629
-  bgg_rank: 531
+  bgg_rank: 530
   year_published: 2016
   category_complexity: 3.56
   rank_complexity: 2.29

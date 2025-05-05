@@ -76,11 +76,11 @@ publishers:
 - name: Lifestyle Boardgames Ltd
 - name: Rebel Sp. z o.o.
 - name: Ігромаг
-average_rating: '7.83722'
+average_rating: '7.83873'
 weight: '2.304'
 ranks:
 - type: boardgame
-  rank: '213'
+  rank: '212'
 - type: strategygames
   rank: '164'
 - type: familygames
@@ -92,7 +92,7 @@ learning_analysis:
   mechanics_complexity: 2.83
   mechanics_count: 6
   bgg_weight: 2.304
-  bgg_rank: 213
+  bgg_rank: 212
   year_published: 2020
   category_complexity: 4.44
   rank_complexity: 2.84

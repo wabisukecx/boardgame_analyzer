@@ -26,15 +26,15 @@ designers:
 - name: Koota Yamada
 publishers:
 - name: New Games Order, LLC
-average_rating: '6.75022'
+average_rating: '6.75108'
 weight: '2.7222'
 ranks:
 - type: boardgame
-  rank: '7585'
+  rank: '7591'
 - type: thematic
-  rank: '1174'
+  rank: '1175'
 - type: familygames
-  rank: '2005'
+  rank: '2006'
 learning_analysis:
   initial_barrier: 2.76
   strategic_depth: 2.76
@@ -42,7 +42,7 @@ learning_analysis:
   mechanics_complexity: 3.2
   mechanics_count: 2
   bgg_weight: 2.7222
-  bgg_rank: 7585
+  bgg_rank: 7591
   year_published: 2014
   category_complexity: 3.6
   rank_complexity: 2.28

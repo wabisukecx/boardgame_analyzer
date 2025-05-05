@@ -58,13 +58,13 @@ publishers:
 - name: GoKids 玩樂小子
 - name: Hobby Japan
 - name: Rebel Sp. z o.o.
-average_rating: '7.47066'
+average_rating: '7.46857'
 weight: '2.7308'
 ranks:
 - type: boardgame
-  rank: '1072'
+  rank: '1073'
 - type: strategygames
-  rank: '573'
+  rank: '575'
 learning_analysis:
   initial_barrier: 2.78
   strategic_depth: 3.41
@@ -72,7 +72,7 @@ learning_analysis:
   mechanics_complexity: 3.08
   mechanics_count: 5
   bgg_weight: 2.7308
-  bgg_rank: 1072
+  bgg_rank: 1073
   year_published: 2022
   category_complexity: 3.83
   rank_complexity: 2.97

@@ -73,13 +73,13 @@ publishers:
 - name: REXhry
 - name: Spin Master Ltd.
 - name: Swan Panasia Co., Ltd.
-average_rating: '7.03435'
+average_rating: '7.03447'
 weight: '1.6885'
 ranks:
 - type: boardgame
   rank: '559'
 - type: familygames
-  rank: '175'
+  rank: '174'
 learning_analysis:
   initial_barrier: 2.64
   strategic_depth: 2.66

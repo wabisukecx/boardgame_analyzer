@@ -230,11 +230,11 @@ publishers:
 - name: Wood Expressions
 - name: Yangxin Industrial Company Limited
 - name: 놀이속의세상
-average_rating: '6.49546'
-weight: '1.714'
+average_rating: '6.49562'
+weight: '1.7132'
 ranks:
 - type: boardgame
-  rank: '1723'
+  rank: '1724'
 - type: familygames
   rank: '673'
 learning_analysis:
@@ -243,8 +243,8 @@ learning_analysis:
   replayability: 2.86
   mechanics_complexity: 2.5
   mechanics_count: 2
-  bgg_weight: 1.714
-  bgg_rank: 1723
+  bgg_weight: 1.7132
+  bgg_rank: 1724
   year_published: 1977
   category_complexity: 3.12
   rank_complexity: 2.16
@@ -252,7 +252,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.5149999999999997
   interaction_complexity: 2.7178
-  rules_complexity: 2.276133333333333
+  rules_complexity: 2.275973333333333
   player_types:
   - beginner
   - casual

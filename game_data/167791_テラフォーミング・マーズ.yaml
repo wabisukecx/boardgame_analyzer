@@ -111,8 +111,8 @@ publishers:
 - name: Stronghold Games
 - name: SuperHeated Neurons
 - name: Surfin' Meeple China
-average_rating: '8.34991'
-weight: '3.2658'
+average_rating: '8.34994'
+weight: '3.2656'
 ranks:
 - type: boardgame
   rank: '7'
@@ -124,7 +124,7 @@ learning_analysis:
   replayability: 4.51
   mechanics_complexity: 2.96
   mechanics_count: 16
-  bgg_weight: 3.2658
+  bgg_weight: 3.2656
   bgg_rank: 7
   year_published: 2016
   category_complexity: 5.0
@@ -133,7 +133,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.605714285714285
   interaction_complexity: 3.408821428571427
-  rules_complexity: 3.713785
+  rules_complexity: 3.713745
   player_types:
   - casual
   - experienced

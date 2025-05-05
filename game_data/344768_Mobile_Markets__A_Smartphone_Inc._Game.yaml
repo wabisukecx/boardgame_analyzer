@@ -41,13 +41,13 @@ publishers:
 - name: Broadway Toys LTD
 - name: Lanlalen
 - name: Open Borders Studio
-average_rating: '7.1421'
+average_rating: '7.14416'
 weight: '2.7857'
 ranks:
 - type: boardgame
-  rank: '2800'
+  rank: '2794'
 - type: strategygames
-  rank: '1249'
+  rank: '1247'
 learning_analysis:
   initial_barrier: 3.74
   strategic_depth: 3.41
@@ -55,7 +55,7 @@ learning_analysis:
   mechanics_complexity: 3.36
   mechanics_count: 7
   bgg_weight: 2.7857
-  bgg_rank: 2800
+  bgg_rank: 2794
   year_published: 2021
   category_complexity: 4.36
   rank_complexity: 2.88

@@ -111,7 +111,7 @@ publishers:
 - name: Взрослые дети
 - name: Ігромаг
 average_rating: '7.52541'
-weight: '2.3972'
+weight: '2.3971'
 ranks:
 - type: boardgame
   rank: '160'
@@ -125,7 +125,7 @@ learning_analysis:
   replayability: 4.07
   mechanics_complexity: 3.09
   mechanics_count: 14
-  bgg_weight: 2.3972
+  bgg_weight: 2.3971
   bgg_rank: 160
   year_published: 2008
   category_complexity: 2.89
@@ -134,7 +134,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 4.386666666666667
   interaction_complexity: 3.2864285714285724
-  rules_complexity: 3.38991619047619
+  rules_complexity: 3.38989619047619
   player_types:
   - casual
   - experienced

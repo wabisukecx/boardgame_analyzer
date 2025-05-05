@@ -65,8 +65,8 @@ publishers:
 - name: REXhry
 - name: SD Games
 - name: Surfin' Meeple China
-average_rating: '7.87919'
-weight: '2.8046'
+average_rating: '7.8794'
+weight: '2.8052'
 ranks:
 - type: boardgame
   rank: '94'
@@ -78,7 +78,7 @@ learning_analysis:
   replayability: 4.3
   mechanics_complexity: 3.16
   mechanics_count: 10
-  bgg_weight: 2.8046
+  bgg_weight: 2.8052
   bgg_rank: 94
   year_published: 2016
   category_complexity: 3.45
@@ -87,7 +87,7 @@ learning_analysis:
   learning_curve_type: moderate_then_shallow
   decision_points: 4.275000000000001
   interaction_complexity: 3.5502599999999997
-  rules_complexity: 3.938253333333333
+  rules_complexity: 3.9383733333333333
   player_types:
   - casual
   - experienced

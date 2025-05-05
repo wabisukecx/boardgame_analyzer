@@ -79,11 +79,11 @@ publishers:
 - name: Red Glove
 - name: Swan Panasia Co., Ltd.
 - name: WoodCat
-average_rating: '7.71713'
+average_rating: '7.71682'
 weight: '3.3362'
 ranks:
 - type: boardgame
-  rank: '123'
+  rank: '124'
 - type: strategygames
   rank: '101'
 learning_analysis:
@@ -93,7 +93,7 @@ learning_analysis:
   mechanics_complexity: 3.36
   mechanics_count: 16
   bgg_weight: 3.3362
-  bgg_rank: 123
+  bgg_rank: 124
   year_published: 2012
   category_complexity: 4.39
   rank_complexity: 3.12
