@@ -33,7 +33,12 @@ from src.analysis.similarity import (
     plot_category_pie_chart,
     plot_mechanics_bar_chart,
     plot_similar_games_bar_chart,
-    analyze_similarity_reasons
+)
+
+# 改善された類似性分析モジュールからインポート
+from src.analysis.improved_similarity_analyzer import (
+    get_formatted_similarity_reasons,
+    calculate_overall_similarity
 )
 
 # ロギング設定
@@ -240,10 +245,11 @@ def similarity_search_page():
                     # ゲームカード表示
                     display_game_card(game_data_list[idx])
                     
+                    # *** 改善版類似性分析モジュールを使用 ***
                     # 類似性の理由を分析して表示
-                    reasons = analyze_similarity_reasons(game_data_list[selected_index], game_data_list[idx])
+                    similarity_reasons = get_formatted_similarity_reasons(game_data_list[selected_index], game_data_list[idx])
                     st.markdown("**類似性の理由:**")
-                    for reason in reasons:
+                    for reason in similarity_reasons:
                         st.markdown(f"<div class='reason-item'>• {reason}</div>", unsafe_allow_html=True)
                     
                     st.markdown("---")
