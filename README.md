@@ -4,9 +4,23 @@ BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析
 
 **デモ:** [Streamlit Community Cloud](https://boardgameanalyzer-gsmlbaspmgvf3arxttip4f.streamlit.app/)（一部文字化けがございます）
 
+## 最新アップデート情報
+
+**改善された類似性分析機能**
+
+類似性検索機能が強化されました。新しい`improved_similarity_analyzer`モジュールにより、より精密な類似性分析が可能になりました。主な改善点：
+
+- より詳細な類似性理由の分析（重み付けスコア付き）
+- 学習曲線データを活用した高度な比較
+- 戦略的深さと相互作用の類似性に基づく分析
+- 整形された類似理由の提供
+
+この機能を利用することで、ゲーム間の類似性をより深く理解できます。
+
 ## 目次
 
 - [BoardGame Analyzer](#boardgame-analyzer)
+  - [最新アップデート情報](#最新アップデート情報)
   - [目次](#目次)
   - [主な機能](#主な機能)
   - [インストール方法](#インストール方法)
@@ -61,7 +75,7 @@ BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析
 
 - **比較と類似性分析**
   - ゲーム比較機能: 複数のゲームを選択し、レーダーチャートと数値比較で分析
-  - 類似性検索機能: 埋め込みデータを使用して類似ゲームを検索・分析
+  - **改善された類似性検索機能**: 埋め込みデータを使用して類似ゲームを検索・分析し、詳細な類似性理由を提供
 
 - **データ管理と自動化**
   - 日次データ更新: 毎日のゲームデータ自動更新とバックアップ
@@ -360,6 +374,7 @@ boardgame-analyzer/
 │   │   └── data_handler.py        # データ処理
 │   └── analysis/                  # 分析関連
 │       ├── similarity.py          # 類似性検索
+│       ├── improved_similarity_analyzer.py # 改善された類似性分析
 │       ├── game_analyzer.py       # ゲーム分析
 │       ├── learning_curve.py      # 学習曲線
 │       ├── mechanic_complexity.py # メカニクス複雑さ
