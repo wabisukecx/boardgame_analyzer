@@ -72,8 +72,8 @@ publishers:
 - name: Korea Boardgames
 - name: Piatnik
 - name: Zvezda
-average_rating: '7.09645'
-weight: '2.764'
+average_rating: '7.09649'
+weight: '2.7643'
 ranks:
 - type: boardgame
   rank: '635'
@@ -85,7 +85,7 @@ learning_analysis:
   replayability: 3.96
   mechanics_complexity: 2.8
   mechanics_count: 7
-  bgg_weight: 2.764
+  bgg_weight: 2.7643
   bgg_rank: 635
   year_published: 2012
   category_complexity: 3.51
@@ -94,7 +94,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 4.103999999999999
   interaction_complexity: 3.562335714285714
-  rules_complexity: 3.3394666666666666
+  rules_complexity: 3.3395266666666665
   player_types:
   - casual
   - experienced

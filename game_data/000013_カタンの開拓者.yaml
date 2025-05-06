@@ -171,13 +171,13 @@ publishers:
 - name: Top Toys
 - name: TRY SOFT
 - name: Vennerød Forlag AS
-average_rating: '7.09349'
+average_rating: '7.09348'
 weight: '2.2875'
 ranks:
 - type: boardgame
   rank: '580'
 - type: strategygames
-  rank: '536'
+  rank: '537'
 - type: familygames
   rank: '204'
 learning_analysis:

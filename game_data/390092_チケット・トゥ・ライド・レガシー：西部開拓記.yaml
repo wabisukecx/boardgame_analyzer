@@ -60,13 +60,13 @@ publishers:
 - name: Hobby Japan
 - name: Hobby World
 - name: Rebel Sp. z o.o.
-average_rating: '8.68408'
+average_rating: '8.68407'
 weight: '2.5941'
 ranks:
 - type: boardgame
   rank: '89'
 - type: familygames
-  rank: '5'
+  rank: '4'
 learning_analysis:
   initial_barrier: 3.31
   strategic_depth: 3.36

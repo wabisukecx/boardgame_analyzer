@@ -74,21 +74,21 @@ publishers:
 - name: TLAMA games
 - name: White Goblin Games
 - name: 株式会社ケンビル (KenBill)
-average_rating: '7.96699'
-weight: '3.7161'
+average_rating: '7.96676'
+weight: '3.7165'
 ranks:
 - type: boardgame
-  rank: '74'
+  rank: '75'
 - type: strategygames
-  rank: '59'
+  rank: '60'
 learning_analysis:
   initial_barrier: 3.83
   strategic_depth: 3.83
   replayability: 3.57
   mechanics_complexity: 3.55
   mechanics_count: 6
-  bgg_weight: 3.7161
-  bgg_rank: 74
+  bgg_weight: 3.7165
+  bgg_rank: 75
   year_published: 2019
   category_complexity: 3.5
   rank_complexity: 3.16
@@ -96,7 +96,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.740000000000001
   interaction_complexity: 3.3455333333333335
-  rules_complexity: 4.33822
+  rules_complexity: 4.3383
   player_types:
   - casual
   - experienced

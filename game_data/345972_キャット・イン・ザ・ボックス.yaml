@@ -60,11 +60,11 @@ publishers:
 - name: Siam Board Games
 - name: TLAMA games
 - name: 盒拍工作室 Hepa Studio
-average_rating: '7.48685'
+average_rating: '7.48615'
 weight: '2.0455'
 ranks:
 - type: boardgame
-  rank: '349'
+  rank: '350'
 - type: familygames
   rank: '71'
 learning_analysis:
@@ -74,7 +74,7 @@ learning_analysis:
   mechanics_complexity: 3.07
   mechanics_count: 4
   bgg_weight: 2.0455
-  bgg_rank: 349
+  bgg_rank: 350
   year_published: 2022
   category_complexity: 2.15
   rank_complexity: 2.33

@@ -53,13 +53,13 @@ publishers:
 - name: Helaina Cappel
 - name: Popcorn Games
 - name: Treetato Studio
-average_rating: '6.97798'
+average_rating: '6.97867'
 weight: '2.2692'
 ranks:
 - type: boardgame
   rank: '2756'
 - type: familygames
-  rank: '848'
+  rank: '849'
 learning_analysis:
   initial_barrier: 2.31
   strategic_depth: 2.94

@@ -57,7 +57,7 @@ publishers:
 - name: Playagame Edizioni
 - name: Reflexshop
 - name: Skellig Games
-average_rating: '7.43658'
+average_rating: '7.43619'
 weight: '2.262'
 ranks:
 - type: boardgame
@@ -65,7 +65,7 @@ ranks:
 - type: strategygames
   rank: '242'
 - type: familygames
-  rank: '68'
+  rank: '69'
 learning_analysis:
   initial_barrier: 2.45
   strategic_depth: 2.85
@@ -76,7 +76,7 @@ learning_analysis:
   bgg_rank: 321
   year_published: 2018
   category_complexity: 3.3
-  rank_complexity: 2.82
+  rank_complexity: 2.81
   strategic_depth_description: 中〜低（基本的な戦略が存在）
   learning_curve_type: gentle
   decision_points: 3.56

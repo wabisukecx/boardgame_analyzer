@@ -63,11 +63,11 @@ publishers:
 - name: Raven Distribution
 - name: Reflexshop
 - name: REXhry
-average_rating: '7.74437'
+average_rating: '7.74393'
 weight: '2'
 ranks:
 - type: boardgame
-  rank: '442'
+  rank: '443'
 - type: strategygames
   rank: '269'
 - type: familygames
@@ -79,7 +79,7 @@ learning_analysis:
   mechanics_complexity: 2.69
   mechanics_count: 9
   bgg_weight: 2.0
-  bgg_rank: 442
+  bgg_rank: 443
   year_published: 2021
   category_complexity: 3.68
   rank_complexity: 2.8

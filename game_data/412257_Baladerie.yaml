@@ -1,0 +1,57 @@
+type: boardgame
+name: Baladerie
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/8KtSwV68G-0AjkxAclHbZg__thumb/img/kAYdVFLv1gjb4rXnP_kIpSolIvQ=/fit-in/200x150/filters:strip_icc()/pic8015164.png
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '14'
+description: '&quot;Would you like to journey together in this land?&quot;&#10;&#10;In
+  the Perlune Region, where diverse races coexist harmoniously, there are multiple
+  towns with plenty of attractions such as iconic clock towers, bustling markets,
+  and historic castles. As the leader of the Perlune Region''s tourism association,
+  you guide visiting tourists to various sightseeing spots. Walking through the streets
+  with the tourists and occasionally viewing the city from the sky, you provide a
+  journey to their destination.&#10;&#10;Kind-hearted tourists express their gratitude
+  by presenting a token of appreciation along with the guide fee each time they utilize
+  the services of a tour guide. Furthermore, as you guide the tourists to their destinations,
+  their satisfaction increases. Build wonderful memories with the tourists who have
+  visited the Perlune Region, and enhance the reputation of your tourism association!&quot;&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;'
+mechanics:
+- name: Dice Rolling
+- name: Pick-up and Deliver
+categories:
+- name: Animals
+designers:
+- name: Oguland (オグランド)
+publishers:
+- name: Sui Works
+average_rating: '6.34'
+weight: '2'
+ranks: []
+learning_analysis:
+  initial_barrier: 2.01
+  strategic_depth: 2.52
+  replayability: 2.3
+  mechanics_complexity: 2.3
+  mechanics_count: 2
+  bgg_weight: 2.0
+  bgg_rank: null
+  year_published: 2024
+  category_complexity: 1.8
+  rank_complexity: 3.0
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 3.1900000000000004
+  interaction_complexity: 3.0
+  rules_complexity: 2.5893333333333333
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: short

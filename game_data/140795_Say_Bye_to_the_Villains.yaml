@@ -37,7 +37,7 @@ ranks:
 - type: boardgame
   rank: '6027'
 - type: thematic
-  rank: '995'
+  rank: '996'
 learning_analysis:
   initial_barrier: 2.36
   strategic_depth: 2.94

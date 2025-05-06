@@ -76,11 +76,11 @@ publishers:
 - name: IUVI Games
 - name: Korea Boardgames
 - name: Laguna
-average_rating: '7.82985'
+average_rating: '7.82968'
 weight: '2.1793'
 ranks:
 - type: boardgame
-  rank: '181'
+  rank: '182'
 - type: strategygames
   rank: '144'
 learning_analysis:
@@ -90,7 +90,7 @@ learning_analysis:
   mechanics_complexity: 2.8
   mechanics_count: 6
   bgg_weight: 2.1793
-  bgg_rank: 181
+  bgg_rank: 182
   year_published: 2016
   category_complexity: 3.04
   rank_complexity: 3.11

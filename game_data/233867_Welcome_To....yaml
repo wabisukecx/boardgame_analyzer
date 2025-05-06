@@ -1,0 +1,103 @@
+type: boardgame
+name: Welcome To...
+alternate_names:
+- Köszöntünk... álmaid városában!
+- Vítejte ve svém vysněném domově
+- Welcome to your perfect Home
+- Welcome To Містечко мрій
+- Welcome to... Miasteczko marzeń
+- Welcome to... Seu Lar Perfeito
+- Welcome Στο Σπίτι των Ονείρων σας
+- Бумажные кварталы
+- 歡迎來到
+- 웰컴 투...
+year_published: '2018'
+thumbnail_url: https://cf.geekdo-images.com/g4XmxyKhNVdhC3QPd1purQ__thumb/img/e3bCyIvM1IOGFYnKGj2jIn5mbKY=/fit-in/200x150/filters:strip_icc()/pic3761012.jpg
+publisher_min_players: '1'
+publisher_max_players: '100'
+playing_time: '25'
+publisher_min_age: '10'
+community_best_players: 3, 4
+community_recommended_players: 1, 2, 5, 6, 7, 8, 9, 10
+community_min_age: '10'
+description: As an architect in Welcome To..., you want to build the best new town
+  in the United States of the 1950s by adding resources to a pool, hiring employees,
+  and more.&#10;&#10;Welcome To... plays like a roll-and-write dice game in which
+  you mark results on a score-sheet...but without dice. Instead you flip cards from
+  three piles to make three different action sets with both a house number and a corresponding
+  action from which everyone chooses one. You use the number to fill in a house on
+  your street in numerical order. Then you take the action to increase the point value
+  of estates you build or score points at the end for building parks and pools. Players
+  also have the option of taking actions to alter or duplicate their house numbers.
+  And everyone is racing to be the first to complete public goals. There's lots to
+  do and many paths to becoming the best suburban architect in Welcome To...!&#10;&#10;Because
+  of the communal actions, game play is simultaneous and thus supports large groups
+  of players. With many varying strategies and completely randomized action sets,
+  no two games will feel the same!&#10;&#10;
+mechanics:
+- name: Bingo
+- name: Contracts
+- name: End Game Bonuses
+- name: Multi-Use Cards
+- name: Open Drafting
+- name: Paper-and-Pencil
+- name: Pattern Building
+- name: Simultaneous Action Selection
+- name: Solo / Solitaire Game
+categories:
+- name: City Building
+designers:
+- name: Benoit Turpin
+publishers:
+- name: Blue Cocker Games
+- name: Broadway Toys LTD
+- name: Deep Water Games
+- name: Dude Games
+- name: Engames
+- name: Fever Games
+- name: GateOnGames
+- name: Gém Klub Kft.
+- name: Hid Konem (Хід Конем)
+- name: Jumping Turtle Games
+- name: Kaissa Chess & Games
+- name: Lautapelit.fi
+- name: Lifestyle Boardgames Ltd
+- name: Lord of Boards
+- name: Ludofy Creative
+- name: Pegasus Spiele
+- name: Rebel Sp. z o.o.
+- name: REXhry
+- name: SD Games
+- name: sternenschimmermeer
+average_rating: '7.51962'
+weight: '1.841'
+ranks:
+- type: boardgame
+  rank: '198'
+- type: familygames
+  rank: '36'
+learning_analysis:
+  initial_barrier: 3.1
+  strategic_depth: 2.75
+  replayability: 3.46
+  mechanics_complexity: 2.93
+  mechanics_count: 9
+  bgg_weight: 1.841
+  bgg_rank: 198
+  year_published: 2018
+  category_complexity: 3.8
+  rank_complexity: 2.37
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 3.8600000000000008
+  interaction_complexity: 3.0
+  rules_complexity: 3.274866666666666
+  player_types:
+  - casual
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.2
+    complexity_factor: 0.95
+  mastery_time: short

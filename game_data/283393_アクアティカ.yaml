@@ -54,13 +54,13 @@ publishers:
 - name: Jumping Turtle Games
 - name: Portal Games
 - name: 数寄ゲームズ (Suki Games)
-average_rating: '7.36727'
+average_rating: '7.36666'
 weight: '2.3051'
 ranks:
 - type: boardgame
   rank: '567'
 - type: strategygames
-  rank: '363'
+  rank: '362'
 learning_analysis:
   initial_barrier: 3.35
   strategic_depth: 3.18

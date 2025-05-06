@@ -48,7 +48,7 @@ average_rating: '6.07711'
 weight: '1.5517'
 ranks:
 - type: boardgame
-  rank: '9924'
+  rank: '9925'
 - type: abstracts
   rank: '450'
 learning_analysis:
@@ -58,7 +58,7 @@ learning_analysis:
   mechanics_complexity: 2.5
   mechanics_count: 1
   bgg_weight: 1.5517
-  bgg_rank: 9924
+  bgg_rank: 9925
   year_published: 1975
   category_complexity: 2.86
   rank_complexity: 2.65

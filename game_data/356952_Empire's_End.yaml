@@ -59,11 +59,11 @@ publishers:
 - name: Lucky Duck Games
 - name: Maldito Games
 - name: Nice Game Publishing
-average_rating: '6.96339'
+average_rating: '6.96382'
 weight: '2.3881'
 ranks:
 - type: boardgame
-  rank: '2223'
+  rank: '2219'
 - type: strategygames
   rank: '1090'
 learning_analysis:
@@ -73,7 +73,7 @@ learning_analysis:
   mechanics_complexity: 3.09
   mechanics_count: 12
   bgg_weight: 2.3881
-  bgg_rank: 2223
+  bgg_rank: 2219
   year_published: 2023
   category_complexity: 4.3
   rank_complexity: 2.89

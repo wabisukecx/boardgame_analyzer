@@ -36,7 +36,7 @@ average_rating: '7.30952'
 weight: '1.0769'
 ranks:
 - type: boardgame
-  rank: '3869'
+  rank: '3871'
 - type: familygames
   rank: '1161'
 learning_analysis:
@@ -46,7 +46,7 @@ learning_analysis:
   mechanics_complexity: 2.67
   mechanics_count: 4
   bgg_weight: 1.0769
-  bgg_rank: 3869
+  bgg_rank: 3871
   year_published: 1992
   category_complexity: 3.04
   rank_complexity: 2.07

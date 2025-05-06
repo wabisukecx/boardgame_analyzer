@@ -51,11 +51,11 @@ publishers:
 - name: Portal Games
 - name: Yayoi The Dreamer
 - name: YOKA Games
-average_rating: '8.7168'
+average_rating: '8.71618'
 weight: '2.9464'
 ranks:
 - type: boardgame
-  rank: '52'
+  rank: '51'
 - type: strategygames
   rank: '33'
 learning_analysis:
@@ -65,7 +65,7 @@ learning_analysis:
   mechanics_complexity: 2.94
   mechanics_count: 5
   bgg_weight: 2.9464
-  bgg_rank: 52
+  bgg_rank: 51
   year_published: 2024
   category_complexity: 3.5
   rank_complexity: 3.19

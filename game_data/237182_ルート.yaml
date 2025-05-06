@@ -76,8 +76,8 @@ publishers:
 - name: Spielworxx
 - name: Tower Tactic Games
 - name: YOKA Games
-average_rating: '8.07167'
-weight: '3.824'
+average_rating: '8.07172'
+weight: '3.8237'
 ranks:
 - type: boardgame
   rank: '30'
@@ -91,7 +91,7 @@ learning_analysis:
   replayability: 4.41
   mechanics_complexity: 2.89
   mechanics_count: 15
-  bgg_weight: 3.824
+  bgg_weight: 3.8237
   bgg_rank: 30
   year_published: 2018
   category_complexity: 4.08
@@ -100,7 +100,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.252307692307691
   interaction_complexity: 3.7878000000000025
-  rules_complexity: 3.6294666666666657
+  rules_complexity: 3.629406666666666
   player_types:
   - casual
   - experienced
