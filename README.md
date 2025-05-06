@@ -195,9 +195,9 @@ python fetch_boardgame_data.py --host 192.168.50.192 --username pi
      - Voyage AIのAPIトークン発行(取り扱いに注意ください)
      - API 利用のための支払い設定
      - `VOYAGE_API_KEY` の環境変数設定
+     - .envファイルを作成し、ファイル内にVOYAGE_API_KEY = "取得したVoyage_APIキー"を追加して保存してください
    - 生成コマンド例：
      ```bash
-     export VOYAGE_API_KEY="your_api_key_here"
      python generate_embedding_model.py --data_path "game_data/*.yaml" --output "game_embeddings.pkl"
      ```
    - 重要なオプションパラメータ：
