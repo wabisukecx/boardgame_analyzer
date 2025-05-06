@@ -2,12 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 from src.analysis.game_analyzer import generate_game_summary
-from src.analysis.learning_curve import (
-    get_player_type_display,
-    get_mastery_time_display, get_replayability_display,
-    get_curve_type_display
-)
-
+from src.analysis.learning_curve import get_curve_type_display
 
 def load_css():
     """アプリケーションで使用するカスタムCSSをロードする"""

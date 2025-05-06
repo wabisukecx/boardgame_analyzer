@@ -6,7 +6,6 @@ PC側にあってRaspberry Piにないファイルを同期する機能も提供
 
 import os
 import posixpath
-import sys
 import argparse
 import paramiko
 import glob

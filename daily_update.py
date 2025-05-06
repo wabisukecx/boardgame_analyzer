@@ -8,7 +8,6 @@
 """
 
 import os
-import sys
 import shutil
 import yaml
 import requests
@@ -20,7 +19,6 @@ import random
 import xml.etree.ElementTree as ET
 import re
 from pathlib import Path
-from typing import Dict, List, Any, Tuple, Optional
 
 # ロギング設定
 logging.basicConfig(

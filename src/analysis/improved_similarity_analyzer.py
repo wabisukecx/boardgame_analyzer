@@ -3,8 +3,7 @@
 学習曲線とゲーム特性に基づく高度な類似性評価
 """
 
-import numpy as np
-from typing import Dict, List, Any, Tuple, Optional, Set
+from typing import Dict, List, Any, Tuple
 
 def analyze_similarity_reasons_improved(
     game1: Dict[str, Any],

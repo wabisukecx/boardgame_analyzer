@@ -8,7 +8,7 @@ from src.data.data_handler import (
 from src.analysis.learning_curve import calculate_learning_curve
 from ui.ui_components import (
     display_game_basic_info, display_game_players_info, display_game_age_time_info,
-    display_game_complexity, display_learning_curve, display_data_tabs,
+    display_learning_curve, display_data_tabs,
     display_game_analysis_summary, display_custom_metric
 )
 
