@@ -25,6 +25,25 @@
   },
   "details": {
     "title": "ゲームIDで詳細情報を取得",
+    "basic_info": "基本情報",
+    "player_count": "プレイ人数",
+    "age_time": "年齢・プレイ時間",
+    "complexity": "複雑さ",
+    "learning_curve_analysis": "学習曲線分析",
+    "evaluation_summary": "評価サマリー",
+    "complexity_strategy_viz": "複雑さと戦略性の可視化",
+    "complexity_comparison": "複雑さの比較",
+    "bgg_user_rating": "BGGユーザー評価",
+    "strategy_replayability": "戦略性とリプレイ性",
+    "game_description": "ゲーム説明",
+    "view_on_bgg": "BoardGameGeekで詳細を見る",
+    "bgg_complexity": "BGG複雑さ評価",
+    "system_analysis": "システム分析",
+    "best_players_community": "BGGコミュニティ推奨人数",
+    "publisher_players": "メーカー推奨人数",
+    "recommended_age_community": "BGGコミュニティ推奨年齢",
+    "play_time": "プレイ時間",
+    "difference": "差",
     "input_method": "入力方法を選択",
     "manual_input": "手動入力",
     "select_from_saved": "保存済みYAMLファイルから選択",
@@ -45,7 +64,6 @@
   "save": {
     "title": "ゲームデータをYAML形式で保存",
     "select_game": "保存するゲームデータを選択してください",
-    "english_name": "英語名",
     "game_id": "ゲームID",
     "year_published": "発行年",
     "filename_input": "保存するファイル名 (空白の場合はplaceholderの名前を使用)",
@@ -54,6 +72,61 @@
     "save_error": "ファイル保存エラー: {error}",
     "special_char_error": "特殊文字（:;など）を含むゲーム名があると保存に失敗する場合があります。",
     "no_data": "保存可能なゲームデータがありません。まずゲームを検索して詳細情報を取得してください。"
+  },
+  "common": {
+    "game_name": "ゲーム名",
+    "game_id": "ゲームID",
+    "year_published": "発行年",
+    "japanese_name": "日本語名",
+    "english_name": "英語名",
+    "unknown": "不明",
+    "no_image": "画像なし",
+    "average_rating": "平均評価",
+    "complexity": "複雑さ",
+    "playing_time": "プレイ時間",
+    "minutes": "分",
+    "players_unit": "人",
+    "age_and_up": "歳以上",
+    "calculating": "計算中...",
+    "similarity": "類似度",
+    "occurrence_count": "出現回数",
+    "shortened_name": "短縮名",
+    "and_more": "...他{count}個",
+    "others": "その他",
+    "mechanic_id": "メカニクスID",
+    "mechanic_name": "メカニクス名",
+    "category_id": "カテゴリID",
+    "category_name": "カテゴリ名",
+    "ranking_type": "ランキング種別",
+    "ranking_id": "ランキングID",
+    "rank": "順位",
+    "designer_id": "デザイナーID",
+    "designer_name": "デザイナー名",
+    "publisher_id": "パブリッシャーID",
+    "publisher_name": "パブリッシャー名",
+    "min_players": "最少人数",
+    "max_players": "最大人数",
+    "categories": "カテゴリ",
+    "mechanics": "メカニクス",
+    "list_separator": "、"
+  },
+  "tabs": {
+    "mechanics": "メカニクス",
+    "categories": "カテゴリ",
+    "rankings": "ランキング",
+    "designers": "デザイナー",
+    "publishers": "パブリッシャー"
+  },
+  "metrics": {
+    "initial_barrier": "初期学習障壁",
+    "strategic_depth": "戦略的深さ",
+    "replayability": "リプレイ性",
+    "decision_points": "意思決定ポイント",
+    "interaction_complexity": "プレイヤー相互作用",
+    "rules_complexity": "ルールの複雑さ",
+    "bgg_weight": "BGG重さ",
+    "learning_curve_type": "学習曲線タイプ",
+    "bgg_complexity": "BGG複雑さ評価"
   },
   "similarity": {
     "title": "ボードゲーム類似性検索",
@@ -76,6 +149,7 @@
     "similarity_score": "類似度: {score}",
     "similarity_reasons": "類似性の理由",
     "no_similar_games": "類似度が {threshold} を超えるゲームが見つかりませんでした。閾値を下げてみてください。",
+    "no_matching_games": "フィルター条件に一致するゲームがありません",
     "tabs": {
       "game_list": "類似ゲーム一覧",
       "heatmap": "類似度ヒートマップ",
@@ -87,7 +161,18 @@
       "mechanics_distribution": "メカニクスの分布",
       "no_categories": "類似ゲームのカテゴリ情報がありません",
       "no_mechanics": "類似ゲームのメカニクス情報がありません"
-    }
+    },
+    "category_distribution_title": "カテゴリ分布（上位8カテゴリ）",
+    "mechanics_distribution_title": "メカニクス分布（上位10）",
+    "heatmap_title": "ゲーム類似度ヒートマップ",
+    "common_categories": "共通カテゴリ",
+    "common_mechanics": "共通メカニクス",
+    "same_strategic_depth": "同じ戦略的深さ",
+    "common_player_types": "共通の対象プレイヤー",
+    "similar_complexity": "類似の複雑さ",
+    "close_publication_year": "近い発行年",
+    "common_keywords": "説明文の共通キーワード",
+    "overall_similarity": "全体的な類似性が見られます"
   },
   "compare": {
     "title": "複数ゲームの比較",
@@ -97,15 +182,87 @@
     "limit_warning": "表示は最大6ゲームまでに制限されます。最初の6つを表示します。",
     "chart_title": "ゲーム特性比較チャート",
     "table_title": "数値比較",
-    "metrics": {
-      "game_name": "ゲーム名",
-      "initial_barrier": "初期学習障壁",
-      "strategic_depth": "戦略的深さ",
-      "replayability": "リプレイ性",
-      "decision_points": "意思決定の深さ",
-      "interaction": "プレイヤー相互作用",
-      "rules_complexity": "ルールの複雑さ",
-      "bgg_weight": "BGG重み"
+    "no_learning_curve": "{game_name}の学習曲線情報が利用できません。",
+    "incomplete_data": "比較データが不完全です",
+    "mechanics_added": "追加されたメカニクス",
+    "mechanics_removed": "削除されたメカニクス",
+    "categories_added": "追加されたカテゴリ",
+    "categories_removed": "削除されたカテゴリ",
+    "no_changes": "変更なし"
+  },
+  "info": {
+    "no_mechanics": "メカニクス情報がありません",
+    "no_categories": "カテゴリ情報がありません",
+    "no_rankings": "ランキング情報がありません",
+    "no_designers": "デザイナー情報がありません",
+    "no_publishers": "パブリッシャー情報がありません",
+    "yaml_update_complete": "YAMLファイルの更新処理が完了しました"
+  },
+  "loading": {
+    "data": "データを読み込み中...",
+    "games_loaded": "{count}個のゲームが読み込まれました"
+  },
+  "errors": {
+    "file_not_found": "ファイルが見つかりません: {filename}",
+    "file_load_failed": "データファイルの読み込みに失敗しました: {error}",
+    "missing_data_key": "必要なデータキーが不足しています: {key}",
+    "yaml_processing_error": "YAML処理中にエラーが発生しました: {error}",
+    "heatmap_failed": "ヒートマップの生成に失敗しました",
+    "heatmap_error": "ヒートマップ表示エラー: {error}",
+    "category_chart_failed": "カテゴリチャートの生成に失敗しました",
+    "mechanics_chart_failed": "メカニクスチャートの生成に失敗しました",
+    "analysis_error": "データ分析エラー: {error}",
+    "file_read": "ファイル読み込みエラー: {error}",
+    "learning_curve_calculation": "学習曲線の計算中にエラーが発生しました: {error}"
+  },
+  "warnings": {
+    "font_not_found": "日本語フォントが見つかりません。デフォルトフォントを使用します"
+  },
+  "analysis": {
+    "category_mechanics": "カテゴリ・メカニクス分析",
+    "complexity": {
+      "very_high": "非常に高く",
+      "high": "高く",
+      "medium_high": "中〜高程度で",
+      "medium": "中程度で",
+      "medium_low": "中〜低程度で",
+      "low": "低く"
+    },
+    "depth": {
+      "very_deep": "非常に深い",
+      "deep": "深い",
+      "medium_high": "中〜高の深さ",
+      "medium": "中程度の深さ",
+      "medium_low": "中〜低の深さ",
+      "shallow": "浅め",
+      "very_shallow": "浅い"
+    },
+    "popularity": {
+      "new_or_unrated": "新作または評価収集中",
+      "highest": "最高レベルの人気",
+      "very_high": "非常に高い人気",
+      "high": "高い人気",
+      "moderate": "一定の人気",
+      "niche": "ニッチな人気"
+    },
+    "barrier": {
+      "very_high": "非常に高い（学習に長い時間を要する）",
+      "high": "高い（学習に時間を要する）",
+      "medium_high": "やや高い（学習にやや時間を要する）",
+      "medium": "中程度（基本的な学習が必要）",
+      "low": "低め（簡単に学べる）",
+      "very_low": "低い（すぐに始められる）"
+    },
+    "no_specific_theme": "特定のテーマがない",
+    "no_characteristic_mechanics": "特徴的なメカニクスがない",
+    "summary": {
+      "intro": "{game_name}（{year}年）は、{categories}をテーマにしたボードゲームです。",
+      "complexity_and_depth": "複雑さは{complexity}、戦略深度は{depth}です。",
+      "features": "主な特徴として{mechanics}などの要素を含み、",
+      "popularity_unrated": "{popularity}です。",
+      "popularity_rated": "{popularity}です。",
+      "barrier_and_replay": "初期学習障壁は{barrier}、リプレイ性は{replayability}です。",
+      "suitable_for": "このゲームは特に{player_types}に適しています。"
     }
   }
 }

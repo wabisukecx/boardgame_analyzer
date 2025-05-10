@@ -1,96 +1,98 @@
 """
-game_analyzer.py - ボードゲームの評価・分析モジュール
-現在のアプリケーションで実際に使われている関数のみを含む整理版
+game_analyzer.py - Board game evaluation and analysis module
+Contains only the functions actually used in the current application
 """
 
+from src.utils.language import t
+
 def get_complexity_level(weight):
-    """複雑さレベルの説明を取得する
+    """Get complexity level description
     
     Parameters:
-    weight (float): ゲームの複雑さ数値
+    weight (float): Game complexity value
     
     Returns:
-    str: 複雑さレベルの説明テキスト
+    str: Complexity level description text
     """
     if weight >= 4.0:
-        return "非常に高く"
+        return t("analysis.complexity.very_high")
     elif weight >= 3.5:
-        return "高く"
+        return t("analysis.complexity.high")
     elif weight >= 2.8:
-        return "中〜高程度で"
+        return t("analysis.complexity.medium_high")
     elif weight >= 2.0:
-        return "中程度で"
+        return t("analysis.complexity.medium")
     elif weight >= 1.5:
-        return "中〜低程度で"
+        return t("analysis.complexity.medium_low")
     else:
-        return "低く"
+        return t("analysis.complexity.low")
 
 def get_depth_level(depth):
-    """戦略的深さの説明を取得する
+    """Get strategic depth description
     
     Parameters:
-    depth (float): ゲームの戦略的深さ数値
+    depth (float): Game strategic depth value
     
     Returns:
-    str: 戦略的深さの説明テキスト
+    str: Strategic depth description text
     """
     if depth >= 4.5:
-        return "非常に深い"
+        return t("analysis.depth.very_deep")
     elif depth >= 4.0:
-        return "深い"
+        return t("analysis.depth.deep")
     elif depth >= 3.5:
-        return "中〜高の深さ"
+        return t("analysis.depth.medium_high")
     elif depth >= 3.0:
-        return "中程度の深さ"
+        return t("analysis.depth.medium")
     elif depth >= 2.5:
-        return "中〜低の深さ"
+        return t("analysis.depth.medium_low")
     elif depth >= 2.0:
-        return "浅め"
+        return t("analysis.depth.shallow")
     else:
-        return "浅い"
+        return t("analysis.depth.very_shallow")
 
 def get_popularity_level(rank):
-    """人気レベルの説明を取得する
+    """Get popularity level description
     
     Parameters:
-    rank (int or None): ゲームのBGGランキング順位
+    rank (int or None): BGG ranking position
     
     Returns:
-    str: 人気レベルの説明テキスト
+    str: Popularity level description text
     """
     if rank is None:
-        return "新作または評価収集中"
+        return t("analysis.popularity.new_or_unrated")
     elif rank <= 100:
-        return "最高レベルの人気"
+        return t("analysis.popularity.highest")
     elif rank <= 500:
-        return "非常に高い人気"
+        return t("analysis.popularity.very_high")
     elif rank <= 1000:
-        return "高い人気"
+        return t("analysis.popularity.high")
     elif rank <= 2000:
-        return "一定の人気"
+        return t("analysis.popularity.moderate")
     else:
-        return "ニッチな人気"
+        return t("analysis.popularity.niche")
 
 def generate_game_summary(game_data, learning_curve):
     """
-    ゲームの総合サマリーテキストを生成する
+    Generate comprehensive game summary text
     
     Parameters:
-    game_data (dict): ゲームの詳細情報
-    learning_curve (dict): ラーニングカーブの情報
+    game_data (dict): Game details
+    learning_curve (dict): Learning curve information
     
     Returns:
-    str: 生成されたサマリーテキスト
+    str: Generated summary text
     """
-    # ゲーム名と年
-    game_name = game_data.get('japanese_name', game_data.get('name', '不明'))
-    year = game_data.get('year_published', '不明')
+    # Game name and year
+    game_name = game_data.get('japanese_name', game_data.get('name', t('common.unknown')))
+    year = game_data.get('year_published', t('common.unknown'))
     
-    # カテゴリとメカニクス
-    categories = [cat.get('name', '') for cat in game_data.get('categories', [])][:3]  # 最大3つまで
-    mechanics = [mech.get('name', '') for mech in game_data.get('mechanics', [])][:3]  # 最大3つまで
+    # Categories and mechanics (max 3 each)
+    categories = [cat.get('name', '') for cat in game_data.get('categories', [])][:3]  
+    mechanics = [mech.get('name', '') for mech in game_data.get('mechanics', [])][:3]  
     
-    # BGGランキング情報
+    # BGG ranking info
     bgg_rank = None
     for rank_info in game_data.get('ranks', []):
         if rank_info.get('type') == 'boardgame':
@@ -100,48 +102,66 @@ def generate_game_summary(game_data, learning_curve):
             except (ValueError, TypeError):
                 pass
     
-    # 分析データ
+    # Analysis data
     complexity = get_complexity_level(float(game_data.get('weight', 3.0)))
     depth = get_depth_level(learning_curve.get('strategic_depth', 3.0))
     popularity = get_popularity_level(bgg_rank)
     
-    # プレイヤータイプ
+    # Player types
     from src.analysis.learning_curve import get_player_type_display, get_replayability_display
     player_types_display = [get_player_type_display(pt) for pt in learning_curve.get('player_types', [])[:2]]
     
-    # 初期学習障壁とリプレイ性
+    # Initial learning barrier
     initial_barrier = learning_curve.get('initial_barrier', 3.0)
     
-    # 初期学習障壁の言葉での表現
+    # Initial learning barrier text representation
     if initial_barrier >= 4.5:
-        barrier_text = "非常に高い（学習に長い時間を要する）"
+        barrier_text = t("analysis.barrier.very_high")
     elif initial_barrier >= 4.0:
-        barrier_text = "高い（学習に時間を要する）"
+        barrier_text = t("analysis.barrier.high")
     elif initial_barrier >= 3.5:
-        barrier_text = "やや高い（学習にやや時間を要する）"
+        barrier_text = t("analysis.barrier.medium_high")
     elif initial_barrier >= 3.0:
-        barrier_text = "中程度（基本的な学習が必要）"
+        barrier_text = t("analysis.barrier.medium")
     elif initial_barrier >= 2.0:
-        barrier_text = "低め（簡単に学べる）"
+        barrier_text = t("analysis.barrier.low")
     else:
-        barrier_text = "低い（すぐに始められる）"
+        barrier_text = t("analysis.barrier.very_low")
         
-    # リプレイ性
+    # Replayability
     replayability = learning_curve.get('replayability', 3.0)
     replayability_text = get_replayability_display(replayability)
     
-    # 基本サマリー
-    categories_text = "、".join(categories) if categories else "特定のテーマがない"
-    mechanics_text = "、".join(mechanics) if mechanics else "特徴的なメカニクスがない"
+    # Basic summary
+    categories_text = t("common.list_separator").join(categories) if categories else t("analysis.no_specific_theme")
+    mechanics_text = t("common.list_separator").join(mechanics) if mechanics else t("analysis.no_characteristic_mechanics")
     
-    summary = (
-        f"{game_name}（{year}年）は、{categories_text}をテーマにしたボードゲームです。"
-        f"複雑さは{complexity}、戦略深度は{depth}です。主な特徴として{mechanics_text}などの"
-        f"要素を含み、{popularity}"
-        f"{'のためランキング情報はない' if popularity == '新作または評価収集中' else ''}です。\n\n"
+    # Build summary using translation keys
+    summary = t("analysis.summary.intro", 
+                game_name=game_name, 
+                year=year, 
+                categories=categories_text)
     
-        f"初期学習障壁は{barrier_text}、リプレイ性は{replayability_text}です。"
-        f"このゲームは特に{', '.join(player_types_display)}に適しています。"
-    )
+    summary += t("analysis.summary.complexity_and_depth", 
+                 complexity=complexity, 
+                 depth=depth)
+    
+    summary += t("analysis.summary.features", 
+                 mechanics=mechanics_text)
+    
+    if popularity == t("analysis.popularity.new_or_unrated"):
+        summary += t("analysis.summary.popularity_unrated", popularity=popularity)
+    else:
+        summary += t("analysis.summary.popularity_rated", popularity=popularity)
+    
+    summary += "\n\n"
+    
+    summary += t("analysis.summary.barrier_and_replay", 
+                 barrier=barrier_text, 
+                 replayability=replayability_text)
+    
+    if player_types_display:
+        summary += t("analysis.summary.suitable_for", 
+                     player_types=t("common.list_separator").join(player_types_display))
     
     return summary

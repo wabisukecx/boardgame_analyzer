@@ -18,19 +18,22 @@ class LanguageManager:
             "ja": "日本語",
             "en": "English"
         }
-        
+    
+    def initialize(self):
+        """Initialize language settings and resources"""
         # Set default language
         if 'language' not in st.session_state:
             st.session_state.language = 'ja'
+        
+        # Initialize language resources if not exists
+        if 'language_resources' not in st.session_state:
+            st.session_state.language_resources = {}
         
         # Load language resources
         self._load_language_resources()
     
     def _load_language_resources(self):
         """Load language resource files"""
-        if 'language_resources' not in st.session_state:
-            st.session_state.language_resources = {}
-        
         # If current language resources are not loaded
         if st.session_state.language not in st.session_state.language_resources:
             language_file = self.languages_dir / f"{st.session_state.language}.json"
@@ -60,6 +63,10 @@ class LanguageManager:
         Returns:
             str: Text corresponding to the language
         """
+        # Check if language_resources exists
+        if 'language_resources' not in st.session_state:
+            self.initialize()
+        
         keys = key_path.split('.')
         text = st.session_state.language_resources.get(st.session_state.language, {})
         
@@ -103,7 +110,7 @@ class LanguageManager:
         """Check if current language is English"""
         return st.session_state.language == 'en'
 
-# Global instance
+# Global instance - create but do not initialize
 language_manager = LanguageManager()
 
 # Convenience functions

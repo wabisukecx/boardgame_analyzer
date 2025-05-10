@@ -25,6 +25,25 @@
   },
   "details": {
     "title": "Get Game Details by ID",
+    "basic_info": "Basic Information",
+    "player_count": "Player Count",
+    "age_time": "Age & Play Time",
+    "complexity": "Complexity",
+    "learning_curve_analysis": "Learning Curve Analysis",
+    "evaluation_summary": "Evaluation Summary",
+    "complexity_strategy_viz": "Complexity & Strategy Visualization",
+    "complexity_comparison": "Complexity Comparison",
+    "bgg_user_rating": "BGG User Rating",
+    "strategy_replayability": "Strategy & Replayability",
+    "game_description": "Game Description",
+    "view_on_bgg": "View on BoardGameGeek",
+    "bgg_complexity": "BGG Complexity Rating",
+    "system_analysis": "System Analysis",
+    "best_players_community": "BGG Community Best",
+    "publisher_players": "Publisher Recommendation",
+    "recommended_age_community": "BGG Community Age",
+    "play_time": "Play Time",
+    "difference": "Difference",
     "input_method": "Select input method",
     "manual_input": "Manual Input",
     "select_from_saved": "Select from Saved YAML Files",
@@ -45,7 +64,6 @@
   "save": {
     "title": "Save Game Data in YAML Format",
     "select_game": "Select game data to save",
-    "english_name": "English Name",
     "game_id": "Game ID",
     "year_published": "Year Published",
     "filename_input": "Filename to save (uses placeholder name if blank)",
@@ -54,6 +72,60 @@
     "save_error": "File save error: {error}",
     "special_char_error": "Saving may fail if the game name contains special characters (: ; etc.).",
     "no_data": "No game data available for saving. Please search for a game and get its details first."
+  },
+  "common": {
+    "game_name": "Game Name",
+    "game_id": "Game ID",
+    "year_published": "Year Published",
+    "japanese_name": "Japanese Name",
+    "english_name": "English Name",
+    "unknown": "Unknown",
+    "no_image": "No Image",
+    "average_rating": "Average Rating",
+    "complexity": "Complexity",
+    "playing_time": "Playing Time",
+    "minutes": "minutes",
+    "players_unit": "players",
+    "age_and_up": "and up",
+    "calculating": "Calculating...",
+    "similarity": "Similarity",
+    "occurrence_count": "Occurrences",
+    "shortened_name": "Shortened Name",
+    "and_more": "...and {count} more",
+    "others": "Others",
+    "mechanic_id": "Mechanic ID",
+    "mechanic_name": "Mechanic Name",
+    "category_id": "Category ID",
+    "category_name": "Category Name",
+    "ranking_type": "Ranking Type",
+    "ranking_id": "Ranking ID",
+    "rank": "Rank",
+    "designer_id": "Designer ID",
+    "designer_name": "Designer Name",
+    "publisher_id": "Publisher ID",
+    "publisher_name": "Publisher Name",
+    "min_players": "Min Players",
+    "max_players": "Max Players",
+    "categories": "Categories",
+    "mechanics": "Mechanics"
+  },
+  "tabs": {
+    "mechanics": "Mechanics",
+    "categories": "Categories",
+    "rankings": "Rankings",
+    "designers": "Designers",
+    "publishers": "Publishers"
+  },
+  "metrics": {
+    "initial_barrier": "Initial Learning Barrier",
+    "strategic_depth": "Strategic Depth",
+    "replayability": "Replayability",
+    "decision_points": "Decision Points",
+    "interaction_complexity": "Player Interaction",
+    "rules_complexity": "Rules Complexity",
+    "bgg_weight": "BGG Weight",
+    "learning_curve_type": "Learning Curve Type",
+    "bgg_complexity": "BGG Complexity"
   },
   "similarity": {
     "title": "BoardGame Similarity Search",
@@ -76,6 +148,7 @@
     "similarity_score": "Similarity: {score}",
     "similarity_reasons": "Reasons for Similarity",
     "no_similar_games": "No games found with similarity above {threshold}. Try lowering the threshold.",
+    "no_matching_games": "No games match the filter criteria",
     "tabs": {
       "game_list": "Similar Games List",
       "heatmap": "Similarity Heatmap",
@@ -87,7 +160,18 @@
       "mechanics_distribution": "Mechanics Distribution",
       "no_categories": "No category information for similar games",
       "no_mechanics": "No mechanics information for similar games"
-    }
+    },
+    "category_distribution_title": "Category Distribution (Top 8)",
+    "mechanics_distribution_title": "Mechanics Distribution (Top 10)",
+    "heatmap_title": "Game Similarity Heatmap",
+    "common_categories": "Common Categories",
+    "common_mechanics": "Common Mechanics",
+    "same_strategic_depth": "Same Strategic Depth",
+    "common_player_types": "Common Player Types",
+    "similar_complexity": "Similar Complexity",
+    "close_publication_year": "Close Publication Year",
+    "common_keywords": "Common Keywords in Description",
+    "overall_similarity": "Overall similarity detected"
   },
   "compare": {
     "title": "Compare Multiple Games",
@@ -97,15 +181,43 @@
     "limit_warning": "Display limited to 6 games. Showing the first 6.",
     "chart_title": "Game Characteristics Comparison",
     "table_title": "Numeric Comparison",
-    "metrics": {
-      "game_name": "Game Name",
-      "initial_barrier": "Initial Learning Barrier",
-      "strategic_depth": "Strategic Depth",
-      "replayability": "Replayability",
-      "decision_points": "Decision Depth",
-      "interaction": "Player Interaction",
-      "rules_complexity": "Rules Complexity",
-      "bgg_weight": "BGG Weight"
-    }
+    "no_learning_curve": "Learning curve info not available for {game_name}.",
+    "incomplete_data": "Comparison data is incomplete",
+    "mechanics_added": "Mechanics Added",
+    "mechanics_removed": "Mechanics Removed",
+    "categories_added": "Categories Added",
+    "categories_removed": "Categories Removed",
+    "no_changes": "No Changes"
+  },
+  "info": {
+    "no_mechanics": "No mechanics information",
+    "no_categories": "No category information",
+    "no_rankings": "No ranking information",
+    "no_designers": "No designer information",
+    "no_publishers": "No publisher information",
+    "yaml_update_complete": "YAML file update process completed"
+  },
+  "loading": {
+    "data": "Loading data...",
+    "games_loaded": "{count} games loaded"
+  },
+  "errors": {
+    "file_not_found": "File not found: {filename}",
+    "file_load_failed": "Failed to load data file: {error}",
+    "missing_data_key": "Required data key missing: {key}",
+    "yaml_processing_error": "Error processing YAML: {error}",
+    "heatmap_failed": "Failed to generate heatmap",
+    "heatmap_error": "Heatmap display error: {error}",
+    "category_chart_failed": "Failed to generate category chart",
+    "mechanics_chart_failed": "Failed to generate mechanics chart",
+    "analysis_error": "Data analysis error: {error}",
+    "file_read": "File read error: {error}",
+    "learning_curve_calculation": "Error calculating learning curve: {error}"
+  },
+  "warnings": {
+    "font_not_found": "Japanese font not found. Using default font"
+  },
+  "analysis": {
+    "category_mechanics": "Category & Mechanics Analysis"
   }
 }

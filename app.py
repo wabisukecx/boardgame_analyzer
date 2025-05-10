@@ -311,9 +311,16 @@ def similarity_search_page():
 
 def main():
     """Main entry point for the integrated board game application"""
+    # Initialize language manager first
+    if 'language' not in st.session_state:
+        st.session_state.language = 'ja'
+    
+    # Initialize language resources
+    language_manager.initialize()
+    
     # Page configuration
     st.set_page_config(
-        page_title="BoardGame App",  # Use a default title first
+        page_title=t("app.title"),
         page_icon="🎲",
         layout="wide"
     )
@@ -327,11 +334,12 @@ def main():
         # Language switching
         st.markdown(f"### {t('sidebar.language')}")
         language = st.selectbox(
-            "",
+            t('sidebar.language'),  # ラベルを提供
             options=list(language_manager.supported_languages.keys()),
             format_func=lambda x: language_manager.supported_languages[x],
             index=list(language_manager.supported_languages.keys()).index(st.session_state.language),
-            key="language_selector"
+            key="language_selector",
+            label_visibility="collapsed"  # ラベルを非表示にする
         )
         
         if language != st.session_state.language:
