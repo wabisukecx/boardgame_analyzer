@@ -1,5 +1,5 @@
 """
-src/analysis/similarity.py - ボードゲームの類似性検索機能を提供するモジュール
+src/analysis/similarity.py - Module providing board game similarity search functionality
 """
 
 import numpy as np
@@ -16,7 +16,7 @@ import logging
 import os
 import platform
 
-# 既存のモジュールからYAML関連の関数をインポート
+# Import from existing modules
 from src.analysis.mechanic_complexity import (
     add_missing_mechanic, 
     get_complexity, 
@@ -31,21 +31,24 @@ from src.analysis.rank_complexity import (
     get_rank_complexity_value
 )
 
-# ロギング設定
+# Import language utilities
+from src.utils.language import t, get_game_display_name, get_game_secondary_name, format_language_caption
+
+# Logging configuration
 logger = logging.getLogger("similarity_module")
 
 def setup_japanese_fonts():
     """
-    日本語フォントの設定を行う
-    プラットフォームに応じて適切なフォントを選択
+    Set up Japanese fonts
+    Select appropriate fonts based on platform
     """
     try:
-        # まず利用可能なフォントをリストアップ
+        # First list available fonts
         from matplotlib.font_manager import fontManager
         available_fonts = set([f.name for f in fontManager.ttflist])       
         system = platform.system()
         
-        # プラットフォーム別のフォント候補
+        # Font candidates by platform
         if system == 'Windows':
             font_options = ['Yu Gothic', 'Meiryo', 'MS Gothic', 'Arial Unicode MS']
         elif system == 'Darwin':  # macOS
@@ -55,125 +58,125 @@ def setup_japanese_fonts():
         else:
             font_options = []
         
-        # 候補に加えてどのプラットフォームでも使えそうなフォントを追加
+        # Add fonts that might work on any platform
         font_options.extend(['DejaVu Sans', 'Arial', 'Tahoma', 'Verdana'])
         
-        # 利用可能なフォントを絞り込み
+        # Filter available fonts
         available_options = [f for f in font_options if f in available_fonts]
         
-        # 利用可能なフォントがあればそれを設定
+        # Set available font if found
         if available_options:
             font_family = available_options[0]
             matplotlib.rcParams['font.family'] = font_family
             return True
         
-        # フォントが見つからない場合、フォールバックとしてsans-serifを設定
+        # Set sans-serif as fallback when font not found
         matplotlib.rcParams['font.family'] = 'sans-serif'
         matplotlib.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans', 'Helvetica', 'sans-serif']
-        logger.warning("日本語フォントが見つかりませんでした。デフォルトのフォントを使用します。")
+        logger.warning(t("warnings.font_not_found"))
         
         return False
     except Exception as e:
-        logger.error(f"フォント設定エラー: {e}")
+        logger.error(f"Font setup error: {e}")
         return False
 
-# データの読み込み
+# Data loading
 @st.cache_resource(show_spinner=True)
 def load_data(data_file: str) -> Optional[Dict[str, Any]]:
-    """エンベディングデータを読み込む関数
+    """Function to load embedding data
     
     Args:
-        data_file (str): データファイルのパス
+        data_file (str): Data file path
         
     Returns:
-        Optional[Dict[str, Any]]: 読み込まれたデータ、エラー時はNone
+        Optional[Dict[str, Any]]: Loaded data, None on error
     """
     try:
         if not os.path.exists(data_file):
-            logger.error(f"データファイル {data_file} が存在しません。")
+            logger.error(t("errors.file_not_found", filename=data_file))
             return None
             
         with open(data_file, 'rb') as f:
             data = pickle.load(f)
             
-        # データの検証
+        # Validate data
         required_keys = ['games', 'game_data_list', 'embeddings', 'similarity_matrix']
         for key in required_keys:
             if key not in data:
-                logger.error(f"データファイルに必要なキー '{key}' が含まれていません。")
+                logger.error(t("errors.missing_data_key", key=key))
                 return None
         
-        # ゲームデータを処理してYAMLに未知のメカニクス/カテゴリ/ランキングを追加
+        # Process game data to add unknown mechanics/categories/rankings to YAML
         process_game_data_for_yaml(data['game_data_list'])
                 
         return data
     except Exception as e:
-        logger.error(f"データファイルの読み込みに失敗しました: {e}")
+        logger.error(t("errors.file_load_failed", error=str(e)))
         return None
 
-# ゲームデータを処理してYAMLに未知のメカニクス/カテゴリ/ランキングを追加する関数
+# Function to process game data and add unknown mechanics/categories/rankings to YAML
 def process_game_data_for_yaml(game_data_list: List[Dict[str, Any]]) -> None:
     """
-    ゲームデータを処理し、YAMLに存在しないメカニクス/カテゴリ/ランキングを追加する
+    Process game data and add mechanics/categories/rankings not in YAML
     
     Args:
-        game_data_list (List[Dict[str, Any]]): ゲームデータのリスト
+        game_data_list (List[Dict[str, Any]]): List of game data
     """
     try:
-        # 各ゲームからメカニクス、カテゴリ、ランキングを抽出
+        # Extract mechanics, categories, and rankings from each game
         for game_data in game_data_list:
-            # メカニクスの処理
+            # Process mechanics
             if 'mechanics' in game_data and isinstance(game_data['mechanics'], list):
                 for mechanic in game_data['mechanics']:
                     if isinstance(mechanic, dict) and 'name' in mechanic:
                         mechanic_name = mechanic['name']
-                        # 既存のadd_missing_mechanic関数を使用
+                        # Use existing add_missing_mechanic function
                         add_missing_mechanic(mechanic_name)
             
-            # カテゴリの処理
+            # Process categories
             if 'categories' in game_data and isinstance(game_data['categories'], list):
                 for category in game_data['categories']:
                     if isinstance(category, dict) and 'name' in category:
                         category_name = category['name']
-                        # 既存のadd_missing_category関数を使用
+                        # Use existing add_missing_category function
                         add_missing_category(category_name)
             
-            # ランキングの処理
+            # Process rankings
             if 'ranks' in game_data and isinstance(game_data['ranks'], list):
                 for rank in game_data['ranks']:
                     if isinstance(rank, dict) and 'type' in rank:
                         rank_type = rank['type']
-                        # 既存のadd_missing_rank_type関数を使用
+                        # Use existing add_missing_rank_type function
                         add_missing_rank_type(rank_type)
         
-        # 保留中のメカニクスを保存
+        # Save pending mechanics
         flush_pending_mechanics()
         
-        logger.info("ゲームデータからYAMLファイルの更新が完了しました")
+        logger.info(t("info.yaml_update_complete"))
     except Exception as e:
-        logger.error(f"YAMLデータ処理中にエラーが発生しました: {e}")
+        logger.error(t("errors.yaml_processing_error", error=str(e)))
 
-# カテゴリとメカニクスの一覧を抽出
+# Extract list of categories and mechanics
 def extract_categories_and_mechanics(game_data_list: List[Dict[str, Any]]) -> Tuple[List[str], List[str]]:
-    """ゲームデータからカテゴリとメカニクスの一覧を抽出する関数
+    """Function to extract list of categories and mechanics from game data
     
     Args:
-        game_data_list (List[Dict[str, Any]]): ゲームデータのリスト
+        game_data_list (List[Dict[str, Any]]): List of game data
         
     Returns:
-        Tuple[List[str], List[str]]: カテゴリとメカニクスのリスト
+        Tuple[List[str], List[str]]: Lists of categories and mechanics
     """
     all_categories = set()
     all_mechanics = set()
     
     for game in game_data_list:
-        # カテゴリの収集
+        # Collect categories
         if 'categories' in game and isinstance(game['categories'], list):
             categories = [cat.get('name', '') for cat in game['categories'] 
                           if isinstance(cat, dict) and 'name' in cat]
             all_categories.update(categories)
         
-        # メカニクスの収集
+        # Collect mechanics
         if 'mechanics' in game and isinstance(game['mechanics'], list):
             mechanics = [mech.get('name', '') for mech in game['mechanics'] 
                          if isinstance(mech, dict) and 'name' in mech]
@@ -181,64 +184,64 @@ def extract_categories_and_mechanics(game_data_list: List[Dict[str, Any]]) -> Tu
     
     return sorted(list(all_categories)), sorted(list(all_mechanics))
 
-# フィルター設定UIを表示
+# Display filter settings UI
 def display_filter_ui(
     categories: List[str],
     mechanics: List[str]
 ) -> Tuple[List[str], List[str]]:
-    """フィルター設定UIを表示する関数
+    """Function to display filter settings UI
     
     Args:
-        categories (List[str]): カテゴリのリスト
-        mechanics (List[str]): メカニクスのリスト
+        categories (List[str]): List of categories
+        mechanics (List[str]): List of mechanics
         
     Returns:
-        Tuple[List[str], List[str]]: 選択されたカテゴリとメカニクスのリスト
+        Tuple[List[str], List[str]]: Selected lists of categories and mechanics
     """
-    with st.expander("検索フィルターを設定"):
-        st.markdown("### 検索フィルター")
+    with st.expander(t("similarity.search_filter")):
+        st.markdown(f"### {t('similarity.filter_title')}")
         
         col1, col2 = st.columns(2)
         
         with col1:
-            st.markdown("#### カテゴリで絞り込み")
+            st.markdown(f"#### {t('similarity.category_filter')}")
             selected_categories = st.multiselect(
-                "カテゴリを選択",
+                t("similarity.select_categories"),
                 options=categories,
                 default=st.session_state.category_filter
             )
         
         with col2:
-            st.markdown("#### メカニクスで絞り込み")
+            st.markdown(f"#### {t('similarity.mechanics_filter')}")
             selected_mechanics = st.multiselect(
-                "メカニクスを選択",
+                t("similarity.select_mechanics"),
                 options=mechanics,
                 default=st.session_state.mechanics_filter
             )
         
-        # 選択結果を保存
+        # Save selections
         st.session_state.category_filter = selected_categories
         st.session_state.mechanics_filter = selected_mechanics
     
     return selected_categories, selected_mechanics
 
-# ゲームをフィルタリングする関数
+# Function to filter games
 def filter_games(
     games: List[Dict[str, Any]],
     game_data_list: List[Dict[str, Any]],
     categories: List[str],
     mechanics: List[str]
 ) -> List[int]:
-    """ゲームをフィルタリングする関数
+    """Function to filter games
     
     Args:
-        games (List[Dict[str, Any]]): ゲーム情報のリスト
-        game_data_list (List[Dict[str, Any]]): ゲームデータのリスト
-        categories (List[str]): フィルタリングするカテゴリのリスト
-        mechanics (List[str]): フィルタリングするメカニクスのリスト
+        games (List[Dict[str, Any]]): List of game information
+        game_data_list (List[Dict[str, Any]]): List of game data
+        categories (List[str]): List of categories to filter
+        mechanics (List[str]): List of mechanics to filter
         
     Returns:
-        List[int]: フィルタリング後のゲームのインデックスリスト
+        List[int]: List of filtered game indices
     """
     if not categories and not mechanics:
         return list(range(len(games)))
@@ -254,7 +257,7 @@ def filter_games(
                 game_categories = set(cat.get('name', '') for cat in game_data['categories'] 
                                     if isinstance(cat, dict) and 'name' in cat)
             
-            # いずれかのカテゴリが一致するか
+            # Check if any category matches
             if not any(cat in game_categories for cat in categories):
                 match = False
         
@@ -264,7 +267,7 @@ def filter_games(
                 game_mechanics = set(mech.get('name', '') for mech in game_data['mechanics'] 
                                    if isinstance(mech, dict) and 'name' in mech)
             
-            # いずれかのメカニクスが一致するか
+            # Check if any mechanics matches
             if not any(mech in game_mechanics for mech in mechanics):
                 match = False
         
@@ -273,18 +276,19 @@ def filter_games(
     
     return filtered_indices
 
-# ゲーム情報カードの表示
+# Display game information card
 def display_game_card(
     game_data: Dict[str, Any],
     is_main: bool = False
 ) -> None:
-    """ゲーム情報カードを表示する関数
+    """Function to display game information card
     
     Args:
-        game_data (Dict[str, Any]): ゲームデータ
-        is_main (bool, optional): メインカードとして表示するか. デフォルトはFalse.
+        game_data (Dict[str, Any]): Game data
+        is_main (bool, optional): Whether to display as main card. Default is False.
     """
-    game_name = game_data.get('japanese_name', '') or game_data.get('name', '')
+    game_name = get_game_display_name(game_data)
+    secondary_name = get_game_secondary_name(game_data)
     
     with st.container():
         st.markdown(f"<div class='game-card'>", unsafe_allow_html=True)
@@ -292,7 +296,7 @@ def display_game_card(
         col1, col2 = st.columns([1, 3])
         
         with col1:
-            # サムネイル画像がある場合は表示
+            # Display thumbnail image if available
             thumbnail_url = game_data.get('thumbnail_url', '')
             if thumbnail_url:
                 st.image(thumbnail_url, width=150)
@@ -305,35 +309,39 @@ def display_game_card(
             else:
                 st.markdown(f"### {game_name}")
             
-            # ゲーム基本情報
+            # Secondary language name as caption
+            if secondary_name:
+                st.caption(format_language_caption(secondary_name))
+            
+            # Basic game information
             cols = st.columns(3)
             with cols[0]:
                 if 'year_published' in game_data:
-                    st.markdown(f"**発売年**: {game_data['year_published']}")
+                    st.markdown(f"**{t('common.year_published')}**: {game_data['year_published']}")
             with cols[1]:
                 if 'weight' in game_data:
-                    st.markdown(f"**複雑さ**: {game_data['weight']}")
+                    st.markdown(f"**{t('common.complexity')}**: {game_data['weight']}")
             with cols[2]:
                 if 'playing_time' in game_data:
-                    st.markdown(f"**プレイ時間**: {game_data['playing_time']}分")
+                    st.markdown(f"**{t('common.playing_time')}**: {game_data['playing_time']}{t('common.minutes')}")
             
-            # カテゴリとメカニクス
+            # Categories and mechanics
             if 'categories' in game_data:
                 categories = [cat.get('name', '') for cat in game_data['categories'] 
                              if isinstance(cat, dict) and 'name' in cat]
                 if categories:
-                    st.markdown(f"**カテゴリ**: {', '.join(categories)}")
+                    st.markdown(f"**{t('common.categories')}**: {', '.join(categories)}")
             
             if 'mechanics' in game_data:
                 mechanics = [mech.get('name', '') for mech in game_data['mechanics'] 
                             if isinstance(mech, dict) and 'name' in mech]
                 if mechanics:
-                    st.markdown(f"**メカニクス**: {', '.join(mechanics[:5])}")
+                    st.markdown(f"**{t('common.mechanics')}**: {', '.join(mechanics[:5])}")
                     if len(mechanics) > 5:
-                        st.markdown(f"*および他 {len(mechanics)-5} 個*")
+                        st.markdown(f"*{t('common.and_more', count=len(mechanics)-5)}*")
             
             if is_main and 'description' in game_data:
-                with st.expander("ゲーム説明を表示"):
+                with st.expander(t("details.game_description")):
                     st.markdown(game_data['description'])
         
         st.markdown("</div>", unsafe_allow_html=True)
@@ -347,75 +355,74 @@ def display_similar_game_card(
     similarity_matrix: np.ndarray
 ) -> None:
     """
-    類似ゲームのカードを表示する関数
+    Function to display similar game card
     
     Args:
-        rank (int): 類似度ランク
-        idx (int): ゲームのインデックス
-        selected_index (int): 選択されたゲームのインデックス
-        games (List[Dict[str, Any]]): ゲーム情報のリスト
-        game_data_list (List[Dict[str, Any]]): ゲームデータのリスト
-        similarity_matrix (np.ndarray): 類似度行列
+        rank (int): Similarity rank
+        idx (int): Game index
+        selected_index (int): Selected game index
+        games (List[Dict[str, Any]]): List of game information
+        game_data_list (List[Dict[str, Any]]): List of game data
+        similarity_matrix (np.ndarray): Similarity matrix
     """
-    # app.pyでの関数の実際の使用状況に応じて、実装を復元
-    # もしくは互換性のために関数の枠を維持
+    # Implementation maintained for compatibility
     similarity = similarity_matrix[selected_index][idx]
     
-    # 類似度スコア表示
-    st.markdown(f"<div class='similarity-score'>類似度: {similarity:.4f}</div>", unsafe_allow_html=True)
+    # Display similarity score
+    st.markdown(f"<div class='similarity-score'>{t('similarity.similarity_score', score=f'{similarity:.4f}')}</div>", unsafe_allow_html=True)
     
-    # ゲームカード表示
+    # Display game card
     display_game_card(game_data_list[idx])
 
-# 類似ゲームの取得
+# Get similar games
 def get_similar_indices(
     selected_index: int,
     similarity_matrix: np.ndarray,
     top_n: int,
     similarity_threshold: float = 0.0
 ) -> np.ndarray:
-    """類似度が高いゲームのインデックスを取得する関数
+    """Function to get indices of games with high similarity
     
     Args:
-        selected_index (int): 選択されたゲームのインデックス
-        similarity_matrix (np.ndarray): 類似度行列
-        top_n (int): 取得するゲーム数
-        similarity_threshold (float, optional): 類似度閾値. デフォルトは0.0.
+        selected_index (int): Selected game index
+        similarity_matrix (np.ndarray): Similarity matrix
+        top_n (int): Number of games to get
+        similarity_threshold (float, optional): Similarity threshold. Default is 0.0.
         
     Returns:
-        np.ndarray: 類似ゲームのインデックス配列
+        np.ndarray: Array of similar game indices
     """
-    # 自分自身を除外した類似度
+    # Similarity excluding self
     similarities = similarity_matrix[selected_index]
     mask = (similarities >= similarity_threshold) & (np.arange(len(similarities)) != selected_index)
     
-    # 閾値を超えるインデックスを抽出し、類似度順にソート
+    # Extract indices that exceed threshold and sort by similarity
     filtered_indices = np.where(mask)[0]
     if filtered_indices.size == 0:
         return np.array([])
         
     sorted_indices = filtered_indices[np.argsort(similarities[filtered_indices])[::-1]]
     
-    # top_n件に制限
+    # Limit to top_n
     return sorted_indices[:min(top_n, len(sorted_indices))]
 
-# 類似性の理由を分析する関数
+# Function to analyze similarity reasons
 def analyze_similarity_reasons(
     game1: Dict[str, Any],
     game2: Dict[str, Any]
 ) -> List[str]:
-    """2つのゲーム間の類似理由を分析する関数
+    """Function to analyze similarity reasons between two games
     
     Args:
-        game1 (Dict[str, Any]): 1つ目のゲームデータ
-        game2 (Dict[str, Any]): 2つ目のゲームデータ
+        game1 (Dict[str, Any]): First game data
+        game2 (Dict[str, Any]): Second game data
         
     Returns:
-        List[str]: 類似理由のリスト
+        List[str]: List of similarity reasons
     """
     reasons = []
     
-    # カテゴリの比較
+    # Compare categories
     g1_categories = set(
         [cat.get('name', '') for cat in game1.get('categories', [])
          if isinstance(cat, dict) and 'name' in cat]
@@ -426,9 +433,9 @@ def analyze_similarity_reasons(
     )
     common_categories = g1_categories.intersection(g2_categories)
     if common_categories:
-        reasons.append(f"共通カテゴリ: {', '.join(common_categories)}")
+        reasons.append(f"{t('similarity.common_categories')}: {', '.join(common_categories)}")
     
-    # メカニクスの比較
+    # Compare mechanics
     g1_mechanics = set(
         [mech.get('name', '') for mech in game1.get('mechanics', [])
          if isinstance(mech, dict) and 'name' in mech]
@@ -439,94 +446,103 @@ def analyze_similarity_reasons(
     )
     common_mechanics = g1_mechanics.intersection(g2_mechanics)
     if common_mechanics:
-        reasons.append(f"共通メカニクス: {', '.join(common_mechanics)}")
+        reasons.append(f"{t('similarity.common_mechanics')}: {', '.join(common_mechanics)}")
     
-    # 戦略的深さの比較
+    # Compare strategic depth
     if 'learning_analysis' in game1 and 'learning_analysis' in game2:
         g1_depth = game1.get('learning_analysis', {}).get('strategic_depth_description', '')
         g2_depth = game2.get('learning_analysis', {}).get('strategic_depth_description', '')
         if g1_depth and g2_depth and g1_depth == g2_depth:
-            reasons.append(f"同じ戦略的深さ: {g1_depth}")
+            reasons.append(f"{t('similarity.same_strategic_depth')}: {g1_depth}")
     
-    # プレイヤータイプの比較
+    # Compare player types
     if 'learning_analysis' in game1 and 'learning_analysis' in game2:
         g1_player_types = set(game1.get('learning_analysis', {}).get('player_types', []))
         g2_player_types = set(game2.get('learning_analysis', {}).get('player_types', []))
         common_player_types = g1_player_types.intersection(g2_player_types)
         if common_player_types:
-            reasons.append(f"共通プレイヤータイプ: {', '.join(common_player_types)}")
+            reasons.append(f"{t('similarity.common_player_types')}: {', '.join(common_player_types)}")
     
-    # 重さ（複雑さ）の比較
+    # Compare weight (complexity)
     if 'weight' in game1 and 'weight' in game2:
         try:
             g1_weight = float(game1.get('weight', 0))
             g2_weight = float(game2.get('weight', 0))
-            if abs(g1_weight - g2_weight) < 0.5:  # 重さの差が0.5未満なら似ている
-                reasons.append(f"似た複雑さ: {g1_weight:.2f} vs {g2_weight:.2f}")
+            if abs(g1_weight - g2_weight) < 0.5:  # Similar if difference is less than 0.5
+                reasons.append(f"{t('similarity.similar_complexity')}: {g1_weight:.2f} vs {g2_weight:.2f}")
         except (ValueError, TypeError):
             pass
     
-    # 出版年の比較
+    # Compare publication year
     if 'year_published' in game1 and 'year_published' in game2:
         try:
             g1_year = int(game1.get('year_published', 0))
             g2_year = int(game2.get('year_published', 0))
             if abs(g1_year - g2_year) <= 5:
-                reasons.append(f"近い発売年: {g1_year} vs {g2_year}")
+                reasons.append(f"{t('similarity.close_publication_year')}: {g1_year} vs {g2_year}")
         except (ValueError, TypeError):
             pass
     
-    # 理由がない場合
+    # If no reasons found
     if not reasons:
-        # 説明文から共通のキーワードを抽出
+        # Extract common keywords from descriptions
         g1_desc = str(game1.get('description', '')).lower()
         g2_desc = str(game2.get('description', '')).lower()
         
-        # 単語分割（簡易的）
+        # Simple word splitting
         g1_words = set(g1_desc.split())
         g2_words = set(g2_desc.split())
         common_words = g1_words.intersection(g2_words)
         
-        # 一般的な単語を除外
+        # Exclude common words
         stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'with', 'by', 'about', 'as', 'of', 'from'}
         meaningful_words = [word for word in common_words if word not in stop_words and len(word) > 3]
         
         if meaningful_words:
-            reasons.append(f"説明文の共通キーワード: {', '.join(meaningful_words[:5])}")
+            reasons.append(f"{t('similarity.common_keywords')}: {', '.join(meaningful_words[:5])}")
         else:
-            reasons.append("テキスト内容の全体的な類似性")
+            reasons.append(t("similarity.overall_similarity"))
     
     return reasons
 
-# 類似性ヒートマップの生成
+# Generate similarity heatmap
 def generate_heatmap(
     selected_index: int,
     games: List[Dict[str, Any]],
     similarity_matrix: np.ndarray,
     top_n: int = 10
 ) -> Optional[io.BytesIO]:
-    """類似性ヒートマップを生成する関数
+    """Function to generate similarity heatmap
     
     Args:
-        selected_index (int): 選択されたゲームのインデックス
-        games (List[Dict[str, Any]]): ゲーム情報のリスト
-        similarity_matrix (np.ndarray): 類似度行列
-        top_n (int, optional): 表示するゲーム数. デフォルトは10.
+        selected_index (int): Selected game index
+        games (List[Dict[str, Any]]): List of game information
+        similarity_matrix (np.ndarray): Similarity matrix
+        top_n (int, optional): Number of games to display. Default is 10.
         
     Returns:
-        Optional[io.BytesIO]: ヒートマップ画像のバッファ、エラー時はNone
+        Optional[io.BytesIO]: Heatmap image buffer, None on error
     """
     try:
         similar_indices = np.argsort(similarity_matrix[selected_index])[::-1][1:top_n+1]
         all_indices = [selected_index] + list(similar_indices)
         
-        # 類似度行列のサブセットを作成
+        # Create subset of similarity matrix
         sub_matrix = similarity_matrix[np.ix_(all_indices, all_indices)]
         
-        # ラベルの作成
-        labels = [games[i].get('japanese_name', '') or games[i].get('name', '') for i in all_indices]
+        # Create labels with language awareness
+        labels = []
+        for i in all_indices:
+            # Load game data to get proper display name
+            game_data = games[i] if isinstance(games[i], dict) else None
+            if game_data:
+                label = get_game_display_name(game_data)
+            else:
+                # Fallback if game data isn't properly structured
+                label = games[i].get('japanese_name', '') or games[i].get('name', '')
+            labels.append(label)
         
-        # 長いラベルを短縮
+        # Shorten long labels
         shortened_labels = []
         for label in labels:
             if len(label) > 15:
@@ -534,10 +550,10 @@ def generate_heatmap(
             else:
                 shortened_labels.append(label)
         
-        # 日本語表示用にフォントを再確認
+        # Reconfirm font for Japanese display
         setup_japanese_fonts()
         
-        # ヒートマップの作成
+        # Create heatmap
         plt.figure(figsize=(10, 8))
         ax = sns.heatmap(
             sub_matrix,
@@ -548,14 +564,14 @@ def generate_heatmap(
             yticklabels=shortened_labels
         )
         
-        # フォントサイズの調整
+        # Adjust font size
         plt.setp(ax.get_xticklabels(), fontsize=9, rotation=45, ha="right", rotation_mode="anchor")
         plt.setp(ax.get_yticklabels(), fontsize=9)
         
-        plt.title("ゲーム間の類似度ヒートマップ", fontsize=12)
+        plt.title(t("similarity.heatmap_title"), fontsize=12)
         plt.tight_layout()
         
-        # プロットをStreamlitに表示するための変換
+        # Convert plot for Streamlit display
         buf = io.BytesIO()
         plt.savefig(buf, format='png', dpi=150)
         plt.close()
@@ -563,10 +579,10 @@ def generate_heatmap(
         
         return buf
     except Exception as e:
-        logger.error(f"ヒートマップ生成エラー: {e}")
+        logger.error(f"Heatmap generation error: {e}")
         return None
 
-# 類似ゲームの分布データを分析する関数
+# Function to analyze similar game distribution data
 def analyze_distribution_data(
     selected_index: int,
     games: List[Dict[str, Any]],
@@ -574,77 +590,80 @@ def analyze_distribution_data(
     similarity_matrix: np.ndarray,
     top_n: int = 20
 ) -> Tuple[pd.DataFrame, Counter, Counter]:
-    """類似ゲームの分布データを分析する関数
+    """Function to analyze similar game distribution data
     
     Args:
-        selected_index (int): 選択されたゲームのインデックス
-        games (List[Dict[str, Any]]): ゲーム情報のリスト
-        game_data_list (List[Dict[str, Any]]): ゲームデータのリスト
-        similarity_matrix (np.ndarray): 類似度行列
-        top_n (int, optional): 分析するゲーム数. デフォルトは20.
+        selected_index (int): Selected game index
+        games (List[Dict[str, Any]]): List of game information
+        game_data_list (List[Dict[str, Any]]): List of game data
+        similarity_matrix (np.ndarray): Similarity matrix
+        top_n (int, optional): Number of games to analyze. Default is 20.
         
     Returns:
-        Tuple[pd.DataFrame, Counter, Counter]: 類似度データフレーム、カテゴリ分布、メカニクス分布
+        Tuple[pd.DataFrame, Counter, Counter]: Similarity dataframe, category distribution, mechanics distribution
     """
-    # 類似度の高いゲームを取得
+    # Get high similarity games
     similarities = similarity_matrix[selected_index]
     indices = np.argsort(similarities)[::-1][1:top_n+1]
     
-    # DataFrameの作成
-    display_names = [games[i].get('japanese_name', '') or games[i].get('name', '') for i in indices]
+    # Create DataFrame with language-aware names
+    display_names = []
+    for i in indices:
+        display_names.append(get_game_display_name(game_data_list[i]))
+    
     df = pd.DataFrame({
-        'ゲーム名': display_names,
-        '類似度': [similarities[i] for i in indices]
+        t('common.game_name'): display_names,
+        t('common.similarity'): [similarities[i] for i in indices]
     })
     
-    # カテゴリとメカニクスの分布を分析
+    # Analyze category and mechanics distribution
     all_categories = []
     all_mechanics = []
     
-    for i in indices[:10]:  # 上位10ゲームのみ
+    for i in indices[:10]:  # Top 10 games only
         game = game_data_list[i]
         
-        # カテゴリの収集
+        # Collect categories
         if 'categories' in game:
             cats = [cat.get('name', '') for cat in game['categories'] 
                    if isinstance(cat, dict) and 'name' in cat]
             all_categories.extend(cats)
         
-        # メカニクスの収集
+        # Collect mechanics
         if 'mechanics' in game:
             mechs = [mech.get('name', '') for mech in game['mechanics'] 
                     if isinstance(mech, dict) and 'name' in mech]
             all_mechanics.extend(mechs)
     
-    # カウント
+    # Count
     category_counts = Counter(all_categories)
     mechanics_counts = Counter(all_mechanics)
     
     return df, category_counts, mechanics_counts
 
-# カテゴリ分布の円グラフを描画
+# Draw category distribution pie chart
 def plot_category_pie_chart(category_counts: Counter) -> Optional[plt.Figure]:
-    """カテゴリ分布の円グラフを描画する関数
+    """Function to draw category distribution pie chart
     
     Args:
-        category_counts (Counter): カテゴリのカウント
+        category_counts (Counter): Category counts
         
     Returns:
-        Optional[plt.Figure]: 描画した図、データがない場合はNone
+        Optional[plt.Figure]: Drawn figure, None if no data
     """
     if not category_counts:
         return None
     
-    # 日本語表示用にフォントを再確認
+    # Reconfirm font for Japanese display
     setup_japanese_fonts()
     
-    # トップ8カテゴリを抽出（グラフを見やすくするため）
+    # Extract top 8 categories (for graph readability)
     top_categories = dict(category_counts.most_common(8))
     others_count = sum(count for cat, count in category_counts.items() if cat not in top_categories)
     if others_count > 0:
-        top_categories['その他'] = others_count
+        top_categories[t('common.others')] = others_count
     
-    # 円グラフ
+    # Pie chart
     fig, ax = plt.subplots(figsize=(8, 8))
     wedges, texts, autotexts = ax.pie(
         top_categories.values(), 
@@ -653,35 +672,35 @@ def plot_category_pie_chart(category_counts: Counter) -> Optional[plt.Figure]:
         textprops={'fontsize': 9}
     )
     
-    # ラベルのフォントサイズを調整
+    # Adjust label font size
     plt.setp(autotexts, size=8)
     plt.setp(texts, size=9)
     
     ax.axis('equal')
-    plt.title('類似ゲームのカテゴリ分布', fontsize=12)
+    plt.title(t('similarity.category_distribution_title'), fontsize=12)
     
     return fig
 
-# メカニクス分布の棒グラフを描画
+# Draw mechanics distribution bar chart
 def plot_mechanics_bar_chart(mechanics_counts: Counter) -> Optional[plt.Figure]:
-    """メカニクス分布の棒グラフを描画する関数
+    """Function to draw mechanics distribution bar chart
     
     Args:
-        mechanics_counts (Counter): メカニクスのカウント
+        mechanics_counts (Counter): Mechanics counts
         
     Returns:
-        Optional[plt.Figure]: 描画した図、データがない場合はNone
+        Optional[plt.Figure]: Drawn figure, None if no data
     """
     if not mechanics_counts:
         return None
     
-    # 日本語表示用にフォントを再確認
+    # Reconfirm font for Japanese display
     setup_japanese_fonts()
     
-    # 上位10個のみ表示
+    # Display only top 10
     top_mechanics = dict(mechanics_counts.most_common(10))
     
-    # 長いメカニクス名を短縮
+    # Shorten long mechanics names
     shortened_mechs = {}
     for mech, count in top_mechanics.items():
         if len(mech) > 25:
@@ -689,58 +708,58 @@ def plot_mechanics_bar_chart(mechanics_counts: Counter) -> Optional[plt.Figure]:
         else:
             shortened_mechs[mech] = count
     
-    # 横棒グラフ
+    # Horizontal bar chart
     fig, ax = plt.subplots(figsize=(8, 8))
     bars = ax.barh(list(shortened_mechs.keys()), list(shortened_mechs.values()), color='lightgreen')
-    ax.set_xlabel('出現回数', fontsize=12)
+    ax.set_xlabel(t('common.occurrence_count'), fontsize=12)
     ax.grid(axis='x', linestyle='--', alpha=0.7)
     
-    # 値を表示
+    # Display values
     for i, bar in enumerate(bars):
         ax.text(bar.get_width() + 0.1, bar.get_y() + bar.get_height()/2, 
                 str(list(shortened_mechs.values())[i]), 
                 va='center')
     
-    plt.title('類似ゲームのメカニクス分布', fontsize=12)
+    plt.title(t('similarity.mechanics_distribution_title'), fontsize=12)
     plt.tight_layout()
     
     return fig
 
-# 類似ゲームの棒グラフを描画
+# Draw similar games bar chart
 def plot_similar_games_bar_chart(df: pd.DataFrame) -> plt.Figure:
-    """類似ゲームの棒グラフを描画する関数
+    """Function to draw similar games bar chart
     
     Args:
-        df (pd.DataFrame): 類似ゲームのデータフレーム
+        df (pd.DataFrame): Similar games dataframe
         
     Returns:
-        plt.Figure: 描画した図
+        plt.Figure: Drawn figure
     """
-    # 日本語表示用にフォントを再確認
+    # Reconfirm font for Japanese display
     setup_japanese_fonts()
     
-    # 長いゲーム名を短縮
+    # Shorten long game names
     shortened_names = []
-    for name in df['ゲーム名']:
+    for name in df[t('common.game_name')]:
         if len(name) > 20:
             shortened_names.append(name[:17] + "...")
         else:
             shortened_names.append(name)
     
     df_plot = df.copy()
-    df_plot['短縮名'] = shortened_names
+    df_plot[t('common.shortened_name')] = shortened_names
     
-    # プロットの作成
+    # Create plot
     fig, ax = plt.subplots(figsize=(10, 8))
-    bars = ax.barh(df_plot['短縮名'], df['類似度'], color='skyblue')
-    ax.set_xlabel('類似度', fontsize=12)
+    bars = ax.barh(df_plot[t('common.shortened_name')], df[t('common.similarity')], color='skyblue')
+    ax.set_xlabel(t('common.similarity'), fontsize=12)
     ax.set_xlim(0, 1)
     ax.grid(axis='x', linestyle='--', alpha=0.7)
     
-    # 値を表示
+    # Display values
     for i, bar in enumerate(bars):
         ax.text(bar.get_width() + 0.01, bar.get_y() + bar.get_height()/2, 
-                f'{df.iloc[i]["類似度"]:.2f}', 
+                f'{df.iloc[i][t("common.similarity")]:.2f}', 
                 va='center')
     
     plt.tight_layout()

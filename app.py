@@ -3,14 +3,14 @@ import os
 import logging
 from typing import Tuple
 
-# 元のBoardGame Analyzerからのインポート
+# Import from the original BoardGame Analyzer
 from ui.ui_components import load_css
 from ui.pages.search_page import search_page
 from ui.pages.details_page import details_page
 from ui.pages.save_page import save_page
 from ui.pages.compare_page import compare_page
 
-# 類似性検索アプリの関数を個別にインポート
+# Import functions from the similarity search app individually
 from src.analysis.similarity import (
     load_data, 
     extract_categories_and_mechanics,
@@ -26,13 +26,16 @@ from src.analysis.similarity import (
     plot_similar_games_bar_chart,
 )
 
-# 改善された類似性分析モジュールからインポート
+# Import from improved similarity analysis module
 from src.analysis.improved_similarity_analyzer import (
     get_formatted_similarity_reasons,
     calculate_overall_similarity
 )
 
-# ロギング設定
+# Import language utilities
+from src.utils.language import language_manager, t, get_game_display_name, get_game_secondary_name
+
+# Logging configuration
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -42,36 +45,36 @@ logging.basicConfig(
 )
 logger = logging.getLogger("boardgame_app")
 
-# サイドバー設定を担当する関数
+# Function for sidebar settings
 def setup_similarity_sidebar() -> Tuple[str, int, float]:
-    """サイドバーの設定を行い、ユーザー設定を返す関数
+    """Set up the sidebar and return user settings
     
     Returns:
-        Tuple[str, int, float]: データファイル名、表示するゲーム数、類似度閾値
+        Tuple[str, int, float]: Data file name, number of games to display, similarity threshold
     """
     with st.sidebar:
-        st.header("類似性検索設定")
+        st.header(t("similarity.settings"))
         data_file = st.text_input(
-            "エンベディングデータファイル",
+            t("similarity.embedding_file"),
             value="game_embeddings.pkl"
         )
         
-        st.header("検索設定")
+        st.header(t("similarity.search_settings"))
         top_n = st.slider(
-            "表示する類似ゲーム数",
+            t("similarity.num_games"),
             min_value=1,
             max_value=20,
             value=5
         )
         similarity_threshold = st.slider(
-            "類似度閾値",
+            t("similarity.threshold"),
             min_value=0.0,
             max_value=1.0,
             value=0.7,
             step=0.05
         )
         
-        # カテゴリとメカニクスのフィルタリング（後で使用）
+        # Category and mechanics filtering (used later)
         if 'category_filter' not in st.session_state:
             st.session_state.category_filter = []
         
@@ -80,9 +83,9 @@ def setup_similarity_sidebar() -> Tuple[str, int, float]:
         
     return data_file, top_n, similarity_threshold
 
-# カスタムCSS
+# Custom CSS
 def load_custom_similarity_css() -> None:
-    """類似性検索用のカスタムCSSを読み込む関数"""
+    """Load custom CSS for similarity search"""
     st.markdown("""
     <style>
         .game-card {
@@ -148,26 +151,26 @@ def load_custom_similarity_css() -> None:
     </style>
     """, unsafe_allow_html=True)
 
-# 類似性検索ページ
+# Similarity search page
 def similarity_search_page():
-    """類似性検索機能を表示するページ"""
-    st.header("ボードゲーム類似性検索")
-    st.markdown("事前計算されたエンベディングを使用してボードゲームの類似性を検索するアプリケーションです。")
+    """Page to display similarity search functionality"""
+    st.header(t("similarity.title"))
+    st.markdown(t("similarity.description"))
     
-    # サイドバーの設定
+    # Sidebar settings
     data_file, top_n, similarity_threshold = setup_similarity_sidebar()
     
-    # データファイルの存在確認
+    # Check data file existence
     if not os.path.exists(data_file):
-        st.error(f"データファイル {data_file} が存在しません。正しいパスを指定してください。")
+        st.error(t("errors.file_not_found", filename=data_file))
         return
     
-    # データの読み込み
-    with st.spinner("データを読み込んでいます..."):
+    # Load data
+    with st.spinner(t("loading.data")):
         data = load_data(data_file)
     
     if data is None:
-        st.error(f"データファイル {data_file} を読み込めませんでした。")
+        st.error(t("errors.file_load_failed", filename=data_file))
         return
     
     games = data['games']
@@ -175,71 +178,74 @@ def similarity_search_page():
     embeddings = data['embeddings']
     similarity_matrix = data['similarity_matrix']
     
-    st.success(f"{len(games)}個のゲームデータが読み込まれました。")
+    st.success(t("loading.games_loaded", count=len(games)))
     
-    # カテゴリとメカニクスのリストを抽出
+    # Extract list of categories and mechanics
     categories, mechanics = extract_categories_and_mechanics(game_data_list)
     
-    # フィルター設定
+    # Filter settings
     selected_categories, selected_mechanics = display_filter_ui(categories, mechanics)
     
-    # フィルタリング
+    # Filtering
     filtered_indices = filter_games(games, game_data_list, selected_categories, selected_mechanics)
     if not filtered_indices:
-        st.warning("条件に合うゲームが見つかりませんでした。フィルター条件を変更してください。")
+        st.warning(t("similarity.no_matching_games"))
         return
     
-    # フィルター適用後のゲーム名リスト
+    # List of game names after filtering
     filtered_display_names = [
-        games[i].get('japanese_name', '') or games[i].get('name', '') 
+        get_game_display_name(game_data_list[i])
         for i in filtered_indices
     ]
     
-    # ゲーム選択による検索
+    # Game selection by search
     selected_game = st.selectbox(
-        "検索するゲームを選択してください",
+        t("similarity.select_game"),
         filtered_display_names,
         index=0
     )
     
-    # 選択されたゲームの元のインデックスを取得
+    # Get the original index of the selected game
     selected_filtered_index = filtered_display_names.index(selected_game)
     selected_index = filtered_indices[selected_filtered_index]
     
-    # 選択されたゲームの情報を表示
-    st.markdown("## 選択されたゲーム")
+    # Display information of the selected game
+    st.markdown(f"## {t('similarity.selected_game')}")
     display_game_card(game_data_list[selected_index], is_main=True)
     
-    if st.button("類似ゲームを検索"):
-        # プログレスバーを表示
+    if st.button(t("similarity.search_button")):
+        # Show progress bar
         progress_bar = st.progress(0)
         
-        st.markdown("## 類似ゲーム")
+        st.markdown(f"## {t('similarity.similar_games')}")
         
-        # タブを作成
-        tab1, tab2, tab3 = st.tabs(["類似ゲーム一覧", "類似度ヒートマップ", "データ分析"])
+        # Create tabs
+        tab1, tab2, tab3 = st.tabs([
+            t("similarity.tabs.game_list"),
+            t("similarity.tabs.heatmap"),
+            t("similarity.tabs.analysis")
+        ])
         
         with tab1:
-            # 類似ゲームのインデックスを取得
+            # Get similar game indices
             similar_indices = get_similar_indices(selected_index, similarity_matrix, top_n, similarity_threshold)
             
             if not similar_indices.size:
-                st.warning(f"類似度が {similarity_threshold} を超えるゲームが見つかりませんでした。閾値を下げてみてください。")
+                st.warning(t("similarity.no_similar_games", threshold=similarity_threshold))
             else:
-                # 各類似ゲームを表示
+                # Display each similar game
                 for rank, idx in enumerate(similar_indices, 1):
                     similarity = similarity_matrix[selected_index][idx]
                     
-                    # 類似度スコア表示
-                    st.markdown(f"<div class='similarity-score'>類似度: {similarity:.4f}</div>", unsafe_allow_html=True)
+                    # Display similarity score
+                    st.markdown(f"<div class='similarity-score'>{t('similarity.similarity_score', score=f'{similarity:.4f}')}</div>", unsafe_allow_html=True)
                     
-                    # ゲームカード表示
+                    # Display game card
                     display_game_card(game_data_list[idx])
                     
-                    # *** 改善版類似性分析モジュールを使用 ***
-                    # 類似性の理由を分析して表示
+                    # Use improved similarity analysis module
                     similarity_reasons = get_formatted_similarity_reasons(game_data_list[selected_index], game_data_list[idx])
-                    st.markdown("**類似性の理由:**")
+                    st.markdown(f"**{t('similarity.similarity_reasons')}:**")
                     for reason in similarity_reasons:
                         st.markdown(f"<div class='reason-item'>• {reason}</div>", unsafe_allow_html=True)
                     
@@ -253,92 +259,114 @@ def similarity_search_page():
                 if heatmap_buffer:
                     st.image(heatmap_buffer)
                 else:
-                    st.info("ヒートマップを生成できませんでした。")
+                    st.info(t("errors.heatmap_failed"))
             except Exception as e:
-                logger.error(f"ヒートマップ表示エラー: {e}")
-                st.error(f"ヒートマップ表示中にエラーが発生しました: {e}")
+                logger.error(f"Heatmap display error: {e}")
+                st.error(t("errors.heatmap_error", error=str(e)))
             
             progress_bar.progress(66)
         
         with tab3:
             try:
-                # 選択したゲームと他のゲームとの類似度をプロット
+                # Plot similarity to selected game with others
                 df, category_counts, mechanics_counts = analyze_distribution_data(
                     selected_index, games, game_data_list, similarity_matrix
                 )
                 
-                st.markdown("### 最も類似度が高い20ゲーム")
+                st.markdown(f"### {t('similarity.analysis.top_games')}")
                 fig = plot_similar_games_bar_chart(df)
                 st.pyplot(fig)
                 
-                st.markdown("### カテゴリとメカニクスの分析")
+                st.markdown(f"### {t('analysis.category_mechanics')}")
                 
                 col1, col2 = st.columns(2)
                 
                 with col1:
-                    st.markdown("#### カテゴリの分布")
+                    st.markdown(f"#### {t('similarity.analysis.category_distribution')}")
                     if category_counts:
                         fig = plot_category_pie_chart(category_counts)
                         if fig:
                             st.pyplot(fig)
                         else:
-                            st.info("カテゴリの円グラフを生成できませんでした。")
+                            st.info(t("errors.category_chart_failed"))
                     else:
-                        st.info("類似ゲームのカテゴリ情報がありません")
+                        st.info(t("similarity.analysis.no_categories"))
                 
                 with col2:
-                    st.markdown("#### メカニクスの分布")
+                    st.markdown(f"#### {t('similarity.analysis.mechanics_distribution')}")
                     if mechanics_counts:
                         fig = plot_mechanics_bar_chart(mechanics_counts)
                         if fig:
                             st.pyplot(fig)
                         else:
-                            st.info("メカニクスの棒グラフを生成できませんでした。")
+                            st.info(t("errors.mechanics_chart_failed"))
                     else:
-                        st.info("類似ゲームのメカニクス情報がありません")
+                        st.info(t("similarity.analysis.no_mechanics"))
             except Exception as e:
-                logger.error(f"データ分析エラー: {e}")
-                st.error(f"データ分析中にエラーが発生しました: {e}")
+                logger.error(f"Data analysis error: {e}")
+                st.error(t("errors.analysis_error", error=str(e)))
         
-        # プログレスバーを完了させる
+        # Complete the progress bar
         progress_bar.progress(100)
 
 def main():
-    """統合されたボードゲームアプリケーションのメインエントリポイント"""
-    # ページ設定
+    """Main entry point for the integrated board game application"""
+    # Page configuration
     st.set_page_config(
-        page_title="ボードゲームアプリ",
+        page_title="BoardGame App",  # Use a default title first
         page_icon="🎲",
         layout="wide"
     )
 
-    # カスタムCSSをロード
-    load_css()  # BoardGame Analyzer用のCSS
-    load_custom_similarity_css()  # 類似性検索用のCSS
+    # Load custom CSS
+    load_css()  # CSS for BoardGame Analyzer
+    load_custom_similarity_css()  # CSS for similarity search
 
-    # サイドバーでアプリの機能を選択
-    st.sidebar.title("機能")
-    option = st.sidebar.radio(
-        "操作を選んでください",
-        ["ゲーム名で検索", "ゲームIDで詳細情報を取得", 
-         "YAMLでデータを保存", "ゲーム比較", "類似性検索"]
-    )
+    # Sidebar for language switching and app functions
+    with st.sidebar:
+        # Language switching
+        st.markdown(f"### {t('sidebar.language')}")
+        language = st.selectbox(
+            "",
+            options=list(language_manager.supported_languages.keys()),
+            format_func=lambda x: language_manager.supported_languages[x],
+            index=list(language_manager.supported_languages.keys()).index(st.session_state.language),
+            key="language_selector"
+        )
+        
+        if language != st.session_state.language:
+            language_manager.switch_language(language)
+        
+        st.markdown("---")
+        
+        # Function selection
+        st.title(t("sidebar.functions"))
+        option = st.radio(
+            t("sidebar.select_operation"),
+            [
+                t("sidebar.search_by_name"),
+                t("sidebar.get_details_by_id"),
+                t("sidebar.save_yaml"),
+                t("sidebar.compare_games"),
+                t("sidebar.similarity_search")
+            ]
+        )
 
-    # 選択された機能に基づいてページを表示
-    if option == "ゲーム名で検索":
+    # Display page based on selected function
+    if option == t("sidebar.search_by_name"):
         search_page()
-    elif option == "ゲームIDで詳細情報を取得":
+    elif option == t("sidebar.get_details_by_id"):
         details_page()
-    elif option == "YAMLでデータを保存":
+    elif option == t("sidebar.save_yaml"):
         save_page()
-    elif option == "ゲーム比較":
+    elif option == t("sidebar.compare_games"):
         compare_page()
-    elif option == "類似性検索":
+    elif option == t("sidebar.similarity_search"):
         similarity_search_page()
 
-    # フッター
+    # Footer
     st.sidebar.markdown("---")
-    st.sidebar.caption("BoardGameGeek API と事前計算されたエンベディングを使用したボードゲームデータツール")
+    st.sidebar.caption(t("app.description"))
 
 if __name__ == "__main__":
     main()

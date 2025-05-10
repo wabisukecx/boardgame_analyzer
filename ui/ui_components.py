@@ -3,37 +3,38 @@ import pandas as pd
 import plotly.graph_objects as go
 from src.analysis.game_analyzer import generate_game_summary
 from src.analysis.learning_curve import get_curve_type_display
+from src.utils.language import t, get_game_display_name, get_game_secondary_name, format_language_caption, get_metric_names
 
 def load_css():
-    """アプリケーションで使用するカスタムCSSをロードする"""
+    """Load custom CSS used in the application"""
     st.markdown("""
     <style>
-        /* メトリック値のフォントサイズを調整 */
+        /* Adjust font size for metric values */
         .metric-value {
             font-size: 0.9rem !important;
         }
         
-        /* カスタム指標用のスタイル - 幅を拡張 */
+        /* Style for custom metrics - expanded width */
         .custom-metric {
             padding: 12px;
             border-radius: 5px;
             background-color: #f8f9fa;
             margin-bottom: 10px;
-            width: 100%; /* 幅を100%に設定 */
-            box-sizing: border-box; /* パディングを含めた幅計算 */
+            width: 100%;
+            box-sizing: border-box;
         }
         .custom-metric-label {
             font-size: 0.85rem;
             color: #6c757d;
             font-weight: bold;
-            margin-bottom: 4px; /* ラベルと値の間隔を調整 */
+            margin-bottom: 4px;
         }
         .custom-metric-value {
             font-size: 1.0rem;
             font-weight: 400;
         }
         
-        /* サムネイル画像用のスタイル */
+        /* Style for thumbnail images */
         .game-thumbnail {
             width: 100%;
             border-radius: 5px;
@@ -41,14 +42,14 @@ def load_css():
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         
-        /* 基本情報の見出しスタイル */
+        /* Basic info heading style */
         .info-heading {
             font-size: 0.85rem;
             font-weight: bold;
             margin-bottom: 4px;
         }
         
-        /* 基本情報の値スタイル */
+        /* Basic info value style */
         .info-value {
             font-size: 0.9rem;
         }
@@ -57,7 +58,7 @@ def load_css():
 
 
 def display_custom_metric(label, value):
-    """カスタムスタイルのメトリックを表示する"""
+    """Display a custom styled metric"""
     st.markdown(f"""
     <div class="custom-metric">
         <div class="custom-metric-label">{label}</div>
@@ -67,7 +68,7 @@ def display_custom_metric(label, value):
 
 
 def display_game_thumbnail(thumbnail_url, game_name):
-    """ゲームのサムネイル画像を表示する"""
+    """Display game thumbnail image"""
     if thumbnail_url:
         st.markdown(f"""
         <div style="text-align: center;">
@@ -76,56 +77,53 @@ def display_game_thumbnail(thumbnail_url, game_name):
         </div>
         """, unsafe_allow_html=True)
     else:
-        # 画像がない場合のプレースホルダー
+        # Placeholder for no image
         st.markdown(f"""
         <div style="text-align: center; padding: 15px; background-color: #f8f9fa; 
         border-radius: 5px; margin-bottom: 10px;">
-            <p style="color: #6c757d;">画像なし</p>
+            <p style="color: #6c757d;">{t("common.no_image")}</p>
             <p style="font-size: 0.9rem; margin-top: 5px;">{game_name}</p>
         </div>
         """, unsafe_allow_html=True)
 
 
 def display_game_basic_info(game_details):
-    """ゲームの基本情報を表示する"""
-    # 日本語名を取得
-    japanese_name = game_details.get('japanese_name', '')
-    english_name = game_details.get('name', '不明')
+    """Display basic game information"""
+    # Get display name
+    display_name = get_game_display_name(game_details)
+    secondary_name = get_game_secondary_name(game_details)
     
-    # 表示する名前（日本語名があれば優先）
-    display_name = japanese_name or english_name
+    # Add heading
+    st.markdown(f"### {t('details.basic_info')}")
     
-    # 見出し追加
-    st.markdown("### 基本情報")
-    
-    # カスタムHTMLでフォントサイズを調整して表示
+    # Display with custom HTML for font size adjustment
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown("**ゲーム名**")
+        st.markdown(f"**{t('common.game_name')}**")
         st.markdown(
             f"<div style='font-size: 0.9rem;'>{display_name}</div>",
             unsafe_allow_html=True
         )
-        if japanese_name and english_name != japanese_name:
-            st.caption(f"英語名: {english_name}")
+        if secondary_name:
+            st.caption(format_language_caption(secondary_name))
     with col2:
-        st.markdown("**発行年**")
-        year = game_details.get('year_published', '不明')
+        st.markdown(f"**{t('common.year_published')}**")
+        year = game_details.get('year_published', t('common.unknown'))
         st.markdown(
             f"<div style='font-size: 0.9rem;'>{year}</div>",
             unsafe_allow_html=True
         )
     with col3:
-        st.markdown("**平均評価**")
-        rating = game_details.get('average_rating', '不明')
-        if rating != '不明':
+        st.markdown(f"**{t('common.average_rating')}**")
+        rating = game_details.get('average_rating', t('common.unknown'))
+        if rating != t('common.unknown'):
             rating = round(float(rating), 2)
         st.markdown(
             f"<div style='font-size: 0.9rem;'>{rating}</div>",
             unsafe_allow_html=True
         )
     
-    # ゲームサムネイルを表示（ある場合）
+    # Display game thumbnail (if available)
     if 'thumbnail_url' in game_details:
         st.image(
             game_details['thumbnail_url'],
@@ -135,240 +133,251 @@ def display_game_basic_info(game_details):
 
 
 def display_game_players_info(game_details):
-    """ゲームのプレイ人数情報を表示する"""
-    st.markdown("#### プレイ人数")
-    # コミュニティの推奨人数を優先
+    """Display game player count information"""
+    st.markdown(f"#### {t('details.player_count')}")
+    # Prioritize community recommended player count
     if 'community_best_players' in game_details:
         display_custom_metric(
-            "ベストプレイ人数（コミュニティ推奨）",
+            t("details.best_players_community"),
             game_details['community_best_players']
         )
     
-    # パブリッシャー指定のプレイ人数も表示
-    publisher_players = "不明"
+    # Also display publisher-specified player count
+    publisher_players = t('common.unknown')
     if ('publisher_min_players' in game_details and
             'publisher_max_players' in game_details):
         publisher_players = f"{game_details['publisher_min_players']}～" \
-                            f"{game_details['publisher_max_players']}人"
-    display_custom_metric("パブリッシャー指定プレイ人数", publisher_players)
+                            f"{game_details['publisher_max_players']}{t('common.players_unit')}"
+    display_custom_metric(t("details.publisher_players"), publisher_players)
 
 
 def display_game_age_time_info(game_details):
-    """ゲームの年齢・プレイ時間情報を表示する"""
-    st.markdown("#### 推奨年齢・プレイ時間")
-    # コミュニティの推奨年齢を優先
+    """Display game age and play time information"""
+    st.markdown(f"#### {t('details.age_time')}")
+    # Prioritize community recommended age
     if 'community_min_age' in game_details:
         display_custom_metric(
-            "推奨年齢（コミュニティ推奨）",
-            f"{game_details['community_min_age']}歳以上"
+            t("details.recommended_age_community"),
+            f"{game_details['community_min_age']}{t('common.age_and_up')}"
         )
     
-    # プレイ時間
-    playtime = game_details.get('playing_time', '不明')
-    if playtime != '不明':
-        playtime = f"{playtime}分"
-    display_custom_metric("プレイ時間", playtime)
+    # Play time
+    playtime = game_details.get('playing_time', t('common.unknown'))
+    if playtime != t('common.unknown'):
+        playtime = f"{playtime}{t('common.minutes')}"
+    display_custom_metric(t("details.play_time"), playtime)
 
 
 def display_game_complexity(game_details, learning_curve=None):
-    """ゲームの複雑さを表示する"""
-    st.markdown("#### 複雑さ")
+    """Display game complexity"""
+    st.markdown(f"#### {t('details.complexity')}")
     
-    # 2列のレイアウトで、等幅に設定
+    # 2-column layout with equal width
     col1, col2 = st.columns([1, 1])
     
     with col1:
-        # BGG複雑さ評価
-        weight = game_details.get('weight', '不明')
-        if weight != '不明':
-            # 小数点第二位までに丸める
+        # BGG complexity rating
+        weight = game_details.get('weight', t('common.unknown'))
+        if weight != t('common.unknown'):
+            # Round to 2 decimal places
             weight = f"{float(weight):.2f}/5.00"
-        display_custom_metric("BGG複雑さ評価", weight)
+        display_custom_metric(t("details.bgg_complexity"), weight)
     
     with col2:
-        # システム分析（学習曲線データがある場合）
+        # System analysis (if learning curve data is available)
         if learning_curve and 'rules_complexity' in learning_curve:
-            # 小数点第二位までに丸める
+            # Round to 2 decimal places
             system_analysis = f"{float(learning_curve['rules_complexity']):.2f}/5.00"
-            display_custom_metric("システム分析", system_analysis)
+            display_custom_metric(t("details.system_analysis"), system_analysis)
         else:
-            # 学習曲線データがない場合でも空のスペースを確保（レイアウト維持のため）
-            display_custom_metric("システム分析", "計算中...")
+            # Keep space to maintain layout even without learning curve data
+            display_custom_metric(t("details.system_analysis"), t("common.calculating"))
 
 
 def display_system_complexity(col, learning_curve):
-    """システム分析（ルールの複雑さ）を表示する"""
+    """Display system analysis (rules complexity)"""
     if learning_curve and 'rules_complexity' in learning_curve:
-        # 小数点第二位までに丸める
+        # Round to 2 decimal places
         system_analysis = f"{float(learning_curve['rules_complexity']):.2f}/5.00"
         with col:
-            display_custom_metric("システム分析", system_analysis)
+            display_custom_metric(t("details.system_analysis"), system_analysis)
 
 
 def display_learning_curve(learning_curve, game_details=None):
     """
-    ラーニングカーブの情報を表示する（カテゴリとランキング情報を活用した改善版）
+    Display learning curve information (improved version using category and ranking info)
     
     Parameters:
-        learning_curve (dict): ラーニングカーブの情報
-        game_details (dict, optional): ゲームの詳細情報（BGG複雑さを取得するため）
+        learning_curve (dict): Learning curve information
+        game_details (dict, optional): Game details (to get BGG complexity)
     """
-    st.markdown("### ラーニングカーブ分析")
+    st.markdown(f"### {t('details.learning_curve_analysis')}")
     
     col1, col2 = st.columns(2)
     with col1:
-        # 小数点第二位までに丸める
+        # Round to 2 decimal places
         initial_barrier = f"{float(learning_curve['initial_barrier']):.2f}/5.00"
         display_custom_metric(
-            "初期学習の障壁",
+            t("metrics.initial_barrier"),
             initial_barrier
         )
     with col2:
-        # 学習曲線タイプを表示
+        # Display learning curve type
         if 'learning_curve_type' in learning_curve:
             curve_type = learning_curve['learning_curve_type']
             curve_type_display = get_curve_type_display(curve_type)
-            display_custom_metric("学習曲線タイプ", curve_type_display)
+            display_custom_metric(t("metrics.learning_curve_type"), curve_type_display)
         else:
-            display_custom_metric("学習曲線タイプ", "計算中...")
+            display_custom_metric(t("metrics.learning_curve_type"), t("common.calculating"))
 
 
 def display_data_tabs(game_details):
-    """タブを使って詳細情報を表示する"""
+    """Display detailed information using tabs"""
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "メカニクス", "カテゴリ", "ランキング", "デザイナー", "パブリッシャー"
+        t("tabs.mechanics"),
+        t("tabs.categories"),
+        t("tabs.rankings"),
+        t("tabs.designers"),
+        t("tabs.publishers")
     ])
     
     with tab1:
         if 'mechanics' in game_details and game_details['mechanics']:
-            # DataFrameに変換して表示
+            # Convert to DataFrame and display
             df = pd.DataFrame(game_details['mechanics'])
             df = df.rename(columns={
-                "id": "メカニクスID",
-                "name": "メカニクス名"
+                "id": t("common.mechanic_id"),
+                "name": t("common.mechanic_name")
             })
             st.dataframe(df, use_container_width=True)
         else:
-            st.info("メカニクス情報がありません")
+            st.info(t("info.no_mechanics"))
     
     with tab2:
         if 'categories' in game_details and game_details['categories']:
-            # DataFrameに変換して表示
+            # Convert to DataFrame and display
             df = pd.DataFrame(game_details['categories'])
             df = df.rename(columns={
-                "id": "カテゴリID",
-                "name": "カテゴリ名"
+                "id": t("common.category_id"),
+                "name": t("common.category_name")
             })
             st.dataframe(df, use_container_width=True)
         else:
-            st.info("カテゴリ情報がありません")
+            st.info(t("info.no_categories"))
     
     with tab3:
         if 'ranks' in game_details and game_details['ranks']:
-            # DataFrameに変換して表示
+            # Convert to DataFrame and display
             df = pd.DataFrame(game_details['ranks'])
             df = df.rename(columns={
-                "type": "ランキング種別",
-                "id": "ランキングID",
-                "rank": "順位"
+                "type": t("common.ranking_type"),
+                "id": t("common.ranking_id"),
+                "rank": t("common.rank")
             })
             st.dataframe(df, use_container_width=True)
         else:
-            st.info("ランキング情報がありません")
+            st.info(t("info.no_rankings"))
     
     with tab4:
         if 'designers' in game_details and game_details['designers']:
-            # DataFrameに変換して表示
+            # Convert to DataFrame and display
             df = pd.DataFrame(game_details['designers'])
             df = df.rename(columns={
-                "id": "デザイナーID",
-                "name": "デザイナー名"
+                "id": t("common.designer_id"),
+                "name": t("common.designer_name")
             })
             st.dataframe(df, use_container_width=True)
         else:
-            st.info("デザイナー情報がありません")
+            st.info(t("info.no_designers"))
     
     with tab5:
         if 'publishers' in game_details and game_details['publishers']:
-            # DataFrameに変換して表示
+            # Convert to DataFrame and display
             df = pd.DataFrame(game_details['publishers'])
             df = df.rename(columns={
-                "id": "パブリッシャーID",
-                "name": "パブリッシャー名"
+                "id": t("common.publisher_id"),
+                "name": t("common.publisher_name")
             })
             st.dataframe(df, use_container_width=True)
         else:
-            st.info("パブリッシャー情報がありません")
+            st.info(t("info.no_publishers"))
 
 
 def display_game_analysis_summary(game_data, learning_curve):
     """
-    ゲームデータとラーニングカーブから簡潔な評価サマリーを表示する
+    Display concise evaluation summary from game data and learning curve
     
     Parameters:
-        game_data (dict): ゲームの詳細情報
-        learning_curve (dict): ラーニングカーブの情報
+        game_data (dict): Game details
+        learning_curve (dict): Learning curve information
     """
-    st.markdown("### 評価サマリー")
+    st.markdown(f"### {t('details.evaluation_summary')}")
     
-    # 自動生成されたサマリーを表示
+    # Display auto-generated summary
     summary = generate_game_summary(game_data, learning_curve)
     st.markdown(summary)
     
-    # 複雑さと戦略性の視覚化
-    with st.expander("複雑さと戦略性の視覚化", expanded=False):
+    # Visualization of complexity and strategy
+    with st.expander(t("details.complexity_strategy_viz"), expanded=False):
         col1, col2 = st.columns(2)
         
         with col1:
-            # BGG重み vs 分析した複雑さ
+            # BGG weight vs analyzed complexity
             bgg_weight = float(game_data.get('weight', 0))
             rules_complexity = learning_curve.get('rules_complexity', 0)
             
-            st.markdown("#### 複雑さ比較")
-            st.markdown(f"- BGGユーザー評価: **{bgg_weight:.2f}**/5.00")
-            st.markdown(f"- システム分析: **{rules_complexity:.2f}**/5.00")
+            st.markdown(f"#### {t('details.complexity_comparison')}")
+            st.markdown(f"- {t('details.bgg_user_rating')}: **{bgg_weight:.2f}**/5.00")
+            st.markdown(f"- {t('details.system_analysis')}: **{rules_complexity:.2f}**/5.00")
             
-            # 差異の計算と色分け
+            # Calculate and color-code the difference
             diff = rules_complexity - bgg_weight
             if abs(diff) > 0.8:
                 color = "red" if diff > 0 else "blue"
-                st.markdown(f"<span style='color:{color};'>差異: {diff:.2f}</span>", unsafe_allow_html=True)
+                st.markdown(f"<span style='color:{color};'>{t('details.difference')}: {diff:.2f}</span>", unsafe_allow_html=True)
         
         with col2:
-            # 戦略深度とリプレイ性
+            # Strategic depth and replayability
             strategic_depth = learning_curve.get('strategic_depth', 0)
             replayability = learning_curve.get('replayability', 0)
             
-            st.markdown("#### 戦略性とリプレイ性")
-            st.markdown(f"- 戦略的深さ: **{strategic_depth:.2f}**/5.00")
-            st.markdown(f"- リプレイ性: **{replayability:.2f}**/5.00")
+            st.markdown(f"#### {t('details.strategy_replayability')}")
+            st.markdown(f"- {t('metrics.strategic_depth')}: **{strategic_depth:.2f}**/5.00")
+            st.markdown(f"- {t('metrics.replayability')}: **{replayability:.2f}**/5.00")
 
 def compare_games_radar_chart(games_data):
     """
-    複数ゲームを比較するレーダーチャートを作成
+    Create radar chart to compare multiple games
     
     Parameters:
-    games_data (list): (ゲームデータ, 学習曲線データ)のタプルリスト
+    games_data (list): List of (game data, learning curve data) tuples
     
     Returns:
-    fig: plotlyのFigureオブジェクト
+    fig: plotly Figure object
     """
     fig = go.Figure()
     
-    # 比較するカテゴリ
-    categories = ['初期学習障壁', '戦略的深さ', 'リプレイ性', 
-                  '意思決定の深さ', 'プレイヤー相互作用', 'ルールの複雑さ']
+    # Categories to compare (using translated names)
+    metric_names = get_metric_names()
+    categories = [
+        metric_names.get('initial_barrier', 'Initial Learning Barrier'),
+        metric_names.get('strategic_depth', 'Strategic Depth'),
+        metric_names.get('replayability', 'Replayability'),
+        metric_names.get('decision_points', 'Decision Points'),
+        metric_names.get('interaction_complexity', 'Player Interaction'),
+        metric_names.get('rules_complexity', 'Rules Complexity')
+    ]
     
-    # 各ゲームの色をパステルカラーで生成
+    # Generate colors for each game in pastel tones
     colors = ['rgba(178, 34, 34, 0.7)', 'rgba(31, 119, 180, 0.7)', 
               'rgba(44, 160, 44, 0.7)', 'rgba(255, 127, 14, 0.7)',
               'rgba(148, 103, 189, 0.7)', 'rgba(140, 86, 75, 0.7)']
     
     for i, (game_data, learning_curve) in enumerate(games_data):
-        if i >= len(colors):  # 色数の上限
+        if i >= len(colors):  # Color limit
             break
             
-        game_name = game_data.get('japanese_name', game_data.get('name', '不明'))
+        game_name = get_game_display_name(game_data)
         
         values = [
             learning_curve.get('initial_barrier', 0),
@@ -379,7 +388,7 @@ def compare_games_radar_chart(games_data):
             learning_curve.get('rules_complexity', 0)
         ]
         
-        # 円環状に閉じる
+        # Close the circle
         cat = categories + [categories[0]]
         val = values + [values[0]]
         
@@ -402,7 +411,7 @@ def compare_games_radar_chart(games_data):
         ),
         showlegend=True,
         title={
-            'text': "ゲーム特性比較",
+            'text': t("compare.chart_title"),
             'y': 0.95,
             'x': 0.5,
             'xanchor': 'center',

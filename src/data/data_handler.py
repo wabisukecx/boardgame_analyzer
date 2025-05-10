@@ -4,79 +4,71 @@ import yaml
 import pandas as pd
 import re
 from pathlib import Path
+from src.utils.language import t, get_game_display_name, get_game_filename, get_dataframe_column_names
 
 def save_game_data_to_yaml(game_data, custom_filename=None):
     """
-    ゲームデータをYAMLファイルに保存する
+    Save game data to YAML file
     
     Parameters:
-    game_data (dict): 保存するゲームデータ
-    custom_filename (str, optional): カスタムファイル名
+    game_data (dict): Game data to save
+    custom_filename (str, optional): Custom filename
     
     Returns:
-    tuple: (成功フラグ, ファイルパス, エラーメッセージ)
+    tuple: (success flag, file path, error message)
     """
-    # ファイル名の生成
+    # Generate filename
     game_id = game_data.get('id', 'unknown')
     
-    # ゲームIDを6桁に揃える処理を追加
+    # Pad game ID to 6 digits
     if game_id != 'unknown' and game_id.isdigit():
-        game_id = game_id.zfill(6)  # 6桁になるように左側に0を埋める
+        game_id = game_id.zfill(6)
     
-    # 日本語名がある場合は優先して使用
-    game_name = game_data.get('japanese_name', game_data.get('name', '名称不明'))
+    # Generate consistent filename regardless of language
+    placeholder_filename = get_game_filename(game_data, game_id) + ".yaml"
     
-    # 全角スペースを半角スペースに変換
-    game_name = game_name.replace('　', ' ')
-    
-    # プレースホルダーファイル名
-    placeholder_filename = f"{game_id}_{game_name}.yaml"
-    # 特殊文字を置換
-    placeholder_filename = placeholder_filename.replace(" ", "_").replace("/", "_").replace("\\", "_").replace(":", "_").replace(";", "_")
-    
-    # カスタムファイル名の処理
+    # Process custom filename
     if not custom_filename:
         filename = placeholder_filename
     else:
-        # カスタムファイル名も全角スペースを半角に変換
+        # Convert full-width spaces to half-width
         custom_filename = custom_filename.replace('　', ' ')
         filename = custom_filename
         if not filename.endswith('.yaml'):
             filename += '.yaml'
     
-    # データディレクトリの作成
+    # Create data directory
     os.makedirs("game_data", exist_ok=True)
     file_path = os.path.join("game_data", filename)
     
     try:
-        # YAMLに変換して保存する前にゲーム名に特殊文字がある場合の対応
+        # Copy game data for safety before conversion
         game_data_safe = game_data.copy()
         
-        # トップレベルのIDを削除
+        # Remove top-level ID
         if 'id' in game_data_safe:
             del game_data_safe['id']
         
-        # ネストされた要素からIDを削除
+        # Remove IDs from nested elements
         for category in ['mechanics', 'categories', 'designers', 'publishers', 'ranks']:
             if (category in game_data_safe and isinstance(game_data_safe[category], list)):
                 for item in game_data_safe[category]:
                     if 'id' in item:
                         del item['id']
         
-        # ラーニングカーブ情報を追加（まだない場合のみ）
+        # Add learning curve information (only if not already present)
         if ('learning_analysis' not in game_data_safe and 
             'description' in game_data_safe and 
             'mechanics' in game_data_safe and 
             'weight' in game_data_safe):
-            # このブロック内ではStreamlitに依存しない方法を使用
+            # Use in this block without Streamlit dependencies
             try:
                 from src.analysis.learning_curve import calculate_learning_curve
                 game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
             except Exception as e:
-                    st.warning(f"学習曲線の計算中にエラーが発生しました: {e}")
+                    st.warning(t("errors.learning_curve_calculation", error=str(e)))
         
-        # YAMLに変換して保存する前に全角スペースを半角スペースに変換
-        # ディープコピーして全角スペースを変換
+        # Convert full-width spaces to half-width before saving
         def replace_fullwidth_spaces(obj):
             if isinstance(obj, str):
                 return obj.replace('　', ' ')
@@ -89,7 +81,7 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
         
         game_data_safe = replace_fullwidth_spaces(game_data_safe)
         
-        # YAMLに変換して保存
+        # Convert to YAML and save
         with open(file_path, 'w', encoding='utf-8') as file:
             yaml.dump(game_data_safe, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
         
@@ -99,50 +91,53 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
 
 def load_game_data_from_yaml(file_path):
     """
-    YAMLファイルからゲームデータを読み込む
+    Load game data from YAML file
     
     Parameters:
-    file_path (str): YAMLファイルのパス
+    file_path (str): Path to YAML file
     
     Returns:
-    dict: ゲームデータ
+    dict: Game data
     """
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             game_data = yaml.safe_load(file)
         return game_data
     except Exception as e:
-        # Streamlitの有無に依存しないエラー表示に変更
-        st.warning(f"ファイル読み込みエラー: {str(e)}")
+        # Error display that doesn't depend on Streamlit
+        st.warning(t("errors.file_read", error=str(e)))
         return None
 
 def search_results_to_dataframe(results):
     """
-    検索結果をDataFrameに変換する
+    Convert search results to DataFrame
     
     Parameters:
-    results (list): 検索結果のリスト
+    results (list): List of search results
     
     Returns:
-    pandas.DataFrame: 検索結果のDataFrame
+    pandas.DataFrame: DataFrame of search results
     """
     if not results:
         return None
     
-    # DataFrameに変換
+    # Convert to DataFrame
     df = pd.DataFrame(results)
     
-    # 列名を日本語に変換
+    # Get language-aware column names
+    column_names = get_dataframe_column_names()
+    
+    # Rename columns
     df = df.rename(columns={
-        "id": "ゲームID",
-        "name": "ゲーム名",
-        "year_published": "発行年"
+        "id": column_names.get("id", "Game ID"),
+        "name": column_names.get("name", "Game Name"),
+        "year_published": column_names.get("year_published", "Year Published")
     })
     
-    # NaNを「不明」に置き換え
-    df = df.fillna("不明")
+    # Replace NaN with appropriate unknown text
+    df = df.fillna(t("common.unknown"))
     
-    # 不要な列を削除
+    # Remove unnecessary columns
     if "type" in df.columns:
         df = df.drop(columns=["type"])
     
@@ -150,27 +145,27 @@ def search_results_to_dataframe(results):
 
 def load_all_game_data():
     """
-    game_dataフォルダ内のすべてのYAMLファイルからゲームデータを読み込む
+    Load all game data from YAML files in game_data folder
     
     Returns:
-    dict: ゲームID(文字列)をキー、ゲームデータを値とする辞書
+    dict: Dictionary with game ID (string) as key and game data as value
     """
     game_data_dict = {}
     
-    # game_dataフォルダが存在するか確認
+    # Check if game_data folder exists
     if not os.path.exists("game_data"):
         return game_data_dict
     
-    # YAMLファイルを検索
+    # Search for YAML files
     for filename in os.listdir("game_data"):
         if filename.endswith(".yaml"):
-            # ファイル名からゲームIDを抽出 (例: "167791_テラフォーミング・マーズ.yaml")
+            # Extract game ID from filename (e.g., "167791_Terraforming_Mars.yaml")
             match = re.match(r"(\d+)_(.*?)\.yaml", filename)
             if match:
                 game_id = match.group(1)
                 file_path = os.path.join("game_data", filename)
                 
-                # YAMLファイルを読み込む
+                # Load YAML file
                 game_data = load_game_data_from_yaml(file_path)
                 if game_data:
                     game_data_dict[game_id] = game_data
@@ -179,64 +174,73 @@ def load_all_game_data():
 
 def get_yaml_game_list():
     """
-    game_dataフォルダ内のYAMLファイルを走査し、ゲームIDとタイトルのリストを返す
+    Scan YAML files in game_data folder and return list of game IDs and titles
     
     Returns:
-        list: (ゲームID, ファイル名, 表示名)のタプルのリスト
+        list: List of (game ID, filename, display name) tuples
     """
     game_list = []
-    # game_dataフォルダが存在するか確認
+    # Check if game_data folder exists
     if not os.path.exists("game_data"):
         return game_list
         
-    # YAMLファイルを検索
+    # Search for YAML files
     for filename in os.listdir("game_data"):
         if filename.endswith(".yaml"):
-            # ファイル名からゲームIDを抽出 (例: "167791_テラフォーミング・マーズ.yaml")
+            # Extract game ID from filename (e.g., "167791_Terraforming_Mars.yaml")
             match = re.match(r"(\d+)_(.*?)\.yaml", filename)
             if match:
                 game_id = match.group(1)
-                game_name = match.group(2)
-                display_name = f"{game_id} - {game_name}"
-                game_list.append((game_id, filename, display_name))
+                file_path = os.path.join("game_data", filename)
+                
+                # Load game data to get language-aware display name
+                game_data = load_game_data_from_yaml(file_path)
+                if game_data:
+                    display_name = get_game_display_name(game_data)
+                    game_list.append((game_id, filename, f"{game_id} - {display_name}"))
+                else:
+                    # Fallback if data can't be loaded
+                    game_name = match.group(2)
+                    display_name = game_name.replace("_", " ")
+                    game_list.append((game_id, filename, f"{game_id} - {display_name}"))
     
-    # IDでソート
+    # Sort by ID
     game_list.sort(key=lambda x: int(x[0]))
     return game_list
 
 def compare_game_data(old_data, new_data):
     """
-    2つのゲームデータを比較し、重要な変更があるかどうかと変更内容を返す
+    Compare two game data sets and return whether there are changes and description of changes
     
     Parameters:
-        old_data (dict): 既存のゲームデータ
-        new_data (dict): 新しく取得したゲームデータ
+        old_data (dict): Existing game data
+        new_data (dict): Newly retrieved game data
     
     Returns:
-        tuple: (変更があるかどうか, 変更の説明)
+        tuple: (whether there are changes, description of changes)
     """
     if not old_data or not new_data:
-        return True, "データが不完全なため、更新が必要です。"
+        return True, t("compare.incomplete_data")
     
-    # 重要なキーを定義
+    # Define important keys
     important_keys = {
-        'name': '英語名',
-        'japanese_name': '日本語名',
-        'year_published': '発行年',
-        'average_rating': '平均評価',
-        'weight': '複雑さ',
-        # メカニクスやカテゴリは複雑な構造なので別途処理
+        'name': t("common.english_name"),
+        'japanese_name': t("common.japanese_name"),
+        'year_published': t("common.year_published"),
+        'average_rating': t("common.average_rating"),
+        'weight': t("common.complexity"),
+        # Mechanics and categories are complex structures so handle separately
     }
     
     changes = []
     has_changes = False
     
-    # 基本的なフィールドの比較
+    # Compare basic fields
     for key, display_name in important_keys.items():
         old_value = old_data.get(key)
         new_value = new_data.get(key)
         
-        # データ型の違いを考慮して比較（文字列と数値の場合）
+        # Consider data type differences (string vs number case)
         if isinstance(old_value, (int, float)) and isinstance(new_value, str):
             try:
                 new_value = float(new_value) if '.' in new_value else int(new_value)
@@ -251,14 +255,14 @@ def compare_game_data(old_data, new_data):
         if old_value != new_value:
             has_changes = True
             if key in ['average_rating', 'weight'] and isinstance(old_value, (int, float)) and isinstance(new_value, (int, float)):
-                # 数値の場合は小数点2桁で丸める
+                # Round numbers to 2 decimal places
                 old_str = f"{old_value:.2f}" if isinstance(old_value, float) else str(old_value)
                 new_str = f"{new_value:.2f}" if isinstance(new_value, float) else str(new_value)
                 changes.append(f"- {display_name}: {old_str} → {new_str}")
             else:
                 changes.append(f"- {display_name}: {old_value} → {new_value}")
     
-    # メカニクスの比較
+    # Compare mechanics
     old_mechanics = set(m.get('name', '') for m in old_data.get('mechanics', []))
     new_mechanics = set(m.get('name', '') for m in new_data.get('mechanics', []))
     
@@ -268,11 +272,11 @@ def compare_game_data(old_data, new_data):
         removed = old_mechanics - new_mechanics
         
         if added:
-            changes.append(f"- 追加されたメカニクス: {', '.join(added)}")
+            changes.append(f"- {t('compare.mechanics_added')}: {', '.join(added)}")
         if removed:
-            changes.append(f"- 削除されたメカニクス: {', '.join(removed)}")
+            changes.append(f"- {t('compare.mechanics_removed')}: {', '.join(removed)}")
     
-    # カテゴリの比較
+    # Compare categories
     old_categories = set(c.get('name', '') for c in old_data.get('categories', []))
     new_categories = set(c.get('name', '') for c in new_data.get('categories', []))
     
@@ -282,11 +286,11 @@ def compare_game_data(old_data, new_data):
         removed = old_categories - new_categories
         
         if added:
-            changes.append(f"- 追加されたカテゴリ: {', '.join(added)}")
+            changes.append(f"- {t('compare.categories_added')}: {', '.join(added)}")
         if removed:
-            changes.append(f"- 削除されたカテゴリ: {', '.join(removed)}")
+            changes.append(f"- {t('compare.categories_removed')}: {', '.join(removed)}")
     
-    # 変更の説明を結合
-    change_description = '\n'.join(changes) if changes else "変更はありませんでした。"
+    # Combine change descriptions
+    change_description = '\n'.join(changes) if changes else t("compare.no_changes")
     
     return has_changes, change_description

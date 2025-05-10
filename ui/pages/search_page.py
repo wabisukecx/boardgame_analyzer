@@ -1,36 +1,51 @@
 import streamlit as st
 from src.api.bgg_api import search_games
 from src.data.data_handler import search_results_to_dataframe
+from src.utils.language import t, get_game_display_name, get_dataframe_column_names
 
 def search_page():
-    """ゲーム名で検索するページを表示"""
-    st.header("ゲーム名で検索")
+    """Display the game search page"""
+    st.header(t("search.title"))
     
-    # 検索パラメータ入力欄
+    # Search parameter input fields
     col1, col2 = st.columns([3, 1])
     with col1:
-        query = st.text_input("検索するゲーム名を入力してください")
+        query = st.text_input(t("search.input_placeholder"))
     with col2:
-        exact = st.checkbox("完全一致検索", value=False)
+        exact = st.checkbox(t("search.exact_match"), value=False)
     
-    # 検索ボタン
-    if st.button("検索", type="primary"):
+    # Search button
+    if st.button(t("search.search_button"), type="primary"):
         if query:
             results = search_games(query, exact)
             
             if results:
-                st.success(f"検索結果: {len(results)}件見つかりました")
+                st.success(t("search.results_found", count=len(results)))
                 
-                # DataFrameに変換して表示
+                # Convert to DataFrame and display
                 df = search_results_to_dataframe(results)
+                
+                # Rename columns according to language
+                column_names = get_dataframe_column_names()
+                rename_mapping = {
+                    "ゲームID": column_names.get("id", "Game ID"),
+                    "ゲーム名": column_names.get("name", "Game Name"),
+                    "発行年": column_names.get("year_published", "Year Published")
+                }
+                
+                # Apply column renaming if columns exist
+                for old_name, new_name in rename_mapping.items():
+                    if old_name in df.columns:
+                        df = df.rename(columns={old_name: new_name})
+                
                 st.dataframe(df, use_container_width=True)
                 
-                # 詳細情報へのリンクを追加
-                st.info("詳細情報を表示するには「ゲームIDで詳細情報を取得」機能を使用してください。")
+                # Add link to details
+                st.info(t("search.view_details_info"))
                 
-                # セッションステートに結果を保存
+                # Save results to session state
                 st.session_state.search_results = results
             else:
-                st.warning("検索結果がありません")
+                st.warning(t("search.no_results"))
         else:
-            st.error("検索するゲーム名を入力してください")
+            st.error(t("search.input_error"))

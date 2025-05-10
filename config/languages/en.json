@@ -1,0 +1,111 @@
+{
+  "app": {
+    "title": "BoardGame App",
+    "description": "BoardGame data tool using BoardGameGeek API and pre-computed embeddings"
+  },
+  "sidebar": {
+    "functions": "Functions",
+    "select_operation": "Choose an operation",
+    "search_by_name": "Search by Game Name",
+    "get_details_by_id": "Get Details by Game ID",
+    "save_yaml": "Save Data in YAML",
+    "compare_games": "Compare Games",
+    "similarity_search": "Similarity Search",
+    "language": "Language"
+  },
+  "search": {
+    "title": "Search by Game Name",
+    "input_placeholder": "Enter the game name to search",
+    "exact_match": "Exact Match",
+    "search_button": "Search",
+    "results_found": "Search results: {count} found",
+    "no_results": "No results found",
+    "view_details_info": "Use 'Get Details by Game ID' to view detailed information.",
+    "input_error": "Please enter a game name to search"
+  },
+  "details": {
+    "title": "Get Game Details by ID",
+    "input_method": "Select input method",
+    "manual_input": "Manual Input",
+    "select_from_saved": "Select from Saved YAML Files",
+    "input_placeholder": "Enter the game ID to get details",
+    "select_game": "Select from saved games",
+    "no_yaml_files": "No saved YAML files found",
+    "get_details_button": "Get Details",
+    "error_no_id": "Please enter a game ID",
+    "not_found": "Game details not found",
+    "yaml_updated": "Mechanics, categories, and ranking settings have been updated",
+    "data_changed": "There are differences between saved data and newly retrieved data.",
+    "change_details": "Change Details",
+    "update_yaml": "Update YAML File",
+    "update_success": "Game data has been updated. YAML file has been overwritten with the latest information.",
+    "update_error": "File update error: {error}",
+    "no_changes": "No differences between saved data and newly retrieved data."
+  },
+  "save": {
+    "title": "Save Game Data in YAML Format",
+    "select_game": "Select game data to save",
+    "english_name": "English Name",
+    "game_id": "Game ID",
+    "year_published": "Year Published",
+    "filename_input": "Filename to save (uses placeholder name if blank)",
+    "save_button": "Save Selected Game Data to YAML",
+    "save_success": "Game data saved to YAML file: {filepath}",
+    "save_error": "File save error: {error}",
+    "special_char_error": "Saving may fail if the game name contains special characters (: ; etc.).",
+    "no_data": "No game data available for saving. Please search for a game and get its details first."
+  },
+  "similarity": {
+    "title": "BoardGame Similarity Search",
+    "description": "Application to search for boardgame similarity using pre-computed embeddings.",
+    "settings": "Similarity Search Settings",
+    "search_settings": "Search Settings",
+    "embedding_file": "Embedding Data File",
+    "num_games": "Number of similar games to display",
+    "threshold": "Similarity Threshold",
+    "search_filter": "Set Search Filters",
+    "filter_title": "Search Filters",
+    "category_filter": "Filter by Categories",
+    "mechanics_filter": "Filter by Mechanics",
+    "select_categories": "Select Categories",
+    "select_mechanics": "Select Mechanics",
+    "select_game": "Select a game to search",
+    "selected_game": "Selected Game",
+    "search_button": "Search for Similar Games",
+    "similar_games": "Similar Games",
+    "similarity_score": "Similarity: {score}",
+    "similarity_reasons": "Reasons for Similarity",
+    "no_similar_games": "No games found with similarity above {threshold}. Try lowering the threshold.",
+    "tabs": {
+      "game_list": "Similar Games List",
+      "heatmap": "Similarity Heatmap",
+      "analysis": "Data Analysis"
+    },
+    "analysis": {
+      "top_games": "Top 20 Most Similar Games",
+      "category_distribution": "Category Distribution",
+      "mechanics_distribution": "Mechanics Distribution",
+      "no_categories": "No category information for similar games",
+      "no_mechanics": "No mechanics information for similar games"
+    }
+  },
+  "compare": {
+    "title": "Compare Multiple Games",
+    "no_data": "No saved game data. Please search and save games first.",
+    "select_games": "Select games to compare",
+    "select_prompt": "Games to compare (up to 6 can be selected)",
+    "limit_warning": "Display limited to 6 games. Showing the first 6.",
+    "chart_title": "Game Characteristics Comparison",
+    "table_title": "Numeric Comparison",
+    "metrics": {
+      "game_name": "Game Name",
+      "initial_barrier": "Initial Learning Barrier",
+      "strategic_depth": "Strategic Depth",
+      "replayability": "Replayability",
+      "decision_points": "Decision Depth",
+      "interaction": "Player Interaction",
+      "rules_complexity": "Rules Complexity",
+      "bgg_weight": "BGG Weight"
+    }
+  }
+}

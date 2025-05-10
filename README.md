@@ -1,407 +1,407 @@
 # BoardGame Analyzer
 
-BoardGameGeek (BGG) APIを使用してボードゲーム情報を検索、分析、保存するためのStreamlitアプリケーションです。
+A Streamlit application for searching, analyzing, and saving board game information using the BoardGameGeek (BGG) API.
 
-**デモ:** [Streamlit Community Cloud](https://boardgameanalyzer-gsmlbaspmgvf3arxttip4f.streamlit.app/)（一部文字化けがございます）
+**Demo:** [Streamlit Community Cloud](https://boardgameanalyzer-gsmlbaspmgvf3arxttip4f.streamlit.app/)
 
-## 最新アップデート情報
+## Latest Updates
 
-**改善された類似性分析機能**
+**Enhanced Similarity Analysis Feature**
 
-類似性検索機能が強化されました。新しい`improved_similarity_analyzer`モジュールにより、より精密な類似性分析が可能になりました。主な改善点：
+The similarity search feature has been enhanced. The new `improved_similarity_analyzer` module enables more precise similarity analysis. Key improvements:
 
-- より詳細な類似性理由の分析（重み付けスコア付き）
-- 学習曲線データを活用した高度な比較
-- 戦略的深さと相互作用の類似性に基づく分析
-- 整形された類似理由の提供
+- More detailed similarity reason analysis (with weighted scores)
+- Advanced comparison utilizing learning curve data
+- Analysis based on strategic depth and interaction similarity
+- Formatted similarity reasons
 
-この機能を利用することで、ゲーム間の類似性をより深く理解できます。
+This feature allows for a deeper understanding of similarities between games.
 
-## 目次
+## Table of Contents
 
 - [BoardGame Analyzer](#boardgame-analyzer)
-  - [最新アップデート情報](#最新アップデート情報)
-  - [目次](#目次)
-  - [主な機能](#主な機能)
-  - [インストール方法](#インストール方法)
-  - [アプリの使い方](#アプリの使い方)
-    - [基本機能](#基本機能)
-      - [ゲーム名で検索](#ゲーム名で検索)
-      - [ゲームIDで詳細情報を取得](#ゲームidで詳細情報を取得)
-      - [YAMLでデータを保存](#yamlでデータを保存)
-      - [ゲーム比較機能](#ゲーム比較機能)
-    - [類似性検索機能](#類似性検索機能)
-  - [自動更新とデータ同期](#自動更新とデータ同期)
-    - [日次更新スクリプト (daily\_update.py)](#日次更新スクリプト-daily_updatepy)
-    - [リモートデータ同期スクリプト (fetch\_boardgame\_data.py)](#リモートデータ同期スクリプト-fetch_boardgame_datapy)
-  - [埋め込みデータファイル (game\_embeddings.pkl)](#埋め込みデータファイル-game_embeddingspkl)
-    - [作成、入手方法](#作成入手方法)
-    - [使用方法](#使用方法)
-    - [注意点](#注意点)
-  - [技術的詳細](#技術的詳細)
-    - [学習曲線分析システム](#学習曲線分析システム)
-      - [分析に使用する要素](#分析に使用する要素)
-      - [分析結果の指標](#分析結果の指標)
-    - [複雑さデータのカスタマイズ](#複雑さデータのカスタマイズ)
-      - [編集時の注意点](#編集時の注意点)
-    - [戦略的価値と相互作用の分析](#戦略的価値と相互作用の分析)
-    - [埋め込みモデルと類似性検索の技術](#埋め込みモデルと類似性検索の技術)
-      - [埋め込みモデルの生成技術](#埋め込みモデルの生成技術)
-      - [類似度計算アルゴリズム](#類似度計算アルゴリズム)
-      - [ファイルの技術的構造](#ファイルの技術的構造)
-      - [類似性理由分析アルゴリズム](#類似性理由分析アルゴリズム)
-  - [プロジェクト構成](#プロジェクト構成)
-  - [注意事項](#注意事項)
-  - [謝辞](#謝辞)
+  - [Latest Updates](#latest-updates)
+  - [Table of Contents](#table-of-contents)
+  - [Main Features](#main-features)
+  - [Installation](#installation)
+  - [How to Use](#how-to-use)
+    - [Basic Features](#basic-features)
+      - [Search by Game Name](#search-by-game-name)
+      - [Get Details by Game ID](#get-details-by-game-id)
+      - [Save Data to YAML](#save-data-to-yaml)
+      - [Game Comparison](#game-comparison)
+    - [Similarity Search](#similarity-search)
+  - [Automatic Updates and Data Sync](#automatic-updates-and-data-sync)
+    - [Daily Update Script (daily\_update.py)](#daily-update-script-daily_updatepy)
+    - [Remote Data Sync Script (fetch\_boardgame\_data.py)](#remote-data-sync-script-fetch_boardgame_datapy)
+  - [Embedding Data File (game\_embeddings.pkl)](#embedding-data-file-game_embeddingspkl)
+    - [Creation and Acquisition](#creation-and-acquisition)
+    - [Usage](#usage)
+    - [Notes](#notes)
+  - [Technical Details](#technical-details)
+    - [Learning Curve Analysis System](#learning-curve-analysis-system)
+      - [Elements Used in Analysis](#elements-used-in-analysis)
+      - [Analysis Result Metrics](#analysis-result-metrics)
+    - [Customizing Complexity Data](#customizing-complexity-data)
+      - [Editing Notes](#editing-notes)
+    - [Strategic Value and Interaction Analysis](#strategic-value-and-interaction-analysis)
+    - [Embedding Model and Similarity Search Technology](#embedding-model-and-similarity-search-technology)
+      - [Embedding Model Generation Technology](#embedding-model-generation-technology)
+      - [Similarity Calculation Algorithm](#similarity-calculation-algorithm)
+      - [Technical File Structure](#technical-file-structure)
+      - [Similarity Reason Analysis Algorithm](#similarity-reason-analysis-algorithm)
+  - [Project Structure](#project-structure)
+  - [Notes](#notes-1)
+  - [Acknowledgments](#acknowledgments)
 
-## 主な機能
+## Main Features
 
-- **検索と情報取得**
-  - ゲーム名での検索: 名前を使ってBGGからボードゲームを検索
-  - ゲームIDによる詳細情報取得: ゲームIDを使用して詳細なゲーム情報を取得
-  - 保存済みゲームの選択: 保存したゲームデータをドロップダウンから簡単に選択
+- **Search and Information Retrieval**
+  - Search by game name: Search for board games from BGG using names
+  - Get detailed information by game ID: Retrieve detailed game information using game ID
+  - Select saved games: Easily select saved game data from dropdown menus
 
-- **データ分析と保存**
-  - データ分析: ゲームの複雑さ、学習曲線、リプレイ性などを自動分析
-  - YAMLデータ保存: 取得したゲーム情報をYAML形式でローカルに保存
-  - データ比較機能: 既存データと新規取得データの自動比較
+- **Data Analysis and Storage**
+  - Data analysis: Automatically analyze game complexity, learning curves, replayability, etc.
+  - YAML data storage: Save retrieved game information locally in YAML format
+  - Data comparison: Automatic comparison between existing and newly retrieved data
 
-- **ゲーム特性分析**
-  - ラーニングカーブ分析: ゲームの学習しやすさやマスターに必要な時間の推定
-  - カテゴリ分析: ゲームカテゴリに基づく複雑さの評価
-  - ランキング分析: BGGランキング種別と順位に基づく評価
-  - 戦略深度評価: 意思決定の質と重みに基づく戦略性の分析
-  - プレイヤー相互作用分析: ゲームにおけるプレイヤー間の相互作用の評価
+- **Game Characteristic Analysis**
+  - Learning curve analysis: Estimate game learning ease and time required for mastery
+  - Category analysis: Evaluate complexity based on game categories
+  - Ranking analysis: Evaluation based on BGG ranking type and position
+  - Strategic depth evaluation: Analysis of strategic based on decision quality and weight
+  - Player interaction analysis: Evaluation of player-to-player interaction in games
 
-- **比較と類似性分析**
-  - ゲーム比較機能: 複数のゲームを選択し、レーダーチャートと数値比較で分析
-  - **改善された類似性検索機能**: 埋め込みデータを使用して類似ゲームを検索・分析し、詳細な類似性理由を提供
+- **Comparison and Similarity Analysis**
+  - Game comparison: Select multiple games and analyze with radar charts and numerical comparisons
+  - **Enhanced similarity search**: Search and analyze similar games using embedding data, providing detailed similarity reasons
 
-- **データ管理と自動化**
-  - 日次データ更新: 毎日のゲームデータ自動更新とバックアップ
-  - リモートデータ取得: Raspberry Piなどのリモートサーバーからデータを同期
+- **Data Management and Automation**
+  - Daily data updates: Automatic daily game data updates and backups
+  - Remote data retrieval: Sync data from remote servers like Raspberry Pi
 
-## インストール方法
+## Installation
 
-1. このリポジトリをクローンまたはダウンロードします
+1. Clone or download this repository
 
 ```bash
 git clone https://github.com/wabisukecx/boardgame_analyzer.git
 cd boardgame-analyzer
 ```
 
-2. 必要なライブラリをインストールします
+2. Install required libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. アプリケーションを実行します
+3. Run the application
 
 ```bash
 streamlit run app.py
 ```
 
-## アプリの使い方
+## How to Use
 
-### 基本機能
+### Basic Features
 
-#### ゲーム名で検索
-1. サイドバーから「ゲーム名で検索」を選択
-2. 検索したいゲーム名を入力
-3. 完全一致検索を行いたい場合はチェックボックスをオン
-4. 「検索」ボタンをクリック
+#### Search by Game Name
+1. Select "Search by Game Name" from the sidebar
+2. Enter the game name you want to search for
+3. Check the checkbox for exact match search if desired
+4. Click the "Search" button
 
-#### ゲームIDで詳細情報を取得
-1. サイドバーから「ゲームIDで詳細情報を取得」を選択
-2. 手動入力または保存済みYAMLファイルから選択
-3. 「詳細情報を取得」ボタンをクリック
-4. 詳細情報が表示され、以下の情報を確認できます：
-   - 基本情報（ゲーム名、発行年、平均評価）
-   - プレイ人数情報（最適人数、対応人数）
-   - 推奨年齢・プレイ時間
-   - ゲームの複雑さと学習曲線分析
-   - ゲーム説明文
-   - メカニクス、カテゴリ、ランキング、デザイナー、パブリッシャー情報
+#### Get Details by Game ID
+1. Select "Get Details by Game ID" from the sidebar
+2. Enter manually or select from saved YAML files
+3. Click the "Get Details" button
+4. Detailed information will be displayed including:
+   - Basic information (game name, year published, average rating)
+   - Player count information (optimal players, supported players)
+   - Recommended age and play time
+   - Game complexity and learning curve analysis
+   - Game description
+   - Mechanics, categories, rankings, designers, publishers information
 
-#### YAMLでデータを保存
-1. サイドバーから「YAMLでデータを保存」を選択
-2. 保存したいゲームをドロップダウンリストから選択
-3. ファイル名を入力（空白の場合は自動生成）
-4. 「選択したゲームデータをYAMLに保存」ボタンをクリック
+#### Save Data to YAML
+1. Select "Save Data to YAML" from the sidebar
+2. Select the game you want to save from the dropdown list
+3. Enter a filename (automatic generation if left blank)
+4. Click the "Save Selected Game Data to YAML" button
 
-#### ゲーム比較機能
-1. サイドバーから「ゲーム比較」を選択
-2. 比較したいゲームを複数選択（最大6つまで）
-3. 選択したゲームの特性がレーダーチャートで視覚化され、数値比較テーブルで詳細な数値を確認できます
+#### Game Comparison
+1. Select "Game Comparison" from the sidebar
+2. Select multiple games to compare (up to 6)
+3. Selected game characteristics are visualized with radar charts and detailed numerical comparison tables
 
-### 類似性検索機能
+### Similarity Search
 
-1. サイドバーから「類似性検索」を選択
-2. 検索の設定を調整（表示する類似ゲーム数、類似度閾値）
-3. カテゴリやメカニクスでフィルタリングするには「検索フィルターを設定」を展開
-4. フィルタリング結果から検索の基準となるゲームを選択
-5. 「類似ゲームを検索」ボタンをクリック
-6. 結果は以下のタブで表示されます：
-   - 類似ゲーム一覧：類似度スコアと類似の理由を含むゲーム情報
-   - 類似度ヒートマップ：ゲーム間の類似関係を視覚化
-   - データ分析：最も類似度が高いゲームのリスト、カテゴリとメカニクスの分布分析
+1. Select "Similarity Search" from the sidebar
+2. Adjust search settings (number of similar games to display, similarity threshold)
+3. Expand "Set Search Filters" to filter by category or mechanics
+4. Select a game as the search reference from filtered results
+5. Click the "Search Similar Games" button
+6. Results are displayed in tabs:
+   - Similar Games List: Game information with similarity scores and reasons
+   - Similarity Heatmap: Visualization of similarity relationships between games
+   - Data Analysis: List of most similar games, category and mechanics distribution analysis
 
-## 自動更新とデータ同期
-Raspberry PiなどのLinuxベースのリモートサーバーを用意することで常に最新のゲームデータで解析できます。2025/04時点ではRaspberry Pi Zero 2 Wを推奨します。
+## Automatic Updates and Data Sync
+By setting up a Linux-based remote server like Raspberry Pi, you can always analyze with the latest game data. As of April 2025, we recommend the Raspberry Pi Zero 2 W.
 
-### 日次更新スクリプト (daily_update.py)
+### Daily Update Script (daily_update.py)
 
-Raspberry Piなどのリモートサーバーでこのスクリプトを定期実行することで以下の機能を提供します：
+Running this script periodically on a remote server like Raspberry Pi provides the following features:
 
-- 保存済みのデータをYYMMDD形式でバックアップ
-- 既存のゲームデータを自動的に更新（BGG APIから最新情報を取得）
-- 設定ファイルの変更検出と記録
+- Backup saved data in YYMMDD format
+- Automatically update existing game data (retrieve latest information from BGG API)
+- Detect and record configuration file changes
 
-設定例（crontabを使用）：
+Configuration example (using crontab):
 ```
 0 1 * * * cd /path/to/boardgame-analyzer && python daily_update.py >> logs/daily_update.log 2>&1
 ```
 
-### リモートデータ同期スクリプト (fetch_boardgame_data.py)
+### Remote Data Sync Script (fetch_boardgame_data.py)
 
-Raspberry Piなどのリモートサーバーで更新したBoardGame Analyzerのデータを取得するためのスクリプトです：
+Script for retrieving BoardGame Analyzer data updated on remote servers like Raspberry Pi:
 
-- SSH経由でゲームデータと設定ファイルを取得
-- 接続設定のカスタマイズ（ホスト、ポート、認証方法）
-- 既存ファイルの自動クリーンアップ
+- Retrieve game data and configuration files via SSH
+- Customize connection settings (host, port, authentication method)
+- Automatic cleanup of existing files
 
-使用例：
+Usage example:
 ```bash
 python fetch_boardgame_data.py --host 192.168.50.192 --username pi
 ```
 
-## 埋め込みデータファイル (game_embeddings.pkl)
+## Embedding Data File (game_embeddings.pkl)
 
-`game_embeddings.pkl` は類似性検索機能を使用するために必要な埋め込みデータファイルです。
+`game_embeddings.pkl` is an embedding data file required for the similarity search feature.
 
-### 作成、入手方法
+### Creation and Acquisition
 
-1. **配布されているファイルを使用する**：
-   - アプリケーションのリポジトリから入手できます
-   - このファイルを `boardgame-analyzer` ディレクトリのルートに配置することで、類似性検索機能がすぐに使用可能になります
-   - 作者のボードゲームコレクションから作成した埋め込みデータですので、使用感の確認にお使いください
+1. **Use the distributed file**:
+   - Available from the application repository
+   - Place this file in the root of the `boardgame-analyzer` directory to immediately enable similarity search
+   - Created from the author's board game collection for testing purposes
 
-2. **ご自身で生成する**：
-   - `generate_embedding_model.py` スクリプトを使用して自分で生成できます
-   - Voyage AI の API を使用します
-   - 必要条件：
-     - Voyage AIのユーザー登録 (https://www.voyageai.com/)
-     - Voyage AIのAPIトークン発行(取り扱いに注意ください)
-     - API 利用のための支払い設定
-     - `VOYAGE_API_KEY` の環境変数設定
-     - .envファイルを作成し、ファイル内にVOYAGE_API_KEY = "取得したVoyage_APIキー"を追加して保存してください
-   - 生成コマンド例：
+2. **Generate your own**:
+   - Can be generated using the `generate_embedding_model.py` script
+   - Uses the Voyage AI API
+   - Requirements:
+     - Voyage AI user registration (https://www.voyageai.com/)
+     - Voyage AI API token issuance (handle with care)
+     - Payment setup for API usage
+     - Set `VOYAGE_API_KEY` environment variable
+     - Create .env file and add VOYAGE_API_KEY = "your_voyage_api_key"
+   - Generation command example:
      ```bash
      python generate_embedding_model.py --data_path "game_data/*.yaml" --output "game_embeddings.pkl"
      ```
-   - 重要なオプションパラメータ：
-     - `--batch_size` - APIリクエストのバッチサイズ（デフォルト: 128）。大きすぎると失敗する可能性があるため、処理が失敗する場合は小さい値（例：64か32）に設定してください
-     - `--max_retries` - APIリクエスト失敗時の再試行回数（デフォルト: 5）
-     - `--request_interval` - リクエスト間の待機時間（秒、デフォルト: 0.5）
-     - `--timeout` - APIリクエストのタイムアウト時間（秒、デフォルト: 15）
-     - `--limit` - 処理するファイル数の上限（0=すべて処理、デフォルト: 0）
+   - Important optional parameters:
+     - `--batch_size` - Batch size for API requests (default: 128). If too large, it may fail; if processing fails, set to a smaller value (e.g., 64 or 32)
+     - `--max_retries` - Number of retries on API request failure (default: 5)
+     - `--request_interval` - Wait time between requests (seconds, default: 0.5)
+     - `--timeout` - API request timeout (seconds, default: 15)
+     - `--limit` - Upper limit of files to process (0=process all, default: 0)
 
-### 使用方法
+### Usage
 
-1. ファイルをアプリケーションのルートディレクトリに配置します
-2. アプリケーションの「類似性検索」機能を選択します
-3. デフォルトでは `game_embeddings.pkl` が読み込みますが、サイドバーの「エンベディングデータファイル」で別のファイルパスを指定できます
+1. Place the file in the application root directory
+2. Select the "Similarity Search" feature in the application
+3. By default, `game_embeddings.pkl` is loaded, but you can specify another file path in the sidebar's "Embedding Data File"
 
-### 注意点
+### Notes
 
-- このファイルがないと類似性検索機能は使用できません（他の機能は通常通り使用可能）
-- ファイルサイズは保存されているゲーム数によって異なりますが、多数のゲームデータを含む場合は比較的大きくなる可能性があります
-- 自分で生成する場合、API 呼び出しにコストがかかります（Voyage AI の料金体系に基づく）
-- 定期的に更新することで、新しいゲームデータを類似性検索に含めることができます
+- Without this file, the similarity search feature cannot be used (other features work normally)
+- File size varies depending on the number of saved games and can be relatively large with many game data entries
+- When generating yourself, API calls incur costs (based on Voyage AI's pricing structure)
+- Regular updates allow inclusion of new game data in similarity searches
 
-独自の埋め込みデータを作成することで、特定のゲームジャンルや好みに特化した類似性検索が可能になります。
+Creating your own embedding data enables similarity searches tailored to specific game genres or preferences.
 
-## 技術的詳細
+## Technical Details
 
-### 学習曲線分析システム
+### Learning Curve Analysis System
 
-このアプリは独自のアルゴリズムを使用してボードゲームの学習曲線を分析します：
+This app uses a proprietary algorithm to analyze board game learning curves:
 
-#### 分析に使用する要素
-- メカニクスの複雑さと数
-- BGGでの重さ評価（Weight）
-- カテゴリの複雑さ
-- ランキング情報
-- リプレイ性
-- メカニクスの戦略的価値
-- プレイヤー相互作用値
-- プレイ時間
+#### Elements Used in Analysis
+- Mechanics complexity and count
+- BGG weight rating
+- Category complexity
+- Ranking information
+- Replayability
+- Mechanics strategic value
+- Player interaction value
+- Play time
 
-#### 分析結果の指標
-- 初期学習の障壁（1〜5）
-- 戦略の深さ（1〜5）
-- 意思決定ポイント（1〜5）
-- プレイヤー相互作用（1〜5）
-- ルールの複雑さ（1〜5）
-- カテゴリに基づく複雑さ（1〜5）
-- ランキングに基づく複雑さ（1〜5）
-- 学習曲線タイプ
-- リプレイ性（1〜5）
-- マスター時間
-- 対象プレイヤータイプ
+#### Analysis Result Metrics
+- Initial learning barrier (1-5)
+- Strategic depth (1-5)
+- Decision points (1-5)
+- Player interaction (1-5)
+- Rules complexity (1-5)
+- Category-based complexity (1-5)
+- Ranking-based complexity (1-5)
+- Learning curve type
+- Replayability (1-5)
+- Mastery time
+- Target player types
 
-### 複雑さデータのカスタマイズ
+### Customizing Complexity Data
 
-本アプリは、以下の3つのYAMLファイルを使用して複雑さの評価を行います：
+This app uses three YAML files to evaluate complexity:
 
-- `mechanics_data.yaml`: メカニクス（ゲームの仕組み）ごとの複雑さ、戦略的価値、相互作用値
-- `categories_data.yaml`: カテゴリ（ゲームのテーマや種類）ごとの複雑さ、戦略的価値、相互作用値
-- `rank_complexity.yaml`: ランキング種別ごとの複雑さ、戦略的価値、相互作用値
+- `mechanics_data.yaml`: Complexity, strategic value, and interaction value per mechanics
+- `categories_data.yaml`: Complexity, strategic value, and interaction value per category
+- `rank_complexity.yaml`: Complexity, strategic value, and interaction value per ranking type
 
-これらのファイルは手動で編集できるため、実際のゲーム体験に基づいてカスタマイズすることで、より正確な分析が可能になります。初回起動時に基本データが自動生成され、新しいメカニクスやカテゴリが見つかると自動的に追加されます。
+These files can be manually edited, enabling more accurate analysis by customizing based on actual game experience. Basic data is automatically generated on first startup, and new mechanics or categories are automatically added when found.
 
-#### 編集時の注意点
+#### Editing Notes
 
-- すべてのYAMLファイルは必ず UTF-8 エンコーディングで保存してください
-- 他のエンコーディング（Shift-JISなど）で保存すると読み込みエラーが発生します
-- 数値は1.0～5.0の範囲内にしてください（小数点第一位まで）
+- All YAML files must be saved in UTF-8 encoding
+- Saving in other encodings (like Shift-JIS) will cause read errors
+- Keep numerical values between 1.0-5.0 (to one decimal place)
 
-### 戦略的価値と相互作用の分析
+### Strategic Value and Interaction Analysis
 
-各メカニクスとカテゴリには以下の値が定義されています：
+Each mechanics and category has the following defined values:
 
-- 複雑さ (complexity): ルールや概念の複雑さ（1.0～5.0）
-- 戦略的価値 (strategic_value): 戦略的深さへの貢献度（1.0～5.0）
-- 相互作用値 (interaction_value): プレイヤー間の相互作用の程度（1.0～5.0）
+- Complexity: Rule or concept complexity (1.0-5.0)
+- Strategic value: Contribution to strategic depth (1.0-5.0)
+- Interaction value: Degree of player-to-player interaction (1.0-5.0)
 
-例えば、mechanics_data.yamlでは以下のように定義されています：
+For example, in mechanics_data.yaml:
 
 ```yaml
 Engine Building:
   complexity: 4.7
   strategic_value: 5.0
   interaction_value: 2.0
-  description: 戦略的に非常に深いが、相互作用は比較的少ない
+  description: Very strategically deep but relatively low interaction
 ```
 
-これらの値は、ゲームの戦略深度と相互作用の複雑さをより精密に計算するために使用されます。
+These values are used to more precisely calculate game strategic depth and interaction complexity.
 
-### 埋め込みモデルと類似性検索の技術
+### Embedding Model and Similarity Search Technology
 
-`game_embeddings.pkl`はアプリケーションの類似性検索機能の中核となるファイルです。
+`game_embeddings.pkl` is a core file for the application's similarity search functionality.
 
-#### 埋め込みモデルの生成技術
+#### Embedding Model Generation Technology
 
-- **ベクトル化プロセス**: 
-  - 各ゲームのテキストデータ（名前、説明、カテゴリ、メカニクスなど）に意味を補足したテキストに変換
-  - Voyage AI API（voyage-3-large モデル）を使用してテキストを1024次元のベクトル空間にエンコード
-  - これらによりゲームの特徴や性質が数学的に表現される
+- **Vectorization Process**: 
+  - Convert each game's text data (name, description, categories, mechanics, etc.) into semantically enriched text
+  - Encode text into 1024-dimensional vector space using Voyage AI API (voyage-3-large model)
+  - These mathematically represent game characteristics and properties
 
-- **技術的仕様**:
-  - ベクトル次元数: 1024次元（voyage-3-large モデルによる）
-  - エンベディングタイプ: 密ベクトル表現（dense vector representation）
+- **Technical Specifications**:
+  - Vector dimensions: 1024 dimensions (by voyage-3-large model)
+  - Embedding type: Dense vector representation
 
-#### 類似度計算アルゴリズム
+#### Similarity Calculation Algorithm
 
-- **コサイン類似度**:
-  - 2つのベクトル間の角度のコサインを測定し、0〜1の類似度スコアを算出
-  - 値が1に近いほど類似度が高く、0に近いほど類似度が低い
-  - 数式: cos(θ) = (A・B) / (||A|| ||B||)
+- **Cosine Similarity**:
+  - Measures the cosine of the angle between two vectors, calculating similarity score from 0-1
+  - Values closer to 1 indicate higher similarity, closer to 0 indicate lower similarity
+  - Formula: cos(θ) = (A·B) / (||A|| ||B||)
   
-- **事前計算された類似度行列**:
-  - すべてのゲーム間のペアワイズ類似度を事前計算
-  - N×Nの行列（Nはゲーム数）を保存
-  - これにより実行時の類似度計算を省略し、検索を高速化
+- **Pre-computed Similarity Matrix**:
+  - Pre-computes pairwise similarities between all games
+  - Stores N×N matrix (N is number of games)
+  - This eliminates runtime similarity calculations, speeding up searches
 
-#### ファイルの技術的構造
+#### Technical File Structure
 
-`game_embeddings.pkl`は以下の構造を持つPythonのpickleファイルです：
+`game_embeddings.pkl` is a Python pickle file with the following structure:
 
 ```python
 {
-    'games': [  # ゲーム情報のリスト
-        {'id': '123456', 'name': 'Game Name', 'japanese_name': '日本語名', 'file': 'path/to/yaml'},
-        # ... 他のゲーム情報
+    'games': [  # List of game information
+        {'id': '123456', 'name': 'Game Name', 'japanese_name': 'Japanese Name', 'file': 'path/to/yaml'},
+        # ... other game information
     ],
-    'game_data_list': [  # ゲームの詳細データリスト
+    'game_data_list': [  # List of detailed game data
         {'name': 'Game Name', 'mechanics': [...], 'categories': [...], ...},
-        # ... 他のゲームデータ
+        # ... other game data
     ],
-    'embeddings': numpy.ndarray,  # 形状: [N, 1024] - N個のゲームそれぞれに1024次元ベクトル
-    'similarity_matrix': numpy.ndarray,  # 形状: [N, N] - すべてのゲーム間の類似度を格納
-    'metadata': {  # ファイルの更新に関するメタデータ
-        'file_path1': 'hash1',  # ファイルパスとそのハッシュ値
-        # ... 他のファイルメタデータ
+    'embeddings': numpy.ndarray,  # Shape: [N, 1024] - 1024-dimensional vector for each of N games
+    'similarity_matrix': numpy.ndarray,  # Shape: [N, N] - Stores similarity between all games
+    'metadata': {  # File update metadata
+        'file_path1': 'hash1',  # File path and its hash value
+        # ... other file metadata
     }
 }
 ```
 
-#### 類似性理由分析アルゴリズム
+#### Similarity Reason Analysis Algorithm
 
-類似性の理由を自動分析する機能も含まれており、以下の要素を比較します：
+Includes automatic analysis of similarity reasons, comparing the following elements:
 
-- 共通カテゴリ
-- 共通メカニクス
-- 戦略的深さの類似度
-- 対象プレイヤータイプの共通性
-- 複雑さスコアの近さ
-- 発行年の近接性
-- 説明文からの共通キーワード
+- Common categories
+- Common mechanics
+- Strategic depth similarity
+- Common target player types
+- Complexity score proximity
+- Year published proximity
+- Common keywords from descriptions
 
-これらの分析結果が「類似性の理由」として表示され、ゲーム間の関連性をより深く理解するのに役立ちます。
+These analysis results are displayed as "Similarity Reasons" and help understand relationships between games more deeply.
 
-## プロジェクト構成
+## Project Structure
 
 ```
 boardgame-analyzer/
-├── app.py                         # メインアプリケーション
-├── requirements.txt               # 必要なパッケージのリスト
-├── generate_embedding_model.py    # 埋め込みモデル生成スクリプト
-├── daily_update.py                # 毎日のデータ更新スクリプト
-├── fetch_boardgame_data.py        # リモートデータ取得スクリプト
-├── game_embeddings.pkl            # 埋め込みデータファイル（類似性検索用）
-├── learning_curve_for_daily_update.py # 学習曲線分析モジュール
-├── config/                        # 設定ファイル
-│   ├── mechanics_data.yaml        # メカニクスの複雑さデータ
-│   ├── categories_data.yaml       # カテゴリの複雑さデータ
-│   └── rank_complexity.yaml       # ランキング種別の複雑さデータ
-├── game_data/                     # 保存されたゲームデータ
-├── backup/                        # バックアップデータ
-├── logs/                          # ログファイル
-│   └── daily_update.log           # 日次更新ログ
-├── src/                           # ソースコード
-│   ├── api/                       # API関連
+├── app.py                         # Main application
+├── requirements.txt               # Required packages list
+├── generate_embedding_model.py    # Embedding model generation script
+├── daily_update.py                # Daily data update script
+├── fetch_boardgame_data.py        # Remote data retrieval script
+├── game_embeddings.pkl            # Embedding data file (for similarity search)
+├── learning_curve_for_daily_update.py # Learning curve analysis module
+├── config/                        # Configuration files
+│   ├── mechanics_data.yaml        # Mechanics complexity data
+│   ├── categories_data.yaml       # Category complexity data
+│   └── rank_complexity.yaml       # Ranking type complexity data
+├── game_data/                     # Saved game data
+├── backup/                        # Backup data
+├── logs/                          # Log files
+│   └── daily_update.log           # Daily update log
+├── src/                           # Source code
+│   ├── api/                       # API related
 │   │   ├── bgg_api.py             # BoardGameGeek API
-│   │   └── rate_limiter.py        # レート制限とキャッシュ
-│   ├── data/                      # データ処理
-│   │   └── data_handler.py        # データ処理
-│   └── analysis/                  # 分析関連
-│       ├── similarity.py          # 類似性検索
-│       ├── improved_similarity_analyzer.py # 改善された類似性分析
-│       ├── game_analyzer.py       # ゲーム分析
-│       ├── learning_curve.py      # 学習曲線
-│       ├── mechanic_complexity.py # メカニクス複雑さ
-│       ├── category_complexity.py # カテゴリ複雑さ
-│       ├── rank_complexity.py     # ランキング複雑さ
-│       └── strategic_depth.py     # 戦略深度
-└── ui/                            # UI関連
-    ├── ui_components.py           # UIコンポーネント関数
-    └── pages/                     # ページコンポーネント
-        ├── search_page.py         # 検索ページ
-        ├── details_page.py        # 詳細ページ
-        ├── save_page.py           # 保存ページ
-        └── compare_page.py        # 比較ページ
+│   │   └── rate_limiter.py        # Rate limiting and cache
+│   ├── data/                      # Data processing
+│   │   └── data_handler.py        # Data processing
+│   └── analysis/                  # Analysis related
+│       ├── similarity.py          # Similarity search
+│       ├── improved_similarity_analyzer.py # Improved similarity analysis
+│       ├── game_analyzer.py       # Game analysis
+│       ├── learning_curve.py      # Learning curve
+│       ├── mechanic_complexity.py # Mechanics complexity
+│       ├── category_complexity.py # Category complexity
+│       ├── rank_complexity.py     # Ranking complexity
+│       └── strategic_depth.py     # Strategic depth
+└── ui/                            # UI related
+    ├── ui_components.py           # UI component functions
+    └── pages/                     # Page components
+        ├── search_page.py         # Search page
+        ├── details_page.py        # Details page
+        ├── save_page.py           # Save page
+        └── compare_page.py        # Compare page
 ```
 
-## 注意事項
+## Notes
 
-- ゲーム名に特殊文字（:;など）が含まれていると、ファイル保存に失敗する場合があります
-- このツールは学習曲線分析アルゴリズムに主観的要素を含み、絶対的な評価ではありません
-- エンベディングの生成にはVoyage AIのAPIキーが必要で、使用量に応じた課金が発生します
-- 日次更新スクリプトは、定期的な実行のためにcrontabなどのスケジューラーを設定する必要があります
+- Game names containing special characters (:; etc.) may fail to save as files
+- This tool's learning curve analysis algorithm contains subjective elements and is not an absolute evaluation
+- Embedding generation requires a Voyage AI API key and incurs charges based on usage
+- Daily update scripts require scheduler setup like crontab for periodic execution
 
-## 謝辞
+## Acknowledgments
 
-このアプリケーションはBoardGameGeek APIを使用しています。BoardGameGeekに感謝します。
-また、類似性検索機能の埋め込みデータの作成にはVoyage AIのエンベディングAPIを使用しています。
+This application uses the BoardGameGeek API. Thanks to BoardGameGeek.
+The similarity search feature uses Voyage AI's embedding API for creating embedding data.

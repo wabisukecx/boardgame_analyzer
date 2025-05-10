@@ -1,0 +1,111 @@
+{
+  "app": {
+    "title": "ボードゲームアプリ",
+    "description": "BoardGameGeek API と事前計算されたエンベディングを使用したボードゲームデータツール"
+  },
+  "sidebar": {
+    "functions": "機能",
+    "select_operation": "操作を選んでください",
+    "search_by_name": "ゲーム名で検索",
+    "get_details_by_id": "ゲームIDで詳細情報を取得",
+    "save_yaml": "YAMLでデータを保存",
+    "compare_games": "ゲーム比較",
+    "similarity_search": "類似性検索",
+    "language": "言語"
+  },
+  "search": {
+    "title": "ゲーム名で検索",
+    "input_placeholder": "検索するゲーム名を入力してください",
+    "exact_match": "完全一致検索",
+    "search_button": "検索",
+    "results_found": "検索結果: {count}件見つかりました",
+    "no_results": "検索結果がありません",
+    "view_details_info": "詳細情報を表示するには「ゲームIDで詳細情報を取得」機能を使用してください。",
+    "input_error": "検索するゲーム名を入力してください"
+  },
+  "details": {
+    "title": "ゲームIDで詳細情報を取得",
+    "input_method": "入力方法を選択",
+    "manual_input": "手動入力",
+    "select_from_saved": "保存済みYAMLファイルから選択",
+    "input_placeholder": "詳細情報を取得するゲームIDを入力してください",
+    "select_game": "保存済みゲームから選択",
+    "no_yaml_files": "保存済みのYAMLファイルが見つかりません",
+    "get_details_button": "詳細情報を取得",
+    "error_no_id": "ゲームIDを入力してください",
+    "not_found": "ゲーム詳細情報が見つかりませんでした",
+    "yaml_updated": "メカニクス、カテゴリ、ランキング設定が更新されました",
+    "data_changed": "保存されているデータと新しく取得したデータに違いがあります。",
+    "change_details": "変更内容の詳細",
+    "update_yaml": "YAMLファイルを更新する",
+    "update_success": "ゲームデータが更新されました。YAMLファイルを最新情報で上書き保存しました。",
+    "update_error": "ファイル更新エラー: {error}",
+    "no_changes": "保存されているデータと新しく取得したデータに違いはありません。"
+  },
+  "save": {
+    "title": "ゲームデータをYAML形式で保存",
+    "select_game": "保存するゲームデータを選択してください",
+    "english_name": "英語名",
+    "game_id": "ゲームID",
+    "year_published": "発行年",
+    "filename_input": "保存するファイル名 (空白の場合はplaceholderの名前を使用)",
+    "save_button": "選択したゲームデータをYAMLに保存",
+    "save_success": "ゲームデータをYAMLファイルに保存しました: {filepath}",
+    "save_error": "ファイル保存エラー: {error}",
+    "special_char_error": "特殊文字（:;など）を含むゲーム名があると保存に失敗する場合があります。",
+    "no_data": "保存可能なゲームデータがありません。まずゲームを検索して詳細情報を取得してください。"
+  },
+  "similarity": {
+    "title": "ボードゲーム類似性検索",
+    "description": "事前計算されたエンベディングを使用してボードゲームの類似性を検索するアプリケーションです。",
+    "settings": "類似性検索設定",
+    "search_settings": "検索設定",
+    "embedding_file": "エンベディングデータファイル",
+    "num_games": "表示する類似ゲーム数",
+    "threshold": "類似度閾値",
+    "search_filter": "検索フィルターを設定",
+    "filter_title": "検索フィルター",
+    "category_filter": "カテゴリで絞り込み",
+    "mechanics_filter": "メカニクスで絞り込み",
+    "select_categories": "カテゴリを選択",
+    "select_mechanics": "メカニクスを選択",
+    "select_game": "検索するゲームを選択してください",
+    "selected_game": "選択されたゲーム",
+    "search_button": "類似ゲームを検索",
+    "similar_games": "類似ゲーム",
+    "similarity_score": "類似度: {score}",
+    "similarity_reasons": "類似性の理由",
+    "no_similar_games": "類似度が {threshold} を超えるゲームが見つかりませんでした。閾値を下げてみてください。",
+    "tabs": {
+      "game_list": "類似ゲーム一覧",
+      "heatmap": "類似度ヒートマップ",
+      "analysis": "データ分析"
+    },
+    "analysis": {
+      "top_games": "最も類似度が高い20ゲーム",
+      "category_distribution": "カテゴリの分布",
+      "mechanics_distribution": "メカニクスの分布",
+      "no_categories": "類似ゲームのカテゴリ情報がありません",
+      "no_mechanics": "類似ゲームのメカニクス情報がありません"
+    }
+  },
+  "compare": {
+    "title": "複数ゲームの比較",
+    "no_data": "保存済みのゲームデータがありません。まずはゲームを検索して保存してください。",
+    "select_games": "比較するゲームを選択してください",
+    "select_prompt": "比較するゲーム (最大6つまで選択可能)",
+    "limit_warning": "表示は最大6ゲームまでに制限されます。最初の6つを表示します。",
+    "chart_title": "ゲーム特性比較チャート",
+    "table_title": "数値比較",
+    "metrics": {
+      "game_name": "ゲーム名",
+      "initial_barrier": "初期学習障壁",
+      "strategic_depth": "戦略的深さ",
+      "replayability": "リプレイ性",
+      "decision_points": "意思決定の深さ",
+      "interaction": "プレイヤー相互作用",
+      "rules_complexity": "ルールの複雑さ",
+      "bgg_weight": "BGG重み"
+    }
+  }
+}
