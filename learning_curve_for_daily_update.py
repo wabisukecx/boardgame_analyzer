@@ -1,6 +1,6 @@
 """
-Streamlit依存なしでBoardGameGeekのゲームデータからラーニングカーブを分析するモジュール
-daily_update.py用に最適化
+Module for analyzing learning curves from BoardGameGeek game data without Streamlit dependencies
+Optimized for daily_update.py
 """
 
 import datetime
@@ -8,15 +8,15 @@ import math
 import os
 import yaml
 
-# 設定ファイルのパス
+# Configuration file paths
 CONFIG_DIR = "config"
 MECHANICS_DATA_FILE = os.path.join(CONFIG_DIR, "mechanics_data.yaml")
 CATEGORIES_DATA_FILE = os.path.join(CONFIG_DIR, "categories_data.yaml")
 RANK_COMPLEXITY_FILE = os.path.join(CONFIG_DIR, "rank_complexity.yaml")
 
-# YAML設定ファイル読み込み関数
+# YAML configuration file loading function
 def load_yaml_config(file_path, default_value=None):
-    """YAMLファイルを読み込む汎用関数"""
+    """Generic function to load YAML files"""
     if not os.path.exists(file_path):
         return default_value or {}
     
@@ -24,186 +24,186 @@ def load_yaml_config(file_path, default_value=None):
         with open(file_path, 'r', encoding='utf-8') as file:
             data = yaml.safe_load(file)
         
-        # Noneの場合は空の辞書を返す
+        # Return empty dictionary if None
         if data is None:
             return {}
             
         return data
     except Exception as e:
-        print(f"設定ファイル読み込みエラー ({file_path}): {str(e)}")
+        print(f"Error loading configuration file ({file_path}): {str(e)}")
         return default_value or {}
 
-# メカニクスの複雑さ処理関数
+# Function to get mechanic complexity
 def get_mechanic_complexity(mechanic_name, default_value=2.5):
-    """メカニクス名から複雑さを取得"""
+    """Get complexity from mechanic name"""
     mechanics_data = load_yaml_config(MECHANICS_DATA_FILE)
     
-    # メカニクスが存在するか確認
+    # Check if mechanic exists
     if mechanic_name in mechanics_data:
-        # 新しい構造: complexity_data[mechanic_name] はディクショナリで、
-        # その中に 'complexity' キーがある
+        # New structure: complexity_data[mechanic_name] is a dictionary,
+        # which contains a 'complexity' key
         if isinstance(mechanics_data[mechanic_name], dict) and 'complexity' in mechanics_data[mechanic_name]:
             return mechanics_data[mechanic_name]['complexity']
-        # 後方互換性のため、直接値が格納されている場合もサポート
+        # Support backward compatibility if value is stored directly
         elif isinstance(mechanics_data[mechanic_name], (int, float)):
             return mechanics_data[mechanic_name]
     
     return default_value
 
-# カテゴリの複雑さ処理関数
+# Function to get category complexity
 def get_category_complexity(category_name, default_value=2.5):
-    """カテゴリ名から複雑さを取得"""
+    """Get complexity from category name"""
     categories_data = load_yaml_config(CATEGORIES_DATA_FILE)
     
-    # カテゴリが存在するか確認
+    # Check if category exists
     if category_name in categories_data:
-        # 新しい構造: categories_data[category_name] はディクショナリ
+        # New structure: categories_data[category_name] is a dictionary
         if isinstance(categories_data[category_name], dict) and 'complexity' in categories_data[category_name]:
             return categories_data[category_name]['complexity']
-        # 後方互換性のため、直接値が格納されている場合もサポート
+        # Support backward compatibility if value is stored directly
         elif isinstance(categories_data[category_name], (int, float)):
             return categories_data[category_name]
     
     return default_value
 
 def calculate_category_complexity(categories):
-    """カテゴリリストから全体の複雑さスコアを計算"""
+    """Calculate overall complexity score from category list"""
     if not categories:
-        return 2.5  # デフォルト値
+        return 2.5  # Default value
     
-    # 各カテゴリの複雑さを取得
+    # Get complexity for each category
     complexity_scores = [get_category_complexity(cat['name']) for cat in categories]
     
-    # 複雑さの平均を計算
+    # Calculate average complexity
     avg_complexity = sum(complexity_scores) / len(complexity_scores)
     
-    # カテゴリ数による補正（多様なカテゴリがあるゲームはより複雑）
+    # Adjustment based on number of categories (games with diverse categories are more complex)
     category_count_factor = min(1.3, 1.0 + (len(categories) - 1) * 0.05)
     adjusted_complexity = avg_complexity * category_count_factor
     
-    # 1.0〜5.0の範囲に制限
+    # Limit to range 1.0-5.0
     return min(5.0, max(1.0, adjusted_complexity))
 
-# ランキングの複雑さ処理関数
+# Function to get ranking complexity
 def get_rank_complexity_value(rank_type, default_value=3.0):
-    """ランク種別から複雑さを取得"""
+    """Get complexity from rank type"""
     complexity_data = load_yaml_config(RANK_COMPLEXITY_FILE)
     
-    # ランク種別が存在するか確認
+    # Check if rank type exists
     if rank_type in complexity_data:
-        # 新しい構造: complexity_data[rank_type] はディクショナリ
+        # New structure: complexity_data[rank_type] is a dictionary
         if isinstance(complexity_data[rank_type], dict) and 'complexity' in complexity_data[rank_type]:
             return complexity_data[rank_type]['complexity']
-        # 後方互換性のため、直接値が格納されている場合もサポート
+        # Support backward compatibility if value is stored directly
         elif isinstance(complexity_data[rank_type], (int, float)):
             return complexity_data[rank_type]
     
     return default_value
 
 def calculate_rank_position_score(rank_value):
-    """ランキングの順位からゲームの人気/品質スコアを計算"""
+    """Calculate game popularity/quality score from ranking position"""
     try:
-        # 順位を整数に変換
+        # Convert rank to integer
         rank = int(rank_value)
         
-        # 対数スケールでスコアを計算（上位ほどスコアが高い）
+        # Calculate score on logarithmic scale (higher rank = higher score)
         if rank <= 10:
-            # トップ10は最高評価
+            # Top 10 gets highest rating
             score = 5.0
         elif rank <= 100:
-            # トップ100はとても高い評価
-            score = 4.5 - (rank - 10) / 90 * 0.5  # 4.5～4.0
+            # Top 100 gets very high rating
+            score = 4.5 - (rank - 10) / 90 * 0.5  # 4.5~4.0
         elif rank <= 1000:
-            # トップ1000は高い評価
-            score = 4.0 - (rank - 100) / 900 * 1.0  # 4.0～3.0
+            # Top 1000 gets high rating
+            score = 4.0 - (rank - 100) / 900 * 1.0  # 4.0~3.0
         elif rank <= 5000:
-            # トップ5000は中程度の評価
-            score = 3.0 - (rank - 1000) / 4000 * 1.0  # 3.0～2.0
+            # Top 5000 gets medium rating
+            score = 3.0 - (rank - 1000) / 4000 * 1.0  # 3.0~2.0
         else:
-            # 5000位より下は低い評価
-            score = max(1.0, 2.0 - math.log10(rank / 5000))  # 2.0～1.0
+            # Below 5000 gets low rating
+            score = max(1.0, 2.0 - math.log10(rank / 5000))  # 2.0~1.0
         
         return score
     except (ValueError, TypeError):
-        # 数値に変換できない場合はデフォルト値を返す
+        # Return default value if cannot convert to number
         return 2.5
 
 def calculate_rank_complexity(ranks):
-    """ランキング情報から複雑さスコアを計算"""
+    """Calculate complexity score from ranking information"""
     if not ranks:
-        return 3.0  # デフォルト値
+        return 3.0  # Default value
     
-    # 各ランキング種別ごとのスコアを計算
+    # Calculate score for each ranking type
     rank_scores = []
     for rank_info in ranks:
         rank_type = rank_info.get('type', 'boardgame')
         rank_value = rank_info.get('rank')
         
         if rank_value and rank_value != "Not Ranked":
-            # 順位からの人気/品質スコア
+            # Popularity/quality score from rank position
             popularity_score = calculate_rank_position_score(rank_value)
             
-            # ランキング種別の複雑さ（基準値）
+            # Ranking type complexity (base value)
             type_complexity = get_rank_complexity_value(rank_type)
             
-            # 複雑さ評価は主にランキング種別に基づく
-            # 順位の影響は小さくする（20%）
+            # Complexity evaluation is mainly based on ranking type
+            # Rank position has smaller influence (20%)
             adjusted_score = (type_complexity * 0.8 + (popularity_score - 3.0) * 0.2)
             
-            # 重み付けはランキング種別の重要度
+            # Weighting is based on importance of ranking type
             weight = 1.0
             if rank_type == "boardgame":
-                weight = 1.0  # 総合ランキングは標準の重み
+                weight = 1.0  # Overall ranking has standard weight
             elif rank_type in ["strategygames", "wargames"]:
-                weight = 1.2  # 戦略ゲーム系は重み増加
+                weight = 1.2  # Strategy games get higher weight
             elif rank_type in ["familygames", "partygames", "childrensgames"]:
-                weight = 0.8  # カジュアルゲーム系は重み減少
+                weight = 0.8  # Casual games get lower weight
             
-            # 重み付けスコアを追加
+            # Add weighted score
             rank_scores.append((adjusted_score, weight))
     
-    # スコアがない場合はデフォルト値を返す
+    # Return default value if no scores
     if not rank_scores:
         return 3.0
         
-    # 重み付け平均を計算
+    # Calculate weighted average
     total_weighted_score = sum(score * weight for score, weight in rank_scores)
     total_weight = sum(weight for _, weight in rank_scores)
     
     avg_score = total_weighted_score / total_weight
     
-    # 1.0〜5.0の範囲に制限
+    # Limit to range 1.0-5.0
     return min(5.0, max(1.0, avg_score))
 
 def get_mechanic_strategic_value(mechanic_name, default_value=3.0):
-    """指定されたメカニクスの戦略的価値を取得"""
+    """Get strategic value of specified mechanic"""
     mechanics_data = load_yaml_config(MECHANICS_DATA_FILE)
     
-    # メカニクスが存在するか確認
+    # Check if mechanic exists
     if mechanic_name in mechanics_data:
-        # 辞書形式でstrategic_valueを格納している場合
+        # If strategic_value is stored in dictionary format
         if isinstance(mechanics_data[mechanic_name], dict) and "strategic_value" in mechanics_data[mechanic_name]:
             return mechanics_data[mechanic_name]["strategic_value"]
         else:
-            # 複雑さの値に基づいて戦略的価値を推定
+            # Estimate strategic value based on complexity value
             complexity = mechanics_data[mechanic_name] if isinstance(mechanics_data[mechanic_name], (int, float)) else 3.0
-            # 複雑さに基づく戦略的価値の推定（複雑なほど高い戦略性）
+            # Estimate strategic value based on complexity (more complex = higher strategy)
             estimated_value = min(5.0, complexity * 0.9)
             return max(1.0, estimated_value)
     
     return default_value
 
 def get_mechanic_interaction_value(mechanic_name, default_value=3.0):
-    """指定されたメカニクスのプレイヤー間相互作用の値を取得"""
+    """Get player interaction value of specified mechanic"""
     mechanics_data = load_yaml_config(MECHANICS_DATA_FILE)
     
-    # メカニクスが存在するか確認
+    # Check if mechanic exists
     if mechanic_name in mechanics_data:
-        # 辞書形式でinteraction_valueを格納している場合
+        # If interaction_value is stored in dictionary format
         if isinstance(mechanics_data[mechanic_name], dict) and "interaction_value" in mechanics_data[mechanic_name]:
             return mechanics_data[mechanic_name]["interaction_value"]
         else:
-            # 特定のメカニクスは相互作用が高い傾向がある
+            # Certain mechanics tend to have high interaction
             high_interaction_mechanics = [
                 'Trading', 'Negotiation', 'Auction/Bidding', 'Take That', 
                 'Betting and Bluffing', 'Player Elimination'
@@ -218,79 +218,79 @@ def get_mechanic_interaction_value(mechanic_name, default_value=3.0):
             if mechanic_name in medium_interaction_mechanics:
                 return 3.8
             
-            # それ以外は中程度の相互作用
+            # Others have medium interaction
             return default_value
     
     return default_value
 
 def evaluate_playtime_complexity(game_data):
-    """プレイ時間に基づく複雑さボーナスを評価する"""
+    """Evaluate complexity bonus based on playing time"""
     playtime_info = {
-        "strategic_bonus": 0.0,     # 戦略的深度に対するボーナス
-        "interaction_modifier": 0.0, # 相互作用に対する修正値
-        "decision_density": 0.0,    # 単位時間あたりの意思決定密度
-        "complexity_factor": 1.0    # 複雑さに対する全体的な修正係数
+        "strategic_bonus": 0.0,     # Bonus for strategic depth
+        "interaction_modifier": 0.0, # Modifier for interaction
+        "decision_density": 0.0,    # Decision density per unit time
+        "complexity_factor": 1.0    # Overall complexity modifier factor
     }
     
-    # プレイ時間が設定されていない場合はデフォルト値を返す
+    # Return default values if playing time is not set
     if 'playing_time' not in game_data:
         return playtime_info
     
     try:
         play_time = int(game_data['playing_time'])
         
-        # 戦略的深度へのボーナス（長時間ゲームは通常より戦略的）
-        if play_time > 180:  # 3時間以上
+        # Bonus to strategic depth (longer games tend to be more strategic)
+        if play_time > 180:  # Over 3 hours
             playtime_info["strategic_bonus"] = 0.3
-        elif play_time > 120:  # 2時間以上
+        elif play_time > 120:  # Over 2 hours
             playtime_info["strategic_bonus"] = 0.2
-        elif play_time > 60:  # 1時間以上
+        elif play_time > 60:  # Over 1 hour
             playtime_info["strategic_bonus"] = 0.1
         
-        # 相互作用への修正（短時間ゲームは濃密な相互作用、長時間ゲームは戦略的対立）
-        if play_time <= 30:  # 30分以下
-            playtime_info["interaction_modifier"] = 0.2  # 短時間での高い相互作用
-        elif play_time >= 180:  # 3時間以上
-            playtime_info["interaction_modifier"] = 0.1  # 長時間での戦略的対立
+        # Modifier for interaction (short games have dense interaction, long games have strategic opposition)
+        if play_time <= 30:  # 30 minutes or less
+            playtime_info["interaction_modifier"] = 0.2  # High interaction in short time
+        elif play_time >= 180:  # 3 hours or more
+            playtime_info["interaction_modifier"] = 0.1  # Strategic opposition in long time
         
-        # 単位時間あたりの意思決定密度
-        # 短いゲームでの決断は重みがある傾向、長いゲームでは分散する傾向
+        # Decision density per unit time
+        # Decisions in short games tend to have more weight, in long games they tend to be more distributed
         mechanics_count = len(game_data.get('mechanics', []))
-        if play_time <= 30 and mechanics_count >= 3:  # 短時間で多くのメカニクス
+        if play_time <= 30 and mechanics_count >= 3:  # Short time with many mechanics
             playtime_info["decision_density"] = 0.2
         elif 30 < play_time <= 60 and mechanics_count >= 4:
             playtime_info["decision_density"] = 0.15
         elif 60 < play_time <= 120 and mechanics_count >= 5:
             playtime_info["decision_density"] = 0.1
         
-        # 全体的な複雑さに対する修正係数
-        # 短すぎるゲームは複雑さが制限される傾向がある
-        if play_time < 20:  # 20分未満
-            playtime_info["complexity_factor"] = 0.85  # 複雑さ15%減少
-        elif play_time < 45:  # 45分未満
-            playtime_info["complexity_factor"] = 0.95  # 複雑さ5%減少
-        elif play_time > 180:  # 3時間以上
-            playtime_info["complexity_factor"] = 1.1   # 複雑さ10%増加
+        # Overall complexity modifier factor
+        # Games that are too short tend to have limited complexity
+        if play_time < 20:  # Less than 20 minutes
+            playtime_info["complexity_factor"] = 0.85  # 15% complexity reduction
+        elif play_time < 45:  # Less than 45 minutes
+            playtime_info["complexity_factor"] = 0.95  # 5% complexity reduction
+        elif play_time > 180:  # More than 3 hours
+            playtime_info["complexity_factor"] = 1.1   # 10% complexity increase
         
     except (ValueError, TypeError):
-        # プレイ時間をパースできない場合はデフォルト値を使用
+        # Use default values if playing time cannot be parsed
         pass
         
     return playtime_info
 
 def estimate_decision_points(mechanics, game_data=None):
-    """意思決定ポイントの推定（重み付けを再調整）"""
+    """Estimate decision points (with readjusted weights)"""
     if not mechanics:
-        return 2.5  # デフォルト値
+        return 2.5  # Default value
     
-    # 各メカニクスの戦略的価値を取得
+    # Get strategic value for each mechanic
     strategic_values = [get_mechanic_strategic_value(m['name']) for m in mechanics]
     
     if strategic_values:
-        # 戦略的価値が高い順にソート
+        # Sort by strategic value in descending order
         strategic_values.sort(reverse=True)
         
-        # 重み付け係数の再調整
+        # Readjust weight coefficients
         if len(strategic_values) == 1:
             weights = [1.0]
         elif len(strategic_values) == 2:
@@ -298,57 +298,57 @@ def estimate_decision_points(mechanics, game_data=None):
         elif len(strategic_values) == 3:
             weights = [0.55, 0.30, 0.15]
         else:
-            # 徐々に減少する重み付け、但し分散を小さくする
+            # Gradually decreasing weights, but make distribution smaller
             weights = []
             for i in range(len(strategic_values)):
                 if i == 0:
-                    weights.append(0.5)  # 最も高い要素: 50%
+                    weights.append(0.5)  # Highest element: 50%
                 elif i == 1:
-                    weights.append(0.25)  # 2番目の要素: 25%
+                    weights.append(0.25)  # Second element: 25%
                 else:
-                    # 残りの要素: 徐々に減少するが最低0.5/(n-2)%を保証
-                    remaining_weight = 0.25  # 残り25%を分配
+                    # Remaining elements: gradually decreasing but minimum 0.5/(n-2)%
+                    remaining_weight = 0.25  # Distribute remaining 25%
                     remaining_count = len(strategic_values) - 2
                     min_weight = 0.5 / max(1, remaining_count)
                     weights.append(max(min_weight, remaining_weight / remaining_count))
         
-        # 重み付け合計を1.0に正規化
+        # Normalize weight sum to 1.0
         weights_sum = sum(weights)
         weights = [w / weights_sum for w in weights]
         
-        # 重み付け平均を計算
+        # Calculate weighted average
         weighted_sum = sum(v * w for v, w in zip(strategic_values, weights))
         
-        # メカニクスの多様性に基づくボーナス
+        # Bonus based on mechanic diversity
         unique_values = set(strategic_values)
         value_range = max(strategic_values) - min(strategic_values) if len(strategic_values) > 1 else 0
         
-        # 多様性と範囲に基づくボーナス（最大0.4に制限）
+        # Bonus based on diversity and range (limited to maximum 0.4)
         diversity_bonus = min(0.4, len(unique_values) * 0.07 + value_range * 0.1)
         
-        # 基本的な意思決定ポイント
+        # Basic decision points
         decision_points = weighted_sum + diversity_bonus
         
-        # プレイ時間による修正（存在する場合）
+        # Modification by playing time (if exists)
         if game_data:
             playtime_info = evaluate_playtime_complexity(game_data)
-            # 決断密度の影響を調整（80%に抑制）
+            # Adjust decision density impact (suppress to 80%)
             decision_points += playtime_info["decision_density"] * 0.8
-            # 複雑さ係数の影響を調整（90%に抑制）
+            # Adjust complexity factor impact (suppress to 90%)
             complexity_factor = 1.0 + (playtime_info["complexity_factor"] - 1.0) * 0.9
             decision_points *= complexity_factor
     else:
         decision_points = 2.5
     
-    # 1.0〜5.0の範囲に制限
+    # Limit to range 1.0-5.0
     return min(5.0, max(1.0, decision_points))
 
 def estimate_interaction_complexity(categories, mechanics=None, game_data=None):
-    """相互作用複雑性の推定（重み付けを再調整）"""
+    """Estimate interaction complexity (with readjusted weights)"""
     if not categories and not mechanics:
-        return 2.5  # デフォルト値
+        return 2.5  # Default value
     
-    # カテゴリとメカニクスの相互作用値を結合
+    # Combine interaction values from categories and mechanics
     category_values = []
     for c in categories:
         category_name = c.get('name', '')
@@ -357,13 +357,13 @@ def estimate_interaction_complexity(categories, mechanics=None, game_data=None):
             if isinstance(categories_data[category_name], dict) and 'interaction_value' in categories_data[category_name]:
                 category_values.append(categories_data[category_name]['interaction_value'])
             else:
-                # 既知の高相互作用カテゴリの場合
+                # Known high interaction categories
                 high_interaction_categories = [
                     'Negotiation', 'Political', 'Bluffing', 'Party Game', 'Fighting'
                 ]
                 if category_name in high_interaction_categories:
                     category_values.append(4.5)
-                # 既知の低相互作用カテゴリの場合
+                # Known low interaction categories
                 elif category_name in ['Abstract Strategy', 'Puzzle', 'Solo / Solitaire Game']:
                     category_values.append(2.0)
                 else:
@@ -375,31 +375,31 @@ def estimate_interaction_complexity(categories, mechanics=None, game_data=None):
             mechanic_name = m.get('name', '')
             mechanic_values.append(get_mechanic_interaction_value(mechanic_name))
     
-    # カテゴリとメカニクスの重み付けを調整（カテゴリ:メカニクス = 60:40）
+    # Adjust weighting of categories and mechanics (category:mechanics = 60:40)
     if category_values and mechanic_values:
-        # 両方存在する場合は加重平均を計算
+        # Calculate weighted average if both exist
         all_values = []
         
-        # カテゴリ値（60%の重み）
+        # Category values (60% weight)
         for value in category_values:
             all_values.append((value, 0.6 / len(category_values)))
             
-        # メカニクス値（40%の重み）
+        # Mechanic values (40% weight)
         for value in mechanic_values:
             all_values.append((value, 0.4 / len(mechanic_values)))
         
-        # 値で降順ソート
+        # Sort by value in descending order
         all_values.sort(key=lambda x: x[0], reverse=True)
         values = [v[0] for v in all_values]
         weights = [v[1] for v in all_values]
     else:
-        # いずれか一方のみ存在する場合
+        # If only one exists
         values = category_values or mechanic_values
         values.sort(reverse=True)
         
-        # 重み付け係数の再調整
+        # Readjust weight coefficients
         if len(values) <= 3:
-            # 少数の要素: 最初の要素の影響力を抑え、後続要素の影響力を増加
+            # Small number of elements: suppress influence of first element, increase influence of subsequent elements
             if len(values) == 1:
                 weights = [1.0]
             elif len(values) == 2:
@@ -407,176 +407,176 @@ def estimate_interaction_complexity(categories, mechanics=None, game_data=None):
             else:  # len(values) == 3
                 weights = [0.55, 0.30, 0.15]
         else:
-            # 多数の要素: 上位3つを強調するが、残りにも一定の影響力を持たせる
+            # Many elements: emphasize top 3, but give certain influence to the rest
             weights = []
             top_n = min(3, len(values))
             for i in range(len(values)):
                 if i < top_n:
-                    # 上位3つ: 合計で65%の影響力
+                    # Top 3: 65% total influence
                     if i == 0:
-                        weights.append(0.3)    # 1位: 30%
+                        weights.append(0.3)    # 1st: 30%
                     elif i == 1:
-                        weights.append(0.2)    # 2位: 20%
+                        weights.append(0.2)    # 2nd: 20%
                     else:  # i == 2
-                        weights.append(0.15)   # 3位: 15%
+                        weights.append(0.15)   # 3rd: 15%
                 else:
-                    # 残り: 合計で35%を均等に分配
+                    # Remaining: distribute 35% equally
                     remaining_count = len(values) - top_n
                     weights.append(0.35 / remaining_count)
     
-    # 重み付け合計を1.0に正規化
+    # Normalize weight sum to 1.0
     weights_sum = sum(weights)
     weights = [w / weights_sum for w in weights]
     
-    # 重み付け平均を計算
+    # Calculate weighted average
     interaction_complexity = sum(v * w for v, w in zip(values, weights))
     
-    # プレイ時間による修正（存在する場合）
+    # Modification by playing time (if exists)
     if game_data:
         playtime_info = evaluate_playtime_complexity(game_data)
-        # 相互作用修正値の影響を調整（85%に抑制）
+        # Adjust interaction modifier impact (suppress to 85%)
         interaction_complexity += playtime_info["interaction_modifier"] * 0.85
-        # 複雑さ係数の影響を調整（90%に抑制）
+        # Adjust complexity factor impact (suppress to 90%)
         complexity_factor = 1.0 + (playtime_info["complexity_factor"] - 1.0) * 0.9
         interaction_complexity *= complexity_factor
     
-    # プレイ人数に基づく修正
+    # Modification based on player count
     if game_data and 'publisher_max_players' in game_data:
         try:
             max_players = int(game_data['publisher_max_players'])
-            # 影響を調整
+            # Adjust impact
             if max_players >= 5:
-                interaction_complexity *= 1.10  # 10%増加
+                interaction_complexity *= 1.10  # 10% increase
             elif max_players >= 4:
-                interaction_complexity *= 1.07  # 7%増加
+                interaction_complexity *= 1.07  # 7% increase
         except (ValueError, TypeError):
             pass
     
-    # 1.0〜5.0の範囲に制限
+    # Limit to range 1.0-5.0
     return min(5.0, max(1.0, interaction_complexity))
 
 def calculate_rules_complexity(game_data):
-    """ルールの複雑さを計算する"""
-    # メカニクスの複雑さ計算
+    """Calculate rules complexity"""
+    # Calculate mechanic complexity
     mechanics = game_data.get('mechanics', [])
     mechanics_complexity_sum = sum(get_mechanic_complexity(m['name']) for m in mechanics)
     avg_mechanic_complexity = mechanics_complexity_sum / max(1, len(mechanics))
     
-    # メカニクスの数による補正
+    # Adjustment by number of mechanics
     mechanics_count_factor = min(1.5, 1.0 + (len(mechanics) / 10))
     
-    # 推奨年齢からの複雑さ推定
+    # Estimate complexity from recommended age
     min_age = float(game_data.get('publisher_min_age', 10))
-    age_complexity = min(4.0, (min_age - 6) / 3)  # 6歳=0, 12歳=2.0, 18歳=4.0
+    age_complexity = min(4.0, (min_age - 6) / 3)  # Age 6=0, Age 12=2.0, Age 18=4.0
     
-    # BGGの重み付け
+    # BGG weight
     base_weight = float(game_data.get('weight', 3.0))
     
-    # ルールの複雑さ計算（メカニクス:60%, 年齢:20%, BGG:20%）
+    # Calculate rules complexity (mechanics: 60%, age: 20%, BGG: 20%)
     rules_complexity = (
         (avg_mechanic_complexity * mechanics_count_factor) * 0.6 +
         age_complexity * 0.2 +
         base_weight * 0.2
     )
     
-    # 1.0〜5.0の範囲に制限
+    # Limit to range 1.0-5.0
     return min(5.0, max(1.0, rules_complexity))
 
 def calculate_strategic_depth_improved(game_data):
-    """改善された戦略深度計算関数（重み付けを再調整）"""
-    # BGG重み付けを20%に調整（外部評価の影響を抑える）
+    """Improved strategic depth calculation function (with readjusted weights)"""
+    # Adjust BGG weight to 20% (suppress influence of external evaluation)
     base_weight = float(game_data.get('weight', 3.0))
     
-    # 意思決定ポイントの推定
+    # Estimate decision points
     decision_points = estimate_decision_points(
         game_data.get('mechanics', []), game_data)
     
-    # プレイヤー相互作用の複雑性を推定
+    # Estimate player interaction complexity
     interaction_complexity = estimate_interaction_complexity(
         game_data.get('categories', []), game_data.get('mechanics', []), game_data)
     
-    # ルールの複雑さを計算
+    # Calculate rules complexity
     rules_complexity = calculate_rules_complexity(game_data)
     
-    # メカニクスの戦略的価値を評価
+    # Evaluate strategic value of mechanics
     mechanics = game_data.get('mechanics', [])
     mechanics_names = [m['name'] for m in mechanics]
     
-    # 戦略的価値の高いメカニクスのリストを取得
+    # Get list of mechanics with high strategic value
     high_strategy_values = [(name, get_mechanic_strategic_value(name)) for name in mechanics_names]
     high_strategy_values.sort(key=lambda x: x[1], reverse=True)
     
-    # 戦略的価値に基づくボーナス計算
+    # Calculate bonus based on strategic value
     strategy_bonus = 0
     mechanic_count = len(high_strategy_values)
     
-    # 上位の戦略的価値を持つメカニクスを重視
+    # Emphasize mechanics with top strategic values
     if mechanic_count > 0:
-        # 最大3つの戦略的メカニクスを考慮
+        # Consider maximum 3 strategic mechanics
         top_n = min(3, mechanic_count)
         
-        # 影響度の配分（1位:50%, 2位:30%, 3位:20%）
+        # Influence distribution (1st: 50%, 2nd: 30%, 3rd: 20%)
         weights = [0.5, 0.3, 0.2][:top_n]
         
-        # 正規化
+        # Normalize
         weights_sum = sum(weights)
         weights = [w / weights_sum for w in weights]
         
-        # 各メカニクスの影響度×戦略的価値の合計
+        # Sum of influence × strategic value for each mechanic
         for i in range(top_n):
             name, value = high_strategy_values[i]
-            impact = 0.1 * (value - 2.5)  # 2.5を基準としてボーナス/ペナルティを計算
+            impact = 0.1 * (value - 2.5)  # Calculate bonus/penalty based on 2.5 as baseline
             strategy_bonus += impact * weights[i]
     
-    # メカニクスが多すぎる場合の減衰を適用
+    # Apply decay if there are too many mechanics
     if mechanic_count > 0:
         decay_factor = 1.0 / (1.0 + math.log(mechanic_count, 10))
-        # 減衰を適用したボーナス（最大0.8に制限）
+        # Bonus with decay applied (limited to maximum 0.8)
         strategy_bonus = min(0.8, strategy_bonus * decay_factor)
     
-    # プレイ時間による戦略的深さボーナス
+    # Strategic depth bonus from playing time
     playtime_info = evaluate_playtime_complexity(game_data)
     playtime_strategic_bonus = playtime_info["strategic_bonus"]
     
-    # 戦略的深さの計算（重み付けを再調整）
+    # Calculate strategic depth (with readjusted weights)
     strategic_depth = (
-        base_weight * 0.20 +                   # BGG評価（20%）
-        decision_points * 0.35 +               # 意思決定ポイント（35%）
-        rules_complexity * 0.10 +              # ルールの複雑さ（10%）
-        interaction_complexity * 0.25 +        # 相互作用複雑性（25%）
-        strategy_bonus * 0.8 +                 # 戦略的メカニクスボーナス（最大0.8に制限、80%の影響力）
-        playtime_strategic_bonus * 0.6         # プレイ時間ボーナス（60%の影響力）
+        base_weight * 0.20 +                   # BGG evaluation (20%)
+        decision_points * 0.35 +               # Decision points (35%)
+        rules_complexity * 0.10 +              # Rules complexity (10%)
+        interaction_complexity * 0.25 +        # Interaction complexity (25%)
+        strategy_bonus * 0.8 +                 # Strategic mechanic bonus (max 0.8, 80% influence)
+        playtime_strategic_bonus * 0.6         # Playing time bonus (60% influence)
     )
     
-    # 全体的な複雑さ係数を適用（影響を95%に抑制）
+    # Apply overall complexity factor (suppress influence to 95%)
     complexity_factor = playtime_info["complexity_factor"]
     complexity_factor = 1.0 + (complexity_factor - 1.0) * 0.95
     strategic_depth *= complexity_factor
     
-    # 最終的な戦略的深さ（1.0〜5.0に制限）
+    # Final strategic depth (limited to range 1.0-5.0)
     strategic_depth = min(5.0, max(1.0, strategic_depth))
     
     return round(strategic_depth, 2)
 
 def get_strategic_depth_description(strategic_depth):
-    """戦略的深さの説明を取得する"""
+    """Get description for strategic depth"""
     if strategic_depth >= 4.5:
-        return "非常に深い（マスターに長い時間を要する）"
+        return "Very deep (takes long time to master)"
     elif strategic_depth >= 4.0:
-        return "深い（熟練プレイヤー向け）"
+        return "Deep (for experienced players)"
     elif strategic_depth >= 3.5:
-        return "中〜高（多くの戦略が存在）"
+        return "Medium-high (many strategies exist)"
     elif strategic_depth >= 3.0:
-        return "中程度（いくつかの戦略オプションあり）"
+        return "Medium (some strategy options available)"
     elif strategic_depth >= 2.5:
-        return "中〜低（基本的な戦略が存在）"
+        return "Medium-low (basic strategies exist)"
     elif strategic_depth >= 2.0:
-        return "低め（限られた戦略オプション）"
+        return "Low (limited strategy options)"
     else:
-        return "低い（戦略的要素が少ない）"
+        return "Low (few strategic elements)"
 
 def get_rank_value(game_data, rank_type="boardgame"):
-    """指定されたランク種別の順位を取得する"""
+    """Get rank value for specified rank type"""
     if 'ranks' not in game_data:
         return None
         
@@ -590,21 +590,21 @@ def get_rank_value(game_data, rank_type="boardgame"):
     return None
 
 def calculate_popularity_factor(rank):
-    """ランキングに基づく人気係数を計算する"""
+    """Calculate popularity factor based on ranking"""
     if rank is None:
         return 1.0
         
     if rank <= 100:
-        return 1.1  # トップ100は評価を10%増加
+        return 1.1  # Top 100 increases rating by 10%
     elif rank <= 500:
-        return 1.07  # トップ500は評価を6%増加
+        return 1.07  # Top 500 increases rating by 6%
     elif rank <= 1000:
-        return 1.02  # トップ1000は評価を3%増加
+        return 1.02  # Top 1000 increases rating by 3%
     else:
-        return 1.0  # その他はそのまま
+        return 1.0  # Others remain as is
 
 def get_year_published(game_data):
-    """ゲームの発行年を取得する"""
+    """Get year of publication for the game"""
     if 'year_published' not in game_data:
         return None
         
@@ -614,7 +614,7 @@ def get_year_published(game_data):
         return None
 
 def calculate_longevity_factor(year_published):
-    """ゲームの発行年に基づく長寿命係数を計算する"""
+    """Calculate longevity factor based on year of publication"""
     if year_published is None:
         return 1.0
         
@@ -622,27 +622,27 @@ def calculate_longevity_factor(year_published):
     years_since_publication = current_year - year_published
     
     if years_since_publication >= 20:
-        return 1.1   # 20年以上は10%増加（クラシックゲーム）
+        return 1.1   # 20+ years: 10% increase (classic games)
     elif years_since_publication >= 10:
-        return 1.07  # 10年以上は7%増加（長期的な人気）
+        return 1.07  # 10+ years: 7% increase (long-term popularity)
     elif years_since_publication >= 5:
-        return 1.05  # 5年以上は5%増加（定着したゲーム）
+        return 1.05  # 5+ years: 5% increase (established games)
     else:
-        return 1.0   # 新しいゲームはそのまま
+        return 1.0   # New games remain as is
 
 def calculate_replayability(game_data):
-    """ゲームのリプレイ性を計算する"""
-    # 基本スコア
+    """Calculate game replayability"""
+    # Base score
     base_score = 2.0
     
-    # 要素の多様性によるスコア加算
+    # Score addition for element diversity
     diversity_score = 0.0
     
-    # メカニクスの多様性（最大0.7ポイント）
+    # Mechanics diversity (max 0.7 points)
     mechanics_count = len(game_data.get('mechanics', []))
     diversity_score += min(0.7, mechanics_count * 0.1)
     
-    # リプレイ性を高めるメカニクスをより詳細に評価
+    # Evaluate mechanics that enhance replayability in detail
     high_replay_mechanics = [
         'Variable Set-up', 
         'Modular Board', 
@@ -668,7 +668,7 @@ def calculate_replayability(game_data):
         'Drafting'
     ]
     
-    # リプレイ性の高いメカニクスの数をカウント
+    # Count mechanics with high replayability
     high_replay_count = sum(
         1 for m in game_data.get('mechanics', [])
         if m.get('name') in high_replay_mechanics
@@ -679,204 +679,203 @@ def calculate_replayability(game_data):
         if m.get('name') in medium_replay_mechanics
     )
     
-    # リプレイ性が高いメカニクスの評価（最大0.8ポイント）
+    # Evaluation of high replayability mechanics (max 0.8 points)
     replay_mechanics_score = min(
         0.8, (high_replay_count * 0.2) + (medium_replay_count * 0.1)
     )
     diversity_score += replay_mechanics_score
     
-    # カテゴリの多様性（最大0.4ポイント）
+    # Category diversity (max 0.4 points)
     categories_count = len(game_data.get('categories', []))
     diversity_score += min(0.4, categories_count * 0.1)
     
-    # 人気ランキングからの補正
+    # Adjustment based on popularity ranking
     rank = get_rank_value(game_data)
     rank_bonus = 0.0
     
     if rank is not None:
         if rank <= 100:
-            rank_bonus = 0.6  # トップ100は+0.6ポイント
+            rank_bonus = 0.6  # Top 100: +0.6 points
         elif rank <= 500:
-            rank_bonus = 0.4  # トップ500は+0.4ポイント
+            rank_bonus = 0.4  # Top 500: +0.4 points
         elif rank <= 1000:
-            rank_bonus = 0.2  # トップ1000は+0.2ポイント
+            rank_bonus = 0.2  # Top 1000: +0.2 points
     
-    # 長期的な人気による補正
+    # Adjustment based on long-term popularity
     year_published = get_year_published(game_data)
     longevity_factor = calculate_longevity_factor(year_published)
     
-    # 最終スコア計算
-    # 多様性スコアと人気ボーナスを足したものに、長寿命係数を掛ける
+    # Final score calculation
+    # Apply longevity factor to diversity score and popularity bonus
     replayability = (base_score + diversity_score + rank_bonus) * longevity_factor
     
-    # 上限と下限の設定
+    # Set upper and lower limits
     replayability = max(1.0, min(5.0, replayability))
     
     return round(replayability, 2)
 
 def calculate_learning_curve(game_data):
     """
-    ゲームデータからラーニングカーブ情報を計算する
-    カテゴリとランキング情報を活用した改善版
+    Calculate learning curve information from game data
+    Improved version using category and ranking information
     
     Parameters:
-    game_data (dict): ゲームの詳細情報
+    game_data (dict): Game details
     
     Returns:
-    dict: ラーニングカーブの情報
+    dict: Learning curve information
     """
-    # 基本的な複雑さ（すでにAPIから取得）
+    # Basic complexity (already retrieved from API)
     base_weight = float(game_data.get('weight', 3.0))
     
-    # ゲームのメカニクスから複雑さを推定
+    # Estimate complexity from game mechanics
     mechanics_names = [m['name'] for m in game_data.get('mechanics', [])]
     mechanics_complexity = 0
     mechanic_count = 0
     
     for mechanic in mechanics_names:
-        # メカニクスの複雑さを取得
+        # Get complexity value
         mechanic_complexity = get_mechanic_complexity(mechanic)
         mechanics_complexity += mechanic_complexity
         mechanic_count += 1
     
-    # メカニクスの平均複雑さ（メカニクスがない場合はデフォルト値）
+    # Average mechanics complexity (default value if no mechanics)
     avg_mechanic_complexity = (
         mechanics_complexity / max(1, mechanic_count) if mechanic_count > 0 else 3.0
     )
     
-    # カテゴリに基づく複雑さを計算
+    # Calculate complexity based on categories
     category_complexity = calculate_category_complexity(game_data.get('categories', []))
     
-    # ランキングに基づく複雑さを計算
+    # Calculate complexity based on rankings
     rank_complexity = calculate_rank_complexity(game_data.get('ranks', []))
     
-    # カテゴリとランキングによる複雑さ評価（60:40の重み付け）
+    # Complexity evaluation from categories and rankings (60:40 weighting)
     complexity_factor = (category_complexity * 0.6 + rank_complexity * 0.4)
         
-    # 初期障壁（ルールの複雑さ）の計算を更新
+    # Update initial barrier calculation (rule complexity)
     initial_barrier = (
         avg_mechanic_complexity * 0.5 + 
         base_weight * 0.2 +
-        complexity_factor * 0.2  # 推奨年齢の代わりにカテゴリとランキングによる評価
+        complexity_factor * 0.2  # Use category and ranking evaluation instead of age recommendation
     )
     
-    # メカニクス数による初期障壁の調整（多くのメカニクスがあるほど初期学習が難しくなる）
+    # Adjust initial barrier by number of mechanics (more mechanics = harder initial learning)
     mechanics_count_barrier_factor = min(1.25, max(1.0, len(mechanics_names) / 5))
     initial_barrier = initial_barrier * mechanics_count_barrier_factor
     
-    # 上限を5.0に設定
+    # Set upper limit to 5.0
     initial_barrier = min(5.0, initial_barrier)
     initial_barrier = round(initial_barrier, 2)
     
-    # 戦略的深さ（改善版）
+    # Strategic depth (improved version)
     strategic_depth = calculate_strategic_depth_improved(game_data)
     
-    # リプレイ性を計算（改善版）
+    # Calculate replayability (improved version)
     replayability = calculate_replayability(game_data)
     
-    # ランク情報を取得
+    # Get rank info
     rank = get_rank_value(game_data)
     
-    # 発行年を取得
+    # Get year published
     year_published = get_year_published(game_data)
     
-    # 基本的な学習曲線情報を構築
+    # Build basic learning curve information
     learning_curve = {
-        "initial_barrier": initial_barrier,  # 初期学習の難しさ
-        "strategic_depth": strategic_depth,  # 戦略の深さ
-        "replayability": replayability,  # リプレイ性
-        "mechanics_complexity": round(avg_mechanic_complexity, 2),  # メカニクスの複雑さ
-        "mechanics_count": len(mechanics_names),  # メカニクスの数
-        "bgg_weight": base_weight,  # BGGの複雑さ評価（元の値）
-        "bgg_rank": rank,  # BGGのランキング
-        "year_published": year_published,  # 発行年
-        # 新しく追加した指標
-        "category_complexity": round(category_complexity, 2),  # カテゴリに基づく複雑さ
-        "rank_complexity": round(rank_complexity, 2),  # ランキングに基づく複雑さ
-        "strategic_depth_description": get_strategic_depth_description(strategic_depth)
+        "initial_barrier": initial_barrier,  # Initial learning difficulty
+        "strategic_depth": strategic_depth,  # Strategic depth
+        "replayability": replayability,  # Replayability
+        "mechanics_complexity": round(avg_mechanic_complexity, 2),  # Mechanics complexity
+        "mechanics_count": len(mechanics_names),  # Number of mechanics
+        "bgg_weight": base_weight,  # BGG complexity rating (original value)
+        "bgg_rank": rank,  # BGG ranking
+        "year_published": year_published,  # Year published
+        # Newly added metrics
+        "category_complexity": round(category_complexity, 2),  # Category-based complexity
+        "rank_complexity": round(rank_complexity, 2)  # Ranking-based complexity
     }
     
-    # 学習曲線タイプの判定
+    # Determine learning curve type
     if initial_barrier > 4.3:
         if strategic_depth > 4.3:
-            learning_curve["learning_curve_type"] = "steep"  # 急で深い
+            learning_curve["learning_curve_type"] = "steep"  # Steep and deep
         elif strategic_depth > 3.5:
-            learning_curve["learning_curve_type"] = "steep_then_moderate"  # 急だが中程度の深さ
+            learning_curve["learning_curve_type"] = "steep_then_moderate"  # Steep but moderate depth
         else:
-            learning_curve["learning_curve_type"] = "steep_then_shallow"  # 急だが浅い
+            learning_curve["learning_curve_type"] = "steep_then_shallow"  # Steep but shallow
     elif initial_barrier > 3.5:
         if strategic_depth > 4.3:
-            learning_curve["learning_curve_type"] = "moderate_then_deep"  # 中程度から深い
+            learning_curve["learning_curve_type"] = "moderate_then_deep"  # Moderate to deep
         elif strategic_depth > 3.5:
-            learning_curve["learning_curve_type"] = "moderate"  # 中程度から中程度
+            learning_curve["learning_curve_type"] = "moderate"  # Moderate to moderate
         else:
-            learning_curve["learning_curve_type"] = "moderate_then_shallow"  # 中程度から浅い
+            learning_curve["learning_curve_type"] = "moderate_then_shallow"  # Moderate to shallow
     else:
         if strategic_depth > 4.3:
-            learning_curve["learning_curve_type"] = "gentle_then_deep"  # 緩やかから深い
+            learning_curve["learning_curve_type"] = "gentle_then_deep"  # Gentle to deep
         elif strategic_depth > 3.5:
-            learning_curve["learning_curve_type"] = "gentle_then_moderate"  # 緩やかから中程度
+            learning_curve["learning_curve_type"] = "gentle_then_moderate"  # Gentle to moderate
         else:
-            learning_curve["learning_curve_type"] = "gentle"  # 緩やかから浅い
+            learning_curve["learning_curve_type"] = "gentle"  # Gentle to shallow
     
-    # 各種分析の詳細情報を追加
+    # Add detailed analysis information
     learning_curve["decision_points"] = estimate_decision_points(game_data.get('mechanics', []), game_data)
     learning_curve["interaction_complexity"] = estimate_interaction_complexity(game_data.get('categories', []), game_data.get('mechanics', []), game_data)
     learning_curve["rules_complexity"] = calculate_rules_complexity(game_data)
     
-    # プレイヤータイプの判定
+    # Player type determination
     player_types = []
     
-    # 初心者向け
+    # For beginners
     if initial_barrier < 3.0 and strategic_depth < 3.5:
         player_types.append("beginner")
     
-    # カジュアルプレイヤー向け
+    # For casual players
     if initial_barrier < 4.0 and strategic_depth < 4.5:
         player_types.append("casual")
     
-    # 熟練プレイヤー向け
+    # For experienced players
     if strategic_depth >= 3.0:
         player_types.append("experienced")
     
-    # ハードコアゲーマー向け
+    # For hardcore gamers
     if initial_barrier > 3.0 and strategic_depth > 3.5:
         player_types.append("hardcore")
     
-    # 戦略家向け
+    # For strategists
     if strategic_depth > 3.8:
         player_types.append("strategist")
     
-    # システムマスター向け
+    # For system masters
     if len(game_data.get('mechanics', [])) >= 5 and strategic_depth > 3.5:
         player_types.append("system_master")
     
-    # リプレイヤー（リプレイ性の高いゲームを好む人）
+    # For replayers (people who like highly replayable games)
     if replayability >= 3.8:
         player_types.append("replayer")
     
-    # トレンドフォロワー（人気のゲームを好む人）
+    # For trend followers (people who like popular games)
     if rank is not None and rank <= 1000:
         player_types.append("trend_follower")
     
-    # クラシック愛好家（長年遊ばれている定番ゲームを好む人）
+    # For classic lovers (people who like time-tested traditional games)
     if year_published is not None and year_published <= 2000:
         player_types.append("classic_lover")
     
     learning_curve["player_types"] = player_types
     
-    # プレイ時間分析データを追加
+    # Add playtime analysis data
     learning_curve["playtime_analysis"] = evaluate_playtime_complexity(game_data)
     
-    # マスター時間の推定
+    # Estimate mastery time
     if strategic_depth > 4.3:
         if len(mechanics_names) >= 6:
-            learning_curve["mastery_time"] = "medium_to_long"  # メカニクスが多いが、一度基本を理解すれば応用が利く
+            learning_curve["mastery_time"] = "medium_to_long"  # Many mechanics but easier to apply once basics understood
         else:
-            learning_curve["mastery_time"] = "long"  # マスターに長時間かかる
+            learning_curve["mastery_time"] = "long"  # Takes long time to master
     elif strategic_depth > 3.2:
-        learning_curve["mastery_time"] = "medium"  # マスターに中程度の時間がかかる
+        learning_curve["mastery_time"] = "medium"  # Takes medium time to master
     else:
-        learning_curve["mastery_time"] = "short"  # 比較的短時間でマスター可能
+        learning_curve["mastery_time"] = "short"  # Can be mastered relatively quickly
     
     return learning_curve

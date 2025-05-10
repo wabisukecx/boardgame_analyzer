@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-リモートのRaspberry PiからBoardgame Analyzerのデータを取得するスクリプト
-PC側にあってRaspberry Piにないファイルを同期する機能も提供
+Script to fetch BoardGame Analyzer data from remote Raspberry Pi
+Also provides functionality to synchronize files that exist on PC but not on Raspberry Pi
 """
 
 import os
@@ -12,20 +12,20 @@ import glob
 from pathlib import Path
 
 def parse_arguments():
-    """コマンドライン引数をパース"""
-    parser = argparse.ArgumentParser(description='Raspberry PiからBoardgame Analyzerのデータを取得')
-    parser.add_argument('--host', type=str, default='192.168.50.192', help='Raspberry PiのIPアドレス')
-    parser.add_argument('--port', type=int, default=22, help='SSHポート番号')
-    parser.add_argument('--username', type=str, default='pi', help='ユーザー名')
-    parser.add_argument('--key-file', type=str, default=None, help='秘密鍵ファイルのパス')
-    parser.add_argument('--password', type=str, default=None, help='パスワード（セキュリティ上、非推奨）')
-    parser.add_argument('--config', action='store_true', default=True, help='設定ファイルも取得（デフォルトで有効）')
-    parser.add_argument('--no-upload', action='store_true', default=False, help='アップロード処理をスキップ')
+    """Parse command line arguments"""
+    parser = argparse.ArgumentParser(description='Fetch BoardGame Analyzer data from Raspberry Pi')
+    parser.add_argument('--host', type=str, default='192.168.50.192', help='Raspberry Pi IP address')
+    parser.add_argument('--port', type=int, default=22, help='SSH port number')
+    parser.add_argument('--username', type=str, default='pi', help='Username')
+    parser.add_argument('--key-file', type=str, default=None, help='Private key file path')
+    parser.add_argument('--password', type=str, default=None, help='Password (not recommended for security)')
+    parser.add_argument('--config', action='store_true', default=True, help='Also fetch configuration files (enabled by default)')
+    parser.add_argument('--no-upload', action='store_true', default=False, help='Skip upload process')
     
     return parser.parse_args()
 
 def get_local_yaml_files(directory):
-    """指定されたディレクトリ内のすべてのYAMLファイル名を取得"""
+    """Get all YAML filenames in the specified directory"""
     if not os.path.exists(directory):
         return []
     
@@ -35,7 +35,7 @@ def get_local_yaml_files(directory):
     return [os.path.basename(f) for f in yaml_files]
 
 def clean_local_yaml_files(directory):
-    """指定されたディレクトリ内のすべてのYAMLファイルを削除"""
+    """Delete all YAML files in the specified directory"""
     if not os.path.exists(directory):
         os.makedirs(directory, exist_ok=True)
         return
@@ -44,13 +44,13 @@ def clean_local_yaml_files(directory):
     yaml_files.extend(glob.glob(os.path.join(directory, "*.yml")))
     
     if yaml_files:
-        print(f"{directory}内の{len(yaml_files)}個のYAMLファイルを削除しています")
+        print(f"Deleting {len(yaml_files)} YAML files in {directory}")
         for file in yaml_files:
             os.remove(file)
-        print(f"{directory}内のYAMLファイルをすべて削除しました")
+        print(f"Deleted all YAML files in {directory}")
 
 def connect_ssh(host, port, username, key_file=None, password=None):
-    """SSHで接続"""
+    """Connect via SSH"""
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     
@@ -61,218 +61,218 @@ def connect_ssh(host, port, username, key_file=None, password=None):
             ssh.connect(host, port=port, username=username, password=password)
         return ssh
     except Exception as e:
-        print(f"SSH接続エラー: {e}")
+        print(f"SSH connection error: {e}")
         return None
 
 def get_remote_yaml_files(ssh, remote_path):
-    """リモートディレクトリ内のYAMLファイル名リストを取得"""
+    """Get list of YAML filenames from remote directory"""
     try:
-        # ディレクトリの存在確認
+        # Check if directory exists
         stdin, stdout, stderr = ssh.exec_command(f'[ -d "{remote_path}" ] && echo "exists" || echo "not exists"')
         if stdout.read().decode().strip() != "exists":
-            print(f"リモートディレクトリが見つかりません: {remote_path}")
+            print(f"Remote directory not found: {remote_path}")
             return []
         
-        # findコマンドでファイル名を取得
+        # Get filenames using find command
         stdin, stdout, stderr = ssh.exec_command(
             f'find {remote_path} -type f \\( -name "*.yaml" -o -name "*.yml" \\) -printf "%f\\n" 2>/dev/null')
         
         files = stdout.read().decode().strip().split('\n')
-        # 空文字列があれば除去
+        # Remove empty strings
         files = [f for f in files if f]
         
-        # デバッグ出力: 見つかったファイル数と一部のファイル名
-        print(f"リモート側で{len(files)}個のYAMLファイルを検出しました")
+        # Debug output: show number of files found and some filenames
+        print(f"Detected {len(files)} YAML files on remote side")
         return files
     
     except Exception as e:
-        print(f"リモートファイル一覧の取得エラー: {e}")
+        print(f"Error getting remote file list: {e}")
         return []
 
 def upload_files(ssh, local_path, remote_path, file_names):
-    """指定されたファイルをアップロード（デバッグ強化版）"""
+    """Upload specified files (debug enhanced version)"""
     if not file_names:
-        print(f"アップロードするファイルはありません: {local_path}")
+        print(f"No files to upload: {local_path}")
         return True
     
-    print(f"{len(file_names)}個のファイルをアップロードします: {', '.join(file_names[:5])}...")
+    print(f"Uploading {len(file_names)} files: {', '.join(file_names[:5])}...")
     if len(file_names) > 5:
-        print(f"...および他{len(file_names)-5}個のファイル")
+        print(f"...and {len(file_names)-5} more files")
     
-    # アップロード処理
+    # Upload process
     sftp = ssh.open_sftp()
     upload_success = 0
     upload_fail = 0
     
     try:
-        # リモートディレクトリが存在するか確認（デバッグ出力追加）
+        # Check if remote directory exists (with debug output)
         try:
             sftp.stat(remote_path)
-            print(f"リモートディレクトリが存在します: {remote_path}")
+            print(f"Remote directory exists: {remote_path}")
         except FileNotFoundError:
-            # リモートディレクトリが存在しない場合は作成
-            print(f"リモートディレクトリを作成します: {remote_path}")
+            # Create remote directory if it doesn't exist
+            print(f"Creating remote directory: {remote_path}")
             stdin, stdout, stderr = ssh.exec_command(f'mkdir -p {remote_path}')
             stderr_content = stderr.read().decode().strip()
             if stderr_content:
-                print(f"リモートディレクトリ作成エラー: {stderr_content}")
+                print(f"Remote directory creation error: {stderr_content}")
                 return False
             else:
-                print(f"リモートディレクトリを作成しました: {remote_path}")
+                print(f"Created remote directory: {remote_path}")
         
-        # リモートディレクトリの内容を確認（デバッグ）
+        # Check remote directory contents (debug)
         stdin, stdout, stderr = ssh.exec_command(f'ls -la {remote_path}')
-        print(f"リモートディレクトリの内容: \n{stdout.read().decode()}")
+        print(f"Remote directory contents: \n{stdout.read().decode()}")
         
-        # 各ファイルをアップロード
+        # Upload each file
         for i, filename in enumerate(file_names):
             local_file = os.path.join(local_path, filename)
             remote_file = posixpath.join(remote_path, filename)
             
             try:
-                print(f"アップロード中 ({i+1}/{len(file_names)}): {filename}")
-                print(f"  ローカル: {local_file}")
-                print(f"  リモート: {remote_file}")
+                print(f"Uploading ({i+1}/{len(file_names)}): {filename}")
+                print(f"  Local: {local_file}")
+                print(f"  Remote: {remote_file}")
                 
                 sftp.put(local_file, remote_file)
                 
-                # アップロードの成功を確認（ファイルの存在チェック）
+                # Verify successful upload (check file existence)
                 try:
                     sftp.stat(remote_file)
-                    print(f"  ✓ アップロード成功: {filename}")
+                    print(f"  ✓ Upload successful: {filename}")
                     upload_success += 1
                 except FileNotFoundError:
-                    print(f"  ✗ アップロード後のファイル確認失敗: {remote_file}")
+                    print(f"  ✗ Upload file verification failed: {remote_file}")
                     upload_fail += 1
                     
             except Exception as e:
-                print(f"  ✗ ファイル {filename} のアップロード中にエラー: {e}")
+                print(f"  ✗ Error uploading file {filename}: {e}")
                 upload_fail += 1
         
-        print(f"アップロード完了: 成功={upload_success}, 失敗={upload_fail}")
+        print(f"Upload complete: Success={upload_success}, Failed={upload_fail}")
         
-        # アップロード後のリモートディレクトリの内容を確認（デバッグ）
+        # Check remote directory contents after upload (debug)
         stdin, stdout, stderr = ssh.exec_command(f'ls -la {remote_path}')
-        print(f"アップロード後のリモートディレクトリの内容: \n{stdout.read().decode()}")
+        print(f"Remote directory contents after upload: \n{stdout.read().decode()}")
         
         return upload_fail == 0
         
     except Exception as e:
-        print(f"ファイルアップロード処理全体でエラー: {e}")
+        print(f"Overall file upload process error: {e}")
         return False
         
     finally:
         sftp.close()
 
 def upload_files(ssh, local_path, remote_path, file_names):
-    """指定されたファイルをアップロード"""
+    """Upload specified files"""
     if not file_names:
-        print(f"アップロードするファイルはありません: {local_path}")
+        print(f"No files to upload: {local_path}")
         return True
     
-    print(f"{len(file_names)}個のファイルをアップロードします...")
+    print(f"Uploading {len(file_names)} files...")
     
-    # アップロード処理
+    # Upload process
     sftp = ssh.open_sftp()
     try:
-        # リモートディレクトリが存在するか確認
+        # Check if remote directory exists
         try:
             sftp.stat(remote_path)
         except FileNotFoundError:
-            # リモートディレクトリが存在しない場合は作成
+            # Create remote directory if it doesn't exist
             stdin, stdout, stderr = ssh.exec_command(f'mkdir -p {remote_path}')
             stderr_content = stderr.read().decode().strip()
             if stderr_content:
-                print(f"リモートディレクトリ作成エラー: {stderr_content}")
+                print(f"Remote directory creation error: {stderr_content}")
                 return False
         
-        # 各ファイルをアップロード
+        # Upload each file
         for i, filename in enumerate(file_names):
             local_file = os.path.join(local_path, filename)
             remote_file = posixpath.join(remote_path, filename)
             
-            print(f"アップロード中 ({i+1}/{len(file_names)}): {filename}")
+            print(f"Uploading ({i+1}/{len(file_names)}): {filename}")
             sftp.put(local_file, remote_file)
         
-        print(f"{len(file_names)}個のファイルをアップロードしました: {remote_path}")
+        print(f"Uploaded {len(file_names)} files to: {remote_path}")
         return True
         
     except Exception as e:
-        print(f"ファイルアップロードエラー: {e}")
+        print(f"File upload error: {e}")
         return False
         
     finally:
         sftp.close()
 
 def download_directory(ssh, remote_path, local_path):
-    """ディレクトリ全体をダウンロード"""
+    """Download entire directory"""
     sftp = ssh.open_sftp()
     
     try:
-        # リモートディレクトリが存在するか確認
+        # Check if remote directory exists
         try:
             sftp.stat(remote_path)
         except FileNotFoundError:
-            print(f"リモートディレクトリが見つかりません: {remote_path}")
+            print(f"Remote directory not found: {remote_path}")
             return False
         
-        # ローカルディレクトリを作成
+        # Create local directory
         os.makedirs(local_path, exist_ok=True)
         
-        # リモートディレクトリ内のファイルを列挙
+        # List files in remote directory
         stdin, stdout, stderr = ssh.exec_command(f'find {remote_path} -name "*.yaml" -type f')
         files = stdout.read().decode().strip().split('\n')
         
-        # .ymlファイルも検索
+        # Also search for .yml files
         stdin, stdout, stderr = ssh.exec_command(f'find {remote_path} -name "*.yml" -type f')
         yml_files = stdout.read().decode().strip().split('\n')
         
         all_files = files + yml_files
-        # 空文字列があれば除去
+        # Remove empty strings
         all_files = [f for f in all_files if f]
         
         if not all_files:
-            print(f"ディレクトリ内にYAMLファイルが見つかりませんでした: {remote_path}")
+            print(f"No YAML files found in directory: {remote_path}")
             return False
         
-        # 各ファイルをダウンロード
+        # Download each file
         for i, remote_file in enumerate(all_files):
-            if not remote_file:  # 空行をスキップ
+            if not remote_file:  # Skip empty lines
                 continue
                 
             filename = os.path.basename(remote_file)
             local_file = os.path.join(local_path, filename)
             
-            print(f"ダウンロード中 ({i+1}/{len(all_files)}): {filename}")
+            print(f"Downloading ({i+1}/{len(all_files)}): {filename}")
             sftp.get(remote_file, local_file)
         
-        print(f"{len(all_files)}個のファイルをダウンロードしました: {local_path}")
+        print(f"Downloaded {len(all_files)} files to: {local_path}")
         return True
     
     except Exception as e:
-        print(f"ディレクトリのダウンロードエラー: {e}")
+        print(f"Directory download error: {e}")
         return False
     
     finally:
         sftp.close()
 
 def main():
-    """メイン処理"""
+    """Main process"""
     args = parse_arguments()
     
-    # スクリプトと同じ階層のパスを取得
+    # Get script path at same level
     script_dir = Path(os.path.dirname(os.path.abspath(__file__)))
     
-    # ローカルの保存先ディレクトリを設定
+    # Set local save destination directories
     game_data_dir = script_dir / "game_data"
     config_dir = script_dir / "config"
     
-    # SSHの認証情報が指定されているか確認
+    # Check if SSH authentication is specified
     if not args.password and not args.key_file:
-        password = input(f"{args.username}@{args.host}のパスワードを入力してください: ")
+        password = input(f"Enter password for {args.username}@{args.host}: ")
         args.password = password
     
-    # SSH接続
+    # SSH connection
     ssh = connect_ssh(
         args.host, 
         args.port, 
@@ -282,65 +282,65 @@ def main():
     )
     
     if not ssh:
-        print("SSH接続に失敗しました")
+        print("SSH connection failed")
         return
     
     try:
-        # ホームディレクトリのパスを取得
+        # Get home directory path
         stdin, stdout, stderr = ssh.exec_command('echo $HOME')
         home_dir = stdout.read().decode().strip()
         
-        # リモートのパスを設定
+        # Set remote paths
         remote_game_data_path = f"{home_dir}/boardgame_analyzer/game_data"
         remote_config_path = f"{home_dir}/boardgame_analyzer/config"
         
-        # アップロード処理（no-uploadフラグがセットされていない場合）
+        # Upload process (if no-upload flag is not set)
         if not args.no_upload:
-            print("\nPC側にあってラズパイ側にないファイルをアップロードします...")
+            print("\nUploading files that exist on PC but not on Raspberry Pi...")
             
-            # ローカルとリモートのファイル一覧を取得
+            # Get file lists from local and remote
             local_game_files = get_local_yaml_files(game_data_dir)
             remote_game_files = get_remote_yaml_files(ssh, remote_game_data_path)
             
-            # リモートに存在しないファイルを特定
+            # Identify files that don't exist on remote
             missing_game_files = [f for f in local_game_files if f not in remote_game_files]
             
-            # ゲームデータファイルのアップロード
+            # Upload game data files
             upload_files(ssh, game_data_dir, remote_game_data_path, missing_game_files)
             
-            # 設定ファイルの処理
+            # Process configuration files
             if args.config:
                 local_config_files = get_local_yaml_files(config_dir)
                 remote_config_files = get_remote_yaml_files(ssh, remote_config_path)
                 
-                # リモートに存在しないファイルを特定
+                # Identify files that don't exist on remote
                 missing_config_files = [f for f in local_config_files if f not in remote_config_files]
                 
-                # 設定ファイルのアップロード
+                # Upload configuration files
                 upload_files(ssh, config_dir, remote_config_path, missing_config_files)
         
-        # ローカルディレクトリのYAMLファイルを削除
-        print("\nローカルディレクトリのYAMLファイルを削除しています...")
+        # Delete YAML files in local directories
+        print("\nDeleting YAML files in local directories...")
         clean_local_yaml_files(game_data_dir)
         if args.config:
             clean_local_yaml_files(config_dir)
         
-        # 現在のゲームデータをダウンロード
-        print(f"\nゲームデータをダウンロードしています... ({remote_game_data_path})")
+        # Download current game data
+        print(f"\nDownloading game data... ({remote_game_data_path})")
         download_directory(ssh, remote_game_data_path, game_data_dir)
         
-        # 設定ファイルも取得する場合
+        # Also fetch configuration files if specified
         if args.config:
-            print(f"\n設定ファイルをダウンロードしています... ({remote_config_path})")
+            print(f"\nDownloading configuration files... ({remote_config_path})")
             download_directory(ssh, remote_config_path, config_dir)
         
-        print("\nデータ同期が完了しました")
-        print(f"ゲームデータの保存先: {os.path.abspath(game_data_dir)}")
+        print("\nData synchronization completed")
+        print(f"Game data saved to: {os.path.abspath(game_data_dir)}")
         if args.config:
-            print(f"設定ファイルの保存先: {os.path.abspath(config_dir)}")
+            print(f"Configuration files saved to: {os.path.abspath(config_dir)}")
     
     except Exception as e:
-        print(f"処理中にエラーが発生しました: {e}")
+        print(f"Error occurred during processing: {e}")
     
     finally:
         ssh.close()

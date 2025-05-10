@@ -2,207 +2,207 @@ import os
 import yaml
 import math
 
-# YAMLファイルのパス
+# Path to YAML file
 RANK_COMPLEXITY_FILE = "config/rank_complexity.yaml"
 
 def load_rank_complexity_data():
     """
-    ランキング種別の複雑さデータをYAMLファイルから読み込む
+    Load ranking type complexity data from YAML file
     
     Returns:
-    dict: ランキング種別をキー、複雑さを値とする辞書
+    dict: Dictionary with ranking type as key and complexity as value
     """
     try:
-        # ファイルが存在しない場合は空の辞書を返す
+        # Return empty dictionary if file doesn't exist
         if not os.path.exists(RANK_COMPLEXITY_FILE):
             return {}
         
         with open(RANK_COMPLEXITY_FILE, 'r', encoding='utf-8') as file:
             complexity_data = yaml.safe_load(file)
             
-        # Noneの場合は空の辞書を返す
+        # Return empty dictionary if None
         if complexity_data is None:
             return {}
             
         return complexity_data
     except Exception as e:
-        # エラーメッセージを直接表示せず、エラー情報を返す
-        print(f"ランキング複雑さデータの読み込みエラー: {str(e)}")
+        # Return error info without directly displaying error message
+        print(f"Error loading ranking complexity data: {str(e)}")
         return {}
 
 def save_rank_complexity_data(complexity_data):
     """
-    ランキング種別の複雑さデータをYAMLファイルに保存する
+    Save ranking type complexity data to YAML file
     
     Parameters:
-    complexity_data (dict): ランキング種別をキー、複雑さを値とする辞書
+    complexity_data (dict): Dictionary with ranking type as key and complexity as value
     
     Returns:
-    bool: 保存が成功したかどうか
+    bool: Whether save was successful
     """
     try:
         with open(RANK_COMPLEXITY_FILE, 'w', encoding='utf-8') as file:
             yaml.dump(complexity_data, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
         return True
     except Exception as e:
-        print(f"ランキング複雑さデータの保存エラー: {str(e)}")
+        print(f"Error saving ranking complexity data: {str(e)}")
         return False
 
 def add_missing_rank_type(rank_type, default_complexity=3.0):
     """
-    存在しないランキング種別をYAMLファイルに追加する
+    Add non-existent ranking type to YAML file
     
     Parameters:
-    rank_type (str): 追加するランキング種別
-    default_complexity (float): デフォルトの複雑さ値
+    rank_type (str): Ranking type to add
+    default_complexity (float): Default complexity value
     
     Returns:
-    bool: 追加が成功したかどうか
+    bool: Whether addition was successful
     """
     try:
-        # 現在のデータを読み込む
+        # Load current data
         complexity_data = load_rank_complexity_data()
         
-        # 既に存在する場合は何もしない
+        # Do nothing if already exists
         if rank_type in complexity_data:
             return True
         
-        # 存在しない場合は追加 - 新しい構造に合わせて辞書形式で追加
+        # Add if doesn't exist - Add in dictionary format to match new structure
         complexity_data[rank_type] = {
             'complexity': default_complexity,
-            'strategic_value': 3.5,  # デフォルト値
-            'interaction_value': 3.2,  # デフォルト値
-            'description': f"自動追加されたランキング種別（デフォルト値）"
+            'strategic_value': 3.5,  # Default value
+            'interaction_value': 3.2,  # Default value
+            'description': f"Auto-added ranking type (default values)"
         }
         
-        # 保存
+        # Save
         return save_rank_complexity_data(complexity_data)
     except Exception as e:
-        print(f"ランキング種別の追加エラー: {str(e)}")
+        print(f"Error adding ranking type: {str(e)}")
         return False
 
 def get_rank_complexity_value(rank_type, default_value=3.0):
     """
-    指定されたランキング種別の複雑さを取得する
-    存在しない場合はデフォルト値を返し、自動的にデータベースに追加する
+    Get complexity for specified ranking type
+    Automatically adds to database and returns default value if not exists
     
     Parameters:
-    rank_type (str): 複雑さを取得するランキング種別
-    default_value (float): 存在しない場合のデフォルト値
+    rank_type (str): Ranking type to get complexity for
+    default_value (float): Default value if not exists
     
     Returns:
-    float: ランキング種別の複雑さ
+    float: Ranking type complexity
     """
     complexity_data = load_rank_complexity_data()
     
-    # ランキング種別が存在するか確認
+    # Check if ranking type exists
     if rank_type in complexity_data:
-        # 新しい構造: complexity_data[rank_type] はディクショナリで、
-        # その中に 'complexity' キーがある
+        # New structure: complexity_data[rank_type] is a dictionary
+        # with a 'complexity' key inside
         if isinstance(complexity_data[rank_type], dict) and 'complexity' in complexity_data[rank_type]:
             return complexity_data[rank_type]['complexity']
-        # 後方互換性のため、直接値が格納されている場合もサポート
+        # Support backward compatibility if value is stored directly
         elif isinstance(complexity_data[rank_type], (int, float)):
             return complexity_data[rank_type]
-        # どちらでもない場合はデフォルト値を返す
+        # Return default value if neither case
         else:
             return default_value
     
-    # 存在しない場合は追加して保存
+    # Add and save if doesn't exist
     add_missing_rank_type(rank_type, default_value)
     
     return default_value
 
 def calculate_rank_position_score(rank_value):
     """
-    ランキングの順位からゲームの人気/品質スコアを計算する
-    順位が高い（数値が小さい）ほど人気/品質スコアが高くなる
+    Calculate game popularity/quality score from ranking position
+    Higher positions (smaller numbers) result in higher popularity/quality scores
     
     Parameters:
-    rank_value (int or str): ランキングの順位
+    rank_value (int or str): Ranking position
     
     Returns:
-    float: ランキング順位に基づく人気/品質スコア（1.0〜5.0の範囲）
+    float: Popularity/quality score based on ranking position (range 1.0-5.0)
     """
     try:
-        # 順位を整数に変換
+        # Convert position to integer
         rank = int(rank_value)
         
-        # 対数スケールでスコアを計算（上位ほどスコアが高い）
+        # Calculate score on logarithmic scale (higher positions get higher scores)
         if rank <= 10:
-            # トップ10は最高評価
+            # Top 10 gets highest rating
             score = 5.0
         elif rank <= 100:
-            # トップ100はとても高い評価
-            score = 4.5 - (rank - 10) / 90 * 0.5  # 4.5～4.0
+            # Top 100 gets very high rating
+            score = 4.5 - (rank - 10) / 90 * 0.5  # 4.5 to 4.0
         elif rank <= 1000:
-            # トップ1000は高い評価
-            score = 4.0 - (rank - 100) / 900 * 1.0  # 4.0～3.0
+            # Top 1000 gets high rating
+            score = 4.0 - (rank - 100) / 900 * 1.0  # 4.0 to 3.0
         elif rank <= 5000:
-            # トップ5000は中程度の評価
-            score = 3.0 - (rank - 1000) / 4000 * 1.0  # 3.0～2.0
+            # Top 5000 gets moderate rating
+            score = 3.0 - (rank - 1000) / 4000 * 1.0  # 3.0 to 2.0
         else:
-            # 5000位より下は低い評価
-            score = max(1.0, 2.0 - math.log10(rank / 5000))  # 2.0～1.0
+            # Below 5000 gets low rating
+            score = max(1.0, 2.0 - math.log10(rank / 5000))  # 2.0 to 1.0
         
         return score
     except (ValueError, TypeError):
-        # 数値に変換できない場合はデフォルト値を返す
+        # Return default value if cannot convert to number
         return 2.5
 
 def calculate_rank_complexity(ranks):
     """
-    ランキング情報から複雑さスコアを計算する
-    ランキング種別の複雑さを主に考慮し、順位は二次的要素として扱う
+    Calculate complexity score from ranking information
+    Primarily considers ranking type complexity, with position as secondary factor
     
     Parameters:
-    ranks (list): ランキング情報のリスト
+    ranks (list): List of ranking information
     
     Returns:
-    float: ランキングに基づく複雑さスコア（1.0〜5.0の範囲）
+    float: Ranking-based complexity score (range 1.0-5.0)
     """
     if not ranks:
-        return 3.0  # デフォルト値
+        return 3.0  # Default value
     
-    # 各ランキング種別ごとのスコアを計算
+    # Calculate score for each ranking type
     rank_scores = []
     for rank_info in ranks:
         rank_type = rank_info.get('type', 'boardgame')
         rank_value = rank_info.get('rank')
         
         if rank_value and rank_value != "Not Ranked":
-            # 順位からの人気/品質スコア
+            # Popularity/quality score from position
             popularity_score = calculate_rank_position_score(rank_value)
             
-            # ランキング種別の複雑さ（基準値）
+            # Ranking type complexity (baseline value)
             type_complexity = get_rank_complexity_value(rank_type)
             
-            # 複雑さ評価は主にランキング種別に基づく
-            # 順位の影響は小さくする（20%）
-            # 高ランキングだと若干複雑さが上がる傾向を反映するが、主要因ではない
+            # Complexity evaluation is mainly based on ranking type
+            # Position influence is minimal (20%)
+            # Reflects tendency that higher rankings slightly increase complexity, but not primary factor
             adjusted_score = (type_complexity * 0.8 + (popularity_score - 3.0) * 0.2)
             
-            # 重み付けはランキング種別の重要度（boardgameは1.0、他は種別ごとに設定）
+            # Weight by ranking type importance (boardgame is 1.0, others are type-specific)
             weight = 1.0
             if rank_type == "boardgame":
-                weight = 1.0  # 総合ランキングは標準の重み
+                weight = 1.0  # Overall ranking has standard weight
             elif rank_type in ["strategygames", "wargames"]:
-                weight = 1.2  # 戦略ゲーム系は重み増加
+                weight = 1.2  # Strategy games get increased weight
             elif rank_type in ["familygames", "partygames", "childrensgames"]:
-                weight = 0.8  # カジュアルゲーム系は重み減少
+                weight = 0.8  # Casual games get decreased weight
             
-            # 重み付けスコアを追加
+            # Add weighted score
             rank_scores.append((adjusted_score, weight))
     
-    # スコアがない場合はデフォルト値を返す
+    # Return default value if no scores
     if not rank_scores:
         return 3.0
         
-    # 重み付け平均を計算
+    # Calculate weighted average
     total_weighted_score = sum(score * weight for score, weight in rank_scores)
     total_weight = sum(weight for _, weight in rank_scores)
     
     avg_score = total_weighted_score / total_weight
     
-    # 1.0〜5.0の範囲に制限
+    # Limit to 1.0-5.0 range
     return min(5.0, max(1.0, avg_score))

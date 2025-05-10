@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-毎日0時に実行するBoardgame Analyzerのデータ更新スクリプト
-- YAMLデータをbackupフォルダにYYMMDD形式で保存する
-- ローカルのYAMLファイルからゲームIDリストを取得する
-- BGG APIを使用して各ゲームの詳細情報を取得し直す
-- configファイルの更新があれば、変更内容をログに出力する
+Daily update script for BoardGame Analyzer to be executed at midnight
+- Saves YAML data to backup folder with YYMMDD format
+- Gets list of game IDs from local YAML files
+- Re-retrieves detailed information for each game using BGG API
+- If config files are updated, outputs changes to log
 """
 
 import os
@@ -20,7 +20,7 @@ import xml.etree.ElementTree as ET
 import re
 from pathlib import Path
 
-# ロギング設定
+# Logging configuration
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -29,124 +29,124 @@ logging.basicConfig(
 )
 logger = logging.getLogger('daily_update')
 
-# 定数
+# Constants
 BASE_DIR = Path('.')
 GAME_DATA_DIR = BASE_DIR / 'game_data'
 CONFIG_DIR = BASE_DIR / 'config'
 BACKUP_DIR = BASE_DIR / 'backup'
 LOGS_DIR = BASE_DIR / 'logs'
 
-# API呼び出し用のキャッシュとレート制限 
+# Cache and rate limiting for API calls
 _cache = {}
 _cache_ttl = {}
 _request_history = []
 
-# シンプルなキャッシュ実装
+# Simple cache implementation
 def simple_cache(ttl_hours=24):
-    """シンプルなキャッシュ機能を提供するデコレータ"""
+    """Decorator providing simple cache functionality"""
     def decorator(func):
         def wrapper(*args, **kwargs):
-            # キャッシュキーを生成
+            # Generate cache key
             key = str(args) + str(sorted(kwargs.items()))
             key_hash = hash(key)
             cache_key = f"{func.__name__}_{key_hash}"
             
-            # キャッシュが有効な場合はキャッシュから返す
+            # Return from cache if valid
             current_time = time.time()
             if cache_key in _cache and _cache_ttl.get(cache_key, 0) > current_time:
-                logger.debug(f"キャッシュからデータを返します: {cache_key}")
+                logger.debug(f"Returning data from cache: {cache_key}")
                 return _cache[cache_key]
             
-            # キャッシュがない場合や期限切れの場合は関数を実行
+            # Execute function if cache miss or expired
             result = func(*args, **kwargs)
             
-            # 結果をキャッシュに保存
+            # Save result to cache
             _cache[cache_key] = result
-            # 有効期限を設定（秒単位）
+            # Set expiration time (in seconds)
             _cache_ttl[cache_key] = current_time + (ttl_hours * 3600)
             
             return result
         return wrapper
     return decorator
 
-# レート制限実装
+# Rate limiting implementation
 def rate_limited_request(max_per_minute=15, max_retries=3):
-    """BGG APIリクエストをレート制限するデコレータ"""
-    # リクエスト間の最小間隔を計算
+    """Decorator to rate limit BGG API requests"""
+    # Calculate minimum interval between requests
     min_interval = 60.0 / max_per_minute
     
     def decorator(func):
         def wrapper(*args, **kwargs):
             global _request_history
             
-            # 1分以上経過したリクエスト履歴を削除
+            # Remove request history older than 1 minute
             current_time = time.time()
             one_minute_ago = current_time - 60
             _request_history = [t for t in _request_history if t > one_minute_ago]
             
-            # 過去1分間のリクエスト数をチェック
+            # Check number of requests in past minute
             if len(_request_history) >= max_per_minute:
-                # min_intervalを使用して均等にリクエストを分散
+                # Use min_interval to evenly distribute requests
                 oldest_request = min(_request_history) if _request_history else current_time - 60
                 time_since_oldest = current_time - oldest_request
-                # 経過時間に基づく待機時間を計算
+                # Calculate wait time based on elapsed time
                 wait_time = max(0, min_interval - (time_since_oldest / max(1, len(_request_history)))) + random.uniform(0.1, 1.0)
                 
                 if wait_time > 0:
-                    logger.info(f"BGG APIレート制限に達しました。{wait_time:.1f}秒待機しています...")
+                    logger.info(f"BGG API rate limit reached. Waiting {wait_time:.1f} seconds...")
                     time.sleep(wait_time)
             
-            # ジッター（ばらつき）を追加して、同時リクエストを避ける
+            # Add jitter to avoid simultaneous requests
             jitter = random.uniform(0.2, 1.0)
             time.sleep(jitter)
             
-            # リクエスト実行（再試行ロジック付き）
+            # Execute request with retry logic
             retries = 0
             while retries <= max_retries:
                 try:
-                    # リクエスト履歴を記録
+                    # Record request history
                     _request_history.append(time.time())
                     
-                    # 実際の関数呼び出し
+                    # Actual function call
                     result = func(*args, **kwargs)
                     return result
                     
                 except requests.exceptions.HTTPError as e:
                     retries += 1
                     if e.response.status_code == 429:  # Too Many Requests
-                        # レート制限エラーの場合
+                        # Rate limit error
                         retry_after = int(e.response.headers.get('Retry-After', 30))
                         wait_time = retry_after + random.uniform(1, 5)
                         
-                        logger.warning(f"BGG APIレート制限に達しました。{wait_time:.1f}秒待機しています... (試行 {retries}/{max_retries})")
+                        logger.warning(f"BGG API rate limit reached. Waiting {wait_time:.1f} seconds... (attempt {retries}/{max_retries})")
                         time.sleep(wait_time)
                     
                     elif e.response.status_code >= 500:
-                        # サーバーエラーの場合はバックオフして再試行
+                        # Server error - backoff and retry
                         wait_time = (2 ** retries) + random.uniform(0, 1)
                         
-                        logger.warning(f"BGG APIサーバーエラー (ステータス {e.response.status_code})。{wait_time:.1f}秒後に再試行します... (試行 {retries}/{max_retries})")
+                        logger.warning(f"BGG API server error (status {e.response.status_code}). Retrying in {wait_time:.1f} seconds... (attempt {retries}/{max_retries})")
                         time.sleep(wait_time)
                     
                     else:
-                        # その他のHTTPエラー
-                        logger.error(f"API呼び出しエラー: {e.response.status_code} - {e.response.reason}")
+                        # Other HTTP errors
+                        logger.error(f"API call error: {e.response.status_code} - {e.response.reason}")
                         raise
                 
                 except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
-                    # 接続エラーやタイムアウトの場合
+                    # Connection error or timeout
                     retries += 1
                     wait_time = (2 ** retries) + random.uniform(0, 1)
                     
-                    # 例外の種類に基づいてエラーメッセージを調整
-                    error_type = "タイムアウト" if isinstance(e, requests.exceptions.Timeout) else "接続エラー"
-                    logger.warning(f"{error_type}が発生しました。{wait_time:.1f}秒後に再試行します... (試行 {retries}/{max_retries})")
+                    # Adjust error message based on exception type
+                    error_type = "Timeout" if isinstance(e, requests.exceptions.Timeout) else "Connection error"
+                    logger.warning(f"{error_type} occurred. Retrying in {wait_time:.2f} seconds (attempt {retries}/{max_retries})")
                     time.sleep(wait_time)
                     
-                # 最大再試行回数に達した場合
+                # Maximum retries reached
                 if retries > max_retries:
-                    logger.error(f"最大再試行回数({max_retries})に達しました。後でもう一度お試しください。")
-                    raise Exception("APIリクエストの最大再試行回数に達しました")
+                    logger.error(f"Maximum retries ({max_retries}) reached. Please try again later.")
+                    raise Exception("Maximum API request retries reached")
         
         return wrapper
     return decorator
@@ -154,9 +154,9 @@ def rate_limited_request(max_per_minute=15, max_retries=3):
 @simple_cache(ttl_hours=48)
 @rate_limited_request(max_per_minute=15)
 def get_game_details(game_id):
-    """ゲームの詳細情報を取得する"""
+    """Get detailed game information"""
     url = f"https://boardgamegeek.com/xmlapi2/thing?id={game_id}&stats=1"
-    logger.info(f"ゲームID {game_id} の詳細情報を取得中...")
+    logger.info(f"Retrieving details for game ID {game_id}...")
     
     response = requests.get(url)
     
@@ -169,24 +169,24 @@ def get_game_details(game_id):
             game["id"] = item.get("id")
             game["type"] = item.get("type")
             
-            # プライマリ名を取得
+            # Get primary name
             name_element = item.find(".//name[@type='primary']")
             if name_element is not None:
                 game["name"] = name_element.get("value")
             
-            # 代替名（日本語名を含む）を取得
+            # Get alternate names (including Japanese names)
             alternate_names = []
             for name_elem in item.findall(".//name"):
                 name_value = name_elem.get("value")
                 name_type = name_elem.get("type")
                 
-                # プライマリ名は既に取得済みなのでスキップ
+                # Skip primary name as already retrieved
                 if name_type == "primary":
                     continue
                 
                 alternate_names.append(name_value)
                 
-                # 言語属性がある場合はチェック
+                # Check if language attribute exists
                 if "language" in name_elem.attrib:
                     lang = name_elem.get("language")
                     if lang == "ja" or lang == "jp" or lang == "jpn":
@@ -195,11 +195,11 @@ def get_game_details(game_id):
             if alternate_names:
                 game["alternate_names"] = alternate_names
                 
-                # 日本語タイトルがまだ見つかっていない場合
+                # If Japanese title not found yet
                 if "japanese_name" not in game:
-                    # 日本語文字を含むものを探す
+                    # Look for strings containing Japanese characters
                     for alt_name in alternate_names:
-                        # ひらがなかカタカナが含まれているか確認（より信頼性が高い日本語判定）
+                        # Check if contains hiragana or katakana (more reliable Japanese detection)
                         has_japanese = any(
                             '\u3040' <= c <= '\u309F' or '\u30A0' <= c <= '\u30FF'
                             for c in alt_name
@@ -208,17 +208,17 @@ def get_game_details(game_id):
                             game["japanese_name"] = alt_name
                             break
             
-            # 発行年を取得
+            # Get year published
             year_element = item.find(".//yearpublished")
             if year_element is not None:
                 game["year_published"] = year_element.get("value")
             
-            # サムネイルURLを取得
+            # Get thumbnail URL
             thumbnail_element = item.find(".//thumbnail")
             if thumbnail_element is not None and thumbnail_element.text:
                 game["thumbnail_url"] = thumbnail_element.text
             
-            # パブリッシャー設定のプレイ人数を取得
+            # Get publisher settings for player count
             minplayers_element = item.find(".//minplayers")
             if minplayers_element is not None:
                 game["publisher_min_players"] = minplayers_element.get("value")
@@ -227,24 +227,24 @@ def get_game_details(game_id):
             if maxplayers_element is not None:
                 game["publisher_max_players"] = maxplayers_element.get("value")
                 
-            # パブリッシャー設定のプレイ時間を取得
+            # Get publisher playing time
             playtime_element = item.find(".//playingtime")
             if playtime_element is not None:
                 game["playing_time"] = playtime_element.get("value")
                 
-            # パブリッシャー設定の推奨年齢を取得
+            # Get publisher recommended age
             age_element = item.find(".//minage")
             if age_element is not None:
                 game["publisher_min_age"] = age_element.get("value")
                 
-            # BGGコミュニティの推奨プレイ人数を取得
+            # Get BGG community recommended player count
             poll = item.findall(".//poll[@name='suggested_numplayers']/results")
             community_players = {"best": [], "recommended": [], "not_recommended": []}
             
             for numplayer_result in poll:
                 num_players = numplayer_result.get("numplayers")
                 
-                # 最も投票が多い推奨度を見つける
+                # Find most voted recommendation
                 best_votes = 0
                 best_recommendation = "not_recommended"
                 
@@ -256,7 +256,7 @@ def get_game_details(game_id):
                         best_votes = vote_count
                         best_recommendation = value
                 
-                # 推奨度に基づいてプレイ人数を分類
+                # Classify player count based on recommendation
                 if best_recommendation == "Best":
                     community_players["best"].append(num_players)
                 elif best_recommendation == "Recommended":
@@ -264,9 +264,9 @@ def get_game_details(game_id):
                 elif best_recommendation == "Not Recommended":
                     community_players["not_recommended"].append(num_players)
             
-            # 最適人数を設定
+            # Set best player count
             if community_players["best"]:
-                # 数値として解釈できる場合にソート
+                # Sort if can be interpreted as numbers
                 try:
                     community_players["best"] = sorted(
                         community_players["best"],
@@ -288,7 +288,7 @@ def get_game_details(game_id):
                     community_players["recommended"]
                 )
             
-            # BGGコミュニティの推奨年齢を取得
+            # Get BGG community recommended age
             suggested_age_poll = item.find(".//poll[@name='suggested_playerage']")
             if suggested_age_poll is not None:
                 age_results = suggested_age_poll.findall("./results/result")
@@ -306,12 +306,12 @@ def get_game_details(game_id):
                 if community_age:
                     game["community_min_age"] = community_age
             
-            # 説明文を取得
+            # Get description
             description_element = item.find(".//description")
             if description_element is not None and description_element.text:
                 game["description"] = description_element.text
             
-            # メカニクス（ゲームの種類）を取得
+            # Get mechanics (game types)
             mechanics = []
             for mechanic in item.findall(".//link[@type='boardgamemechanic']"):
                 mechanics.append({
@@ -320,7 +320,7 @@ def get_game_details(game_id):
                 })
             game["mechanics"] = mechanics
             
-            # カテゴリを取得
+            # Get categories
             categories = []
             for category in item.findall(".//link[@type='boardgamecategory']"):
                 categories.append({
@@ -329,7 +329,7 @@ def get_game_details(game_id):
                 })
             game["categories"] = categories
             
-            # デザイナー情報を取得
+            # Get designer information
             designers = []
             for designer in item.findall(".//link[@type='boardgamedesigner']"):
                 designers.append({
@@ -338,7 +338,7 @@ def get_game_details(game_id):
                 })
             game["designers"] = designers
             
-            # パブリッシャー情報を取得
+            # Get publisher information
             publishers = []
             for publisher in item.findall(".//link[@type='boardgamepublisher']"):
                 publishers.append({
@@ -347,19 +347,19 @@ def get_game_details(game_id):
                 })
             game["publishers"] = publishers
             
-            # 評価情報を取得
+            # Get rating information
             ratings = item.find(".//ratings")
             if ratings is not None:
                 avg_rating = ratings.find(".//average")
                 if avg_rating is not None:
                     game["average_rating"] = avg_rating.get("value")
                 
-                # 重量（複雑さ）を取得
+                # Get weight (complexity)
                 weight_element = ratings.find(".//averageweight")
                 if weight_element is not None:
                     game["weight"] = weight_element.get("value")
                 
-                # ランク情報
+                # Ranking information
                 ranks = []
                 for rank in ratings.findall(".//rank"):
                     if rank.get("value") != "Not Ranked":
@@ -372,72 +372,72 @@ def get_game_details(game_id):
         
         return game
     else:
-        logger.error(f"エラー: ステータスコード {response.status_code}")
+        logger.error(f"Error: Status code {response.status_code}")
         return None
 
 def save_game_data_to_yaml(game_data, custom_filename=None):
-    """ゲームデータをYAMLファイルに保存する"""
-    # ファイル名の生成
+    """Save game data to YAML file"""
+    # Generate filename
     game_id = game_data.get('id', 'unknown')
     
-    # ゲームIDを6桁に揃える処理を追加
+    # Pad game ID to 6 digits
     if game_id != 'unknown' and game_id.isdigit():
-        game_id = game_id.zfill(6)  # 6桁になるように左側に0を埋める
+        game_id = game_id.zfill(6)  # Left-pad with zeros to 6 digits
     
-    # 日本語名がある場合は優先して使用
+    # Use Japanese name if available
     game_name = game_data.get('japanese_name', game_data.get('name', '名称不明'))
     
-    # 全角スペースを半角スペースに変換
+    # Convert full-width spaces to half-width spaces
     game_name = game_name.replace('　', ' ')
     
-    # プレースホルダーファイル名
+    # Placeholder filename
     placeholder_filename = f"{game_id}_{game_name}.yaml"
-    # 特殊文字を置換
+    # Replace special characters
     placeholder_filename = placeholder_filename.replace(" ", "_").replace("/", "_").replace("\\", "_").replace(":", "_").replace(";", "_")
     
-    # カスタムファイル名の処理
+    # Process custom filename
     if not custom_filename:
         filename = placeholder_filename
     else:
-        # カスタムファイル名も全角スペースを半角に変換
+        # Convert full-width spaces to half-width in custom filename
         custom_filename = custom_filename.replace('　', ' ')
         filename = custom_filename
         if not filename.endswith('.yaml'):
             filename += '.yaml'
     
-    # データディレクトリの作成
+    # Create data directory
     os.makedirs("game_data", exist_ok=True)
     file_path = os.path.join("game_data", filename)
     
     try:
-        # YAMLに変換して保存する前にゲーム名に特殊文字がある場合の対応
+        # Handle special characters in game name before converting to YAML
         game_data_safe = game_data.copy()
 
-        # トップレベルのIDを削除
+        # Remove top-level ID
         if 'id' in game_data_safe:
             del game_data_safe['id']
 
-        # ネストされた要素からIDを削除
+        # Remove IDs from nested elements
         for category in ['mechanics', 'categories', 'designers', 'publishers', 'ranks']:
             if (category in game_data_safe and isinstance(game_data_safe[category], list)):
                 for item in game_data_safe[category]:
                     if 'id' in item:
                         del item['id']
 
-        # 学習曲線分析の追加（Streamlitの依存なしで実装）
+        # Add learning curve analysis (implemented without Streamlit dependencies)
         if ('learning_analysis' not in game_data_safe and 
             'description' in game_data_safe and 
             'mechanics' in game_data_safe and 
             'weight' in game_data_safe):
             try:
-                # 独立したモジュールを使用して学習曲線分析を追加
+                # Use independent module for learning curve analysis
                 from learning_curve_for_daily_update import calculate_learning_curve
                 game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
-                logger.info(f"ゲームID {game_id} の学習曲線分析を追加しました")
+                logger.info(f"Added learning curve analysis for game ID {game_id}")
             except Exception as e:
-                logger.warning(f"学習曲線の計算中にエラーが発生しました: {str(e)}")
+                logger.warning(f"Error calculating learning curve: {str(e)}")
         
-        # YAMLに変換して保存する前に全角スペースを半角スペースに変換
+        # Convert full-width spaces to half-width before saving to YAML
         def replace_fullwidth_spaces(obj):
             if isinstance(obj, str):
                 return obj.replace('　', ' ')
@@ -450,126 +450,126 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
         
         game_data_safe = replace_fullwidth_spaces(game_data_safe)
         
-        # YAMLに変換して保存
+        # Convert to YAML and save
         with open(file_path, 'w', encoding='utf-8') as file:
             yaml.dump(game_data_safe, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
         
         return True, file_path, None
     except Exception as e:
-        logger.error(f"ファイル保存エラー: {str(e)}")
+        logger.error(f"File save error: {str(e)}")
         return False, None, str(e)
 
 def setup_directories():
-    """必要なディレクトリを作成"""
+    """Create necessary directories"""
     GAME_DATA_DIR.mkdir(exist_ok=True)
     BACKUP_DIR.mkdir(exist_ok=True)
     LOGS_DIR.mkdir(exist_ok=True)
 
 def backup_game_data():
     """
-    game_dataをバックアップする
+    Backup game_data folder
     
     Returns:
-    tuple: (成功フラグ, バックアップディレクトリのパス)
+    tuple: (success flag, backup directory path)
     """
     today = datetime.datetime.now()
     backup_folder_name = today.strftime('%y%m%d')
     
     backup_dir = BACKUP_DIR / backup_folder_name
     
-    # game_dataフォルダが存在するか確認
+    # Check if game_data folder exists
     if not GAME_DATA_DIR.exists():
-        logger.warning(f"ゲームデータフォルダが見つかりません: {GAME_DATA_DIR}")
+        logger.warning(f"Game data folder not found: {GAME_DATA_DIR}")
         return False, None
     
-    # バックアップフォルダを作成
+    # Create backup folder
     os.makedirs(backup_dir, exist_ok=True)
     
-    # game_dataの内容をバックアップ
+    # Backup game_data contents
     file_count = 0
     for file in GAME_DATA_DIR.glob('*.yaml'):
         shutil.copy2(file, backup_dir)
         file_count += 1
     
-    logger.info(f"{file_count}個のYAMLファイルをバックアップしました: {backup_dir}")
+    logger.info(f"Backed up {file_count} YAML files to: {backup_dir}")
     
     return True, backup_dir
 
 def get_game_ids_from_local():
-    """ローカルのYAMLファイルからゲームIDを抽出して返す"""
+    """Extract game IDs from local YAML files and return them"""
     game_ids = []
     
-    # game_dataフォルダからYAMLファイルを探す
+    # Find YAML files in game_data folder
     yaml_files = list(GAME_DATA_DIR.glob('*.yaml'))
     
     if not yaml_files:
-        logger.warning(f"YAMLファイルが見つかりません: {GAME_DATA_DIR}")
+        logger.warning(f"No YAML files found: {GAME_DATA_DIR}")
         return []
     
     for yaml_file in yaml_files:
-        # ファイル名からゲームIDを抽出 (例: "000013_カタンの開拓者.yaml")
+        # Extract game ID from filename (e.g. "000013_カタンの開拓者.yaml")
         match = re.match(r"(\d+)_(.*?)\.yaml", yaml_file.name)
         if match:
             game_id = match.group(1)
             if game_id:
                 game_ids.append(game_id)
     
-    logger.info(f"ローカルから{len(game_ids)}個のゲームIDを取得しました")
+    logger.info(f"Retrieved {len(game_ids)} game IDs from local files")
     return game_ids
 
 def get_file_content(file_path):
-    """ファイルの内容を取得する"""
+    """Get file content"""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             return f.read()
     except Exception as e:
-        logger.error(f"ファイル読み込みエラー: {str(e)}")
+        logger.error(f"File read error: {str(e)}")
         return ""
 
 def check_config_updated():
     """
-    configファイルが更新されたかをチェック
-    更新があった場合は変更内容をログに出力
+    Check if config files have been updated
+    Output changes to log if updates are found
     
     Returns:
-    tuple: (更新フラグ, 更新内容の説明)
+    tuple: (update flag, update description)
     """
     updated = False
     update_details = []
     
-    # 前回のバックアップを探す（最新のもの）
+    # Find previous backup (most recent)
     previous_backups = sorted([d for d in BACKUP_DIR.glob('*') if d.is_dir()], reverse=True)
     if not previous_backups:
-        logger.info("前回のバックアップが見つかりません。初回実行とみなします。")
-        return False, "初回実行"
+        logger.info("No previous backup found. Considering this as first run.")
+        return False, "First run"
     
-    # 最新のバックアップディレクトリを取得
+    # Get most recent backup directory
     last_backup = previous_backups[0]
     last_config_backup = last_backup / 'config'
     
-    # 前回のバックアップにconfigフォルダがない場合
+    # If previous backup doesn't have config folder
     if not last_config_backup.exists():
-        logger.info("前回のバックアップにconfigフォルダがありません")
-        return False, "前回のconfigバックアップなし"
+        logger.info("No config folder in previous backup")
+        return False, "No previous config backup"
     
-    # 各configファイルを比較
+    # Compare each config file
     for file in CONFIG_DIR.glob('*.yaml'):
         old_file = last_config_backup / file.name
         
         if not old_file.exists():
-            # 新しいファイルが追加された場合
+            # New file added
             updated = True
-            update_details.append(f"新規ファイル追加: {file.name}")
+            update_details.append(f"New file added: {file.name}")
             continue
         
-        # ファイル内容を比較
+        # Compare file contents
         old_content = get_file_content(old_file)
         new_content = get_file_content(file)
         
         if old_content != new_content:
             updated = True
             
-            # diffを取得して変更内容を詳細に記録
+            # Get diff to record changes in detail
             diff = list(difflib.unified_diff(
                 old_content.splitlines(),
                 new_content.splitlines(),
@@ -578,28 +578,28 @@ def check_config_updated():
                 lineterm=''
             ))
             
-            update_details.append(f"ファイル変更: {file.name}")
-            for line in diff[:20]:  # 最初の20行のdiffだけ表示（長すぎるのを防ぐ）
+            update_details.append(f"File changed: {file.name}")
+            for line in diff[:20]:  # Show only first 20 lines of diff (prevent too long output)
                 update_details.append(f"  {line}")
             
             if len(diff) > 20:
-                update_details.append(f"  ... その他 {len(diff) - 20} 行の変更があります")
+                update_details.append(f"  ... {len(diff) - 20} more lines changed")
     
-    # CONFIG_DIRにあるがlast_config_backupにないファイルを探す（新規追加）
+    # Find files that exist in CONFIG_DIR but not in last_config_backup (newly added)
     for old_file in last_config_backup.glob('*.yaml'):
         new_file = CONFIG_DIR / old_file.name
         if not new_file.exists():
             updated = True
-            update_details.append(f"ファイル削除: {old_file.name}")
+            update_details.append(f"File deleted: {old_file.name}")
     
     return updated, "\n".join(update_details)
 
 def backup_config_files(backup_dir):
     """
-    現在のconfigファイルをバックアップする
+    Backup current config files
     
     Parameters:
-    backup_dir (Path): バックアップディレクトリ
+    backup_dir (Path): Backup directory
     """
     config_backup_dir = backup_dir / 'config'
     config_backup_dir.mkdir(exist_ok=True)
@@ -607,91 +607,91 @@ def backup_config_files(backup_dir):
     for file in CONFIG_DIR.glob('*.yaml'):
         shutil.copy2(file, config_backup_dir)
     
-    logger.info(f"configファイルをバックアップしました: {config_backup_dir}")
+    logger.info(f"Config files backed up to: {config_backup_dir}")
 
 def update_game_data(game_ids):
-    """ゲームデータを更新する"""
+    """Update game data"""
     success_count = 0
     error_count = 0
     
     for i, game_id in enumerate(game_ids):
         try:
-            logger.info(f"ゲームデータ取得中 ({i+1}/{len(game_ids)}): {game_id}")
+            logger.info(f"Retrieving game data ({i+1}/{len(game_ids)}): {game_id}")
             
-            # BGG APIからゲーム詳細を取得
+            # Get game details from BGG API
             game_details = get_game_details(game_id)
             
             if not game_details:
-                logger.warning(f"ゲームID {game_id} の詳細情報が取得できませんでした")
+                logger.warning(f"Could not retrieve details for game ID {game_id}")
                 error_count += 1
                 continue
             
-            # YAMLファイルに保存
+            # Save to YAML file
             success, file_path, error_msg = save_game_data_to_yaml(game_details)
             
             if success:
-                logger.info(f"ゲームID {game_id} の情報を保存しました: {file_path}")
+                logger.info(f"Saved information for game ID {game_id}: {file_path}")
                 success_count += 1
             else:
-                logger.error(f"ゲームID {game_id} の保存に失敗: {error_msg}")
+                logger.error(f"Failed to save game ID {game_id}: {error_msg}")
                 error_count += 1
             
-            # rate_limiterが実装されているはずだが、念のため追加の間隔をあける
+            # Additional wait time for safety (although rate_limiter should be implemented)
             time.sleep(1)
         
         except Exception as e:
-            logger.error(f"ゲームID {game_id} の処理中にエラー: {e}")
+            logger.error(f"Error processing game ID {game_id}: {e}")
             error_count += 1
     
     return success_count, error_count
 
 def main():
-    """メイン処理"""
-    logger.info("日次更新処理を開始します")
+    """Main process"""
+    logger.info("Starting daily update process")
     
     try:
-        # 必要なディレクトリを作成
+        # Create necessary directories
         setup_directories()
         
-        # データをバックアップ
+        # Backup data
         backup_success, backup_dir = backup_game_data()
         if not backup_success:
-            logger.error("バックアップ処理に失敗しました")
+            logger.error("Backup process failed")
             return
         
-        # configファイルが更新されたかチェック
+        # Check if config files have been updated
         config_updated, update_details = check_config_updated()
         
-        # configファイルをバックアップ（毎回行う）
+        # Backup config files (always perform)
         backup_config_files(backup_dir)
         
-        # configの更新があった場合はログに詳細を記録
+        # Record details to log if config was updated
         if config_updated:
-            logger.info("configファイルに更新がありました:")
+            logger.info("Config files have been updated:")
             logger.info(update_details)
             
-            # バックアップフォルダにマーカーファイルを作成
+            # Create marker file in backup folder
             config_update_marker = backup_dir / 'CONFIG_UPDATED.txt'
             with open(config_update_marker, 'w', encoding='utf-8') as f:
                 f.write(f"Config files updated on {datetime.datetime.now()}\n\n")
                 f.write(update_details)
             
-            logger.info(f"configの更新マーカーファイルを作成: {config_update_marker}")
+            logger.info(f"Created config update marker file: {config_update_marker}")
         
-        # ローカルYAMLファイルからゲームIDを取得
+        # Get game IDs from local YAML files
         game_ids = get_game_ids_from_local()
         if not game_ids:
-            logger.error("ローカルからゲームIDを取得できませんでした")
+            logger.error("Could not retrieve game IDs from local files")
             return
         
-        # ゲームデータを更新
+        # Update game data
         success_count, error_count = update_game_data(game_ids)
-        logger.info(f"データ更新完了 - 成功: {success_count}, 失敗: {error_count}")
+        logger.info(f"Data update complete - Success: {success_count}, Failed: {error_count}")
         
-        logger.info("日次更新処理が完了しました")
+        logger.info("Daily update process completed")
     
     except Exception as e:
-        logger.error(f"処理中に予期せぬエラーが発生しました: {e}")
+        logger.error(f"Unexpected error occurred during processing: {e}")
 
 if __name__ == "__main__":
     main()

@@ -5,23 +5,23 @@ import requests
 from functools import wraps
 from datetime import datetime, timedelta
 
-# APIリクエスト履歴を保持するグローバル変数
+# Global variable to store API request history
 request_history = []
-# キャッシュの有効期限管理
+# Cache expiration management
 cache_expiry = {}
 
 def rate_limited_request(max_per_minute=30, max_retries=3):
     """
-    BGG APIリクエストをレート制限するデコレータ
+    Decorator to rate-limit BGG API requests
     
     Parameters:
-    max_per_minute (int): 1分あたりの最大リクエスト数
-    max_retries (int): エラー時の最大再試行回数
+    max_per_minute (int): Maximum number of requests per minute
+    max_retries (int): Maximum number of retries on error
     
     Returns:
-    function: デコレートされた関数
+    function: Decorated function
     """
-    # リクエスト間の最小間隔を計算
+    # Calculate minimum interval between requests
     min_interval = 60.0 / max_per_minute
     
     def decorator(func):
@@ -29,90 +29,90 @@ def rate_limited_request(max_per_minute=30, max_retries=3):
         def wrapper(*args, **kwargs):
             global request_history
             
-            # 1分以上経過したリクエスト履歴を削除
+            # Remove request history older than 1 minute
             current_time = time.time()
             one_minute_ago = current_time - 60
             request_history = [t for t in request_history if t > one_minute_ago]
             
-            # 過去1分間のリクエスト数をチェック
+            # Check number of requests in the past minute
             if len(request_history) >= max_per_minute:
-                # min_intervalを使用して均等にリクエストを分散
+                # Use min_interval to distribute requests evenly
                 oldest_request = min(request_history) if request_history else current_time - 60
                 time_since_oldest = current_time - oldest_request
-                # 経過時間に基づく待機時間を計算
+                # Calculate wait time based on elapsed time
                 wait_time = max(0, min_interval - (time_since_oldest / max(1, len(request_history)))) + random.uniform(0.1, 1.0)
                 
                 if wait_time > 0:
-                    with st.spinner(f"BGG APIレート制限に達しました。{wait_time:.1f}秒待機しています..."):
+                    with st.spinner(f"BGG API rate limit reached. Waiting {wait_time:.1f} seconds..."):
                         time.sleep(wait_time)
             
-            # ジッター（ばらつき）を追加して、同時リクエストを避ける
+            # Add jitter to avoid simultaneous requests
             jitter = random.uniform(0.2, 1.0)
             time.sleep(jitter)
             
-            # リクエスト実行（再試行ロジック付き）
+            # Execute request with retry logic
             retries = 0
             while retries <= max_retries:
                 try:
-                    # リクエスト履歴を記録
+                    # Record request history
                     request_history.append(time.time())
                     
-                    # 実際の関数呼び出し
+                    # Actual function call
                     result = func(*args, **kwargs)
                     return result
                     
                 except requests.exceptions.HTTPError as e:
                     retries += 1
                     if e.response.status_code == 429:  # Too Many Requests
-                        # レート制限エラーの場合
+                        # In case of rate limit error
                         retry_after = int(e.response.headers.get('Retry-After', 30))
                         wait_time = retry_after + random.uniform(1, 5)
                         
-                        with st.spinner(f"BGG APIレート制限に達しました。{wait_time:.1f}秒待機しています... (試行 {retries}/{max_retries})"):
+                        with st.spinner(f"BGG API rate limit reached. Waiting {wait_time:.1f} seconds... (Attempt {retries}/{max_retries})"):
                             time.sleep(wait_time)
                     
                     elif e.response.status_code >= 500:
-                        # サーバーエラーの場合はバックオフして再試行
+                        # Backoff and retry for server errors
                         wait_time = (2 ** retries) + random.uniform(0, 1)
                         
-                        with st.spinner(f"BGG APIサーバーエラー (ステータス {e.response.status_code})。{wait_time:.1f}秒後に再試行します... (試行 {retries}/{max_retries})"):
+                        with st.spinner(f"BGG API server error (Status {e.response.status_code}). Retrying in {wait_time:.1f} seconds... (Attempt {retries}/{max_retries})"):
                             time.sleep(wait_time)
                     
                     else:
-                        # その他のHTTPエラー
-                        st.error(f"API呼び出しエラー: {e.response.status_code} - {e.response.reason}")
+                        # Other HTTP errors
+                        st.error(f"API call error: {e.response.status_code} - {e.response.reason}")
                         raise
                 
                 except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
-                    # 接続エラーやタイムアウトの場合
+                    # In case of connection error or timeout
                     retries += 1
                     wait_time = (2 ** retries) + random.uniform(0, 1)
                     
-                    # 例外の種類に基づいてエラーメッセージを調整
-                    error_type = "タイムアウト" if isinstance(e, requests.exceptions.Timeout) else "接続エラー"
-                    with st.spinner(f"{error_type}が発生しました。{wait_time:.1f}秒後に再試行します... (試行 {retries}/{max_retries})"):
+                    # Adjust error message based on exception type
+                    error_type = "Timeout" if isinstance(e, requests.exceptions.Timeout) else "Connection error"
+                    with st.spinner(f"{error_type} occurred. Retrying in {wait_time:.1f} seconds... (Attempt {retries}/{max_retries})"):
                         time.sleep(wait_time)
                         
-                # 最大再試行回数に達した場合
+                # When maximum retries reached
                 if retries > max_retries:
-                    st.error(f"最大再試行回数({max_retries})に達しました。後でもう一度お試しください。")
-                    raise Exception("APIリクエストの最大再試行回数に達しました")
+                    st.error(f"Maximum retries ({max_retries}) reached. Please try again later.")
+                    raise Exception("Maximum API request retries reached")
                     
         return wrapper
     return decorator
 
 def ttl_cache(ttl_hours=24):
     """
-    Time-to-Live (TTL) キャッシュを実装するデコレータ
+    Decorator to implement Time-to-Live (TTL) cache
     
     Parameters:
-    ttl_hours (int): キャッシュの有効期間（時間）
+    ttl_hours (int): Cache validity period (hours)
     
     Returns:
-    function: デコレートされた関数
+    function: Decorated function
     """
     def decorator(func):
-        # キャッシュキーを生成する関数
+        # Function to generate cache key
         def make_key(args, kwargs):
             key = str(args) + str(sorted(kwargs.items()))
             return hash(key)
@@ -121,33 +121,33 @@ def ttl_cache(ttl_hours=24):
         def wrapper(*args, **kwargs):
             global cache_expiry
             
-            # キャッシュキー生成
+            # Generate cache key
             key = make_key(args, kwargs)
             
-            # キャッシュキーの名前
+            # Cache key name
             cache_key = f"bgg_cache_{func.__name__}_{key}"
             
-            # 有効期限チェック
+            # Check expiration
             current_time = datetime.now()
             expired = False
             
             if cache_key in cache_expiry:
                 if current_time > cache_expiry[cache_key]:
-                    # キャッシュ期限切れ
+                    # Cache expired
                     expired = True
                     st.session_state.pop(cache_key, None)
                     cache_expiry.pop(cache_key, None)
             
-            # キャッシュにデータがあり、期限内ならそれを返す
+            # Return cached data if available and not expired
             if not expired and cache_key in st.session_state:
                 return st.session_state[cache_key]
             
-            # キャッシュがない場合や期限切れの場合は関数を実行
+            # Execute function if no cache or expired
             result = func(*args, **kwargs)
             
-            # 結果をキャッシュに保存
+            # Save result to cache
             st.session_state[cache_key] = result
-            # 有効期限を設定
+            # Set expiration
             cache_expiry[cache_key] = current_time + timedelta(hours=ttl_hours)
             
             return result
@@ -155,53 +155,53 @@ def ttl_cache(ttl_hours=24):
         return wrapper
     return decorator
 
-# 以下は使用例です
-# 実際のアプリケーションで使用する場合は、bgg_api.pyでインポートして使用します
+# Below are usage examples
+# For actual application usage, import and use in bgg_api.py
 
 @ttl_cache(ttl_hours=24)
 @rate_limited_request(max_per_minute=20)
 def search_games_improved(query, exact=False):
     """
-    ゲーム名で検索する関数（レート制限とキャッシュ機能付き）
+    Function to search games by name (with rate limiting and caching)
     
     Parameters:
-    query (str): 検索するゲーム名
-    exact (bool): 完全一致検索を行うかどうか
+    query (str): Game name to search
+    exact (bool): Whether to perform exact match search
     
     Returns:
-    list: 検索結果のリスト
+    list: List of search results
     """
-    # スペースを+に置き換え
+    # Replace spaces with +
     query = query.replace(" ", "+")
     
-    # exactが1の場合、完全一致検索
+    # If exact is 1, perform exact match search
     exact_param = "1" if exact else "0"
     url = f"https://boardgamegeek.com/xmlapi2/search?query={query}&type=boardgame&exact={exact_param}"
     
-    with st.spinner(f"「{query}」を検索中..."):
+    with st.spinner(f"Searching for '{query}'..."):
         response = requests.get(url)
     
-    # レスポンスコードのチェック
-    response.raise_for_status()  # エラーがあれば例外をスロー
+    # Check response code
+    response.raise_for_status()  # Throw exception if error
     
     if response.status_code == 200:
-        # XML解析コードがここに入ります
-        # (具体的な実装はbgg_api.pyから移行すべきです)
-        return []  # ダミーの戻り値
+        # XML parsing code goes here
+        # (Specific implementation should be migrated from bgg_api.py)
+        return []  # Dummy return value
     
-    return []  # 通常ここには到達しないはず
+    return []  # This should not normally be reached
 
-@ttl_cache(ttl_hours=48)  # ゲーム詳細情報は更新頻度が低いのでキャッシュ期間を長めに
-@rate_limited_request(max_per_minute=15)  # 詳細情報はAPIの負荷が高いのでレート制限を厳しく
+@ttl_cache(ttl_hours=48)  # Game details have low update frequency, so longer cache period
+@rate_limited_request(max_per_minute=15)  # Stricter rate limit as details API is more resource-intensive
 def get_game_details_improved(game_id):
     """
-    ゲームの詳細情報を取得する関数（レート制限とキャッシュ機能付き）
+    Function to get game details (with rate limiting and caching)
     
     Parameters:
-    game_id (int or str): BoardGameGeekのゲームID
+    game_id (int or str): BoardGameGeek game ID
     
     Returns:
-    dict: ゲーム詳細情報の辞書
+    dict: Dictionary of game details
     """
-    # 実装はbgg_api.pyに移行すべきです
+    # Implementation should be migrated to bgg_api.py
     return {}
