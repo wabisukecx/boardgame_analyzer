@@ -3,7 +3,7 @@ game_analyzer.py - Board game evaluation and analysis module
 Contains only the functions actually used in the current application
 """
 
-from src.utils.language import t
+from src.utils.language import t, get_game_display_name
 
 def get_complexity_level(weight):
     """Get complexity level description
@@ -84,8 +84,8 @@ def generate_game_summary(game_data, learning_curve):
     Returns:
     str: Generated summary text
     """
-    # Game name and year
-    game_name = game_data.get('japanese_name', game_data.get('name', t('common.unknown')))
+    # Game name and year - using language-aware function
+    game_name = get_game_display_name(game_data)
     year = game_data.get('year_published', t('common.unknown'))
     
     # Categories and mechanics (max 3 each)

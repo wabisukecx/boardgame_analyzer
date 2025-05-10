@@ -1,17 +1,18 @@
 """
-BoardGameGeekのゲームデータからラーニングカーブを分析するモジュール
-カテゴリとランキング情報を活用した分析
+Board game learning curve analysis module
+Contains functions for analyzing learning curves using categories and ranking information
 """
 
 import datetime
+from src.utils.language import t
 
-# メカニクスの複雑さデータを取得する関数をインポート
+# Import mechanic complexity data retrieval function
 from src.analysis.mechanic_complexity import get_complexity
-# カテゴリの複雑さデータを取得する関数をインポート
+# Import category complexity calculation function
 from src.analysis.category_complexity import calculate_category_complexity
-# ランキングに基づく評価を取得する関数をインポート
+# Import ranking-based evaluation function
 from src.analysis.rank_complexity import calculate_rank_complexity
-# 戦略深度計算の改善版をインポート
+# Import improved strategic depth calculation
 from src.analysis.strategic_depth import (
     calculate_strategic_depth_improved,
     update_learning_curve_with_improved_strategic_depth,
@@ -22,14 +23,14 @@ from src.analysis.strategic_depth import (
 
 def get_rank_value(game_data, rank_type="boardgame"):
     """
-    指定されたランク種別の順位を取得する
+    Get rank value for specified rank type
     
     Parameters:
-    game_data (dict): ゲームの詳細情報
-    rank_type (str): ランク種別（デフォルトは総合ランキング "boardgame"）
+    game_data (dict): Game details
+    rank_type (str): Rank type (default is overall ranking "boardgame")
     
     Returns:
-    int or None: ランク順位（見つからない場合はNone）
+    int or None: Rank position (None if not found)
     """
     if 'ranks' not in game_data:
         return None
@@ -46,36 +47,36 @@ def get_rank_value(game_data, rank_type="boardgame"):
 
 def calculate_popularity_factor(rank):
     """
-    ランキングに基づく人気係数を計算する
+    Calculate popularity factor based on ranking
     
     Parameters:
-    rank (int or None): BGGのランキング順位
+    rank (int or None): BGG ranking position
     
     Returns:
-    float: 人気係数（1.0〜1.1の範囲）
+    float: Popularity factor (1.0-1.1 range)
     """
     if rank is None:
         return 1.0
         
     if rank <= 100:
-        return 1.1  # トップ100は評価を10%増加
+        return 1.1  # Top 100 increases rating by 10%
     elif rank <= 500:
-        return 1.07  # トップ500は評価を6%増加
+        return 1.07  # Top 500 increases rating by 6%
     elif rank <= 1000:
-        return 1.02  # トップ1000は評価を3%増加
+        return 1.02  # Top 1000 increases rating by 3%
     else:
-        return 1.0  # その他はそのまま
+        return 1.0  # Others remain as is
 
 
 def get_year_published(game_data):
     """
-    ゲームの発行年を取得する
+    Get year of publication for the game
     
     Parameters:
-    game_data (dict): ゲームの詳細情報
+    game_data (dict): Game details
     
     Returns:
-    int or None: 発行年（見つからない場合はNone）
+    int or None: Year of publication (None if not found)
     """
     if 'year_published' not in game_data:
         return None
@@ -88,15 +89,15 @@ def get_year_published(game_data):
 
 def calculate_longevity_factor(year_published):
     """
-    ゲームの発行年に基づく長寿命係数を計算する
-    発行から長い期間が経過しているゲームは、長期間人気を保っている証拠であり、
-    より高いリプレイ性を持つと考えられる
+    Calculate longevity factor based on year of publication
+    Games that have been popular for a long time are considered
+    to have higher replayability
     
     Parameters:
-    year_published (int or None): ゲームの発行年
+    year_published (int or None): Year of publication
     
     Returns:
-    float: 長寿命係数（1.0〜1.1の範囲）
+    float: Longevity factor (1.0-1.1 range)
     """
     if year_published is None:
         return 1.0
@@ -105,36 +106,36 @@ def calculate_longevity_factor(year_published):
     years_since_publication = current_year - year_published
     
     if years_since_publication >= 20:
-        return 1.1   # 20年以上は10%増加（クラシックゲーム）
+        return 1.1   # 20+ years: 10% increase (classic games)
     elif years_since_publication >= 10:
-        return 1.07  # 10年以上は7%増加（長期的な人気）
+        return 1.07  # 10+ years: 7% increase (long-term popularity)
     elif years_since_publication >= 5:
-        return 1.05  # 5年以上は5%増加（定着したゲーム）
+        return 1.05  # 5+ years: 5% increase (established games)
     else:
-        return 1.0   # 新しいゲームはそのまま
+        return 1.0   # New games remain as is
 
 
 def calculate_replayability(game_data):
     """
-    ゲームのリプレイ性を計算する
+    Calculate game replayability
     
     Parameters:
-    game_data (dict): ゲームの詳細情報
+    game_data (dict): Game details
     
     Returns:
-    float: リプレイ性スコア（1.0〜5.0の範囲）
+    float: Replayability score (1.0-5.0 range)
     """
-    # 基本スコア
+    # Base score
     base_score = 2.0
     
-    # 要素の多様性によるスコア加算
+    # Score addition for element diversity
     diversity_score = 0.0
     
-    # メカニクスの多様性（最大0.7ポイント）
+    # Mechanics diversity (max 0.7 points)
     mechanics_count = len(game_data.get('mechanics', []))
     diversity_score += min(0.7, mechanics_count * 0.1)
     
-    # リプレイ性を高めるメカニクスをより詳細に評価
+    # Evaluate mechanics that enhance replayability in detail
     high_replay_mechanics = [
         'Variable Set-up', 
         'Modular Board', 
@@ -160,7 +161,7 @@ def calculate_replayability(game_data):
         'Drafting'
     ]
     
-    # リプレイ性の高いメカニクスの数をカウント
+    # Count mechanics with high replayability
     high_replay_count = sum(
         1 for m in game_data.get('mechanics', [])
         if m.get('name') in high_replay_mechanics
@@ -171,37 +172,37 @@ def calculate_replayability(game_data):
         if m.get('name') in medium_replay_mechanics
     )
     
-    # リプレイ性が高いメカニクスの評価（最大0.8ポイント）
+    # Evaluation of high replayability mechanics (max 0.8 points)
     replay_mechanics_score = min(
         0.8, (high_replay_count * 0.2) + (medium_replay_count * 0.1)
     )
     diversity_score += replay_mechanics_score
     
-    # カテゴリの多様性（最大0.4ポイント）
+    # Category diversity (max 0.4 points)
     categories_count = len(game_data.get('categories', []))
     diversity_score += min(0.4, categories_count * 0.1)
     
-    # 人気ランキングからの補正
+    # Adjustment based on popularity ranking
     rank = get_rank_value(game_data)
     rank_bonus = 0.0
     
     if rank is not None:
         if rank <= 100:
-            rank_bonus = 0.6  # トップ100は+0.6ポイント
+            rank_bonus = 0.6  # Top 100: +0.6 points
         elif rank <= 500:
-            rank_bonus = 0.4  # トップ500は+0.4ポイント
+            rank_bonus = 0.4  # Top 500: +0.4 points
         elif rank <= 1000:
-            rank_bonus = 0.2  # トップ1000は+0.2ポイント
+            rank_bonus = 0.2  # Top 1000: +0.2 points
     
-    # 長期的な人気による補正
+    # Adjustment based on long-term popularity
     year_published = get_year_published(game_data)
     longevity_factor = calculate_longevity_factor(year_published)
     
-    # 最終スコア計算
-    # 多様性スコアと人気ボーナスを足したものに、長寿命係数を掛ける
+    # Final score calculation
+    # Multiply diversity score and popularity bonus by longevity factor
     replayability = (base_score + diversity_score + rank_bonus) * longevity_factor
     
-    # 上限と下限の設定
+    # Set upper and lower limits
     replayability = max(1.0, min(5.0, replayability))
     
     return round(replayability, 2)
@@ -209,198 +210,162 @@ def calculate_replayability(game_data):
 
 def calculate_learning_curve(game_data):
     """
-    ゲームデータからラーニングカーブ情報を計算する
-    カテゴリとランキング情報を活用した改善版
+    Calculate learning curve information from game data
+    Improved version using category and ranking information
     
     Parameters:
-    game_data (dict): ゲームの詳細情報
+    game_data (dict): Game details
     
     Returns:
-    dict: ラーニングカーブの情報
+    dict: Learning curve information
     """
-    # 基本的な複雑さ（すでにAPIから取得）
+    # Basic complexity (already retrieved from API)
     base_weight = float(game_data.get('weight', 3.0))
     
-    # ゲームのメカニクスから複雑さを推定
+    # Estimate complexity from game mechanics
     mechanics_names = [m['name'] for m in game_data.get('mechanics', [])]
     mechanics_complexity = 0
     mechanic_count = 0
     
     for mechanic in mechanics_names:
-        # get_complexity関数で取得した値
+        # Get complexity value
         mechanic_complexity = get_complexity(mechanic)
         mechanics_complexity += mechanic_complexity
         mechanic_count += 1
     
-    # メカニクスの平均複雑さ（メカニクスがない場合はデフォルト値）
+    # Average mechanics complexity (default value if no mechanics)
     avg_mechanic_complexity = (
         mechanics_complexity / max(1, mechanic_count) if mechanic_count > 0 else 3.0
     )
     
-    # カテゴリに基づく複雑さを計算
+    # Calculate complexity based on categories
     category_complexity = calculate_category_complexity(game_data.get('categories', []))
     
-    # ランキングに基づく複雑さを計算
+    # Calculate complexity based on rankings
     rank_complexity = calculate_rank_complexity(game_data.get('ranks', []))
     
-    # カテゴリとランキングによる複雑さ評価（60:40の重み付け）
+    # Complexity evaluation from categories and rankings (60:40 weighting)
     complexity_factor = (category_complexity * 0.6 + rank_complexity * 0.4)
         
-    # 初期障壁（ルールの複雑さ）の計算を更新
+    # Update initial barrier calculation (rule complexity)
     initial_barrier = (
         avg_mechanic_complexity * 0.5 + 
         base_weight * 0.2 +
-        complexity_factor * 0.2  # 推奨年齢の代わりにカテゴリとランキングによる評価
+        complexity_factor * 0.2  # Use category and ranking evaluation instead of age recommendation
     )
     
-    # メカニクス数による初期障壁の調整（多くのメカニクスがあるほど初期学習が難しくなる）
+    # Adjust initial barrier by number of mechanics (more mechanics = harder initial learning)
     mechanics_count_barrier_factor = min(1.25, max(1.0, len(mechanics_names) / 5))
     initial_barrier = initial_barrier * mechanics_count_barrier_factor
     
-    # 上限を5.0に設定
+    # Set upper limit to 5.0
     initial_barrier = min(5.0, initial_barrier)
     initial_barrier = round(initial_barrier, 2)
     
-    # 戦略的深さ（改善版）
+    # Strategic depth (improved version)
     strategic_depth = calculate_strategic_depth_improved(game_data)
     
-    # リプレイ性を計算（改善版）
+    # Calculate replayability (improved version)
     replayability = calculate_replayability(game_data)
     
-    # ランク情報を取得
+    # Get rank info
     rank = get_rank_value(game_data)
     
-    # 発行年を取得
+    # Get year published
     year_published = get_year_published(game_data)
     
-    # 基本的な学習曲線情報を構築
+    # Build basic learning curve information
     learning_curve = {
-        "initial_barrier": initial_barrier,  # 初期学習の難しさ
-        "strategic_depth": strategic_depth,  # 戦略の深さ
-        "replayability": replayability,  # リプレイ性
-        "mechanics_complexity": round(avg_mechanic_complexity, 2),  # メカニクスの複雑さ
-        "mechanics_count": len(mechanics_names),  # メカニクスの数
-        "bgg_weight": base_weight,  # BGGの複雑さ評価（元の値）
-        "bgg_rank": rank,  # BGGのランキング
-        "year_published": year_published,  # 発行年
-        # 新しく追加した指標
-        "category_complexity": round(category_complexity, 2),  # カテゴリに基づく複雑さ
-        "rank_complexity": round(rank_complexity, 2)  # ランキングに基づく複雑さ
+        "initial_barrier": initial_barrier,  # Initial learning difficulty
+        "strategic_depth": strategic_depth,  # Strategic depth
+        "replayability": replayability,  # Replayability
+        "mechanics_complexity": round(avg_mechanic_complexity, 2),  # Mechanics complexity
+        "mechanics_count": len(mechanics_names),  # Number of mechanics
+        "bgg_weight": base_weight,  # BGG complexity rating (original value)
+        "bgg_rank": rank,  # BGG ranking
+        "year_published": year_published,  # Year published
+        # Newly added metrics
+        "category_complexity": round(category_complexity, 2),  # Category-based complexity
+        "rank_complexity": round(rank_complexity, 2)  # Ranking-based complexity
     }
     
-    # 改善版の指標で学習曲線データを拡張
+    # Expand learning curve data with improved metrics
     learning_curve = update_learning_curve_with_improved_strategic_depth(
         game_data, learning_curve)
     
-    # 各種分析の詳細情報を追加
+    # Add detailed analysis information
     learning_curve["decision_points"] = estimate_decision_points(game_data.get('mechanics', []))
     learning_curve["interaction_complexity"] = estimate_interaction_complexity(game_data.get('categories', []))
     learning_curve["rules_complexity"] = calculate_rules_complexity(game_data)
     
-    # マスター時間の推定
+    # Estimate mastery time
     if strategic_depth > 4.3:
         if len(mechanics_names) >= 6:
-            learning_curve["mastery_time"] = "medium_to_long"  # メカニクスが多いが、一度基本を理解すれば応用が利く
+            learning_curve["mastery_time"] = "medium_to_long"  # Many mechanics but easier to apply once basics understood
         else:
-            learning_curve["mastery_time"] = "long"  # マスターに長時間かかる
+            learning_curve["mastery_time"] = "long"  # Takes long time to master
     elif strategic_depth > 3.2:
-        learning_curve["mastery_time"] = "medium"  # マスターに中程度の時間がかかる
+        learning_curve["mastery_time"] = "medium"  # Takes medium time to master
     else:
-        learning_curve["mastery_time"] = "short"  # 比較的短時間でマスター可能
+        learning_curve["mastery_time"] = "short"  # Can be mastered relatively quickly
     
     return learning_curve
 
 def get_curve_type_display(curve_type):
     """
-    学習曲線タイプの表示名を取得する
+    Get display name for learning curve type
     
     Parameters:
-    curve_type (str): 学習曲線タイプ
+    curve_type (str): Learning curve type
     
     Returns:
-    str: 表示用の学習曲線タイプ
+    str: Display learning curve type
     """
-    curve_type_ja = {
-        # 基本タイプ
-        "steep": "急な学習曲線",
-        "moderate": "中程度の学習曲線",
-        "gentle": "緩やかな学習曲線",
-        
-        # 旧バージョンの拡張タイプ
-        "steep_then_flat": "初期は急だが習得後は上達しやすい学習曲線",
-        "moderate_then_flat": "中程度で習得後は上達しやすい学習曲線",
-        
-        # 新バージョンの拡張タイプ
-        "steep_then_moderate": "初期は急だが中程度の複雑さの学習曲線",
-        "steep_then_shallow": "初期は急だが戦略は浅い学習曲線",
-        "moderate_then_deep": "中程度の障壁で深い戦略性を持つ学習曲線",
-        "moderate_then_shallow": "中程度の障壁で浅い戦略性の学習曲線",
-        "gentle_then_deep": "習得は簡単だが深い戦略性を持つ学習曲線",
-        "gentle_then_moderate": "習得は簡単で中程度の戦略性を持つ学習曲線"
-    }
-    return curve_type_ja.get(curve_type, '不明')
+    return t(f"learning_curve.types.{curve_type}")
 
 def get_player_type_display(player_type):
     """
-    プレイヤータイプの表示名を取得する
+    Get display name for player type
     
     Parameters:
-    player_type (str): プレイヤータイプ
+    player_type (str): Player type
     
     Returns:
-    str: 表示用のプレイヤータイプ
+    str: Display player type
     """
-    player_types_ja = {
-        "beginner": "初心者",
-        "casual": "カジュアルプレイヤー",
-        "experienced": "熟練プレイヤー",
-        "hardcore": "ハードコアゲーマー",
-        "system_master": "システムマスター（複雑なゲームシステムを好む）",
-        "strategist": "戦略家（戦略的深さのあるゲームを好む）",
-        "replayer": "リプレイヤー（遊び込めるゲームを好む）",
-        "trend_follower": "トレンドフォロワー（人気ゲームを好む）",
-        "classic_lover": "クラシック愛好家（長年遊ばれている定番ゲームを好む）"
-    }
-    return player_types_ja.get(player_type, player_type)
+    return t(f"player_types.{player_type}")
 
 def get_mastery_time_display(mastery_time):
     """
-    マスター時間の表示名を取得する
+    Get display name for mastery time
     
     Parameters:
-    mastery_time (str): マスター時間
+    mastery_time (str): Mastery time
     
     Returns:
-    str: 表示用のマスター時間
+    str: Display mastery time
     """
-    mastery_time_ja = {
-        "short": "短い",
-        "medium": "中程度",
-        "long": "長い",
-        "medium_to_long": "中〜長い（基本習得後は上達しやすい）"
-    }
-    return mastery_time_ja.get(mastery_time, '不明')
-
+    return t(f"mastery_time.{mastery_time}")
 
 def get_replayability_display(replayability):
     """
-    リプレイ性の表示名を取得する
+    Get display name for replayability
     
     Parameters:
-    replayability (float): リプレイ性スコア
+    replayability (float): Replayability score
     
     Returns:
-    str: 表示用のリプレイ性評価
+    str: Display replayability evaluation
     """
     if replayability >= 4.5:
-        return "非常に高い（何度でも遊べる定番ゲーム）"
+        return t("replayability.very_high")
     elif replayability >= 4.0:
-        return "高い（長期間遊べる）"
+        return t("replayability.high")
     elif replayability >= 3.5:
-        return "やや高い（何度か遊ぶ価値がある）"
+        return t("replayability.medium_high")
     elif replayability >= 3.0:
-        return "中程度（数回は楽しめる）"
+        return t("replayability.medium")
     elif replayability >= 2.0:
-        return "低め（数回プレイすれば十分）"
+        return t("replayability.low")
     else:
-        return "低い（1〜2回プレイすれば十分）"
+        return t("replayability.very_low")

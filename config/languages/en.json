@@ -107,7 +107,8 @@
     "min_players": "Min Players",
     "max_players": "Max Players",
     "categories": "Categories",
-    "mechanics": "Mechanics"
+    "mechanics": "Mechanics",
+    "list_separator": ", "
   },
   "tabs": {
     "mechanics": "Mechanics",
@@ -218,6 +219,90 @@
     "font_not_found": "Japanese font not found. Using default font"
   },
   "analysis": {
-    "category_mechanics": "Category & Mechanics Analysis"
+    "category_mechanics": "Category & Mechanics Analysis",
+    "complexity": {
+      "very_high": "very high",
+      "high": "high",
+      "medium_high": "medium-high",
+      "medium": "medium",
+      "medium_low": "medium-low",
+      "low": "low"
+    },
+    "depth": {
+      "very_deep": "very deep",
+      "deep": "deep",
+      "medium_high": "medium-high depth",
+      "medium": "medium depth",
+      "medium_low": "medium-low depth",
+      "shallow": "shallow",
+      "very_shallow": "very shallow"
+    },
+    "popularity": {
+      "new_or_unrated": "new release or still gathering ratings",
+      "highest": "highest level of popularity",
+      "very_high": "very high popularity",
+      "high": "high popularity",
+      "moderate": "moderate popularity",
+      "niche": "niche popularity"
+    },
+    "barrier": {
+      "very_high": "very high (requires long learning time)",
+      "high": "high (requires significant learning time)",
+      "medium_high": "medium-high (requires some learning time)",
+      "medium": "medium (requires basic learning)",
+      "low": "low (easy to learn)",
+      "very_low": "very low (can start immediately)"
+    },
+    "no_specific_theme": "no specific theme",
+    "no_characteristic_mechanics": "no characteristic mechanics",
+    "summary": {
+      "intro": "{game_name} ({year}) is a board game with a {categories} theme.",
+      "complexity_and_depth": "The complexity is {complexity} and the strategic depth is {depth}.",
+      "features": "Key features include elements like {mechanics} and has ",
+      "popularity_unrated": "{popularity}.",
+      "popularity_rated": "{popularity}.",
+      "barrier_and_replay": "The initial learning barrier is {barrier} and replayability is {replayability}.",
+      "suitable_for": "This game is particularly suitable for {player_types}."
+    }
+  },
+  "player_types": {
+    "beginner": "Beginner",
+    "casual": "Casual Player",
+    "experienced": "Experienced Player",
+    "hardcore": "Hardcore Gamer",
+    "system_master": "System Master (prefers complex game systems)",
+    "strategist": "Strategist (enjoys games with strategic depth)",
+    "replayer": "Replayer (enjoys games worth multiple plays)",
+    "trend_follower": "Trend Follower (enjoys popular games)",
+    "classic_lover": "Classic Lover (enjoys time-tested traditional games)"
+  },
+  "mastery_time": {
+    "short": "Short",
+    "medium": "Medium",
+    "long": "Long",
+    "medium_to_long": "Medium to Long (easier to improve after basics)"
+  },
+  "replayability": {
+    "very_high": "Very High (classic game worth many plays)",
+    "high": "High (enjoyable for a long time)",
+    "medium_high": "Medium-High (worth playing several times)",
+    "medium": "Medium (enjoyable for a few plays)",
+    "low": "Low (a few plays are sufficient)",
+    "very_low": "Very Low (1-2 plays are sufficient)"
+  },
+  "learning_curve": {
+    "types": {
+      "steep": "Steep Learning Curve",
+      "moderate": "Moderate Learning Curve",
+      "gentle": "Gentle Learning Curve",
+      "steep_then_flat": "Steep Initially, Then Easier to Improve",
+      "moderate_then_flat": "Moderate, Then Easier to Improve",
+      "steep_then_moderate": "Steep Initially, Then Moderate Complexity",
+      "steep_then_shallow": "Steep Initially, But Shallow Strategy",
+      "moderate_then_deep": "Moderate Barrier with Deep Strategy",
+      "moderate_then_shallow": "Moderate Barrier with Shallow Strategy",
+      "gentle_then_deep": "Easy to Learn with Deep Strategy",
+      "gentle_then_moderate": "Easy to Learn with Moderate Strategy"
+    }
   }
 }

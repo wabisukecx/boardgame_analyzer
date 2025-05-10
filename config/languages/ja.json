@@ -264,5 +264,45 @@
       "barrier_and_replay": "初期学習障壁は{barrier}、リプレイ性は{replayability}です。",
       "suitable_for": "このゲームは特に{player_types}に適しています。"
     }
+  },
+  "player_types": {
+    "beginner": "初心者",
+    "casual": "カジュアルプレイヤー",
+    "experienced": "熟練プレイヤー",
+    "hardcore": "ハードコアゲーマー",
+    "system_master": "システムマスター（複雑なゲームシステムを好む）",
+    "strategist": "戦略家（戦略的深さのあるゲームを好む）",
+    "replayer": "リプレイヤー（遊び込めるゲームを好む）",
+    "trend_follower": "トレンドフォロワー（人気ゲームを好む）",
+    "classic_lover": "クラシック愛好家（長年遊ばれている定番ゲームを好む）"
+  },
+  "mastery_time": {
+    "short": "短い",
+    "medium": "中程度",
+    "long": "長い",
+    "medium_to_long": "中〜長い（基本習得後は上達しやすい）"
+  },
+  "replayability": {
+    "very_high": "非常に高い（何度でも遊べる定番ゲーム）",
+    "high": "高い（長期間遊べる）",
+    "medium_high": "やや高い（何度か遊ぶ価値がある）",
+    "medium": "中程度（数回は楽しめる）",
+    "low": "低め（数回プレイすれば十分）",
+    "very_low": "低い（1〜2回プレイすれば十分）"
+  },
+  "learning_curve": {
+    "types": {
+      "steep": "急な学習曲線",
+      "moderate": "中程度の学習曲線",
+      "gentle": "緩やかな学習曲線",
+      "steep_then_flat": "初期は急だが習得後は上達しやすい学習曲線",
+      "moderate_then_flat": "中程度で習得後は上達しやすい学習曲線",
+      "steep_then_moderate": "初期は急だが中程度の複雑さの学習曲線",
+      "steep_then_shallow": "初期は急だが戦略は浅い学習曲線",
+      "moderate_then_deep": "中程度の障壁で深い戦略性を持つ学習曲線",
+      "moderate_then_shallow": "中程度の障壁で浅い戦略性の学習曲線",
+      "gentle_then_deep": "習得は簡単だが深い戦略性を持つ学習曲線",
+      "gentle_then_moderate": "習得は簡単で中程度の戦略性を持つ学習曲線"
+    }
   }
 }
