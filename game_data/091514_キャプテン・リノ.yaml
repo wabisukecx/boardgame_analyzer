@@ -57,11 +57,11 @@ publishers:
 - name: Reflexshop
 - name: Sugorokuya
 - name: Swan Panasia Co., Ltd.
-average_rating: '6.89916'
+average_rating: '6.899'
 weight: '1.021'
 ranks:
 - type: boardgame
-  rank: '983'
+  rank: '984'
 - type: childrensgames
   rank: '19'
 - type: familygames
@@ -73,7 +73,7 @@ learning_analysis:
   mechanics_complexity: 2.48
   mechanics_count: 4
   bgg_weight: 1.021
-  bgg_rank: 983
+  bgg_rank: 984
   year_published: 2011
   category_complexity: 2.11
   rank_complexity: 1.97

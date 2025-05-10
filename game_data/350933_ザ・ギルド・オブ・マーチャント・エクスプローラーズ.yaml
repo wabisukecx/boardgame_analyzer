@@ -57,11 +57,11 @@ publishers:
 - name: Tabletop KZ
 - name: YOKA Games
 - name: 株式会社ケンビル (KenBill)
-average_rating: '7.65593'
+average_rating: '7.65611'
 weight: '2.0479'
 ranks:
 - type: boardgame
-  rank: '383'
+  rank: '382'
 - type: strategygames
   rank: '240'
 - type: familygames
@@ -73,7 +73,7 @@ learning_analysis:
   mechanics_complexity: 3.05
   mechanics_count: 8
   bgg_weight: 2.0479
-  bgg_rank: 383
+  bgg_rank: 382
   year_published: 2022
   category_complexity: 3.74
   rank_complexity: 2.81

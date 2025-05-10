@@ -59,13 +59,13 @@ publishers:
 - name: PD-Verlag
 - name: Portal Games
 - name: TLAMA games
-average_rating: '7.54585'
+average_rating: '7.54338'
 weight: '3.3813'
 ranks:
 - type: boardgame
-  rank: '1052'
+  rank: '1050'
 - type: strategygames
-  rank: '562'
+  rank: '559'
 learning_analysis:
   initial_barrier: 2.68
   strategic_depth: 3.57
@@ -73,7 +73,7 @@ learning_analysis:
   mechanics_complexity: 3.1
   mechanics_count: 4
   bgg_weight: 3.3813
-  bgg_rank: 1052
+  bgg_rank: 1050
   year_published: 2023
   category_complexity: 1.8
   rank_complexity: 2.98

@@ -28,11 +28,11 @@ designers:
 - name: Keisei
 publishers:
 - name: Hobby Japan
-average_rating: '7.92168'
+average_rating: '7.9136'
 weight: '2.7778'
 ranks:
 - type: boardgame
-  rank: '8071'
+  rank: '8054'
 learning_analysis:
   initial_barrier: 2.43
   strategic_depth: 3.19
@@ -40,7 +40,7 @@ learning_analysis:
   mechanics_complexity: 2.9
   mechanics_count: 1
   bgg_weight: 2.7778
-  bgg_rank: 8071
+  bgg_rank: 8054
   year_published: 2024
   category_complexity: 2.1
   rank_complexity: 2.16

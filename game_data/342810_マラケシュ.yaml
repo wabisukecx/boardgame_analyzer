@@ -49,13 +49,13 @@ publishers:
 - name: Moon3 Inc.
 - name: Playfun Games
 - name: White Goblin Games
-average_rating: '8.11291'
+average_rating: '8.11342'
 weight: '3.3951'
 ranks:
 - type: boardgame
-  rank: '412'
+  rank: '411'
 - type: strategygames
-  rank: '205'
+  rank: '203'
 learning_analysis:
   initial_barrier: 2.77
   strategic_depth: 3.23
@@ -63,7 +63,7 @@ learning_analysis:
   mechanics_complexity: 2.77
   mechanics_count: 4
   bgg_weight: 3.3951
-  bgg_rank: 412
+  bgg_rank: 411
   year_published: 2022
   category_complexity: 3.8
   rank_complexity: 3.08

@@ -8,8 +8,8 @@ publisher_min_players: '2'
 publisher_max_players: '4'
 playing_time: '75'
 publisher_min_age: '10'
-community_best_players: 3, 4
-community_recommended_players: '2'
+community_best_players: '4'
+community_recommended_players: 2, 3
 description: In Stone Garden (&#230;&#158;&#175;&#229;&#177;&#177;&#230;&#176;&#180;,
   which also translates as &quot;rock garden&quot; or &quot;Japanese rock garden&quot;),
   players are gardeners attempting to make the most aesthetic garden by placing tiles
@@ -26,23 +26,23 @@ designers:
 - name: Koota Yamada
 publishers:
 - name: New Games Order, LLC
-average_rating: '6.75108'
-weight: '2.7222'
+average_rating: '6.75192'
+weight: '2.6842'
 ranks:
 - type: boardgame
-  rank: '7592'
+  rank: '7534'
 - type: thematic
-  rank: '1175'
+  rank: '1173'
 - type: familygames
   rank: '2006'
 learning_analysis:
-  initial_barrier: 2.76
-  strategic_depth: 2.76
+  initial_barrier: 2.75
+  strategic_depth: 2.75
   replayability: 2.57
   mechanics_complexity: 3.2
   mechanics_count: 2
-  bgg_weight: 2.7222
-  bgg_rank: 7592
+  bgg_weight: 2.6842
+  bgg_rank: 7534
   year_published: 2014
   category_complexity: 3.6
   rank_complexity: 2.28
@@ -50,7 +50,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.5149999999999997
   interaction_complexity: 2.2470000000000003
-  rules_complexity: 3.1151066666666667
+  rules_complexity: 3.1075066666666666
   player_types:
   - beginner
   - casual

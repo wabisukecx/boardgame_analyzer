@@ -57,21 +57,21 @@ publishers:
 - name: Super Meeple
 - name: テンデイズゲームズ (TendaysGames)
 - name: White Goblin Games
-average_rating: '7.64795'
-weight: '3.2292'
+average_rating: '7.64538'
+weight: '3.2268'
 ranks:
 - type: boardgame
-  rank: '1419'
+  rank: '1402'
 - type: strategygames
-  rank: '713'
+  rank: '708'
 learning_analysis:
   initial_barrier: 3.62
-  strategic_depth: 3.52
+  strategic_depth: 3.51
   replayability: 3.5
   mechanics_complexity: 2.95
   mechanics_count: 8
-  bgg_weight: 3.2292
-  bgg_rank: 1419
+  bgg_weight: 3.2268
+  bgg_rank: 1402
   year_published: 2024
   category_complexity: 4.48
   rank_complexity: 2.95
@@ -79,7 +79,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.486666666666668
   interaction_complexity: 3.1243999999999996
-  rules_complexity: 3.8341733333333337
+  rules_complexity: 3.8336933333333336
   player_types:
   - casual
   - experienced

@@ -32,13 +32,13 @@ publishers:
 - name: ForGames
 - name: MTS Games
 - name: Passenger Service
-average_rating: '7.30952'
+average_rating: '7.31014'
 weight: '1.0769'
 ranks:
 - type: boardgame
-  rank: '3871'
+  rank: '3854'
 - type: familygames
-  rank: '1161'
+  rank: '1159'
 learning_analysis:
   initial_barrier: 2.08
   strategic_depth: 2.45
@@ -46,7 +46,7 @@ learning_analysis:
   mechanics_complexity: 2.67
   mechanics_count: 4
   bgg_weight: 1.0769
-  bgg_rank: 3871
+  bgg_rank: 3854
   year_published: 1992
   category_complexity: 3.04
   rank_complexity: 2.07

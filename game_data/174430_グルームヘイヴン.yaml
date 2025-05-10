@@ -82,8 +82,8 @@ publishers:
 - name: Hobby World
 - name: Korea Boardgames
 - name: MYBG Co., Ltd.
-average_rating: '8.5648'
-weight: '3.9147'
+average_rating: '8.56468'
+weight: '3.9132'
 ranks:
 - type: boardgame
   rank: '4'
@@ -97,7 +97,7 @@ learning_analysis:
   replayability: 4.73
   mechanics_complexity: 3.27
   mechanics_count: 24
-  bgg_weight: 3.9147
+  bgg_weight: 3.9132
   bgg_rank: 4
   year_published: 2017
   category_complexity: 4.01
@@ -106,7 +106,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.585454545454548
   interaction_complexity: 3.6690299999999976
-  rules_complexity: 4.260023333333334
+  rules_complexity: 4.2597233333333335
   player_types:
   - casual
   - experienced

@@ -63,21 +63,21 @@ publishers:
 - name: Renegade Game Studios
 - name: Tesla Games
 - name: 株式会社ケンビル (KenBill)
-average_rating: '8.23112'
-weight: '3.8395'
+average_rating: '8.22874'
+weight: '3.8415'
 ranks:
 - type: boardgame
-  rank: '669'
+  rank: '668'
 - type: strategygames
-  rank: '338'
+  rank: '337'
 learning_analysis:
   initial_barrier: 3.96
   strategic_depth: 3.72
   replayability: 3.6
   mechanics_complexity: 3.39
   mechanics_count: 7
-  bgg_weight: 3.8395
-  bgg_rank: 669
+  bgg_weight: 3.8415
+  bgg_rank: 668
   year_published: 2024
   category_complexity: 3.89
   rank_complexity: 3.04
@@ -85,7 +85,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.551999999999999
   interaction_complexity: 3.1488571428571435
-  rules_complexity: 4.281709523809523
+  rules_complexity: 4.282109523809524
   player_types:
   - casual
   - experienced

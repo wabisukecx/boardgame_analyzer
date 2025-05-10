@@ -48,11 +48,11 @@ designers:
 - name: Bonghwan Ju
 publishers:
 - name: Pluto Games
-average_rating: '7.61786'
+average_rating: '7.61635'
 weight: '2.3333'
 ranks:
 - type: boardgame
-  rank: '7936'
+  rank: '7877'
 learning_analysis:
   initial_barrier: 2.86
   strategic_depth: 2.9
@@ -60,7 +60,7 @@ learning_analysis:
   mechanics_complexity: 2.87
   mechanics_count: 6
   bgg_weight: 2.3333
-  bgg_rank: 7936
+  bgg_rank: 7877
   year_published: 2024
   category_complexity: 2.57
   rank_complexity: 2.16

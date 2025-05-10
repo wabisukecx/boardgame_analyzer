@@ -74,8 +74,8 @@ publishers:
 - name: TLAMA games
 - name: WoodCat
 - name: YOKA Games
-average_rating: '7.47037'
-weight: '1.8042'
+average_rating: '7.4716'
+weight: '1.805'
 ranks:
 - type: boardgame
   rank: '445'
@@ -87,7 +87,7 @@ learning_analysis:
   replayability: 3.6
   mechanics_complexity: 3.14
   mechanics_count: 8
-  bgg_weight: 1.8042
+  bgg_weight: 1.805
   bgg_rank: 445
   year_published: 2022
   category_complexity: 4.31
@@ -96,7 +96,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.9027666666666674
   interaction_complexity: 3.1115332499999995
-  rules_complexity: 3.317923333333334
+  rules_complexity: 3.318083333333334
   player_types:
   - casual
   - trend_follower

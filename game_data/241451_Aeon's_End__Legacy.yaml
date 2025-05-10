@@ -55,13 +55,13 @@ publishers:
 - name: Matagot
 - name: Portal Games
 - name: SD Games
-average_rating: '8.05729'
+average_rating: '8.05718'
 weight: '2.8351'
 ranks:
 - type: boardgame
   rank: '241'
 - type: strategygames
-  rank: '141'
+  rank: '140'
 learning_analysis:
   initial_barrier: 3.67
   strategic_depth: 3.49

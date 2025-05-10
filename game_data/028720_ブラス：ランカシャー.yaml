@@ -88,8 +88,8 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: Wargames Club Publishing
 - name: White Goblin Games
-average_rating: '8.19636'
-weight: '3.8526'
+average_rating: '8.19647'
+weight: '3.8527'
 ranks:
 - type: boardgame
   rank: '21'
@@ -101,7 +101,7 @@ learning_analysis:
   replayability: 4.07
   mechanics_complexity: 3.29
   mechanics_count: 7
-  bgg_weight: 3.8526
+  bgg_weight: 3.8527
   bgg_rank: 21
   year_published: 2007
   category_complexity: 4.08
@@ -110,7 +110,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.671999999999999
   interaction_complexity: 3.1500799999999995
-  rules_complexity: 4.260996190476191
+  rules_complexity: 4.261016190476191
   player_types:
   - casual
   - experienced

@@ -77,8 +77,8 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: Tower Tactic Games
 - name: White Goblin Games
-average_rating: '8.53555'
-weight: '3.7817'
+average_rating: '8.5354'
+weight: '3.7811'
 ranks:
 - type: boardgame
   rank: '3'
@@ -90,7 +90,7 @@ learning_analysis:
   replayability: 4.1
   mechanics_complexity: 2.95
   mechanics_count: 14
-  bgg_weight: 3.7817
+  bgg_weight: 3.7811
   bgg_rank: 3
   year_published: 2021
   category_complexity: 3.3
@@ -99,7 +99,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.1499999999999995
   interaction_complexity: 3.298657142857144
-  rules_complexity: 3.9446733333333333
+  rules_complexity: 3.944553333333333
   player_types:
   - casual
   - experienced

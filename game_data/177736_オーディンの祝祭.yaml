@@ -95,8 +95,8 @@ publishers:
 - name: TLAMA games
 - name: White Goblin Games
 - name: Z-Man Games
-average_rating: '8.16439'
-weight: '3.861'
+average_rating: '8.16472'
+weight: '3.8613'
 ranks:
 - type: boardgame
   rank: '25'
@@ -108,7 +108,7 @@ learning_analysis:
   replayability: 4.09
   mechanics_complexity: 2.87
   mechanics_count: 9
-  bgg_weight: 3.861
+  bgg_weight: 3.8613
   bgg_rank: 25
   year_published: 2016
   category_complexity: 4.32
@@ -117,7 +117,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.402857142857144
   interaction_complexity: 2.988391111111113
-  rules_complexity: 3.7521999999999998
+  rules_complexity: 3.7522599999999997
   player_types:
   - casual
   - experienced

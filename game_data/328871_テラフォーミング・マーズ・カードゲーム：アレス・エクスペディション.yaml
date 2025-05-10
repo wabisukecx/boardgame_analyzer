@@ -88,20 +88,20 @@ publishers:
 - name: Reflexshop
 - name: Schwerkraft-Verlag
 - name: Surfin' Meeple China
-average_rating: '7.65055'
-weight: '2.9186'
+average_rating: '7.65109'
+weight: '2.9188'
 ranks:
 - type: boardgame
   rank: '184'
 - type: strategygames
-  rank: '146'
+  rank: '147'
 learning_analysis:
   initial_barrier: 3.45
   strategic_depth: 3.45
   replayability: 3.9
   mechanics_complexity: 3.02
   mechanics_count: 12
-  bgg_weight: 2.9186
+  bgg_weight: 2.9188
   bgg_rank: 184
   year_published: 2021
   category_complexity: 3.48
@@ -110,7 +110,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 4.656000000000001
   interaction_complexity: 3.1030000000000015
-  rules_complexity: 3.8320533333333335
+  rules_complexity: 3.832093333333334
   player_types:
   - casual
   - experienced

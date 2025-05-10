@@ -72,6 +72,7 @@ publishers:
 - name: ADC Blackfire Entertainment
 - name: Asmodee
 - name: Brädspel.se
+- name: Galápagos Jogos
 - name: Games4you
 - name: Geekach Games
 - name: Hachette Boardgames USA
@@ -85,11 +86,11 @@ publishers:
 - name: Sugorokuya
 - name: Tabletop KZ
 - name: YOKA Games
-average_rating: '8.16602'
-weight: '2.0471'
+average_rating: '8.16689'
+weight: '2.0493'
 ranks:
 - type: boardgame
-  rank: '36'
+  rank: '35'
 - type: thematic
   rank: '16'
 - type: familygames
@@ -100,8 +101,8 @@ learning_analysis:
   replayability: 4.0
   mechanics_complexity: 3.26
   mechanics_count: 9
-  bgg_weight: 2.0471
-  bgg_rank: 36
+  bgg_weight: 2.0493
+  bgg_rank: 35
   year_published: 2023
   category_complexity: 3.5
   rank_complexity: 2.7
@@ -109,7 +110,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.9369857142857145
   interaction_complexity: 2.9727166666666673
-  rules_complexity: 3.73942
+  rules_complexity: 3.73986
   player_types:
   - casual
   - replayer

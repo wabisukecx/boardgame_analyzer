@@ -125,8 +125,8 @@ publishers:
 - name: Tempo Games (I)
 - name: U.S. Games Systems, Inc.
 - name: VR Distribution
-average_rating: '6.97482'
-weight: '1.1913'
+average_rating: '6.97454'
+weight: '1.1911'
 ranks:
 - type: boardgame
   rank: '672'
@@ -138,7 +138,7 @@ learning_analysis:
   replayability: 3.08
   mechanics_complexity: 2.9
   mechanics_count: 3
-  bgg_weight: 1.1913
+  bgg_weight: 1.1911
   bgg_rank: 672
   year_published: 1994
   category_complexity: 2.35
@@ -147,7 +147,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.5700000000000003
   interaction_complexity: 3.4686666666666675
-  rules_complexity: 2.6335933333333332
+  rules_complexity: 2.6335533333333334
   player_types:
   - beginner
   - casual

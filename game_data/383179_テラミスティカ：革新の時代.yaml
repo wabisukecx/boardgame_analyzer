@@ -65,11 +65,11 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: テンデイズゲームズ (TendaysGames)
 - name: White Goblin Games
-average_rating: '8.54777'
-weight: '4.2602'
+average_rating: '8.54488'
+weight: '4.2595'
 ranks:
 - type: boardgame
-  rank: '63'
+  rank: '64'
 - type: strategygames
   rank: '31'
 learning_analysis:
@@ -78,8 +78,8 @@ learning_analysis:
   replayability: 4.2
   mechanics_complexity: 3.05
   mechanics_count: 10
-  bgg_weight: 4.2602
-  bgg_rank: 63
+  bgg_weight: 4.2595
+  bgg_rank: 64
   year_published: 2023
   category_complexity: 4.22
   rank_complexity: 3.18
@@ -87,7 +87,7 @@ learning_analysis:
   learning_curve_type: moderate_then_deep
   decision_points: 4.567100000000001
   interaction_complexity: 4.053819000000002
-  rules_complexity: 4.130373333333333
+  rules_complexity: 4.130233333333333
   player_types:
   - experienced
   - hardcore

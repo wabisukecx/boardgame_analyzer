@@ -110,11 +110,11 @@ publishers:
 - name: Zhiyanjia
 - name: Взрослые дети
 - name: Ігромаг
-average_rating: '7.52537'
+average_rating: '7.52521'
 weight: '2.397'
 ranks:
 - type: boardgame
-  rank: '160'
+  rank: '161'
 - type: strategygames
   rank: '171'
 - type: familygames
@@ -126,7 +126,7 @@ learning_analysis:
   mechanics_complexity: 3.09
   mechanics_count: 14
   bgg_weight: 2.397
-  bgg_rank: 160
+  bgg_rank: 161
   year_published: 2008
   category_complexity: 2.89
   rank_complexity: 2.84

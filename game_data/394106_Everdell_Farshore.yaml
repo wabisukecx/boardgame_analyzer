@@ -54,13 +54,13 @@ publishers:
 - name: REXhry
 - name: Tabletop Tycoon Inc.
 - name: White Goblin Games
-average_rating: '7.88572'
+average_rating: '7.8866'
 weight: '2.8333'
 ranks:
 - type: boardgame
-  rank: '1093'
+  rank: '1089'
 - type: familygames
-  rank: '246'
+  rank: '244'
 learning_analysis:
   initial_barrier: 2.59
   strategic_depth: 3.37
@@ -68,7 +68,7 @@ learning_analysis:
   mechanics_complexity: 2.92
   mechanics_count: 4
   bgg_weight: 2.8333
-  bgg_rank: 1093
+  bgg_rank: 1089
   year_published: 2023
   category_complexity: 3.16
   rank_complexity: 2.22

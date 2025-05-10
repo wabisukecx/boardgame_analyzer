@@ -66,8 +66,8 @@ publishers:
 - name: Red Glove
 - name: テンデイズゲームズ (TendaysGames)
 - name: TLAMA games
-average_rating: '7.93632'
-weight: '3.4663'
+average_rating: '7.93541'
+weight: '3.4664'
 ranks:
 - type: boardgame
   rank: '72'
@@ -79,7 +79,7 @@ learning_analysis:
   replayability: 4.09
   mechanics_complexity: 3.18
   mechanics_count: 10
-  bgg_weight: 3.4663
+  bgg_weight: 3.4664
   bgg_rank: 72
   year_published: 2017
   category_complexity: 4.04
@@ -88,7 +88,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.23
   interaction_complexity: 3.661540000000001
-  rules_complexity: 3.95526
+  rules_complexity: 3.95528
   player_types:
   - casual
   - experienced

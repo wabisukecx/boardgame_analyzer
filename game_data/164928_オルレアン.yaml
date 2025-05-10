@@ -65,13 +65,13 @@ publishers:
 - name: Swan Panasia Co., Ltd.
 - name: Tasty Minstrel Games
 - name: White Goblin Games
-average_rating: '8.04963'
+average_rating: '8.04931'
 weight: '3.0219'
 ranks:
 - type: boardgame
   rank: '34'
 - type: strategygames
-  rank: '29'
+  rank: '30'
 learning_analysis:
   initial_barrier: 3.55
   strategic_depth: 3.69

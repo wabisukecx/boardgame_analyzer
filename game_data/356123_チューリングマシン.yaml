@@ -51,11 +51,11 @@ publishers:
 - name: Sugorokuya
 - name: Tabletop KZ
 - name: Tranjis Games
-average_rating: '7.65039'
+average_rating: '7.64886'
 weight: '2.5077'
 ranks:
 - type: boardgame
-  rank: '319'
+  rank: '320'
 - type: strategygames
   rank: '232'
 learning_analysis:
@@ -65,7 +65,7 @@ learning_analysis:
   mechanics_complexity: 3.35
   mechanics_count: 2
   bgg_weight: 2.5077
-  bgg_rank: 319
+  bgg_rank: 320
   year_published: 2022
   category_complexity: 3.56
   rank_complexity: 3.09

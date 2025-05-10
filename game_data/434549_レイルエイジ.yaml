@@ -45,8 +45,8 @@ learning_analysis:
   rank_complexity: 3.0
   strategic_depth_description: 低め（限られた戦略オプション）
   learning_curve_type: gentle
-  decision_points: 3.3
-  interaction_complexity: 3.3
+  decision_points: 3.3043
+  interaction_complexity: 3.06555
   rules_complexity: 2.4643333333333333
   player_types:
   - beginner

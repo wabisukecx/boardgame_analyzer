@@ -70,11 +70,11 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: Swan Panasia Co., Ltd.
 - name: Ігромаг
-average_rating: '7.1916'
-weight: '1.1936'
+average_rating: '7.19128'
+weight: '1.1935'
 ranks:
 - type: boardgame
-  rank: '402'
+  rank: '401'
 - type: partygames
   rank: '27'
 learning_analysis:
@@ -83,8 +83,8 @@ learning_analysis:
   replayability: 3.42
   mechanics_complexity: 2.4
   mechanics_count: 5
-  bgg_weight: 1.1936
-  bgg_rank: 402
+  bgg_weight: 1.1935
+  bgg_rank: 401
   year_published: 2008
   category_complexity: 2.09
   rank_complexity: 2.14
@@ -92,7 +92,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.2406333333333333
   interaction_complexity: 4.145273000000001
-  rules_complexity: 2.532053333333333
+  rules_complexity: 2.532033333333333
   player_types:
   - beginner
   - casual

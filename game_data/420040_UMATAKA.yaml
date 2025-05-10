@@ -41,18 +41,18 @@ designers:
 publishers:
 - name: bronze bell house(銅鐸舎)
 average_rating: '7.83115'
-weight: '2.6'
+weight: '2.6667'
 ranks:
 - type: boardgame
-  rank: '11749'
+  rank: '11758'
 learning_analysis:
-  initial_barrier: 3.42
-  strategic_depth: 3.59
+  initial_barrier: 3.44
+  strategic_depth: 3.61
   replayability: 3.2
   mechanics_complexity: 3.38
   mechanics_count: 8
-  bgg_weight: 2.6
-  bgg_rank: 11749
+  bgg_weight: 2.6667
+  bgg_rank: 11758
   year_published: 2024
   category_complexity: 3.0
   rank_complexity: 2.13
@@ -60,7 +60,7 @@ learning_analysis:
   learning_curve_type: gentle_then_moderate
   decision_points: 4.920000000000002
   interaction_complexity: 3.2099999999999995
-  rules_complexity: 3.8241666666666667
+  rules_complexity: 3.8375066666666666
   player_types:
   - casual
   - experienced

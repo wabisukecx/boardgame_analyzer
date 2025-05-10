@@ -77,8 +77,8 @@ publishers:
 - name: Regatul Jocurilor
 - name: Surfin' Meeple China
 - name: Tower Tactic Games
-average_rating: '7.97378'
-weight: '2.8927'
+average_rating: '7.97349'
+weight: '2.8922'
 ranks:
 - type: boardgame
   rank: '40'
@@ -90,7 +90,7 @@ learning_analysis:
   replayability: 3.85
   mechanics_complexity: 3.45
   mechanics_count: 8
-  bgg_weight: 2.8927
+  bgg_weight: 2.8922
   bgg_rank: 40
   year_published: 2015
   category_complexity: 4.04
@@ -99,7 +99,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.786666666666668
   interaction_complexity: 3.8225000000000002
-  rules_complexity: 4.150206666666667
+  rules_complexity: 4.150106666666667
   player_types:
   - casual
   - experienced

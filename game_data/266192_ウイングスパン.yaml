@@ -86,8 +86,8 @@ publishers:
 - name: Siam Board Games
 - name: Surfin' Meeple China
 - name: Ігромаг
-average_rating: '8.0211'
-weight: '2.4703'
+average_rating: '8.02087'
+weight: '2.47'
 ranks:
 - type: boardgame
   rank: '33'
@@ -101,7 +101,7 @@ learning_analysis:
   replayability: 3.78
   mechanics_complexity: 2.72
   mechanics_count: 9
-  bgg_weight: 2.4703
+  bgg_weight: 2.47
   bgg_rank: 33
   year_published: 2019
   category_complexity: 2.24
@@ -110,7 +110,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.980000000000001
   interaction_complexity: 2.874666666666669
-  rules_complexity: 3.210726666666667
+  rules_complexity: 3.210666666666667
   player_types:
   - beginner
   - casual

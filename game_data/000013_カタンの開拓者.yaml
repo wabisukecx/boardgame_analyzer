@@ -171,23 +171,23 @@ publishers:
 - name: Top Toys
 - name: TRY SOFT
 - name: Vennerød Forlag AS
-average_rating: '7.09348'
-weight: '2.2875'
+average_rating: '7.09339'
+weight: '2.2874'
 ranks:
 - type: boardgame
-  rank: '580'
+  rank: '582'
 - type: strategygames
   rank: '537'
 - type: familygames
-  rank: '204'
+  rank: '205'
 learning_analysis:
   initial_barrier: 3.11
   strategic_depth: 3.29
   replayability: 3.85
   mechanics_complexity: 2.63
   mechanics_count: 12
-  bgg_weight: 2.2875
-  bgg_rank: 580
+  bgg_weight: 2.2874
+  bgg_rank: 582
   year_published: 1995
   category_complexity: 4.15
   rank_complexity: 2.75
@@ -195,7 +195,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.868
   interaction_complexity: 4.2586
-  rules_complexity: 3.086666666666667
+  rules_complexity: 3.0866466666666668
   player_types:
   - casual
   - experienced

@@ -49,13 +49,13 @@ publishers:
 - name: 2Tomatoes Games
 - name: Kronos Games (Krogam)
 - name: Matagot
-average_rating: '7.30372'
+average_rating: '7.30414'
 weight: '2.4579'
 ranks:
 - type: boardgame
-  rank: '1089'
+  rank: '1090'
 - type: strategygames
-  rank: '598'
+  rank: '597'
 learning_analysis:
   initial_barrier: 3.23
   strategic_depth: 3.32
@@ -63,7 +63,7 @@ learning_analysis:
   mechanics_complexity: 2.95
   mechanics_count: 6
   bgg_weight: 2.4579
-  bgg_rank: 1089
+  bgg_rank: 1090
   year_published: 2015
   category_complexity: 4.07
   rank_complexity: 2.97

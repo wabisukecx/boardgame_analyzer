@@ -69,11 +69,11 @@ publishers:
 - name: Rebel Sp. z o.o.
 - name: テンデイズゲームズ (TendaysGames)
 - name: 狗吠火車
-average_rating: '8.1387'
-weight: '4.179'
+average_rating: '8.137'
+weight: '4.1759'
 ranks:
 - type: boardgame
-  rank: '161'
+  rank: '160'
 - type: strategygames
   rank: '97'
 learning_analysis:
@@ -82,8 +82,8 @@ learning_analysis:
   replayability: 3.7
   mechanics_complexity: 3.29
   mechanics_count: 10
-  bgg_weight: 4.179
-  bgg_rank: 161
+  bgg_weight: 4.1759
+  bgg_rank: 160
   year_published: 2023
   category_complexity: 4.29
   rank_complexity: 3.12
@@ -91,7 +91,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.6
   interaction_complexity: 3.2142800000000014
-  rules_complexity: 4.330133333333333
+  rules_complexity: 4.329513333333334
   player_types:
   - experienced
   - hardcore

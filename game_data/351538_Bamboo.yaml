@@ -60,7 +60,7 @@ publishers:
 - name: Hobby World
 - name: IELLO
 - name: Skellig Games
-average_rating: '7.12638'
+average_rating: '7.12673'
 weight: '2.9022'
 ranks:
 - type: boardgame
@@ -81,7 +81,7 @@ learning_analysis:
   strategic_depth_description: 中程度（いくつかの戦略オプションあり）
   learning_curve_type: gentle
   decision_points: 3.7150000000000003
-  interaction_complexity: 3.185
+  interaction_complexity: 3.0816
   rules_complexity: 3.3817733333333333
   player_types:
   - beginner

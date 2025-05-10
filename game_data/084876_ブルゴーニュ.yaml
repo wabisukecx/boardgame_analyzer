@@ -86,8 +86,8 @@ publishers:
 - name: Hobby World
 - name: Maldito Games
 - name: Rebel Sp. z o.o.
-average_rating: '8.14907'
-weight: '2.9719'
+average_rating: '8.14926'
+weight: '2.972'
 ranks:
 - type: boardgame
   rank: '16'
@@ -99,7 +99,7 @@ learning_analysis:
   replayability: 4.28
   mechanics_complexity: 2.76
   mechanics_count: 11
-  bgg_weight: 2.9719
+  bgg_weight: 2.972
   bgg_rank: 16
   year_published: 2011
   category_complexity: 3.16
@@ -108,7 +108,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.92
   interaction_complexity: 2.9984318181818184
-  rules_complexity: 3.4816527272727273
+  rules_complexity: 3.481672727272727
   player_types:
   - casual
   - experienced
