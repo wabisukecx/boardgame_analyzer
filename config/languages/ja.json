@@ -172,7 +172,79 @@
     "similar_complexity": "類似の複雑さ",
     "close_publication_year": "近い発行年",
     "common_keywords": "説明文の共通キーワード",
-    "overall_similarity": "全体的な類似性が見られます"
+    "overall_similarity": "全体的な類似性が見られます",
+    "reasons": {
+      "initial_barrier_desc": "初期の学習しやすさ",
+      "strategic_depth_desc": "戦略の深度",
+      "replayability_desc": "繰り返し遊ぶ価値",
+      "decision_points_desc": "重要な決断の頻度",
+      "interaction_desc": "プレイヤー間の相互作用の複雑さ",
+      "rules_desc": "ルールシステムの複雑さ",
+      "similar_metric": "類似した{metric}",
+      "both_games_have": "両方のゲームが{description}（{value1} vs {value2}）",
+      "same_learning_curve": "同じ学習曲線タイプ",
+      "same_learning_pattern": "両方のゲームが同じ学習パターン ({curve_type}) を持つ",
+      "similar_learning_curve": "類似した学習曲線タイプ",
+      "similar_learning_pattern": "類似した学習パターン ({curve_type1} と {curve_type2})",
+      "same_mastery_time": "同じマスタリー時間",
+      "both_mastery_time": "両方のゲームのマスター時間が同程度 ({mastery_time})",
+      "common_player_types": "共通プレイヤータイプ",
+      "suitable_for_same_players": "両方のゲームが同じタイプのプレイヤーに適している: {player_types}",
+      "important_categories": "重要な共通カテゴリ",
+      "important_category_match": "{categories}",
+      "common_categories_list": "{categories}",
+      "important_mechanics": "重要な共通メカニクス",
+      "important_mechanic_match": "{mechanics}",
+      "common_mechanics_list": "{mechanics}",
+      "similar_playtime": "類似したプレイ時間",
+      "playtime_close": "{time1}分 vs {time2}分",
+      "close_years": "{year1}年 vs {year2}年",
+      "common_keywords_list": "{keywords}",
+      "overall_similarity": "テキスト内容の全体的な類似性"
+    },
+    "levels": {
+      "initial_barrier": {
+        "very_high": "非常に高い初期障壁を持つ",
+        "high": "高い初期障壁を持つ",
+        "medium": "中程度の初期障壁を持つ",
+        "low": "低い初期障壁を持つ"
+      },
+      "strategic_depth": {
+        "very_deep": "非常に深い戦略性を持つ",
+        "deep": "深い戦略性を持つ",
+        "medium": "中程度の戦略性を持つ",
+        "shallow": "浅い戦略性を持つ"
+      },
+      "replayability": {
+        "very_high": "非常に高いリプレイ性を持つ",
+        "high": "高いリプレイ性を持つ",
+        "medium": "中程度のリプレイ性を持つ",
+        "low": "限定的なリプレイ性を持つ"
+      },
+      "decision_points": {
+        "very_many": "非常に多くの意思決定を要する",
+        "many": "多くの意思決定を要する",
+        "medium": "中程度の意思決定を要する",
+        "few": "少数の意思決定で済む"
+      },
+      "interaction": {
+        "very_high": "非常に高い相互作用を持つ",
+        "high": "高い相互作用を持つ",
+        "medium": "中程度の相互作用を持つ",
+        "low": "低い相互作用を持つ"
+      },
+      "rules": {
+        "very_complex": "非常に複雑なルールを持つ",
+        "complex": "複雑なルールを持つ",
+        "medium": "中程度の複雑さのルールを持つ",
+        "simple": "シンプルなルールを持つ"
+      },
+      "default": {
+        "high": "高い値を持つ",
+        "medium": "中程度の値を持つ",
+        "low": "低い値を持つ"
+      }
+    }
   },
   "compare": {
     "title": "複数ゲームの比較",

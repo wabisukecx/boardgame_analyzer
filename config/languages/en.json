@@ -172,7 +172,79 @@
     "similar_complexity": "Similar Complexity",
     "close_publication_year": "Close Publication Year",
     "common_keywords": "Common Keywords in Description",
-    "overall_similarity": "Overall similarity detected"
+    "overall_similarity": "Overall similarity detected",
+    "reasons": {
+      "initial_barrier_desc": "initial learning ease",
+      "strategic_depth_desc": "strategic depth",
+      "replayability_desc": "replay value",
+      "decision_points_desc": "frequency of important decisions",
+      "interaction_desc": "complexity of player interaction",
+      "rules_desc": "rule system complexity",
+      "similar_metric": "Similar {metric}",
+      "both_games_have": "Both games have {description} ({value1} vs {value2})",
+      "same_learning_curve": "Same Learning Curve Type",
+      "same_learning_pattern": "Both games have the same learning pattern ({curve_type})",
+      "similar_learning_curve": "Similar Learning Curve Type",
+      "similar_learning_pattern": "Similar learning patterns ({curve_type1} and {curve_type2})",
+      "same_mastery_time": "Same Mastery Time",
+      "both_mastery_time": "Both games have similar mastery time ({mastery_time})",
+      "common_player_types": "Common Player Types",
+      "suitable_for_same_players": "Both games are suitable for the same player types: {player_types}",
+      "important_categories": "Important Common Categories",
+      "important_category_match": "{categories}",
+      "common_categories_list": "{categories}",
+      "important_mechanics": "Important Common Mechanics",
+      "important_mechanic_match": "{mechanics}",
+      "common_mechanics_list": "{mechanics}",
+      "similar_playtime": "Similar Play Time",
+      "playtime_close": "{time1} min vs {time2} min",
+      "close_years": "{year1} vs {year2}",
+      "common_keywords_list": "{keywords}",
+      "overall_similarity": "Overall text similarity"
+    },
+    "levels": {
+      "initial_barrier": {
+        "very_high": "very high initial barrier",
+        "high": "high initial barrier",
+        "medium": "medium initial barrier",
+        "low": "low initial barrier"
+      },
+      "strategic_depth": {
+        "very_deep": "very deep strategy",
+        "deep": "deep strategy",
+        "medium": "medium strategy depth",
+        "shallow": "shallow strategy"
+      },
+      "replayability": {
+        "very_high": "very high replayability",
+        "high": "high replayability",
+        "medium": "medium replayability",
+        "low": "limited replayability"
+      },
+      "decision_points": {
+        "very_many": "very many decisions required",
+        "many": "many decisions required",
+        "medium": "medium number of decisions",
+        "few": "few decisions needed"
+      },
+      "interaction": {
+        "very_high": "very high interaction",
+        "high": "high interaction",
+        "medium": "medium interaction",
+        "low": "low interaction"
+      },
+      "rules": {
+        "very_complex": "very complex rules",
+        "complex": "complex rules",
+        "medium": "medium complexity rules",
+        "simple": "simple rules"
+      },
+      "default": {
+        "high": "high value",
+        "medium": "medium value",
+        "low": "low value"
+      }
+    }
   },
   "compare": {
     "title": "Compare Multiple Games",
