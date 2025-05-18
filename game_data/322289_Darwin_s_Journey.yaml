@@ -1,0 +1,108 @@
+type: boardgame
+name: Darwin's Journey
+alternate_names:
+- Darwin utazásai
+- Darwinovy cesty
+- Wyprawa Darwina
+- Путешествие Дарвина
+- ダーウィンズ・ジャーニー
+- 达尔文的旅程
+- 다윈의 여정
+japanese_name: ダーウィンズ・ジャーニー
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/-A_ABjMw4PdoAZrH-FjiiA__thumb/img/_rJRtHzqatLg9OQM0x1UaC1cRGY=/fit-in/200x150/filters:strip_icc()/pic5726930.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '14'
+community_best_players: '3'
+community_recommended_players: 1, 2, 4
+community_min_age: '14'
+description: When all you can identify in the horizon for many long days is the line
+  that detaches the sea from the sky, the glimpse of a distant shore appearing before
+  you will make you shiver at the understanding that the adventure is about to begin.&#10;&#10;You
+  find yourself astonished, landing on the shore that will be the origin of an extensive
+  exploration through the Galapagos, a magic place of inconceivable beauty and endless
+  biodiversity. There, you will gather repertoires and expand your knowledge of the
+  natural sciences. Your eyes will learn how to detect the hidden species in the tropical
+  forest, gazing at the countless colors and textures of nature. After inspiring hours
+  spent studying and getting to enlightening conclusions, you will rest under a sparkling
+  sky, admiring the stunning complexity of the animal realm.&#10;&#10;Darwin's Journey
+  is a worker-placement Eurogame in which players recall Charles Darwin's memories
+  of his adventure through the Galapagos islands, which contributed to the development
+  of his theory of evolution.&#10;&#10;With the game's innovative worker progression
+  system, each worker will have to study the disciplines that are a prerequisite to
+  perform several actions in the game, such as exploration, correspondence, gathering,
+  and dispatch of repertoires found on the island to museums in order to contribute
+  to the human knowledge of biology. The game lasts five rounds, and thanks to several
+  short- and long-term objectives, every action you take will grant victory points
+  in different ways.&#10;&#10;
+mechanics:
+- name: Contracts
+- name: Ownership
+- name: Pick-up and Deliver
+- name: Point to Point Movement
+- name: Set Collection
+- name: Solo / Solitaire Game
+- name: 'Turn Order: Claim Action'
+- name: Variable Set-up
+- name: Worker Placement
+- name: Worker Placement, Different Worker Types
+categories:
+- name: Exploration
+- name: Travel
+designers:
+- name: Simone Luciani
+- name: Nestore Mangone
+publishers:
+- name: ThunderGryph Games
+- name: Blackrock Games
+- name: CMON Global Limited
+- name: CrowD Games
+- name: Gém Klub Kft.
+- name: Ghenos Games
+- name: Grok Games
+- name: Hachette Boardgames Benelux
+- name: Korea Boardgames
+- name: MINDOK
+- name: Portal Games
+- name: Skellig Games
+- name: TCG Factory
+- name: 株式会社ケンビル (KenBill)
+- name: 黑城堡桌游 Black Castle Games
+average_rating: '8.12733'
+weight: '3.8997'
+ranks:
+- type: boardgame
+  rank: '94'
+- type: strategygames
+  rank: '65'
+learning_analysis:
+  initial_barrier: 3.7
+  strategic_depth: 3.76
+  replayability: 3.8
+  mechanics_complexity: 3.14
+  mechanics_count: 10
+  bgg_weight: 3.8997
+  bgg_rank: 94
+  year_published: 2023
+  category_complexity: 2.99
+  rank_complexity: 3.15
+  strategic_depth_description: medium-high depth
+  learning_curve_type: moderate
+  decision_points: 4.655
+  interaction_complexity: 2.825
+  rules_complexity: 4.139273333333333
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

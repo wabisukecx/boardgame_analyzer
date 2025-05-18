@@ -1,0 +1,141 @@
+type: boardgame
+name: Carcassonne
+alternate_names:
+- Carcassonne da viaggio
+- Carcassonne de voyage
+- Carcassonne Jubilee Edition
+- 'Carcassonne: Plus'
+- 'Carcassonne: Reiseditie'
+- Domínio de Carcassonne
+- Reise-Carcassonne
+- Travel Carcassonne
+- Τα Κάστρα του Μυστρά
+- Каркасон
+- Каркасон
+- Каркассон
+- Средневековье
+- קרקסון
+- كاركاسون
+- คาร์คาซอนน์
+- カルカソンヌ
+- カルカソンヌ21
+- カルカソンヌＪ
+- 卡卡城
+- 卡卡頌
+- 카르카손
+japanese_name: カルカソンヌ
+year_published: '2000'
+thumbnail_url: https://cf.geekdo-images.com/okM0dq_bEXnbyQTOvHfwRA__thumb/img/88274KiOg94wziybVHyW8AeOiXg=/fit-in/200x150/filters:strip_icc()/pic6544250.png
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '45'
+publisher_min_age: '7'
+community_best_players: 2, 3
+community_recommended_players: 4, 5
+community_min_age: '8'
+description: 'Carcassonne is a tile placement game in which the players draw and place
+  a tile with a piece of southern French landscape represented on it. The tile might
+  feature a city, a road, a cloister, grassland or some combination thereof, and it
+  must be placed adjacent to tiles that have already been played, in such a way that
+  cities are connected to cities, roads to roads, et cetera. Having placed a tile,
+  the player can then decide to place one of their meeples in one of the areas on
+  it: in the city as a knight, on the road as a robber, in the cloister as a monk,
+  or in the field as a farmer. When that area is complete that meeple scores points
+  for its owner.&#10;&#10;During a game of Carcassonne, players are faced with decisions
+  like: &quot;Is it really worth putting my last meeple there?&quot; or &quot;Should
+  I use this tile to expand my city, or should I place it near my opponent instead,
+  thus making it a harder for them to complete it and score points?&quot; Since players
+  place only one tile and have the option to place one meeple on it, turns proceed
+  quickly even if it is a game full of options and possibilities.&#10;&#10;First game
+  in the Carcassonne series.&#10;&#10;'
+mechanics:
+- name: Area Majority / Influence
+- name: Enclosure
+- name: End Game Bonuses
+- name: Kill Steal
+- name: Map Addition
+- name: Modular Board
+- name: Pattern Building
+- name: Square Grid
+- name: Take That
+- name: Tile Placement
+- name: Worker Placement
+categories:
+- name: Medieval
+- name: Territory Building
+designers:
+- name: Klaus-Jürgen Wrede
+publishers:
+- name: Hans im Glück
+- name: 64 Ounce Games
+- name: 999 Games
+- name: Albi
+- name: Astrel Games
+- name: Bard Centrum Gier
+- name: Brain Games
+- name: cutia.ro
+- name: Devir
+- name: Enigma (Bergsala Enigma)
+- name: Fantasmagoria
+- name: Feelindigo
+- name: Filosofia Éditions
+- name: Giochi Uniti
+- name: Grow Jogos e Brinquedos
+- name: Hobby World
+- name: Ísöld ehf.
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Lautapelit.fi
+- name: Midgaard Games
+- name: MINDOK
+- name: Möbius Games
+- name: Monkey Time
+- name: NeoTroy Games
+- name: Nordic Games ehf
+- name: Paper Iyagi
+- name: Piatnik
+- name: Ponva d.o.o.
+- name: Rio Grande Games
+- name: Schmidt Spiele
+- name: Smart Ltd
+- name: Stupor Mundi
+- name: SuperHeated Neurons
+- name: Swan Panasia Co., Ltd.
+- name: Venice Connection
+- name: Ventura Games
+- name: Z-Man Games
+average_rating: '7.41246'
+weight: '1.8883'
+ranks:
+- type: boardgame
+  rank: '230'
+- type: familygames
+  rank: '55'
+learning_analysis:
+  initial_barrier: 3.15
+  strategic_depth: 3.28
+  replayability: 4.07
+  mechanics_complexity: 2.97
+  mechanics_count: 11
+  bgg_weight: 1.8883
+  bgg_rank: 230
+  year_published: 2000
+  category_complexity: 3.89
+  rank_complexity: 2.36
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 4.582222222222222
+  interaction_complexity: 3.6230000000000007
+  rules_complexity: 3.1197812121212127
+  player_types:
+  - casual
+  - experienced
+  - replayer
+  - trend_follower
+  - classic_lover
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: medium

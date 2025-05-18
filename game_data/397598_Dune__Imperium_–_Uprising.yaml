@@ -1,0 +1,105 @@
+type: boardgame
+name: 'Dune: Imperium – Uprising'
+alternate_names:
+- 'Diuna: Imperium – Powstanie'
+- 'Duna: Impérium – Povstání'
+- 'Duna: Imperium – Uprising'
+- 'Dune: Imperiul – Revolta'
+- 'Dűne: Impérium – Felkelés'
+- 'Dune: Imperium – Insurrección'
+- 'Dune: Imperium – Insurrection'
+- 'Dune: Imperium – Insurrezione'
+- 'Дюна: Империя – Восстание'
+- 'Дюна: Імперіум – Піднесення'
+- デューン 砂の惑星：インペリウム 反乱
+- '듄 임페리움: 봉기'
+japanese_name: デューン 砂の惑星：インペリウム 反乱
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/UVUkjMV_Q2paVUIUP30Vvw__thumb/img/H6qmxJrRFjtOAPZOfDoZ480-46I=/fit-in/200x150/filters:strip_icc()/pic7664424.jpg
+publisher_min_players: '1'
+publisher_max_players: '6'
+playing_time: '120'
+publisher_min_age: '13'
+community_best_players: '4'
+community_recommended_players: 1, 2, 3, 6
+community_min_age: '12'
+description: 'In Dune: Imperium Uprising, you want to continue to balance military
+  might with political intrigue, wielding new tools in pursuit of victory. Spies will
+  shore up your plans, vital contracts will expand your resources, or you can learn
+  the ways of the Fremen and ride mighty sandworms into battle!&#10;&#10;Dune: Imperium
+  Uprising is a standalone spinoff to Dune: Imperium that expands on that game''s
+  blend of deck-building and worker placement, while introducing a new six-player
+  mode that pits two teams against one other in the biggest struggle yet.&#10;&#10;The
+  Dune: Imperium expansions Rise of Ix and Immortality work with Uprising, as do almost
+  all of the cards from the base game, and elements of Uprising can be used with Dune:
+  Imperium.&#10;&#10;The choices are yours. The Imperium awaits!&#10;&#10;'
+mechanics:
+- name: Automatic Resource Growth
+- name: Card Play Conflict Resolution
+- name: Deck, Bag, and Pool Building
+- name: Delayed Purchase
+- name: Force Commitment
+- name: Increase Value of Unchosen Resources
+- name: Multi-Use Cards
+- name: Open Drafting
+- name: Solo / Solitaire Game
+- name: Team-Based Game
+- name: 'Turn Order: Progressive'
+- name: Variable Player Powers
+- name: Worker Placement
+categories:
+- name: Movies / TV / Radio theme
+- name: Novel-based
+- name: Political
+- name: Science Fiction
+designers:
+- name: Paul Dennen
+publishers:
+- name: Dire Wolf
+- name: Arclight Games
+- name: Galápagos Jogos
+- name: Geekach Games
+- name: Korea Boardgames
+- name: Lavka Games
+- name: Lucky Duck Games
+- name: Reflexshop
+- name: Regatul Jocurilor
+- name: REXhry
+- name: Tabletop KZ
+average_rating: '8.72437'
+weight: '3.4936'
+ranks:
+- type: boardgame
+  rank: '12'
+- type: strategygames
+  rank: '7'
+learning_analysis:
+  initial_barrier: 3.87
+  strategic_depth: 3.87
+  replayability: 4.1
+  mechanics_complexity: 3.38
+  mechanics_count: 13
+  bgg_weight: 3.4936
+  bgg_rank: 12
+  year_published: 2023
+  category_complexity: 3.68
+  rank_complexity: 3.28
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  learning_curve_type: moderate
+  decision_points: 4.736363636363638
+  interaction_complexity: 3.8199615384615386
+  rules_complexity: 4.211540512820513
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - strategist
+  - system_master
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

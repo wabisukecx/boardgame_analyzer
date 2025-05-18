@@ -69,8 +69,8 @@ publishers:
 - name: REXhry
 - name: SD Games
 - name: sternenschimmermeer
-average_rating: '7.51931'
-weight: '1.841'
+average_rating: '7.51857'
+weight: '1.8397'
 ranks:
 - type: boardgame
   rank: '198'
@@ -82,7 +82,7 @@ learning_analysis:
   replayability: 3.46
   mechanics_complexity: 2.93
   mechanics_count: 9
-  bgg_weight: 1.841
+  bgg_weight: 1.8397
   bgg_rank: 198
   year_published: 2018
   category_complexity: 3.8
@@ -91,7 +91,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.8391
   interaction_complexity: 3.1900183333333345
-  rules_complexity: 3.274866666666666
+  rules_complexity: 3.274606666666666
   player_types:
   - casual
   - trend_follower

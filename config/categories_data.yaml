@@ -2,314 +2,319 @@ Abstract Strategy:
   complexity: 3.6
   strategic_value: 3.5
   interaction_value: 2.0
-  description: 抽象的なルールによる純粋な戦略。テーマよりもメカニクスが重視され、計算的思考が求められる。
+  description: Pure strategy based on abstract rules. Mechanics are emphasized over theme, requiring computational thinking.
 Action / Dexterity:
   complexity: 2.0
   strategic_value: 2.2
   interaction_value: 3.7
-  description: 身体能力や器用さを要求するゲーム。物理的スキルと直接的な競争による高い相互作用が特徴。
+  description: Games that require physical ability or dexterity. Characterized by high interaction through physical skills and direct competition.
 Adventure:
   complexity: 3.2
   strategic_value: 3.0
   interaction_value: 3.5
-  description: 冒険的要素と戦略のバランス。物語進行とリスク管理の両立が求められる。
+  description: Balance of adventure elements and strategy. Requires managing both story progression and risk.
 Age of Reason:
   complexity: 3.7
   strategic_value: 3.8
   interaction_value: 3.4
-  description: 啓蒙時代を背景にした戦略性。科学的思考と社会改革の要素を含む。
+  description: Strategic games set in the Age of Enlightenment. Includes elements of scientific thinking and social reform.
 American West:
   complexity: 3.0
   strategic_value: 3.2
   interaction_value: 3.5
-  description: 西部開拓時代をテーマにしたゲーム。資源獲得と領土拡大の要素が特徴。
+  description: Games themed around the American frontier era. Characterized by resource acquisition and territorial expansion.
 Ancient:
   complexity: 3.7
   strategic_value: 3.7
   interaction_value: 3.3
-  description: 古代文明の複雑な政治・経済システム。文明構築と歴史的背景に基づく戦略性。
+  description: Complex political and economic systems of ancient civilizations. Strategy based on civilization building and historical context.
 Animals:
   complexity: 1.8
   strategic_value: 2.7
   interaction_value: 3.0
-  description: 動物をテーマにしたゲーム。自然界の行動パターンや生態系を模したメカニクスを含む。
+  description: Games themed around animals. Includes mechanics that imitate natural behavior patterns and ecosystems.
 Area Control / Area Influence:
   complexity: 4.2
   strategic_value: 4.5
   interaction_value: 4.0
-  description: 地域支配を中心としたメカニクス。領域の確保と影響力の拡大が勝利の鍵。
+  description: Mechanics centered on regional dominance. Securing territories and expanding influence are key to victory.
 Aviation / Flight:
   complexity: 3.5
   strategic_value: 3.4
   interaction_value: 3.2
-  description: 航空機や飛行をテーマにしたゲーム。三次元的戦略と技術管理が特徴。
+  description: Games themed around aircraft and flight. Characterized by three-dimensional strategy and technology management.
 Bluffing:
   complexity: 2.8
   strategic_value: 3.2
   interaction_value: 5.0
-  description: 虚勢による心理的駆け引き。相手の意図を読み、自身の行動を隠蔽する戦略が必要。
+  description: Psychological maneuvering through bluffing. Requires strategy to read opponents' intentions while concealing one's own actions.
 Card Game:
   complexity: 2.3
   strategic_value: 2.5
   interaction_value: 3.0
-  description: カードゲームの基本カテゴリ。手札管理と確率的要素のバランスが重要。
+  description: Basic category of card games. Balancing hand management and probabilistic elements is important.
 Children's Game:
   complexity: 1.2
   strategic_value: 1.0
   interaction_value: 2.5
-  description: 子供向けで戦略性は最小限。シンプルなルールと短い遊戯時間が特徴。
+  description: Games for children with minimal strategy. Characterized by simple rules and short playing time.
 City Building:
   complexity: 3.8
   strategic_value: 4.0
   interaction_value: 3.0
-  description: 都市建設による空間的戦略。区画の効率的利用と施設の最適配置が鍵となる。
+  description: Spatial strategy through city construction. Efficient use of plots and optimal placement of facilities are key.
 Civilization:
   complexity: 4.5
   strategic_value: 5.0
   interaction_value: 4.0
-  description: 文明構築による長期的戦略。資源管理、技術開発、および外交戦略の複合的要素を含む。
+  description: Long-term strategy through civilization building. Includes complex elements of resource management, technology development, and diplomatic strategy.
 Deduction:
   complexity: 3.3
   strategic_value: 3.6
   interaction_value: 3.3
-  description: 推理力を重視したゲーム。情報収集と論理的分析が成功への道となる。
+  description: Games emphasizing deductive reasoning. Information gathering and logical analysis are the path to success.
 Dice:
   complexity: 1.8
   strategic_value: 2.0
   interaction_value: 2.0
-  description: ダイスを主要素としたゲーム。運とリスク管理のバランスが問われる。
+  description: Games with dice as the main element. Tests balance between luck and risk management.
 Economic:
   complexity: 4.2
   strategic_value: 5.0
   interaction_value: 4.0
-  description: 経済システムによる戦略的深さ。市場操作、投資、および生産チェーンの最適化が重要。
+  description: Strategic depth through economic systems. Market manipulation, investment, and optimization of production chains are important.
 Educational:
   complexity: 2.0
   strategic_value: 2.0
   interaction_value: 2.0
-  description: 教育的要素が主で戦略性は二次的。学習目標が組み込まれたゲームプレイ。
+  description: Educational elements are primary while strategy is secondary. Gameplay with embedded learning objectives.
 Electronic:
   complexity: 2.8
   strategic_value: 3.0
   interaction_value: 2.5
-  description: 電子機器を使用するゲーム。デジタル要素とアナログプレイの融合が特徴。
+  description: Games using electronic devices. Characterized by the fusion of digital elements and analog play.
 Environmental:
   complexity: 3.0
   strategic_value: 3.2
   interaction_value: 3.0
-  description: 環境保護や生態系をテーマにしたゲーム。資源管理と持続可能性が重要な要素。
+  description: Games themed around environmental protection or ecosystems. Resource management and sustainability are important elements.
 Expansion for Base-game:
   complexity: 3.5
   strategic_value: 3.8
   interaction_value: 3.3
-  description: 基本ゲームに新要素を追加する拡張版。基本ゲームの複雑さを高め、戦略的選択肢を増やすことが特徴。
+  description: Expansion version that adds new elements to the base game. Characterized by increasing the complexity of the base game and adding strategic options.
 Exploration:
   complexity: 3.4
   strategic_value: 3.5
   interaction_value: 2.5
-  description: 探検による戦略と発見。未知の地域の調査とリスク管理が成功への道となる。
+  description: Strategy and discovery through exploration. Investigation of unknown areas and risk management are the path to success.
 Fantasy:
   complexity: 3.1
   strategic_value: 3.5
   interaction_value: 3.2
-  description: 架空の世界観による戦略的要素。魔法や特殊能力といった独自のメカニクスを持つ。
+  description: Strategic elements based on fictional worldviews. Features unique mechanics such as magic and special abilities.
 Farming:
   complexity: 3.5
   strategic_value: 3.2
   interaction_value: 3.5
-  description: 農業資源管理と戦略的意思決定。長期計画と効率的な資源活用が求められる。
+  description: Agricultural resource management and strategic decision-making. Requires long-term planning and efficient resource utilization.
 Fighting:
   complexity: 3.2
   strategic_value: 3.0
   interaction_value: 5.0
-  description: 戦闘による高い相互作用。直接的な競争と戦術的選択が中心となる。
+  description: High interaction through combat. Direct competition and tactical choices are central.
 Humor:
   complexity: 1.9
   strategic_value: 2.0
   interaction_value: 4.0
-  description: ユーモアを中心としたゲーム。笑いを誘発する要素が戦略よりも重視される。
+  description: Games centered around humor. Elements that provoke laughter are emphasized over strategy.
 Industry / Manufacturing:
   complexity: 4.1
   strategic_value: 4.0
   interaction_value: 2.5
-  description: 産業と生産による戦略的深さ。効率的な生産ラインの構築と資源の変換が重要。
+  description: Strategic depth through industry and production. Building efficient production lines and resource conversion are important.
 Math:
   complexity: 3.0
   strategic_value: 3.2
   interaction_value: 2.5
-  description: 数学的概念に基づくゲーム。計算能力と数的思考が勝敗を分ける。
+  description: Games based on mathematical concepts. Calculation ability and numerical thinking determine victory.
 Medical:
   complexity: 3.2
   strategic_value: 3.3
   interaction_value: 3.0
-  description: 医療をテーマにしたゲーム。診断や治療のプロセスを模したメカニクスが特徴。
+  description: Games themed around medicine. Characterized by mechanics that simulate diagnosis and treatment processes.
 Medieval:
   complexity: 3.5
   strategic_value: 3.5
   interaction_value: 3.2
-  description: 中世の複雑な社会構造と政治的駆け引き。位階制度と領土支配の要素を含む。
+  description: Complex social structures and political maneuvering of the medieval period. Includes elements of hierarchy and territorial control.
 Memory:
   complexity: 1.8
   strategic_value: 2.0
   interaction_value: 2.8
-  description: 記憶力を中心としたゲーム。情報の記憶と想起が主な挑戦となり、認知能力が試される。
+  description: Games centered on memory. Memorizing and recalling information are the main challenges, testing cognitive abilities.
 Miniatures:
   complexity: 3.8
   strategic_value: 3.2
   interaction_value: 3.5
-  description: ミニチュアフィギュアを使用したゲーム。空間的戦術と視覚的戦略が特徴。
+  description: Games using miniature figures. Characterized by spatial tactics and visual strategy.
 Movies / TV / Radio theme:
   complexity: 2.5
   strategic_value: 2.6
   interaction_value: 3.5
-  description: メディア作品に基づくゲーム。原作のテーマやストーリーに沿った戦略要素を含む。
+  description: Games based on media works. Includes strategic elements aligned with the original themes and stories.
 Music:
   complexity: 2.3
   strategic_value: 2.5
   interaction_value: 3.8
-  description: 音楽をテーマにしたゲーム。ルールは比較的シンプルで、戦略よりも音楽的センスや創造性が重視される。
+  description: Games themed around music. Rules are relatively simple, with musical sense and creativity emphasized over strategy.
 Mythology:
   complexity: 3.4
   strategic_value: 3.3
   interaction_value: 3.2
-  description: 神話や伝説をテーマにしたゲーム。伝承的要素と超自然的能力が特徴。
+  description: Games themed around myths and legends. Characterized by traditional elements and supernatural abilities.
 Nautical:
   complexity: 3.3
   strategic_value: 3.4
   interaction_value: 3.1
-  description: 海洋や航海をテーマにしたゲーム。船舶の操縦と海上戦略が中心的要素。
+  description: Games themed around oceans and navigation. Ship maneuvering and maritime strategy are central elements.
 Negotiation:
   complexity: 3.7
   strategic_value: 3.2
   interaction_value: 5.0
-  description: 交渉を中心とした高い相互作用。説得力と戦略的駆け引きが勝利を左右する。
+  description: High interaction centered on negotiation. Persuasiveness and strategic maneuvering determine victory.
 Novel-based:
   complexity: 2.7
   strategic_value: 3.0
   interaction_value: 3.2
-  description: 小説に基づくゲーム。原作のナラティブ要素を取り入れた戦略性が特徴。
+  description: Games based on novels. Characterized by strategy that incorporates narrative elements from the original work.
 Number:
   complexity: 2.6
   strategic_value: 2.5
   interaction_value: 2.7
-  description: 数学的概念を中心としたゲーム。計算能力と論理的思考が勝敗を分ける。
+  description: Games centered on mathematical concepts. Calculation ability and logical thinking determine victory.
 Party Game:
   complexity: 1.5
   strategic_value: 2.0
   interaction_value: 4.0
-  description: 社交性重視で戦略性は低い。コミュニケーションとエンターテイメント性が中心。
+  description: Emphasizes sociability with low strategy. Communication and entertainment value are central.
 Pirates:
   complexity: 2.9
   strategic_value: 3.1
   interaction_value: 3.5
-  description: 海賊をテーマにしたゲーム。略奪と冒険の要素が組み込まれた戦略性。
+  description: Games themed around pirates. Strategy with incorporated elements of plunder and adventure.
 Political:
   complexity: 4.2
   strategic_value: 5.0
   interaction_value: 5.0
-  description: 政治的駆け引きによる高い戦略性と相互作用。同盟形成、交渉、および影響力の拡大が中心となる。
+  description: High strategy and interaction through political maneuvering. Alliance formation, negotiation, and influence expansion are central.
 Post-Napoleonic:
   complexity: 3.9
   strategic_value: 3.9
   interaction_value: 3.7
-  description: 近代戦略と地政学的変動。産業革命後の軍事・政治情勢を反映した複雑な戦略要素。
+  description: Modern strategy and geopolitical changes. Complex strategic elements reflecting the military and political situation after the Industrial Revolution.
 Prehistoric:
   complexity: 3.0
   strategic_value: 3.2
   interaction_value: 3.0
-  description: 先史時代をテーマにしたゲーム。生存と進化の要素に基づく戦略が特徴。
+  description: Games themed around prehistoric times. Characterized by strategies based on survival and evolution.
 Print & Play:
   complexity: 2.2
   strategic_value: 2.8
   interaction_value: 3.0
-  description: 自宅で印刷して遊べるゲーム形式。アクセシビリティを重視した設計が多く、多様なジャンルをカバーする。
+  description: Game format that can be printed and played at home. Often designed with accessibility in mind, covering diverse genres.
 Puzzle:
   complexity: 2.7
   strategic_value: 3.0
   interaction_value: 2.0
-  description: パズル的要素による中程度の戦略性。論理的思考と問題解決能力が試される。
+  description: Moderate strategy through puzzle elements. Tests logical thinking and problem-solving abilities.
 Racing:
   complexity: 2.4
   strategic_value: 2.5
   interaction_value: 3.0
-  description: レースによる限定的な戦略性。速度と経路選択が主な戦略要素となる。
+  description: Limited strategy through racing. Speed and route selection are the main strategic elements.
 Real-time:
   complexity: 3.0
   strategic_value: 3.2
   interaction_value: 4.2
-  description: 時間制限内での即時判断を要求するゲーム。同時アクションによる高い相互作用と緊張感が特徴。
+  description: Games requiring immediate decisions within time limits. Characterized by high interaction and tension through simultaneous actions.
 Religious:
   complexity: 3.1
   strategic_value: 3.0
   interaction_value: 3.5
-  description: 信仰と社会的影響力の戦略的側面。教義の拡大と信者の獲得が中心的要素。
+  description: Strategic aspects of faith and social influence. Expansion of doctrine and acquisition of followers are central elements.
 Renaissance:
   complexity: 3.6
   strategic_value: 3.8
   interaction_value: 3.6
-  description: 文化・技術革新の戦略的展開。芸術、科学、および通商の融合的発展が特徴。
+  description: Strategic development of cultural and technological innovation. Characterized by the integrated development of arts, science, and commerce.
 Science Fiction:
   complexity: 3.4
   strategic_value: 4.0
   interaction_value: 3.0
-  description: SF設定による複雑な戦略要素。先進技術や宇宙環境といった特殊ルールを含む。
+  description: Complex strategic elements through science fiction settings. Includes special rules such as advanced technology and space environments.
 Space Exploration:
   complexity: 3.8
   strategic_value: 3.5
   interaction_value: 3.0
-  description: 宇宙探検の戦略的要素。資源の限られた環境での生存と拡張が課題となる。
+  description: Strategic elements of space exploration. Survival and expansion in resource-limited environments are challenging.
 Spies / Secret Agents:
   complexity: 3.4
   strategic_value: 3.5
   interaction_value: 3.7
-  description: スパイ活動をテーマにしたゲーム。情報収集と秘密工作の戦略が中心。
+  description: Games themed around espionage. Information gathering and covert operation strategies are central.
 Sports:
   complexity: 2.2
   strategic_value: 2.8
   interaction_value: 3.5
-  description: スポーツをテーマにしたゲーム。実際の競技要素を抽象化し、戦術的選択が重要となる。
+  description: Games themed around sports. Abstracts actual competitive elements, with tactical choices being important.
 Strategy:
   complexity: 4.2
   strategic_value: 5.0
   interaction_value: 4.0
-  description: 戦略ゲームの中核カテゴリ。戦略的意思決定と長期計画が成功の鍵となる。
+  description: Core category of strategy games. Strategic decision-making and long-term planning are keys to success.
 Territory Building:
   complexity: 3.9
   strategic_value: 4.0
   interaction_value: 3.5
-  description: 領土拡大による戦略と間接的対立。地域の支配と資源確保のバランスが重要。
+  description: Strategy and indirect conflict through territorial expansion. Balance between regional control and resource securing is important.
 Trains:
   complexity: 3.5
   strategic_value: 3.7
   interaction_value: 3.3
-  description: 鉄道をテーマにしたゲーム。路線建設と効率的な輸送網の構築が特徴。
+  description: Games themed around railways. Characterized by route construction and building efficient transportation networks.
 Transportation:
   complexity: 2.8
   strategic_value: 3.3
   interaction_value: 3.0
-  description: 輸送と物流に関する戦略的要素。効率的なネットワーク構築と経路管理が重要。
+  description: Strategic elements related to transport and logistics. Efficient network construction and route management are important.
 Travel:
   complexity: 2.3
   strategic_value: 2.8
   interaction_value: 3.0
-  description: 旅行や観光をテーマにしたゲーム。経路選択と目的地訪問の戦略が中心。
+  description: Games themed around travel and tourism. Route selection and destination visit strategies are central.
 Video Game Theme:
   complexity: 2.8
   strategic_value: 3.0
   interaction_value: 3.2
-  description: ビデオゲームに基づくテーマ。デジタルゲームの要素をアナログ形式に変換した戦略性。
+  description: Themes based on video games. Strategy that converts digital game elements to analog format.
 Wargame:
   complexity: 4.5
   strategic_value: 5.0
   interaction_value: 4.0
-  description: 軍事的対立による戦略と相互作用。戦術的配置、兵力管理、および地形活用が勝利を左右する。
+  description: Strategy and interaction through military conflict. Tactical placement, force management, and terrain utilization determine victory.
 Word Game:
   complexity: 2.1
   strategic_value: 2.0
   interaction_value: 2.5
-  description: 言葉を使ったゲーム。語彙力と言語的思考が成功の鍵となる。
+  description: Games using words. Vocabulary and linguistic thinking are keys to success.
 Collectible Components:
   complexity: 3.0
   strategic_value: 3.5
   interaction_value: 3.2
-  description: 収集可能なコンポーネントを特徴とするゲーム。カードやミニチュアなどの要素を集め、カスタマイズすることでゲーム体験が深まる。収集戦略と使用タイミングの判断が重要。
+  description: Games featuring collectible components. The gaming experience is deepened by collecting and customizing elements such as cards and miniatures. Collection strategy and timing judgment for use are important.
+Arabian:
+  complexity: 2.5
+  strategic_value: 3.0
+  interaction_value: 3.0
+  description: Games themed around Arabian culture and history. Features elements of trade, storytelling, and desert exploration with strategic elements inspired by the region's rich heritage.

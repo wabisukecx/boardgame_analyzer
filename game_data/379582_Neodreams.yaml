@@ -1,0 +1,65 @@
+type: boardgame
+name: Neodreams
+alternate_names:
+- Корпорация "Сны"
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/8wORxZg5aGiCUAM4cXyErA__thumb/img/1cAWo0_hzw0ZOj7DPAYiEUq4Ng0=/fit-in/200x150/filters:strip_icc()/pic7927860.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '12'
+community_best_players: '2'
+community_recommended_players: 3, 4
+community_min_age: '8'
+description: In the near future, an astonishing new technology has been developed
+  that allows the sleeping mind and machine to be connected. It is called Oneiroshunt,
+  and with it, the business of crafting and selling dreams has become a thriving industry.
+  For the right price, clients can learn new skills, overcome deep-seated fears, and
+  travel to the most extraordinary locations all from the comfort of their beds.&#10;&#10;In
+  Neodreams, each player is the CEO of a company that is developing and using this
+  technology, and they must expand fast to keep up with the competition. In this economic
+  strategy game, players will deploy their Oneironauts to gather resources, craft
+  stunning experiences, improve dreamscapes, and gain clients. The player who accumulates
+  the most wealth once enough dreams have been created will dominate the Oneiroshunt
+  industry for years to come!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+mechanics:
+- name: Deck, Bag, and Pool Building
+- name: Open Drafting
+- name: Worker Placement
+categories:
+- name: Science Fiction
+designers:
+- name: Ivan Lashin
+publishers:
+- name: Open Borders Studio
+- name: Hobby World
+average_rating: '7.12006'
+weight: '2.625'
+ranks:
+- type: boardgame
+  rank: '8715'
+learning_analysis:
+  initial_barrier: 2.91
+  strategic_depth: 3.52
+  replayability: 2.5
+  mechanics_complexity: 3.6
+  mechanics_count: 3
+  bgg_weight: 2.625
+  bgg_rank: 8715
+  year_published: 2024
+  category_complexity: 3.4
+  rank_complexity: 2.15
+  strategic_depth_description: 中〜高の深さ
+  learning_curve_type: gentle_then_moderate
+  decision_points: 4.819999999999999
+  interaction_complexity: 3.0
+  rules_complexity: 3.733
+  player_types:
+  - casual
+  - experienced
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: medium

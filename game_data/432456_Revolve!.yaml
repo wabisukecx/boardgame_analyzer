@@ -36,11 +36,11 @@ designers:
 - name: Kei Kajino (梶野 桂)
 publishers:
 - name: One More Game!
-average_rating: '7.49828'
+average_rating: '7.46719'
 weight: '1.4'
 ranks:
 - type: boardgame
-  rank: '12409'
+  rank: '11948'
 learning_analysis:
   initial_barrier: 2.13
   strategic_depth: 2.06
@@ -48,7 +48,7 @@ learning_analysis:
   mechanics_complexity: 2.8
   mechanics_count: 2
   bgg_weight: 1.4
-  bgg_rank: 12409
+  bgg_rank: 11948
   year_published: 2024
   category_complexity: 2.3
   rank_complexity: 2.12

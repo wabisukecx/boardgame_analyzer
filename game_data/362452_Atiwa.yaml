@@ -1,0 +1,93 @@
+type: boardgame
+name: Atiwa
+alternate_names:
+- アティワ
+- 蝙蝠農家
+japanese_name: アティワ
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/9S_Ci89ADHj7sZ4SwHY19w__thumb/img/7d-psHf2a29G1LdGGdBRzqFt5aQ=/fit-in/200x150/filters:strip_icc()/pic7245009.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
+community_best_players: 3, 4
+community_recommended_players: 1, 2
+community_min_age: '12'
+description: 'The Atiwa Range is a region of southeastern Ghana in Africa consisting
+  of steep-sided hills with rather flat summits. A large portion of the range comprises
+  an evergreen forest reserve, which is home to many endangered species. However,
+  logging and hunting for bushmeat, as well as mining for gold and bauxite, are putting
+  the reserve under a lot of pressure.&#10;&#10;Meanwhile, in the nearby town of Kibi,
+  the mayor is causing a stir by giving shelter to a large number of fruit bats in
+  his own garden. This man has recognized the great value the animals have in deforested
+  regions of our planet: Fruit bats sleep during the day and take off at sunset in
+  search of food, looking for suitable fruit trees up to sixty miles away. They excrete
+  the seeds of the consumed fruit, disseminating them across large areas as they fly
+  home. A single colony of 150,000 fruit bats can reforest an area of up to two thousand
+  acres a year.&#10;&#10;Just like that mayor, in Atiwa, you know that fruit bats
+  &mdash; once scorned and hunted as mere fruit thieves &mdash; are in fact incredibly
+  useful animals, spreading seeds over large areas of the country. By doing so, they
+  help to reforest fallow land and, in the medium term, improve harvests. This realization
+  has led to a symbiotic co-operation between fruit bats and fruit farmers. The animals
+  are kept as &quot;pets&quot; to increase the size of fruit farms more quickly. Tall
+  trees are left as roosts, providing shelter for them rather than hunting them for
+  their scant meat. However, if you have a lot of fruit bats, you need a lot of space...&#10;&#10;In
+  the game, you will develop a small community near the Atiwa Range, creating housing
+  for new families and sharing your newly gained knowledge on the negative effects
+  of mining and the importance that the fruit bats have for the environment. You must
+  acquire new land, manage your animals and resources, and make your community prosper.
+  The player who best balances the needs of their community and the environment wins.&#10;&#10;'
+mechanics:
+- name: Automatic Resource Growth
+- name: End Game Bonuses
+- name: Modular Board
+- name: 'Turn Order: Claim Action'
+- name: Worker Placement
+categories:
+- name: Animals
+- name: Economic
+- name: Educational
+- name: Environmental
+- name: Farming
+- name: Territory Building
+designers:
+- name: Uwe Rosenberg
+publishers:
+- name: Lookout Games
+- name: 999 Games
+- name: GoKids 玩樂小子
+- name: Hobby Japan
+- name: Rebel Sp. z o.o.
+average_rating: '7.46866'
+weight: '2.7328'
+ranks:
+- type: boardgame
+  rank: '1069'
+- type: strategygames
+  rank: '573'
+learning_analysis:
+  initial_barrier: 2.78
+  strategic_depth: 3.42
+  replayability: 3.2
+  mechanics_complexity: 3.08
+  mechanics_count: 5
+  bgg_weight: 2.7328
+  bgg_rank: 1069
+  year_published: 2022
+  category_complexity: 3.83
+  rank_complexity: 2.97
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 4.433333333333334
+  interaction_complexity: 3.2142800000000014
+  rules_complexity: 3.7185600000000005
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

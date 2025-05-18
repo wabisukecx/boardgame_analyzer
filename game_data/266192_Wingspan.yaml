@@ -1,0 +1,124 @@
+type: boardgame
+name: Wingspan
+alternate_names:
+- Fesztáv
+- Flügelschlag
+- Na křídlech
+- Na skrzydłach
+- Spārnotie
+- Sparnuotieji
+- Tiivulised
+- Wingspan srpsko izdanje
+- 'Wingspan: Lumea păsărilor'
+- Άνοιγμα φτερών
+- Крила
+- Криле
+- Крылья
+- ปีกปักษา
+- ウイングスパン
+- 展翅翱翔
+- 윙스팬
+japanese_name: ウイングスパン
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__thumb/img/VNToqgS2-pOGU6MuvIkMPKn_y-s=/fit-in/200x150/filters:strip_icc()/pic4458123.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '70'
+publisher_min_age: '10'
+community_best_players: '3'
+community_recommended_players: 1, 2, 4
+community_min_age: '10'
+description: 'Wingspan is&nbsp;a competitive, medium-weight, card-driven, engine-building
+  board game from Stonemaier Games. It''s designed by Elizabeth Hargrave and features
+  180 birds illustrated by Natalia Rojas and Ana Maria Martinez.&#10;&#10;You are
+  bird enthusiasts&mdash;researchers, bird watchers, ornithologists, and collectors&mdash;seeking
+  to discover and attract the best birds to your network of wildlife preserves. Each
+  bird extends a chain of powerful combinations in one of your habitats (actions).
+  These habitats  focus on several key aspects of growth:&#10;&#10;&#10;     Gain
+  food tokens via custom dice in a birdfeeder dice tower&#10;     Lay eggs using egg
+  miniatures in a variety of colors&#10;     Draw from hundreds of unique bird cards
+  and play them&#10;&#10;&#10;The winner is the player with the most points after
+  4 rounds.&#10;&#10;&mdash;description from the publisher&#10;&#10;From the 7th printing
+  on, the base game box includes Wingspan: Swift-Start Promo Pack.&#10;&#10;'
+mechanics:
+- name: Action Queue
+- name: Dice Rolling
+- name: End Game Bonuses
+- name: Hand Management
+- name: Once-Per-Game Abilities
+- name: Open Drafting
+- name: Set Collection
+- name: Solo / Solitaire Game
+- name: 'Turn Order: Progressive'
+categories:
+- name: Animals
+- name: Card Game
+- name: Educational
+designers:
+- name: Elizabeth Hargrave
+publishers:
+- name: Stonemaier Games
+- name: 999 Games
+- name: Angry Lion Games
+- name: Arclight Games
+- name: Asmodee
+- name: Automa Factory
+- name: Bluebird Games
+- name: Brain Games
+- name: Delta Vision Publishing
+- name: Divercentro
+- name: Feuerland Spiele
+- name: Ghenos Games
+- name: Green Elephant Games
+- name: Grok Games
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Lautapelit.fi
+- name: Lavka Games
+- name: Ludofy Creative
+- name: Maldito Games
+- name: Matagot
+- name: MINDOK
+- name: MIPL
+- name: NeoTroy Games
+- name: Rebel Sp. z o.o.
+- name: Regatul Jocurilor
+- name: Siam Board Games
+- name: Surfin' Meeple China
+- name: Ігромаг
+average_rating: '8.02035'
+weight: '2.4708'
+ranks:
+- type: boardgame
+  rank: '33'
+- type: strategygames
+  rank: '45'
+- type: familygames
+  rank: '3'
+learning_analysis:
+  initial_barrier: 2.95
+  strategic_depth: 3.04
+  replayability: 3.78
+  mechanics_complexity: 2.72
+  mechanics_count: 9
+  bgg_weight: 2.4708
+  bgg_rank: 33
+  year_published: 2019
+  category_complexity: 2.24
+  rank_complexity: 2.94
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 3.980000000000001
+  interaction_complexity: 2.874666666666669
+  rules_complexity: 3.2108266666666667
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: short

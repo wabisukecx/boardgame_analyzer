@@ -39,11 +39,11 @@ publishers:
 - name: Studio H
 - name: Arclight Games
 - name: Evrikus
-average_rating: '7.00516'
+average_rating: '7.00514'
 weight: '1.875'
 ranks:
 - type: boardgame
-  rank: '5957'
+  rank: '5943'
 learning_analysis:
   initial_barrier: 2.11
   strategic_depth: 2.63
@@ -51,7 +51,7 @@ learning_analysis:
   mechanics_complexity: 2.6
   mechanics_count: 3
   bgg_weight: 1.875
-  bgg_rank: 5957
+  bgg_rank: 5943
   year_published: 2022
   category_complexity: 2.15
   rank_complexity: 2.18

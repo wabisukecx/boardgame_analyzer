@@ -30,11 +30,11 @@ publishers:
 - name: HeidelBÄR Games
 - name: Geekach Games
 - name: Play Plus
-average_rating: '6.17096'
+average_rating: '6.17202'
 weight: '1.6'
 ranks:
 - type: boardgame
-  rank: '14714'
+  rank: '14617'
 learning_analysis:
   initial_barrier: 2.11
   strategic_depth: 2.66
@@ -42,7 +42,7 @@ learning_analysis:
   mechanics_complexity: 2.7
   mechanics_count: 3
   bgg_weight: 1.6
-  bgg_rank: 14714
+  bgg_rank: 14617
   year_published: 2022
   category_complexity: 2.3
   rank_complexity: 2.11

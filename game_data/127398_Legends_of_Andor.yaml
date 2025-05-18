@@ -1,0 +1,108 @@
+type: boardgame
+name: Legends of Andor
+alternate_names:
+- Andor
+- Andor legendái
+- 'Andor: dobrodružné legendy'
+- De Legenden van Andor
+- Die Legenden von Andor
+- Legendy krainy Andor
+- Le Leggende di Andor
+- As Lendas de Andor
+- Las Leyendas de Andor
+- Θρύλοι της Άντορ
+- Андор
+- Легендите на Андор
+- アンドールの伝説
+- 안도르의 전설
+japanese_name: アンドールの伝説
+year_published: '2012'
+thumbnail_url: https://cf.geekdo-images.com/IO8_BYKeofnWy8DIjo2RRg__thumb/img/pMbV-KGyO3D9U6hnBzNRfylZvto=/fit-in/200x150/filters:strip_icc()/pic2606106.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '90'
+publisher_min_age: '10'
+community_best_players: '4'
+community_recommended_players: 1, 2, 3
+community_min_age: '8'
+description: Legends of Andor is a cooperative adventure board game for two to four
+  players in which a band of heroes must work together to defend a fantasy realm from
+  invading hordes. To secure Andor's borders, the heroes will embark on dangerous
+  quests over the course of five unique scenarios (as well as a final scenario created
+  by the players themselves). But as the clever game system keeps creatures on the
+  march toward the castle, the players must balance their priorities carefully.&#10;&#10;At
+  the heart of Legends of Andor is its unique narrative, the linked scenarios of which
+  tell an overarching story as the players successfully complete objectives. For each
+  scenario, or &quot;Legend&quot;, a legend deck conveys the plot of an ever-unfolding
+  tale...one in which the players are the protagonists. A wooden marker moves along
+  the board's legend track at key points during each scenario, triggering the draw
+  of a new legend card, the introduction of new game-altering effects, and the advancement
+  of the story's plot. In the end, the players must endeavor to guide the fate of
+  Andor through their heroic actions, bringing a happy ending to their epic fantasy
+  tale.&#10;&#10;Will their heroes roam the land completing quests in the name of
+  glory, or devote themselves to the defense of the realm? Uncover epic tales of glory
+  as you live the Legends of Andor!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+mechanics:
+- name: Action Points
+- name: Area Movement
+- name: Cooperative Game
+- name: Dice Rolling
+- name: Events
+- name: Scenario / Mission / Campaign Game
+- name: Variable Player Powers
+categories:
+- name: Adventure
+- name: Fantasy
+- name: Fighting
+- name: Puzzle
+designers:
+- name: Michael Menzel
+publishers:
+- name: KOSMOS
+- name: 999 Games
+- name: Albi
+- name: Arclight Games
+- name: Devir
+- name: Fantasmagoria
+- name: Fantasy Flight Games
+- name: Galakta
+- name: Giochi Uniti
+- name: IELLO
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Piatnik
+- name: Zvezda
+average_rating: '7.09648'
+weight: '2.7633'
+ranks:
+- type: boardgame
+  rank: '639'
+- type: thematic
+  rank: '194'
+learning_analysis:
+  initial_barrier: 3.24
+  strategic_depth: 3.34
+  replayability: 3.96
+  mechanics_complexity: 2.8
+  mechanics_count: 7
+  bgg_weight: 2.7633
+  bgg_rank: 639
+  year_published: 2012
+  category_complexity: 3.51
+  rank_complexity: 2.73
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 4.103999999999999
+  interaction_complexity: 3.562335714285714
+  rules_complexity: 3.3393266666666666
+  player_types:
+  - casual
+  - experienced
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

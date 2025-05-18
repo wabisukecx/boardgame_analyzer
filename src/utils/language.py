@@ -166,8 +166,8 @@ def get_game_filename(game_data: Dict[str, Any], game_id: str = None) -> str:
         str: Game name for filename
     """
     # Filename should be consistent regardless of language
-    # Use Japanese name if available, otherwise use English name
-    game_name = game_data.get('japanese_name', '') or game_data.get('name', '名称不明')
+    # Use English name if available, otherwise use Japanese name
+    game_name = game_data.get('name', '') or game_data.get('japanese_name', '') or '名称不明'
     
     # Convert full-width spaces to half-width spaces
     game_name = game_name.replace('　', ' ')

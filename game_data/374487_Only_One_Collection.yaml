@@ -1,0 +1,63 @@
+type: boardgame
+name: Only One Collection
+alternate_names:
+- オンリーワンコレクション
+- 無雙魔藥
+japanese_name: オンリーワンコレクション
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/4W0Iv6z5yEr6WjBLcX_8AQ__thumb/img/TpSQNeAEkNLgMP3rPxX3h3GqWP0=/fit-in/200x150/filters:strip_icc()/pic7191758.png
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '10'
+community_best_players: '3'
+community_recommended_players: 2, 4
+description: In Only One Collection, players are collecting cards hoping to have the
+  most of each type, and the player on their right to have the second most!&#10;&#10;On
+  their turn a player can either add a card from the deck to a set on the table or
+  take a set.  A player cannot add a duplicate number to a set.&#10;&#10;The game
+  ends when a certain card is revealed in the deck.  Then, the player who has the
+  most cards of each number earns 1 point and then earns 1 point per card of those
+  numbers held by the player on their right.&#10;&#10;The person with the most points
+  wins.&#10;&#10;
+mechanics:
+- name: Push Your Luck
+- name: Set Collection
+categories:
+- name: Card Game
+designers:
+- name: Muneyuki Yokouchi (横内宗幸)
+publishers:
+- name: Ayatsurare Ningyoukan
+- name: JJ Board game
+- name: Ninja Star Games
+average_rating: '6.79412'
+weight: '2'
+ranks:
+- type: boardgame
+  rank: '14379'
+learning_analysis:
+  initial_barrier: 1.87
+  strategic_depth: 2.41
+  replayability: 2.3
+  mechanics_complexity: 2.05
+  mechanics_count: 2
+  bgg_weight: 2.0
+  bgg_rank: 14379
+  year_published: 2022
+  category_complexity: 2.3
+  rank_complexity: 2.11
+  strategic_depth_description: 低め（限られた戦略オプション）
+  learning_curve_type: gentle
+  decision_points: 3.015
+  interaction_complexity: 2.889
+  rules_complexity: 2.1426666666666665
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: short

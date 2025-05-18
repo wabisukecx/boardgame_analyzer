@@ -1,0 +1,95 @@
+type: boardgame
+name: 'Cat in the Box: Deluxe Edition'
+alternate_names:
+- Cat in the Box
+- Gato na Caixa
+- Kočka v krabici
+- Schrödinger macskája
+- Кіт у коробці
+- Кот в коробке
+- キャット・イン・ザ・ボックス
+- 盒中貓
+- 슈뢰딩거의 고양이
+japanese_name: キャット・イン・ザ・ボックス
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/M1gT_9LjNqUzAx3RAqdGRQ__thumb/img/3I1JU_hP5YtIg6RzcJePmmNOWAQ=/fit-in/200x150/filters:strip_icc()/pic6731829.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '40'
+publisher_min_age: '13'
+community_best_players: '4'
+community_recommended_players: 3, 5
+community_min_age: '10'
+description: 'Cat in the Box: Deluxe Edition is the quintessential quantum trick-taking
+  card game for 2 - 5 cool cats, where your card&rsquo;s color isn&rsquo;t defined
+  until you play it! Hypothesize how many tricks you will win, and record your bid.
+  Place tokens on the community research board as you play your hand, and connect
+  large groups of tokens to score even more points. Plan your tricks carefully as
+  you cannot claim the color of a card with the same number that has already been
+  declared. Doing so would be pawsitively catastrophic as you have just created a
+  paradox!&#10;&#10;New Deluxe Edition features:&#10;&#10;    Supports 2-5 players&#10;    High
+  quality geekbits-style plastic tokens&#10;    Recessed player boards&#10;    Recessed
+  Center Research board&#10;    Score pad&#10;    And a custom plastic insert to keep
+  Cat in the Box: Deluxe Edition tidy!&#10;&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+mechanics:
+- name: Enclosure
+- name: Hand Management
+- name: Predictive Bid
+- name: Trick-taking
+categories:
+- name: Animals
+- name: Card Game
+designers:
+- name: Muneyuki Yokouchi (横内宗幸)
+publishers:
+- name: Hobby Japan
+- name: Bézier Games
+- name: Board Game Rookie
+- name: Broadway Toys LTD
+- name: Choo Choo Games
+- name: Divercentro
+- name: Fun Games Shop
+- name: Galápagos Jogos
+- name: Gém Klub Kft.
+- name: Geronimo Games
+- name: Korea Boardgames
+- name: Lucky Duck Games
+- name: Maldito Games
+- name: Matagot
+- name: Pegasus Spiele
+- name: Siam Board Games
+- name: TLAMA games
+- name: 盒拍工作室 Hepa Studio
+average_rating: '7.4855'
+weight: '2.0452'
+ranks:
+- type: boardgame
+  rank: '351'
+- type: familygames
+  rank: '71'
+learning_analysis:
+  initial_barrier: 2.39
+  strategic_depth: 2.85
+  replayability: 3.0
+  mechanics_complexity: 3.07
+  mechanics_count: 4
+  bgg_weight: 2.0452
+  bgg_rank: 351
+  year_published: 2022
+  category_complexity: 2.15
+  rank_complexity: 2.33
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 3.8773000000000004
+  interaction_complexity: 3.267054999999999
+  rules_complexity: 3.4587066666666666
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 0.95
+  mastery_time: short

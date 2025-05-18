@@ -43,11 +43,11 @@ publishers:
 - name: White Goblin Games
 - name: Zacatrus
 - name: Zvezda
-average_rating: '6.59775'
+average_rating: '6.59927'
 weight: '1.25'
 ranks:
 - type: boardgame
-  rank: '8219'
+  rank: '8244'
 learning_analysis:
   initial_barrier: 1.72
   strategic_depth: 1.76
@@ -55,7 +55,7 @@ learning_analysis:
   mechanics_complexity: 2.05
   mechanics_count: 2
   bgg_weight: 1.25
-  bgg_rank: 8219
+  bgg_rank: 8244
   year_published: 2020
   category_complexity: 2.3
   rank_complexity: 2.16

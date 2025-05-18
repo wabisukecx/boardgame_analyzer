@@ -43,21 +43,21 @@ publishers:
 - name: MeepleBR
 - name: MS Edizioni
 - name: Portal Games
-average_rating: '7.0816'
-weight: '2.4525'
+average_rating: '7.08154'
+weight: '2.4508'
 ranks:
 - type: boardgame
-  rank: '759'
+  rank: '761'
 - type: strategygames
-  rank: '511'
+  rank: '510'
 learning_analysis:
   initial_barrier: 2.37
   strategic_depth: 2.82
   replayability: 2.94
   mechanics_complexity: 2.72
   mechanics_count: 5
-  bgg_weight: 2.4525
-  bgg_rank: 759
+  bgg_weight: 2.4508
+  bgg_rank: 761
   year_published: 2020
   category_complexity: 2.3
   rank_complexity: 3.01
@@ -65,7 +65,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.775433333333333
   interaction_complexity: 3.114598800000001
-  rules_complexity: 3.2051666666666665
+  rules_complexity: 3.2048266666666665
   player_types:
   - beginner
   - casual

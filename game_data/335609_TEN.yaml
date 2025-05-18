@@ -41,8 +41,8 @@ publishers:
 - name: Popcorn Games
 - name: Trefl
 - name: White Goblin Games
-average_rating: '7.02968'
-weight: '1.4324'
+average_rating: '7.02881'
+weight: '1.44'
 ranks:
 - type: boardgame
   rank: '1505'
@@ -54,7 +54,7 @@ learning_analysis:
   replayability: 2.5
   mechanics_complexity: 2.68
   mechanics_count: 4
-  bgg_weight: 1.4324
+  bgg_weight: 1.44
   bgg_rank: 1505
   year_published: 2021
   category_complexity: 2.3
@@ -63,7 +63,7 @@ learning_analysis:
   learning_curve_type: gentle
   decision_points: 3.7627
   interaction_complexity: 3.477155
-  rules_complexity: 2.8001466666666666
+  rules_complexity: 2.8016666666666663
   player_types:
   - beginner
   - casual

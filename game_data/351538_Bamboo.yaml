@@ -60,13 +60,13 @@ publishers:
 - name: Hobby World
 - name: IELLO
 - name: Skellig Games
-average_rating: '7.12673'
+average_rating: '7.12235'
 weight: '2.9022'
 ranks:
 - type: boardgame
   rank: '2096'
 - type: strategygames
-  rank: '1061'
+  rank: '1060'
 learning_analysis:
   initial_barrier: 2.84
   strategic_depth: 3.11

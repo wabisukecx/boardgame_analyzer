@@ -1,0 +1,64 @@
+type: boardgame
+name: Finca
+alternate_names:
+- 핀카
+year_published: '2018'
+thumbnail_url: https://cf.geekdo-images.com/Wv3asVffJEVjqwFyPiOvXA__thumb/img/fnm1WQ8UG40hv-3UnLZQJ6SM7wA=/fit-in/200x150/filters:strip_icc()/pic7551635.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '45'
+publisher_min_age: '10'
+community_best_players: 2, 3
+community_recommended_players: '4'
+community_min_age: '8'
+description: 'The players take the roles of Mallorcan farmers, who strive to harvest
+  as many of the island&lsquo;s tropical fruits: &#239;&#172;&#129;gs, almonds, olives,
+  oranges, grapes, and lemons, as possible. The players deliver their harvested fruits
+  to the island communities, which have constantly changing requirements during the
+  course of the game. For these deliveries, the players receive victory points. In
+  the end, the player with the most victory points is the winner.&#10;&#10;Note: Finca:
+  El Razul is included in the box with versions listed under this entry.&#10;&#10;'
+mechanics:
+- name: Contracts
+- name: Mancala
+- name: Once-Per-Game Abilities
+- name: Rondel
+- name: Set Collection
+categories:
+- name: Economic
+- name: Farming
+designers:
+- name: Wolfgang Sentker
+- name: Ralf zur Linde
+publishers:
+- name: franjos Spieleverlag
+- name: Devil Dice Games
+average_rating: '7.39005'
+weight: '2.1379'
+ranks: []
+learning_analysis:
+  initial_barrier: 2.51
+  strategic_depth: 3.09
+  replayability: 2.84
+  mechanics_complexity: 2.72
+  mechanics_count: 5
+  bgg_weight: 2.1379
+  bgg_rank: null
+  year_published: 2018
+  category_complexity: 4.04
+  rank_complexity: 3.0
+  strategic_depth_description: 中程度の深さ
+  learning_curve_type: gentle
+  decision_points: 3.7866666666666666
+  interaction_complexity: 3.825
+  rules_complexity: 3.142246666666667
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: short

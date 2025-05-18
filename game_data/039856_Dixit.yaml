@@ -1,0 +1,105 @@
+type: boardgame
+name: Dixit
+alternate_names:
+- Dixit ديكست
+- Диксит
+- Діксіт
+- ディクシット
+- 妙不可言
+- 妙語說書人
+- 画物语
+- 言不達意
+- 隻字片語
+- 隻言片語
+- 딕싯
+japanese_name: ディクシット
+year_published: '2008'
+thumbnail_url: https://cf.geekdo-images.com/J0PlHArkZDJ57H-brXW2Fw__thumb/img/QVwPXskFikQwBQlrdLJBAiRGgdg=/fit-in/200x150/filters:strip_icc()/pic6738336.jpg
+publisher_min_players: '3'
+publisher_max_players: '8'
+playing_time: '30'
+publisher_min_age: '8'
+community_best_players: 5, 6
+community_recommended_players: 4, 8
+community_min_age: '8'
+description: Each turn in Dixit, one player is the storyteller who chooses one of
+  the six cards in their hand, then expresses an idea, with sounds or words, that
+  is reflected on that card's image, and places the card face down on the playing
+  surface. Each other player then selects the card that best matches that expression,
+  and passes the selected card to the storyteller, face down.&#10;&#10;The storyteller
+  shuffles all the cards together, then turns them over to reveal them. Each player
+  other than the storyteller then secretly guesses which card belongs to the storyteller.
+  If nobody or everybody guesses the correct card, the storyteller scores 0 points,
+  and each other player scores 2 points. Otherwise, the storyteller and whoever found
+  the correct answer score 3 points. Additionally, the non-storyteller players score
+  1 point for every vote received by their card.&#10;&#10;The game ends when the deck
+  is empty or if a player has scored at least 30 points. In either case, the player
+  with the most points wins.&#10;&#10;The Dixit base game and each expansion contain
+  84 cards, and the cards can be mixed together as desired.&#10;&#10;
+mechanics:
+- name: Race
+- name: Singing
+- name: Storytelling
+- name: Targeted Clues
+- name: Voting
+categories:
+- name: Card Game
+- name: Humor
+- name: Party Game
+designers:
+- name: Jean-Louis Roubira
+publishers:
+- name: Libellud
+- name: ADC Blackfire Entertainment
+- name: Anne
+- name: Asmodee
+- name: Asterion Press
+- name: Boardgame Space
+- name: Galápagos Jogos
+- name: Gém Klub Kft.
+- name: hobbity.eu
+- name: Hobby Japan
+- name: KADABRA
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Lautapelit.fi
+- name: Maldón
+- name: Morapiaf
+- name: Nordic Games GmbH
+- name: Paladium Games
+- name: Rebel Sp. z o.o.
+- name: Swan Panasia Co., Ltd.
+- name: Ігромаг
+average_rating: '7.19101'
+weight: '1.1935'
+ranks:
+- type: boardgame
+  rank: '404'
+- type: partygames
+  rank: '28'
+learning_analysis:
+  initial_barrier: 1.86
+  strategic_depth: 2.56
+  replayability: 3.42
+  mechanics_complexity: 2.4
+  mechanics_count: 5
+  bgg_weight: 1.1935
+  bgg_rank: 404
+  year_published: 2008
+  category_complexity: 2.09
+  rank_complexity: 2.14
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 3.2406333333333333
+  interaction_complexity: 4.145273000000001
+  rules_complexity: 2.532033333333333
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.2
+    complexity_factor: 0.95
+  mastery_time: short

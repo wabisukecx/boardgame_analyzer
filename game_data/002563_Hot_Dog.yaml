@@ -54,11 +54,11 @@ designers:
 publishers:
 - name: AMIGO
 - name: リゴレ (rigoler)
-average_rating: '5.76063'
+average_rating: '5.75469'
 weight: '1.2308'
 ranks:
 - type: boardgame
-  rank: '20601'
+  rank: '20699'
 learning_analysis:
   initial_barrier: 2.14
   strategic_depth: 2.66
@@ -66,7 +66,7 @@ learning_analysis:
   mechanics_complexity: 2.9
   mechanics_count: 1
   bgg_weight: 1.2308
-  bgg_rank: 20601
+  bgg_rank: 20699
   year_published: 1996
   category_complexity: 2.3
   rank_complexity: 2.08

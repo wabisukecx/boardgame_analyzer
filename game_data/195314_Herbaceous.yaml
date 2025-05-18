@@ -49,13 +49,13 @@ publishers:
 - name: Maldito Games
 - name: Matagot
 - name: Quality Beast
-average_rating: '7.00373'
+average_rating: '7.00356'
 weight: '1.2036'
 ranks:
 - type: boardgame
-  rank: '1123'
+  rank: '1122'
 - type: familygames
-  rank: '330'
+  rank: '332'
 learning_analysis:
   initial_barrier: 1.97
   strategic_depth: 2.19
@@ -63,7 +63,7 @@ learning_analysis:
   mechanics_complexity: 2.53
   mechanics_count: 3
   bgg_weight: 1.2036
-  bgg_rank: 1123
+  bgg_rank: 1122
   year_published: 2017
   category_complexity: 2.36
   rank_complexity: 2.21

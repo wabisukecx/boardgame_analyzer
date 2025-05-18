@@ -93,8 +93,8 @@ publishers:
 - name: Planeta Igor
 - name: Playfun Games
 - name: Surfin' Meeple China
-average_rating: '8.12103'
-weight: '3.4529'
+average_rating: '8.1205'
+weight: '3.4523'
 ranks:
 - type: boardgame
   rank: '19'
@@ -106,7 +106,7 @@ learning_analysis:
   replayability: 4.41
   mechanics_complexity: 3.16
   mechanics_count: 17
-  bgg_weight: 3.4529
+  bgg_weight: 3.4523
   bgg_rank: 19
   year_published: 2016
   category_complexity: 4.23
@@ -115,7 +115,7 @@ learning_analysis:
   learning_curve_type: moderate
   decision_points: 4.675999999999999
   interaction_complexity: 3.9836176470588214
-  rules_complexity: 4.066854509803921
+  rules_complexity: 4.066734509803921
   player_types:
   - casual
   - experienced

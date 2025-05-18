@@ -1,0 +1,210 @@
+type: boardgame
+name: CATAN
+alternate_names:
+- Catan
+- Catan (Колонизаторы)
+- Catan telepesei
+- 'Catan: Das Spiel'
+- 'Catan: Die Bordspel'
+- 'Catan: El Juego'
+- 'Catan: Gra planszowa'
+- 'Catan: Il Gioco'
+- 'Catan: Landnemarnir'
+- 'Catan: O Jogo'
+- 'Catan: Osnovna igra'
+- 'Catan: Základní hra'
+- Catane
+- Catanin Uudisasukkaat
+- I Coloni di Catan
+- I Coloni di Katan
+- Coloniștii din Catan
+- Colonizadores de Catan
+- Los Colonos de Catán
+- Les Colons de Catane
+- Les Colons de Katane
+- Os Descobridores de Catan
+- Los Descubridores de Catán
+- Els Colons de Catan
+- Katan
+- Katan no Kaitakusya
+- Katanas ieceïotâji
+- Katanas Ieceļotāji
+- Katani Asustajad
+- Katano salos naujakuriai
+- Katano Salos Naujakuriai
+- De Kolonisten van Catan
+- Naseljenci otoka Catan
+- Naseljenici ostrva Katan
+- Naseljenici ostrva Katan / Насељеници острва Катан
+- Naseljenici Otoka Catan
+- Die Ontdekkers van Catan
+- Osadníci z Katanu
+- Osadnicy z Catanu
+- The Settlers
+- Settlers fra Catan
+- The Settlers fra Catan
+- Settlers från Catan
+- The Settlers från Catan
+- The Settlers of Catan
+- Die Siedler von Catan
+- World's Smallest CATAN
+- Οι Άποικοι του Κατάν
+- Заселниците на Катан
+- Катан
+- Колонизаторы
+- המתיישבים של קטאן
+- นักบุกเบิกแห่ง Catan
+- カタンの開拓者
+- カタンの開拓者たち
+- カタンの開拓者たち スタンダード版
+- '卡坦 : 基礎'
+- 卡坦岛
+- 卡坦島
+- 카탄
+- '카탄: 보드게임의 제왕'
+- 카탄의 개척자
+japanese_name: カタンの開拓者
+year_published: '1995'
+thumbnail_url: https://cf.geekdo-images.com/PyUol9QxBnZQCJqZI6bmSA__thumb/img/virV2Bm82Dql7gh-LZScBwqByik=/fit-in/200x150/filters:strip_icc()/pic8632666.png
+publisher_min_players: '3'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '10'
+community_best_players: '4'
+community_recommended_players: '3'
+community_min_age: '8'
+description: 'In CATAN (formerly The Settlers of Catan), players try to be the dominant
+  force on the island of Catan by building settlements, cities and roads. On each
+  turn dice are rolled to determine which resources the island produces. Players build
+  structures by ''spending'' resources (sheep, wheat, wood, brick and ore) which are
+  represented by the relevant resource cards; each land type, with the exception of
+  the unproductive desert, produces a specific resource: hills produce brick, forests
+  produce wood, mountains produce ore, fields produce wheat, and pastures produce
+  sheep.&#10;&#10;Set-up includes randomly placing large hexagonal tiles (each depicting
+  one of the five resource-producing terrain types--or the desert) in a honeycomb
+  shape and surrounding them with water tiles, some of which contain ports of exchange.
+  A number disk, the value of which will correspond to the roll of two 6-sided dice,
+  are placed on each terrain tile. Each player is given two settlements (think: houses)
+  and roads (sticks) which are placed on intersections and borders of the terrain
+  tiles. Players collect a hand of resource cards based on which terrain tiles their
+  last-placed settlement is adjacent to. A robber pawn is placed on the desert tile.&#10;&#10;A
+  turn consists of rolling the dice, collecting resource cards based on this dice
+  roll and the position of settlements (or upgraded cities&mdash;think: hotels), turning
+  in resource cards (if possible and desired) for improvements, trading cards at a
+  port, possibly playing a development card, or trading resource cards with other
+  players. If the dice roll is a 7, the active player moves the robber to a new terrain
+  tile and steals a resource card from another player who has a settlement adjacent
+  to that tile.&#10;&#10;Points are accumulated by building settlements and cities,
+  having the longest road or the largest army (from some of the development cards),
+  and gathering certain development cards that simply award victory points. When a
+  player has gathered 10 points (some of which may be held in secret), s/he announces
+  this and claims the win.&#10;&#10;'
+mechanics:
+- name: Chaining
+- name: Dice Rolling
+- name: Hexagon Grid
+- name: Income
+- name: Modular Board
+- name: Negotiation
+- name: Network and Route Building
+- name: Race
+- name: Random Production
+- name: Take That
+- name: Trading
+- name: Variable Set-up
+categories:
+- name: Economic
+- name: Negotiation
+designers:
+- name: Klaus Teuber
+publishers:
+- name: KOSMOS
+- name: 64 Ounce Games
+- name: 999 Games
+- name: Albi
+- name: Asmodee
+- name: Astrel Games
+- name: BGA Plus
+- name: Brain Games
+- name: Broadway Toys LTD
+- name: Capcom Co., Ltd.
+- name: Catan Studio
+- name: Competo / Marektoy
+- name: danspil
+- name: Descartes Editeur
+- name: Devir
+- name: Dexy Co
+- name: Enigma (Bergsala Enigma)
+- name: Eurogames
+- name: Filosofia Éditions
+- name: Galakta
+- name: Giochi Uniti
+- name: GP Games
+- name: Grow Jogos e Brinquedos
+- name: HaKubia
+- name: Hanayama
+- name: Hobby World
+- name: Ideal Board Games
+- name: Igroljub
+- name: IntelliGames.BG
+- name: Ísöld ehf.
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: L&M Games
+- name: Laser plus
+- name: Lautapelit.fi
+- name: Logojogos
+- name: Mayfair Games
+- name: MIPL
+- name: NeoTroy Games
+- name: Ninive Games
+- name: Paper Iyagi
+- name: Piatnik
+- name: Rozum
+- name: Smart Ltd
+- name: Spilbræt.dk
+- name: Stupor Mundi
+- name: Super Impulse
+- name: SuperHeated Neurons
+- name: Swan Panasia Co., Ltd.
+- name: Tilsit
+- name: Top Toys
+- name: TRY SOFT
+- name: Vennerød Forlag AS
+average_rating: '7.09319'
+weight: '2.2873'
+ranks:
+- type: boardgame
+  rank: '584'
+- type: strategygames
+  rank: '536'
+- type: familygames
+  rank: '206'
+learning_analysis:
+  initial_barrier: 3.11
+  strategic_depth: 3.29
+  replayability: 3.85
+  mechanics_complexity: 2.63
+  mechanics_count: 12
+  bgg_weight: 2.2873
+  bgg_rank: 584
+  year_published: 1995
+  category_complexity: 4.15
+  rank_complexity: 2.75
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 3.868
+  interaction_complexity: 4.2586
+  rules_complexity: 3.086626666666667
+  player_types:
+  - casual
+  - experienced
+  - replayer
+  - trend_follower
+  - classic_lover
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

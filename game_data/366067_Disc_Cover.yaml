@@ -38,13 +38,13 @@ publishers:
 - name: Lucky Duck Games
 - name: Mercurio
 - name: PaperGames (III)
-average_rating: '6.51894'
+average_rating: '6.522'
 weight: '1.1111'
 ranks:
 - type: boardgame
-  rank: '8819'
+  rank: '8766'
 - type: partygames
-  rank: '480'
+  rank: '477'
 learning_analysis:
   initial_barrier: 2.0
   strategic_depth: 2.51
@@ -52,7 +52,7 @@ learning_analysis:
   mechanics_complexity: 2.7
   mechanics_count: 2
   bgg_weight: 1.1111
-  bgg_rank: 8819
+  bgg_rank: 8766
   year_published: 2022
   category_complexity: 2.3
   rank_complexity: 1.85

@@ -1,0 +1,126 @@
+type: boardgame
+name: Citadels
+alternate_names:
+- Citadela
+- Citadela DeLuxe
+- Citadele
+- Citadella
+- Citadelles
+- Ciudadelas
+- Cytadela
+- Machiavelli
+- Machiavelli Deluxe
+- Цитадели
+- Цитадели Делюкс
+- Цитаделі
+- あやつり人形
+- 富饒之城
+- 荣耀之城
+- 시타델
+japanese_name: あやつり人形
+year_published: '2016'
+thumbnail_url: https://cf.geekdo-images.com/sHd0jkZZLDgixHjAXtn7kA__thumb/img/HB0Z5D7uwBjf1lCCPjMck-5VP9A=/fit-in/200x150/filters:strip_icc()/pic3119514.jpg
+publisher_min_players: '2'
+publisher_max_players: '8'
+playing_time: '60'
+publisher_min_age: '10'
+community_best_players: 5, 6
+community_recommended_players: 3, 4, 7
+community_min_age: '8'
+description: 'In Citadels, players take on new roles each round to represent characters
+  they hire in order to help them acquire gold and erect buildings. The game ends
+  at the close of a round in which a player erects their seventh building. Players
+  then tally their points, and the player with the highest score wins.&#10;&#10;Players
+  start the game with a number of building cards in their hand; buildings come in
+  five colors, with the purple buildings typically having a special ability and the
+  other colored buildings providing a benefit when you play particular characters.
+  At the start of each round, the player who was king the previous round discards
+  one of the eight character cards at random, chooses one, then passes the cards to
+  the next player, etc. until each player has secretly chosen a character. Each character
+  has a special ability, and the usefulness of any character depends upon your situation,
+  and that of your opponents. The characters then carry out their actions in numerical
+  order: the assassin eliminating another character for the round, the thief stealing
+  all gold from another character, the wizard swapping building cards with another
+  player, the warlord optionally destroys a building in play, and so on.&#10;&#10;On
+  a turn, a player earns two or more gold (or draws two building cards then discards
+  one), then optionally constructs one building (or up to three if playing the architect
+  this round). Buildings cost gold equal to the number of symbols on them, and each
+  building is worth a certain number of points. In addition to points from buildings,
+  at the end of the game a player scores bonus points for having eight buildings or
+  buildings of all five colors.&#10;&#10;The 2016 edition of Citadels includes twenty-seven
+  characters &mdash; eight from the original Citadels, ten from the Dark City expansion,
+  and nine new ones &mdash; along with thirty unique building districts, and the rulebook
+  includes six preset lists of characters and districts beyond the starter list, each
+  crafted to encourage a different style and intensity of gameplay.&#10;&#10;'
+mechanics:
+- name: Action Drafting
+- name: Closed Drafting
+- name: Income
+- name: Lose a Turn
+- name: Set Collection
+- name: Take That
+- name: 'Turn Order: Role Order'
+- name: Variable Player Powers
+- name: Variable Set-up
+categories:
+- name: Bluffing
+- name: Card Game
+- name: City Building
+- name: Medieval
+designers:
+- name: Bruno Faidutti
+publishers:
+- name: Windrider Games
+- name: 999 Games
+- name: Arclight Games
+- name: Asmodee
+- name: Delta Vision Publishing
+- name: Edge Entertainment
+- name: EDGE Studio
+- name: Fantasmagoria
+- name: Galakta
+- name: Galápagos Jogos
+- name: Hans im Glück
+- name: Hobby World
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: MINDOK
+- name: Rebel Sp. z o.o.
+- name: Swan Panasia Co., Ltd.
+- name: Z-Man Games
+- name: Ігромаг
+average_rating: '7.24394'
+weight: '2.0627'
+ranks:
+- type: boardgame
+  rank: '535'
+- type: familygames
+  rank: '143'
+learning_analysis:
+  initial_barrier: 2.85
+  strategic_depth: 3.1
+  replayability: 3.89
+  mechanics_complexity: 2.51
+  mechanics_count: 9
+  bgg_weight: 2.0627
+  bgg_rank: 535
+  year_published: 2016
+  category_complexity: 3.56
+  rank_complexity: 2.29
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 4.0200000000000005
+  interaction_complexity: 3.7118888888888906
+  rules_complexity: 2.9392066666666663
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: short

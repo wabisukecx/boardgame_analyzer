@@ -1,0 +1,89 @@
+type: boardgame
+name: Aquatica
+alternate_names:
+- Atlantes
+- Акватика
+- アクアティカ
+- 大洋之下
+- 아쿠아티카
+japanese_name: アクアティカ
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/_8WvjlAU1_Y0qhwTjXvbnA__thumb/img/8zjeyk9juPqsHIwuPt7wiZFia-M=/fit-in/200x150/filters:strip_icc()/pic5578646.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '12'
+community_best_players: '3'
+community_recommended_players: 2, 4
+community_min_age: '10'
+description: Aquatica  is a deep, but easy to learn family engine builder about underwater
+  kingdoms.&#10;&#10;In the game you will become one of the mighty ocean kings, struggling
+  to bring glory to his realm. To win the game, you need to capture and buy locations,
+  recruit new characters, and complete goals; each of these actions gives you victory
+  points at the end of the game. To do so, you need to play cards from your hand (each
+  with a unique set of actions) and combine them. Don't think it's simple! With a
+  good strategy during your turn, you can take up to ten actions in a row.&#10;&#10;You
+  will encounter plenty of mysterious ocean creatures and take them to your hand.
+  With their help you will explore the unknown locations and raise found resources
+  from the ocean depths to your kingdom. Mechanically this is represented with the
+  help of three-layered player board and the unique mechanism of card-rising.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+mechanics:
+- name: Action Retrieval
+- name: Deck, Bag, and Pool Building
+- name: Hand Management
+- name: Open Drafting
+- name: Slide / Push
+- name: Solo / Solitaire Game
+- name: Variable Player Powers
+categories:
+- name: Card Game
+- name: Fantasy
+- name: Nautical
+designers:
+- name: Ivan Tuzovsky
+publishers:
+- name: Cosmodrome Games
+- name: Arcane Wonders
+- name: BoardM Factory
+- name: Broadway Toys LTD
+- name: Cranio Creations
+- name: DICE TOWER ESSENTIALS
+- name: Frosted Games
+- name: Gigamic
+- name: Jumping Turtle Games
+- name: Portal Games
+- name: 数寄ゲームズ (Suki Games)
+average_rating: '7.36636'
+weight: '2.3034'
+ranks:
+- type: boardgame
+  rank: '569'
+- type: strategygames
+  rank: '362'
+learning_analysis:
+  initial_barrier: 3.35
+  strategic_depth: 3.18
+  replayability: 3.57
+  mechanics_complexity: 3.19
+  mechanics_count: 7
+  bgg_weight: 2.3034
+  bgg_rank: 569
+  year_published: 2019
+  category_complexity: 3.19
+  rank_complexity: 3.04
+  strategic_depth_description: 中程度（いくつかの戦略オプションあり）
+  learning_curve_type: gentle
+  decision_points: 4.223999999999998
+  interaction_complexity: 3.2191714285714292
+  rules_complexity: 3.727822857142857
+  player_types:
+  - casual
+  - experienced
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: short

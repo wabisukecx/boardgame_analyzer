@@ -1,0 +1,79 @@
+type: boardgame
+name: Snow Planner
+alternate_names:
+- スノープランナー
+- 雪山畫策
+japanese_name: スノープランナー
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/JOAZiJiHdk3qXsxgEnXfMA__thumb/img/U8TBf9npqlbsdFoc_9H4OCcT-K0=/fit-in/200x150/filters:strip_icc()/pic8366851.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
+community_best_players: 2, 4
+community_recommended_players: 1, 3
+description: Snow Planner is a dice-placement game for 1-4 players who each take the
+  role of managing an inn near snowy mountains. Players take turns placing a die on
+  the game board, and once all the dice are gone, the round ends.&#10;&#10;You will
+  invite guests to stay at your hotel, with them paying you at the end of a round
+  and ideally staying additional nights so that you don't have to find more guests.
+  By placing tiles on your board, you upgrade the hotel, increasing bonuses and earning
+  more income. Dice can also represent employees, who gain you resources with their
+  work time; additional dice can be earned, both permanent and part-time.&#10;&#10;Each
+  player starts with one of the talent cards, giving them unique powers during the
+  game. By using this power and their dice, players can fulfill goals and projects
+  or attract VIP guests.&#10;&#10;In the end, whoever earns the most points wins.&#10;&#10;
+mechanics:
+- name: Contracts
+- name: End Game Bonuses
+- name: Events
+- name: Hand Management
+- name: Pattern Building
+- name: Solo / Solitaire Game
+- name: 'Turn Order: Claim Action'
+- name: Variable Player Powers
+- name: Worker Placement
+- name: Worker Placement with Dice Workers
+categories:
+- name: Dice
+- name: Economic
+- name: Travel
+designers:
+- name: Akashi
+publishers:
+- name: 14games
+- name: JJ Board game
+- name: Mysterious Island Games
+- name: Soragame Studio
+average_rating: '7.53547'
+weight: '3.1429'
+ranks:
+- type: boardgame
+  rank: '8374'
+learning_analysis:
+  initial_barrier: 3.56
+  strategic_depth: 3.63
+  replayability: 3.3
+  mechanics_complexity: 3.36
+  mechanics_count: 10
+  bgg_weight: 3.1429
+  bgg_rank: 8374
+  year_published: 2023
+  category_complexity: 3.04
+  rank_complexity: 2.16
+  strategic_depth_description: 中〜高（多くの戦略が存在）
+  learning_curve_type: moderate
+  decision_points: 4.715
+  interaction_complexity: 3.188600000000001
+  rules_complexity: 4.052580000000001
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

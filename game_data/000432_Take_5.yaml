@@ -1,0 +1,161 @@
+type: boardgame
+name: Take 5
+alternate_names:
+- '!شیش قلو'
+- ¡Toma 6!
+- 6 bere!
+- 6 ima!
+- 6 neemt!
+- 6 nimmt!
+- 6 nimmt! Jubiläumsausgabe
+- 6 nimmt! Jubiläumsedition
+- 6 qui prend!
+- 6 takes
+- 6 Tar
+- 6 Võtab
+- 6 бepёt!
+- 6. bierze!
+- 6. Ņem!
+- 6. nem!
+- 6. nosi!
+- 6...le prendi!
+- 6...pega!
+- 6...prendi e perdi
+- Category 5
+- Ota 6!
+- Păzea de 6!
+- Pega em 6!
+- Sei
+- Ta 6!
+- Tag 6!
+- Take 5!
+- Take 5!
+- Take 6
+- Take 6!
+- Tjurskalle
+- Toma 6!
+- Vigyáz(z)6!
+- Πάρε 5!
+- Ταυράκια
+- Корова 006
+- Корова 006 Делюкс
+- שישי לוקח
+- ニムト
+- 牛頭王
+- 誰是牛頭王？
+- 젝스 님트!
+japanese_name: ニムト
+year_published: '1994'
+thumbnail_url: https://cf.geekdo-images.com/WuOY1XAIJQ-RGAmT_apW_w__thumb/img/dhNHd8Ztln_lUFAdti6WkPnGTGg=/fit-in/200x150/filters:strip_icc()/pic8632998.jpg
+publisher_min_players: '2'
+publisher_max_players: '10'
+playing_time: '45'
+publisher_min_age: '8'
+community_best_players: 5, 6
+community_recommended_players: 4, 7, 8, 9, 10
+community_min_age: '8'
+description: In 6 nimmt!, a.k.a. Category 5 and many other names, you want to score
+  as few points as possible.&#10;&#10;To play the game, you shuffle the 104 number
+  cards, lay out four cards face-up to start the four rows, then deal ten cards to
+  each player. Each turn, players simultaneously choose and reveal a card from their
+  hand, then add the cards to the rows, with cards being placed in ascending order
+  based on their number; specifically, each card is placed in the row that ends with
+  the highest number that's below the card's number. When the sixth card is placed
+  in a row, the owner of that card claims the other five cards and the sixth card
+  becomes the first card in its row.&#10;&#10;In addition to a number from 1 to 104,
+  each card has a point value. After finishing ten rounds, players tally their score
+  and see whether the game ends. (Category 5 ends when a player has a score greater
+  than 74, for example, while 6 nimmt! ends when someone tops 66.) When this happens,
+  the player with the fewest points wins!&#10;&#10;6 nimmt! works with 2-10 players,
+  and the dynamics of gameplay change the more players that you have. One variant
+  for the game has you use 34 cards, 44 cards, 54 cards, etc. (instead of all 104
+  cards) when you have three, four, five, etc. players. This change allows you to
+  know which cards are in play, thereby allowing you to track which cards have been
+  played and (theoretically) make better choices as to which card to play when.&#10;&#10;
+mechanics:
+- name: Hand Management
+- name: Score-and-Reset Game
+- name: Simultaneous Action Selection
+categories:
+- name: Card Game
+- name: Number
+- name: Party Game
+designers:
+- name: Wolfgang Kramer
+publishers:
+- name: AMIGO
+- name: 999 Games
+- name: Albi
+- name: Asmodee
+- name: Brain Games
+- name: Broadway Toys LTD
+- name: Bureau de Juegos
+- name: Buró
+- name: Carletto
+- name: Copag Cards
+- name: Dal Negro
+- name: Dr. Wood Challenge Centre
+- name: Endless Games (I)
+- name: Fractal Juegos
+- name: G3
+- name: Gigamic
+- name: Giochi Uniti
+- name: Kaissa Chess & Games
+- name: Kärnan
+- name: Kikigagne?
+- name: Korea Boardgames
+- name: Land of Beautiful Mind (سرزمین ذهن زیبا)
+- name: Last Level
+- name: Lautapelit.fi
+- name: Lifestyle Boardgames Ltd
+- name: Mar Lúdico
+- name: Max Bersinger
+- name: Mayfair Games
+- name: Mercurio
+- name: Midgaard Games
+- name: MIPL
+- name: Möbius Games
+- name: Nelospelit
+- name: Pando Games
+- name: Paper Iyagi
+- name: Piatnik
+- name: Rebel Sp. z o.o.
+- name: Shafir Games (המשחקים של חיים שפיר)
+- name: Swan Panasia Co., Ltd.
+- name: Tempo Games (I)
+- name: U.S. Games Systems, Inc.
+- name: VR Distribution
+average_rating: '6.9746'
+weight: '1.1911'
+ranks:
+- type: boardgame
+  rank: '672'
+- type: familygames
+  rank: '199'
+learning_analysis:
+  initial_barrier: 2.15
+  strategic_depth: 2.67
+  replayability: 3.08
+  mechanics_complexity: 2.9
+  mechanics_count: 3
+  bgg_weight: 1.1911
+  bgg_rank: 672
+  year_published: 1994
+  category_complexity: 2.35
+  rank_complexity: 2.27
+  strategic_depth_description: 中〜低（基本的な戦略が存在）
+  learning_curve_type: gentle
+  decision_points: 3.5700000000000003
+  interaction_complexity: 3.4686666666666675
+  rules_complexity: 2.6335533333333334
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  - classic_lover
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: short

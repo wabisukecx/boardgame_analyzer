@@ -67,13 +67,13 @@ publishers:
 - name: IELLO
 - name: Nasza Księgarnia
 - name: TLAMA games
-average_rating: '7.0931'
+average_rating: '7.08682'
 weight: '1.2703'
 ranks:
 - type: boardgame
-  rank: '2849'
+  rank: '2851'
 - type: familygames
-  rank: '883'
+  rank: '885'
 learning_analysis:
   initial_barrier: 2.13
   strategic_depth: 2.5
@@ -81,7 +81,7 @@ learning_analysis:
   mechanics_complexity: 2.98
   mechanics_count: 5
   bgg_weight: 1.2703
-  bgg_rank: 2849
+  bgg_rank: 2851
   year_published: 2023
   category_complexity: 1.8
   rank_complexity: 2.11

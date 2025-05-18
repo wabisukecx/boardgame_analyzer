@@ -1,0 +1,108 @@
+type: boardgame
+name: Wayfarers of the South Tigris
+alternate_names:
+- Cestovatelé Jižního Tigridu
+- A Dél-Tigris vándorai
+- Reisende des Südtigris
+- Reizigers van de Zuidelijke Tigris
+- Viajantes do Sul do Tigre
+- Viajeros de las tierras del sur
+- Viandanti a Sud del Tigri
+- Voyageurs du Tigre du Sud
+- Wędrowcy Znad Południowego Tygrysu
+- Мандрівники Південного Тигру
+- Путешественники с южного Тигра
+- 南河旅人
+- 南河旅人
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/bH-ThnratBE1MAB_KdgrWg__thumb/img/dCxGWUE0ReGJzdx3R_ZaOFwBWjE=/fit-in/200x150/filters:strip_icc()/pic7339734.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '90'
+publisher_min_age: '13'
+community_best_players: '2'
+community_recommended_players: 1, 3
+community_min_age: '12'
+description: Wayfarers of the South Tigris is set during the height of the Abbasid
+  Caliphate, circa 820 AD. As brave explorers, cartographers and astronomers, players
+  set off from Baghdad to map the surrounding land, waterways, and heavens above.
+  Players must carefully manage their caravan of workers and equipment, while reporting
+  back regularly to journal their findings at the House of Wisdom. Will you succeed
+  in impressing the Caliph, or lose your way and succumb to the wilderness?&#10;&#10;The
+  aim of Wayfarers of the South Tigris is to be the player with the most victory points
+  (VP) at the game's end. Points are primarily gained by mapping the land, water,
+  and sky. Players can also gain points from upgrading their caravans, by gaining
+  inspiration from nobles, and by influencing the three guilds of science, trade and
+  exploration. As they make discoveries, players will want to quickly journal their
+  progress. The game ends once one player&rsquo;s marker has reached the far right
+  column of the journal track.&#10;&#10;&mdash;description from the publisher&#10;&#10;
+mechanics:
+- name: Area Majority / Influence
+- name: End Game Bonuses
+- name: Modular Board
+- name: Open Drafting
+- name: Race
+- name: Set Collection
+- name: Solo / Solitaire Game
+- name: Tags
+- name: Tile Placement
+- name: Track Movement
+- name: Worker Placement with Dice Workers
+- name: Worker Placement, Different Worker Types
+categories:
+- name: Arabian
+- name: Exploration
+- name: Medieval
+designers:
+- name: S J Macdonald
+- name: Shem Phillips
+publishers:
+- name: Garphill Games
+- name: CMON Global Limited
+- name: Fever Games
+- name: Lavka Games
+- name: Lord of Boards
+- name: Mosaico Jogos
+- name: Pixie Games
+- name: Portal Games
+- name: Primigenio
+- name: Reflexshop
+- name: Renegade Game Studios
+- name: Schwerkraft-Verlag
+- name: TLAMA games
+- name: White Goblin Games
+average_rating: '7.79052'
+weight: '3.8133'
+ranks:
+- type: boardgame
+  rank: '355'
+- type: strategygames
+  rank: '218'
+learning_analysis:
+  initial_barrier: 3.71
+  strategic_depth: 3.68
+  replayability: 3.7
+  mechanics_complexity: 3.09
+  mechanics_count: 12
+  bgg_weight: 3.8133
+  bgg_rank: 355
+  year_published: 2022
+  category_complexity: 3.45
+  rank_complexity: 3.08
+  strategic_depth_description: 中〜高の深さ
+  learning_curve_type: moderate
+  decision_points: 4.492
+  interaction_complexity: 3.035
+  rules_complexity: 4.011826666666666
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium
