@@ -1,0 +1,89 @@
+type: boardgame
+name: Finspan
+alternate_names:
+- Flossenschlag
+- Mélytáv
+- Na dnie morza
+- Na ploutvích
+- フィンスパン
+- 展翅遨游
+japanese_name: フィンスパン
+year_published: '2025'
+thumbnail_url: https://cf.geekdo-images.com/BBefMnVYBDS3EbJ9fPaC8A__thumb/img/Wo2snzBQJMaVXkFdYl-zXL8PrbA=/fit-in/200x150/filters:strip_icc()/pic8634453.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '60'
+publisher_min_age: '10'
+community_best_players: 2, 3
+community_recommended_players: 1, 4
+community_min_age: '10'
+description: You are a marine researcher seeking to find and observe an array of aquatic
+  life in the colorful Sunlight Zone, ghostly Twilight Zone, and pitch-black Midnight
+  Zone of the world's seas and oceans. In Finspan, the fish you discover over four
+  weeks will generate a series of benefits as you dive deeper into the ocean.&#10;&#10;Each
+  dive site specializes in a key aspect of expanding your research:&#10;&#10;&#10;     Grow
+  your collection of fish.&#10;     Discover freshly laid eggs.&#10;     Hatch eggs
+  into young and consolidate young to form schools.&#10;&#10;&#10;The winner is the
+  player with the most points gained from fish, eggs, young, schools, and achievements.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+mechanics:
+- name: End Game Bonuses
+- name: Hand Management
+- name: Once-Per-Game Abilities
+- name: Solo / Solitaire Game
+- name: Tags
+categories:
+- name: Animals
+- name: Card Game
+designers:
+- name: David Gordon (I)
+- name: Michael O'Connell (II)
+publishers:
+- name: Stonemaier Games
+- name: 999 Games
+- name: Arclight Games
+- name: Delta Vision Publishing
+- name: Feuerland Spiele
+- name: Ghenos Games
+- name: Grok Games
+- name: Lautapelit.fi
+- name: Maldito Games
+- name: Matagot
+- name: MINDOK
+- name: MIPL
+- name: Rebel Sp. z o.o.
+- name: Surfin' Meeple China
+average_rating: '7.74397'
+weight: '2.3696'
+ranks:
+- type: boardgame
+  rank: '841'
+- type: strategygames
+  rank: '483'
+- type: familygames
+  rank: '188'
+learning_analysis:
+  initial_barrier: 2.44
+  strategic_depth: 2.95
+  replayability: 2.9
+  mechanics_complexity: 2.98
+  mechanics_count: 5
+  bgg_weight: 2.3696
+  bgg_rank: 841
+  year_published: 2025
+  category_complexity: 2.15
+  rank_complexity: 2.74
+  learning_curve_type: gentle
+  decision_points: 3.793333333333334
+  interaction_complexity: 3.0184000000000015
+  rules_complexity: 3.4225866666666667
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: short

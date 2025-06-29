@@ -1,0 +1,58 @@
+type: boardgame
+name: Railage
+alternate_names:
+- レイルエイジ
+japanese_name: レイルエイジ
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/ii_6AXnycyfxAbwN1VdI2w__thumb/img/pddV98dKJyr-F8YHKPT_6Lt4UWs=/fit-in/200x150/filters:strip_icc()/pic8698697.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '30'
+publisher_min_age: '8'
+description: In a new continent, you are the president of a railroad company and you
+  are trying to expand your business. You will acquire land, build stations, and establish
+  a large railway network connecting numerous cities.&#10;&#10;Railage is a roll and
+  write game in which players use a pen to draw shapes and other objects on a map.
+  During the game, each player draws a &#227;&#128;&#135; (station) in a City on the
+  map. In the area where the &#227;&#128;&#135; are drawn, the player can draw dots
+  (roadbeds) and Tracks. Your score is built by connecting many stations with your
+  Tracks. The player with the highest score at the end of the game is the winner.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+mechanics:
+- name: Chaining
+- name: Dice Rolling
+- name: Paper-and-Pencil
+- name: Solo / Solitaire Game
+categories:
+- name: Trains
+designers:
+- name: 沢口游祐 (Yusuke Sawaguchi)
+publishers:
+- name: Fudacoma Games
+average_rating: '6.75'
+weight: '0'
+ranks: []
+learning_analysis:
+  initial_barrier: 2.05
+  strategic_depth: 2.1
+  replayability: 2.5
+  mechanics_complexity: 2.78
+  mechanics_count: 4
+  bgg_weight: 0.0
+  bgg_rank: null
+  year_published: 2024
+  category_complexity: 3.5
+  rank_complexity: 3.0
+  learning_curve_type: gentle
+  decision_points: 3.3043
+  interaction_complexity: 3.06555
+  rules_complexity: 2.4643333333333333
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.2
+    complexity_factor: 0.95
+  mastery_time: short

@@ -1,0 +1,105 @@
+type: boardgame
+name: Nucleum
+alternate_names:
+- Nukleum
+- ニュークレウム
+- 核子激盪
+- 核子激荡
+- 뉴클리엄
+japanese_name: ニュークレウム
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/fIVUaMvbfy6GCOgfxt7xaw__thumb/img/jKsO4nKmtNjX5bfH7aCPeK7hsqU=/fit-in/200x150/filters:strip_icc()/pic7647168.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '150'
+publisher_min_age: '14'
+community_best_players: 3, 4
+community_recommended_players: 1, 2
+community_min_age: '14'
+description: When Elsa von Fr&uuml;hlingsfeld presented her invention to King Frederik
+  Augustus II of Saxony, people thought it was trickery. She used the recently isolated
+  element Uranium to heat up a jar of water and used the resulting steam to power
+  an engine that kept the Uranium active via a process she called &ldquo;atomization.&rdquo;
+  Her device, the Nucleum, ushered in a new era of energy and prosperity over the
+  next decades. Saxony went from a minor regional power to the hub of European science
+  and engineering. Now, a generation later, factories are still hungry for more power,
+  demanding bigger and more Nucleums to be built, more Uranium imported from the nearby
+  country of Bohemia, and railways and power lines built across the country to carry
+  the tamed power of the atoms to Saxony&rsquo;s great cities. Inventors, engineers,
+  and industrialists flock to the Saxon court, vying to be the leader in this new
+  industrial revolution.&#10;&#10;Nucleum is a heavy euro board game in which players
+  take role of industrialists trying to succeed during the economic and technological
+  boom of 19th-century Saxony, fueled by the invention and spread of the Nucleum (a
+  nuclear reactor).&#10;&#10;Players earn victory points by developing their networks,
+  building and powering urban buildings, securing contracts, and meeting milestones
+  (randomized endgame goals). Each player also gets unique asymmetric technologies,
+  giving them special powers when unlocked. Gameplay is continuous; players take turns
+  one after another with no rounds or phases.&#10;&#10;&mdash;description from the
+  publisher&#10;&#10;
+mechanics:
+- name: Action Retrieval
+- name: Contracts
+- name: End Game Bonuses
+- name: Hand Management
+- name: Income
+- name: Market
+- name: Network and Route Building
+- name: Solo / Solitaire Game
+- name: Tech Trees / Tech Tracks
+- name: Variable Player Powers
+categories:
+- name: Economic
+- name: Industry / Manufacturing
+- name: Science Fiction
+designers:
+- name: Simone Luciani
+- name: Dávid Turczi
+publishers:
+- name: Board&Dice
+- name: Board Bound
+- name: CMON Global Limited
+- name: Cranio Creations
+- name: Delta Vision Publishing
+- name: Giant Roc
+- name: Intrafin Games
+- name: Maldito Games
+- name: Mosaico Jogos
+- name: MTS Games
+- name: Old Dawg
+- name: Rebel Sp. z o.o.
+- name: テンデイズゲームズ (TendaysGames)
+- name: 狗吠火車
+average_rating: '8.12922'
+weight: '4.1787'
+ranks:
+- type: boardgame
+  rank: '158'
+- type: strategygames
+  rank: '98'
+learning_analysis:
+  initial_barrier: 4.06
+  strategic_depth: 3.88
+  replayability: 3.7
+  mechanics_complexity: 3.29
+  mechanics_count: 10
+  bgg_weight: 4.1787
+  bgg_rank: 158
+  year_published: 2023
+  category_complexity: 4.29
+  rank_complexity: 3.12
+  learning_curve_type: moderate
+  decision_points: 4.6
+  interaction_complexity: 3.2142800000000014
+  rules_complexity: 4.330073333333334
+  player_types:
+  - experienced
+  - hardcore
+  - strategist
+  - system_master
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.2
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: medium

@@ -1,0 +1,88 @@
+type: boardgame
+name: Everdell Farshore
+alternate_names:
+- 'Divukraj: Dálava'
+- 'Everdell Farshore: Essentials Edition'
+- 'Everdell: Dalekobrzeg'
+- 'Everdell: Örökpart'
+- 'Farshore: Ein Spiel in der Welt von Everdell'
+- 'Эверделл: Дальний берег'
+- 遠方海岸
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/JDXU1SebJFXBsP4qT79oYg__thumb/img/wzgfJrJBnw51mfA8YhmnHXolWkM=/fit-in/200x150/filters:strip_icc()/pic7605937.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '80'
+publisher_min_age: '10'
+community_best_players: 2, 3
+community_recommended_players: 1, 4
+community_min_age: '10'
+description: The Forever Sea is calling...&#10;&#10;The rugged coast north of Everdell
+  Valley is a land brimming with adventure and mystery. Stalwart sailors search for
+  bountiful islands and valuable treasures. Dutiful monks inhabit abbeys and scriptoriums,
+  meticulously translating and illuminating. Hard-working folk gather resources and
+  build their cities in unison with the ever-changing waves of the mighty ocean.&#10;&#10;Welcome
+  to Everdell Farshore, a standalone game set in the country of Farshore. Through
+  each season, you lead a crew of critter workers to build up a prosperous city and
+  to explore the enchanting ocean beyond. You must plan your actions carefully in
+  order to build and to sail, for only by adapting to the winds of change will you
+  succeed.&#10;&#10;The wind is high. The sun is breaking the horizon. It is time
+  to set sail for adventure!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+mechanics:
+- name: Hand Management
+- name: Open Drafting
+- name: Set Collection
+- name: Worker Placement
+categories:
+- name: Animals
+- name: Card Game
+- name: City Building
+- name: Fantasy
+designers:
+- name: James A. Wilson
+- name: Clarissa A. Wilson
+publishers:
+- name: Starling Games (II)
+- name: CMON Global Limited
+- name: Game Harbor
+- name: Gém Klub Kft.
+- name: Hobby World
+- name: Maldito Games
+- name: Matagot
+- name: Pegasus Spiele
+- name: Rebel Sp. z o.o.
+- name: REXhry
+- name: Tabletop Tycoon Inc.
+- name: White Goblin Games
+average_rating: '7.87218'
+weight: '2.8421'
+ranks:
+- type: boardgame
+  rank: '1060'
+- type: familygames
+  rank: '229'
+learning_analysis:
+  initial_barrier: 2.59
+  strategic_depth: 3.37
+  replayability: 2.9
+  mechanics_complexity: 2.92
+  mechanics_count: 4
+  bgg_weight: 2.8421
+  bgg_rank: 1060
+  year_published: 2023
+  category_complexity: 3.16
+  rank_complexity: 2.23
+  learning_curve_type: gentle
+  decision_points: 4.340000000000001
+  interaction_complexity: 3.2421000000000006
+  rules_complexity: 3.2920866666666666
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: medium

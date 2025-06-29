@@ -1,0 +1,82 @@
+type: boardgame
+name: Magic Number Eleven
+alternate_names:
+- Sztárcsapat
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/J6V5mbUZCEgQQCMIKJP3Og__thumb/img/KNAcxh5apytwLYVLQ-fyGafs_s4=/fit-in/200x150/filters:strip_icc()/pic8002932.png
+publisher_min_players: '2'
+publisher_max_players: '2'
+playing_time: '30'
+publisher_min_age: '14'
+community_best_players: '2'
+community_min_age: '12'
+description: Magic Number Eleven is an innovative sports game depicting the tactical
+  confrontation of football games with simple rules. &#10;It's a 2 player game, and
+  each player becomes a coach of a football team, confronting each other. The game
+  consists of two Rounds; 1st half and 2nd half. Each round consists of several turns.&#10;&#10;In
+  your turn, you basically place a Player Card on the Field Board. The meaning of
+  Player Card placement is an expression of where the team is currently focused on
+  and which player is the center of the tactics. &#10;Each Player Card has semicircular
+  tactical icons which can be combined with the icons on other Player Cards. Therefore,
+  each team will have more tactical icons according to the combination of the Player
+  Cards, as the turns go on.&#10;&#10;There are 4 different type of tactical icons-
+  Attack, Defence, Pass, and Press- and the action and the effect you may take in
+  your turn vary according to the type and amount of the icons you have been made.&#10;Based
+  on the tactical icons you have, you may 1) attempt a shot, 2) draw Synergy Cards,
+  and 3) push the Control Maker on the Control Track.&#10;&#10;When you attempt a
+  shot, compare your attack power and the opponent's defence power. Both of attack/defence
+  power can be strengthened with the Synergy Cards that each player has. The Synergy
+  Cards represent the teamwork and the passing play of the team. And if your Control
+  is high enough, you may add more Synergy Cards to the attack power. If the total
+  of the attack power is higher than the defence power, as a result, it's a goal!&#10;&#10;In
+  case you made the total attack power exactly 11, it called a Magic Number, or Wonder
+  Goal, so the opponent can't defend the shot even with the higher defence power.
+  On the other hand, if it exceeds 11, it's always no goal bacause the shot was too
+  strong to be on target. Since there is always at least ONE unknown Synergy Card
+  which has to be played from deck, so you can't guarantee the outcome of the shot!&#10;&#10;A
+  round ends when all the Synergy Cards run out. When the 2nd round ends, a team with
+  higher score wins!&#10;&#10;&mdash;description from the designer&#10;&#10;
+mechanics:
+- name: Connections
+- name: Hand Management
+- name: Pattern Building
+- name: Push Your Luck
+- name: Tile Placement
+- name: Tug of War
+categories:
+- name: Puzzle
+- name: Sports
+designers:
+- name: Bonghwan Ju
+publishers:
+- name: Pluto Games
+- name: Gém Klub Kft.
+average_rating: '7.61069'
+weight: '2.3846'
+ranks:
+- type: boardgame
+  rank: '7486'
+learning_analysis:
+  initial_barrier: 2.87
+  strategic_depth: 2.74
+  replayability: 2.9
+  mechanics_complexity: 2.87
+  mechanics_count: 6
+  bgg_weight: 2.3846
+  bgg_rank: 7486
+  year_published: 2024
+  category_complexity: 2.57
+  rank_complexity: 2.16
+  learning_curve_type: gentle
+  decision_points: 3.71495
+  interaction_complexity: 2.7695
+  rules_complexity: 3.590253333333332
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.2
+    complexity_factor: 0.95
+  mastery_time: short

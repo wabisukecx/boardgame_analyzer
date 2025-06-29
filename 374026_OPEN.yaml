@@ -1,0 +1,57 @@
+type: boardgame
+name: OPEN
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/nLhh6E_McD5zWJ7c7mzZwg__thumb/img/ZNbMdUnld1JgE6uzvlyCnuCqDG0=/fit-in/200x150/filters:strip_icc()/pic8260714.png
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '15'
+publisher_min_age: '8'
+community_best_players: '4'
+community_recommended_players: '3'
+description: OPEN is a climbing and shedding game in which each person plays with
+  four of their six cards face up on the table.&#10;&#10;At the start of each hand,
+  players make a secret bet on which player they think will play all of their cards
+  first.  Points are awarded to all players but the last to go out. Points are also
+  awarded to players who accurately predicted who would go out first.&#10;&#10;Rounds
+  are played until one player reaches a given score, then the player with the most
+  points wins.&#10;&#10;
+mechanics:
+- name: Ladder Climbing
+categories:
+- name: Bluffing
+- name: Card Game
+designers:
+- name: Takashi Saito
+publishers:
+- name: BrainBrainGames
+- name: Mandoo Games
+- name: SUNNY BIRD
+average_rating: '6.57319'
+weight: '1.5'
+ranks:
+- type: boardgame
+  rank: '11691'
+learning_analysis:
+  initial_barrier: 2.14
+  strategic_depth: 2.07
+  replayability: 2.3
+  mechanics_complexity: 2.7
+  mechanics_count: 1
+  bgg_weight: 1.5
+  bgg_rank: 11691
+  year_published: 2022
+  category_complexity: 2.68
+  rank_complexity: 2.13
+  learning_curve_type: gentle
+  decision_points: 2.65555
+  interaction_complexity: 3.6744335
+  rules_complexity: 2.2153333333333336
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.0
+    complexity_factor: 0.85
+  mastery_time: short
