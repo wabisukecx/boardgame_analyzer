@@ -384,8 +384,8 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
     if game_id != 'unknown' and game_id.isdigit():
         game_id = game_id.zfill(6)  # Left-pad with zeros to 6 digits
     
-    # Use Japanese name if available
-    game_name = game_data.get('japanese_name', game_data.get('name', '名称不明'))
+    # Use English name if available, otherwise use Japanese name
+    game_name = game_data.get('name', '') or game_data.get('japanese_name', '') or '名称不明'
     
     # Convert full-width spaces to half-width spaces
     game_name = game_name.replace('　', ' ')
