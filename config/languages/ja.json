@@ -11,7 +11,7 @@
     "save_yaml": "YAMLでデータを保存",
     "compare_games": "ゲーム比較",
     "similarity_search": "類似性検索",
-    "language": "言語"
+    "language": "言語/Language"
   },
   "search": {
     "title": "ゲーム名で検索",
