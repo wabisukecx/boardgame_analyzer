@@ -1,282 +1,157 @@
-# BoardGame Analyzer
+# BoardGame Analyzer - AI-Powered Board Game Analysis Tool
 
-A Streamlit application for searching, analyzing, and saving board game information using the BoardGameGeek (BGG) API.
+A comprehensive Streamlit application for analyzing board games using BoardGameGeek API data and advanced similarity search. Features intelligent learning curve analysis, multi-language support, and automated data management with remote synchronization capabilities.
 
-**Demo:** [Streamlit Community Cloud](https://boardgameanalyzer-gsmlbaspmgvf3arxttip4f.streamlit.app/)
+**Live Demo:** [Streamlit Community Cloud](https://boardgameanalyzer-gsmlbaspmgvf3arxttip4f.streamlit.app/)
 
-## Latest Updates
+## Key Features
 
-**Enhanced Similarity Analysis Feature**
+### Smart Game Analysis
+- **Learning Curve Analysis**: AI-powered evaluation of game complexity and strategic depth
+- **Similarity Search**: Find similar games using pre-computed embeddings and cosine similarity
+- **Multi-dimensional Metrics**: Initial barrier, strategic depth, replayability, player interaction
 
-The similarity search feature has been enhanced. The new `improved_similarity_analyzer` module enables more precise similarity analysis. Key improvements:
+### Data Management
+- **YAML Storage**: Local game data persistence with structured format
+- **Auto-sync**: Remote server synchronization for always-updated data
+- **Backup System**: Daily automated backups with change detection
 
-- More detailed similarity reason analysis (with weighted scores)
-- Advanced comparison utilizing learning curve data
-- Analysis based on strategic depth and interaction similarity
-- Formatted similarity reasons
+### User Experience
+- **Multi-language**: Japanese/English interface with intelligent game name display
+- **Interactive Visualizations**: Radar charts, heatmaps, and distribution analysis
+- **Responsive Design**: Optimized for desktop and mobile use
 
-This feature allows for a deeper understanding of similarities between games.
+---
 
-## Table of Contents
+## Core Functions
 
-- [BoardGame Analyzer](#boardgame-analyzer)
-  - [Latest Updates](#latest-updates)
-  - [Table of Contents](#table-of-contents)
-  - [Main Features](#main-features)
-  - [Installation](#installation)
-  - [How to Use](#how-to-use)
-    - [Basic Features](#basic-features)
-      - [Search by Game Name](#search-by-game-name)
-      - [Get Details by Game ID](#get-details-by-game-id)
-      - [Save Data to YAML](#save-data-to-yaml)
-      - [Game Comparison](#game-comparison)
-    - [Similarity Search](#similarity-search)
-  - [Automatic Updates and Data Sync](#automatic-updates-and-data-sync)
-    - [Daily Update Script (daily\_update.py)](#daily-update-script-daily_updatepy)
-    - [Remote Data Sync Script (fetch\_boardgame\_data.py)](#remote-data-sync-script-fetch_boardgame_datapy)
-  - [Embedding Data File (game\_embeddings.pkl)](#embedding-data-file-game_embeddingspkl)
-    - [Creation and Acquisition](#creation-and-acquisition)
-    - [Usage](#usage)
-    - [Notes](#notes)
-  - [Technical Details](#technical-details)
-    - [Learning Curve Analysis System](#learning-curve-analysis-system)
-      - [Elements Used in Analysis](#elements-used-in-analysis)
-      - [Analysis Result Metrics](#analysis-result-metrics)
-    - [Customizing Complexity Data](#customizing-complexity-data)
-      - [Editing Notes](#editing-notes)
-    - [Strategic Value and Interaction Analysis](#strategic-value-and-interaction-analysis)
-    - [Embedding Model and Similarity Search Technology](#embedding-model-and-similarity-search-technology)
-      - [Embedding Model Generation Technology](#embedding-model-generation-technology)
-      - [Similarity Calculation Algorithm](#similarity-calculation-algorithm)
-      - [Technical File Structure](#technical-file-structure)
-      - [Similarity Reason Analysis Algorithm](#similarity-reason-analysis-algorithm)
-  - [Project Structure](#project-structure)
-  - [Notes](#notes-1)
-  - [Acknowledgments](#acknowledgments)
+| Function | Description | Key Benefits |
+|----------|-------------|--------------|
+| **Search by Name** | Find games using BGG database | Quick discovery with exact match option |
+| **Game Details** | Comprehensive game information | Learning curve, complexity analysis |
+| **Similarity Search** | AI-powered game recommendations | Discover games with detailed similarity reasons |
+| **Game Comparison** | Side-by-side analysis of multiple games | Visual radar charts and metric tables |
+| **Data Export** | Save analysis results to YAML | Local storage and backup capabilities |
 
-## Main Features
+---
 
-- **Search and Information Retrieval**
-  - Search by game name: Search for board games from BGG using names
-  - Get detailed information by game ID: Retrieve detailed game information using game ID
-  - Select saved games: Easily select saved game data from dropdown menus
+## Quick Start
 
-- **Data Analysis and Storage**
-  - Data analysis: Automatically analyze game complexity, learning curves, replayability, etc.
-  - YAML data storage: Save retrieved game information locally in YAML format
-  - Data comparison: Automatic comparison between existing and newly retrieved data
-
-- **Game Characteristic Analysis**
-  - Learning curve analysis: Estimate game learning ease and time required for mastery
-  - Category analysis: Evaluate complexity based on game categories
-  - Ranking analysis: Evaluation based on BGG ranking type and position
-  - Strategic depth evaluation: Analysis of strategic based on decision quality and weight
-  - Player interaction analysis: Evaluation of player-to-player interaction in games
-
-- **Comparison and Similarity Analysis**
-  - Game comparison: Select multiple games and analyze with radar charts and numerical comparisons
-  - **Enhanced similarity search**: Search and analyze similar games using embedding data, providing detailed similarity reasons
-
-- **Data Management and Automation**
-  - Daily data updates: Automatic daily game data updates and backups
-  - Remote data retrieval: Sync data from remote servers like Raspberry Pi
-
-## Installation
-
-1. Clone or download this repository
-
+### Installation
 ```bash
+# Clone repository
 git clone https://github.com/wabisukecx/boardgame_analyzer.git
-cd boardgame-analyzer
-```
+cd boardgame_analyzer
 
-2. Install required libraries
-
-```bash
+# Install dependencies
 pip install -r requirements.txt
-```
 
-3. Run the application
-
-```bash
+# Run application
 streamlit run app.py
 ```
 
-## How to Use
+### Basic Usage
+1. **Search**: Enter game name to find BoardGameGeek entries
+2. **Analyze**: Get detailed information with learning curve analysis
+3. **Save**: Export game data to YAML format for future use
+4. **Compare**: Select multiple games for side-by-side analysis
+5. **Discover**: Use similarity search to find related games
 
-### Basic Features
+---
 
-#### Search by Game Name
-1. Select "Search by Game Name" from the sidebar
-2. Enter the game name you want to search for
-3. Check the checkbox for exact match search if desired
-4. Click the "Search" button
+## Similarity Search Setup
 
-#### Get Details by Game ID
-1. Select "Get Details by Game ID" from the sidebar
-2. Enter manually or select from saved YAML files
-3. Click the "Get Details" button
-4. Detailed information will be displayed including:
-   - Basic information (game name, year published, average rating)
-   - Player count information (optimal players, supported players)
-   - Recommended age and play time
-   - Game complexity and learning curve analysis
-   - Game description
-   - Mechanics, categories, rankings, designers, publishers information
+### Option 1: Use Provided Embeddings
+- Download `game_embeddings.pkl` from repository
+- Place in root directory
+- Similarity search ready to use
 
-#### Save Data to YAML
-1. Select "Save Data to YAML" from the sidebar
-2. Select the game you want to save from the dropdown list
-3. Enter a filename (automatic generation if left blank)
-4. Click the "Save Selected Game Data to YAML" button
+### Option 2: Generate Custom Embeddings
+```bash
+# Set up Voyage AI API key
+echo "VOYAGE_API_KEY=your_api_key" > .env
 
-#### Game Comparison
-1. Select "Game Comparison" from the sidebar
-2. Select multiple games to compare (up to 6)
-3. Selected game characteristics are visualized with radar charts and detailed numerical comparison tables
-
-### Similarity Search
-
-1. Select "Similarity Search" from the sidebar
-2. Adjust search settings (number of similar games to display, similarity threshold)
-3. Expand "Set Search Filters" to filter by category or mechanics
-4. Select a game as the search reference from filtered results
-5. Click the "Search Similar Games" button
-6. Results are displayed in tabs:
-   - Similar Games List: Game information with similarity scores and reasons
-   - Similarity Heatmap: Visualization of similarity relationships between games
-   - Data Analysis: List of most similar games, category and mechanics distribution analysis
-
-## Automatic Updates and Data Sync
-By setting up a Linux-based remote server like Raspberry Pi, you can always analyze with the latest game data. As of April 2025, we recommend the Raspberry Pi Zero 2 W.
-
-### Daily Update Script (daily_update.py)
-
-Running this script periodically on a remote server like Raspberry Pi provides the following features:
-
-- Backup saved data in YYMMDD format
-- Automatically update existing game data (retrieve latest information from BGG API)
-- Detect and record configuration file changes
-
-Configuration example (using crontab):
+# Generate embeddings from your game data
+python generate_embedding_model.py --data_path "game_data/*.yaml" --output "game_embeddings.pkl"
 ```
+
+### Embedding Generation Options
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `--batch_size` | 128 | API request batch size |
+| `--max_tokens_per_item` | 3000 | Token limit per game |
+| `--max_tokens_per_batch` | 100000 | Token limit per API call |
+| `--limit` | 0 | Max files to process (0=all) |
+
+---
+
+## Analysis Metrics
+
+### Learning Curve Analysis
+| Metric | Range | Description |
+|--------|-------|-------------|
+| **Initial Barrier** | 1.0-5.0 | Difficulty of first-time learning |
+| **Strategic Depth** | 1.0-5.0 | Long-term strategic complexity |
+| **Replayability** | 1.0-5.0 | Value of repeated plays |
+| **Decision Points** | 1.0-5.0 | Frequency of meaningful choices |
+| **Player Interaction** | 1.0-5.0 | Degree of player-to-player engagement |
+| **Rules Complexity** | 1.0-5.0 | Mechanical and rule system difficulty |
+
+### Player Type Classification
+- **Beginner**: Low barrier, accessible games
+- **Casual**: Moderate complexity, broad appeal
+- **Experienced**: High strategic depth
+- **Hardcore**: Complex systems, high barriers
+- **Strategist**: Deep tactical games
+- **System Master**: Multi-layered mechanics
+
+---
+
+## Automation Features
+
+### Daily Data Updates
+Automated system for keeping game data current:
+
+```bash
+# Set up cron job (Linux/macOS)
 0 1 * * * cd /path/to/boardgame-analyzer && python daily_update.py >> logs/daily_update.log 2>&1
 ```
 
-### Remote Data Sync Script (fetch_boardgame_data.py)
+**Features:**
+- Automatic BGG API data refresh
+- YYMMDD backup creation
+- Configuration change detection
+- Error logging and retry logic
 
-Script for retrieving BoardGame Analyzer data updated on remote servers like Raspberry Pi:
+### Remote Synchronization
+Sync data with remote servers (e.g., Raspberry Pi):
 
-- Retrieve game data and configuration files via SSH
-- Customize connection settings (host, port, authentication method)
-- Automatic cleanup of existing files
-
-Usage example:
 ```bash
-python fetch_boardgame_data.py --host 192.168.50.192 --username pi
+# Fetch latest data from remote server
+python fetch_boardgame_data.py --host 192.168.1.100 --username pi
 ```
 
-## Embedding Data File (game_embeddings.pkl)
+| Parameter | Description |
+|-----------|-------------|
+| `--host` | Remote server IP address |
+| `--username` | SSH username |
+| `--key-file` | SSH private key path |
+| `--no-upload` | Skip upload phase |
 
-`game_embeddings.pkl` is an embedding data file required for the similarity search feature.
+---
 
-### Creation and Acquisition
+## Configuration Files
 
-1. **Use the distributed file**:
-   - Available from the application repository
-   - Place this file in the root of the `boardgame-analyzer` directory to immediately enable similarity search
-   - Created from the author's board game collection for testing purposes
+### Complexity Data (YAML)
+The application uses three configuration files for intelligent analysis:
 
-2. **Generate your own**:
-   - Can be generated using the `generate_embedding_model.py` script
-   - Uses the Voyage AI API
-   - Requirements:
-     - Voyage AI user registration (https://www.voyageai.com/)
-     - Voyage AI API token issuance (handle with care)
-     - Payment setup for API usage
-     - Set `VOYAGE_API_KEY` environment variable
-     - Create .env file and add VOYAGE_API_KEY = "your_voyage_api_key"
-   - Generation command example:
-     ```bash
-     python generate_embedding_model.py --data_path "game_data/*.yaml" --output "game_embeddings.pkl"
-     ```
-   - Important optional parameters:
-     - `--batch_size` - Batch size for API requests (default: 128). If too large, it may fail; if processing fails, set to a smaller value (e.g., 64 or 32)
-     - `--max_retries` - Number of retries on API request failure (default: 5)
-     - `--request_interval` - Wait time between requests (seconds, default: 0.5)
-     - `--timeout` - API request timeout (seconds, default: 15)
-     - `--limit` - Upper limit of files to process (0=process all, default: 0)
+| File | Purpose | Customizable |
+|------|---------|--------------|
+| `mechanics_data.yaml` | Mechanic complexity values | ✅ Manual editing supported |
+| `categories_data.yaml` | Category complexity values | ✅ Manual editing supported |
+| `rank_complexity.yaml` | Ranking type complexity | ✅ Manual editing supported |
 
-### Usage
-
-1. Place the file in the application root directory
-2. Select the "Similarity Search" feature in the application
-3. By default, `game_embeddings.pkl` is loaded, but you can specify another file path in the sidebar's "Embedding Data File"
-
-### Notes
-
-- Without this file, the similarity search feature cannot be used (other features work normally)
-- File size varies depending on the number of saved games and can be relatively large with many game data entries
-- When generating yourself, API calls incur costs (based on Voyage AI's pricing structure)
-- Regular updates allow inclusion of new game data in similarity searches
-
-Creating your own embedding data enables similarity searches tailored to specific game genres or preferences.
-
-## Technical Details
-
-### Learning Curve Analysis System
-
-This app uses a proprietary algorithm to analyze board game learning curves:
-
-#### Elements Used in Analysis
-- Mechanics complexity and count
-- BGG weight rating
-- Category complexity
-- Ranking information
-- Replayability
-- Mechanics strategic value
-- Player interaction value
-- Play time
-
-#### Analysis Result Metrics
-- Initial learning barrier (1-5)
-- Strategic depth (1-5)
-- Decision points (1-5)
-- Player interaction (1-5)
-- Rules complexity (1-5)
-- Category-based complexity (1-5)
-- Ranking-based complexity (1-5)
-- Learning curve type
-- Replayability (1-5)
-- Mastery time
-- Target player types
-
-### Customizing Complexity Data
-
-This app uses three YAML files to evaluate complexity:
-
-- `mechanics_data.yaml`: Complexity, strategic value, and interaction value per mechanics
-- `categories_data.yaml`: Complexity, strategic value, and interaction value per category
-- `rank_complexity.yaml`: Complexity, strategic value, and interaction value per ranking type
-
-These files can be manually edited, enabling more accurate analysis by customizing based on actual game experience. Basic data is automatically generated on first startup, and new mechanics or categories are automatically added when found.
-
-#### Editing Notes
-
-- All YAML files must be saved in UTF-8 encoding
-- Saving in other encodings (like Shift-JIS) will cause read errors
-- Keep numerical values between 1.0-5.0 (to one decimal place)
-
-### Strategic Value and Interaction Analysis
-
-Each mechanics and category has the following defined values:
-
-- Complexity: Rule or concept complexity (1.0-5.0)
-- Strategic value: Contribution to strategic depth (1.0-5.0)
-- Interaction value: Degree of player-to-player interaction (1.0-5.0)
-
-For example, in mechanics_data.yaml:
-
+**Example Configuration:**
 ```yaml
 Engine Building:
   complexity: 4.7
@@ -285,123 +160,181 @@ Engine Building:
   description: Very strategically deep but relatively low interaction
 ```
 
-These values are used to more precisely calculate game strategic depth and interaction complexity.
+---
 
-### Embedding Model and Similarity Search Technology
+## Language Support
 
-`game_embeddings.pkl` is a core file for the application's similarity search functionality.
+### Supported Languages
+- **Japanese (ja)**: Native support with kanji/hiragana/katakana
+- **English (en)**: Full interface translation
 
-#### Embedding Model Generation Technology
+### Game Name Handling
+| Context | Japanese Mode | English Mode |
+|---------|---------------|--------------|
+| **Primary Display** | Japanese name → English fallback | English name → Japanese fallback |
+| **Secondary Info** | English as caption | Japanese as caption |
+| **File Naming** | English for consistency | English for consistency |
 
-- **Vectorization Process**: 
-  - Convert each game's text data (name, description, categories, mechanics, etc.) into semantically enriched text
-  - Encode text into 1024-dimensional vector space using Voyage AI API (voyage-3-large model)
-  - These mathematically represent game characteristics and properties
+---
 
-- **Technical Specifications**:
-  - Vector dimensions: 1024 dimensions (by voyage-3-large model)
-  - Embedding type: Dense vector representation
+## Technical Architecture
 
-#### Similarity Calculation Algorithm
+### Core Technologies
+- **Frontend**: Streamlit with Plotly visualizations
+- **API**: BoardGameGeek XML API with rate limiting
+- **AI/ML**: Voyage AI embeddings, scikit-learn similarity
+- **Storage**: YAML files with UTF-8 encoding
+- **Networking**: SSH/SFTP for remote sync
 
-- **Cosine Similarity**:
-  - Measures the cosine of the angle between two vectors, calculating similarity score from 0-1
-  - Values closer to 1 indicate higher similarity, closer to 0 indicate lower similarity
-  - Formula: cos(θ) = (A·B) / (||A|| ||B||)
-  
-- **Pre-computed Similarity Matrix**:
-  - Pre-computes pairwise similarities between all games
-  - Stores N×N matrix (N is number of games)
-  - This eliminates runtime similarity calculations, speeding up searches
+### Performance Optimizations
+- **Caching**: Multi-level cache system (memory, session, file)
+- **Rate Limiting**: Intelligent BGG API throttling
+- **Batch Processing**: Efficient embedding generation
+- **Lazy Loading**: On-demand data processing
 
-#### Technical File Structure
-
-`game_embeddings.pkl` is a Python pickle file with the following structure:
-
-```python
-{
-    'games': [  # List of game information
-        {'id': '123456', 'name': 'Game Name', 'japanese_name': 'Japanese Name', 'file': 'path/to/yaml'},
-        # ... other game information
-    ],
-    'game_data_list': [  # List of detailed game data
-        {'name': 'Game Name', 'mechanics': [...], 'categories': [...], ...},
-        # ... other game data
-    ],
-    'embeddings': numpy.ndarray,  # Shape: [N, 1024] - 1024-dimensional vector for each of N games
-    'similarity_matrix': numpy.ndarray,  # Shape: [N, N] - Stores similarity between all games
-    'metadata': {  # File update metadata
-        'file_path1': 'hash1',  # File path and its hash value
-        # ... other file metadata
-    }
-}
-```
-
-#### Similarity Reason Analysis Algorithm
-
-Includes automatic analysis of similarity reasons, comparing the following elements:
-
-- Common categories
-- Common mechanics
-- Strategic depth similarity
-- Common target player types
-- Complexity score proximity
-- Year published proximity
-- Common keywords from descriptions
-
-These analysis results are displayed as "Similarity Reasons" and help understand relationships between games more deeply.
-
-## Project Structure
-
+### File Structure
 ```
 boardgame-analyzer/
-├── app.py                         # Main application
-├── requirements.txt               # Required packages list
-├── generate_embedding_model.py    # Embedding model generation script
-├── daily_update.py                # Daily data update script
-├── fetch_boardgame_data.py        # Remote data retrieval script
-├── game_embeddings.pkl            # Embedding data file (for similarity search)
-├── learning_curve_for_daily_update.py # Learning curve analysis module
-├── config/                        # Configuration files
-│   ├── mechanics_data.yaml        # Mechanics complexity data
-│   ├── categories_data.yaml       # Category complexity data
-│   └── rank_complexity.yaml       # Ranking type complexity data
-├── game_data/                     # Saved game data
-├── backup/                        # Backup data
-├── logs/                          # Log files
-│   └── daily_update.log           # Daily update log
-├── src/                           # Source code
-│   ├── api/                       # API related
-│   │   ├── bgg_api.py             # BoardGameGeek API
-│   │   └── rate_limiter.py        # Rate limiting and cache
-│   ├── data/                      # Data processing
-│   │   └── data_handler.py        # Data processing
-│   └── analysis/                  # Analysis related
-│       ├── similarity.py          # Similarity search
-│       ├── improved_similarity_analyzer.py # Improved similarity analysis
-│       ├── game_analyzer.py       # Game analysis
-│       ├── learning_curve.py      # Learning curve
-│       ├── mechanic_complexity.py # Mechanics complexity
-│       ├── category_complexity.py # Category complexity
-│       ├── rank_complexity.py     # Ranking complexity
-│       └── strategic_depth.py     # Strategic depth
-└── ui/                            # UI related
-    ├── ui_components.py           # UI component functions
-    └── pages/                     # Page components
-        ├── search_page.py         # Search page
-        ├── details_page.py        # Details page
-        ├── save_page.py           # Save page
-        └── compare_page.py        # Compare page
+├── app.py                          # Main Streamlit application
+├── generate_embedding_model.py     # Embedding generation script
+├── daily_update.py                 # Automated data update script
+├── fetch_boardgame_data.py         # Remote sync script
+├── game_embeddings.pkl             # Similarity search data
+├── config/                         # Configuration files
+│   ├── mechanics_data.yaml
+│   ├── categories_data.yaml
+│   ├── rank_complexity.yaml
+│   └── languages/                  # Multi-language support
+├── game_data/                      # Saved game analysis
+├── src/                            # Source code modules
+│   ├── analysis/                   # Analysis algorithms
+│   ├── api/                        # BGG API interface
+│   ├── data/                       # Data handling
+│   └── utils/                      # Utilities
+└── ui/                             # User interface components
 ```
 
-## Notes
+---
 
-- Game names containing special characters (:; etc.) may fail to save as files
-- This tool's learning curve analysis algorithm contains subjective elements and is not an absolute evaluation
-- Embedding generation requires a Voyage AI API key and incurs charges based on usage
-- Daily update scripts require scheduler setup like crontab for periodic execution
+## Advanced Features
 
-## Acknowledgments
+### Similarity Analysis Algorithm
+1. **Text Processing**: Game data → enriched text representation
+2. **Vectorization**: Voyage AI → 1024-dimensional embeddings
+3. **Similarity Matrix**: Pre-computed cosine similarity (N×N)
+4. **Reasoning Engine**: Multi-factor similarity explanation
 
-This application uses the BoardGameGeek API. Thanks to BoardGameGeek.
-The similarity search feature uses Voyage AI's embedding API for creating embedding data.
+### Learning Curve Calculation
+- **Mechanic Analysis**: Complexity weighting from 1000+ mechanics
+- **Category Evaluation**: Strategic depth assessment
+- **BGG Integration**: Community ratings and rankings
+- **Time Factors**: Play time impact on complexity
+- **Player Count**: Interaction complexity scaling
+
+---
+
+## Production Deployment
+
+### Raspberry Pi Setup
+Recommended for 24/7 data updates:
+
+```bash
+# Install dependencies
+sudo apt update && sudo apt install python3-pip
+pip3 install -r requirements.txt
+
+# Set up daily updates
+crontab -e
+# Add: 0 1 * * * cd /home/pi/boardgame-analyzer && python3 daily_update.py
+```
+
+### Resource Requirements
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| **RAM** | 1GB | 2GB+ |
+| **Storage** | 500MB | 2GB+ |
+| **Network** | Stable internet | Broadband |
+| **Python** | 3.8+ | 3.9+ |
+
+---
+
+## API Costs & Usage
+
+### Voyage AI Embeddings
+- **Model**: voyage-3-large (1024 dimensions)
+- **Cost**: ~$0.12 per 1M tokens
+- **Typical Game**: 500-1000 tokens
+- **1000 Games**: ~$0.50-1.00
+
+### BoardGameGeek API
+- **Free tier**: 15-20 requests/minute
+- **Rate limiting**: Built-in exponential backoff
+- **Caching**: 24-48 hour TTL to minimize requests
+
+---
+
+## Contributing
+
+### Development Setup
+```bash
+# Clone with development branch
+git clone -b develop https://github.com/wabisukecx/boardgame_analyzer.git
+
+# Install development dependencies
+pip install -r requirements-dev.txt
+
+# Run tests
+python -m pytest tests/
+
+# Format code
+black src/ ui/ *.py
+```
+
+### Adding New Languages
+1. Create `config/languages/{code}.json`
+2. Follow existing key structure
+3. Test with `language_manager.switch_language(code)`
+4. Submit pull request
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+| Issue | Solution |
+|-------|----------|
+| **Embeddings not found** | Download `game_embeddings.pkl` or generate with Voyage AI |
+| **BGG API rate limit** | Wait 60 seconds, rate limiter will auto-retry |
+| **YAML encoding errors** | Ensure UTF-8 encoding, avoid Shift-JIS |
+| **Font rendering (Japanese)** | Install system Japanese fonts |
+| **Memory issues** | Reduce batch size in embedding generation |
+
+### Debug Mode
+```bash
+# Enable detailed logging
+STREAMLIT_LOGGER_LEVEL=debug streamlit run app.py
+
+# Check configuration
+python -c "from src.utils.language import debug_language_info; debug_language_info()"
+```
+
+---
+
+## License & Acknowledgments
+
+**License**: MIT License - Free for personal, educational, and commercial use
+
+**Data Sources**:
+- BoardGameGeek API for game information
+- Voyage AI for similarity embeddings
+- Community contributions for complexity data
+
+**Special Thanks**:
+- BoardGameGeek community for comprehensive game database
+- Streamlit team for excellent web app framework
+- Contributors to mechanics and category complexity data
+
+---
+
+**Version**: 2.0.0 | **Last Updated**: December 2024 | **Maintainer**: [@wabisukecx](https://github.com/wabisukecx)
