@@ -1,0 +1,125 @@
+type: boardgame
+name: Architects of the West Kingdom
+alternate_names:
+- Architecten van het Westelijk Koninkrijk
+- Architectes du Royaume de l'Ouest
+- Architectes du royaume de l'ouest
+- Architekci Zachodniego Królestwa
+- Architekten des Westfrankenreichs
+- Architekti Západního království
+- Architetti del Regno Occidentale
+- Arquitectos del Reino del Oeste
+- Arquitetos do Reino Ocidental
+- A nyugati királyság építőmesterei
+- Архитекторы Западного Королевства
+- Архітектори Західного Королівства
+- สถาปนิกแห่งนครตะวันตก
+- 西フランク王国の建築家
+- 西國建築師
+- 西國建築師 Architects of the West Kingdom
+- 西方王国建筑师
+- 서쪽 왕국의 건축가
+japanese_name: 西フランク王国の建築家
+year_published: '2018'
+thumbnail_url: https://cf.geekdo-images.com/OAX7HfOz-9N60StgADzd0g__thumb/img/sBMaoJ-Kz74lJ6djcl-NNMTr0Wo=/fit-in/200x150/filters:strip_icc()/pic3781944.png
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '80'
+publisher_min_age: '12'
+community_best_players: '4'
+community_recommended_players: 1, 2, 3, 5
+community_min_age: '10'
+description: Architects of the West Kingdom is set at the end of the Carolingian Empire,
+  circa 850 AD. As royal architects, players compete to impress their King and maintain
+  their noble status by constructing various landmarks throughout his newly appointed
+  domain. Players need to collect raw materials, hire apprentices, and keep a watchful
+  eye on their workforce. These are treacherous times, and rival architects will stop
+  at nothing to slow your progress. Will you remain virtuous, or be found in the company
+  of thieves and black marketeers?&#10;&#10;The aim of Architects of the West Kingdom
+  is to be the player with the most victory points (VP) at game's end. Points are
+  gained by constructing various buildings and advancing work on the Archbishop's
+  cathedral. Throughout the game, players need to make a lot of moral decisions. However,
+  only at game's end will their virtue be judged. A few underhand deals here and there
+  might not seem like much, but fall too far and you will be punished. The game ends
+  once a set number of constructions have been completed.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+mechanics:
+- name: Area Movement
+- name: Contracts
+- name: End Game Bonuses
+- name: Events
+- name: Kill Steal
+- name: Loans
+- name: Open Drafting
+- name: Solo / Solitaire Game
+- name: Static Capture
+- name: Tags
+- name: Take That
+- name: Track Movement
+- name: Variable Player Powers
+- name: Variable Set-up
+- name: Worker Placement
+categories:
+- name: City Building
+- name: Economic
+- name: Medieval
+designers:
+- name: S J Macdonald
+- name: Shem Phillips
+publishers:
+- name: Garphill Games
+- name: Angry Lion Games
+- name: Banana Games
+- name: CMON Global Limited
+- name: Fever Games
+- name: Korea Boardgames
+- name: Lavka Games
+- name: Lord of Boards
+- name: MEEPLE
+- name: MeepleBR
+- name: Mosaico Jogos
+- name: Pixie Games
+- name: Portal Games
+- name: Primigenio
+- name: Reflexshop
+- name: Renegade Game Studios
+- name: Schwerkraft-Verlag
+- name: TLAMA games
+- name: White Goblin Games
+- name: Yayoi The Dreamer
+- name: 株式会社ケンビル (KenBill)
+average_rating: '7.71693'
+weight: '2.7571'
+ranks:
+- type: boardgame
+  rank: '120'
+- type: strategygames
+  rank: '107'
+learning_analysis:
+  initial_barrier: 3.4
+  strategic_depth: 3.52
+  replayability: 4.09
+  mechanics_complexity: 2.83
+  mechanics_count: 15
+  bgg_weight: 2.7571
+  bgg_rank: 120
+  year_published: 2018
+  category_complexity: 4.22
+  rank_complexity: 3.12
+  learning_curve_type: gentle_then_moderate
+  decision_points: 4.507692307692308
+  interaction_complexity: 3.6490666666666685
+  rules_complexity: 3.49542
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

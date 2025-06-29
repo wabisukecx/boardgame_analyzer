@@ -1,0 +1,74 @@
+type: boardgame
+name: Duck
+alternate_names:
+- Cuac!
+- Kaczki
+- Утки
+year_published: '2020'
+thumbnail_url: https://cf.geekdo-images.com/WRqZ-OzEojpnV8ursuoSLw__thumb/img/8juU3bvu5jMtYus9PBJCQ-HAbwA=/fit-in/200x150/filters:strip_icc()/pic5495074.jpg
+publisher_min_players: '3'
+publisher_max_players: '5'
+playing_time: '15'
+publisher_min_age: '8'
+community_best_players: 3, 4, 5
+community_min_age: '8'
+description: 'Push your luck at this fast paced, family-friendly card game.&#10;&#10;Take
+  risks by keeping a very high card or by &quot;DUCKing&quot;: If you duck, you are
+  betting, that you have the lowest sum in hand. At the end of the round, the player
+  with the highest sum in hand scores &hellip; nothing.&#10;&#10;&mdash;description
+  from the designer&#10;&#10;Lulu, Sonny and Duke take part in the great duck race.
+  Play your hand cards cleverly and draw only cards that are of advantage to you for
+  your next turn. Watch your opponents closely &ndash; the first player to play all
+  his cards wins the round and earns valuable points. Will you play quickly but cleverly?
+  Or will you be bold enough to duck down and exit the round? And if you do, will
+  you really have the lowest total in your hand? Who will duck down most quickly and
+  thus gain the most victory points?&#10;&#10;&mdash;description from the publisher&#10;&#10;Lulu,
+  Sonny und Duke chillen am Strand und warten auf die n&auml;chste gro&szlig;e Welle.
+  Spiele z&uuml;gig deine Handkarten aus und beobachte deine Gegner genau.Oder passe
+  den richtigen Moment ab und DUCKe dich geschickt, bevor es die anderen&#10;tun.
+  Denn wenn du alle unterbietest holst du dir wertvolle Siegpunkte. Handkarten abspielen
+  oder clever DUCKen &hellip; was ist dein Move?&#10;&#10;&mdash;description from
+  the publisher (German)&#10;&#10;'
+mechanics:
+- name: Push Your Luck
+- name: Set Collection
+categories:
+- name: Card Game
+designers:
+- name: Johannes Krenner
+publishers:
+- name: HUCH!
+- name: Brain Picnic
+- name: Egmont Polska
+- name: White Goblin Games
+- name: Zacatrus
+- name: Zvezda
+average_rating: '6.59521'
+weight: '1.25'
+ranks:
+- type: boardgame
+  rank: '8289'
+learning_analysis:
+  initial_barrier: 1.72
+  strategic_depth: 1.76
+  replayability: 2.42
+  mechanics_complexity: 2.05
+  mechanics_count: 2
+  bgg_weight: 1.25
+  bgg_rank: 8289
+  year_published: 2020
+  category_complexity: 2.3
+  rank_complexity: 2.16
+  learning_curve_type: gentle
+  decision_points: 2.607975
+  interaction_complexity: 2.730805
+  rules_complexity: 1.859333333333333
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.0
+    complexity_factor: 0.85
+  mastery_time: short

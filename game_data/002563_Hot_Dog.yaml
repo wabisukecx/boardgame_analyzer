@@ -1,0 +1,86 @@
+type: boardgame
+name: Hot Dog
+alternate_names:
+- HOTDOG
+year_published: '1996'
+thumbnail_url: https://cf.geekdo-images.com/nqy-o5NxnmfS8lWL5msgBw__thumb/img/-116KN22m_q63au6cl6RlklisbI=/fit-in/200x150/filters:strip_icc()/pic196404.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '45'
+publisher_min_age: '10'
+community_best_players: 4, 5
+community_recommended_players: '3'
+community_min_age: '8'
+description: 'Theme&#10;Players attempt to earn the most money by selling their hot
+  dog cards as quickly as possible and for the best price at carefully selected tables.&#10;&#10;Goal&#10;Having
+  the most dollars after three games.&#10;&#10;Game play&#10;Each player gets 10 hot
+  dog cards in one color, 2 or 3 (depending on player number) table cards in the same
+  color, and 3 one dollar cards.&#10;&#10;The neutral table cards are placed at the
+  center of the table: with 2 or 3 players, there are 2 neutral table cards (with
+  values 5 and 7), with 4 or 5 players, there are 3 neutral table cards (values 5,
+  7, 9). The table value determines how many hot dogs can be sold at that table.&#10;The
+  remaining dollar cards are sorted according to value (1, 5, 10 $) and also placed
+  on the table. The start player gets the ketchup/mustard card.&#10;&#10;All players
+  simultaneously decide at which table and how many hot dogs they want to sell. Each
+  player puts the corresponding table and hot dog cards on the table, face down. They
+  can also put down dollar cards to reduce the price of their hot dogs.&#10;When all
+  players have made their decision, the cards are revealed and tallied up, beginning
+  with the lowest table. &#10;When several players want to sell at the same table,
+  the player who wants to sell the lowest number of hot dogs at this table puts them
+  next to the table first, followed by the player who wants to sell the second lowest
+  number at that table etc. Once the number of hot dogs from the players'' cards has
+  reached the maximum specified on the table, no other players can sell hot dogs there
+  and any unsold hot dog cards are returned to that player''s hand. Dollar cards are
+  used to indicate that a player sells his/her hot dogs cheaper, and this changes
+  the order in which players are allowed to sell (e.g. a player with 5 hot dogs minus
+  $ 2 is allowed to sell before a player with 4 hot dogs because his/her total of
+  3 is lower than the other player''s 4). If hot dog prices are equal, the player
+  with the ketchup/mustard card goes first.&#10;As soon as a table is full, each player
+  receives one dollar for each hot dog he/she has at this table.&#10;At the end of
+  the round, each player takes back the table card he/she played and the ketchup/mustard
+  card is passed on to the next player.&#10;A new sales round starts.&#10;When someone
+  plays out his/her last hot dog card(s), he has to announce this by saying &quot;last
+  hot dog&quot;, otherwise he may not sell them. When one player has sold all of his/her
+  hot dogs, the game ends. If tables have become full that round, there is a last
+  payout.&#10;Then all players count their dollars and write down their points. After
+  three games, the richest player wins.&#10;&#10;'
+mechanics:
+- name: Simultaneous Action Selection
+categories:
+- name: Card Game
+designers:
+- name: Wolfgang Kramer
+- name: Richard Ulrich
+publishers:
+- name: AMIGO
+- name: リゴレ (rigoler)
+average_rating: '5.75469'
+weight: '1.2308'
+ranks:
+- type: boardgame
+  rank: '20866'
+learning_analysis:
+  initial_barrier: 2.14
+  strategic_depth: 2.66
+  replayability: 2.42
+  mechanics_complexity: 2.9
+  mechanics_count: 1
+  bgg_weight: 1.2308
+  bgg_rank: 20866
+  year_published: 1996
+  category_complexity: 2.3
+  rank_complexity: 2.08
+  learning_curve_type: gentle
+  decision_points: 3.3699999999999997
+  interaction_complexity: 3.696
+  rules_complexity: 2.426826666666667
+  player_types:
+  - beginner
+  - casual
+  - classic_lover
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: short

@@ -1,0 +1,114 @@
+type: boardgame
+name: Viticulture Essential Edition
+alternate_names:
+- Vinohrad
+- Viticultura Editia Revizuita
+- Viticulture Edição Essencial
+- Viticulture Edición esencial
+- Viticulture Edition Essentielle
+- 'Viticulture: Esszenciális kiadás'
+- 'Виноделие: Полное издание'
+- Виноробство. Основне видання
+- วิถีแห่งไวน์
+- ワイナリーの四季
+- 葡萄酒庄园精华版
+- 葡萄酒莊園-精華版
+- 비티컬처 에센셜 에디션
+japanese_name: ワイナリーの四季
+year_published: '2015'
+thumbnail_url: https://cf.geekdo-images.com/l_PRU2lVlX9seScRFcvFlA__thumb/img/pULDtVd75QZgGfvSMhr6Rs07vK8=/fit-in/200x150/filters:strip_icc()/pic6500949.jpg
+publisher_min_players: '1'
+publisher_max_players: '6'
+playing_time: '90'
+publisher_min_age: '13'
+community_best_players: 3, 4
+community_recommended_players: 1, 2, 5
+community_min_age: '12'
+description: In Viticulture, the players find themselves in the roles of people in
+  rustic, pre-modern Tuscany who have inherited meagre vineyards. They have a few
+  plots of land, an old crush pad, a tiny cellar, and three workers. They each have
+  a dream of being the first to call their winery a true success.&#10;&#10;The players
+  are in the position of determining how they want to allocate their workers throughout
+  the year. Every season is different on a vineyard, so the workers have different
+  tasks they can take care of in the summer and winter. There's competition over those
+  tasks, and often the first worker to get to the job has an advantage over subsequent
+  workers.&#10;&#10;Fortunately for the vineyard owners, people love to visit wineries,
+  and it just so happens that many of those visitors are willing to help out around
+  the vineyard when they visit as long as you assign a worker to take care of them.
+  Their visits (in the form of cards) are brief but can be very helpful. Using those
+  workers and visitors, the vineyard owners can expand their vineyards by building
+  structures, planting vines, and filling wine orders, working towards the goal of
+  running the most successful winery in Tuscany.&#10;&#10;Viticulture Essential Edition
+  includes the base game of Viticulture and a few of the most popular modules from
+  the original Tuscany expansion, including Mamas &amp; Papas, Fields (previously
+  known as Properties), expanded and revised Visitors, and Automa cards for a solo
+  variant, along with a few minor rule changes.&#10;&#10;
+mechanics:
+- name: Contracts
+- name: Hand Management
+- name: Race
+- name: Solo / Solitaire Game
+- name: 'Turn Order: Auction'
+- name: Victory Points as a Resource
+- name: Worker Placement
+- name: Worker Placement, Different Worker Types
+categories:
+- name: Economic
+- name: Farming
+designers:
+- name: Jamey Stegmaier
+- name: Alan Stone
+publishers:
+- name: Stonemaier Games
+- name: Albi
+- name: Angry Lion Games
+- name: Arclight Games
+- name: Board Game Rookie
+- name: Delta Vision Publishing
+- name: Feuerland Spiele
+- name: Ghenos Games
+- name: Kilogames
+- name: Korea Boardgames
+- name: Lavka Games
+- name: Ludofy Creative
+- name: Maldito Games
+- name: Matagot
+- name: PHALANX
+- name: Regatul Jocurilor
+- name: Surfin' Meeple China
+- name: Tower Tactic Games
+average_rating: '7.9721'
+weight: '2.892'
+ranks:
+- type: boardgame
+  rank: '41'
+- type: strategygames
+  rank: '43'
+learning_analysis:
+  initial_barrier: 3.8
+  strategic_depth: 3.78
+  replayability: 3.85
+  mechanics_complexity: 3.45
+  mechanics_count: 8
+  bgg_weight: 2.892
+  bgg_rank: 41
+  year_published: 2015
+  category_complexity: 4.04
+  rank_complexity: 3.19
+  learning_curve_type: moderate
+  decision_points: 4.786666666666668
+  interaction_complexity: 3.8225000000000002
+  rules_complexity: 4.150066666666667
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

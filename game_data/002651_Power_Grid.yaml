@@ -1,0 +1,131 @@
+type: boardgame
+name: Power Grid
+alternate_names:
+- Alta Tensão
+- Alta Tensao
+- Alta Tensión
+- Alta Tensión (Reenergizado)
+- Alta Tensione
+- Funkenschlag
+- Funkenschlag (Recharged Version)
+- Haute Tension
+- Hoogspanning
+- Hoogspanning (Recharged Versie)
+- Megawatts
+- Nagyfeszültség
+- Power Grid (Recharged Version)
+- Power Grid (Versao Energizada)
+- Reţeaua Energetică
+- Visoki Napon
+- Vysoké Napětí
+- Wysokie Napięcie
+- 'Wysokie Napięcie: Doładowana Wersja'
+- Энергосеть
+- เกมโรงไฟฟ้า
+- 電力会社
+- 電力会社 充電完了！
+- 電力公司
+- 파워그리드
+- 파워그리드 재충전
+year_published: '2004'
+thumbnail_url: https://cf.geekdo-images.com/yd6LuatytHRhcFCxCf-EEg__thumb/img/jWTonZ5oYNlPzpELKHIJGWSS0Y8=/fit-in/200x150/filters:strip_icc()/pic4459753.jpg
+publisher_min_players: '2'
+publisher_max_players: '6'
+playing_time: '120'
+publisher_min_age: '12'
+community_best_players: 4, 5
+community_recommended_players: 3, 6
+community_min_age: '12'
+description: 'Power Grid is the updated release of the Friedemann Friese crayon game
+  Funkenschlag. It removes the crayon aspect from network building in the original
+  edition, while retaining the fluctuating commodities market like Crude: The Oil
+  Game and an auction round intensity reminiscent of The Princes of Florence.&#10;&#10;The
+  objective of Power Grid is to supply the most cities with power when someone''s
+  network gains a predetermined size.  In this new edition, players mark pre-existing
+  routes between cities for connection, and then bid against each other to purchase
+  the power plants that they use to power their cities.&#10;&#10;However, as plants
+  are purchased, newer, more efficient plants become available, so by merely purchasing,
+  you''re potentially allowing others access to superior equipment.&#10;&#10;Additionally,
+  players must acquire the raw materials (coal, oil, garbage, and uranium) needed
+  to power said plants (except for the ''renewable'' windfarm/ solar plants, which
+  require no fuel), making it a constant struggle to upgrade your plants for maximum
+  efficiency while still retaining enough wealth to quickly expand your network to
+  get the cheapest routes.&#10;&#10;&#226;&#152;&#155; Power Grid FAQ - Please read
+  this before posting a rules question!  Many questions are asked over and over in
+  the forums... If you have a question about a specific expansion, please check the
+  rules forum or FAQ for that particular expansion.&#10;&#10;'
+mechanics:
+- name: Auction / Bidding
+- name: 'Auction: Turn Order Until Pass'
+- name: Catch the Leader
+- name: Income
+- name: Market
+- name: Network and Route Building
+- name: 'Turn Order: Stat-Based'
+- name: Variable Set-up
+categories:
+- name: Economic
+- name: Industry / Manufacturing
+designers:
+- name: Friedemann Friese
+publishers:
+- name: 2F-Spiele
+- name: 999 Games
+- name: Albi
+- name: Arclight Games
+- name: Brain Games
+- name: Edge Entertainment
+- name: Galápagos Jogos
+- name: Gém Klub Kft.
+- name: Giochi Uniti
+- name: Hobby World
+- name: Ideal Board Games
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Lacerta
+- name: Laguna
+- name: Lautapelit.fi
+- name: Matagot
+- name: Rio Grande Games
+- name: Rozum
+- name: Runadrake
+- name: Siam Board Games
+- name: Smart Ltd
+- name: Stratelibri
+- name: Swan Panasia Co., Ltd.
+average_rating: '7.80198'
+weight: '3.2503'
+ranks:
+- type: boardgame
+  rank: '70'
+- type: strategygames
+  rank: '68'
+learning_analysis:
+  initial_barrier: 3.66
+  strategic_depth: 3.54
+  replayability: 4.07
+  mechanics_complexity: 3.0
+  mechanics_count: 8
+  bgg_weight: 3.2503
+  bgg_rank: 70
+  year_published: 2004
+  category_complexity: 4.36
+  rank_complexity: 3.16
+  strategic_depth_description: 中〜高の深さ
+  learning_curve_type: moderate
+  decision_points: 4.140000000000001
+  interaction_complexity: 3.475
+  rules_complexity: 3.7500599999999995
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

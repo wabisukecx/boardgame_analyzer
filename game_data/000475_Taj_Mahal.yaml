@@ -1,0 +1,94 @@
+type: boardgame
+name: Taj Mahal
+alternate_names:
+- Tadsch Mahal
+- タージ・マハル
+japanese_name: タージ・マハル
+year_published: '2000'
+thumbnail_url: https://cf.geekdo-images.com/1AbjSJSVWFJ5GEXriWLd0w__thumb/img/Hl5F3BOBmcd-NmdNfkbDHbqheNo=/fit-in/200x150/filters:strip_icc()/pic4092498.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '90'
+publisher_min_age: '12'
+community_best_players: '4'
+community_recommended_players: 3, 5
+community_min_age: '12'
+description: 'Northwest India at the beginning of the 18th century. The rule of the
+  Grand Moguls is waning, and the Maharishis and princes seize the opportunity to
+  take control of the region. By influencing the prominent forces, building magnificent
+  palaces, and ensuring a steady supply of commodities, the princes increase their
+  power until the most successful has won.&#10;&#10;The goal of the game is to gain
+  the most influence points. These can be obtained by building palaces and by acquiring
+  commodities. A palace can be built after securing the support of the Vizier, the
+  General, the Monk, the Princess, or the Grand Mogul. Commodities are gained by seizing
+  control of a region or by retrieving them on a space where a palace has just been
+  built.&#10;&#10;There are twelve turns with an auction for the region control and
+  the support of the Vizier, General, Monk, Princess, and Grand Mogul, each represented
+  by a different symbol. Players use cards in four colors to bid for the various prizes,
+  and each player may only play one color in any given turn. During your turn you
+  can either increase your bid by playing more cards or withdraw. When you do, you
+  gain the reward for every symbol you have the majority of. You place palaces, gain
+  region tiles, and increase your score accordingly. There are bonus points for connecting
+  palaces over several regions on the map.After the final area on the board is auctioned,
+  the player with the highest point total wins the game.&#10;&#10;This game is #3
+  in the Alea big box series.&#10;&#10;Note: the 2018 edition from Fantasy Flight
+  Games includes rules for 2 players. You use only the cards included in the game,
+  so no additional components are required. Anyone could use these rules with any
+  version of the game.&#10;&#10;'
+mechanics:
+- name: Auction / Bidding
+- name: 'Auction: Turn Order Until Pass'
+- name: Hand Management
+- name: Network and Route Building
+- name: Open Drafting
+- name: Set Collection
+categories:
+- name: Bluffing
+- name: Political
+designers:
+- name: Reiner Knizia
+publishers:
+- name: alea
+- name: Ravensburger
+- name: ABACUSSPIELE
+- name: Group SNE
+- name: Hobby Japan
+- name: Quined White Goblin Games
+- name: Rio Grande Games
+- name: Ystari Games
+- name: Z-Man Games
+average_rating: '7.25821'
+weight: '2.8642'
+ranks:
+- type: boardgame
+  rank: '658'
+- type: strategygames
+  rank: '412'
+learning_analysis:
+  initial_barrier: 3.23
+  strategic_depth: 3.7
+  replayability: 3.3
+  mechanics_complexity: 2.87
+  mechanics_count: 6
+  bgg_weight: 2.8642
+  bgg_rank: 658
+  year_published: 2000
+  category_complexity: 3.68
+  rank_complexity: 3.03
+  learning_curve_type: gentle_then_moderate
+  decision_points: 4.140000000000001
+  interaction_complexity: 4.818000000000001
+  rules_complexity: 3.5528399999999998
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  - trend_follower
+  - classic_lover
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

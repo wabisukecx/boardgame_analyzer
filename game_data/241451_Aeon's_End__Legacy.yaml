@@ -1,0 +1,90 @@
+type: boardgame
+name: 'Aeon''s End: Legacy'
+alternate_names:
+- 에이언즈 엔드 레거시
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/quoCefZvHWeaf31_8HvFSA__thumb/img/FBXSHWkooee1d4biQAbQwSiIu78=/fit-in/200x150/filters:strip_icc()/pic3979852.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '90'
+publisher_min_age: '14'
+community_best_players: '2'
+community_recommended_players: 1, 3, 4
+community_min_age: '10'
+description: '&ldquo;You are not breach mages yet,&rdquo; Brama lectures as she paces
+  down the line of students, her frail form belying her immense power. &ldquo;Breach
+  mages have protected us since the beginning &mdash; since the burning of the world
+  and our pilgrimage into the dark. It was they who founded Gravehold, our last bastion,
+  and if you wish to stand beside these living legends, you must listen and learn.
+  The Nameless shall come again, as they always have, and you will need to be ready.
+  You are the hope of our future.&rdquo;&#10;&#10;As a young apprentice, you grew
+  up to stories of the breach mages. Brama, the teacher, wisest of the mages. Dezmodia,
+  the prodigy, master of great magic. Mist, the stoic leader and tactical genius.
+  Malastar, the magical craftsman. Rebellious, powerful, and reckless perfectly sum
+  up Xaxos. These mages are your heroes and tomorrow, after your ordeal, you will
+  join their ranks.&#10;&#10;&ldquo;Each of you must overcome your ordeal to learn
+  discipline and focus, the tools you will need to defend Gravehold. We are nothing
+  without Gravehold. To be a breach mage is to sacrifice your life for Gravehold.
+  When you die, it will be in defense of our city. Once you understand this universal
+  truth...only then will you be ready to become a breach mage.&rdquo;&#10;&#10;Aeon''s
+  End is not required to play Aeon''s End: Legacy.&#10;&#10;'
+mechanics:
+- name: Cooperative Game
+- name: Deck, Bag, and Pool Building
+- name: Hand Management
+- name: Legacy Game
+- name: Open Drafting
+- name: Scenario / Mission / Campaign Game
+- name: Solo / Solitaire Game
+- name: Variable Phase Order
+- name: Variable Player Powers
+categories:
+- name: Card Game
+- name: Fantasy
+- name: Science Fiction
+designers:
+- name: Jenny Iglesias
+- name: Nick Little (I)
+- name: Kevin Riley
+publishers:
+- name: Indie Boards & Cards
+- name: Action Phase Games
+- name: Frosted Games
+- name: Gém Klub Kft.
+- name: Korea Boardgames
+- name: Matagot
+- name: Portal Games
+- name: SD Games
+average_rating: '8.05792'
+weight: '2.8367'
+ranks:
+- type: boardgame
+  rank: '240'
+- type: strategygames
+  rank: '141'
+learning_analysis:
+  initial_barrier: 3.67
+  strategic_depth: 3.5
+  replayability: 3.99
+  mechanics_complexity: 3.47
+  mechanics_count: 9
+  bgg_weight: 2.8367
+  bgg_rank: 240
+  year_published: 2019
+  category_complexity: 3.23
+  rank_complexity: 3.1
+  learning_curve_type: moderate_then_shallow
+  decision_points: 4.400000000000001
+  interaction_complexity: 3.3526666666666673
+  rules_complexity: 4.220673333333333
+  player_types:
+  - casual
+  - experienced
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

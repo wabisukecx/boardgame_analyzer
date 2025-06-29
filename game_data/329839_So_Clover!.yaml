@@ -1,0 +1,80 @@
+type: boardgame
+name: So Clover!
+alternate_names:
+- Čtyřmi slovy!
+- Gra w zielone!
+- Secretul Trifoiului!
+- So Kleever!
+- Szókötő
+- Το τετράφυλλο τριφύλλι
+- Так кмітливо!
+- ことばのクローバー！
+- 密語幸運草
+- 쏘 클로버!
+japanese_name: ことばのクローバー！
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/8oipK9-ivkn53h7L5U2Yfg__thumb/img/cBKt41XFKkdphyqZItit4EIC45k=/fit-in/200x150/filters:strip_icc()/pic6588069.png
+publisher_min_players: '3'
+publisher_max_players: '6'
+playing_time: '30'
+publisher_min_age: '10'
+community_best_players: 3, 4
+community_recommended_players: 2, 5, 6
+community_min_age: '10'
+description: So Clover! is a cooperative word-association game. Play as a team to
+  get the highest score. Get Keywords and secretly write their common features on
+  your Clover board; these are your Clues. Then work together to try to figure out
+  each player&rsquo;s Keywords. At the end of the game, add up your score according
+  to how many Keywords you found and write it in the Record of Legends. Try to beat
+  your high score each game!&#10;&#10;-description from the publisher&#10;&#10;
+mechanics:
+- name: Communication Limits
+- name: Cooperative Game
+categories:
+- name: Party Game
+- name: Word Game
+designers:
+- name: François Romain
+publishers:
+- name: Repos Production
+- name: Gameology (Gameology Romania)
+- name: Gém Klub Kft.
+- name: GoKids 玩樂小子
+- name: Hobby Japan
+- name: Kaissa Chess & Games
+- name: MIPL
+- name: Rebel Sp. z o.o.
+- name: TLAMA games
+- name: YellowBOX
+average_rating: '7.58563'
+weight: '1.1183'
+ranks:
+- type: boardgame
+  rank: '290'
+- type: partygames
+  rank: '6'
+learning_analysis:
+  initial_barrier: 2.28
+  strategic_depth: 2.66
+  replayability: 2.8
+  mechanics_complexity: 3.3
+  mechanics_count: 2
+  bgg_weight: 1.1183
+  bgg_rank: 290
+  year_published: 2021
+  category_complexity: 1.89
+  rank_complexity: 2.2
+  learning_curve_type: gentle
+  decision_points: 3.4523249999999996
+  interaction_complexity: 4.07594
+  rules_complexity: 2.8663266666666662
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.0
+    complexity_factor: 0.95
+  mastery_time: short

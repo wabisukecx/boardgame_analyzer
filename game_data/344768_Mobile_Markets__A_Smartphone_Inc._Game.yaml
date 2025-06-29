@@ -1,0 +1,74 @@
+type: boardgame
+name: 'Mobile Markets: A Smartphone Inc. Game'
+alternate_names:
+- 'Mobile Markets: นวัตกรรมไร้พรมแดน'
+- Mobile Markets. Игра серии Smartphone Inc.
+- 手機帝國2 商戰
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/DI1qfsJsPJr2-Nlgii1wUg__thumb/img/AVH0SsLjwcDfetVsHdbY5i0q9OM=/fit-in/200x150/filters:strip_icc()/pic7338111.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '80'
+publisher_min_age: '14'
+community_best_players: '2'
+community_recommended_players: 1, 3
+community_min_age: '12'
+description: Congratulations! You are the CEO of a multinational consumer electronics
+  company ready for the new mobile technologies generation. Compete with other smartphone
+  manufacturers for selling as many goods as possible by planning technology researches,
+  marketing campaigns, production and sales for the whole year. Gain advantages while
+  resolving your plans for victory!&#10;&#10;Mobile Markets is a standalone game in
+  the line of Smartphone Inc. providing a similar game experience, but it offers players
+  new mechanisms, more complexity, and strategic planning, interaction, and competition.&#10;&#10;Join
+  the race to satisfy the various demands of different types of customers all around
+  the world!&#10;&#10;
+mechanics:
+- name: Action Queue
+- name: Deck, Bag, and Pool Building
+- name: Layering
+- name: Open Drafting
+- name: Simultaneous Action Selection
+- name: Solo / Solitaire Game
+- name: 'Turn Order: Stat-Based'
+categories:
+- name: Economic
+- name: Industry / Manufacturing
+designers:
+- name: Ivan Lashin
+publishers:
+- name: Cosmodrome Games
+- name: Arcane Wonders
+- name: Broadway Toys LTD
+- name: Lanlalen
+- name: Open Borders Studio
+average_rating: '7.13422'
+weight: '2.7857'
+ranks:
+- type: boardgame
+  rank: '2806'
+- type: strategygames
+  rank: '1252'
+learning_analysis:
+  initial_barrier: 3.74
+  strategic_depth: 3.41
+  replayability: 2.9
+  mechanics_complexity: 3.36
+  mechanics_count: 7
+  bgg_weight: 2.7857
+  bgg_rank: 2806
+  year_published: 2021
+  category_complexity: 4.36
+  rank_complexity: 2.88
+  learning_curve_type: moderate_then_shallow
+  decision_points: 4.223999999999998
+  interaction_complexity: 3.3460428571428578
+  rules_complexity: 4.111901904761904
+  player_types:
+  - casual
+  - experienced
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

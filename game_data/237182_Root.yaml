@@ -1,0 +1,115 @@
+type: boardgame
+name: Root
+alternate_names:
+- 'Root: A Game of Woodland Might and Right'
+- Корни
+- ルート
+- 茂林源記
+- 루트
+japanese_name: ルート
+year_published: '2018'
+thumbnail_url: https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__thumb/img/ACovMZzGGIsBRyEQXFnsT8282NM=/fit-in/200x150/filters:strip_icc()/pic4254509.jpg
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '90'
+publisher_min_age: '10'
+community_best_players: '4'
+community_recommended_players: '3'
+community_min_age: '14'
+description: 'Root is a game of adventure and war in which 2 to 4 (1 to 6 with the
+  ''Riverfolk'' expansion) players battle for control of a vast wilderness. Like Vast:
+  The Crystal Caverns, each player in Root has unique capabilities and a different
+  victory condition. Now, with the aid of gorgeous, multi-use cards, a truly asymmetric
+  design has never been more accessible.&#10;&#10;The nefarious Marquise de Cat has
+  seized the great woodland, intent on harvesting its riches. Under her rule, the
+  many creatures of the forest have banded together. This Alliance will seek to strengthen
+  its resources and subvert the rule of Cats. In this effort, the Alliance may enlist
+  the help of the wandering Vagabonds who are able to move through the more dangerous
+  woodland paths. Though some may sympathize with the Alliance&rsquo;s hopes and dreams,
+  these wanderers are old enough to remember the great birds of prey who once controlled
+  the woods.&#10;&#10;Meanwhile, at the edge of the region, the proud, squabbling
+  Eyrie have found a new commander who they hope will lead their faction to resume
+  their ancient birthright. The stage is set for a contest that will decide the fate
+  of the great woodland. It is up to the players to decide which group will ultimately
+  take root.&#10;&#10;In Root, players drive the narrative, and the differences between
+  each role create an unparalleled level of interaction and replayability. Leder Games
+  invites you and your family to explore the fantastic world of Root!&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;'
+mechanics:
+- name: Action Points
+- name: Action Queue
+- name: Action Retrieval
+- name: Area Majority / Influence
+- name: Area Movement
+- name: Dice Rolling
+- name: Hand Management
+- name: Multi-Use Cards
+- name: Negotiation
+- name: Point to Point Movement
+- name: Race
+- name: Sudden Death Ending
+- name: Take That
+- name: Variable Player Powers
+- name: Variable Set-up
+categories:
+- name: Animals
+- name: Fantasy
+- name: Negotiation
+- name: Territory Building
+- name: Wargame
+designers:
+- name: Cole Wehrle
+publishers:
+- name: Leder Games
+- name: 2Tomatoes Games
+- name: Arclight Games
+- name: CMON Global Limited
+- name: CrowD Games
+- name: Delta Vision Publishing
+- name: Fox in the Box
+- name: Kilogames
+- name: Korea Boardgames
+- name: MeepleBR
+- name: MS Edizioni
+- name: Portal Games
+- name: Quality Beast
+- name: Spielworxx
+- name: Tower Tactic Games
+- name: YOKA Games
+average_rating: '8.07096'
+weight: '3.8262'
+ranks:
+- type: boardgame
+  rank: '30'
+- type: wargames
+  rank: '12'
+- type: strategygames
+  rank: '37'
+learning_analysis:
+  initial_barrier: 3.72
+  strategic_depth: 3.68
+  replayability: 4.41
+  mechanics_complexity: 2.89
+  mechanics_count: 15
+  bgg_weight: 3.8262
+  bgg_rank: 30
+  year_published: 2018
+  category_complexity: 4.08
+  rank_complexity: 3.44
+  learning_curve_type: moderate
+  decision_points: 4.252307692307691
+  interaction_complexity: 3.7878000000000025
+  rules_complexity: 3.6299066666666655
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

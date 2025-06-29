@@ -1,0 +1,77 @@
+type: boardgame
+name: Fort
+alternate_names:
+- Erőd
+- Форт
+- 捣蛋王国
+year_published: '2020'
+thumbnail_url: https://cf.geekdo-images.com/hAsqLdANmtExR5Zi41v94Q__thumb/img/YqmIsRVLpQqM-r5i1rsN91Q6fzg=/fit-in/200x150/filters:strip_icc()/pic5241325.png
+publisher_min_players: '2'
+publisher_max_players: '4'
+playing_time: '40'
+publisher_min_age: '10'
+community_best_players: '3'
+community_recommended_players: 2, 4
+community_min_age: '10'
+description: Fort is a 2-4 player card game about building forts and following friends.&#10;&#10;In
+  Fort, you're a kid! And like many kids, you want to grow your circle of friends,
+  collect pizza and toys, and build the coolest fort.&#10;&#10;By doing this cool
+  stuff, you'll score victory points, and at the end of the game, the player with
+  the most victory points wins! Your cards not only let you take actions on your own
+  turn, but also let you follow the other players' actions on their turns. Will you
+  devote yourself to your own posse, or copy what the other kids are doing?&#10;&#10;But
+  be careful as your carefully constructed deck might start losing cards if you don't
+  actually use them. After all, if you don't play with your friends, why should they
+  hang out with you anymore?&#10;&#10;&mdash;description from the publisher&#10;&#10;
+mechanics:
+- name: Deck, Bag, and Pool Building
+- name: Follow
+- name: Hand Management
+- name: Race
+- name: 'Turn Order: Progressive'
+categories:
+- name: Card Game
+designers:
+- name: Grant Rodiek
+publishers:
+- name: Leder Games
+- name: 2Tomatoes Games
+- name: CrowD Games
+- name: Delta Vision Publishing
+- name: Fox in the Box
+- name: Matagot
+- name: MeepleBR
+- name: MS Edizioni
+- name: Portal Games
+average_rating: '7.07736'
+weight: '2.4457'
+ranks:
+- type: boardgame
+  rank: '768'
+- type: strategygames
+  rank: '516'
+learning_analysis:
+  initial_barrier: 2.37
+  strategic_depth: 2.82
+  replayability: 2.94
+  mechanics_complexity: 2.72
+  mechanics_count: 5
+  bgg_weight: 2.4457
+  bgg_rank: 768
+  year_published: 2020
+  category_complexity: 2.3
+  rank_complexity: 3.01
+  learning_curve_type: gentle
+  decision_points: 3.775433333333333
+  interaction_complexity: 3.114598800000001
+  rules_complexity: 3.2038066666666665
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 0.95
+  mastery_time: short

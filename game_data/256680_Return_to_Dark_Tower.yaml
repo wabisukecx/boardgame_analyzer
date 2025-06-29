@@ -1,0 +1,93 @@
+type: boardgame
+name: Return to Dark Tower
+alternate_names:
+- Возвращение в Тёмную Башню
+- Вороття до Темної Вежі
+- 重返黑暗之塔
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/sd0acHeHj9RE-daXPC7pEg__thumb/img/ZDxL0mhIb3Rg8st8zCVZD9ngnf4=/fit-in/200x150/filters:strip_icc()/pic5153383.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '10'
+community_best_players: '4'
+community_recommended_players: 1, 2, 3
+community_min_age: '10'
+description: 'For an age, the tower lay in ruins. Unbeknownst to the people of the
+  realm, a great evil stirred in its bowels. It started with strange sightings: a
+  flock of crows flying in circles until they dropped from the sky, the lake frozen
+  solid in the height of summer. In time, they could not deny that which they most
+  feared.&#10;&#10;The evil had not been vanquished. The darkness would soon fall
+  again. The tower will rise.&#10;&#10;A &quot;sequel&quot; to the 1981 grail game,
+  Return to Dark Tower is a game for 1-4 players who take the role of heroes. Together,
+  they gather resources, cleanse buildings, defeat monsters, and undertake quests
+  to build up their strength and discern what foe ultimately awaits them. When the
+  heroes face the tower, the game shifts into its dramatic second act, where the players
+  have one chance to defeat the enemy once and for all.&#10;&#10;The game features
+  both cooperative and competitive modes of play.&#10;&#10;The game features traditional
+  game mechanisms, such as engine building and resource management, paired with a
+  technological interface unlike any seen before in games, including the titular tower,
+  which holds more than a few secrets.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+mechanics:
+- name: Area Movement
+- name: Cooperative Game
+- name: Events
+- name: Push Your Luck
+- name: Random Production
+- name: Scenario / Mission / Campaign Game
+- name: Solo / Solitaire Game
+- name: Sudden Death Ending
+- name: Trading
+- name: Variable Player Powers
+- name: Variable Set-up
+categories:
+- name: Adventure
+- name: Electronic
+- name: Fantasy
+- name: Fighting
+designers:
+- name: Tim Burrell-Saward
+- name: Isaac Childres
+- name: Noah Cohen
+- name: Rob Daviau
+- name: Justin D. Jacobson
+- name: Brian Neff
+publishers:
+- name: Restoration Games
+- name: Broadway Toys LTD
+- name: Choo Choo Games
+- name: Lucky Duck Games
+- name: Ігромаг
+average_rating: '8.22937'
+weight: '2.6667'
+ranks:
+- type: boardgame
+  rank: '232'
+- type: thematic
+  rank: '29'
+learning_analysis:
+  initial_barrier: 3.26
+  strategic_depth: 3.3
+  replayability: 4.1
+  mechanics_complexity: 2.85
+  mechanics_count: 11
+  bgg_weight: 2.6667
+  bgg_rank: 232
+  year_published: 2022
+  category_complexity: 3.54
+  rank_complexity: 2.82
+  learning_curve_type: gentle
+  decision_points: 4.022222222222221
+  interaction_complexity: 3.640918181818182
+  rules_complexity: 3.3690975757575754
+  player_types:
+  - casual
+  - experienced
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

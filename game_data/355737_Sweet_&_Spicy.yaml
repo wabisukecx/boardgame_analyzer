@@ -1,0 +1,75 @@
+type: boardgame
+name: Sweet & Spicy
+alternate_names:
+- Sweet & Spicy. Битва котиків
+- 'Sweet and Spicy: Khi mèo bớt ăn cay'
+- 貓吃酸辣
+- 스위트 스파이시
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/16eiz9vR_Ddncb_DMLSUbA__thumb/img/1sF09BCEtHE8acaMk83c8xNm7DE=/fit-in/200x150/filters:strip_icc()/pic6650853.png
+publisher_min_players: '2'
+publisher_max_players: '6'
+playing_time: '15'
+publisher_min_age: '8'
+community_best_players: 4, 5
+community_recommended_players: 2, 3, 6
+community_min_age: '6'
+description: 'Once hungry Kitty craved to eat, but sadly found no yummy meat, instead
+  just found some weird spice, scoffed it down and paid the price. From prickling
+  hot sensation came the grand idea for this sweet game.&#10;&#10;Sweet &amp; Spicy
+  is a bluffing card game for 2-6 players and the kid-friendly variant of Spicy. Instead
+  of Wasabi you can now play with Lemon and there is a new card in the game: The SUPER-JOKER.
+  But the game principle remains the same.&#10;&#10;Just like in Spicy, the cards
+  are played face down, so you can cheat when you announce your card. But it''s not
+  just about bluffing convincingly. You can almost always play a card that is at least
+  half right if you play it skillfully from your hand. It''s a matter of tactically
+  considering which card you can get away with: Do I play a &quot;pepper 9&quot; better
+  than a &quot;chili 10&quot; or a suit joker than a &quot;pepper 10&quot;? Or do
+  I pass better, because I''m sure it will be noticeable that I''ve been thinking
+  about it for so long?&#10;&#10;In Sweet &amp; Spicy, the super joker is added, which
+  can be any spice and any number. It is therefore always correct and cannot be doubted.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;'
+mechanics:
+- name: Hand Management
+categories:
+- name: Animals
+- name: Bluffing
+- name: Card Game
+designers:
+- name: Győri Zoltán Gábor
+publishers:
+- name: HeidelBÄR Games
+- name: Geekach Studio
+- name: Gém Klub Kft.
+- name: Play Plus
+- name: Swan Panasia Co., Ltd.
+- name: UBO CnC
+average_rating: '6.87992'
+weight: '1.25'
+ranks:
+- type: boardgame
+  rank: '6879'
+learning_analysis:
+  initial_barrier: 2.18
+  strategic_depth: 2.09
+  replayability: 2.4
+  mechanics_complexity: 2.9
+  mechanics_count: 1
+  bgg_weight: 1.25
+  bgg_rank: 6879
+  year_published: 2022
+  category_complexity: 2.53
+  rank_complexity: 2.17
+  learning_curve_type: gentle
+  decision_points: 3.08805
+  interaction_complexity: 3.206555
+  rules_complexity: 2.2973333333333334
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.0
+    complexity_factor: 0.85
+  mastery_time: short

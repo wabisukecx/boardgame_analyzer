@@ -1,0 +1,111 @@
+type: boardgame
+name: Paladins of the West Kingdom
+alternate_names:
+- A Nyugati Királyság Lovagjai
+- Paladijnen van het Westelijk Koninkrijk
+- Paladine des Westfrankenreichs
+- Paladines del Reino del Oeste
+- Paladini del Regno Occidentale
+- Paladinos do Reino Ocidental
+- Paladinové Západního království
+- Paladinové Západního království
+- Paladins du Royaume de l'Ouest
+- Paladyni Zachodniego Królestwa
+- Паладини Західного Королівства
+- Паладины западного королевства
+- 西フランク王国の聖騎士
+- 西国圣武士
+- 西國聖騎士
+- 서쪽 왕국의 성기사
+japanese_name: 西フランク王国の聖騎士
+year_published: '2019'
+thumbnail_url: https://cf.geekdo-images.com/4nhokcLdYoo6ulbZ1rmGgA__thumb/img/1gEbke_bKTA6D2jjpPm1HowGGHM=/fit-in/200x150/filters:strip_icc()/pic4462987.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
+community_best_players: '2'
+community_recommended_players: 1, 3
+community_min_age: '14'
+description: Paladins of the West Kingdom is set at a turbulent time of West Francia's
+  story, circa 900 AD. Despite recent efforts to develop the city, outlying townships
+  are still under threat from outsiders. Saracens scout the borders, while Vikings
+  plunder wealth and livestock. Even the Byzantines from the east have shown their
+  darker side. As noble men and women, players must gather workers from the city to
+  defend against enemies, build fortifications and spread faith throughout the land.
+  Fortunately you are not alone. In his great wisdom, the King has sent his finest
+  knights to help aid in our efforts. So ready the horses and sharpen the swords.
+  The Paladins are approaching.&#10;&#10;The aim of Paladins of the West Kingdom is
+  to be the player with the most victory points (VP) at game's end. Points are gained
+  by building outposts and fortifications, commissioning monks and confronting outsiders.
+  Each round, players will enlist the help of a specific Paladin and gather workers
+  to carry out tasks. As the game progresses, players will slowly increase their faith,
+  strength and influence. Not only will these affect their final score, but they will
+  also determine the significance of their actions. The game is concluded at the end
+  of the seventh round.&#10;&#10;&mdash;description from the publisher&#10;&#10;
+mechanics:
+- name: End Game Bonuses
+- name: Market
+- name: Open Drafting
+- name: Solo / Solitaire Game
+- name: Worker Placement
+- name: Worker Placement, Different Worker Types
+categories:
+- name: Medieval
+designers:
+- name: S J Macdonald
+- name: Shem Phillips
+publishers:
+- name: Garphill Games
+- name: Renegade Game Studios
+- name: Banana Games
+- name: CMON Global Limited
+- name: Fever Games
+- name: Korea Boardgames
+- name: Lavka Games
+- name: Lord of Boards
+- name: MEEPLE
+- name: MeepleBR
+- name: Pixie Games
+- name: Portal Games
+- name: Primigenio
+- name: Reflexshop
+- name: Schwerkraft-Verlag
+- name: TLAMA games
+- name: White Goblin Games
+- name: 株式会社ケンビル (KenBill)
+average_rating: '7.96435'
+weight: '3.7178'
+ranks:
+- type: boardgame
+  rank: '74'
+- type: strategygames
+  rank: '62'
+learning_analysis:
+  initial_barrier: 3.83
+  strategic_depth: 3.83
+  replayability: 3.57
+  mechanics_complexity: 3.55
+  mechanics_count: 6
+  bgg_weight: 3.7178
+  bgg_rank: 74
+  year_published: 2019
+  category_complexity: 3.5
+  rank_complexity: 3.16
+  learning_curve_type: moderate
+  decision_points: 4.740000000000001
+  interaction_complexity: 3.3455333333333335
+  rules_complexity: 4.338559999999999
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - strategist
+  - system_master
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

@@ -1,0 +1,91 @@
+type: boardgame
+name: 'Sleeping Gods: Distant Skies'
+alternate_names:
+- 'Schlafende Götter: Ferne Himmel'
+- 'Spící bohové: Pod neznámým nebem'
+- 'Uśpieni bogowie: Odległe niebo'
+- 'Сплячі боги: далекі небеса'
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/r72BZoC3whophBzKi45Rgg__thumb/img/rwyDCAEtK8uSahZXdLu8COHzVV0=/fit-in/200x150/filters:strip_icc()/pic6737677.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '600'
+publisher_min_age: '13'
+community_best_players: '2'
+community_recommended_players: 1, 3, 4
+community_min_age: '10'
+description: 'San Francisco, 1937: Your cargo plane flies through a portal in the
+  sky, transporting you to a rugged landscape filled with bizarre creatures, scheming
+  gods, and untold dangers. But can you find your way back before the portal closes?&#10;&#10;Sleeping
+  Gods: Distant Skies is a standalone sequel set in the world of Sleeping Gods. As
+  in the original game, you and your friends trek through a vast landscape as you
+  read branching storylines and meet vivid characters, but in this game you interact
+  with the atlas on a deeper level &mdash; camping, exploring, overcoming obstacles,
+  and searching for lost relics. The new action system allows you even greater agency
+  while you travel and explore.&#10;&#10;In addition to the exploration and quest
+  system from the original game, Sleeping Gods: Distant Skies features a fresh spin
+  on combat. Players now build a combat deck from which they draw a varied hand of
+  cards to play, making each combat encounter a fresh and dynamic puzzle.&#10;&#10;Although
+  Sleeping Gods: Distant Skies builds on story elements in the first game, you do
+  not need to play Sleeping Gods to enjoy this sequel. The game features new characters
+  and storylines, explaining concepts from the original game as you encounter them.&#10;&#10;Return
+  to the world of Sleeping Gods and experience a thrilling tale that hinges on your
+  choices in a truly open-world experience!&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+mechanics:
+- name: Action Points
+- name: Cooperative Game
+- name: Deck, Bag, and Pool Building
+- name: Narrative Choice / Paragraph
+- name: Push Your Luck
+- name: Solo / Solitaire Game
+- name: Storytelling
+categories:
+- name: Adventure
+- name: Aviation / Flight
+- name: Exploration
+- name: Fantasy
+- name: Fighting
+designers:
+- name: Ryan Laukat
+publishers:
+- name: Red Raven Games
+- name: DV Games
+- name: Games7Days
+- name: Keep Exploring Games
+- name: Lucky Duck Games
+- name: REXhry
+- name: Schwerkraft-Verlag
+average_rating: '8.4455'
+weight: '2.9767'
+ranks:
+- type: boardgame
+  rank: '1064'
+- type: thematic
+  rank: '141'
+learning_analysis:
+  initial_barrier: 3.41
+  strategic_depth: 4.02
+  replayability: 3.1
+  mechanics_complexity: 2.89
+  mechanics_count: 7
+  bgg_weight: 2.9767
+  bgg_rank: 1064
+  year_published: 2023
+  category_complexity: 3.94
+  rank_complexity: 2.69
+  learning_curve_type: gentle_then_moderate
+  decision_points: 4.25536
+  interaction_complexity: 3.9405944714285717
+  rules_complexity: 3.659149523809524
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - strategist
+  - system_master
+  playtime_analysis:
+    strategic_bonus: 0.3
+    interaction_modifier: 0.1
+    decision_density: 0.0
+    complexity_factor: 1.1
+  mastery_time: medium

@@ -1,0 +1,74 @@
+type: boardgame
+name: TEN
+alternate_names:
+- DIX
+- Ten, czyli dycha
+- 텐텐텐
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/74OIxWD8fvpVGILu7s5I0g__thumb/img/pDsxBxqBHtML4GYSskmpGJ4qp3o=/fit-in/200x150/filters:strip_icc()/pic6109559.png
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '30'
+publisher_min_age: '10'
+community_best_players: '4'
+community_recommended_players: 2, 3, 5
+community_min_age: '10'
+description: TEN is an exciting push-your-luck and auction game for the whole family!
+  Players draw cards one-at-a-time, trying to add as many as they can without exceeding
+  a total value of TEN, or they bust!&#10;&#10;Players may push their luck to draw
+  more cards and use currency to buy additional cards in their attempt to build the
+  longest number sequence in each color. When valuable wildcards emerge from the deck,
+  players compete in auctions to obtain them in order to fill gaps in their sequences&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+mechanics:
+- name: Auction / Bidding
+- name: 'Auction: Once Around'
+- name: Push Your Luck
+- name: Set Collection
+categories:
+- name: Card Game
+designers:
+- name: Molly Johnson
+- name: Robert Melvin
+- name: Shawn Stankewich
+publishers:
+- name: Alderac Entertainment Group
+- name: Flatout Games
+- name: Devir
+- name: Game Factory
+- name: Korokorodou
+- name: Lucky Duck Games
+- name: Popcorn Games
+- name: Trefl
+- name: White Goblin Games
+average_rating: '7.02376'
+weight: '1.44'
+ranks:
+- type: boardgame
+  rank: '1512'
+- type: familygames
+  rank: '440'
+learning_analysis:
+  initial_barrier: 2.08
+  strategic_depth: 2.68
+  replayability: 2.5
+  mechanics_complexity: 2.68
+  mechanics_count: 4
+  bgg_weight: 1.44
+  bgg_rank: 1512
+  year_published: 2021
+  category_complexity: 2.3
+  rank_complexity: 2.19
+  learning_curve_type: gentle
+  decision_points: 3.7627
+  interaction_complexity: 3.477155
+  rules_complexity: 2.8016666666666663
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.2
+    complexity_factor: 0.95
+  mastery_time: short

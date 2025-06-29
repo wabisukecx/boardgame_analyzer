@@ -1,0 +1,102 @@
+type: boardgame
+name: Fossilis
+alternate_names:
+- Раскопки
+- 化石之旅
+- 포실리스
+year_published: '2020'
+thumbnail_url: https://cf.geekdo-images.com/rczms2pvajxj5l9Vpo66Hw__thumb/img/-3U6s7tj2ltu-5J6F9lZo2wfH5I=/fit-in/200x150/filters:strip_icc()/pic4754389.png
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '60'
+publisher_min_age: '8'
+community_best_players: '3'
+community_recommended_players: 2, 4, 5
+community_min_age: '8'
+description: 'An incredible new dinosaur graveyard has been discovered, and if the
+  early findings are any indication, it could be a treasure trove of fossils and bones
+  like the world has never seen! In Fossilis, 2 to 5 players become paleontologists
+  working the dig site with shovels, whisk brooms, and chisels looking for a find
+  that could make their career.&#10;&#10;Each round, players get two actions to dig
+  at the site or make an extraction. As they remove the top layers of sand, clay,
+  and stone, they''ll discover trace fossils, which can be exchanged for tools, the
+  plaster necessary to extract bones, and discovery points. As they delve deeper,
+  precious bones will be exposed. They can make a careful extraction if they have
+  the right amount of plaster, but sometimes shifting the earth to cover up a find
+  and slow down the competition is the right move. Bones on their own can be valuable,
+  but museums are really interested in more complete specimens. Sets of bones can
+  be exchanged for museum cards worth big points!&#10;&#10;Fossilis features a unique
+  3D dig site board, with recessed pockets filled with dinosaur bones, and thick,
+  chunky terrain tiles that cover the dig site. Players have to use strategy, timing,
+  and a little bit of luck if they want to make the best discoveries, get their name
+  in all the paleontology journals, and of course, win the game.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;Note: The Kickstarter edition supports solo play and
+  includes other game related content. It may be found here Fossilis: Kickstarter
+  Edition.&#10;&#10;'
+mechanics:
+- name: Action Points
+- name: Contracts
+- name: End Game Bonuses
+- name: Events
+- name: Grid Movement
+- name: Map Deformation
+- name: Modular Board
+- name: Open Drafting
+- name: Set Collection
+- name: Slide / Push
+- name: Square Grid
+- name: Static Capture
+- name: Tags
+- name: Take That
+- name: Three Dimensional Movement
+- name: Tile Placement
+- name: Variable Set-up
+categories:
+- name: Action / Dexterity
+- name: Animals
+- name: Children's Game
+- name: Exploration
+- name: Prehistoric
+designers:
+- name: David Alberto Diaz
+publishers:
+- name: KTBG
+- name: 17wanzy (Yihu BG)
+- name: Fabrika Igr
+- name: Gen-X Games
+- name: Happy Meeple Games
+- name: Helaina Cappel
+- name: Popcorn Games
+- name: Treetato Studio
+average_rating: '6.97671'
+weight: '2.2692'
+ranks:
+- type: boardgame
+  rank: '2763'
+- type: familygames
+  rank: '854'
+learning_analysis:
+  initial_barrier: 2.85
+  strategic_depth: 3.04
+  replayability: 3.78
+  mechanics_complexity: 2.65
+  mechanics_count: 17
+  bgg_weight: 2.2692
+  bgg_rank: 2763
+  year_published: 2020
+  category_complexity: 2.74
+  rank_complexity: 2.12
+  learning_curve_type: gentle
+  decision_points: 4.074666666666665
+  interaction_complexity: 3.2500470588235273
+  rules_complexity: 2.974820392156863
+  player_types:
+  - beginner
+  - casual
+  - experienced
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: short

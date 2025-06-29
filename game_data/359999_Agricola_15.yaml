@@ -1,0 +1,75 @@
+type: boardgame
+name: Agricola 15
+alternate_names:
+- アグリコラ：15周年記念BOX
+japanese_name: アグリコラ：15周年記念BOX
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/h1dXXGGcCjaGdCip6Q_oGQ__thumb/img/Tcfd0f9j-ntqr-5JHlpSPsgpkI4=/fit-in/200x150/filters:strip_icc()/pic6786604.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '120'
+publisher_min_age: '12'
+community_best_players: 3, 4
+community_recommended_players: 1, 2
+community_min_age: '10'
+description: 'Agricola 15 celebrates the 15th anniversary of Uwe Rosenberg''s Agricola
+  by packing a lot of material created since the game''s debut into a single XXL box:
+  the revised edition of the Agricola base game, the complete Artifex and Bubulcus
+  expansion decks, promo items that were previously long gone (adapted to go with
+  the revised edition), some novelties (and no, you don''t have all the L-Deck cards
+  yet...), and a well-organized inlay for quick set-up and storage.&#10;&#10;In total,
+  Agricola 15 contains 430 cards, more than 200 tokens, and more than 270 wooden components.
+  This set is compatible with both the Farmers of the Moor expansion and the expansion
+  for five and six players.&#10;&#10;'
+mechanics:
+- name: Advantage Token
+- name: Automatic Resource Growth
+- name: Closed Drafting
+- name: Enclosure
+- name: Hand Management
+- name: Increase Value of Unchosen Resources
+- name: Solo / Solitaire Game
+- name: Team-Based Game
+- name: 'Turn Order: Claim Action'
+- name: Variable Player Powers
+- name: Variable Set-up
+- name: Worker Placement
+categories:
+- name: Animals
+- name: Economic
+- name: Farming
+designers:
+- name: Uwe Rosenberg
+publishers:
+- name: Lookout Games
+- name: Hobby Japan
+- name: Tower Tactic Games
+average_rating: '7.73652'
+weight: '3.5'
+ranks: []
+learning_analysis:
+  initial_barrier: 3.66
+  strategic_depth: 3.74
+  replayability: 3.5
+  mechanics_complexity: 3.13
+  mechanics_count: 12
+  bgg_weight: 3.5
+  bgg_rank: null
+  year_published: 2022
+  category_complexity: 3.48
+  rank_complexity: 3.0
+  learning_curve_type: moderate
+  decision_points: 4.632000000000001
+  interaction_complexity: 3.5524
+  rules_complexity: 3.92
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

@@ -1,0 +1,123 @@
+type: boardgame
+name: 'Terraforming Mars: Ares Expedition'
+alternate_names:
+- 'A Mars terraformálása: Árész-expedíció'
+- 'Mars: Teraformace – Expedice Ares'
+- 'Teraformiranje Marsa: Ekspedicija Ares'
+- 'Terraformacja Marsa: Ekspedycja Ares'
+- 'Terraformarea Planetei Marte: Expeditia Ares'
+- 'Terraforming Mars: Ares Expeditie'
+- 'Terraforming Mars: Expedição Ares'
+- 'Terraforming Mars: Expedición Ares'
+- 'Terraforming Mars: Expédition Arès'
+- 'Покорение Марса: Экспедиция "Арес"'
+- Тераформування Марса. Експедиція Арес
+- テラフォーミング・マーズ・カードゲーム：アレス・エクスペディション
+- 重塑火星：阿瑞斯探險隊
+- '테라포밍 마스: 아레스 익스페디션'
+japanese_name: テラフォーミング・マーズ・カードゲーム：アレス・エクスペディション
+year_published: '2021'
+thumbnail_url: https://cf.geekdo-images.com/eT_Atcy_vRJvuUMgYakNrQ__thumb/img/YxoNRQg9owsoi68POaMY0Ix31ZI=/fit-in/200x150/filters:strip_icc()/pic6260098.jpg
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '60'
+publisher_min_age: '14'
+community_best_players: 2, 3
+community_recommended_players: 1, 4
+community_min_age: '12'
+description: 'Terraforming Mars: Ares Expedition is an engine-building game in which
+  players control interplanetary corporations with the goal of making Mars habitable
+  (and profitable). You will do this by investing mega credits (MC) into project cards
+  that will directly or indirectly contribute to the terraforming process. In order
+  to win, you will want to accumulate a high terraform rating (TR) and as many victory
+  points (VP) as you can. Players raise their TR by increasing global parameters:
+  oceans, oxygen, and temperature. TR also determines each corporation''s basic income,
+  and, at the end of the game TR counts as VP. Additional VP and production capabilities
+  are awarded for building project cards and other actions taken during the game.&#10;&#10;The
+  game is played in rounds, and each round the players will choose one of five phases,
+  which determines which activities will take place during that round. This means
+  every round is different, but can consist of building new project cards, taking
+  general and project-specific actions, producing income and resources (plants and
+  heat), or researching to draw more project cards. Every player will take all the
+  phases selected for the round, and will receive a special bonus during the phase
+  that they selected. To speed up the game, within each phase, players can act simultaneously
+  without waiting for each other!&#10;&#10;The game board has tracks for oxygen, temperature,
+  and terraform rating, as well as a place for all of the ocean tiles that will be
+  flipped over the course of the game. The game ends when there is enough oxygen to
+  breath (14%), oceans enough to allow Earth-like weather (9), and the temperature
+  is well above freezing (+8&deg;C). It will then be possible, if not comfortable,
+  to live on the surface of Mars!&#10;&#10;The winner is the player with the most
+  VP at the end of the game.&#10;&#10;'
+mechanics:
+- name: End Game Bonuses
+- name: Follow
+- name: Hand Management
+- name: Income
+- name: Set Collection
+- name: Simultaneous Action Selection
+- name: Solo / Solitaire Game
+- name: Tags
+- name: Tech Trees / Tech Tracks
+- name: Variable Phase Order
+- name: Variable Player Powers
+- name: Variable Set-up
+categories:
+- name: Card Game
+- name: Science Fiction
+- name: Space Exploration
+designers:
+- name: Sydney Engelstein
+- name: Jacob Fryxelius
+- name: Nick Little (I)
+publishers:
+- name: FryxGames
+- name: Stronghold Games
+- name: Arclight Games
+- name: Board Game Rookie
+- name: Ghenos Games
+- name: Intrafin Games
+- name: Kilogames
+- name: Korea Boardgames
+- name: Lavka Games
+- name: Lex Games
+- name: Maldito Games
+- name: MeepleBR
+- name: MINDOK
+- name: MIPL
+- name: Rebel Sp. z o.o.
+- name: Reflexshop
+- name: Schwerkraft-Verlag
+- name: Surfin' Meeple China
+average_rating: '7.64945'
+weight: '2.9193'
+ranks:
+- type: boardgame
+  rank: '184'
+- type: strategygames
+  rank: '148'
+learning_analysis:
+  initial_barrier: 3.45
+  strategic_depth: 3.45
+  replayability: 3.9
+  mechanics_complexity: 3.02
+  mechanics_count: 12
+  bgg_weight: 2.9193
+  bgg_rank: 184
+  year_published: 2021
+  category_complexity: 3.48
+  rank_complexity: 3.11
+  learning_curve_type: gentle
+  decision_points: 4.656000000000001
+  interaction_complexity: 3.1030000000000015
+  rules_complexity: 3.8321933333333336
+  player_types:
+  - casual
+  - experienced
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: medium

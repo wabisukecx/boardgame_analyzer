@@ -1,0 +1,111 @@
+type: boardgame
+name: Terra Mystica
+alternate_names:
+- Терра Мистика
+- テラミスティカ
+- 神秘大地
+- 테라 미스티카
+japanese_name: テラミスティカ
+year_published: '2012'
+thumbnail_url: https://cf.geekdo-images.com/bre12I1YiXkZr7elvriz4A__thumb/img/GW-ip0dfeAee7KQqJ04SRZxF1lg=/fit-in/200x150/filters:strip_icc()/pic5375624.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '150'
+publisher_min_age: '12'
+community_best_players: '4'
+community_recommended_players: 3, 5
+community_min_age: '14'
+description: 'In the land of Terra Mystica dwell 14 different peoples in seven landscapes,
+  and each group is bound to its own home environment, so to develop and grow, they
+  must terraform neighboring landscapes into their home environments in competition
+  with the other groups.&#10;&#10;Terra Mystica is a full information game, without
+  any luck, that rewards strategic planning. Each player governs one of the 14 groups.
+  With subtlety and craft, the player must attempt to rule as great an area as possible
+  and to develop that group''s skills. There are also four religious cults in which
+  you can progress. To do all that, each group has special skills and abilities.&#10;&#10;Taking
+  turns, the players execute their actions on the resources they have at their disposal.
+  Different buildings allow players to develop different resources. Dwellings allow
+  for more workers. Trading houses allow players to make money. Strongholds unlock
+  a group''s special ability, and temples allow you to develop religion and your terraforming
+  and seafaring skills. Buildings can be upgraded: Dwellings can be developed into
+  trading houses; trading houses can be developed into strongholds or temples; one
+  temple can be upgraded to become a sanctuary. Each group must also develop its terraforming
+  skill and its skill with boats to use the rivers. The groups in question, along
+  with their home landscape, are:&#10;&#10;&#10;    Desert (Fakirs, Nomads)&#10;    Plains
+  (Halflings, Cultists)&#10;    Swamp (Alchemists, Darklings)&#10;    Lake (Mermaids,
+  Swarmlings)&#10;    Forest (Witches, Auren)&#10;    Mountain (Dwarves, Engineers)&#10;    Wasteland
+  (Giants, Chaos Magicians)&#10;&#10;&#10;Proximity to other groups is a double-edged
+  sword in Terra Mystica. Being close to other groups gives you extra power, but it
+  also means that expanding is more difficult...&#10;&#10;Terra Mystica FAQ&#10;&#10;'
+mechanics:
+- name: Chaining
+- name: End Game Bonuses
+- name: Hexagon Grid
+- name: Income
+- name: Increase Value of Unchosen Resources
+- name: Network and Route Building
+- name: Tech Trees / Tech Tracks
+- name: 'Turn Order: Pass Order'
+- name: Variable Player Powers
+- name: Variable Set-up
+- name: Victory Points as a Resource
+categories:
+- name: Civilization
+- name: Economic
+- name: Fantasy
+- name: Territory Building
+designers:
+- name: Jens Drögemüller
+- name: Helge Ostertag
+publishers:
+- name: Feuerland Spiele
+- name: Bard Centrum Gier
+- name: Capstone Games
+- name: Cranio Creations
+- name: Devir
+- name: Filosofia Éditions
+- name: FunBox Jogos
+- name: Gém Klub Kft.
+- name: HomoLudicus
+- name: Mandala Jogos
+- name: MINDOK
+- name: Swan Panasia Co., Ltd.
+- name: テンデイズゲームズ (TendaysGames)
+- name: White Goblin Games
+- name: Z-Man Games
+- name: Zvezda
+average_rating: '8.04078'
+weight: '3.9759'
+ranks:
+- type: boardgame
+  rank: '32'
+- type: strategygames
+  rank: '34'
+learning_analysis:
+  initial_barrier: 4.05
+  strategic_depth: 3.96
+  replayability: 4.49
+  mechanics_complexity: 3.3
+  mechanics_count: 11
+  bgg_weight: 3.9759
+  bgg_rank: 32
+  year_published: 2012
+  category_complexity: 4.51
+  rank_complexity: 3.2
+  learning_curve_type: moderate
+  decision_points: 4.644444444444444
+  interaction_complexity: 3.7135000000000002
+  rules_complexity: 4.16518
+  player_types:
+  - experienced
+  - hardcore
+  - strategist
+  - system_master
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.2
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: medium

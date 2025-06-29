@@ -1,0 +1,90 @@
+type: boardgame
+name: 'Slay the Spire: The Board Game'
+alternate_names:
+- 'Slay the Spire: Das Brettspiel'
+- 'Slay the Spire: El Juego de Mesa'
+- 'Slay the Spire: Gra Planszowa'
+- 'Slay The Spire: O Jogo de Tabuleiro'
+- 'Slay the Spire: Настольная игра'
+- 尖塔奇兵：桌面游戏
+- '슬레이 더 스파이어: 보드게임'
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/PQzVclEoOQ_wr4e1V86kxA__thumb/img/cpmsSDagE5RvQ1ERXl-fMJIaUUg=/fit-in/200x150/filters:strip_icc()/pic8157856.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '150'
+publisher_min_age: '12'
+community_best_players: '2'
+community_recommended_players: 1, 3, 4
+community_min_age: '12'
+description: 'Slay the Spire: The Board Game is a co-operative deck-building, dungeon-crawling
+  adventure. Craft a unique deck, encounter bizarre creatures, discover relics of
+  immense power, and finally become strong enough to slay the Spire!&#10;&#10;Each
+  player starts with a character with unique abilities and a simple deck of cards
+  that they can improve by adding and removing cards during the game. Slay the Spire
+  is also a rogue-like. That means that when you die (and you will die!), start over
+  from the beginning. Take the lessons you learned and try again!&#10;&#10;The game
+  is divided into Acts. At the end of an Act you can continue, stop and end the adventure
+  there, or save and continue another time!&#10;&#10;If players defeat the final Boss,
+  they win the game! Which Boss you consider to be final depends on how many Acts
+  you want to play. You can stop playing at the end of any Act! When a player&rsquo;s
+  HP is reduced to 0, they are dead and the party loses the game.&#10;&#10;'
+mechanics:
+- name: Cooperative Game
+- name: Deck, Bag, and Pool Building
+- name: Dice Rolling
+- name: Hand Management
+- name: Simultaneous Action Selection
+- name: Solo / Solitaire Game
+categories:
+- name: Adventure
+- name: Card Game
+- name: Fantasy
+- name: Fighting
+- name: Video Game Theme
+designers:
+- name: Gary Dworetsky
+- name: Anthony Giovannetti
+- name: Casey Yano
+publishers:
+- name: Contention Games
+- name: Ediciones MasQueOca
+- name: Grok Games
+- name: Korea Boardgames
+- name: Lavka Games
+- name: Nice Game Publishing
+- name: Portal Games
+- name: Yayoi The Dreamer
+- name: YOKA Games
+average_rating: '8.69791'
+weight: '2.9143'
+ranks:
+- type: boardgame
+  rank: '42'
+- type: strategygames
+  rank: '25'
+learning_analysis:
+  initial_barrier: 3.27
+  strategic_depth: 3.34
+  replayability: 3.6
+  mechanics_complexity: 2.93
+  mechanics_count: 6
+  bgg_weight: 2.9143
+  bgg_rank: 42
+  year_published: 2024
+  category_complexity: 3.5
+  rank_complexity: 3.2
+  learning_curve_type: gentle
+  decision_points: 3.85
+  interaction_complexity: 3.503893333333334
+  rules_complexity: 3.62286
+  player_types:
+  - casual
+  - experienced
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.2
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: medium

@@ -1,0 +1,107 @@
+type: boardgame
+name: Hanabi
+alternate_names:
+- Hanabi Deluxe
+- Hanabi Extra
+- Hanabi Fun and Easy
+- Hanabi Pocket
+- Πυροτεχνήματα
+- Ханаби
+- Ханабі
+- 花火
+- 花火
+- 하나비
+year_published: '2010'
+thumbnail_url: https://cf.geekdo-images.com/JDVksMwfcqoem1k_xtZrOA__thumb/img/amCeCcEKhYGbVtDvpvIMnu3qTg0=/fit-in/200x150/filters:strip_icc()/pic2007286.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '25'
+publisher_min_age: '8'
+community_best_players: '4'
+community_recommended_players: 2, 3, 5
+community_min_age: '10'
+description: Hanabi&mdash;named for the Japanese word for &quot;fireworks&quot;&mdash;is
+  a cooperative game in which players try to create the perfect fireworks show by
+  placing the cards on the table in the right order. (In Japanese, hanabi is written
+  as &#232;&#138;&#177;&#231;&#129;&#171;; these are the ideograms flower and fire,
+  respectively.)&#10;&#10;The card deck consists of five different colors of cards,
+  numbered 1&ndash;5 in each color. For each color, the players try to place a row
+  in the correct order from 1&ndash;5. Sounds easy, right? Well, not quite, as in
+  this game you hold your cards so that they're visible only to other players. To
+  assist other players in playing a card, you must give them hints regarding the numbers
+  or the colors of their cards. Players must act as a team to avoid errors and to
+  finish the fireworks display before they run out of cards.&#10;&#10;An extra suit
+  of cards, rainbow colored, is also provided for advanced or variant play.&#10;&#10;Hanabi
+  was originally published as part of Hanabi & Ikebana.&#10;&#10;
+mechanics:
+- name: Communication Limits
+- name: Cooperative Game
+- name: Hand Management
+- name: Memory
+- name: Ordering
+- name: Set Collection
+categories:
+- name: Card Game
+- name: Deduction
+- name: Memory
+designers:
+- name: Antoine Bauza
+publishers:
+- name: ABACUSSPIELE
+- name: Cocktail Games
+- name: Les 12 Singes
+- name: asmodee
+- name: Brain Games
+- name: Broadway Toys LTD
+- name: Buly Games
+- name: Competo / Marektoy
+- name: cutia.ro
+- name: Enigma (Bergsala Enigma)
+- name: Galápagos Jogos
+- name: Games7Days
+- name: Gém Klub Kft.
+- name: Ghenos Games
+- name: Happy Baobab
+- name: Hobby Japan
+- name: Interlude
+- name: Kaissa Chess & Games
+- name: Lifestyle Boardgames Ltd
+- name: Oliphante
+- name: PaperGames (III)
+- name: R&R Games
+- name: Rebel Sp. z o.o.
+- name: REXhry
+- name: Spin Master Ltd.
+- name: Swan Panasia Co., Ltd.
+average_rating: '7.03398'
+weight: '1.6901'
+ranks:
+- type: boardgame
+  rank: '569'
+- type: familygames
+  rank: '175'
+learning_analysis:
+  initial_barrier: 2.64
+  strategic_depth: 2.66
+  replayability: 3.32
+  mechanics_complexity: 2.7
+  mechanics_count: 6
+  bgg_weight: 1.6901
+  bgg_rank: 569
+  year_published: 2010
+  category_complexity: 2.71
+  rank_complexity: 2.29
+  learning_curve_type: gentle
+  decision_points: 3.6576500000000003
+  interaction_complexity: 3.379108333333333
+  rules_complexity: 2.901353333333333
+  player_types:
+  - beginner
+  - casual
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.2
+    complexity_factor: 0.95
+  mastery_time: short
