@@ -1,0 +1,71 @@
+type: boardgame
+name: Disc Cover
+alternate_names:
+- Dyskografia
+- 独家专辑
+- 디스크 커버
+year_published: '2022'
+thumbnail_url: https://cf.geekdo-images.com/ZQGLYgmpX5sAz4LjA-dHZA__thumb/img/xTW2DKZK6JE2slSQAFX6Kza-94M=/fit-in/200x150/filters:strip_icc()/pic6941247.png
+publisher_min_players: '3'
+publisher_max_players: '8'
+playing_time: '20'
+publisher_min_age: '7'
+community_best_players: 4, 5, 6
+community_recommended_players: 3, 7, 8, 8+
+community_min_age: '8'
+description: In Disc Cover, turn up the volume and travel through music and images
+  by sharing your playlist:&#10;&#10;1 - Play music of your choice.&#10;2 - Match
+  it with the best cover or identify the one selected by the other players.&#10;3
+  - Reveal your choices to score points.&#10;&#10;Match up with everyone around you
+  to win!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+mechanics:
+- name: Cooperative Game
+- name: Voting
+categories:
+- name: Card Game
+- name: Humor
+- name: Music
+- name: Party Game
+designers:
+- name: Roberto Fraga
+- name: Juan Manuel Rivero
+publishers:
+- name: Blue Orange (EU)
+- name: Blue Orange Games
+- name: Desyllas Games
+- name: Happy Baobab
+- name: Lautapelit.fi
+- name: Lucky Duck Games
+- name: Mercurio
+- name: PaperGames (III)
+average_rating: '6.50436'
+weight: '1.1'
+ranks:
+- type: boardgame
+  rank: '8805'
+- type: partygames
+  rank: '479'
+learning_analysis:
+  initial_barrier: 1.99
+  strategic_depth: 2.51
+  replayability: 2.6
+  mechanics_complexity: 2.7
+  mechanics_count: 2
+  bgg_weight: 1.1
+  bgg_rank: 8805
+  year_published: 2022
+  category_complexity: 2.3
+  rank_complexity: 1.85
+  learning_curve_type: gentle
+  decision_points: 3.165825
+  interaction_complexity: 4.191495000000001
+  rules_complexity: 2.230666666666667
+  player_types:
+  - beginner
+  - casual
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.2
+    decision_density: 0.0
+    complexity_factor: 0.95
+  mastery_time: short

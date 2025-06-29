@@ -1,0 +1,93 @@
+type: boardgame
+name: Expeditions
+alternate_names:
+- Ekspedycyje
+- Expedice
+- Expedíciók
+- Expediciones
+- Експедиції
+year_published: '2023'
+thumbnail_url: https://cf.geekdo-images.com/9eBww9iAi472T2goijVqwQ__thumb/img/xR6PqvTMNBFaGlnN9WDAeIooBNM=/fit-in/200x150/filters:strip_icc()/pic7320023.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '90'
+publisher_min_age: '14'
+community_best_players: '3'
+community_recommended_players: 1, 2
+community_min_age: '12'
+description: The sequel to Scythe sends players on a new adventure into Siberia, where
+  a massive meteorite crashed near the Tunguska River, awakening ancient corruption.
+  An expedition led by Dr. Tarkovsky ventures into the taiga to learn about the meteorite
+  and its impact on the land. Itching for adventure, heroes from the war privately
+  fund their own expeditions to Siberia, hoping to find artifacts, overcome challenges,
+  and ultimately achieve glory. Expeditions has completely different mechanisms than
+  Scythe, though the goal was to capture some of the same feelings that Scythe evokes,
+  with a slightly darker, more supernatural theme.&#10;&#10;Expeditions is a competitive,
+  card-driven, engine-building game of exploration. Play cards to gain power, guile,
+  and unique worker abilities; move your mech to mysterious locations and gain cards
+  found among the tiles; use workers, items, meteorites, and quests to enhance your
+  mech; and use power and guile to vanquish corruption.&#10;&#10;&mdash;description
+  from the publisher&#10;&#10;
+mechanics:
+- name: Action Retrieval
+- name: Deck, Bag, and Pool Building
+- name: Grid Movement
+- name: Hand Management
+- name: Melding and Splaying
+- name: Modular Board
+- name: Multi-Use Cards
+- name: Solo / Solitaire Game
+- name: Tags
+- name: Variable Player Powers
+- name: Variable Set-up
+- name: Victory Points as a Resource
+- name: Worker Placement, Different Worker Types
+categories:
+- name: Exploration
+designers:
+- name: Jamey Stegmaier
+publishers:
+- name: Stonemaier Games
+- name: Albi
+- name: Automa Factory
+- name: Delta Vision Publishing
+- name: Feuerland Spiele
+- name: Galápagos Jogos
+- name: Geekach Studio
+- name: Ghenos Games
+- name: Maldito Games
+- name: Matagot
+- name: PHALANX
+average_rating: '7.64934'
+weight: '3.0476'
+ranks:
+- type: boardgame
+  rank: '401'
+- type: strategygames
+  rank: '252'
+learning_analysis:
+  initial_barrier: 3.69
+  strategic_depth: 3.48
+  replayability: 3.9
+  mechanics_complexity: 3.38
+  mechanics_count: 13
+  bgg_weight: 3.0476
+  bgg_rank: 401
+  year_published: 2023
+  category_complexity: 3.4
+  rank_complexity: 3.07
+  learning_curve_type: moderate_then_shallow
+  decision_points: 4.607272727272728
+  interaction_complexity: 2.8481538461538465
+  rules_complexity: 4.182084102564103
+  player_types:
+  - casual
+  - experienced
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium
