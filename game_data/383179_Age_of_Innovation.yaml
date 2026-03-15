@@ -33,6 +33,16 @@ description: Age of Innovation is a standalone game set in the world of Terra My
   use to make innovations. Build your palace to gain a powerful new ability or build
   workshops, guilds, and universities to complete your culture.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: 'Age of Innovation（エイジ・オブ・イノベーション）は、テラミスティカの世界を舞台にした独立型のゲームです。
+
+
+  特徴的な12の勢力が、多様な地形の世界に存在します。プレイヤーは建物を建設し、都市へと発展させることを競います。ゲームごとに勢力、故郷、能力の組み合わせが新しくなるため、毎回異なる展開を楽しめます。
+
+
+  プレイヤーはこれらの勢力の一つを操り、ゲームマップの地形を自らの故郷に変え、そこに建物を建設します。他の勢力との近接は、拡張を制限する一方で、ゲームにおいて重要な利点をもたらします。この緊張感が、テラミスティカシリーズの魅力を高めています。
+
+
+  建物をアップグレードして、道具、学者、お金、力といった貴重な資源を獲得しましょう。学校を建設して様々な科学を発展させ、本を集めて革新を起こしましょう。宮殿を建設して強力な新能力を得たり、工房、ギルド、大学を建設して文化を完成させましょう。'
 mechanics:
 - name: Contracts
 - name: End Game Bonuses

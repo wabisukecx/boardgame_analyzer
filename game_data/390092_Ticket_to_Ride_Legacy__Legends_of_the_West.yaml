@@ -37,6 +37,13 @@ description: 'In Ticket to Ride Legacy: Legends of the West, players embark on t
   they gather around the board.&#10;&#10;At the end of the twelve games in this legacy
   campaign, you will have transformed your game into a unique copy that you can continue
   playing for a lifetime..&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+description_ja: 'チケット・トゥ・ライド：レガシー 西部開拓時代では、プレイヤーは19世紀の開拓者として北米大陸を横断する12の旅に出ます。キャンペーンは東海岸から始まり、プレイヤーは冒険を進めるごとに西を目指し、その過程で様々な難題に立ち向かいます。チケット・トゥ・ライドと同様に、チケットの達成が主な目標ですが、予期せぬ出来事や手強いライバルを乗り越えるためには、他の能力も磨く必要があります。ゲームを重ね、路線を開拓するごとに、あなたは金庫を稼ぎで満たし続けるでしょう。物語が進むにつれて、フロンティアボックスを開封し、新しいルールやコンテンツ、そして数多くのサプライズが明らかになります。
+
+
+  レガシースタイルとして、西部開拓時代はプレイヤーの選択によって形作られる唯一無二の体験です。各プレイヤーは独自の役割を持ち、物語の展開を自分たちの周りで変化させることができます。ゲームの進行に合わせて進化するメカニズムと組み合わせることで、プレイヤーはボードを囲むたびに新しい体験を得られるでしょう。
+
+
+  このレガシーキャンペーンの12ゲームが終わる頃には、ゲームは一生遊べる唯一無二のコピーへと変貌しているでしょう。'
 mechanics:
 - name: Connections
 - name: Contracts

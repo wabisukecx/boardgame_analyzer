@@ -20,6 +20,16 @@ description: In Only One Collection, players are collecting cards hoping to have
   most cards of each number earns 1 point and then earns 1 point per card of those
   numbers held by the player on their right.&#10;&#10;The person with the most points
   wins.&#10;&#10;
+description_ja: '『オンリーワン・コレクション』では、プレイヤーはカードを集め、各種類のカードを最も多く集めること、そして右隣のプレイヤーが2番目に多く集めることを目指します！
+
+
+  自分の番になったら、プレイヤーは山札からカードをテーブルのセットに追加するか、セットを取るかのどちらかを行います。同じ数字のカードを同じセットに追加することはできません。
+
+
+  ゲームは、特定のカードが山札から出現した時に終了します。その後、各数字のカードを最も多く持っているプレイヤーは1ポイントを獲得し、さらに右隣のプレイヤーが持っているその数字のカード1枚につき1ポイントを獲得します。
+
+
+  最も多くのポイントを獲得したプレイヤーが勝利します。'
 mechanics:
 - name: Push Your Luck
 - name: Set Collection

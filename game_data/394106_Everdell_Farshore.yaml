@@ -28,6 +28,16 @@ description: The Forever Sea is calling...&#10;&#10;The rugged coast north of Ev
   order to build and to sail, for only by adapting to the winds of change will you
   succeed.&#10;&#10;The wind is high. The sun is breaking the horizon. It is time
   to set sail for adventure!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: '永遠の海が呼んでいる…。
+
+
+  エバーデール渓谷の北に広がる険しい海岸は、冒険と神秘に満ちた土地。屈強な船乗りたちは豊かな島々と貴重な宝物を探し求め、勤勉な修道士たちは修道院や写字室にこもり、細心の注意を払い翻訳と解明に励む。勤勉な人々は資源を集め、雄大な海の絶え間なく変化する波と調和しながら街を築き上げていく。
+
+
+  ファーショアを舞台にした独立型ゲーム『エバーデール：ファーショア』へようこそ。季節ごとに、あなたは動物たちのワーカーを率いて、繁栄した街を築き、魅惑的な大海原を探索します。成功するためには、変化の風に適応しなければなりません。建設と航海のため、慎重に計画を立てましょう。
+
+
+  風は高く、太陽が地平線を照らす。冒険に出航する時だ！'
 mechanics:
 - name: Hand Management
 - name: Open Drafting

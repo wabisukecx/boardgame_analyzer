@@ -18,6 +18,13 @@ description: Tails on Fire is an interactive card game in which the ever-changin
   If your card is still on top of the playing pile when your turn comes around again,
   then you win the round and take a fire card and sometimes steal some more from others.&#10;&#10;At
   the end of the game, the player with the most flames wins!&#10;&#10;
+description_ja: 'テイルズ・オン・ファイヤーは、インタラクティブなカードゲームです。ラウンドごとに最高のカード3枚を選ぶという、常に変化する選択が、プレイヤーに永続的なジレンマをもたらします。
+
+
+  ラウンドの開始時に、プレイヤーは最大10枚のカードから、そのラウンドで使用する3枚のカードのみを選びます。自分の番になったら、最後にプレイされたカードよりちょうど1大きいカードをプレイするか、パスを選択できます。自分のカードがプレイの山の一番上にある状態で自分の番が再び回ってきたら、そのラウンドに勝利し、炎のカードを獲得できます。時には他のプレイヤーから炎を奪うこともできます。
+
+
+  ゲーム終了時に、最も多くの炎を持っているプレイヤーが勝利します！'
 mechanics:
 - name: Hand Management
 - name: Kill Steal

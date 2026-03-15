@@ -37,6 +37,32 @@ description: 'In Rats of Wistar, you play the role of one of the four rats who o
   order wins.&#10;&#10;Note: Rats of Wistar is not affiliated, associated, authorized,
   endorsed by, or in any way officially connected with The Wistar Institute of Anatomy
   and Biology.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+description_ja: '『ウィスターのネズミたち』では、あなたは実験室からの脱走を組織した4匹のネズミのうちの1匹としてプレイします。一族を率いて、自分がコロニー全体のリーダーにふさわしいことを証明しなければなりません。あなたの並外れたスキルのおかげで、農場を探索して食料庫にたどり着き、おいしそうなチーズを手に入れることができます。森の端に人間が置き去りにした道具を利用して、新たな発明をし、木の下に新たな部屋を掘り、ベッドを建設して、巣穴を拡大しましょう。地元に住むネズミやハツカネズミに出会い、一族に迎え入れ、必要に応じて錬金術師のネズミを訪ねて特別な利益を得ることもできます。
+
+
+  ゲームは5ラウンド（挑戦が行われる5日間）にわたって行われ、以下のようにして勝利点（VP）を獲得します。
+
+
+  * ベッドの建設
+
+  * 部屋の掘削
+
+  * 農場内のミッションの達成
+
+  * 地元のハツカネズミの受け入れ
+
+  * 新しい発明品の製作
+
+  * アチーブメントの獲得
+
+
+  ゲーム終了時に、最も多くの勝利点を獲得したプレイヤーが勝利します。同点の場合は、ターン順が最も後のプレイヤーが勝利します。
+
+
+  注：『ウィスターのネズミたち』は、ウィスター解剖生物学研究所とは提携、関連、認可、推奨されておらず、いかなる公式な関係もありません。
+
+
+  （出版社による説明文）'
 mechanics:
 - name: Contracts
 - name: Events

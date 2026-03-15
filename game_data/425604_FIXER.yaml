@@ -20,6 +20,16 @@ description: In this competitive trick taker, players utilize the four suits to 
   victory point tokens and takes their opponent's card as points. However, the losing
   player can choose to take the stronger card into their hand!&#10;&#10;Once no victory
   point tokens remain, the game is over!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: 'この対戦型トリックテイキングゲームでは、プレイヤーは4つのスートを駆使して、影の支配者を目指します。体制は首都を支配し、首都はメディアを支配し、メディアは人々を支配し、人々は体制を打倒する…
+
+
+  各スートには、それぞれ弱点と強みとなる組み合わせが存在します。プレイヤーは順番にカードをエリアに配置します。可能な限り、アリーナではスートに従わなければなりません。エリアに2枚のカードが置かれると、すぐに紛争解決が発生します！
+
+
+  勝者は3つの勝利点トークンのうち1つを獲得し、対戦相手のカードをポイントとして奪います。ただし、敗者はより強いカードを手札に加えることができます！
+
+
+  勝利点トークンがなくなると、ゲームは終了です！'
 mechanics:
 - name: Area Majority / Influence
 - name: Trick-taking

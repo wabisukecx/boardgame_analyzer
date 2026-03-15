@@ -44,6 +44,19 @@ description: In Forest Shuffle, players compete to gather the most valuable tree
   in their forest. Whoever scores the most points wins.&#10;&#10;Forest Shuffle is
   the first in a line of Lookout games sporting the Lookout Greenline label, produced
   on FSC certified paper and avoiding plastic completely.&#10;&#10;
+description_ja: '『フォレストシャッフル』では、プレイヤーは最も価値の高い木々を集め、その木々に生き物を引き寄せ、植物相と動物相にとって生態学的にバランスの取れた生息地を作り出すことを競います。
+
+
+  ゲーム開始時、各プレイヤーは手札に6枚のカードを持ちます。カードには特定の種類の木か、2種類の森の住人（動物、植物、キノコなど）が描かれており、後者のカードは縦または横に半分に分割され、各半分に1種類の住人が描かれています。
+
+
+  自分のターンでは、山札から裏向きに、または場の共有地から表向きに、カードを2枚引いて手札に加えるか、コストを支払って手札からカードをプレイし、場に出します。
+
+
+  ゲームの準備段階で、3枚の冬カードが山札の下から3分の1の位置に配置されます。3枚目の冬カードが引かれるとゲームは即座に終了し、プレイヤーは自分の森にある木々と住人に基づいて得点を集計します。最も多くの得点を獲得したプレイヤーが勝利します。
+
+
+  『フォレストシャッフル』は、FSC認証紙を使用し、プラスチックを一切使用しないLookout Greenlineレーベルを冠したLookoutゲームシリーズの第一弾です。'
 mechanics:
 - name: End Game Bonuses
 - name: Hand Management

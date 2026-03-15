@@ -22,6 +22,26 @@ description: 'Welcome to the Urban Development Department!&#10;&#10;This is Vien
   is repeated for 4 rounds, and in the end, each player will have placed 16 land tiles
   on their city boards. The player with the highest score wins the game.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;'
+description_ja: '都市開発部へようこそ！
+
+
+  ここは、広大な花畑、緑豊かな丘、歴史的建造物が美しい街、ヴィエントーレ市です。市場は人々で賑わい、活気に満ちています。あなたは都市開発プロジェクトのリーダーとして、市民の生活水準向上に尽力します。公共事業を計画し、市民の幸福を優先し、バランスの取れた都市環境を創造してください。あなたの卓越したリーダーシップと知恵は、ヴィエントーレ市の発展に大きな影響を与えるでしょう。さあ、あなたの手でこの街を魅力的で住みやすい場所にするのです！
+
+
+  ゲームは全4ラウンドで構成され、各ラウンドは計画フェイズ、配置フェイズ、確認フェイズの3つのフェイズに分かれています。
+
+
+  計画フェイズでは、プレイヤーは用意された土地タイルをドラフトします。
+
+  配置フェイズでは、プレイヤーはドラフトした土地タイルを自分の都市ボードに配置します。重要な点は、タイルはドラフト順とは逆の順番で配置されることです。
+
+  確認フェイズでは、プレイヤーはマイルストーンカードの達成状況を確認します。
+
+
+  この流れを4ラウンド繰り返し、最終的に各プレイヤーは16枚の土地タイルを自分の都市ボードに配置します。最も高いスコアを獲得したプレイヤーがゲームの勝者です。
+
+
+  —出版社より'
 mechanics:
 - name: Open Drafting
 - name: Tile Placement

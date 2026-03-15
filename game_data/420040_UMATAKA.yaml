@@ -24,6 +24,10 @@ description: UMATAKA is a board game themed around the Jomon period in Niigata P
   where this explorer piece stops is also executed. This mechanism forces players
   to think strategically about the number of workers they deploy, and sometimes strategically
   placing extra workers can provide an advantage in the game.&#10;&#10;
+description_ja: 'ウマタカは、日本の新潟県、特に特徴的な「火焔型土器」で知られる縄文時代をテーマにしたボードゲームです。プレイヤーは縄文人の家族の長となり、春、夏、秋、冬の四季を通して、土器の製作、狩猟、木の実の調理によって得点を競います。この地域で歴史的に交易価値の高かったヒスイも重要な役割を果たし、プレイヤーはこの貴重な素材も集めなければなりません。
+
+
+  ウマタカはワーカープレイスメントシステムを採用しており、プレイヤーは人間と犬のコマをワーカーとして使い、指定された場所に1〜4個のワーカーを配置します。犬はゲーム中に比較的入手しやすいものの、いくつかの制約により人間と一緒に働かなければなりません。ワーカーを配置しアクションを実行した後、ワーカーの数が「探索トラック」上のコマの進行に影響を与えます。この探検家コマが停止した場所のアクションも実行されます。このメカニズムにより、プレイヤーは配置するワーカーの数を戦略的に考える必要があり、時には戦略的に余分なワーカーを配置することがゲームにおける優位性をもたらす可能性があります。'
 mechanics:
 - name: Contracts
 - name: Hidden Victory Points

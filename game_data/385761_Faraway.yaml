@@ -37,6 +37,16 @@ description: Welcome to Alula, a mysterious continent with ever-changing geograp
   &ndash; being last to pick a card leaves you with fewer options and often less profitable
   choices for the next turns.&#10;&#10;&mdash;description from the publisher&#10;&#10;Related
   Microbadges&#10;&#10;&#10;&#10;&#10;&#10;
+description_ja: '季節のリズムに合わせて変化し続ける地理を持つ、神秘的な大陸アラルーラへようこそ。霧の海の向こうには、神秘的な大陸アラルーラが広がっています。その秘密を探し求め、住人と出会い、驚異を記録して、対戦相手よりも多くの名声を手に入れましょう。
+
+
+  『Faraway』のゲーム中、あなたは目の前に8枚のカードを左から右へと並べてプレイします。これらのカードは、あなたが土地を探索する中で出会う地域を表しています。カードに描かれたキャラクターは、後で彼らが求める条件を満たすことで勝利点を与えてくれます。ゲーム終了時には、同じ道を戻りながら、プレイした順番とは逆の順番でカードを採点します。ここにゲームプレイの核心があります。ゲームを通して、あなたがプレイするカードは、新たな目標を設定すると同時に、以前にプレイした目標を達成する役割も果たします。
+
+
+  各ターン、あなたは3枚の手札から1枚のカードをプレイします。そして、表向きに並べられたカードの列から新しいカードを1枚選びます。『Faraway』ではプレイが同時進行で行われるため、あなたはすべての選択において巧妙な優先順位システムを考慮しなければなりません。カードを選ぶのが最後になると、選択肢が少なくなり、次のターンにとってしばしば利益の少ない選択を迫られることになります。
+
+
+  —出版社による説明'
 mechanics:
 - name: Constrained Bidding
 - name: End Game Bonuses

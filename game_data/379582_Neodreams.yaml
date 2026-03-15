@@ -22,6 +22,10 @@ description: In the near future, an astonishing new technology has been develope
   stunning experiences, improve dreamscapes, and gain clients. The player who accumulates
   the most wealth once enough dreams have been created will dominate the Oneiroshunt
   industry for years to come!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: '近未来、睡眠中の精神と機械を接続する驚くべき新技術が開発された。それはオネイロシャントと呼ばれ、夢を作り、販売するビジネスは隆盛を極める産業となった。適切な対価を支払えば、クライアントはベッドにいながらにして、新たなスキルを習得し、根深い恐怖を克服し、最も並外れた場所に旅することができるのだ。
+
+
+  『ネオドリームズ』では、各プレイヤーはこの技術を開発・利用する企業のCEOとなり、競争に遅れないよう急速に事業を拡大しなければならない。この経済戦略ゲームでは、プレイヤーはオネイロノートを派遣して資源を集め、素晴らしい体験を作り上げ、夢の風景を改善し、顧客を獲得する。十分な数の夢が創造された時点で最も多くの富を蓄積したプレイヤーが、今後何年にもわたってオネイロシャント業界を支配するだろう！'
 mechanics:
 - name: Deck, Bag, and Pool Building
 - name: Open Drafting

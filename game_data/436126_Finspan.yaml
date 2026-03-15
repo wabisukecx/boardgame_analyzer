@@ -26,6 +26,20 @@ description: You are a marine researcher seeking to find and observe an array of
   into young and consolidate young to form schools.&#10;&#10;&#10;The winner is the
   player with the most points gained from fish, eggs, young, schools, and achievements.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: 'あなたは海洋研究者として、世界の海や海洋に広がる色彩豊かな太陽光層、薄気味悪い薄明層、そして漆黒の深海層で、多種多様な水生生物を探し、観察します。フィン・スパンでは、4週間にわたって発見する魚が、深海に潜るにつれて様々な恩恵をもたらします。
+
+
+  各潜水地点は、研究を拡大するための重要な要素に特化しています。
+
+
+  *   魚のコレクションを増やす
+
+  *   産みたての卵を発見する
+
+  *   卵を孵化させて幼魚を育て、幼魚をまとめて群れを作る
+
+
+  魚、卵、幼魚、群れ、そして達成項目から最も多くのポイントを獲得したプレイヤーが勝者となります。'
 mechanics:
 - name: End Game Bonuses
 - name: Hand Management

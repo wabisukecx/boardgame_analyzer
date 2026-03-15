@@ -22,6 +22,20 @@ description: Eternal Decks is a co-operative game in which players try to comple
   brought on by the Eternals.&#10;&#10;The game has six stages, and the various stages
   will have you collect points, survive a ghost town, navigate a labyrinth, defeat
   a boss, and more to win the game!&#10;&#10;
+description_ja: 'エターナルデックは協力型ゲームで、プレイヤーは誰か1人でも行動不能になる前に、ステージの目標を達成することを目指します。プレイヤーはそれぞれ5枚のカードでデッキを作りゲームを開始しますが、すぐに様々なエターナル（ゲーム内のキャラクター）からカードを獲得しようとするでしょう。エターナルはそれぞれ独自の8枚のカードデッキを持っています。自分のターンには、以下のいずれかのアクションを必ず1つ実行する必要があります。
+
+
+  *   カードをプレイする（フィールド、リバー、または能力を使用）
+
+  *   ジュエルを生成する
+
+  *   チームメイトにカードを渡す
+
+
+  カードのプレイには制限があります。フィールドの3列すべてにおいて、同じ色または同じ数字のカードが隣り合ってはいけません。プレイするステージに応じて、追加の制限が列に適用されます。ジュエルは、エターナルがもたらすマイナスの効果を打ち消すために使用されます。
+
+
+  ゲームには6つのステージがあり、ポイントを集めたり、ゴーストタウンを生き延びたり、迷宮を攻略したり、ボスを倒したりと、様々なステージをクリアしてゲームに勝利しましょう！'
 mechanics:
 - name: Communication Limits
 - name: Cooperative Game

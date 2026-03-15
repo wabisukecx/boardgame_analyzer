@@ -31,6 +31,16 @@ description: Sky Team is a co-operative game, exclusively for two players, in wh
   probably your life.&#10;&#10;From Montreal to Tokyo, each airport offers its own
   set of challenges. Watch out for the turbulence as this could end up being a bumpy
   ride!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: 'スカイチームは2人専用の協力型ゲームです。あなたはパイロット、そしてもう一人は副操縦士として、旅客機を操縦します。チームとして協力し、世界中の様々な空港への着陸を目指しましょう。
+
+
+  着陸を成功させるには、機体の軸を安定させ、速度を制御し、フラップを展開し、着陸装置を出し、管制塔に連絡して進路を確保するために、コックピット内の適切な場所にサイコロを無言で割り当てる必要があります。集中力を高めてサイコロの目を変更するために、少しコーヒーを飲むことさえ必要となるでしょう。
+
+
+  機体が大きく傾き失速したり、空港をオーバーシュートしたり、他の航空機と衝突したりすると、ゲームオーバーです...パイロット免許を失い...おそらく命も。
+
+
+  モントリオールから東京まで、各空港は独自の難題を用意しています。乱気流に注意してください。揺れの激しいフライトになるかもしれません！'
 mechanics:
 - name: Communication Limits
 - name: Cooperative Game

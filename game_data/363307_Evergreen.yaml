@@ -22,6 +22,10 @@ description: In Evergreen, your goal is to build a lush ecosystem by planting se
   the power of nature to gain extra actions. Ideally you can concentrate your trees
   in the most fertile areas, but without them overshadowing one another as you also
   want them to collect as much light as possible.&#10;&#10;
+description_ja: '『エバーグリーン』では、種を植え、木を育て、その他の自然の要素を惑星に配置することで、緑豊かで肥沃な生態系を築き、誰よりも緑豊かで肥沃な惑星を目指します。
+
+
+  共通のプールからバイオームカードを選び、ラウンドごとに惑星のどのエリアを開発するかを決定します。選ばれなかったカードは、その地域をより肥沃にし、価値を高めます。巨大な森を作るには、木を育て、茂みを植え、湖を配置し、自然の力を使って追加のアクションを獲得します。理想的には、最も肥沃な地域に木を集中させたいところですが、互いに日陰にならないように、できるだけ多くの光を集めたいものです。'
 mechanics:
 - name: Bias
 - name: End Game Bonuses

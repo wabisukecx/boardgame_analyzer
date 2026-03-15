@@ -33,6 +33,16 @@ description: 'In Dune: Imperium Uprising, you want to continue to balance milita
   Dune: Imperium expansions Rise of Ix and Immortality work with Uprising, as do almost
   all of the cards from the base game, and elements of Uprising can be used with Dune:
   Imperium.&#10;&#10;The choices are yours. The Imperium awaits!&#10;&#10;'
+description_ja: '『デューン：インペリウム ライジング』では、勝利を目指し、軍事力と政治的策略のバランスを取り続ける必要があります。スパイを使って計画を強化したり、重要な契約で資源を拡大したり、フレーメンのやり方を学び、巨大なサンドワームに乗って戦場に乗り込んだりすることもできます！
+
+
+  『デューン：インペリウム ライジング』は、『デューン：インペリウム』のデッキ構築とワーカープレイスメントの融合を発展させた、独立型のスピンオフ作品です。新たに6人プレイモードが導入され、2つのチームがかつてない規模の戦いで互いに対決します。
+
+
+  『デューン：インペリウム』の拡張セットである『ライズ・オブ・イクス』と『イモータリティ』は、『ライジング』と互換性があり、ベースゲームのほとんどのカードも使用できます。また、『ライジング』の要素は『デューン：インペリウム』でも使用可能です。
+
+
+  選択はあなた次第。帝国の支配を掴みましょう！'
 mechanics:
 - name: Automatic Resource Growth
 - name: Card Play Conflict Resolution

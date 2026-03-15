@@ -30,6 +30,16 @@ description: In Black Forest, you start out with a small domain in need of new b
   in Black Forest  instead of simultaneous action selection.&#10;&#10;A wide selection
   of buildings and their different effects offer many different paths to victory.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: '『黒い森』では、あなたは新たな建物と家畜を必要とする小さな領地からスタートします。村から村へと旅をし、最高の専門家の助けを求めましょう。専門家の能力を活用することで、資源を集め、新しい地形タイル（池や畑など）を配置し、4種類の様々な建物を建てることができます。適切な建物を選び、地形を配置し、ガラス生産を軌道に乗せ、領地を拡大しましょう。
+
+
+  ウヴェ・ローゼンベルク氏の資源ホイールは、『ガラスの道』（2013年）で有名になりましたが、『黒い森』で再び登場します。あなたの個人ボード上の2つの資源ホイールは、資源と生産の記録に役立ちます。『黒い森』は、その名の通り黒い森を舞台に物語が続きます。2つのゲームの主な違いは、同時アクション選択ではなく、『黒い森』ではワーカープレイスメントが採用されている点です。
+
+
+  豊富な種類の建物とそれらの異なる効果が、勝利への様々な道筋を提供します。
+
+
+  ---出版社からの説明'
 mechanics:
 - name: Automatic Resource Growth
 - name: End Game Bonuses

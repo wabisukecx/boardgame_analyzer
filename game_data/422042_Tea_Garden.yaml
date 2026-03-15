@@ -30,6 +30,11 @@ description: As the proud owner of one of the tea gardens in the the Chinese Yun
   trade your tea with eager caravans, ferment your tea leaves, and harvest more tea.
   Couple your main actions with the power of secondary actions to navigate the river,
   produce tea cups, or practice tea studies at the university.&#10;&#10;
+description_ja: '中国雲南地方のお茶園の誇り高きオーナーとして、あなたの使命は、静かな川沿いに新たな茶園を築き、帝国を育て、拡大することです。『Tea
+  Garden』において、茶葉は最も貴重な資産であり、6つの品質等級が存在し、地域ごとに異なる品質の茶葉が生産されます。新鮮で鮮やかな緑茶葉を発酵させ、熟成が進むにつれて品質と価値を高める、豊かで芳醇な茶色の茶葉へと昇華させましょう。
+
+
+  カードデッキの力を利用して、各ゲームラウンドで最大4つの主要なアクションを巧みに実行します。これらのカードの強さは、選択したアクションを実行する上で重要です。強ければ強いほど、より良い効果が得られます。カードを使って、新たな茶園を建設し、新しいカードを獲得し、熱心なキャラバンと茶葉を取引し、茶葉を発酵させ、より多くの茶葉を収穫します。主要なアクションと、川を航行したり、ティーカップを生産したり、大学で茶の研究をしたりできる、副次的なアクションの力を組み合わせましょう。'
 mechanics:
 - name: Automatic Resource Growth
 - name: Deck, Bag, and Pool Building

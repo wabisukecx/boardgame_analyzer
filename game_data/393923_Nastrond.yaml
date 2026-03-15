@@ -17,6 +17,13 @@ description: In this fast-playing riff on Talisman, you play valkyries fighting 
   many warriors in your band will penalize your score.&#10;&#10;Defeated cards in
   the board's grid give you bonus dice against other cards in their row and column,
   so plan ahead and choose your path to the center carefully.&#10;&#10;
+description_ja: 'この手軽に遊べる「タリスマン」風ゲームでは、プレイヤーはヴァルキリーとなり、ミッドガルドからニヴルヘイム、そしてフヴェルゲルミルへと戦い進み、竜ニーズヘッグがラグナロクを引き起こすのを阻止します。
+
+
+  敵の強さをダイスロールで上回って倒しますが、より少ないダイスで倒すほど高得点になります。ヴァルハラから戦士たちの魂を呼び集め、ダイス操作能力を獲得できますが、仲間にする戦士が多すぎると、得点が減点されます。
+
+
+  ボード上のグリッドにある倒したカードは、その行と列にある他のカードに対してボーナスダイスを与えます。先を見据えて、慎重に中心への道を選びましょう。'
 mechanics:
 - name: Dice Rolling
 - name: Push Your Luck

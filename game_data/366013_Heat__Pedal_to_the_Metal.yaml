@@ -32,6 +32,13 @@ description: 'Based on simple and intuitive hand management, Heat: Pedal to the 
   will change every race to spice up their championship. Players can also enjoy a
   solo mode with the Legends Module or add automated drivers as additional opponents
   in multiplayer games.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+description_ja: 'シンプルで直感的な手札管理をベースにした『Heat: Pedal to the Metal』は、プレイヤーを白熱のカーレースの運転席に座らせ、オーバーヒートしないように車のスピードを管理しながら、ゴールラインを最初に通過するためにポジションを争います。車に適切なアップグレードを選択することで、カーブをうまく曲がり、最高速度を維持できるほどエンジンを冷却できます。結局のところ、勝利への鍵はあなたの運転技術です！
+
+
+  ドライバーは、単独のレースに参加することも、「チャンピオンシップシステム」を使用して、1回のゲームナイトでシーズン全体をプレイすることもできます。各レースの前に車をカスタマイズして、表彰台のトップを目指しましょう。天候、道路状況、イベントはレースごとに変化し、チャンピオンシップを盛り上げるので注意が必要です。プレイヤーは、レジェンドモジュールを使用したソロモードを楽しんだり、マルチプレイヤーゲームで自動運転のドライバーを追加の対戦相手として加えたりすることもできます。
+
+
+  —出版社による説明'
 mechanics:
 - name: Catch the Leader
 - name: Deck, Bag, and Pool Building

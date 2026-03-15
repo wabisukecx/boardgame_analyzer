@@ -18,6 +18,10 @@ description: In a new continent, you are the president of a railroad company and
   (roadbeds) and Tracks. Your score is built by connecting many stations with your
   Tracks. The player with the highest score at the end of the game is the winner.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: '新大陸を舞台に、あなたは鉄道会社の社長として事業拡大を目指します。土地を取得し、駅を建設し、多くの都市を結ぶ巨大な鉄道網を築き上げましょう。
+
+
+  「Railage（レイレージ）」は、ペンを使って地図上に図形やオブジェクトを描き込むロール＆ライトゲームです。ゲーム中、各プレイヤーは地図上の都市に「駅」を描き込みます。「駅」を描いたエリアには、点（路盤）や線路を描き込むことができます。多くの駅を線路で繋ぐことで得点が上がります。ゲーム終了時に最も高い得点を獲得したプレイヤーが勝者となります。'
 mechanics:
 - name: Chaining
 - name: Dice Rolling

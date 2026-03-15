@@ -22,6 +22,10 @@ description: In Hickory Dickory, players control a team of mice competing in a r
   the hunt is over and the mice will show off their scavenger hunt cards to Lord Cuckoo.
   Berries will be rewarded for rows and columns completed on their hunt card, and
   the mice team with the most berries wins!&#10;&#10;&mdash;description from publisher&#10;&#10;
+description_ja: 'ヒッコリーディッコリーでは、プレイヤーはカッコウ卿主催の王室宝探し競争に参加するネズミのチームを操作します！ネズミたちはカッコウ時計の分針に乗って、各自の探求カードに一致するアイテムを探します。愛らしいネズミたちは分針から飛び降りてアイテムタイルを収集したり、ベリー（勝利点）を獲得するのに役立つさまざまなアクションを実行したりします。
+
+
+  時計が真夜中を告げると、宝探しは終了し、ネズミたちはカッコウ卿に探求カードを披露します。探求カード上で完成させた列と行に対してベリーが与えられ、最も多くのベリーを獲得したネズミのチームが勝利します！'
 mechanics:
 - name: Action Retrieval
 - name: End Game Bonuses

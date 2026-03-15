@@ -22,6 +22,16 @@ description: Trick Raiders is a trick-taking game in which a player is dealt som
   when one person is out is the winner.&#10;&#10;A few ranks also have special abilities,
   for instance, when the 8 or 9 of clubs is played and wins a trick, the trump suit
   changes.&#10;&#10;
+description_ja: 'トリックレイダーズは、トリックテイキングゲームです。各プレイヤーは、手札として通常通りカードが配られるのに加え、テーブルに表向きでカードが配られます。この表向きのカードは、入札の根拠となると同時に、トリックをリードする際に使用できる唯一のカードとなります。ゲーム開始前に、プレイヤーはこの表向きのカードのグループにカードを追加したり、そのままにしたり、取り除いたりすることができます。
+
+
+  固定の切り札が存在する、マストフォローのトリックテイキングゲームです。
+
+
+  トリックをリードする番のプレイヤーが、リードできるカードを持っていない場合、またはフォローする必要があるプレイヤーが手札にカードを持っていない場合、そのプレイヤーはゲームから脱落します。プレイヤーはゲーム開始時にライフチップをいくつか持っており、最後まで残った人が勝者となります。
+
+
+  一部のランクには特殊能力があり、例えばクラブの8または9がトリックに勝利した場合、切り札が変わります。'
 mechanics:
 - name: Trick-taking
 categories:

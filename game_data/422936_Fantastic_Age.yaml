@@ -21,6 +21,16 @@ description: 'Fantasic Age is a dice-manipulation fantasy adventure game where t
   for certain rolls, or adding dice. Players also have a Class that influences their
   chances in the dungeons in various ways.&#10;&#10;The game can also be played solo,
   aiming for a certain fame score.&#10;&#10;&mdash;user summary&#10;&#10;'
+description_ja: 'ファンタスティック・エイジは、冒険者としての生涯を通して、できるだけ多くの名声を得ることを目指す、ダイス操作を駆使したファンタジー冒険ゲームです。
+
+
+  プレイヤーは若い冒険者としてスタートし、成人、そして老年へと年を重ねていきます。各ターン、プレイヤーはキャラクターのスキルを向上させ、マップ上のダンジョンを選んで攻略に挑みます。各遭遇はカードで表現され、ダンジョン内のすべての遭遇を解決すると、ボスのいる場所へ進むことができます。
+
+
+  成人になると、マップ上に家を建てることができ、老年になると、クランに参加できます。どちらも名声を得る能力を大きく向上させます。プレイヤーのスキルはダイス操作を中心に展開され、出目を変更したり、特定の出目に対して追加の結果を得たり、ダイスを追加したりできます。また、プレイヤーはクラスを持っており、ダンジョンでの成功率にさまざまな影響を与えます。
+
+
+  このゲームはソロプレイも可能で、特定の目標名声スコアを目指します。'
 mechanics:
 - name: Dice Rolling
 - name: Variable Player Powers

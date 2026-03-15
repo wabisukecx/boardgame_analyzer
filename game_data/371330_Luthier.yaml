@@ -1,0 +1,113 @@
+type: boardgame
+name: Luthier
+alternate_names:
+- Lutier
+- Lutnik
+- 制琴师
+- 루티어
+year_published: '2025'
+thumbnail_url: https://cf.geekdo-images.com/NNOCMpxKchQb_ByLmvDfRQ__small/img/hgZk4xlsFSfbXyMy2Y32dFqXCHM=/fit-in/200x150/filters:strip_icc()/pic8145392.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '150'
+publisher_min_age: '14'
+community_best_players: '3'
+community_recommended_players: 1, 2, 4
+community_min_age: '14'
+description: 'Luthier transports players to the height of classical music in Western
+  Europe, when the art of the instrument was upheld equally by skilled craftspeople,
+  noble patrons, virtuoso performers, and famous composers such as Bach, Mozart, and
+  Beethoven.
+
+
+  Using a new, unique combination of hidden bidding and worker placement, players
+  manage resources to craft various musical instruments in their workshop, while also
+  courting actual historic patrons through an ever-changing personal tableau of actions
+  and bonuses. Each player chooses how to balance improving skills across multiple
+  tracks, unlocking specialized worker abilities and other bonuses. The choice to
+  concentrate on varying gameplay strategies and goals, such as musical performances,
+  instrument building and repairs, apprentice training and workshop expansion, and
+  overall reputation as an instrument maker, provide multiple paths to victory.
+
+
+  Luthier finds true harmony through an authentic and original marriage of theme and
+  mechanisms, resulting in a rich gameplay experience that equally speaks to both
+  the strategic gamer and the classical music lover.
+
+
+  &mdash;description from the publisher
+
+
+  '
+description_ja: '弦楽器職人（ルシアー）は、プレイヤーを西ヨーロッパのクラシック音楽全盛期へと誘います。その時代、楽器製作の技術は、熟練した職人、高貴なパトロン、熟達した演奏家、そしてバッハ、モーツァルト、ベートーヴェンのような著名な作曲家によって支えられていました。
+
+
+  隠された入札とワーカープレイスメントという他に類を見ない組み合わせを用いて、プレイヤーは工房で様々な楽器を製作するために資源を管理し、変化し続けるアクションとボーナスが組み合わされた個人用ボード上で、歴史上の実在のパトロンたちに取り入ります。各プレイヤーは、複数のスキルを向上させ、特殊なワーカー能力やその他のボーナスをアンロックする方法をバランス良く選択します。音楽演奏、楽器の製作と修理、見習いの育成、工房の拡張、そして楽器製作者としての総合的な評判など、多様なプレイスタイル戦略と目標に集中することで、勝利への道は複数存在します。
+
+
+  弦楽器職人は、テーマとメカニズムの真正かつ独創的な融合を通じて、真の調和を見出しており、戦略ゲーマーとクラシック音楽愛好家の両方に響く豊かなゲーム体験を提供します。'
+mechanics:
+- name: Area Majority / Influence
+- name: Auction / Bidding
+- name: Dice Rolling
+- name: End Game Bonuses
+- name: Open Drafting
+- name: Solo / Solitaire Game
+- name: 'Turn Order: Claim Action'
+- name: Variable Phase Order
+- name: Variable Player Powers
+- name: Worker Placement
+- name: Worker Placement, Different Worker Types
+categories:
+- name: Age of Reason
+- name: Industry / Manufacturing
+- name: Music
+designers:
+- name: Dave Beck
+- name: Abe Burson
+publishers:
+- name: Paverson Games
+- name: Devir
+- name: Funtails
+- name: Giochi Uniti
+- name: Korea Boardgames
+- name: Lucky Duck Games
+- name: YOKA Games
+average_rating: '8.21461'
+weight: '3.7586'
+ranks:
+- type: boardgame
+  rank: '732'
+- type: strategygames
+  rank: '366'
+learning_analysis:
+  initial_barrier: 4.63
+  strategic_depth: 4.3
+  replayability: 3.64
+  mechanics_complexity: 3.38
+  mechanics_count: 11
+  bgg_weight: 3.7586
+  bgg_rank: 732
+  year_published: 2025
+  category_complexity: 3.7
+  rank_complexity: 3.03
+  decision_points: 4.733333333333332
+  interaction_complexity: 3.4726363636363633
+  rules_complexity: 4.328689696969697
+  solo_friendliness: 5.0
+  player_scalability: 3.5
+  luck_dependency: 3.1
+  strategic_depth_description: 深い
+  learning_curve_type: steep_then_moderate
+  player_types:
+  - experienced
+  - hardcore
+  - strategist
+  - system_master
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.2
+    interaction_modifier: 0.0
+    decision_density: 0.0
+    complexity_factor: 1.0
+  mastery_time: medium_to_long

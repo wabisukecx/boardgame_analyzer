@@ -26,6 +26,10 @@ description: It's Evenfall, and the Clans of Magic are preparing for a new era. 
   and discover card and action synergies that generate victory points. The game ends
   after three rounds, then the player with the most points wins.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: '黄昏時、魔法の氏族たちは新たな時代への準備を整えている。黄昏時は、現実の境界が崩れ、超自然的な力が目覚める時。世界樹は輝く門を開き、未知なる遠い領域へと繋がる。あなたの氏族の魔女たちを送り込み、新たな力の地を発見し、支配せよ。それらを神秘的な儀式に使い、パワーストーンの恩恵を求めて戦え。しかし、魔法の玉座に座れるのはただ一人！新たな時代を導く力はあなたにあるか？
+
+
+  『Evenfall』は、1〜4人用の、斬新かつ親しみやすいメカニズムを備えた、カード主導型のエンジン構築ゲーム。資源を管理し、効率的な順番で行動を実行し、勝利点を生み出すカードとアクションのシナジーを見つけ出せ。ゲームは3ラウンドで終了し、最も多くの勝利点を獲得したプレイヤーが勝者となる。'
 mechanics:
 - name: Chaining
 - name: End Game Bonuses

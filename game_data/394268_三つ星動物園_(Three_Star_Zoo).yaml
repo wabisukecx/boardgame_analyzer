@@ -14,6 +14,7 @@ description: In Three Star Zoo, you place animals in cages from 1 to 12, roll th
   you can expand your zoo by placing new animals, and finally, the person who collects
   three &quot;stars,&quot; a sign of excellence, will win the &quot;three-star&quot;
   zoo.&#10;&#10;&mdash;user summary&#10;&#10;
+description_ja: スリースター動物園では、1から12までの番号が振られた檻に動物を配置し、サイコロを振ります。自分の動物がサイコロの目に対応する星の数の檻にいれば、効果に応じてコインを獲得したり、他のプレイヤーからコインを奪ったりできます。コインを獲得したら、新しい動物を配置して動物園を拡張できます。最終的に、優秀さの証である「星」を3つ集めた人が「スリースター」動物園として勝利します。
 mechanics:
 - name: Dice Rolling
 categories:

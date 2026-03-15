@@ -15,6 +15,13 @@ description: OPEN is a climbing and shedding game in which each person plays wit
   awarded to players who accurately predicted who would go out first.&#10;&#10;Rounds
   are played until one player reaches a given score, then the player with the most
   points wins.&#10;&#10;
+description_ja: '「OPEN」は、手札を出し切ることを目指す、クライミング＆シェディングゲームです。各プレイヤーは、手札6枚のうち4枚をテーブルに表向きにしてプレイします。
+
+
+  各ラウンドの開始時に、プレイヤーは誰が最初に手札を出し切るかを秘密裏に予想し、賭けを行います。最初に手札を出し切った人以外の全員にポイントが与えられ、さらに、誰が最初に手札を出し切るかを正確に予想したプレイヤーにもポイントが与えられます。
+
+
+  いずれかのプレイヤーが規定の得点に達するまでラウンドを繰り返し、最終的に最も多くのポイントを獲得したプレイヤーが勝利します。'
 mechanics:
 - name: Ladder Climbing
 categories:

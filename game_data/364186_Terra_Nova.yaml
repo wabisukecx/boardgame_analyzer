@@ -18,6 +18,7 @@ description: Terra Nova is a simplified version of the strategy game Terra Mysti
   erect buildings, and achieve certain goals from round to round. Use your faction's
   special abilities in a clever way to control the largest territory at game's end
   and finish with the most points.&#10;&#10;
+description_ja: テラノヴァは、戦略ゲーム「テラミスティカ」を簡略化したものです。最大4人までのプレイヤーが、それぞれ異なる能力を持つ10の勢力のいずれかを操り、平和的な競争を通じて新たな領土を探索し、建物を建設し、ラウンドごとに特定の目標を達成することを目指します。勢力固有の特殊能力を巧みに活用し、ゲーム終了時に最大の領土を支配し、最も多くのポイントを獲得しましょう。
 mechanics:
 - name: Chaining
 - name: Hexagon Grid

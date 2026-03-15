@@ -23,6 +23,16 @@ description: Snow Planner is a dice-placement game for 1-4 players who each take
   player starts with one of the talent cards, giving them unique powers during the
   game. By using this power and their dice, players can fulfill goals and projects
   or attract VIP guests.&#10;&#10;In the end, whoever earns the most points wins.&#10;&#10;
+description_ja: 'スノー・プランナーは、雪山の近くの宿を経営する1〜4人用のダイスプレイスメントゲームです。プレイヤーは順番にゲームボードにダイスを配置し、すべてのダイスがなくなるとラウンドが終了します。
+
+
+  プレイヤーはホテルに宿泊客を招待し、ラウンドの終わりに宿泊料を受け取ります。宿泊客には、できるだけ長く滞在してもらい、新たな宿泊客を探す手間を省きたいところです。タイルをボードに配置することでホテルをアップグレードし、ボーナスを増やしたり、収入を増やしたりできます。ダイスは従業員を表すこともでき、彼らの労働時間に応じて資源を得られます。ダイスは、永続的なものとパートタイムのものがあり、追加で獲得することも可能です。
+
+
+  各プレイヤーは才能カードを1枚持っており、ゲーム中に独自の能力を発揮できます。この能力とダイスを使って、プレイヤーは目標やプロジェクトを達成したり、VIPゲストを誘致したりすることができます。
+
+
+  最終的に、最も多くのポイントを獲得したプレイヤーが勝利します。'
 mechanics:
 - name: Contracts
 - name: End Game Bonuses

@@ -17,6 +17,13 @@ description: In &#227;&#131;&#159;&#227;&#131;&#169;&#227;&#131;&#134;&#227;&#13
   actions, additional ingredients, coins, and popularity. Combos can be created in
   the process.&#10;&#10;After 8 rounds, popularity points are tallied for every player
   and whoever has the most wins.&#10;&#10;&mdash;user summary&#10;&#10;
+description_ja: '「ミラクルカクテル」では、プレイヤーは魔法のカクテルで有名な街でそれぞれのバーを開きます。人気ポイントを最も多く獲得し、街で一番人気のバーを目指して競い合います。
+
+
+  各ラウンド、魔法のシェーカーから魔法の材料が次々と注ぎ込まれます。プレイヤーは、その量と種類に応じて、さまざまな貯蔵ボトルに詰めたり、コインを生み出したりできる、隣り合った3つの材料のグループを選ばなければなりません。これらの材料を十分に貯蔵したり、カクテルレシピを作成するために使用したりすることで、特別なアクション、追加の材料、コイン、そして人気を得ることができます。その過程でコンボも発生します。
+
+
+  8ラウンド後、各プレイヤーの人気ポイントが集計され、最も多くのポイントを獲得したプレイヤーが勝利します。'
 mechanics:
 - name: Paper-and-Pencil
 categories:

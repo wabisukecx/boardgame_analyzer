@@ -28,6 +28,10 @@ description: The sequel to Scythe sends players on a new adventure into Siberia,
   found among the tiles; use workers, items, meteorites, and quests to enhance your
   mech; and use power and guile to vanquish corruption.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: '『サイズ - 大鎌戦役 -』の続編となる本作では、プレイヤーは新たな冒険へと旅立ちます。舞台はシベリア。ツングースカ川付近に巨大隕石が落下し、古代の堕落が目覚めたのです。タルコフスキー博士率いる探検隊は、隕石とその土地への影響を調査するため、タイガへと向かいます。戦時中の英雄たちは冒険心を抑えきれず、私的に資金を調達してシベリアへの探検隊を結成。遺物を発見し、困難を乗り越え、究極の栄光を掴み取ることを目指します。『Expeditions』は『サイズ』とは全く異なるメカニズムを採用していますが、少しダークで超自然的なテーマで、『サイズ』が持つ感情をいくらか捉えることを目標としています。
+
+
+  『Expeditions』は、競争型のカード主導によるエンジン構築型探索ゲームです。カードをプレイして力と策略、ユニークな労働者の能力を獲得し、メカを神秘的な場所に移動させてタイルから発見されたカードを入手します。労働者、アイテム、隕石、クエストを利用してメカを強化し、力と策略を用いて堕落を打ち破りましょう。'
 mechanics:
 - name: Action Retrieval
 - name: Deck, Bag, and Pool Building

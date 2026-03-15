@@ -18,6 +18,16 @@ description: '&quot;Would you like to journey together in this land?&quot;&#10;&
   their satisfaction increases. Build wonderful memories with the tourists who have
   visited the Perlune Region, and enhance the reputation of your tourism association!&quot;&#10;&#10;&mdash;description
   from the publisher&#10;&#10;'
+description_ja: '「この地を共に旅しませんか？」
+
+
+  多様な種族が調和して暮らすパールーン地方には、象徴的な時計塔、賑やかな市場、歴史的な城など、魅力あふれる街が点在しています。あなたはパールーン地方観光協会のリーダーとして、観光客を様々な観光名所に案内します。観光客と共に街を歩き、時には空から街を眺めながら、彼らを目的地へと導きましょう。
+
+
+  心優しい観光客は、ツアーガイドのサービスを利用するたびに、感謝の気持ちとしてお礼の品とガイド料を渡してくれます。さらに、観光客を目的地に案内するにつれて、彼らの満足度は高まります。パールーン地方を訪れた観光客と素敵な思い出を築き、あなたの観光協会の評判を高めましょう！
+
+
+  ---出版社による説明'
 mechanics:
 - name: Dice Rolling
 - name: Pick-up and Deliver

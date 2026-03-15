@@ -18,6 +18,17 @@ description: In Disc Cover, turn up the volume and travel through music and imag
   it with the best cover or identify the one selected by the other players.&#10;3
   - Reveal your choices to score points.&#10;&#10;Match up with everyone around you
   to win!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: 'Disc Coverでは、ボリュームを上げて、プレイリストを共有しながら音楽とイメージの旅に出かけましょう。
+
+
+  1. 好きな音楽を再生。
+
+  2. その音楽に最も合うカバーを選ぶか、他のプレイヤーが選んだカバーを当てる。
+
+  3. 選んだカバーを公開して得点。
+
+
+  周りのみんなと気持ちをシンクロさせて、勝利を目指しましょう！'
 mechanics:
 - name: Cooperative Game
 - name: Voting
