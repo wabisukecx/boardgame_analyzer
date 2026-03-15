@@ -19,6 +19,9 @@ import random
 import xml.etree.ElementTree as ET
 import re
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Logging configuration
 logging.basicConfig(
@@ -28,6 +31,14 @@ logging.basicConfig(
     filemode='a'
 )
 logger = logging.getLogger('daily_update')
+
+def _get_bgg_headers():
+    """Return Authorization header for BGG API requests"""
+    token = os.getenv("BGG_TOKEN", "")
+    if token:
+        return {"Authorization": f"Bearer {token}"}
+    logger.warning("BGG_TOKEN is not set. Requests will be sent without authorization.")
+    return {}
 
 # Constants
 BASE_DIR = Path('.')
@@ -158,7 +169,7 @@ def get_game_details(game_id):
     url = f"https://boardgamegeek.com/xmlapi2/thing?id={game_id}&stats=1"
     logger.info(f"Retrieving details for game ID {game_id}...")
     
-    response = requests.get(url)
+    response = requests.get(url, headers=_get_bgg_headers())
     
     if response.status_code == 200:
         root = ET.fromstring(response.content)

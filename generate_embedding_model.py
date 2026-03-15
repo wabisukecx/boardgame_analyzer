@@ -145,10 +145,9 @@ def create_game_text(game_data: Dict[str, Any]) -> str:
     if 'year_published' in game_data:
         text += f"Year Published: {game_data.get('year_published', '')}\n"
     
-    # Add thumbnail URL
-    if 'thumbnail_url' in game_data and game_data['thumbnail_url']:
-        text += f"Thumbnail URL: {game_data.get('thumbnail_url', '')}\n"
-    
+    # NOTE: thumbnail_url is intentionally excluded — URLs are random strings
+    # that add noise to cosine similarity without contributing semantic meaning.
+
     # Player count information (publisher recommended)
     if 'publisher_min_players' in game_data and 'publisher_max_players' in game_data:
         text += f"Publisher Recommended Players: {game_data.get('publisher_min_players', '')} to {game_data.get('publisher_max_players', '')} players\n"
@@ -448,6 +447,7 @@ async def get_embeddings(
             else:
                 # Process texts individually if batch size is 1
                 print("Processing texts individually")
+                failed_indices = []
                 for single_text in batch_texts:
                     try:
                         single_embedding = await get_embeddings_with_backoff(
@@ -460,11 +460,14 @@ async def get_embeddings(
                         save_temp_result(all_embeddings, i + 1)
                         i += 1
                     except Exception as single_error:
-                        print(f"Error processing individual text: {single_error}")
-                        # Add zero vector on error
-                        all_embeddings.append([0.0] * 1024)  # voyage-3-large has 1024 dimensions
-                        save_temp_result(all_embeddings, i + 1)
+                        print(f"Error processing individual text (index {i}): {single_error}")
+                        # Record failed index instead of inserting zero vector
+                        # Zero vectors corrupt cosine similarity results silently
+                        failed_indices.append(i)
                         i += 1
+                if failed_indices:
+                    print(f"WARNING: {len(failed_indices)} items failed and were SKIPPED (not zero-filled): indices {failed_indices}")
+                    print("Re-run with --resume to retry, or check the source YAML files for these indices.")
                 continue
         
         # Wait before next request (rate limiting)
@@ -626,13 +629,22 @@ async def main_async():
         # Convert embeddings array to NumPy array
         embeddings_array = np.array(embeddings)
         
+        # Guard: embedding count must match game count (can differ if items were skipped)
+        if len(embeddings_array) != len(games):
+            print(
+                f"WARNING: embedding count ({len(embeddings_array)}) != game count ({len(games)}). "
+                "Trimming game lists to match embeddings to preserve index alignment."
+            )
+            games = games[:len(embeddings_array)]
+            game_data_list = game_data_list[:len(embeddings_array)]
+        
         # Calculate similarity matrix
         similarity_matrix = calculate_similarity_matrix(embeddings_array)
         
         # Save results (including metadata)
         save_results(args.output, games, game_data_list, embeddings_array, similarity_matrix, current_metadata)
         
-        print(f"Processing completed. Generated {len(embeddings)} embeddings.")
+        print(f"Processing completed. Generated {len(embeddings_array)} embeddings.")
         
     except Exception as e:
         print(f"Error occurred during program execution: {e}")

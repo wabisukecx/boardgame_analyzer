@@ -21,6 +21,7 @@ def parse_arguments():
     parser.add_argument('--password', type=str, default=None, help='Password (not recommended for security)')
     parser.add_argument('--config', action='store_true', default=True, help='Also fetch configuration files (enabled by default)')
     parser.add_argument('--no-upload', action='store_true', default=False, help='Skip upload process')
+    parser.add_argument('--verbose', action='store_true', default=False, help='Enable verbose upload output with per-file verification')
     
     return parser.parse_args()
 
@@ -89,40 +90,41 @@ def get_remote_yaml_files(ssh, remote_path):
         print(f"Error getting remote file list: {e}")
         return []
 
-def upload_files(ssh, local_path, remote_path, file_names):
-    """Upload specified files (debug enhanced version)"""
+def upload_files(ssh, local_path, remote_path, file_names, verbose=False):
+    """Upload specified files.
+    
+    Parameters:
+    verbose (bool): If True, print detailed progress and verify each upload.
+    """
     if not file_names:
         print(f"No files to upload: {local_path}")
         return True
     
-    print(f"Uploading {len(file_names)} files: {', '.join(file_names[:5])}...")
-    if len(file_names) > 5:
-        print(f"...and {len(file_names)-5} more files")
+    print(f"Uploading {len(file_names)} files...")
+    if verbose and len(file_names) > 5:
+        print(f"  First 5: {', '.join(file_names[:5])} ...and {len(file_names)-5} more")
     
-    # Upload process
     sftp = ssh.open_sftp()
     upload_success = 0
     upload_fail = 0
     
     try:
-        # Check if remote directory exists (with debug output)
+        # Check if remote directory exists
         try:
             sftp.stat(remote_path)
-            print(f"Remote directory exists: {remote_path}")
+            if verbose:
+                print(f"Remote directory exists: {remote_path}")
         except FileNotFoundError:
-            # Create remote directory if it doesn't exist
             print(f"Creating remote directory: {remote_path}")
             stdin, stdout, stderr = ssh.exec_command(f'mkdir -p {remote_path}')
             stderr_content = stderr.read().decode().strip()
             if stderr_content:
                 print(f"Remote directory creation error: {stderr_content}")
                 return False
-            else:
-                print(f"Created remote directory: {remote_path}")
         
-        # Check remote directory contents (debug)
-        stdin, stdout, stderr = ssh.exec_command(f'ls -la {remote_path}')
-        print(f"Remote directory contents: \n{stdout.read().decode()}")
+        if verbose:
+            stdin, stdout, stderr = ssh.exec_command(f'ls -la {remote_path}')
+            print(f"Remote directory contents before upload:\n{stdout.read().decode()}")
         
         # Upload each file
         for i, filename in enumerate(file_names):
@@ -130,72 +132,36 @@ def upload_files(ssh, local_path, remote_path, file_names):
             remote_file = posixpath.join(remote_path, filename)
             
             try:
-                print(f"Uploading ({i+1}/{len(file_names)}): {filename}")
-                print(f"  Local: {local_file}")
-                print(f"  Remote: {remote_file}")
+                if verbose:
+                    print(f"Uploading ({i+1}/{len(file_names)}): {filename}")
+                    print(f"  Local: {local_file}  Remote: {remote_file}")
+                else:
+                    print(f"Uploading ({i+1}/{len(file_names)}): {filename}")
                 
                 sftp.put(local_file, remote_file)
                 
-                # Verify successful upload (check file existence)
-                try:
-                    sftp.stat(remote_file)
-                    print(f"  ✓ Upload successful: {filename}")
-                    upload_success += 1
-                except FileNotFoundError:
-                    print(f"  ✗ Upload file verification failed: {remote_file}")
-                    upload_fail += 1
-                    
+                if verbose:
+                    try:
+                        sftp.stat(remote_file)
+                        print(f"  ✓ Verified: {filename}")
+                    except FileNotFoundError:
+                        print(f"  ✗ Verification failed: {remote_file}")
+                        upload_fail += 1
+                        continue
+                
+                upload_success += 1
+                
             except Exception as e:
-                print(f"  ✗ Error uploading file {filename}: {e}")
+                print(f"  ✗ Error uploading {filename}: {e}")
                 upload_fail += 1
         
         print(f"Upload complete: Success={upload_success}, Failed={upload_fail}")
         
-        # Check remote directory contents after upload (debug)
-        stdin, stdout, stderr = ssh.exec_command(f'ls -la {remote_path}')
-        print(f"Remote directory contents after upload: \n{stdout.read().decode()}")
+        if verbose:
+            stdin, stdout, stderr = ssh.exec_command(f'ls -la {remote_path}')
+            print(f"Remote directory contents after upload:\n{stdout.read().decode()}")
         
         return upload_fail == 0
-        
-    except Exception as e:
-        print(f"Overall file upload process error: {e}")
-        return False
-        
-    finally:
-        sftp.close()
-
-def upload_files(ssh, local_path, remote_path, file_names):
-    """Upload specified files"""
-    if not file_names:
-        print(f"No files to upload: {local_path}")
-        return True
-    
-    print(f"Uploading {len(file_names)} files...")
-    
-    # Upload process
-    sftp = ssh.open_sftp()
-    try:
-        # Check if remote directory exists
-        try:
-            sftp.stat(remote_path)
-        except FileNotFoundError:
-            # Create remote directory if it doesn't exist
-            stdin, stdout, stderr = ssh.exec_command(f'mkdir -p {remote_path}')
-            stderr_content = stderr.read().decode().strip()
-            if stderr_content:
-                print(f"Remote directory creation error: {stderr_content}")
-                return False
-        
-        # Upload each file
-        for i, filename in enumerate(file_names):
-            local_file = os.path.join(local_path, filename)
-            remote_file = posixpath.join(remote_path, filename)
-            
-            print(f"Uploading ({i+1}/{len(file_names)}): {filename}")
-            sftp.put(local_file, remote_file)
-        
-        print(f"Uploaded {len(file_names)} files to: {remote_path}")
-        return True
         
     except Exception as e:
         print(f"File upload error: {e}")
@@ -306,7 +272,7 @@ def main():
             missing_game_files = [f for f in local_game_files if f not in remote_game_files]
             
             # Upload game data files
-            upload_files(ssh, game_data_dir, remote_game_data_path, missing_game_files)
+            upload_files(ssh, game_data_dir, remote_game_data_path, missing_game_files, verbose=args.verbose)
             
             # Process configuration files
             if args.config:
@@ -317,7 +283,7 @@ def main():
                 missing_config_files = [f for f in local_config_files if f not in remote_config_files]
                 
                 # Upload configuration files
-                upload_files(ssh, config_dir, remote_config_path, missing_config_files)
+                upload_files(ssh, config_dir, remote_config_path, missing_config_files, verbose=args.verbose)
         
         # Delete YAML files in local directories
         print("\nDeleting YAML files in local directories...")
