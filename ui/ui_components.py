@@ -128,7 +128,7 @@ def display_game_basic_info(game_details):
         st.image(
             game_details['thumbnail_url'],
             caption=display_name,
-            use_container_width=False
+            width='content'
         )
 
 
@@ -249,7 +249,7 @@ def display_data_tabs(game_details):
                 "id": t("common.mechanic_id"),
                 "name": t("common.mechanic_name")
             })
-            st.dataframe(df, use_container_width=True)
+            st.dataframe(df, width='stretch')
         else:
             st.info(t("info.no_mechanics"))
     
@@ -261,7 +261,7 @@ def display_data_tabs(game_details):
                 "id": t("common.category_id"),
                 "name": t("common.category_name")
             })
-            st.dataframe(df, use_container_width=True)
+            st.dataframe(df, width='stretch')
         else:
             st.info(t("info.no_categories"))
     
@@ -274,7 +274,7 @@ def display_data_tabs(game_details):
                 "id": t("common.ranking_id"),
                 "rank": t("common.rank")
             })
-            st.dataframe(df, use_container_width=True)
+            st.dataframe(df, width='stretch')
         else:
             st.info(t("info.no_rankings"))
     
@@ -286,7 +286,7 @@ def display_data_tabs(game_details):
                 "id": t("common.designer_id"),
                 "name": t("common.designer_name")
             })
-            st.dataframe(df, use_container_width=True)
+            st.dataframe(df, width='stretch')
         else:
             st.info(t("info.no_designers"))
     
@@ -298,7 +298,7 @@ def display_data_tabs(game_details):
                 "id": t("common.publisher_id"),
                 "name": t("common.publisher_name")
             })
-            st.dataframe(df, use_container_width=True)
+            st.dataframe(df, width='stretch')
         else:
             st.info(t("info.no_publishers"))
 
