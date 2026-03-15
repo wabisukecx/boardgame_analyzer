@@ -360,10 +360,11 @@ crontab -e
 ## API Costs & Usage
 
 ### Voyage AI Embeddings
-- **Model**: voyage-3-large (1024 dimensions)
-- **Cost**: ~$0.12 per 1M tokens
+- **Current model**: voyage-4-large (replaces voyage-3-large)
+- **Cost**: $0.12 per 1M tokens
+- **Free tier**: First 200 million tokens free per account
 - **Typical Game**: 500–1000 tokens
-- **1000 Games**: ~$0.50–1.00
+- **1000 Games**: ~$0.50–1.00 (well within the free tier at this scale)
 
 ### BoardGameGeek API
 - **Authentication**: Bearer token required (as of July 2025)
