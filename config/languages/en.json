@@ -358,7 +358,10 @@
       "easy_and_casual": "A casual game you can pick up and enjoy immediately.",
       "deep_and_replayable": "High strategic depth combined with strong replayability makes this a game you can enjoy deeply over a long period.",
       "deep_but_low_replay": "Strategically deep, but once you understand the patterns, freshness may diminish.",
-      "shallow_but_replayable": "Strategy is light, but high variability makes it easy to come back to again and again."
+      "shallow_but_replayable": "Strategy is light, but high variability makes it easy to come back to again and again.",
+      "system_deeper_than_bgg": "The system runs deeper than BGG's community weight suggests. Rules are easy to introduce, but the interplay of mechanics generates rich strategic depth — a true 'easy to learn, hard to master' design.",
+      "bgg_heavier_than_system": "The rule set is dense, but the strategic decision space is comparatively narrow. Trial-and-error and situational adaptation play a large role, making it more of a tactical puzzle than a deep strategy game.",
+      "system_depth_balanced": "The structural complexity (rules) and the strategic decision space (depth) are well-matched. Every mechanic translates directly into meaningful choices — a sign of a highly refined design."
     }
   },
   "player_types": {
