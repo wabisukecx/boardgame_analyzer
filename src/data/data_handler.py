@@ -6,6 +6,7 @@ import re
 from datetime import date as _date
 from pathlib import Path
 from src.utils.language import t, get_game_display_name, get_game_filename, get_dataframe_column_names
+from src.api.gemini_translator import translate_description
 
 try:
     import streamlit as st
@@ -134,17 +135,35 @@ def save_game_data_to_yaml(game_data, custom_filename=None, previous_data=None):
                     if 'id' in item:
                         del item['id']
         
+        # Translate description to Japanese and insert it immediately after 'description'
+        if 'description' in game_data_safe and game_data_safe['description']:
+            needs_translation = (
+                'description_ja' not in game_data_safe
+                or not game_data_safe['description_ja']
+            )
+            if needs_translation:
+                translated = translate_description(game_data_safe['description'])
+                if translated:
+                    # Rebuild dict so description_ja sits right after description
+                    ordered = {}
+                    for k, v in game_data_safe.items():
+                        ordered[k] = v
+                        if k == 'description':
+                            ordered['description_ja'] = translated
+                    game_data_safe = ordered
+                    _logger.info("Description translated to Japanese.")
+
         # Add learning curve information (only if not already present)
-        if ('learning_analysis' not in game_data_safe and 
-            'description' in game_data_safe and 
-            'mechanics' in game_data_safe and 
+        if ('learning_analysis' not in game_data_safe and
+            'description' in game_data_safe and
+            'mechanics' in game_data_safe and
             'weight' in game_data_safe):
             # Use in this block without Streamlit dependencies
             try:
                 from src.analysis.learning_curve import calculate_learning_curve
                 game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
             except Exception as e:
-                    _warn(t("errors.learning_curve_calculation", error=str(e)))
+                _warn(t("errors.learning_curve_calculation", error=str(e)))
         
         # Convert full-width spaces to half-width before saving
         def replace_fullwidth_spaces(obj):
