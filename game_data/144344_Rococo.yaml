@@ -1,0 +1,104 @@
+type: boardgame
+name: Rococo
+alternate_names:
+- Maîtres Couturiers
+- Rokokó
+- Rokoko
+- Рококо
+- ロココの仕立屋
+japanese_name: ロココの仕立屋
+year_published: '2013'
+thumbnail_url: https://cf.geekdo-images.com/Go8mEe3K1VjYFJxLXEUPqQ__small/img/cclTiR7tkCqMj-TuFAaYfySFmH4=/fit-in/200x150/filters:strip_icc()/pic1795272.jpg
+publisher_min_players: '2'
+publisher_max_players: '5'
+playing_time: '120'
+publisher_min_age: '12'
+community_best_players: '3'
+community_recommended_players: 2, 4, 5
+community_min_age: '12'
+description: 'Welcome to the Rococo era during the reign of Louis XV when it&rsquo;s
+  safe to say that holding lavish balls is quite trendy. Important personalities wrap
+  up in noble coats and dresses, anxious to outshine one another. As the biggest event
+  is coming up in just a few weeks, everyone is turning to you with their requests:
+  an elegant coat here, a stunning dress there, or a donation to fund the fireworks
+  at the event. Soon you realize that it&rsquo;s not just about your dressmaking business
+  anymore &mdash; it&rsquo;s about managing the most prestigious ball of the era&hellip;and
+  now it&rsquo;s time to roc(k)!
+
+
+  Rococo is a Eurostyle board game with an interesting take on deck-building. Each
+  turn you play one of your employee cards and let that employee perform a task: hire
+  a new employee, buy resources, manufacture a coat or dress, or invest in the ball&rsquo;s
+  decorations. But not every employee is up to every task, so you must choose and
+  lead your employees wisely &mdash; especially since each employee grants a unique
+  bonus and some of these bonuses generate prestige points.
+
+
+  After seven rounds, the game ends with the big ball and a final scoring. Then you
+  gain prestige points for certain employee bonuses and for coats and dresses that
+  you rent out to guests at the ball as well as for decorations that you funded. The
+  player who collected the most prestige points wins.
+
+
+  '
+mechanics:
+- name: Action Retrieval
+- name: Area Majority / Influence
+- name: Deck, Bag, and Pool Building
+- name: Delayed Purchase
+- name: Hand Management
+- name: Open Drafting
+- name: Set Collection
+- name: 'Turn Order: Claim Action'
+categories:
+- name: Age of Reason
+- name: Economic
+designers:
+- name: Matthias Cramer
+- name: Stefan Malz
+- name: Louis Malz
+publishers:
+- name: eggertspiele
+- name: Arclight Games
+- name: Delta Vision Publishing
+- name: Eagle-Gryphon Games
+- name: Filosofia Éditions
+- name: hobbity.eu
+- name: Pegasus Spiele
+- name: White Goblin Games
+- name: Zvezda
+average_rating: '7.5836'
+weight: '3.0879'
+ranks:
+- type: boardgame
+  rank: '338'
+- type: strategygames
+  rank: '216'
+learning_analysis:
+  initial_barrier: 3.62
+  strategic_depth: 3.59
+  replayability: 3.53
+  mechanics_complexity: 3.07
+  mechanics_count: 8
+  bgg_weight: 3.0879
+  bgg_rank: 338
+  year_published: 2013
+  category_complexity: 4.15
+  rank_complexity: 3.09
+  strategic_depth_description: 中〜高の深さ
+  learning_curve_type: moderate
+  decision_points: 4.240000000000001
+  interaction_complexity: 3.79
+  rules_complexity: 3.785079999999999
+  player_types:
+  - casual
+  - experienced
+  - hardcore
+  - system_master
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

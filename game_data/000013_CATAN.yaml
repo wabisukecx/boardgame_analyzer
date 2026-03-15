@@ -1,7 +1,6 @@
 type: boardgame
-name: CATAN
+name: Catan
 alternate_names:
-- Catan
 - Catan (Колонизаторы)
 - Catan telepesei
 - 'Catan: Das Spiel'
@@ -21,7 +20,7 @@ alternate_names:
 - Colonizadores de Catan
 - Los Colonos de Catán
 - Les Colons de Catane
-- Les Colons de Katane
+- Les Colons de Katäne
 - Os Descobridores de Catan
 - Los Descubridores de Catán
 - Els Colons de Catan
@@ -47,12 +46,13 @@ alternate_names:
 - The Settlers från Catan
 - The Settlers of Catan
 - Die Siedler von Catan
-- World's Smallest CATAN
+- World's Smallest Catan
 - Οι Άποικοι του Κατάν
 - Заселниците на Катан
 - Катан
 - Колонизаторы
 - המתיישבים של קטאן
+- קטאן
 - นักบุกเบิกแห่ง Catan
 - カタンの開拓者
 - カタンの開拓者たち
@@ -65,7 +65,7 @@ alternate_names:
 - 카탄의 개척자
 japanese_name: カタンの開拓者
 year_published: '1995'
-thumbnail_url: https://cf.geekdo-images.com/PyUol9QxBnZQCJqZI6bmSA__thumb/img/virV2Bm82Dql7gh-LZScBwqByik=/fit-in/200x150/filters:strip_icc()/pic8632666.png
+thumbnail_url: https://cf.geekdo-images.com/0XODRpReiZBFUffEcqT5-Q__small/img/SNVfF23OQafv3u8xdFolJnMkBoM=/fit-in/200x150/filters:strip_icc()/pic9156909.png
 publisher_min_players: '3'
 publisher_max_players: '4'
 playing_time: '120'
@@ -80,25 +80,36 @@ description: 'In CATAN (formerly The Settlers of Catan), players try to be the d
   represented by the relevant resource cards; each land type, with the exception of
   the unproductive desert, produces a specific resource: hills produce brick, forests
   produce wood, mountains produce ore, fields produce wheat, and pastures produce
-  sheep.&#10;&#10;Set-up includes randomly placing large hexagonal tiles (each depicting
-  one of the five resource-producing terrain types--or the desert) in a honeycomb
-  shape and surrounding them with water tiles, some of which contain ports of exchange.
-  A number disk, the value of which will correspond to the roll of two 6-sided dice,
-  are placed on each terrain tile. Each player is given two settlements (think: houses)
-  and roads (sticks) which are placed on intersections and borders of the terrain
-  tiles. Players collect a hand of resource cards based on which terrain tiles their
-  last-placed settlement is adjacent to. A robber pawn is placed on the desert tile.&#10;&#10;A
-  turn consists of rolling the dice, collecting resource cards based on this dice
+  sheep.
+
+
+  Set-up includes randomly placing large hexagonal tiles (each depicting one of the
+  five resource-producing terrain types--or the desert) in a honeycomb shape and surrounding
+  them with water tiles, some of which contain ports of exchange. A number disk, the
+  value of which will correspond to the roll of two 6-sided dice, are placed on each
+  terrain tile. Each player is given two settlements (think: houses) and roads (sticks)
+  which are placed on intersections and borders of the terrain tiles. Players collect
+  a hand of resource cards based on which terrain tiles their last-placed settlement
+  is adjacent to. A robber pawn is placed on the desert tile.
+
+
+  A turn consists of rolling the dice, collecting resource cards based on this dice
   roll and the position of settlements (or upgraded cities&mdash;think: hotels), turning
   in resource cards (if possible and desired) for improvements, trading cards at a
   port, possibly playing a development card, or trading resource cards with other
   players. If the dice roll is a 7, the active player moves the robber to a new terrain
   tile and steals a resource card from another player who has a settlement adjacent
-  to that tile.&#10;&#10;Points are accumulated by building settlements and cities,
-  having the longest road or the largest army (from some of the development cards),
-  and gathering certain development cards that simply award victory points. When a
-  player has gathered 10 points (some of which may be held in secret), s/he announces
-  this and claims the win.&#10;&#10;'
+  to that tile.
+
+
+  Points are accumulated by building settlements and cities, having the longest road
+  or the largest army (from some of the development cards), and gathering certain
+  development cards that simply award victory points. When a player has gathered 10
+  points (some of which may be held in secret), s/he announces this and claims the
+  win.
+
+
+  '
 mechanics:
 - name: Chaining
 - name: Dice Rolling
@@ -127,6 +138,7 @@ publishers:
 - name: asmodee
 - name: Astrel Games
 - name: BGA Plus
+- name: Brädspel.se
 - name: Brain Games
 - name: Broadway Toys LTD
 - name: Capcom Co., Ltd.
@@ -161,7 +173,7 @@ publishers:
 - name: NeoTroy Games
 - name: Ninive Games
 - name: Paper Iyagi
-- name: Piatnik
+- name: Piatnik Distribution
 - name: Rozum
 - name: Smart Ltd
 - name: Spilbræt.dk
@@ -173,33 +185,39 @@ publishers:
 - name: Top Toys
 - name: TRY SOFT
 - name: Vennerød Forlag AS
-average_rating: '7.09271'
-weight: '2.2868'
+average_rating: '7.09163'
+weight: '2.2831'
 ranks:
 - type: boardgame
-  rank: '590'
+  rank: '612'
 - type: strategygames
-  rank: '542'
+  rank: '576'
 - type: familygames
-  rank: '205'
+  rank: '209'
 learning_analysis:
-  initial_barrier: 3.13
-  strategic_depth: 3.29
-  replayability: 3.85
+  initial_barrier: 3.55
+  strategic_depth: 3.63
+  replayability: 4.03
   mechanics_complexity: 2.66
   mechanics_count: 14
-  bgg_weight: 2.2868
-  bgg_rank: 590
+  bgg_weight: 2.2831
+  bgg_rank: 612
   year_published: 1995
   category_complexity: 4.15
   rank_complexity: 2.75
-  learning_curve_type: gentle
   decision_points: 3.9166666666666656
   interaction_complexity: 4.176057142857143
-  rules_complexity: 3.1218838095238097
+  rules_complexity: 3.1211438095238098
+  solo_friendliness: 1.0
+  player_scalability: 2.5
+  luck_dependency: 4.0
+  strategic_depth_description: 中〜高の深さ
+  learning_curve_type: moderate
   player_types:
   - casual
   - experienced
+  - hardcore
+  - system_master
   - replayer
   - trend_follower
   - classic_lover
@@ -209,3 +227,14 @@ learning_analysis:
     decision_density: 0.1
     complexity_factor: 1.0
   mastery_time: medium
+update_history:
+- date: '2026-03-15'
+  average_rating: '7.09163'
+  weight: '2.2831'
+  ranks:
+  - type: boardgame
+    rank: '612'
+  - type: strategygames
+    rank: '576'
+  - type: familygames
+    rank: '209'

@@ -11,7 +11,7 @@ alternate_names:
 - 버라지
 japanese_name: バラージ
 year_published: '2019'
-thumbnail_url: https://cf.geekdo-images.com/jEPmWvvYpqkWrKOzqIHFsg__thumb/img/kMLIpeqA6UcUvQg2AdMwwQoEIfU=/fit-in/200x150/filters:strip_icc()/pic4336469.png
+thumbnail_url: https://cf.geekdo-images.com/jEPmWvvYpqkWrKOzqIHFsg__small/img/kMLIpeqA6UcUvQg2AdMwwQoEIfU=/fit-in/200x150/filters:strip_icc()/pic4336469.png
 publisher_min_players: '1'
 publisher_max_players: '4'
 playing_time: '180'
@@ -19,22 +19,31 @@ publisher_min_age: '14'
 community_best_players: '4'
 community_recommended_players: 2, 3
 community_min_age: '14'
-description: In the dystopic 1930s, the industrial revolution pushed the exploitation
+description: 'In the dystopic 1930s, the industrial revolution pushed the exploitation
   of fossil-based resources to the limit, and now the only thing powerful enough to
   quench the thirst for power of the massive machines and of the unstoppable engineering
-  progress is the unlimited hydroelectric energy provided by the rivers.&#10;&#10;Barrage
-  is a resource management strategic game in which players compete to build their
-  majestic dams, raise them to increase their storing capacity, and deliver all the
-  potential power through pressure tunnels connected to the energy turbines of their
-  powerhouses.&#10;&#10;Each player represents one of the four international companies
-  who are gathering machinery, innovative patents and brilliant engineers to claim
-  the best locations to collect and exploit the water of a contested Alpine region
-  crossed by rivers.&#10;&#10;Over five rounds, the players must fulfill power requirements
-  represented by a common competitive power track and meet specific requests of personal
-  contracts. At the same time, by placing a limited number of engineers, they attempt
-  to enhance their machinery to acquire new and more efficient construction actions
-  and to build and activate special unique-effect buildings to forward their own developing
-  strategy.&#10;&#10;
+  progress is the unlimited hydroelectric energy provided by the rivers.
+
+
+  Barrage is a resource management strategic game in which players compete to build
+  their majestic dams, raise them to increase their storing capacity, and deliver
+  all the potential power through pressure tunnels connected to the energy turbines
+  of their powerhouses.
+
+
+  Each player represents one of the four international companies who are gathering
+  machinery, innovative patents and brilliant engineers to claim the best locations
+  to collect and exploit the water of a contested Alpine region crossed by rivers.
+
+
+  Over five rounds, the players must fulfill power requirements represented by a common
+  competitive power track and meet specific requests of personal contracts. At the
+  same time, by placing a limited number of engineers, they attempt to enhance their
+  machinery to acquire new and more efficient construction actions and to build and
+  activate special unique-effect buildings to forward their own developing strategy.
+
+
+  '
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -68,28 +77,29 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: TLAMA games
 - name: WoodCat
-average_rating: '8.14711'
-weight: '4.1178'
+average_rating: '8.1383'
+weight: '4.1148'
 ranks:
 - type: boardgame
-  rank: '38'
+  rank: '40'
 - type: strategygames
-  rank: '29'
+  rank: '32'
 learning_analysis:
   initial_barrier: 3.94
   strategic_depth: 3.89
   replayability: 4.3
   mechanics_complexity: 3.15
   mechanics_count: 10
-  bgg_weight: 4.1178
-  bgg_rank: 38
+  bgg_weight: 4.1148
+  bgg_rank: 40
   year_published: 2019
   category_complexity: 4.14
   rank_complexity: 3.2
+  strategic_depth_description: 中〜高の深さ
   learning_curve_type: moderate
   decision_points: 4.59
-  interaction_complexity: 3.365150000000001
-  rules_complexity: 4.191893333333333
+  interaction_complexity: 3.475
+  rules_complexity: 4.191293333333332
   player_types:
   - casual
   - experienced
@@ -104,3 +114,12 @@ learning_analysis:
     decision_density: 0.0
     complexity_factor: 1.0
   mastery_time: medium
+update_history:
+- date: '2026-03-15'
+  average_rating: '8.1383'
+  weight: '4.1148'
+  ranks:
+  - type: boardgame
+    rank: '40'
+  - type: strategygames
+    rank: '32'
