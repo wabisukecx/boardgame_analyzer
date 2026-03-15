@@ -164,9 +164,22 @@ def details_page():
                     display_game_analysis_summary(game_details, learning_curve)
                 
                 # Display game description
-                if 'description' in game_details and game_details['description']:
+                # Prefer Japanese translation when UI is in Japanese mode.
+                # description_ja lives in the saved YAML (yaml_data), not in the
+                # freshly-fetched game_details, so check yaml_data first.
+                description_text = None
+                is_japanese_ui = (st.session_state.get('language', 'ja') == 'ja')
+                if is_japanese_ui:
+                    description_text = (
+                        (yaml_data or {}).get('description_ja')
+                        or game_details.get('description_ja')
+                    )
+                if not description_text:
+                    description_text = game_details.get('description')
+
+                if description_text:
                     with st.expander(t("details.game_description")):
-                        st.markdown(game_details['description'])
+                        st.markdown(description_text)
                 
                 # Organize detailed information with tabs
                 display_data_tabs(game_details)
