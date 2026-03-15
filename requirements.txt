@@ -12,3 +12,4 @@ python-dotenv
 voyageai
 numpy
 paramiko
+google-genai

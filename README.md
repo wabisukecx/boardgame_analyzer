@@ -8,6 +8,7 @@ A comprehensive Streamlit application for analyzing board games using BoardGameG
 - **Learning Curve Analysis**: AI-powered evaluation of game complexity and strategic depth
 - **Similarity Search**: Find similar games using pre-computed embeddings and cosine similarity
 - **Multi-dimensional Metrics**: Initial barrier, strategic depth, replayability, player interaction, solo friendliness, luck dependency, and more
+- **Japanese Description Translation**: Automatically translates English BGG descriptions to Japanese via Gemini 2.0 Flash
 
 ### Data Management
 - **YAML Storage**: Local game data persistence with structured format
@@ -63,11 +64,22 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-Edit `.env` and set your BGG token:
+Edit `.env` and set your tokens:
 
 ```
 BGG_TOKEN=your-bearer-token-here
+GEMINI_API_KEY=your-gemini-api-key-here   # Optional: enables Japanese description translation
 ```
+
+**Gemini API Key (optional)**
+
+If you want game descriptions to be automatically translated to Japanese when saving YAML files, set a Gemini API key:
+
+1. Go to [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+2. Create an API key
+3. Set it as `GEMINI_API_KEY` in your `.env` file
+
+If `GEMINI_API_KEY` is not set, the app works normally — descriptions remain in English only.
 
 ```bash
 # Run application
@@ -247,6 +259,7 @@ Unknown mechanics and categories encountered during analysis are automatically a
 ### Core Technologies
 - **Frontend**: Streamlit with Plotly visualizations
 - **API**: BoardGameGeek XML API with rate limiting and Bearer token authentication
+- **Translation**: Google Gemini 2.0 Flash for Japanese description translation (optional)
 - **AI/ML**: Voyage AI embeddings, scikit-learn similarity
 - **Storage**: YAML files with UTF-8 encoding
 - **Networking**: SSH/SFTP for remote sync
@@ -287,6 +300,7 @@ boardgame-analyzer/
 │   │   └── improved_similarity_analyzer.py
 │   ├── api/
 │   │   ├── bgg_api.py              # BGG XML API client
+│   │   ├── gemini_translator.py    # Gemini 2.0 Flash description translator
 │   │   └── rate_limiter.py
 │   ├── data/
 │   └── utils/
@@ -359,6 +373,14 @@ crontab -e
 
 ## API Costs & Usage
 
+### Gemini API (Description Translation)
+- **Model**: gemini-2.0-flash
+- **Cost**: Free tier available (generous daily quota for personal use)
+- **Trigger**: Called once per game when saving to YAML, only if `description_ja` is absent
+- **Caching**: Results cached in-process via `lru_cache`; no redundant API calls within a session
+- **Fallback**: If the key is absent or the call fails, saving proceeds normally with English-only description
+- **Pricing details**: [https://ai.google.dev/pricing](https://ai.google.dev/pricing)
+
 ### Voyage AI Embeddings
 - **Current model**: voyage-4-large (replaces voyage-3-large)
 - **Cost**: $0.12 per 1M tokens
@@ -405,6 +427,8 @@ black src/ ui/ *.py
 
 | Issue | Solution |
 |-------|----------|
+| **Japanese translation not working** | Set `GEMINI_API_KEY` in `.env`; check that `google-genai` is installed (`pip install google-genai`) |
+| **Translation skipped silently** | Check logs for `Gemini translation failed`; description may already be in Japanese (auto-detected) |
 | **BGG API 401 / unauthorized** | Set `BGG_TOKEN` in `.env`; ensure the header format is `Bearer <token>` with no `www.` in the domain |
 | **BGG token not yet approved** | Registration can take a week or more; check [boardgamegeek.com/applications](https://boardgamegeek.com/applications) |
 | **BGG API rate limit** | Wait 60 seconds; the built-in rate limiter will auto-retry |
@@ -430,6 +454,7 @@ python -c "from src.utils.language import debug_language_info; debug_language_in
 
 **Data Sources**:
 - BoardGameGeek XML API for game information (token required)
+- Google Gemini 2.0 Flash for Japanese description translation (optional)
 - Voyage AI for similarity embeddings
 - Community contributions for complexity data
 
@@ -440,4 +465,4 @@ python -c "from src.utils.language import debug_language_info; debug_language_in
 
 ---
 
-**Version**: 2.1.0 | **Last Updated**: March 2026 | **Maintainer**: [@wabisukecx](https://github.com/wabisukecx)
+**Version**: 2.2.0 | **Last Updated**: March 2026 | **Maintainer**: [@wabisukecx](https://github.com/wabisukecx)

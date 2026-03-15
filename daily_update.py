@@ -23,6 +23,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Gemini translation (best-effort: silently skipped when unavailable)
+try:
+    from src.api.gemini_translator import translate_description as _translate_description
+except Exception:
+    _translate_description = None
+
 # Logging configuration
 logging.basicConfig(
     level=logging.INFO,
@@ -435,10 +441,30 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
                     if 'id' in item:
                         del item['id']
 
+        # Translate description to Japanese and insert it immediately after 'description'
+        if _translate_description and 'description' in game_data_safe and game_data_safe['description']:
+            needs_translation = (
+                'description_ja' not in game_data_safe
+                or not game_data_safe['description_ja']
+            )
+            if needs_translation:
+                try:
+                    translated = _translate_description(game_data_safe['description'])
+                    if translated:
+                        ordered = {}
+                        for k, v in game_data_safe.items():
+                            ordered[k] = v
+                            if k == 'description':
+                                ordered['description_ja'] = translated
+                        game_data_safe = ordered
+                        logger.info(f"Description translated to Japanese for game ID {game_id}")
+                except Exception as e:
+                    logger.warning(f"Error translating description: {str(e)}")
+
         # Add learning curve analysis (implemented without Streamlit dependencies)
-        if ('learning_analysis' not in game_data_safe and 
-            'description' in game_data_safe and 
-            'mechanics' in game_data_safe and 
+        if ('learning_analysis' not in game_data_safe and
+            'description' in game_data_safe and
+            'mechanics' in game_data_safe and
             'weight' in game_data_safe):
             try:
                 # Use independent module for learning curve analysis
