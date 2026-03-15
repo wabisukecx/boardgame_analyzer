@@ -55,6 +55,7 @@ def get_depth_level(depth):
 def _get_barrier_depth_comment(initial_barrier, strategic_depth):
     """
     Generate a comment describing the relationship between initial barrier and strategic depth.
+    Thresholds cover heavy, mid-weight, and light games.
 
     Parameters:
     initial_barrier (float): Initial learning barrier score
@@ -63,13 +64,17 @@ def _get_barrier_depth_comment(initial_barrier, strategic_depth):
     Returns:
     str: Relationship comment, or empty string if no notable pattern
     """
-    if initial_barrier >= 4.0 and strategic_depth >= 4.0:
+    # Heavy: high barrier + deep strategy
+    if initial_barrier >= 3.8 and strategic_depth >= 3.8:
         return t("analysis.summary.hard_and_deep")
-    elif initial_barrier >= 4.0 and strategic_depth < 3.0:
+    # Complex rules but limited strategic range
+    elif initial_barrier >= 3.8 and strategic_depth < 2.8:
         return t("analysis.summary.hard_but_shallow")
-    elif initial_barrier < 2.5 and strategic_depth >= 4.0:
+    # Easy to learn, hard to master (mid-weight gap)
+    elif initial_barrier < 3.2 and strategic_depth >= 3.5:
         return t("analysis.summary.easy_but_deep")
-    elif initial_barrier < 2.5 and strategic_depth < 3.0:
+    # Light and casual
+    elif initial_barrier < 2.5 and strategic_depth < 2.8:
         return t("analysis.summary.easy_and_casual")
     return ""
 
@@ -77,6 +82,7 @@ def _get_barrier_depth_comment(initial_barrier, strategic_depth):
 def _get_depth_replay_comment(strategic_depth, replayability):
     """
     Generate a comment describing the relationship between strategic depth and replayability.
+    Thresholds cover heavy, mid-weight, and light games.
 
     Parameters:
     strategic_depth (float): Strategic depth score
@@ -85,12 +91,40 @@ def _get_depth_replay_comment(strategic_depth, replayability):
     Returns:
     str: Relationship comment, or empty string if no notable pattern
     """
-    if strategic_depth >= 4.0 and replayability >= 4.0:
+    # Strong positive correlation: depth drives replay desire
+    if strategic_depth >= 3.3 and replayability >= 3.8:
         return t("analysis.summary.deep_and_replayable")
-    elif strategic_depth >= 4.0 and replayability < 3.0:
+    elif strategic_depth >= 3.8 and replayability < 3.0:
         return t("analysis.summary.deep_but_low_replay")
-    elif strategic_depth < 3.0 and replayability >= 4.0:
+    elif strategic_depth < 2.8 and replayability >= 3.8:
         return t("analysis.summary.shallow_but_replayable")
+    return ""
+
+
+def _get_system_depth_comment(rules_complexity, strategic_depth, bgg_weight):
+    """
+    Generate a comment about the relationship between system complexity and strategic depth,
+    and detect divergence between BGG user weight and system-derived complexity.
+
+    Parameters:
+    rules_complexity (float): Rules complexity score from system analysis
+    strategic_depth (float): Strategic depth score
+    bgg_weight (float): BGG community weight rating
+
+    Returns:
+    str: Relationship comment, or empty string if no notable pattern
+    """
+    gap = rules_complexity - bgg_weight
+
+    # System is deeper than BGG weight suggests ("Easy to learn, Hard to master" evidence)
+    if gap >= 0.8 and strategic_depth >= 3.3:
+        return t("analysis.summary.system_deeper_than_bgg")
+    # BGG weight is higher than system analysis (rules overhead without strategic payoff)
+    elif gap <= -0.8 and strategic_depth < 3.0:
+        return t("analysis.summary.bgg_heavier_than_system")
+    # Well-balanced: system complexity and strategic depth are in sync
+    elif abs(rules_complexity - strategic_depth) <= 0.4 and rules_complexity >= 2.8:
+        return t("analysis.summary.system_depth_balanced")
     return ""
 
 
@@ -209,15 +243,15 @@ def generate_game_summary(game_data, learning_curve):
     # Append cross-metric relationship comments
     strategic_depth_val = learning_curve.get('strategic_depth', 3.0)
     replayability_val   = learning_curve.get('replayability', 3.0)
+    rules_complexity_val = learning_curve.get('rules_complexity', 3.0)
+    bgg_weight_val       = float(game_data.get('weight', 3.0))
 
-    barrier_depth_comment = _get_barrier_depth_comment(initial_barrier, strategic_depth_val)
-    depth_replay_comment  = _get_depth_replay_comment(strategic_depth_val, replayability_val)
+    barrier_depth_comment  = _get_barrier_depth_comment(initial_barrier, strategic_depth_val)
+    depth_replay_comment   = _get_depth_replay_comment(strategic_depth_val, replayability_val)
+    system_depth_comment   = _get_system_depth_comment(rules_complexity_val, strategic_depth_val, bgg_weight_val)
 
-    if barrier_depth_comment or depth_replay_comment:
-        summary += "\n"
-        if barrier_depth_comment:
-            summary += barrier_depth_comment
-        if depth_replay_comment:
-            summary += depth_replay_comment
+    comments = [c for c in [barrier_depth_comment, depth_replay_comment, system_depth_comment] if c]
+    if comments:
+        summary += "\n" + "".join(comments)
 
     return summary
