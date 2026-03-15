@@ -1,9 +1,51 @@
 import requests
-import streamlit as st
 import xml.etree.ElementTree as ET
+import os
+import logging
+from dotenv import load_dotenv
 from src.api.rate_limiter import rate_limited_request, ttl_cache
 
+try:
+    import streamlit as st
+    _ST_AVAILABLE = True
+except ImportError:
+    _ST_AVAILABLE = False
+
+load_dotenv()
+
+_logger = logging.getLogger(__name__)
+
+def _spinner(msg: str):
+    """Return st.spinner if Streamlit is available, else a no-op context manager."""
+    if _ST_AVAILABLE:
+        return st.spinner(msg)
+    import contextlib
+    @contextlib.contextmanager
+    def _noop():
+        _logger.info(msg)
+        yield
+    return _noop()
+
+def _show_error(msg: str):
+    """Show error via st.error or logger depending on environment."""
+    _logger.error(msg)
+    if _ST_AVAILABLE:
+        try:
+            st.error(msg)
+        except Exception:
+            pass
+
+def _get_bgg_headers():
+    """Return Authorization header for BGG API requests"""
+    token = os.getenv("BGG_TOKEN", "")
+    if token:
+        return {"Authorization": f"Bearer {token}"}
+    _logger.warning("BGG_TOKEN is not set. Requests will be sent without authorization.")
+    return {}
+
 # API access functions
+@ttl_cache(ttl_hours=48)
+@rate_limited_request(max_per_minute=15)
 def get_game_mechanics(game_id):
     """
     Get mechanics (game types) information for specified game ID
@@ -14,11 +56,9 @@ def get_game_mechanics(game_id):
     Returns:
     list: List of game mechanics
     """
-    st.cache_data()  # Use cache feature to avoid duplicate requests
-    
     url = f"https://boardgamegeek.com/xmlapi2/thing?id={game_id}"
-    with st.spinner(f"Retrieving mechanics for game ID {game_id}..."):
-        response = requests.get(url)
+    with _spinner(f"Retrieving mechanics for game ID {game_id}..."):
+        response = requests.get(url, headers=_get_bgg_headers())
     
     if response.status_code == 200:
         root = ET.fromstring(response.content)
@@ -35,7 +75,7 @@ def get_game_mechanics(game_id):
         
         return mechanics
     else:
-        st.error(f"Error: Status code {response.status_code}")
+        _show_error(f"Error: Status code {response.status_code}")
         return None
 
 @ttl_cache(ttl_hours=48)
@@ -50,11 +90,9 @@ def get_game_details(game_id):
     Returns:
     dict: Dictionary containing game details
     """
-    st.cache_data()  # Use cache feature
-    
     url = f"https://boardgamegeek.com/xmlapi2/thing?id={game_id}&stats=1"
-    with st.spinner(f"Retrieving detailed information for game ID {game_id}..."):
-        response = requests.get(url)
+    with _spinner(f"Retrieving detailed information for game ID {game_id}..."):
+        response = requests.get(url, headers=_get_bgg_headers())
     
     if response.status_code == 200:
         root = ET.fromstring(response.content)
@@ -268,7 +306,7 @@ def get_game_details(game_id):
         
         return game
     else:
-        st.error(f"Error: Status code {response.status_code}")
+        _show_error(f"Error: Status code {response.status_code}")
         return None
 
 @ttl_cache(ttl_hours=24)
@@ -284,8 +322,6 @@ def search_games(query, exact=False):
     Returns:
     list: List of search results
     """
-    st.cache_data()  # Use cache feature
-    
     # Replace spaces with +
     query = query.replace(" ", "+")
     
@@ -293,8 +329,8 @@ def search_games(query, exact=False):
     exact_param = "1" if exact else "0"
     url = f"https://boardgamegeek.com/xmlapi2/search?query={query}&type=boardgame&exact={exact_param}"
     
-    with st.spinner(f"Searching for '{query}'..."):
-        response = requests.get(url)
+    with _spinner(f"Searching for '{query}'..."):
+        response = requests.get(url, headers=_get_bgg_headers())
     
     if response.status_code == 200:
         root = ET.fromstring(response.content)
@@ -318,5 +354,5 @@ def search_games(query, exact=False):
             
         return results
     else:
-        st.error(f"Error: Status code {response.status_code}")
+        _show_error(f"Error: Status code {response.status_code}")
         return None
