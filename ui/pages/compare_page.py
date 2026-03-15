@@ -67,7 +67,7 @@ def compare_page():
             if games_data:
                 st.subheader(t("compare.chart_title"))
                 fig = compare_games_radar_chart(games_data)
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width='stretch')
                 
                 # Also display values in table format
                 st.subheader(t("compare.table_title"))
@@ -88,4 +88,4 @@ def compare_page():
                     })
                 
                 comparison_df = pd.DataFrame(comparison_data)
-                st.dataframe(comparison_df, use_container_width=True)
+                st.dataframe(comparison_df, width='stretch')

@@ -182,32 +182,44 @@ def details_page():
                 
                 st.session_state.game_data[game_id] = game_details
                 
-                # Compare with YAML data and auto-save if changed
+                # Compare with YAML data and show diff; store pending update in session
                 if yaml_data and yaml_file_path:
                     has_changes, change_description = compare_game_data(yaml_data, game_details)
-                    
+
                     if has_changes:
-                        # Show changes and ask to update
                         st.warning(t("details.data_changed"))
-                        
+
                         with st.expander(t("details.change_details")):
                             st.markdown(change_description)
-                        
-                        if st.button(t("details.update_yaml"), key="update_yaml"):
-                            # Maintain original filename
-                            original_filename = os.path.basename(yaml_file_path)
-                            
-                            success, file_path, error_msg = save_game_data_to_yaml(
-                                game_details, original_filename
-                            )
-                            
-                            if success:
-                                st.success(t("details.update_success"))
-                            else:
-                                st.error(t("details.update_error", error=error_msg))
+
+                        # Store update payload in session so the update button
+                        # can access it outside the "get details" button block
+                        st.session_state['pending_update'] = {
+                            'game_details': game_details,
+                            'yaml_file_path': yaml_file_path,
+                            'yaml_data': yaml_data,
+                        }
                     else:
                         st.info(t("details.no_changes"))
+                        st.session_state.pop('pending_update', None)
             else:
                 st.warning(t("details.not_found"))
         else:
             st.error(t("details.error_no_id"))
+
+    # --- Update button lives OUTSIDE the "get details" button block ---
+    # This ensures it responds to its own click on every rerun.
+    if 'pending_update' in st.session_state:
+        pending = st.session_state['pending_update']
+        if st.button(t("details.update_yaml"), key="update_yaml"):
+            original_filename = os.path.basename(pending['yaml_file_path'])
+            success, file_path, error_msg = save_game_data_to_yaml(
+                pending['game_details'],
+                original_filename,
+                previous_data=pending['yaml_data'],
+            )
+            if success:
+                st.success(t("details.update_success"))
+                st.session_state.pop('pending_update', None)
+            else:
+                st.error(t("details.update_error", error=error_msg))
