@@ -68,12 +68,23 @@ Edit `.env` and set your tokens:
 
 ```
 BGG_TOKEN=your-bearer-token-here
+VOYAGE_API_KEY=your-voyage-api-key-here   # Required for similarity search
 GEMINI_API_KEY=your-gemini-api-key-here   # Optional: enables Japanese description translation
 ```
 
+**Voyage AI API Key (required for similarity search)**
+
+The similarity search feature uses Voyage AI embeddings. To use it:
+
+1. Sign up at [https://www.voyageai.com](https://www.voyageai.com)
+2. Go to your dashboard and create an API key
+3. Set it as `VOYAGE_API_KEY` in your `.env` file
+
+The first 200 million tokens are free. Without this key, similarity search is unavailable but all other features work normally.
+
 **Gemini API Key (optional)**
 
-If you want game descriptions to be automatically translated to Japanese when saving YAML files, set a Gemini API key:
+If you want game descriptions to be automatically translated to Japanese when saving YAML files:
 
 1. Go to [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
 2. Create an API key
