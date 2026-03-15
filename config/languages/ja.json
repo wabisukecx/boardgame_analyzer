@@ -21,7 +21,15 @@
     "results_found": "検索結果: {count}件見つかりました",
     "no_results": "検索結果がありません",
     "view_details_info": "詳細情報を表示するには「ゲームIDで詳細情報を取得」機能を使用してください。",
-    "input_error": "検索するゲーム名を入力してください"
+    "input_error": "検索するゲーム名を入力してください",
+    "fetch_and_save": "詳細取得&保存",
+    "update": "更新",
+    "fetch_error": "ゲーム情報を取得できませんでした",
+    "quick_details_title": "取得したゲーム情報",
+    "save_yaml_btn": "YAMLファイルを保存",
+    "save_success": "YAMLに保存しました: {filepath}",
+    "update_success": "YAMLを更新しました: {filepath}",
+    "save_error": "保存エラー: {error}"
   },
   "details": {
     "title": "ゲームIDで詳細情報を取得",
@@ -59,7 +67,13 @@
     "update_yaml": "YAMLファイルを更新する",
     "update_success": "ゲームデータが更新されました。YAMLファイルを最新情報で上書き保存しました。",
     "update_error": "ファイル更新エラー: {error}",
-    "no_changes": "保存されているデータと新しく取得したデータに違いはありません。"
+    "no_changes": "保存されているデータと新しく取得したデータに違いはありません。",
+    "history_tab": "更新履歴 (History)",
+    "history_no_data": "更新履歴がありません",
+    "history_latest_update": "最終更新日: {date}",
+    "history_rating_chart": "平均評価の推移",
+    "history_weight_chart": "複雑さの推移",
+    "history_rank_chart": "ボードゲームランクの推移"
   },
   "save": {
     "title": "ゲームデータをYAML形式で保存",
@@ -126,7 +140,10 @@
     "rules_complexity": "ルールの複雑さ",
     "bgg_weight": "BGG重さ",
     "learning_curve_type": "学習曲線タイプ",
-    "bgg_complexity": "BGG複雑さ評価"
+    "bgg_complexity": "BGG複雑さ評価",
+    "solo_friendliness": "ソロ適性",
+    "player_scalability": "人数スケーラビリティ",
+    "luck_dependency": "運要素"
   },
   "similarity": {
     "title": "ボードゲーム類似性検索",
@@ -334,7 +351,14 @@
       "popularity_unrated": "{popularity}です。",
       "popularity_rated": "{popularity}です。",
       "barrier_and_replay": "初期学習障壁は{barrier}、リプレイ性は{replayability}です。",
-      "suitable_for": "このゲームは特に{player_types}に適しています。"
+      "suitable_for": "このゲームは特に{player_types}に適しています。",
+      "hard_and_deep": "初期ハードルが高く戦略深度も深いため、上級者ほど長期間楽しめる本格派ゲームです。",
+      "hard_but_shallow": "ルールは複雑ですが、慣れてしまえば判断の幅は限られ、戦略の広がりは浅めです。",
+      "easy_but_deep": "入門ハードルは低いものの奥が深く、習熟するほど戦略の幅が広がる「易しく学べて難しい」ゲームです。",
+      "easy_and_casual": "手軽に始めてすぐ楽しめるカジュアルゲームです。",
+      "deep_and_replayable": "戦略深度が高くリプレイ性も豊かで、長期間にわたって深く楽しめる作品です。",
+      "deep_but_low_replay": "戦略は深いですが、パターンを把握すると新鮮味が薄れやすいです。",
+      "shallow_but_replayable": "戦略は軽めですが、仕組みの変化量が多く何度でも遊びやすいゲームです。"
     }
   },
   "player_types": {

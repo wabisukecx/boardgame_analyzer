@@ -21,7 +21,15 @@
     "results_found": "Search results: {count} found",
     "no_results": "No results found",
     "view_details_info": "Use 'Get Details by Game ID' to view detailed information.",
-    "input_error": "Please enter a game name to search"
+    "input_error": "Please enter a game name to search",
+    "fetch_and_save": "Fetch & Save",
+    "update": "Update",
+    "fetch_error": "Could not fetch game details",
+    "quick_details_title": "Fetched Game Info",
+    "save_yaml_btn": "Save to YAML",
+    "save_success": "Saved to YAML: {filepath}",
+    "update_success": "Updated YAML: {filepath}",
+    "save_error": "Save error: {error}"
   },
   "details": {
     "title": "Get Game Details by ID",
@@ -59,7 +67,13 @@
     "update_yaml": "Update YAML File",
     "update_success": "Game data has been updated. YAML file has been overwritten with the latest information.",
     "update_error": "File update error: {error}",
-    "no_changes": "No differences between saved data and newly retrieved data."
+    "no_changes": "No differences between saved data and newly retrieved data.",
+    "history_tab": "Update History",
+    "history_no_data": "No update history available",
+    "history_latest_update": "Last updated: {date}",
+    "history_rating_chart": "Average Rating Over Time",
+    "history_weight_chart": "Complexity Over Time",
+    "history_rank_chart": "Boardgame Rank Over Time"
   },
   "save": {
     "title": "Save Game Data in YAML Format",
@@ -126,7 +140,10 @@
     "rules_complexity": "Rules Complexity",
     "bgg_weight": "BGG Weight",
     "learning_curve_type": "Learning Curve Type",
-    "bgg_complexity": "BGG Complexity"
+    "bgg_complexity": "BGG Complexity",
+    "solo_friendliness": "Solo Friendliness",
+    "player_scalability": "Player Scalability",
+    "luck_dependency": "Luck Dependency"
   },
   "similarity": {
     "title": "BoardGame Similarity Search",
@@ -334,7 +351,14 @@
       "popularity_unrated": "{popularity}.",
       "popularity_rated": "{popularity}.",
       "barrier_and_replay": "The initial learning barrier is {barrier} and replayability is {replayability}.",
-      "suitable_for": "This game is particularly suitable for {player_types}."
+      "suitable_for": "This game is particularly suitable for {player_types}.",
+      "hard_and_deep": "With a high entry barrier and deep strategic depth, this game rewards experienced players who invest in mastering it.",
+      "hard_but_shallow": "The rules are complex, but once familiar, the range of decisions is limited and strategic breadth remains shallow.",
+      "easy_but_deep": "Easy to learn yet strategically deep — the more you play, the more your strategic options expand.",
+      "easy_and_casual": "A casual game you can pick up and enjoy immediately.",
+      "deep_and_replayable": "High strategic depth combined with strong replayability makes this a game you can enjoy deeply over a long period.",
+      "deep_but_low_replay": "Strategically deep, but once you understand the patterns, freshness may diminish.",
+      "shallow_but_replayable": "Strategy is light, but high variability makes it easy to come back to again and again."
     }
   },
   "player_types": {
