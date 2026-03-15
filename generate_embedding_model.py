@@ -20,8 +20,8 @@ load_dotenv()
 def parse_args() -> argparse.Namespace:
     """Function to parse command line arguments"""
     parser = argparse.ArgumentParser(description='Calculate and save embeddings for board game data')
-    parser.add_argument('--model', default='voyage-3-large', 
-                      help='Embedding model name (default: voyage-3-large)')
+    parser.add_argument('--model', default='voyage-4-large',
+                      help='Embedding model name (default: voyage-4-large)')
     parser.add_argument('--data_path', default='game_data/*.yaml', 
                       help='Game data path (glob format)')
     parser.add_argument('--output', default='game_embeddings.pkl', 
