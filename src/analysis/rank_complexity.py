@@ -1,29 +1,54 @@
 import os
 import yaml
 import math
+from datetime import datetime, timedelta
 
 # Path to YAML file
 RANK_COMPLEXITY_FILE = "config/rank_complexity.yaml"
 
-def load_rank_complexity_data():
+# Global variables for caching
+_rank_cache = None
+_rank_cache_timestamp = None
+_rank_cache_ttl = timedelta(minutes=10)  # Cache validity period (10 minutes)
+
+def load_rank_complexity_data(force_reload=False):
     """
     Load ranking type complexity data from YAML file
-    
+    Utilize cache to reduce number of reads
+
+    Parameters:
+    force_reload (bool): Force reload ignoring cache
+
     Returns:
     dict: Dictionary with ranking type as key and complexity as value
     """
+    global _rank_cache, _rank_cache_timestamp
+
+    current_time = datetime.now()
+
+    # Return from cache if cache is valid
+    if not force_reload and _rank_cache is not None and _rank_cache_timestamp is not None:
+        if current_time - _rank_cache_timestamp < _rank_cache_ttl:
+            return _rank_cache
+
     try:
         # Return empty dictionary if file doesn't exist
         if not os.path.exists(RANK_COMPLEXITY_FILE):
-            return {}
-        
+            _rank_cache = {}
+            _rank_cache_timestamp = current_time
+            return _rank_cache
+
         with open(RANK_COMPLEXITY_FILE, 'r', encoding='utf-8') as file:
             complexity_data = yaml.safe_load(file)
-            
+
         # Return empty dictionary if None
         if complexity_data is None:
-            return {}
-            
+            complexity_data = {}
+
+        # Update cache
+        _rank_cache = complexity_data
+        _rank_cache_timestamp = current_time
+
         return complexity_data
     except Exception as e:
         # Return error info without directly displaying error message
@@ -33,66 +58,139 @@ def load_rank_complexity_data():
 def save_rank_complexity_data(complexity_data):
     """
     Save ranking type complexity data to YAML file
-    
+    Update cache after save
+
     Parameters:
     complexity_data (dict): Dictionary with ranking type as key and complexity as value
-    
+
     Returns:
     bool: Whether save was successful
     """
+    global _rank_cache, _rank_cache_timestamp
+
     try:
         with open(RANK_COMPLEXITY_FILE, 'w', encoding='utf-8') as file:
             yaml.dump(complexity_data, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
+
+        # Update cache
+        _rank_cache = complexity_data
+        _rank_cache_timestamp = datetime.now()
+
         return True
     except Exception as e:
         print(f"Error saving ranking complexity data: {str(e)}")
         return False
 
+
+# Buffer for temporarily storing new rank type additions
+_pending_rank_types = {}
+_pending_rank_types_count = 0
+_max_pending_rank_types = 10  # Batch save when this number is reached
+
+
 def add_missing_rank_type(rank_type, default_complexity=3.0):
     """
-    Add non-existent ranking type to YAML file
-    
+    Add non-existent ranking type to buffer and batch save when buffer is full
+
     Parameters:
     rank_type (str): Ranking type to add
     default_complexity (float): Default complexity value
-    
+
     Returns:
     bool: Whether addition was successful
     """
+    global _pending_rank_types, _pending_rank_types_count
+
     try:
-        # Load current data
+        # Load current data (from cache)
         complexity_data = load_rank_complexity_data()
-        
+
         # Do nothing if already exists
         if rank_type in complexity_data:
             return True
-        
-        # Add if doesn't exist - Add in dictionary format to match new structure
-        complexity_data[rank_type] = {
+
+        # Do nothing if already in buffer
+        if rank_type in _pending_rank_types:
+            return True
+
+        # Add to buffer
+        _pending_rank_types[rank_type] = {
             'complexity': default_complexity,
-            'strategic_value': 3.5,  # Default value
-            'interaction_value': 3.2,  # Default value
+            'strategic_value': 3.5,
+            'interaction_value': 3.2,
             'description': f"Auto-added ranking type (default values)"
         }
-        
-        # Save
-        return save_rank_complexity_data(complexity_data)
+
+        _pending_rank_types_count += 1
+
+        # Batch save when buffer is full
+        if _pending_rank_types_count >= _max_pending_rank_types:
+            return _save_pending_rank_types()
+
+        return True
     except Exception as e:
         print(f"Error adding ranking type: {str(e)}")
         return False
 
+
+def _save_pending_rank_types():
+    """Batch save all pending rank types in buffer"""
+    global _pending_rank_types, _pending_rank_types_count
+
+    if _pending_rank_types_count == 0:
+        return True
+
+    try:
+        # Load current data (force reload)
+        complexity_data = load_rank_complexity_data(force_reload=True)
+
+        # Add buffer contents
+        for rank_type, rank_data in _pending_rank_types.items():
+            if rank_type not in complexity_data:
+                complexity_data[rank_type] = rank_data
+
+        # Save
+        success = save_rank_complexity_data(complexity_data)
+
+        if success:
+            # Clear buffer
+            _pending_rank_types = {}
+            _pending_rank_types_count = 0
+
+        return success
+    except Exception as e:
+        print(f"Error saving pending rank types: {str(e)}")
+        return False
+
+
+def flush_pending_rank_types():
+    """Save all pending rank types"""
+    return _save_pending_rank_types()
+
 def get_rank_complexity_value(rank_type, default_value=3.0):
     """
     Get complexity for specified ranking type
-    Automatically adds to database and returns default value if not exists
-    
+    Get from cache and add to buffer if doesn't exist
+
     Parameters:
     rank_type (str): Ranking type to get complexity for
     default_value (float): Default value if not exists
-    
+
     Returns:
     float: Ranking type complexity
     """
+    # Check buffer first
+    global _pending_rank_types
+
+    if rank_type in _pending_rank_types:
+        pending_data = _pending_rank_types[rank_type]
+        if isinstance(pending_data, dict) and 'complexity' in pending_data:
+            return pending_data['complexity']
+        elif isinstance(pending_data, (int, float)):
+            return pending_data
+        else:
+            return default_value
+
     complexity_data = load_rank_complexity_data()
     
     # Check if ranking type exists

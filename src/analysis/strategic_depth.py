@@ -426,86 +426,109 @@ def calculate_rules_complexity(game_data):
 def calculate_strategic_depth_improved(game_data):
     """
     Improved strategic depth calculation function (with readjusted weighting)
-    
+    Also returns pre-computed sub-metrics to avoid duplicate calculation.
+
     Parameters:
     game_data (dict): Game detail information
-    
+
     Returns:
-    float: Strategic depth score (range 1.0-5.0)
+    tuple: (strategic_depth, decision_points, interaction_complexity, rules_complexity)
+        - strategic_depth (float): Strategic depth score (range 1.0-5.0)
+        - decision_points (float): Decision points score (range 1.0-5.0)
+        - interaction_complexity (float): Interaction complexity score (range 1.0-5.0)
+        - rules_complexity (float): Rules complexity score (range 1.0-5.0)
     """
     # Adjust BGG weight to 20% (reduce influence of external evaluation)
     base_weight = float(game_data.get('weight', 3.0))
-    
+
     # Estimate decision points
     decision_points = estimate_decision_points_improved(
         game_data.get('mechanics', []), game_data)
-    
+
     # Estimate player interaction complexity
     interaction_complexity = estimate_interaction_complexity_improved(
         game_data.get('categories', []), game_data.get('mechanics', []), game_data)
-    
+
     # Calculate rules complexity
     rules_complexity = calculate_rules_complexity(game_data)
-    
+
     # Evaluate strategic value of mechanics
     mechanics = game_data.get('mechanics', [])
     mechanics_names = [m['name'] for m in mechanics]
-    
+
     # Get list of mechanics with high strategic value
     high_strategy_values = [(name, get_mechanic_strategic_value(name)) for name in mechanics_names]
     high_strategy_values.sort(key=lambda x: x[1], reverse=True)
-    
+
     # Calculate bonus based on strategic value
     strategy_bonus = 0
     mechanic_count = len(high_strategy_values)
-    
+
     # Emphasize mechanics with top strategic values
     if mechanic_count > 0:
         # Consider up to 3 strategic mechanics
         top_n = min(3, mechanic_count)
-        
+
         # Distribution of influence (1st:50%, 2nd:30%, 3rd:20%)
         weights = [0.5, 0.3, 0.2][:top_n]
-        
+
         # Normalize
         weights_sum = sum(weights)
         weights = [w / weights_sum for w in weights]
-        
-        # Sum of influence × strategic value for each mechanic
+
+        # Sum of influence x strategic value for each mechanic
         for i in range(top_n):
             name, value = high_strategy_values[i]
             impact = 0.1 * (value - 2.5)  # Calculate bonus/penalty based on 2.5 as baseline
             strategy_bonus += impact * weights[i]
-    
+
     # Apply decay for too many mechanics
     if mechanic_count > 0:
         decay_factor = 1.0 / (1.0 + math.log(mechanic_count, 10))
         # Apply decay to bonus (limit to max 0.8)
         strategy_bonus = min(0.8, strategy_bonus * decay_factor)
-    
+
+    # Hidden information bonus
+    # Mechanics relying on asymmetric/hidden information raise strategic depth
+    hidden_info_mechanics = {
+        'Roles with Asymmetric Information', 'Secret Unit Deployment',
+        'Betting and Bluffing', 'Hidden Victory Points', 'Closed Drafting',
+        'Communication Limits', 'Deduction', 'Predictive Bid',
+    }
+    hidden_info_count = sum(1 for m in mechanics_names if m in hidden_info_mechanics)
+    hidden_info_bonus = min(0.3, hidden_info_count * 0.1)
+
     # Strategic depth bonus based on playtime
     playtime_info = evaluate_playtime_complexity(game_data)
     playtime_strategic_bonus = playtime_info["strategic_bonus"]
-    
-    # Calculate strategic depth (with readjusted weighting)
+
+    # Calculate strategic depth using normalized weighted sum
+    # Base components sum to 1.0: BGG(0.20) + decision(0.35) + rules(0.10) + interaction(0.25) + remaining(0.10)
+    # Additive bonuses are individually capped to prevent score inflation
+    strategy_bonus_capped    = min(0.4,  strategy_bonus)               # cap to 0.4
+    playtime_bonus_capped    = min(0.1,  playtime_strategic_bonus * 0.6) # cap to 0.1
+    hidden_info_bonus_capped = min(0.3,  hidden_info_bonus)            # cap to 0.3
+
     strategic_depth = (
-        base_weight * 0.20 +                   # BGG evaluation (20%→reduce predictive power)
-        decision_points * 0.35 +               # Decision points (30%→increase to 35%)
-        rules_complexity * 0.10 +              # Rules complexity (15%→decrease to 10%)
-        interaction_complexity * 0.25 +        # Interaction complexity (20%→increase to 25%)
-        strategy_bonus * 0.8 +                 # Strategic mechanic bonus (limited to max 0.8, 80% influence)
-        playtime_strategic_bonus * 0.6         # Playtime bonus (60% influence)
+        base_weight * 0.20 +
+        decision_points * 0.35 +
+        rules_complexity * 0.10 +
+        interaction_complexity * 0.25 +
+        base_weight * 0.10 +                # remaining 10% anchored to BGG weight
+        strategy_bonus_capped +
+        playtime_bonus_capped +
+        hidden_info_bonus_capped
     )
-    
+
     # Apply overall complexity factor (suppress influence to 95%)
     complexity_factor = playtime_info["complexity_factor"]
     complexity_factor = 1.0 + (complexity_factor - 1.0) * 0.95
     strategic_depth *= complexity_factor
-    
+
     # Final strategic depth (limit to 1.0-5.0)
     strategic_depth = min(5.0, max(1.0, strategic_depth))
-    
-    return round(strategic_depth, 2)
+
+    return round(strategic_depth, 2), decision_points, interaction_complexity, rules_complexity
 
 def get_strategic_depth_description(strategic_depth):
     """
@@ -534,22 +557,28 @@ def get_strategic_depth_description(strategic_depth):
 
 def update_learning_curve_with_improved_strategic_depth(game_data, learning_curve):
     """
-    Update existing learning curve data with improved strategic depth
-    
+    Update existing learning curve data with improved strategic depth.
+    Re-uses pre-computed sub-metrics from calculate_strategic_depth_improved
+    to avoid duplicate calculation.
+
     Parameters:
     game_data (dict): Game detail information
     learning_curve (dict): Existing learning curve data
-    
+
     Returns:
     dict: Updated learning curve data
     """
-    # Calculate improved strategic depth
-    strategic_depth = calculate_strategic_depth_improved(game_data)
-    
-    # Update learning curve data
+    # Calculate improved strategic depth (returns sub-metrics too)
+    strategic_depth, decision_points, interaction_complexity, rules_complexity = \
+        calculate_strategic_depth_improved(game_data)
+
+    # Update learning curve data with all sub-metrics at once (no re-calculation)
     learning_curve["strategic_depth"] = strategic_depth
     learning_curve["strategic_depth_description"] = get_strategic_depth_description(strategic_depth)
-    
+    learning_curve["decision_points"] = decision_points
+    learning_curve["interaction_complexity"] = interaction_complexity
+    learning_curve["rules_complexity"] = rules_complexity
+
     # Update learning curve type (based on new combination of initial barrier and strategic depth)
     initial_barrier = learning_curve["initial_barrier"]
     
@@ -624,11 +653,8 @@ def update_learning_curve_with_improved_strategic_depth(game_data, learning_curv
         else:
             player_types.append("casual")
     
-    # Include additional metrics in learning curve analysis
-    learning_curve["decision_points"] = estimate_decision_points_improved(game_data.get('mechanics', []), game_data)
-    learning_curve["interaction_complexity"] = estimate_interaction_complexity_improved(
-        game_data.get('categories', []), game_data.get('mechanics', []), game_data)
-    learning_curve["rules_complexity"] = calculate_rules_complexity(game_data)
+    # player_types stored (decision_points / interaction_complexity / rules_complexity
+    # are already set above from the tuple returned by calculate_strategic_depth_improved)
     learning_curve["player_types"] = player_types
     
     # Add playtime analysis data

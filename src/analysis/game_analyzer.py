@@ -4,6 +4,7 @@ Contains only the functions actually used in the current application
 """
 
 from src.utils.language import t, get_game_display_name
+from src.analysis.learning_curve import get_player_type_display, get_replayability_display
 
 def get_complexity_level(weight):
     """Get complexity level description
@@ -50,6 +51,48 @@ def get_depth_level(depth):
         return t("analysis.depth.shallow")
     else:
         return t("analysis.depth.very_shallow")
+
+def _get_barrier_depth_comment(initial_barrier, strategic_depth):
+    """
+    Generate a comment describing the relationship between initial barrier and strategic depth.
+
+    Parameters:
+    initial_barrier (float): Initial learning barrier score
+    strategic_depth (float): Strategic depth score
+
+    Returns:
+    str: Relationship comment, or empty string if no notable pattern
+    """
+    if initial_barrier >= 4.0 and strategic_depth >= 4.0:
+        return t("analysis.summary.hard_and_deep")
+    elif initial_barrier >= 4.0 and strategic_depth < 3.0:
+        return t("analysis.summary.hard_but_shallow")
+    elif initial_barrier < 2.5 and strategic_depth >= 4.0:
+        return t("analysis.summary.easy_but_deep")
+    elif initial_barrier < 2.5 and strategic_depth < 3.0:
+        return t("analysis.summary.easy_and_casual")
+    return ""
+
+
+def _get_depth_replay_comment(strategic_depth, replayability):
+    """
+    Generate a comment describing the relationship between strategic depth and replayability.
+
+    Parameters:
+    strategic_depth (float): Strategic depth score
+    replayability (float): Replayability score
+
+    Returns:
+    str: Relationship comment, or empty string if no notable pattern
+    """
+    if strategic_depth >= 4.0 and replayability >= 4.0:
+        return t("analysis.summary.deep_and_replayable")
+    elif strategic_depth >= 4.0 and replayability < 3.0:
+        return t("analysis.summary.deep_but_low_replay")
+    elif strategic_depth < 3.0 and replayability >= 4.0:
+        return t("analysis.summary.shallow_but_replayable")
+    return ""
+
 
 def get_popularity_level(rank):
     """Get popularity level description
@@ -108,7 +151,6 @@ def generate_game_summary(game_data, learning_curve):
     popularity = get_popularity_level(bgg_rank)
     
     # Player types
-    from src.analysis.learning_curve import get_player_type_display, get_replayability_display
     player_types_display = [get_player_type_display(pt) for pt in learning_curve.get('player_types', [])[:2]]
     
     # Initial learning barrier
@@ -156,12 +198,26 @@ def generate_game_summary(game_data, learning_curve):
     
     summary += "\n\n"
     
-    summary += t("analysis.summary.barrier_and_replay", 
-                 barrier=barrier_text, 
+    summary += t("analysis.summary.barrier_and_replay",
+                 barrier=barrier_text,
                  replayability=replayability_text)
-    
+
     if player_types_display:
-        summary += t("analysis.summary.suitable_for", 
+        summary += t("analysis.summary.suitable_for",
                      player_types=t("common.list_separator").join(player_types_display))
-    
+
+    # Append cross-metric relationship comments
+    strategic_depth_val = learning_curve.get('strategic_depth', 3.0)
+    replayability_val   = learning_curve.get('replayability', 3.0)
+
+    barrier_depth_comment = _get_barrier_depth_comment(initial_barrier, strategic_depth_val)
+    depth_replay_comment  = _get_depth_replay_comment(strategic_depth_val, replayability_val)
+
+    if barrier_depth_comment or depth_replay_comment:
+        summary += "\n"
+        if barrier_depth_comment:
+            summary += barrier_depth_comment
+        if depth_replay_comment:
+            summary += depth_replay_comment
+
     return summary

@@ -37,6 +37,12 @@ from src.utils.language import t, get_game_display_name, get_game_secondary_name
 # Logging configuration
 logger = logging.getLogger("similarity_module")
 
+try:
+    import streamlit as _st
+    _ST_AVAILABLE = True
+except ImportError:
+    _ST_AVAILABLE = False
+
 def setup_japanese_fonts():
     """
     Set up Japanese fonts
@@ -81,8 +87,7 @@ def setup_japanese_fonts():
         return False
 
 # Data loading
-@st.cache_resource(show_spinner=True)
-def load_data(data_file: str) -> Optional[Dict[str, Any]]:
+def _load_data_impl(data_file: str) -> Optional[Dict[str, Any]]:
     """Function to load embedding data
     
     Args:
@@ -113,6 +118,12 @@ def load_data(data_file: str) -> Optional[Dict[str, Any]]:
     except Exception as e:
         logger.error(t("errors.file_load_failed", error=str(e)))
         return None
+
+# Wrap with st.cache_resource only when running inside Streamlit
+if _ST_AVAILABLE:
+    load_data = _st.cache_resource(show_spinner=True)(_load_data_impl)
+else:
+    load_data = _load_data_impl
 
 # Function to process game data and add unknown mechanics/categories/rankings to YAML
 def process_game_data_for_yaml(game_data_list: List[Dict[str, Any]]) -> None:

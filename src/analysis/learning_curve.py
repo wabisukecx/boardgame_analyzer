@@ -11,14 +11,11 @@ from src.analysis.mechanic_complexity import get_complexity
 # Import category complexity calculation function
 from src.analysis.category_complexity import calculate_category_complexity
 # Import ranking-based evaluation function
-from src.analysis.rank_complexity import calculate_rank_complexity
+from src.analysis.rank_complexity import calculate_rank_complexity, calculate_rank_position_score
 # Import improved strategic depth calculation
 from src.analysis.strategic_depth import (
     calculate_strategic_depth_improved,
     update_learning_curve_with_improved_strategic_depth,
-    estimate_decision_points_improved as estimate_decision_points,
-    estimate_interaction_complexity_improved as estimate_interaction_complexity,
-    calculate_rules_complexity
 )
 
 def get_rank_value(game_data, rank_type="boardgame"):
@@ -118,27 +115,27 @@ def calculate_longevity_factor(year_published):
 def calculate_replayability(game_data):
     """
     Calculate game replayability
-    
+
     Parameters:
     game_data (dict): Game details
-    
+
     Returns:
     float: Replayability score (1.0-5.0 range)
     """
     # Base score
     base_score = 2.0
-    
+
     # Score addition for element diversity
     diversity_score = 0.0
-    
+
     # Mechanics diversity (max 0.7 points)
     mechanics_count = len(game_data.get('mechanics', []))
     diversity_score += min(0.7, mechanics_count * 0.1)
-    
+
     # Evaluate mechanics that enhance replayability in detail
     high_replay_mechanics = [
-        'Variable Set-up', 
-        'Modular Board', 
+        'Variable Set-up',
+        'Modular Board',
         'Variable Player Powers',
         'Deck Building',
         'Campaign / Battle Card Driven',
@@ -148,7 +145,7 @@ def calculate_replayability(game_data):
         'Hidden Roles',
         'Asymmetric Gameplay'
     ]
-    
+
     medium_replay_mechanics = [
         'Card Drafting',
         'Worker Placement',
@@ -160,51 +157,59 @@ def calculate_replayability(game_data):
         'Resource Management',
         'Drafting'
     ]
-    
+
     # Count mechanics with high replayability
     high_replay_count = sum(
         1 for m in game_data.get('mechanics', [])
         if m.get('name') in high_replay_mechanics
     )
-    
+
     medium_replay_count = sum(
         1 for m in game_data.get('mechanics', [])
         if m.get('name') in medium_replay_mechanics
     )
-    
+
     # Evaluation of high replayability mechanics (max 0.8 points)
     replay_mechanics_score = min(
         0.8, (high_replay_count * 0.2) + (medium_replay_count * 0.1)
     )
     diversity_score += replay_mechanics_score
-    
+
     # Category diversity (max 0.4 points)
     categories_count = len(game_data.get('categories', []))
     diversity_score += min(0.4, categories_count * 0.1)
-    
-    # Adjustment based on popularity ranking
+
+    # Adjustment based on popularity ranking (continuous value via logarithmic scale)
     rank = get_rank_value(game_data)
     rank_bonus = 0.0
-    
     if rank is not None:
-        if rank <= 100:
-            rank_bonus = 0.6  # Top 100: +0.6 points
-        elif rank <= 500:
-            rank_bonus = 0.4  # Top 500: +0.4 points
-        elif rank <= 1000:
-            rank_bonus = 0.2  # Top 1000: +0.2 points
-    
+        # calculate_rank_position_score returns 1.0-5.0; normalize to 0.0-0.6
+        rank_bonus = min(0.6, max(0.0, (calculate_rank_position_score(rank) - 1.0) / 4.0 * 0.6))
+
+    # Adjustment based on playtime (short games are replayed more easily)
+    try:
+        play_time = int(game_data.get('playing_time', 60))
+        if play_time <= 30:
+            playtime_replay_bonus = 0.3    # Short games: low barrier to replay
+        elif play_time <= 60:
+            playtime_replay_bonus = 0.15
+        elif play_time >= 180:
+            playtime_replay_bonus = -0.2   # Long games: higher barrier to replay
+        else:
+            playtime_replay_bonus = 0.0
+    except (ValueError, TypeError):
+        playtime_replay_bonus = 0.0
+
     # Adjustment based on long-term popularity
     year_published = get_year_published(game_data)
     longevity_factor = calculate_longevity_factor(year_published)
-    
+
     # Final score calculation
-    # Multiply diversity score and popularity bonus by longevity factor
-    replayability = (base_score + diversity_score + rank_bonus) * longevity_factor
-    
+    replayability = (base_score + diversity_score + rank_bonus) * longevity_factor + playtime_replay_bonus
+
     # Set upper and lower limits
     replayability = max(1.0, min(5.0, replayability))
-    
+
     return round(replayability, 2)
 
 
@@ -246,34 +251,81 @@ def calculate_learning_curve(game_data):
     
     # Complexity evaluation from categories and rankings (60:40 weighting)
     complexity_factor = (category_complexity * 0.6 + rank_complexity * 0.4)
-        
-    # Update initial barrier calculation (rule complexity)
+
+    # Strategic depth and sub-metrics (calculated first so rules_complexity is available)
+    strategic_depth_result = calculate_strategic_depth_improved(game_data)
+    strategic_depth = strategic_depth_result[0]
+    rules_complexity_value = strategic_depth_result[3]
+
+    # Initial barrier: coefficients sum to 1.0, incorporating rules_complexity
     initial_barrier = (
-        avg_mechanic_complexity * 0.5 + 
-        base_weight * 0.2 +
-        complexity_factor * 0.2  # Use category and ranking evaluation instead of age recommendation
+        avg_mechanic_complexity * 0.40 +
+        rules_complexity_value  * 0.25 +   # rules_complexity already computed, no extra cost
+        base_weight             * 0.20 +
+        complexity_factor       * 0.15
     )
-    
+
     # Adjust initial barrier by number of mechanics (more mechanics = harder initial learning)
     mechanics_count_barrier_factor = min(1.25, max(1.0, len(mechanics_names) / 5))
     initial_barrier = initial_barrier * mechanics_count_barrier_factor
-    
+
     # Set upper limit to 5.0
     initial_barrier = min(5.0, initial_barrier)
     initial_barrier = round(initial_barrier, 2)
-    
-    # Strategic depth (improved version)
-    strategic_depth = calculate_strategic_depth_improved(game_data)
-    
+
     # Calculate replayability (improved version)
     replayability = calculate_replayability(game_data)
-    
+
     # Get rank info
     rank = get_rank_value(game_data)
-    
+
     # Get year published
     year_published = get_year_published(game_data)
-    
+
+    # --- Additional metrics ---
+    # Solo friendliness
+    solo_friendly_mechanics = {
+        'Solo / Solitaire Game', 'Cooperative Game',
+        'Scenario / Mission / Campaign Game'
+    }
+    mechanics_names_set = set(mechanics_names)
+    if 'Solo / Solitaire Game' in mechanics_names_set:
+        solo_friendliness = 5.0
+    elif 'Cooperative Game' in mechanics_names_set:
+        solo_friendliness = 4.0
+    elif any(m in solo_friendly_mechanics for m in mechanics_names_set):
+        solo_friendliness = 3.5
+    else:
+        try:
+            if int(game_data.get('publisher_min_players', 2)) == 1:
+                solo_friendliness = 3.0
+            else:
+                solo_friendliness = 1.0
+        except (ValueError, TypeError):
+            solo_friendliness = 1.0
+
+    # Player scalability
+    try:
+        min_p = int(game_data.get('publisher_min_players', 2))
+        max_p = int(game_data.get('publisher_max_players', 4))
+        player_range = max(0, max_p - min_p)
+        player_scalability = min(5.0, 2.0 + player_range * 0.5)
+    except (ValueError, TypeError):
+        player_scalability = 3.0
+
+    # Luck dependency
+    high_luck_mechanics = {
+        'Dice Rolling', 'Random Production', 'Push Your Luck',
+        'Roll / Spin and Move', 'Chit-Pull System', 'Critical Hits and Failures'
+    }
+    low_luck_mechanics = {
+        'Worker Placement', 'Engine Building', 'Tech Trees / Tech Tracks',
+        'Deck Construction', 'Action Points'
+    }
+    luck_count    = sum(1 for m in mechanics_names if m in high_luck_mechanics)
+    strategy_count = sum(1 for m in mechanics_names if m in low_luck_mechanics)
+    luck_dependency = min(5.0, max(1.0, 3.0 + luck_count * 0.5 - strategy_count * 0.4))
+
     # Build basic learning curve information
     learning_curve = {
         "initial_barrier": initial_barrier,  # Initial learning difficulty
@@ -286,28 +338,38 @@ def calculate_learning_curve(game_data):
         "year_published": year_published,  # Year published
         # Newly added metrics
         "category_complexity": round(category_complexity, 2),  # Category-based complexity
-        "rank_complexity": round(rank_complexity, 2)  # Ranking-based complexity
+        "rank_complexity": round(rank_complexity, 2),  # Ranking-based complexity
+        # Sub-metrics from strategic depth calculation (stored once here)
+        "decision_points": strategic_depth_result[1],
+        "interaction_complexity": strategic_depth_result[2],
+        "rules_complexity": strategic_depth_result[3],
+        # Additional metrics
+        "solo_friendliness": round(solo_friendliness, 2),
+        "player_scalability": round(player_scalability, 2),
+        "luck_dependency": round(luck_dependency, 2),
     }
-    
-    # Expand learning curve data with improved metrics
+
+    # Expand learning curve data with curve_type / player_types / playtime_analysis
+    # (sub-metrics already present — update_* will reuse them, not recompute)
     learning_curve = update_learning_curve_with_improved_strategic_depth(
         game_data, learning_curve)
-    
-    # Add detailed analysis information
-    learning_curve["decision_points"] = estimate_decision_points(game_data.get('mechanics', []))
-    learning_curve["interaction_complexity"] = estimate_interaction_complexity(game_data.get('categories', []))
-    learning_curve["rules_complexity"] = calculate_rules_complexity(game_data)
-    
-    # Estimate mastery time
+
+    # Estimate mastery time using both strategic_depth AND initial_barrier
     if strategic_depth > 4.3:
         if len(mechanics_names) >= 6:
             learning_curve["mastery_time"] = "medium_to_long"  # Many mechanics but easier to apply once basics understood
         else:
             learning_curve["mastery_time"] = "long"  # Takes long time to master
     elif strategic_depth > 3.2:
-        learning_curve["mastery_time"] = "medium"  # Takes medium time to master
+        if initial_barrier > 4.0:
+            learning_curve["mastery_time"] = "medium_to_long"  # High barrier slows mastery even at moderate depth
+        else:
+            learning_curve["mastery_time"] = "medium"  # Takes medium time to master
     else:
-        learning_curve["mastery_time"] = "short"  # Can be mastered relatively quickly
+        if initial_barrier > 4.0:
+            learning_curve["mastery_time"] = "medium"  # Complex rules despite shallow strategy
+        else:
+            learning_curve["mastery_time"] = "short"  # Can be mastered relatively quickly
     
     return learning_curve
 
