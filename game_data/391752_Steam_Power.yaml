@@ -1,0 +1,83 @@
+type: boardgame
+name: Steam Power
+alternate_names:
+- スチーム・パワー
+japanese_name: スチーム・パワー
+year_published: '2025'
+thumbnail_url: https://cf.geekdo-images.com/d5JR5FekM_PsanGOHBdSMA__small/img/RKxhi5xFFrDm9KbjTiNYA27WwKI=/fit-in/200x150/filters:strip_icc()/pic7720019.jpg
+publisher_min_players: '1'
+publisher_max_players: '5'
+playing_time: '90'
+publisher_min_age: '14'
+community_best_players: 3, 4
+community_recommended_players: 1, 2, 5
+community_min_age: '8'
+description: 'In Steam Power, players "race" to build the best rail network to meet
+  their contractual obligations and make the most money.
+
+
+  On your turn, you can perform two actions from a selection of choices, letting you
+  lay tracks, build factories, fulfill contracts, earn money, or collect more contracts.
+  Building a factory brings resources to the board that all players have access to...at
+  a price.
+
+
+  The game ends when a certain number of contracts are fulfilled, which varies by
+  player count. The player with the most points (and money, which converts to points)
+  wins.
+
+
+  '
+mechanics:
+- name: Chaining
+- name: Connections
+- name: Contracts
+- name: Hexagon Grid
+- name: Network and Route Building
+- name: Ownership
+- name: Pick-up and Deliver
+- name: Tile Placement
+- name: Variable Set-up
+categories:
+- name: Economic
+- name: Industry / Manufacturing
+- name: Territory Building
+- name: Trains
+- name: Transportation
+designers:
+- name: Martin Wallace
+publishers:
+- name: Wallace Designs
+- name: Arclight Games
+average_rating: '7.42668'
+weight: '2.2857'
+ranks:
+- type: boardgame
+  rank: '3055'
+- type: strategygames
+  rank: '1357'
+learning_analysis:
+  initial_barrier: 3.47
+  strategic_depth: 3.25
+  replayability: 3.4
+  mechanics_complexity: 3.11
+  mechanics_count: 9
+  bgg_weight: 2.2857
+  bgg_rank: 3055
+  year_published: 2025
+  category_complexity: 4.44
+  rank_complexity: 2.87
+  strategic_depth_description: 中程度の深さ
+  learning_curve_type: gentle
+  decision_points: 4.005714285714286
+  interaction_complexity: 3.3575
+  rules_complexity: 3.790473333333334
+  player_types:
+  - casual
+  - experienced
+  playtime_analysis:
+    strategic_bonus: 0.1
+    interaction_modifier: 0.0
+    decision_density: 0.1
+    complexity_factor: 1.0
+  mastery_time: medium

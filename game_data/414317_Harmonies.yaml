@@ -1,0 +1,127 @@
+type: boardgame
+name: Harmonies
+alternate_names:
+- Harmoni
+- Harmónia
+- Krajina zvířat
+- Ostoja
+- Αρμονία
+- Гармония
+- Гармонія
+- Природа
+- ハーモニーズ
+- 自然和弦
+- 하모니즈
+japanese_name: ハーモニーズ
+year_published: '2024'
+thumbnail_url: https://cf.geekdo-images.com/A_XP2_VN3ugyqPhezowB_w__small/img/ln5eKAzhse2PIHvWn7bu-jiW_uk=/fit-in/200x150/filters:strip_icc()/pic8026369.png
+publisher_min_players: '1'
+publisher_max_players: '4'
+playing_time: '45'
+publisher_min_age: '10'
+community_best_players: 2, 3
+community_recommended_players: 1, 4
+community_min_age: '8'
+description: 'In Harmonies, build landscapes by placing colored tokens and create
+  habitats for your animals. To earn the most points and win the game, incorporate
+  the habitats in your landscapes wisely and have as many animals as you can settle
+  there.
+
+
+  Starting with the first player and proceeding clockwise, each player will choose
+  a set of 3 terrain tokens from the central area to place on their personal board.
+  They may optionally choose an Animal card from the 5 displayed and/or place an Animal
+  cube from their Animal card(s) on any completed patterns on their board that match
+  their personal Animal cards. There is a 4-card limit per player. After their turn,
+  refill with a new set of 3 tokens and a new Animal card if needed.
+
+
+  Placement of the terrain tokens will depend on the personal Animal card goals, and
+  scoring rules for the various terrain types (mountain, field, forest, etc). For
+  example, mountain tiles score based on how high they are (1 tile scores 1, while
+  3 tiles stacked score 7), but the mountain scores zero if it is not adjacent to
+  at least one other mountain. If all the cubes on a given Animal card have been placed,
+  the card is set aside and a new card can be drawn. The cards are scored at game
+  end based on the highest number that isn''t covered by a cube.
+
+
+  The games ends when there are no tokens left in the bag to refill the central area,
+  or at least one players has 2 or fewer empty spaces on their player board. Play
+  continues until all players have had an equal turn that round. The player with the
+  highest points is the winner.
+
+
+  Optionally, you can use Nature''s Spirit cards for richer gameplay. During setup,
+  each player chooses 1 of 2 spirit cards and places a Spirit cube on the card. They
+  follow the same placement rules as Animal cards, but tend to have an ongoing effect
+  once completed. The spirit card does count towards the 4-card hand limit.
+
+
+  &mdash;description from the publisher
+
+
+  '
+mechanics:
+- name: Chaining
+- name: Hexagon Grid
+- name: Open Drafting
+- name: Pattern Building
+- name: Set Collection
+- name: Solo / Solitaire Game
+- name: Tile Placement
+- name: Variable Player Powers
+categories:
+- name: Abstract Strategy
+- name: Animals
+- name: Environmental
+- name: Puzzle
+designers:
+- name: Johan Benvenuto
+publishers:
+- name: Libellud
+- name: ADC Blackfire Entertainment
+- name: CoolPlay
+- name: CrowD Games
+- name: Fjórir Ásar
+- name: Galápagos Jogos
+- name: Gém Klub Kft.
+- name: Hobby Japan
+- name: Kaissa Chess & Games
+- name: Korea Boardgames
+- name: Rebel Sp. z o.o.
+- name: Ігромаг
+average_rating: '8.0294'
+weight: '2.0145'
+ranks:
+- type: boardgame
+  rank: '57'
+- type: abstracts
+  rank: '2'
+- type: familygames
+  rank: '10'
+learning_analysis:
+  initial_barrier: 3.19
+  strategic_depth: 2.91
+  replayability: 4.0
+  mechanics_complexity: 3.08
+  mechanics_count: 8
+  bgg_weight: 2.0145
+  bgg_rank: 57
+  year_published: 2024
+  category_complexity: 3.19
+  rank_complexity: 2.81
+  strategic_depth_description: 中〜低の深さ
+  learning_curve_type: gentle
+  decision_points: 3.9466666666666677
+  interaction_complexity: 2.5
+  rules_complexity: 3.4370666666666674
+  player_types:
+  - casual
+  - replayer
+  - trend_follower
+  playtime_analysis:
+    strategic_bonus: 0.0
+    interaction_modifier: 0.0
+    decision_density: 0.15
+    complexity_factor: 1.0
+  mastery_time: short
