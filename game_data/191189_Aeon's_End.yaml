@@ -28,6 +28,10 @@ description: 'The survivors of a long-ago invasion have taken refuge in the forg
   every discarded card. Players will struggle to defend Gravehold from The Nameless
   and their hordes using unique abilities, powerful spells, and, most importantly
   of all, their collective wits.&#10;&#10;'
+description_ja: '遠い昔の侵略の生存者たちは、忘れ去られた地下都市グレイブホールドに避難した。そこで、社会の絶望的な残党は、敵が攻撃に利用する裂け目のエネルギーそのものが、様々な宝石を通して転用できることを学んだ。宝石は内部の悪意あるエネルギーを、最後の防衛線である裂け目魔術師を助ける有益な呪文や武器に変えることができるのだ。
+
+
+  Aeon''s End（イオンズ・エンド）は、デッキ構築型ゲームのジャンルを革新的なメカニズムで探求する協力型ゲームである。攻撃の混乱をシミュレートする可変ターン順システムや、捨て札一枚一枚を慎重に計画する必要があるデッキ管理ルールなどが特徴だ。プレイヤーは、ユニークな能力、強力な呪文、そして何よりも彼らの集団的な知恵を使って、グレイブホールドをネームレスとその大群から守るために奮闘する。'
 mechanics:
 - name: Chit-Pull System
 - name: Cooperative Game

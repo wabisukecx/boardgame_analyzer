@@ -18,6 +18,10 @@ description: 'The players take the roles of Mallorcan farmers, who strive to har
   course of the game. For these deliveries, the players receive victory points. In
   the end, the player with the most victory points is the winner.&#10;&#10;Note: Finca:
   El Razul is included in the box with versions listed under this entry.&#10;&#10;'
+description_ja: 'プレイヤーはマヨルカ島の農家となり、イチジク、アーモンド、オリーブ、オレンジ、ブドウ、レモンといった島の熱帯フルーツをできるだけ多く収穫することを目指します。収穫したフルーツは、ゲーム中に常に変化するニーズを持つ島内のコミュニティに届けます。この配達によって、プレイヤーは勝利点を得ます。最終的に、最も多くの勝利点を獲得したプレイヤーが勝者となります。
+
+
+  注：フィンカ：エル・ラズールは、このエントリに記載されているバージョンに含まれています。'
 mechanics:
 - name: Contracts
 - name: Mancala

@@ -15,6 +15,7 @@ description: In the co-operative game Knock! Knock! Dungeon!, you and your compa
   must explore a dungeon with various dangers and creatures in order to find and beat
   the Black Knight &mdash; but you have only ten minutes before the curse of the dungeon
   hits you!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: 協力型ゲーム『Knock! Knock! Dungeon!』では、仲間たちと協力して様々な危険やクリーチャーが潜むダンジョンを探索し、ブラックナイトを倒さなければなりません。ただし、ダンジョンの呪いがあなたたちを襲うまで、残された時間はたったの10分です！
 mechanics:
 - name: Cooperative Game
 categories:

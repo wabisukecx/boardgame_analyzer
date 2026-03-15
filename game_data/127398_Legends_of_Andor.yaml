@@ -42,6 +42,13 @@ description: Legends of Andor is a cooperative adventure board game for two to f
   tale.&#10;&#10;Will their heroes roam the land completing quests in the name of
   glory, or devote themselves to the defense of the realm? Uncover epic tales of glory
   as you live the Legends of Andor!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: '『アンドールの伝説』は、2〜4人用の協力型アドベンチャーボードゲームです。プレイヤーは英雄となり、侵略してくる大群からファンタジー世界を守るために協力しなければなりません。アンドールの国境を守るため、英雄たちは5つのユニークなシナリオ（さらにプレイヤー自身が作成する最終シナリオ）を通して、危険なクエストに挑みます。巧妙なゲームシステムによってクリーチャーが常に城へ向かって進軍するため、プレイヤーは優先順位を慎重に調整する必要があります。
+
+
+  『アンドールの伝説』の中核となるのは、そのユニークな物語です。連鎖するシナリオは、プレイヤーが目標を達成することで、全体的なストーリーを語ります。各シナリオ、つまり「伝説」ごとに、伝説カードの山が常に展開する物語の筋書きを伝えます…そこではプレイヤーが主人公となるのです。木製のマーカーは、各シナリオの重要なポイントでボード上の伝説トラックを進み、新しい伝説カードを引き、ゲームを変える新しい効果をもたらし、ストーリーのプロットを進展させます。最終的に、プレイヤーは英雄的な行動を通してアンドールの運命を導き、壮大なファンタジー物語にハッピーエンドをもたらさなければなりません。
+
+
+  英雄たちは名誉のためにクエストを完了させながら国を駆け巡るのか、それとも王国の防衛に専念するのか？『アンドールの伝説』を体験して、栄光に満ちた壮大な物語を解き明かしましょう！'
 mechanics:
 - name: Action Points
 - name: Area Movement

@@ -25,6 +25,13 @@ description: Experience two fantastical centuries of expansions and combat in Pa
   grow older with each turn until time takes them away.&#10;&#10;Build a comprehensive
   strategy and adapt the shape of your realm according  to opportunities and restrictions  and
   you will make history!&#10;&#10;
+description_ja: '「ペーパーテイルズ」で、拡張と戦闘が繰り広げられる幻想的な2つの世紀を体験しましょう。時代や英雄たちの寿命に応じて、各時代にキャラクター、ユニット、建物を組み替え、発展させてください。対立する王国を統一した正当な支配者の新たな伝説を紡ぎましょう。
+
+
+  詳細: 「ペーパーテイルズ」は同時進行型のドラフトカードゲームです。各ターン、プレイヤーは5つのユニットをドラフトし、資金を支払える限り、王国に迎え入れます。これらの選択によって、プレイヤーは戦闘で輝き、莫大な収入を生み出し、強力な建物を建設し、伝説ポイントを獲得することができます。4ラウンドのプレイ中、雇用できるのは4つのポジションのみですが、ユニットはターンごとに年を取り、やがて時の流れに消えていきます。
+
+
+  包括的な戦略を構築し、機会と制約に応じて領土の形を適応させれば、歴史に名を刻むことができるでしょう！'
 mechanics:
 - name: Closed Drafting
 - name: End Game Bonuses

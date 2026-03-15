@@ -48,6 +48,17 @@ description: On an uninhabited island in uncharted seas, explorers have found tr
   set-up for each game will be unique, encouraging players to explore new strategies
   to meet the challenge.&#10;&#10;Discover the Lost Ruins of Arnak!&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: '未開の海に浮かぶ無人島で、探検家たちは偉大な文明の痕跡を発見した。プレイヤーは探検隊を率いて島を探検し、失われた遺物を探し出し、恐るべき守護者たちに立ち向かい、島の秘密を解き明かすことを目指す。
+
+
+  『ロスト・ルインズ・オブ・アーナック』は、デッキ構築とワーカープレイスメントを組み合わせた、探検、資源管理、発見のゲームだ。カードは従来のデッキ構築の効果に加えて、ワーカーを配置するためにも使用でき、プレイヤーが島を探検するにつれて、新たなワーカーアクションが利用可能になる。これらのアクションの中には、ワーカーの代わりに資源を必要とするものもあるため、確固たる資源基盤を築くことが不可欠となる。1ターンに実行できるアクションは1つだけなので、慎重に選択しよう。今、最も利益をもたらすアクションは何か？
+  そして、他の誰かに先を越されなければ、後で何ができるだろうか？
+
+
+  デッキは小さく、ゲーム内のランダム性は、ゲームボード上で提供される豊富な戦術的決定によって大幅に軽減される。多様なワーカーアクション、遺物、装備カードにより、各ゲームのセットアップはユニークになり、プレイヤーは課題を克服するために新しい戦略を模索することが奨励される。
+
+
+  『ロスト・ルインズ・オブ・アーナック』を発見せよ！'
 mechanics:
 - name: Area Movement
 - name: Contracts

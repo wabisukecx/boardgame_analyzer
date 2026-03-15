@@ -8,7 +8,7 @@ alternate_names:
 - 马拉喀什
 japanese_name: マラケシュ
 year_published: '2022'
-thumbnail_url: https://cf.geekdo-images.com/ug8yV9EVLMdjzg7FjMesSQ__thumb/img/w-hjGWPgMpmSKsn7LbUSKHjCVFg=/fit-in/200x150/filters:strip_icc()/pic7144309.jpg
+thumbnail_url: https://cf.geekdo-images.com/ug8yV9EVLMdjzg7FjMesSQ__small/img/w-hjGWPgMpmSKsn7LbUSKHjCVFg=/fit-in/200x150/filters:strip_icc()/pic7144309.jpg
 publisher_min_players: '2'
 publisher_max_players: '4'
 playing_time: '120'
@@ -16,24 +16,47 @@ publisher_min_age: '14'
 community_best_players: '3'
 community_recommended_players: 2, 4
 community_min_age: '14'
-description: Compete with other influential families in the city to achieve the most
+description: 'Compete with other influential families in the city to achieve the most
   honorable titles through the skillful use of assistants and resources at your disposal.
-  The player who succeeds in doing this best becomes the new &quot;Obermufti&quot;
-  of Marrakesh.&#10;&#10;Marrakesh is played over three rounds, with each round consisting
-  of four turns. On each turn, players simultaneously and secretly choose three colored
-  cylinders from behind their screen. Then, in turn order, they place matching colored
-  assistants on their player board (these will be the actions they will perform later),
-  then all cylinders are placed in the cube tower. The cube tower randomizes which
-  cylinders are available this round, with some getting stuck and some from previous
-  rounds coming out.&#10;&#10;In turn order, players select a color and take 1-2 of
-  the cylinders that have passed through the tower (or those that were stuck from
-  a previous round but have now emerged) and place them on their player boards. These
-  cylinders will enhance future actions taken in the same color in future rounds.
-  Then, in turn order players will activate the regions where they have placed an
-  assistant.&#10;&#10;Actions allow players to gain wealth, which can be traded for
-  influence in the city. Performing various actions also earns bonuses and enhances
-  actions even more as the game proceeds. The player who scores the most points by
-  the end of the game wins.&#10;&#10;&mdash;description from the publisher&#10;&#10;
+  The player who succeeds in doing this best becomes the new "Obermufti" of Marrakesh.
+
+
+  Marrakesh is played over three rounds, with each round consisting of four turns.
+  On each turn, players simultaneously and secretly choose three colored cylinders
+  from behind their screen. Then, in turn order, they place matching colored assistants
+  on their player board (these will be the actions they will perform later), then
+  all cylinders are placed in the cube tower. The cube tower randomizes which cylinders
+  are available this round, with some getting stuck and some from previous rounds
+  coming out.
+
+
+  In turn order, players select a color and take 1-2 of the cylinders that have passed
+  through the tower (or those that were stuck from a previous round but have now emerged)
+  and place them on their player boards. These cylinders will enhance future actions
+  taken in the same color in future rounds. Then, in turn order players will activate
+  the regions where they have placed an assistant.
+
+
+  Actions allow players to gain wealth, which can be traded for influence in the city.
+  Performing various actions also earns bonuses and enhances actions even more as
+  the game proceeds. The player who scores the most points by the end of the game
+  wins.
+
+
+  &mdash;description from the publisher
+
+
+  '
+description_ja: '都市で影響力を持つ名家の一員として、手腕に長けたアシスタントと使える資源を駆使し、最も名誉ある称号を得るために競い合いましょう。最も成功したプレイヤーが、マラケシュの新たな「オベルムフティ（首長）」となります。
+
+
+  マラケシュは3ラウンドにわたってプレイされ、各ラウンドは4ターンで構成されます。各ターン、プレイヤーは同時に、自分の衝立の後ろから3つの色のついたシリンダーを秘密裏に選びます。次に、手番順に、対応する色の助手コマを自分のプレイヤーボードに配置します（これが、後で行うアクションになります）。その後、すべてのシリンダーをキューブタワーに入れます。キューブタワーは、どのシリンダーが今ラウンドで利用可能になるかをランダム化し、詰まって出てこないものや、前のラウンドから出てくるものがあります。
+
+
+  手番順に、プレイヤーは色を選び、タワーを通過した（または前のラウンドで詰まっていたものの、今回出てきた）シリンダーを1～2個選び、自分のプレイヤーボードに配置します。これらのシリンダーは、将来のラウンドで同じ色で行われるアクションを強化します。その後、手番順に、プレイヤーは助手コマを配置したエリアを活性化させます。
+
+
+  アクションを行うことで、富を得ることができ、それは都市での影響力と交換できます。さまざまなアクションを実行することで、ボーナスを獲得したり、ゲームが進むにつれてアクションがさらに強化されたりします。ゲーム終了時に最も多くのポイントを獲得したプレイヤーが勝利します。'
 mechanics:
 - name: Cube Tower
 - name: End Game Bonuses
@@ -49,32 +72,36 @@ publishers:
 - name: Moon3 Inc.
 - name: Playfun Games
 - name: White Goblin Games
-average_rating: '8.11186'
-weight: '3.4059'
+average_rating: '8.08619'
+weight: '3.4444'
 ranks:
 - type: boardgame
-  rank: '390'
+  rank: '355'
 - type: strategygames
-  rank: '197'
+  rank: '175'
 learning_analysis:
-  initial_barrier: 2.77
-  strategic_depth: 3.23
-  replayability: 2.9
+  initial_barrier: 3.21
+  strategic_depth: 3.59
+  replayability: 2.91
   mechanics_complexity: 2.77
   mechanics_count: 4
-  bgg_weight: 3.4059
-  bgg_rank: 390
+  bgg_weight: 3.4444
+  bgg_rank: 355
   year_published: 2022
   category_complexity: 3.8
-  rank_complexity: 3.08
-  learning_curve_type: gentle
+  rank_complexity: 3.09
   decision_points: 3.5700000000000003
   interaction_complexity: 3.3598
-  rules_complexity: 3.545513333333333
+  rules_complexity: 3.5532133333333333
+  solo_friendliness: 1.0
+  player_scalability: 3.0
+  luck_dependency: 3.0
+  strategic_depth_description: 中〜高の深さ
+  learning_curve_type: gentle_then_moderate
   player_types:
-  - beginner
   - casual
   - experienced
+  - hardcore
   - trend_follower
   playtime_analysis:
     strategic_bonus: 0.1
@@ -82,3 +109,12 @@ learning_analysis:
     decision_density: 0.0
     complexity_factor: 1.0
   mastery_time: medium
+update_history:
+- date: '2026-03-15'
+  average_rating: '8.08619'
+  weight: '3.4444'
+  ranks:
+  - type: boardgame
+    rank: '355'
+  - type: strategygames
+    rank: '175'

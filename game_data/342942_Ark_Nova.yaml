@@ -35,6 +35,27 @@ description: 'In Ark Nova, you will plan and design a modern, scientifically man
   at the heart of Ark Nova. Use them to increase the appeal and scientific reputation
   of your zoo and collect conservation points.&#10;&#10;&mdash;description from the
   publisher&#10;&#10;'
+description_ja: 'アークノヴァでは、あなたは最新の科学的管理に基づいた動物園を計画・設計します。最も成功した動物園を所有するという究極の目標を掲げ、囲いを建設し、動物を収容し、世界中の保護プロジェクトを支援します。専門家やユニークな建物が、この目標達成を助けるでしょう。
+
+
+  各プレイヤーは、ゲームプレイを管理するための5枚のアクションカードのセットを持っています。アクションの強さは、カードが現在配置されているスロットによって決まります。そのカードとは以下の通りです。
+
+
+  *   カード：新しい動物園カード（動物、スポンサー、保護プロジェクトカード）を獲得できます。
+
+  *   建設：標準または特殊な囲い、キオスク、パビリオンを建設できます。
+
+  *   動物：動物園に動物を収容できます。
+
+  *   協会：協会の職員に様々なタスクを実行させることができます。
+
+  *   スポンサー：動物園でスポンサーカードを使用したり、資金を調達したりできます。
+
+
+  動物、専門家、特殊な囲い、保護プロジェクトを特徴とする255枚のカードが、アークノヴァの中心です。それぞれが特別な能力を持っており、これらを使用して動物園の魅力と科学的評判を高め、保護ポイントを集めましょう。
+
+
+  —出版社による説明'
 mechanics:
 - name: Action Queue
 - name: Contracts

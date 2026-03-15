@@ -33,6 +33,16 @@ description: Hanabi&mdash;named for the Japanese word for &quot;fireworks&quot;&
   finish the fireworks display before they run out of cards.&#10;&#10;An extra suit
   of cards, rainbow colored, is also provided for advanced or variant play.&#10;&#10;Hanabi
   was originally published as part of Hanabi & Ikebana.&#10;&#10;
+description_ja: 'ハナビ――日本語で「花火」を意味する言葉にちなんで名付けられました――は、プレイヤーがカードを正しい順番でテーブルに並べ、完璧な花火大会を作り上げることを目指す協力型ゲームです。（日本語で花火は「花火」と書きます。それぞれ「花」と「火」の字です。）
+
+
+  カードデッキは、5つの異なる色のカードで構成され、各色には1から5までの数字が振られています。プレイヤーは各色について、1から5まで正しい順番に並べられた列を作ろうとします。簡単そうに聞こえますか？　ところがどっこい、このゲームでは、自分のカードは他のプレイヤーにしか見えないように持つ必要があるのです。他のプレイヤーがカードを出すのを助けるには、そのカードの数字や色に関するヒントを与えなければなりません。プレイヤーは、ミスを避け、カードがなくなる前に花火大会を完成させるために、チームとして行動する必要があります。
+
+
+  上級者向けまたは変則的な遊び方のために、虹色の追加のカードも用意されています。
+
+
+  ハナビは元々『ハナビ & 生け花』の一部として出版されました。'
 mechanics:
 - name: Communication Limits
 - name: Cooperative Game

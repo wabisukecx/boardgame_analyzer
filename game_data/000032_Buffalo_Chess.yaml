@@ -24,6 +24,7 @@ description: In Buffalo Chess, a.k.a. Bison, one player represents Indians who a
   Indian chief and his dogs while the other player takes charge of the herd of rampaging
   buffalo, all of which are represented by wooden pieces. Each side has its own style
   of play as the pieces move differently.&#10;&#10;
+description_ja: バッファローチェス、別名バイソンは、一人のプレイヤーがインディアンとなり、村がバッファローの大群に蹂躙されるのを防ぎます。このプレイヤーはインディアンの酋長と犬を動かし、もう一人のプレイヤーは木製の駒で表現された暴れ狂うバッファローの群れを指揮します。それぞれの駒の動きが異なるため、両陣営は独自のプレイスタイルを持つことになります。
 mechanics:
 - name: Grid Movement
 categories:

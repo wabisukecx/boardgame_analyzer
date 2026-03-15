@@ -22,6 +22,13 @@ description: Congratulations! You are the CEO of a multinational consumer electr
   new mechanisms, more complexity, and strategic planning, interaction, and competition.&#10;&#10;Join
   the race to satisfy the various demands of different types of customers all around
   the world!&#10;&#10;
+description_ja: 'おめでとうございます！あなたは、新たなモバイル技術の時代に対応する多国籍家電企業のCEOです。技術研究、マーケティングキャンペーン、生産、そして年間を通じた販売計画を立て、他のスマートフォンメーカーと競い合い、可能な限り多くの商品を販売しましょう。勝利への計画を実行しながら、有利な立場を築き上げてください！
+
+
+  Mobile Marketsは、Smartphone Inc.シリーズの独立型ゲームで、同様のゲーム体験を提供しますが、新たなメカニズム、より複雑な要素、戦略的な計画、インタラクション、そして競争をプレイヤーにもたらします。
+
+
+  世界中の様々な顧客層の多様な要求を満たす競争に参加しましょう！'
 mechanics:
 - name: Action Queue
 - name: Deck, Bag, and Pool Building

@@ -18,6 +18,7 @@ description: Say Bye to the Villains &ndash; a.k.a., &#230;&#136;&#144;&#230;&#1
   harmed people in some manner. Players can discard certain cards to learn hidden
   information about the villain, go through special training to increase their attack
   abilities, and take special actions from other cards in the game.&#10;&#10;
+description_ja: 悪党に別れを告げよう - 別名、日本語で「懲罰」- は協力型カードゲームです。プレイヤーは限られた方法で情報を共有し、協力して人々に害を及ぼした悪党を倒します。プレイヤーは特定のカードを捨てることで悪党に関する隠された情報を知ったり、特別な訓練を受けて攻撃能力を高めたり、ゲーム内の他のカードから特別なアクションを実行したりできます。
 mechanics:
 - name: Cooperative Game
 - name: Hand Management

@@ -44,6 +44,17 @@ description: 'In the co-operative trick-taking game The Crew: The Quest for Plan
   only if every single player is successful in fulfilling their tasks.&#10;&#10;The
   game comes with 50 missions, with three additional missions published in spielbox
   2/2020.&#10;&#10;'
+description_ja: '協力型トリックテイキングゲーム『The Crew：第9惑星探査』で、プレイヤーは宇宙飛行士となり、不確かな宇宙の冒険に旅立ちます。謎の惑星に関する噂とは一体何なのでしょうか？
+  波乱に満ちた宇宙の旅は、50を超えるエキサイティングなミッションで構成されています。しかし、このゲームをクリアするには、各プレイヤーが個別に与えられたタスクを全員で達成しなければなりません。様々な困難を乗り越えるためには、チーム内のコミュニケーションが不可欠ですが、宇宙空間ではそれが予想以上に困難になります。
+
+
+  ミッションが進むにつれて、ゲームの難易度は上がっていきます。各ミッションの後にはゲームを中断し、後で再開することができます。各ミッションにおいて重要なのは、トリックの数ではなく、適切なタイミングで適切なトリックを取ることです。
+
+
+  チームは、プレイヤー全員がそれぞれのタスクを達成して初めて、ミッションを完了することができます。
+
+
+  このゲームには50のミッションが収録されており、さらに3つの追加ミッションがspielbox誌の2020年2月号に掲載されています。'
 mechanics:
 - name: Communication Limits
 - name: Cooperative Game

@@ -28,6 +28,16 @@ description: Aquatica  is a deep, but easy to learn family engine builder about 
   from the ocean depths to your kingdom. Mechanically this is represented with the
   help of three-layered player board and the unique mechanism of card-rising.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: 'アクアティカは、奥深いながらも覚えやすい、水中王国を舞台にしたファミリー向けのエンジン構築ゲームです。
+
+
+  プレイヤーは強大な海の王となり、自らの王国に栄光をもたらすために奮闘します。ゲームに勝利するには、領土を占領・購入し、新たなキャラクターを仲間に加え、目標を達成する必要があります。これらの行動はそれぞれ、ゲーム終了時に勝利点をもたらします。そのためには、手札のカード（それぞれ固有のアクションを持つ）をプレイし、それらを組み合わせる必要があります。しかし、簡単だと思わないでください。ターン中に優れた戦略を用いることで、最大10個のアクションを連続して実行できるのです。
+
+
+  あなたは数々の神秘的な海の生き物に出会い、彼らをあなたの手駒とします。彼らの助けを借りて、未知の場所を探検し、海底から発見された資源をあなたの王国にもたらしましょう。これを表現するために、3層構造のプレイヤーボードと、カード昇降という独自のメカニズムが用いられています。
+
+
+  —出版社による説明'
 mechanics:
 - name: Action Retrieval
 - name: Contracts

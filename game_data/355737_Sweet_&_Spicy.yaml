@@ -29,6 +29,16 @@ description: 'Once hungry Kitty craved to eat, but sadly found no yummy meat, in
   about it for so long?&#10;&#10;In Sweet &amp; Spicy, the super joker is added, which
   can be any spice and any number. It is therefore always correct and cannot be doubted.&#10;&#10;&mdash;description
   from the publisher&#10;&#10;'
+description_ja: 'お腹を空かせたキティは食べ物を探しましたが、残念ながら美味しい肉は見つからず、代わりに奇妙なスパイスを見つけてむさぼり食って代償を払いました。ピリピリする刺激から、この素敵なゲームの素晴らしいアイデアが生まれたのです。
+
+
+  スイート＆スパイシーは、2〜6人用のブラフカードゲームであり、スパイシーの子供向けバージョンです。ワサビの代わりにレモンを使うことができ、ゲームには新しいカード、スーパージョーカーが追加されました。ただし、ゲームの原則は同じです。
+
+
+  スパイシーと同様に、カードは裏向きでプレイされるため、カードを宣言するときに嘘をつくことができます。しかし、説得力のある嘘をつくだけではありません。手札から巧みにプレイすれば、少なくとも半分は正しいカードをほぼ常にプレイできます。どのカードならごまかせるか、戦術的に考えることが重要です。「ペッパーの9」は「チリの10」よりも、「スートジョーカー」は「ペッパーの10」よりも良いか？それとも、あまりにも長い間考えていたことがバレそうだから、パスする方が良いか？
+
+
+  スイート＆スパイシーでは、スーパージョーカーが追加され、これはどんなスパイス、どんな数字にもなれます。したがって、常に正しく、疑われることはありません。'
 mechanics:
 - name: Hand Management
 categories:

@@ -34,6 +34,16 @@ description: You lead a grand civilization at the height of its influence, but c
   At the end of the progress track, the game is concluded and the winner is the civilization
   with the greatest number of victory points. Intact territories contribute points,
   but innovations and military successes can provide alternative ways to win.&#10;&#10;
+description_ja: 'あなたは隆盛を極める偉大な文明を率いているが、崩壊から救えるだろうか？『Empire''s End』は、2～4人で災厄を食い止めるために競い合うゲームだ。直感的で洗練されたリバースビッドのメカニズムと、エンジン構築、長期的な計画、戦略的な深さを組み合わせている。その結果、テンポが速く、緊張感にあふれ、勝利への挑戦的な道が複数存在するゲームとなった。
+
+
+  プレイヤーは、その力の頂点にある文明からスタートする。ゲームは、進行に応じて変化する一連のフェイズを経て進行する。災害フェイズでは、プレイヤーは飢饉、洪水、蛮族などの共通の脅威に直面する。入札を終えたプレイヤーは災害を引き受けなければならず、それにより領土の一つが荒廃する。
+
+
+  帝国を襲う災害ごとに、その民は知恵と回復力を増していく。現代の名作ゲーム『No Thanks』のスタイルで、すべてのプレイヤーが入札した資源は、最終的に災害カードを受け取ったプレイヤーの手に入る。そのプレイヤーはまた、新たな能力、つまり困難な時代に立ち向かう帝国の適応能力を反映した革新を得る。
+
+
+  各ターン、プレイヤーは災害に直面するか、別のタイプのフェイズに移行するかを決定する進行トラックを進む。プレイヤーは、生産フェイズで新たな資源を獲得し、産業フェイズで失われた領土を再建し、軍事フェイズで互いに挑戦することができる。進行トラックの終わりにゲームは終了し、最も多くの勝利点を獲得した文明が勝者となる。無傷の領土はポイントに貢献するが、革新や軍事的成功は勝利への別の道を提供する。'
 mechanics:
 - name: Auction / Bidding
 - name: Auction Compensation

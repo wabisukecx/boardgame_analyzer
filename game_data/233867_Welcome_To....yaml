@@ -34,6 +34,14 @@ description: As an architect in Welcome To..., you want to build the best new to
   of the communal actions, game play is simultaneous and thus supports large groups
   of players. With many varying strategies and completely randomized action sets,
   no two games will feel the same!&#10;&#10;
+description_ja: '『Welcome To...』では、あなたは建築家として、資源をプールに加えたり、従業員を雇用したりして、1950年代のアメリカで最高の新しい街を建設することを目指します。
+
+
+  『Welcome To...』は、ロール・アンド・ライト式のダイスゲームのように、スコアシートに結果を記入してプレイしますが、ダイスは使いません。代わりに、3つの山からカードをめくり、家の番号と対応するアクションの組み合わせを3種類作り、全員がその中から1つを選びます。番号を使って、自分の通りに家を番号順に建てていきます。そして、アクションを実行して、建設した不動産のポイント価値を上げたり、公園やプールの建設で最後にポイントを獲得したりします。プレイヤーは、家の番号を変更したり、複製したりするアクションを実行することもできます。そして、全員が共通の目標を最初に達成しようと競います。『Welcome
+  To...』では、やるべきことがたくさんあり、最高の郊外の建築家になるための道はたくさんあります。
+
+
+  共通のアクションを使用するため、ゲームプレイは同時進行で行われ、大人数のプレイヤーに対応できます。多様な戦略と完全にランダム化されたアクションの組み合わせにより、同じゲーム展開は二度とありません！'
 mechanics:
 - name: Bingo
 - name: Contracts

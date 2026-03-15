@@ -26,6 +26,17 @@ description: '1898, Siberia, the seismologist Edgar Vuntaf discovers a continent
   equipment cards to facilitate the taking of future cards. After 7 rounds, the player
   that has successfully completed their objectives and collected the greatest creatures
   wins the game.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+description_ja: '1898年、シベリア。地震学者のエドガー・ヴンタフは、人の手が全く入っていない大陸を発見する。そこには、これまで見たことのない生命が溢れかえっていた！未知の植物、巨大な生物…
+  この衝撃的な発見に直面したパリ万国博覧会に集まった世界の科学エリートたちは、ヴィヴァリウム・シンジケートを設立し、探検隊をこの新大陸に派遣することを決定した。
+
+
+  優れたアートディレクションが光る、効率的で緊迫感のあるカードコレクションゲーム！各プレイヤーは、自分のターンにドミノを使って座標を作り、カードを集めていく。7ラウンド後、目標を達成し、最も多くの生物を集めたプレイヤーが勝利する。
+
+
+  カードはボード上に配置される。各ターン、プレイヤーはドミノのペアを使って座標を作り、ボード上の対応するカードを獲得する。カードのグリッドには、種や生息環境によって分けられた素晴らしい生物、科学的な目標、そして将来のカード獲得を容易にする様々な装備カードなどが含まれている。7ラウンド後、目標を達成し、最も多くの生物を集めたプレイヤーが勝利する。
+
+
+  —出版社による説明'
 mechanics:
 - name: Contracts
 - name: Open Drafting

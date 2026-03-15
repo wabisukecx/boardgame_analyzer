@@ -27,6 +27,14 @@ description: All Aboard! &mdash; The Cooperative Train Game&#10;&#10;You begin t
   rules that are easy to learn and allow you to jump right into the action. Switch
   &amp; Signal features a double-sided game board, city tile variants, and customizable
   difficulty levels.&#10;&#10;
+description_ja: '出発進行！ 協力型鉄道ゲーム
+
+
+  この協力型で家族向けの鉄道ゲームでは、あなたはほんの数本の列車を操作してゲームを開始します。最初は、列車を好きな場所に走らせるのは簡単です。しかし、列車の数が増えるにつれて、運行計画を立て、調整する必要があります。信号は青か？この列車はどこへ行くのか？まずい、ポイントが切り替わっていない！もし列車が間違った方向に進んでしまったら、積み荷は時間通りに到着しません！あなたと車掌チームが協力して列車の運行計画を立て、効率的に運行することで、初めてゲームに勝利できるのです。
+
+
+  中央ヨーロッパと北アメリカの2種類のゲームボードは、それぞれ異なる楽しい挑戦をもたらします。この協力型戦略鉄道ゲームでは、チームメイトと協力して、異なる速度で運行する列車のネットワークを構築し、できるだけ効率的に貨物を輸送します。ルールは簡単で覚えやすく、すぐにゲームに参加できます。「Switch
+  & Signal」には、両面ゲームボード、都市タイルのバリエーション、カスタマイズ可能な難易度レベルが用意されています。'
 mechanics:
 - name: Cooperative Game
 - name: Network and Route Building

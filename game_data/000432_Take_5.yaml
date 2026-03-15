@@ -1,5 +1,5 @@
 type: boardgame
-name: Take 5
+name: Beat the Heat
 alternate_names:
 - '!شیش قلو'
 - ¡Toma 6!
@@ -28,6 +28,7 @@ alternate_names:
 - Sei
 - Ta 6!
 - Tag 6!
+- Take 5
 - Take 5!
 - Take 5!
 - Take 6
@@ -47,7 +48,7 @@ alternate_names:
 - 젝스 님트!
 japanese_name: ニムト
 year_published: '1994'
-thumbnail_url: https://cf.geekdo-images.com/WuOY1XAIJQ-RGAmT_apW_w__thumb/img/dhNHd8Ztln_lUFAdti6WkPnGTGg=/fit-in/200x150/filters:strip_icc()/pic8632998.jpg
+thumbnail_url: https://cf.geekdo-images.com/fpZaCk7c8tvAyQqNbOVPGg__small/img/PaZTcEn0JiuJ_Ul2B3zX_tGd4ko=/fit-in/200x150/filters:strip_icc()/pic8987281.png
 publisher_min_players: '2'
 publisher_max_players: '10'
 playing_time: '45'
@@ -55,26 +56,49 @@ publisher_min_age: '8'
 community_best_players: 5, 6
 community_recommended_players: 4, 7, 8, 9, 10
 community_min_age: '8'
-description: In 6 nimmt!, a.k.a. Category 5 and many other names, you want to score
-  as few points as possible.&#10;&#10;To play the game, you shuffle the 104 number
-  cards, lay out four cards face-up to start the four rows, then deal ten cards to
-  each player. Each turn, players simultaneously choose and reveal a card from their
-  hand, then add the cards to the rows, with cards being placed in ascending order
-  based on their number; specifically, each card is placed in the row that ends with
-  the highest number that's below the card's number. When the sixth card is placed
-  in a row, the owner of that card claims the other five cards and the sixth card
-  becomes the first card in its row.&#10;&#10;In addition to a number from 1 to 104,
-  each card has a point value. After finishing ten rounds, players tally their score
-  and see whether the game ends. (Category 5 ends when a player has a score greater
-  than 74, for example, while 6 nimmt! ends when someone tops 66.) When this happens,
-  the player with the fewest points wins!&#10;&#10;6 nimmt! works with 2-10 players,
-  and the dynamics of gameplay change the more players that you have. One variant
-  for the game has you use 34 cards, 44 cards, 54 cards, etc. (instead of all 104
-  cards) when you have three, four, five, etc. players. This change allows you to
-  know which cards are in play, thereby allowing you to track which cards have been
-  played and (theoretically) make better choices as to which card to play when.&#10;&#10;
+description: 'In Take 5, a.k.a. 6 nimmt!, Category 5 and many other names, you want
+  to score as few points as possible.
+
+
+  To play the game, you shuffle the 104 number cards, lay out four cards face-up to
+  start the four rows, then deal ten cards to each player. Each turn, players simultaneously
+  choose and reveal a card from their hand, then add the cards to the rows, with cards
+  being placed in ascending order based on their number; specifically, each card is
+  placed in the row that ends with the highest number that''s below the card''s number.
+  When the sixth card is placed in a row, the owner of that card claims the other
+  five cards and the sixth card becomes the first card in its row.
+
+
+  In addition to a number from 1 to 104, each card has a point value. After finishing
+  ten rounds, players tally their score and see whether the game ends. (Category 5
+  ends when a player has a score greater than 74, for example, while 6 nimmt! ends
+  when someone tops 66.) When this happens, the player with the fewest points wins!
+
+
+  6 nimmt! works with 2-10 players, and the dynamics of gameplay change the more players
+  that you have. One variant for the game has you use only the lowest 34 cards, 44
+  cards, 54 cards, etc. (instead of all 104 cards) when you have three, four, five,
+  etc. players. This change allows you to know exactly which cards are in play, thereby
+  allowing you to track which cards have been played and know what to expect so that
+  you can (theoretically) make better choices as to which card to play when.
+
+
+  '
+description_ja: 'テイク5（別名：6 nimmt!、Category 5など）では、できるだけ少ない点数を獲得することを目指します。
+
+
+  ゲームを始めるには、104枚の数字カードをシャッフルし、4枚を表向きにして4列を作り、各プレイヤーに10枚ずつカードを配ります。各ターン、プレイヤーは手札から1枚のカードを選んで同時に公開し、カードを数字の昇順に列に追加していきます。具体的には、各カードは、そのカードの数字よりも小さい最大の数字で終わる列に配置されます。6枚目のカードが列に置かれた場合、そのカードの所有者は他の5枚のカードを獲得し、6枚目のカードがその列の最初のカードになります。
+
+
+  1から104までの数字に加えて、各カードには点数が割り当てられています。10ラウンド終了後、プレイヤーは合計点を計算し、ゲームが終了するかどうかを確認します。（例えば、Category
+  5はプレイヤーの点数が74を超えると終了し、6 nimmt!は誰かが66を超えると終了します。）そうなった場合、最も点数が少ないプレイヤーが勝ちとなります！
+
+
+  6 nimmt!は2〜10人で遊ぶことができ、プレイヤー数が多いほどゲームの展開が変化します。ゲームのバリアントとして、3人、4人、5人などの場合、すべての104枚のカードではなく、最も低い34枚、44枚、54枚などのカードのみを使用する方法があります。この変更により、どのカードが使用されているかを正確に把握し、どのカードがプレイされたかを追跡し、何を期待できるかを知ることができるため、（理論的には）どのカードをプレイするかについてより良い選択ができるようになります。'
 mechanics:
 - name: Hand Management
+- name: Ordering
+- name: Push Your Luck
 - name: Score-and-Reset Game
 - name: Simultaneous Action Selection
 categories:
@@ -93,7 +117,7 @@ publishers:
 - name: Bureau de Juegos
 - name: Buró
 - name: Carletto
-- name: Copag Cards
+- name: Copag Cards (Copag)
 - name: Dal Negro
 - name: Dr. Wood Challenge Centre
 - name: Endless Games (I)
@@ -101,6 +125,7 @@ publishers:
 - name: G3
 - name: Gigamic
 - name: Giochi Uniti
+- name: Hasbro
 - name: Kaissa Chess & Games
 - name: Kärnan
 - name: Kikigagne?
@@ -121,34 +146,39 @@ publishers:
 - name: Pando Games
 - name: Paper Iyagi
 - name: Piatnik
+- name: Piatnik Distribution
 - name: Rebel Sp. z o.o.
 - name: Shafir Games (המשחקים של חיים שפיר)
 - name: Swan Panasia Co., Ltd.
 - name: Tempo Games (I)
 - name: U.S. Games Systems, Inc.
 - name: VR Distribution
-average_rating: '6.97707'
-weight: '1.191'
+average_rating: '6.98348'
+weight: '1.189'
 ranks:
 - type: boardgame
-  rank: '672'
+  rank: '673'
 - type: familygames
-  rank: '200'
+  rank: '204'
 learning_analysis:
-  initial_barrier: 2.15
-  strategic_depth: 2.67
-  replayability: 3.08
-  mechanics_complexity: 2.9
-  mechanics_count: 3
-  bgg_weight: 1.191
-  bgg_rank: 672
+  initial_barrier: 2.4
+  strategic_depth: 2.83
+  replayability: 3.62
+  mechanics_complexity: 2.76
+  mechanics_count: 5
+  bgg_weight: 1.189
+  bgg_rank: 673
   year_published: 1994
   category_complexity: 2.35
   rank_complexity: 2.27
+  decision_points: 3.7033333333333336
+  interaction_complexity: 3.348400000000001
+  rules_complexity: 2.8551333333333337
+  solo_friendliness: 1.0
+  player_scalability: 5.0
+  luck_dependency: 3.5
+  strategic_depth_description: 中〜低の深さ
   learning_curve_type: gentle
-  decision_points: 3.5700000000000003
-  interaction_complexity: 3.4686666666666675
-  rules_complexity: 2.6335333333333333
   player_types:
   - beginner
   - casual
@@ -157,6 +187,15 @@ learning_analysis:
   playtime_analysis:
     strategic_bonus: 0.0
     interaction_modifier: 0.0
-    decision_density: 0.0
+    decision_density: 0.15
     complexity_factor: 1.0
   mastery_time: short
+update_history:
+- date: '2026-03-15'
+  average_rating: '6.98348'
+  weight: '1.189'
+  ranks:
+  - type: boardgame
+    rank: '673'
+  - type: familygames
+    rank: '204'

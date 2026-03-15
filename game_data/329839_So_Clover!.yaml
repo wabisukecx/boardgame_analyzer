@@ -27,6 +27,10 @@ description: So Clover! is a cooperative word-association game. Play as a team t
   each player&rsquo;s Keywords. At the end of the game, add up your score according
   to how many Keywords you found and write it in the Record of Legends. Try to beat
   your high score each game!&#10;&#10;-description from the publisher&#10;&#10;
+description_ja: 'So Clover! は協力型の連想ゲームです。チームとして協力して、最高のスコアを目指しましょう。キーワードを受け取り、それらの共通点をクローバーボードに内緒で書き込みます。これがあなたのヒントになります。その後、チームで協力して、各プレイヤーのキーワードを推測します。ゲーム終了時に、見つけたキーワードの数に応じてスコアを加算し、「伝説の記録」に書き込みます。毎ゲーム、ハイスコアを更新しましょう！
+
+
+  （出版社からの説明文）'
 mechanics:
 - name: Communication Limits
 - name: Cooperative Game

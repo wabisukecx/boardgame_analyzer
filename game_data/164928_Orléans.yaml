@@ -28,6 +28,13 @@ description: During the medieval goings-on around Orl&eacute;ans, you must assem
   to fall prey to fate.&#10;&#10;You will always want to take more actions than possible,
   and there are many paths to victory. The challenge is to combine all elements as
   best as possible with regard to your strategy.&#10;&#10;
+description_ja: '中世のオルレアン周辺を舞台に、あなたは農民、商人、騎士、僧侶などを集めて勢力を拡大し、中世フランスにおける交易、建設、科学で覇権を握らなければなりません。
+
+
+  『オルレアン』では、仲間を雇い、彼らの能力を活用して働かせます。農民や船頭はあなたに資金と物資を供給し、騎士はあなたの行動範囲を広げ、商業的な遠征を安全にします。職人は取引所や道具を建設し、作業を円滑にします。学者は科学を発展させ、商人はあなたが仲間を使うための新しい場所を開拓します。そして最後に、僧侶を味方につければ運命の犠牲になりにくくなるため、修道院で活動することも無駄ではありません。
+
+
+  あなたは常に可能な限り多くのアクションを起こしたいと思うでしょうし、勝利への道はたくさんあります。あなたの戦略を考慮して、すべての要素を可能な限り最良の方法で組み合わせることが課題となります。'
 mechanics:
 - name: Contracts
 - name: Deck, Bag, and Pool Building

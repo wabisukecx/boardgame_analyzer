@@ -48,6 +48,13 @@ description: 'Carcassonne is a tile placement game in which the players draw and
   place only one tile and have the option to place one meeple on it, turns proceed
   quickly even if it is a game full of options and possibilities.&#10;&#10;First game
   in the Carcassonne series.&#10;&#10;'
+description_ja: 'カルカソンヌは、プレイヤーが南フランスの風景が描かれたタイルを引いて配置していくタイル配置ゲームです。タイルには都市、道、修道院、草原、またはそれらの組み合わせが描かれており、既に配置されたタイルに隣接するように配置する必要があります。その際、都市は都市と、道は道と、といった具合に繋がるように配置します。タイルを配置した後、プレイヤーは自分のミープル（駒）をタイルのいずれかのエリアに配置するかどうかを選択できます。都市には騎士として、道には盗賊として、修道院には修道士として、そして草原には農夫として配置します。そのエリアが完成すると、ミープルの所有者は得点を獲得します。
+
+
+  カルカソンヌのゲーム中、プレイヤーは「本当に最後のミープルをそこに置く価値はあるのか？」や「このタイルを使って自分の都市を拡張すべきか、それとも対戦相手の近くに置いて、完成を困難にして得点を阻止すべきか？」といった決断に迫られます。プレイヤーはタイルを1枚配置し、ミープルを1つ配置するかどうかを選択するだけなので、選択肢と可能性に満ちたゲームでありながらも、手番は素早く進みます。
+
+
+  カルカソンヌシリーズの最初のゲームです。'
 mechanics:
 - name: Area Majority / Influence
 - name: Enclosure

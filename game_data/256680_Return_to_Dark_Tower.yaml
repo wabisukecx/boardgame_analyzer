@@ -28,6 +28,22 @@ description: 'For an age, the tower lay in ruins. Unbeknownst to the people of t
   game mechanisms, such as engine building and resource management, paired with a
   technological interface unlike any seen before in games, including the titular tower,
   which holds more than a few secrets.&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+description_ja: '長い間、塔は廃墟と化していた。王国の民が知る由もなかったが、その奥底では恐るべき邪悪が胎動していた。それは奇妙な光景から始まった。空から落ちるまで旋回し続けるカラスの群れ、真夏に完全に凍り付いた湖。やがて、彼らは最も恐れていたものを否定できなくなった。
+
+
+  邪悪は滅ぼされていなかった。闇は再び訪れようとしていた。塔はそびえ立つだろう。
+
+
+  1981年の伝説的ゲームの「続編」となる『Return to Dark Tower』は、英雄の役割を担う1〜4人用のゲームだ。プレイヤーは協力して資源を集め、建物を浄化し、モンスターを倒し、クエストをこなして力を蓄え、最終的に待ち受ける敵を見極める。英雄たちが塔に立ち向かうとき、ゲームは劇的な第二幕へと移行し、プレイヤーには敵を完全に打ち負かす一度だけのチャンスが与えられる。
+
+
+  このゲームには、協力モードと対戦モードの両方が用意されている。
+
+
+  このゲームは、エンジン構築や資源管理といった従来のゲームメカニズムに加え、その名の由来となった塔を含む、これまでゲームで見られたことのない技術的なインターフェースを特徴としており、そこには数多くの秘密が隠されている。
+
+
+  —出版社からの説明'
 mechanics:
 - name: Area Movement
 - name: Cooperative Game

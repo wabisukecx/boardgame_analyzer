@@ -40,6 +40,13 @@ description: 'Gloomhaven: Jaws of the Lion is a standalone game that takes place
   scenario. The last barrier to entry &mdash; i.e., learning the game &mdash; has
   also been lowered through a simplified rule set and a five-scenario tutorial that
   will ease new players into the experience.&#10;&#10;'
+description_ja: '『グルームヘイヴン：ジョーズ・オブ・ザ・ライオン』は、グルームヘイヴン本編の前日譚となる独立型ゲームです。このゲームには、ヴァルラス・レッドガード（タンク、群衆制御）、イノックス・ハチェット（遠隔攻撃）、ヒューマン・ヴォイドウォーデン（サポート、精神支配）、クァトリル・デモリショニスト（近接攻撃、地形操作）という4人の新しいキャラクターが含まれており、これらのキャラクターはオリジナルのグルームヘイヴンでも使用できます。
+
+
+  また、16種類のモンスター（7種類の新しい通常モンスターと3種類の新しいボスを含む）と、都市内で発生している不可解な失踪事件の調査にヒーローたちを誘う、25のシナリオで構成される新しいキャンペーンも収録されています。これはヴァームリングの仕業なのか、それとももっと恐ろしい何かが起こっているのでしょうか？
+
+
+  『グルームヘイヴン：ジョーズ・オブ・ザ・ライオン』は、よりカジュアルな層がゲームプレイに手軽に触れられるように設計されています。整理が大変だった段ボール製のマップタイルは廃止され、代わりにプレイヤーは各シナリオ独自の新しいアートワークが描かれたシナリオブック自体を舞台としてプレイします。ゲーム習得という最後の障壁も、簡略化されたルールと、新規プレイヤーがスムーズにゲームに入り込めるように設計された5つのシナリオからなるチュートリアルによって低くされています。'
 mechanics:
 - name: Action Queue
 - name: Action Retrieval

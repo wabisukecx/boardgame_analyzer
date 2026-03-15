@@ -33,6 +33,13 @@ description: 'The evil Lord Eradikus has all but conquered the galaxy and is now
   throughout the course of the game, with the cards allowing them to move through
   the spaceship, attack things, acquire new cards, and &mdash; oh yeah &mdash; make
   noise to attract Lord Eradikus and potentially seal their own doom.&#10;&#10;'
+description_ja: '邪悪なるエラディカス卿は銀河をほぼ征服し、旗艦エラディカス・プライムで勝利の凱旋を行っている。鉄の支配を敷く彼だが、最も貴重な秘宝が、今まさにそのサイボーグの爪をすり抜けようとしている。君と仲間である盗賊たちは、彼の船に忍び込み、司令モジュールにハッキングし、彼から盗むという挑戦をお互いに課したのだ。
+
+
+  道中、仲間を加え、余分な戦利品を手に入れるだろう。しかし、一歩でも間違えれば――カタン！不用意な騒音がエラディカス卿の注意を引く。司令モジュールへのハッキングと秘宝の強奪は、彼の怒りを増幅させる。脱出ポッドにたどり着き、生きて脱出するには、仲間たちの方が君よりも騒がしいことを願うしかないだろう…。
+
+
+  『Clank! In! Space!』は、『Clank!: A Deck-Building Adventure』と同じゲームシステムを基盤とし、プレイヤーはゲームを通して独自のカードデッキを構築していく。カードを使用することで、宇宙船内を移動したり、攻撃したり、新しいカードを入手したり、そして――そう、騒音を立ててエラディカス卿を引きつけ、自らの破滅を招く可能性もあるのだ。'
 mechanics:
 - name: Deck, Bag, and Pool Building
 - name: Delayed Purchase

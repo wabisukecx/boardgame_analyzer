@@ -31,6 +31,20 @@ description: The most talented architects in ancient Greece stand ready to achie
   it in your city to unlock each district's full potential&#10;     Build on higher
   levels, increase the value of your districts and win the game&#10;&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: '古代ギリシャで最も才能ある建築家たちが、その目標達成のために準備を整えています。住宅、寺院、市場、庭園、兵舎を建設し、都市を成長させ、他を凌駕する勝利を確実なものにしましょう。特定のルールに沿った調和のとれた都市計画で都市の威信を高め、広場を建設してさらに発展させます。
+
+
+  石は不可欠な資源です。採石場を十分に確保し、都市を空高く伸ばせるように、より高い場所への建設を可能にしましょう。
+
+
+  - 建設現場からタイルを選択
+
+  - 各地区の潜在能力を最大限に引き出すように、都市に配置
+
+  - より高いレベルに建設し、地区の価値を高めて勝利をつかみましょう
+
+
+  ---出版社からの説明'
 mechanics:
 - name: 'Auction: Dutch'
 - name: End Game Bonuses

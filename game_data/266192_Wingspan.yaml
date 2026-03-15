@@ -40,6 +40,26 @@ description: 'Wingspan is&nbsp;a competitive, medium-weight, card-driven, engine
   and play them&#10;&#10;&#10;The winner is the player with the most points after
   4 rounds.&#10;&#10;&mdash;description from the publisher&#10;&#10;From the 7th printing
   on, the base game box includes Wingspan: Swift-Start Promo Pack.&#10;&#10;'
+description_ja: 'ウィングスパンは、ストーンマイヤーゲームズがお届けする、中重量級の対戦型カード駆動エンジン構築ボードゲームです。エリザベス・ハーグレイブがデザインし、ナタリア・ロハスとアナ・マリア・マルティネスが描いた180種類の鳥類が登場します。
+
+
+  プレイヤーは鳥類研究者、バードウォッチャー、鳥類学者、収集家といった鳥類愛好家となり、最高の鳥たちを野生生物保護区のネットワークに呼び寄せようとします。それぞれの鳥は、プレイヤーの生息地（アクション）で強力なコンボを連鎖させます。これらの生息地は、成長におけるいくつかの重要な側面に焦点を当てています。
+
+
+  *   鳥の餌箱ダイスタワーにあるカスタムダイスで食料トークンを獲得
+
+  *   様々な色の卵ミニチュアを使って産卵
+
+  *   数百種類ものユニークな鳥カードを引き、プレイ
+
+
+  勝者は、4ラウンド終了後に最も多くのポイントを獲得したプレイヤーです。
+
+
+  —出版社による説明
+
+
+  第7版以降の基本ゲームボックスには、ウィングスパン：スウィフトスタートプロモパックが含まれています。'
 mechanics:
 - name: Action Queue
 - name: Dice Rolling

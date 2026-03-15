@@ -30,6 +30,16 @@ description: In The Guild of Merchant Explorers, each player starts with one cit
   don't establish new cities, you'll be stuck in the same places.&#10;&#10;The Guild
   of Merchant Explorers contains multiple copies of four different maps, and the game
   is designed so that you can play remotely with one or more copies.&#10;&#10;
+description_ja: '『商人ギルドの探検家たち』では、各プレイヤーは自分のマップボード上の1つの都市からスタートします。
+
+
+  地形カードのデッキをシャッフルし、ほとんどのカードを1枚ずつ公開します。公開された地形に基づいて、各プレイヤーは自分のボード上に、スタート都市または他のキューブに接続されたキューブを配置します。ボード上のエリアを完成させ、海を渡って新しい土地に到達し、ボード上に新しい都市を建設することが目的です。転覆した船を探索して宝物（特別な配置能力を与えてくれる）を見つけたり、場所同士を繋げてボーナスポイントを獲得したりできます。共通の目標はすべてのプレイヤーが達成でき、最初に達成したプレイヤーほど多くのポイントを獲得できます。
+
+
+  ラウンド終了時には、すべてのキューブが各ボードから取り除かれ、都市だけが残ります。そのため、新しい都市を建設しないと、同じ場所に留まることになります。
+
+
+  『商人ギルドの探検家たち』には、4種類の異なるマップが複数枚含まれており、1つ以上のコピーを使ってリモートでプレイできるように設計されています。'
 mechanics:
 - name: Bingo
 - name: Chaining

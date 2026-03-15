@@ -21,6 +21,10 @@ description: 'Agricola 15 celebrates the 15th anniversary of Uwe Rosenberg''s Ag
   Agricola 15 contains 430 cards, more than 200 tokens, and more than 270 wooden components.
   This set is compatible with both the Farmers of the Moor expansion and the expansion
   for five and six players.&#10;&#10;'
+description_ja: 'アグリコラ15は、ウヴェ・ローゼンベルクのアグリコラの15周年を記念し、ゲームの登場以来作成された多くの要素を、1つの特大ボックスに詰め込んだものです。その内容は、アグリコラの基本ゲーム改訂版、完全版のアルティフェクス＆ブブルクスの拡張カードセット、以前は入手困難だったプロモアイテム（改訂版に合わせて調整）、いくつかの新要素（まだLデッキのカードがすべて揃っているわけではありません...）、そして迅速なセットアップと保管のための整理されたインレイです。
+
+
+  合計で、アグリコラ15には430枚のカード、200個以上のトークン、そして270個以上の木製コンポーネントが含まれています。このセットは、「泥沼からの農夫」拡張と5～6人プレイ拡張の両方に対応しています。'
 mechanics:
 - name: Advantage Token
 - name: Automatic Resource Growth

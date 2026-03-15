@@ -29,6 +29,25 @@ description: In Herbaceous, herb collectors compete to grow and store the most v
   then &quot;collected&quot; those and can't use the container again.&#10;&#10;At
   the end of the game, collectors determine the best collection as a combination of
   value from their collection, matching herbs, and herb sets.&#10;&#10;
+description_ja: 'ハーバシャスでは、ハーブ収集家たちが最も価値のあるハーブの寄せ集めを育て、貯蔵することを競います。各プレイヤーは、それぞれ異なるハーブの組み合わせを可能にする4つの容器を持ってゲームを開始します。
+
+
+  *   同じ種類のハーブをまとめる
+
+  *   異なる種類のハーブをまとめる
+
+  *   ペアでまとめる
+
+  *   同じ種類でも異なる種類でも、3つのハーブをまとめる
+
+
+  自分の番になったら、ハーブを1枚引き、それを自分のコレクションにするか、共有の山に入れるか決めます。自分のコレクションにする場合、次のカードは共有の山に置かれ、共有の山に入れる場合、次のカードは自分のコレクションに置かれます。
+
+
+  自分の番の始めに、容器を使うことを決めることができます。その場合、個人スペースと共有スペースからカードを集め、グループ化し、すべて裏返します。これでそれらを「収集」し、その容器は二度と使用できません。
+
+
+  ゲーム終了時、収集家たちは自分のコレクション、一致するハーブ、ハーブセットからの価値の組み合わせとして最高のコレクションを決定します。'
 mechanics:
 - name: Push Your Luck
 - name: Set Collection

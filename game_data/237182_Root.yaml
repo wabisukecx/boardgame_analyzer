@@ -35,6 +35,20 @@ description: 'Root is a game of adventure and war in which 2 to 4 (1 to 6 with t
   each role create an unparalleled level of interaction and replayability. Leder Games
   invites you and your family to explore the fantastic world of Root!&#10;&#10;&mdash;description
   from the publisher&#10;&#10;'
+description_ja: '『ルート』は、2～4人（拡張セット「Riverfolk」があれば1～6人）で広大な荒野の支配権を争う、冒険と戦争のゲームです。『Vast:
+  The Crystal Caverns』と同様に、『ルート』では各プレイヤーが独自の能力と異なる勝利条件を持ちます。美しく多用途なカードの助けを借りて、真に非対称なデザインがこれまで以上にプレイしやすくなりました。
+
+
+  邪悪な猫侯爵夫人は、豊かな資源を収穫するために、広大な森林地帯を占拠しました。彼女の支配下で、森の多くの生き物が団結しました。この同盟は、資源を強化し、猫の支配を覆そうとします。そのために、同盟は危険な森の道を移動できる放浪者の助けを借りるかもしれません。放浪者の中には、同盟の希望や夢に共感する者もいますが、かつて森を支配していた猛禽類の大鳥を覚えているほど年老いている者もいます。
+
+
+  一方、地域の端では、誇り高く、いがみ合っていた鷲の巣の民が、自分たちの派閥を率いて古代から受け継いだ権利を取り戻すことを期待する新たな司令官を見つけました。広大な森林地帯の運命を決める戦いの舞台が整いました。どのグループが最終的に根を下ろすかを決めるのはプレイヤー次第です。
+
+
+  『ルート』では、プレイヤーが物語を動かし、各役割の違いが比類のないレベルのインタラクションとリプレイ性を作り出します。Leder Gamesは、あなたとあなたの家族を『ルート』の素晴らしい世界への冒険に誘います！
+
+
+  —出版社による説明'
 mechanics:
 - name: Action Points
 - name: Action Queue

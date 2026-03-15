@@ -43,6 +43,10 @@ description: Paladins of the West Kingdom is set at a turbulent time of West Fra
   strength and influence. Not only will these affect their final score, but they will
   also determine the significance of their actions. The game is concluded at the end
   of the seventh round.&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: '『西フランク王国の聖騎士』は、西フランク王国の激動の時代、紀元900年頃を舞台としています。都市開発の努力も虚しく、周辺の町は依然として外敵の脅威に晒されています。サラセン人は国境を偵察し、ヴァイキングは富と家畜を略奪します。東からのビザンツ人でさえ、その暗い側面を見せています。高貴な男女として、プレイヤーは都市から労働者を集め、敵から守り、要塞を築き、信仰を広げなければなりません。幸いなことに、あなたは一人ではありません。偉大なる王は、英知をもって最高の騎士たちを派遣し、我々の努力を助けてくれます。さあ、馬を準備し、剣を研ぎ澄ましましょう。聖騎士たちが近づいています。
+
+
+  『西フランク王国の聖騎士』の目的は、ゲーム終了時に最も多くの勝利点（VP）を獲得したプレイヤーになることです。勝利点は、前哨基地や要塞の建設、修道士への依頼、外敵との対決によって獲得できます。各ラウンドで、プレイヤーは特定の聖騎士の助けを借り、労働者を集めて任務を遂行します。ゲームが進むにつれて、プレイヤーは徐々に信仰、力、影響力を高めていきます。これらは最終的なスコアに影響を与えるだけでなく、行動の重要性も決定します。ゲームは7ラウンドの終了時に終了します。'
 mechanics:
 - name: End Game Bonuses
 - name: Market

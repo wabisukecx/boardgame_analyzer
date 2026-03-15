@@ -36,6 +36,10 @@ description: Wayfarers of the South Tigris is set during the height of the Abbas
   exploration. As they make discoveries, players will want to quickly journal their
   progress. The game ends once one player&rsquo;s marker has reached the far right
   column of the journal track.&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: '『南ティグリスの旅人たち』の舞台は、西暦820年頃、アッバース朝カリフの絶頂期。勇敢な探検家、地図製作者、天文学者であるプレイヤーたちは、バグダッドから出発し、周辺の土地、水路、そして頭上の天空を地図に描き出します。プレイヤーは、隊商にいる労働者や装備を慎重に管理し、定期的に「知恵の館」へ調査結果を報告し、記録する必要があります。カリフの印象に残ることに成功するでしょうか。それとも、道に迷い、荒野に屈してしまうでしょうか？
+
+
+  『南ティグリスの旅人たち』の目的は、ゲーム終了時に最も多くの勝利点（VP）を獲得したプレイヤーになることです。勝利点は主に、陸、水、空の地図を作成することで獲得できます。プレイヤーはまた、隊商をアップグレードしたり、貴族からインスピレーションを得たり、科学、貿易、探検の3つのギルドに影響を与えたりすることでも勝利点を獲得できます。発見をすれば、プレイヤーはすぐにその進捗を記録したいと思うでしょう。ゲームは、いずれかのプレイヤーのマーカーが記録トラックの右端の列に到達した時点で終了します。'
 mechanics:
 - name: Area Majority / Influence
 - name: End Game Bonuses

@@ -36,6 +36,16 @@ description: Earth is a tableau builder with simple rules and countless strategi
   and gain resources. The first player to complete their Tableau triggers the end
   of the game. The player with the most points wins.&#10;&#10;&mdash;description from
   the publisher&#10;&#10;
+description_ja: '『アース』は、シンプルなルールながらも戦略的な可能性が無限に広がる、テ—ブロ—構築型ゲームです。百科事典のように奥深く、テ—ブロ—の組み合わせもほぼ無限に存在するため、広大で魅力的な地球のように、プレイするたびに新たな相乗効果や繋がりを発見できるでしょう！
+
+
+  さあ、この豊かな環境に飛び込み、地球の驚くべき多様性と豊富な天然資源を再現・発展させる、素晴らしい自然の相乗効果を生み出しましょう。何千年にもわたる進化と適応を経て、このユニークな惑星の動植物は驚くべき生命体へと成長し、共生的な生態系と生息地を形成してきました。
+
+
+  プレイヤーは、未使用の植物さえも将来の成長のための堆肥となる、自立的な成長・拡大・供給のエンジンを作り上げます。カードを使ってアクションを選択（これは全プレイヤーに影響します）し、資源を獲得します。最初に自分のテ—ブロ—を完成させたプレイヤーがゲーム終了の引き金となり、最も多くのポイントを獲得したプレイヤーが勝利します。
+
+
+  —出版社による説明'
 mechanics:
 - name: Contracts
 - name: End Game Bonuses

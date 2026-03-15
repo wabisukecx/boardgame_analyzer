@@ -5,18 +5,20 @@ alternate_names:
 - Everdel
 - Everdell, H Εύφορη Κοιλάδα
 - 'Everdell: Az Örökfa Árnyékában'
+- 'Everdell: Edición esencial'
 - 'Everdell: Essentials Edition'
 - Valea de Smarald
 - Евердел
 - Евърдел
 - Эверделл
+- 'Эверделл: Базовое издание'
 - ดินแดนแห่งมนต์เสน่ห์
 - エバーデール
 - 仙境幽谷
 - 에버델
 japanese_name: エバーデール
 year_published: '2018'
-thumbnail_url: https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__thumb/img/Cf_mYxR_VvdjTEPXseSurni2JNI=/fit-in/200x150/filters:strip_icc()/pic3918905.png
+thumbnail_url: https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__small/img/Cf_mYxR_VvdjTEPXseSurni2JNI=/fit-in/200x150/filters:strip_icc()/pic3918905.png
 publisher_min_players: '1'
 publisher_max_players: '4'
 playing_time: '80'
@@ -31,20 +33,50 @@ description: 'Within the charming valley of Everdell, beneath the boughs of towe
   You will be the leader of a group of critters intent on just such a task. There
   are buildings to construct, lively characters to meet, events to host&mdash;you
   have a busy year ahead of yourself. Will the sun shine brightest on your city before
-  the winter moon rises?&#10;&#10;Everdell is a game of dynamic tableau building and
-  worker placement.&#10;&#10;On their turn a player can take one of three actions:&#10;&#10;a)
-  Place a Worker: Each player has a collection of Worker pieces. These are placed
+  the winter moon rises?
+
+
+  Everdell is a game of dynamic tableau building and worker placement.
+
+
+  On their turn a player can take one of three actions:
+
+
+  a) Place a Worker: Each player has a collection of Worker pieces. These are placed
   on the board locations, events, and on Destination cards. Workers perform various
   actions to further the development of a player''s tableau: gathering resources,
-  drawing cards, and taking other special actions.&#10;&#10;b) Play a Card: Each player
-  is building and populating a city; a tableau of up to 15 Construction and Critter
-  cards. There are five types of cards: Travelers, Production, Destination, Governance,
-  and Prosperity. Cards generate resources (twigs, resin, pebbles, and berries), grant
-  abilities, and ultimately score points. The interactions of the cards reveal numerous
-  strategies and a near infinite variety of working cities.&#10;&#10;c) Prepare for
-  the next Season: Workers are returned to the players supply and new workers are
-  added. The game is played from Winter through to the onset of the following winter,
-  at which point the player with the city with the most points wins.&#10;&#10;'
+  drawing cards, and taking other special actions.
+
+
+  b) Play a Card: Each player is building and populating a city; a tableau of up to
+  15 Construction and Critter cards. There are five types of cards: Travelers, Production,
+  Destination, Governance, and Prosperity. Cards generate resources (twigs, resin,
+  pebbles, and berries), grant abilities, and ultimately score points. The interactions
+  of the cards reveal numerous strategies and a near infinite variety of working cities.
+
+
+  c) Prepare for the next Season: Workers are returned to the players supply and new
+  workers are added. The game is played from Winter through to the onset of the following
+  winter, at which point the player with the city with the most points wins.
+
+
+  '
+description_ja: 'エバーデールの魅力的な谷、そびえ立つ木々の枝の下、曲がりくねった小川や苔むした窪みの中で、森の生き物たちの文明が繁栄し、拡大しています。エバーフロストからベルソングまで、多くの年月が過ぎ去りましたが、新たな領土を開拓し、新たな都市を築く時が来ました。あなたはまさにそのような仕事に意欲的な生き物たちのグループのリーダーとなるでしょう。建設する建物、出会う活気のあるキャラクター、開催するイベントがあり、あなたはこれから忙しい一年を過ごすことになります。冬の月が昇る前に、あなたの街に最も明るい太陽が輝くでしょうか？
+
+
+  エバーデールは、ダイナミックな街並み構築とワーカープレイスメントのゲームです。
+
+
+  プレイヤーは自分のターンに、次の3つのアクションのいずれかを行うことができます。
+
+
+  a) ワーカーを配置する：各プレイヤーはワーカーコマを持っています。これらは、ボード上の場所、イベント、および目的地カードに配置されます。ワーカーは、資源の収集、カードのドロー、その他の特別なアクションの実行など、プレイヤーの街並みの発展を促進するためのさまざまなアクションを実行します。
+
+
+  b) カードをプレイする：各プレイヤーは都市を建設し、人々を住まわせます。建設カードと生き物カードを最大15枚並べた街並みを作ります。カードには、旅行者、生産、目的地、統治、繁栄の5種類があります。カードは資源（小枝、樹脂、小石、ベリー）を生み出し、能力を付与し、最終的にポイントを獲得します。カードの相互作用により、多数の戦略と、ほぼ無限のバリエーションの機能的な都市が生まれます。
+
+
+  c) 次の季節に備える：ワーカーはプレイヤーの手元に戻され、新しいワーカーが追加されます。ゲームは冬から次の冬の始まりまでプレイされ、その時点で最も多くのポイントを獲得した都市を持つプレイヤーが勝利します。'
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -83,36 +115,43 @@ publishers:
 - name: REXhry
 - name: Spilbræt.dk
 - name: Tabletop Tycoon Inc.
+- name: Tycoon Games
 - name: White Goblin Games
 - name: YOKA Games
 - name: Ігромаг
-average_rating: '7.99961'
-weight: '2.8255'
+average_rating: '7.98564'
+weight: '2.8333'
 ranks:
 - type: boardgame
-  rank: '40'
+  rank: '42'
 - type: strategygames
-  rank: '48'
+  rank: '49'
 - type: familygames
-  rank: '6'
+  rank: '8'
 learning_analysis:
-  initial_barrier: 3.29
-  strategic_depth: 3.41
-  replayability: 4.2
+  initial_barrier: 3.81
+  strategic_depth: 3.71
+  replayability: 4.09
   mechanics_complexity: 2.9
   mechanics_count: 11
-  bgg_weight: 2.8255
-  bgg_rank: 40
+  bgg_weight: 2.8333
+  bgg_rank: 42
   year_published: 2018
   category_complexity: 3.16
   rank_complexity: 2.93
-  learning_curve_type: gentle
   decision_points: 4.54
   interaction_complexity: 3.1253727272727265
-  rules_complexity: 3.4417666666666666
+  rules_complexity: 3.4433266666666666
+  solo_friendliness: 5.0
+  player_scalability: 3.5
+  luck_dependency: 2.6
+  strategic_depth_description: 中〜高の深さ
+  learning_curve_type: moderate
   player_types:
   - casual
   - experienced
+  - hardcore
+  - system_master
   - replayer
   - trend_follower
   playtime_analysis:
@@ -121,3 +160,14 @@ learning_analysis:
     decision_density: 0.1
     complexity_factor: 1.0
   mastery_time: medium
+update_history:
+- date: '2026-03-15'
+  average_rating: '7.98564'
+  weight: '2.8333'
+  ranks:
+  - type: boardgame
+    rank: '42'
+  - type: strategygames
+    rank: '49'
+  - type: familygames
+    rank: '8'

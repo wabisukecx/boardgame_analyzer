@@ -26,7 +26,7 @@ alternate_names:
 - 지도 제작자들
 japanese_name: カートグラファー
 year_published: '2019'
-thumbnail_url: https://cf.geekdo-images.com/GifbnAmsA4lfEcDkeaC9VA__thumb/img/TTxZzwbna07hMcPQ0xaFtT10egE=/fit-in/200x150/filters:strip_icc()/pic4397932.png
+thumbnail_url: https://cf.geekdo-images.com/GifbnAmsA4lfEcDkeaC9VA__small/img/TTxZzwbna07hMcPQ0xaFtT10egE=/fit-in/200x150/filters:strip_icc()/pic4397932.png
 publisher_min_players: '1'
 publisher_max_players: '100'
 playing_time: '45'
@@ -41,11 +41,23 @@ description: 'Queen Gimnax has ordered the reclamation of the northern lands. As
   are not alone in this wilderness. The Dragul contest your claims with their outposts,
   so you must draw your lines carefully to reduce their influence. Reclaim the greatest
   share of the queen&rsquo;s desired lands and you will be declared the greatest cartographer
-  in the kingdom.&#10;&#10;In Cartographers: A Roll Player Tale, players compete to
-  earn the most reputation stars by the time four seasons have passed. Each season,
-  players draw on their map sheets and earn reputation by carrying out the queen''s
-  edicts before the season is over. The player with the most reputation stars at the
-  end of winter wins!&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+  in the kingdom.
+
+
+  In Cartographers: A Roll Player Tale, players compete to earn the most reputation
+  stars by the time four seasons have passed. Each season, players draw on their map
+  sheets and earn reputation by carrying out the queen''s edicts before the season
+  is over. The player with the most reputation stars at the end of winter wins!
+
+
+  &mdash;description from the publisher
+
+
+  '
+description_ja: 'ギムナクス女王は北方領土の開拓を命じました。女王に仕える地図製作者であるあなたは、ナロス王国のためにこの土地を地図に描き、領有を主張するよう派遣されます。女王は勅令を通じて、最も重視する土地を発表し、あなたは女王の要求を満たすことで名声を高めます。しかし、この荒野にいるのはあなただけではありません。ドラグル族が前哨基地であなたの領有権に異議を唱えるため、彼らの影響力を減らすために慎重に線を引く必要があります。女王が望む土地を最も多く開拓し、王国で最も偉大な地図製作者として宣言されましょう。
+
+
+  『カートグラファーズ：ロールプレイヤー物語』では、プレイヤーは4つの季節が終わるまでに最も多くの名声スターを獲得することを競います。各季節、プレイヤーは自分のマップシートに描き込み、季節が終わるまでに女王の勅令を実行することで名声を獲得します。冬が終わった時点で最も多くの名声スターを持つプレイヤーが勝利です！'
 mechanics:
 - name: Bingo
 - name: Enclosure
@@ -64,7 +76,7 @@ categories:
 designers:
 - name: Jordy Adan
 publishers:
-- name: Thunderworks Games (TW Games)
+- name: Thunderworks Games
 - name: Arclight Games
 - name: Buró
 - name: Gameland 游戏大陆
@@ -88,31 +100,36 @@ publishers:
 - name: Tower Tactic Games
 - name: The Wood Games
 - name: Ігромаг
-average_rating: '7.57101'
-weight: '1.8698'
+average_rating: '7.55754'
+weight: '1.8913'
 ranks:
 - type: boardgame
-  rank: '169'
+  rank: '179'
 - type: familygames
-  rank: '27'
+  rank: '29'
 learning_analysis:
-  initial_barrier: 2.93
-  strategic_depth: 2.92
-  replayability: 3.67
+  initial_barrier: 3.36
+  strategic_depth: 3.12
+  replayability: 3.86
   mechanics_complexity: 2.68
   mechanics_count: 11
-  bgg_weight: 1.8698
-  bgg_rank: 169
+  bgg_weight: 1.8913
+  bgg_rank: 179
   year_published: 2019
   category_complexity: 3.68
   rank_complexity: 2.38
-  learning_curve_type: gentle
   decision_points: 3.813333333333333
   interaction_complexity: 3.4550000000000005
-  rules_complexity: 3.0542630303030305
+  rules_complexity: 3.0585630303030307
+  solo_friendliness: 5.0
+  player_scalability: 5.0
+  luck_dependency: 3.0
+  strategic_depth_description: 中程度の深さ
+  learning_curve_type: gentle
   player_types:
-  - beginner
   - casual
+  - experienced
+  - replayer
   - trend_follower
   playtime_analysis:
     strategic_bonus: 0.0
@@ -120,3 +137,12 @@ learning_analysis:
     decision_density: 0.15
     complexity_factor: 1.0
   mastery_time: short
+update_history:
+- date: '2026-03-15'
+  average_rating: '7.55754'
+  weight: '1.8913'
+  ranks:
+  - type: boardgame
+    rank: '179'
+  - type: familygames
+    rank: '29'

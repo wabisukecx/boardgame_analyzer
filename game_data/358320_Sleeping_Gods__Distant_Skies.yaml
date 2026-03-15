@@ -31,6 +31,19 @@ description: 'San Francisco, 1937: Your cargo plane flies through a portal in th
   and storylines, explaining concepts from the original game as you encounter them.&#10;&#10;Return
   to the world of Sleeping Gods and experience a thrilling tale that hinges on your
   choices in a truly open-world experience!&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+description_ja: '1937年、サンフランシスコ。あなたの輸送機は空に現れたポータルを通り抜け、奇妙な生物、策略を巡らす神々、そして数えきれないほどの危険に満ちた、険しい土地へとあなたを運び去る。ポータルが閉じる前に、あなたは帰還の道を見つけられるだろうか？
+
+
+  『眠れる神々：遥かなる空』は、『眠れる神々』の世界を舞台とした、独立型の続編である。オリジナル版と同様に、あなたと友人たちは広大な土地を踏破しながら、分岐するストーリーを読み進め、鮮やかなキャラクターたちと出会う。しかし今作では、アトラス（地図）とのインタラクションがより深くなり、キャンプをしたり、探索したり、障害を乗り越えたり、失われた遺物を探したりすることになる。新しいアクションシステムは、移動や探索において、あなたにさらなる自由度を与えるだろう。
+
+
+  オリジナル版の探索とクエストシステムに加え、『眠れる神々：遥かなる空』は、戦闘に新たな趣向を凝らしている。プレイヤーは戦闘デッキを構築し、そこから様々なカードを引き、使用することで、各戦闘は新鮮でダイナミックなパズルとなる。
+
+
+  『眠れる神々：遥かなる空』は、前作のストーリー要素を基盤としているが、この続編を楽しむために『眠れる神々』をプレイする必要はない。ゲームには新しいキャラクターとストーリーが用意されており、前作のコンセプトは、遭遇するたびに説明される。
+
+
+  『眠れる神々』の世界に戻り、あなたの選択が真にオープンワールド体験の鍵となる、スリリングな物語を体験しよう！'
 mechanics:
 - name: Action Points
 - name: Cooperative Game

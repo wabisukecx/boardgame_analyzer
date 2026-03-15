@@ -35,6 +35,16 @@ description: Super Rhino! presents players with an incredibly heroic &ndash; and
   roof cards wins the game. Alternatively, if the building collapses, the player who
   caused the collapse automatically loses, and the player with the fewest roof cards
   in hand wins.&#10;&#10;Similar to Turmbau zu Babel&#10;&#10;
+description_ja: 'スーパーサイ、それは信じられないほど勇敢で、そして残念ながら重いサイが、高い建物をよじ登り、他の高い建物を一気に飛び越えることを熱望しているゲームです。まずは、その建物を建設する必要があります。
+
+
+  各プレイヤーは5枚の屋根カードを持ってゲームを開始し、順番に壁と屋根を一つの建物に追加していきます。自分の番になったら、まず一番高い階に壁を置き、次に手札から屋根カードを選んで壁の上に置きます。各屋根カードには、次のプレイヤーがカード上に壁を置くべき場所を示すマークが描かれています。さらに、一部の屋根カードは、2枚目の屋根を置いたり、プレイの方向を変えたり、スーパーサイをタワーの新しい場所に移動させたりするなど、特別なアクションを実行するようにプレイヤーに指示します。手を震わせないように！
+
+
+  手持ちの屋根カードをすべて建てた最初のプレイヤーがゲームに勝利します。あるいは、建物が倒壊した場合、倒壊を引き起こしたプレイヤーが自動的に負けとなり、手札の屋根カードが最も少ないプレイヤーが勝ちます。
+
+
+  Turmbau zu Babelに類似。'
 mechanics:
 - name: Hand Management
 - name: Lose a Turn

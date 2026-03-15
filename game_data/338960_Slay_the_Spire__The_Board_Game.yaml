@@ -29,6 +29,16 @@ description: 'Slay the Spire: The Board Game is a co-operative deck-building, du
   they win the game! Which Boss you consider to be final depends on how many Acts
   you want to play. You can stop playing at the end of any Act! When a player&rsquo;s
   HP is reduced to 0, they are dead and the party loses the game.&#10;&#10;'
+description_ja: 'スレイ・ザ・スパイア：ザ・ボードゲームは、協力型デッキ構築ダンジョン探索アドベンチャーです。ユニークなデッキを作り上げ、奇妙な生き物と遭遇し、絶大な力を持つ遺物を発見し、最終的にスパイアを打ち倒すのに十分な強さを手に入れましょう！
+
+
+  各プレイヤーは、固有の能力とシンプルなカードデッキを持ったキャラクターからスタートします。ゲーム中にカードを追加したり削除したりして、デッキを強化できます。スレイ・ザ・スパイアはローグライクでもあります。つまり、死んでしまったら（そして、あなたは死ぬでしょう！）、最初からやり直しです。学んだ教訓を活かして、再挑戦しましょう！
+
+
+  ゲームは「Act（章）」に分かれています。Actの終わりに、続行するか、そこで冒険を終えるか、またはセーブして別の機会に続行するかを選択できます！
+
+
+  プレイヤーが最終ボスを倒せば、ゲームに勝利です！どのボスを最終ボスと見なすかは、プレイしたいActの数によって異なります。Actの終わりであれば、いつでもプレイを終了できます！プレイヤーのHPが0になると、そのプレイヤーは死亡し、パーティーはゲームに敗北します。'
 mechanics:
 - name: Cooperative Game
 - name: Deck, Bag, and Pool Building

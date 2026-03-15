@@ -23,6 +23,19 @@ description: Fort is a 2-4 player card game about building forts and following f
   be careful as your carefully constructed deck might start losing cards if you don't
   actually use them. After all, if you don't play with your friends, why should they
   hang out with you anymore?&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: 'フォートは、砦を築き、友達と行動を共にする2～4人用のカードゲームです。
+
+
+  フォートでは、あなたは子供！多くの子供たちと同じように、友達の輪を広げ、ピザやおもちゃを集め、最高にクールな砦を築きたいと思っています。
+
+
+  これらの楽しいことをすることで勝利点を獲得し、ゲーム終了時に最も多くの勝利点を持つプレイヤーが勝利します！あなたのカードは、自分のターンに行動を起こせるだけでなく、他のプレイヤーのターンに彼らの行動に追随することもできます。自分の仲間だけに力を注ぐか、他の子供たちの真似をするか？
+
+
+  ただし、注意が必要です。せっかく作ったデッキも、実際にカードを使わなければ失ってしまう可能性があります。結局のところ、友達と遊ばなければ、彼らがあなたと一緒にいる理由はないですよね？
+
+
+  ---出版社からの説明'
 mechanics:
 - name: Deck, Bag, and Pool Building
 - name: Follow

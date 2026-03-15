@@ -36,6 +36,16 @@ description: Each turn in Dixit, one player is the storyteller who chooses one o
   is empty or if a player has scored at least 30 points. In either case, the player
   with the most points wins.&#10;&#10;The Dixit base game and each expansion contain
   84 cards, and the cards can be mixed together as desired.&#10;&#10;
+description_ja: 'ディクシットでは、各ターン、手札にある6枚のカードから1枚を選んだプレイヤーが語り部となり、そのカードのイメージを反映したアイデアを、音や言葉で表現し、カードを裏向きにして場に出します。他のプレイヤーはそれぞれ、その表現に最も合うと思うカードを選び、裏向きにして語り部に渡します。
+
+
+  語り部はすべてのカードをシャッフルし、表にして公開します。語り部以外のプレイヤーは、どのカードが語り部のものかを秘密裏に予想します。誰も正解しなかった場合、または全員が正解した場合、語り部は0点、他のプレイヤーはそれぞれ2点を得ます。それ以外の場合、語り部と正解したプレイヤーは3点を得ます。さらに、語り部以外のプレイヤーは、自分のカードが投票された数だけ1点を得ます。
+
+
+  ゲームは、カードの山が空になるか、いずれかのプレイヤーが30点以上獲得した時点で終了します。どちらの場合も、最も多くのポイントを獲得したプレイヤーが勝利します。
+
+
+  ディクシットの基本ゲームと各拡張セットには84枚のカードが含まれており、カードは自由に混ぜて使用できます。'
 mechanics:
 - name: Race
 - name: Singing

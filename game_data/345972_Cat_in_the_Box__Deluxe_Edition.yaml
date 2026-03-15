@@ -31,6 +31,27 @@ description: 'Cat in the Box: Deluxe Edition is the quintessential quantum trick
   quality geekbits-style plastic tokens&#10;    Recessed player boards&#10;    Recessed
   Center Research board&#10;    Score pad&#10;    And a custom plastic insert to keep
   Cat in the Box: Deluxe Edition tidy!&#10;&#10;&#10;&mdash;description from the publisher&#10;&#10;'
+description_ja: 'キャット・イン・ザ・ボックス：デラックスエディションは、最高の量子的なトリックテイキングカードゲーム。2～5人のクールな猫たちで楽しめます。カードの色は、プレイするまで決まらない！
+  何トリック獲得できるか予想して、ビッドを記録しましょう。手札をプレイしながら、共有の研究ボードにトークンを配置し、大きなグループを作って、さらに多くのポイントを獲得しましょう。すでに宣言された色と同じ数字のカードの色を宣言することはできないので、トリックを慎重に計画しましょう。もしそうしてしまうと、パラドックスが発生し、間違いなく大惨事になります！
+
+
+  デラックスエディションの新機能：
+
+
+  * 2～5人プレイに対応
+
+  * 高品質なギークビットスタイルのプラスチックトークン
+
+  * くぼんだプレイヤーボード
+
+  * くぼんだ中央研究ボード
+
+  * スコアパッド
+
+  * キャット・イン・ザ・ボックス：デラックスエディションを整理するためのカスタムプラスチックインサート！
+
+
+  ---出版社からの説明文'
 mechanics:
 - name: Enclosure
 - name: Hand Management

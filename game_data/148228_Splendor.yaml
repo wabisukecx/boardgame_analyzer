@@ -34,6 +34,13 @@ description: Splendor is a game of chip-collecting and card development. Players
   of the cards you buy increase your wealth as they give you a permanent gem bonus
   for later buys; some of the cards also give you prestige points. In order to win
   the game, you must reach 15 prestige points before your opponents do.&#10;&#10;
+description_ja: 'スプレンダーは、チップを集め、カードを発展させるゲームです。プレイヤーはルネサンス期の商人となり、宝石鉱山、輸送手段、商店などを買い集め、最も多くの名声ポイントを獲得することを目指します。十分に裕福になれば、高貴な人物が訪れることもあり、もちろんそれはあなたの名声をさらに高めるでしょう。
+
+
+  自分の番になったら、（1）チップ（宝石）を集める、（2）カードを購入して建設する、（3）カードを1枚予約する、のいずれかを行います。チップを集める場合、3種類の異なるチップを1つずつ、または同じ種類のチップを2つ取ります。カードを購入する場合、そのカードの価格をチップで支払い、自分のプレイエリアに追加します。カードを予約する（確実に手に入れるため、または、対戦相手に手に入らないようにするため）には、そのカードを裏向きにして自分の前に置き、後で建設します。これにより1ラウンドを消費しますが、ジョーカーチップの形で金も手に入り、それをあらゆる宝石として使用できます。
+
+
+  購入したカードはすべて、その後の購入のために永続的な宝石ボーナスを与え、あなたの富を増やします。一部のカードは、名声ポイントも与えます。ゲームに勝つためには、対戦相手よりも先に15名声ポイントに到達する必要があります。'
 mechanics:
 - name: Contracts
 - name: Open Drafting

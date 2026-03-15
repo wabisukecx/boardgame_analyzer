@@ -39,6 +39,10 @@ description: Viscounts of the West Kingdom is set at a time when the King&rsquo;
   turn they will be travelling around the kingdom, looking to increase their influence
   among the various areas of society. The game ends once the Kingdom reaches poverty
   or prosperity - or potentially both!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: '西フランク王国の貴族は、980年頃、王の治世が衰退し始めた時代を舞台としています。かつて強大な王であった彼は、繁栄よりも平和を選び、敵に金と土地を与えて斧を置かせました。しかし、平和は不安定なものです。貧困が広がるにつれて、多くの人々は王の指導力に対する信頼を失い、王冠からの独立を求めるようになりました。宮廷で寵愛を得て以来、私たちの未来もまた不確実なものとなっています。子爵として、私たちは賢明かつ決断力を持たなければなりません。忠誠は守るべきですが、権力の急激な変化に備え、民衆の支持を得ることが最優先事項となるでしょう。
+
+
+  西フランク王国の貴族の目的は、ゲーム終了時に最も多くの勝利点（VP）を獲得したプレイヤーになることです。勝利点は、建物の建設、写本の執筆、城での仕事、新しい土地の権利の取得によって得られます。プレイヤーは少数の町民からスタートしますが、より適切な才能を見つけ出し、活動を進める必要があります。各ターン、プレイヤーは王国を旅し、社会の様々な分野で影響力を高めることを目指します。ゲームは、王国が貧困または繁栄、あるいはその両方に達した時点で終了します。'
 mechanics:
 - name: Area Majority / Influence
 - name: Deck, Bag, and Pool Building

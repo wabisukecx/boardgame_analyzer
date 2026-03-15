@@ -23,6 +23,13 @@ description: Lead the undercover investigation against five criminal groups to g
   and grab the fourth card of a suit, those criminals will sense a rat and you'll
   scare them underground, thereby losing all of those cards. The player with the most
   points at the end of the game wins.&#10;&#10;&mdash;description from publisher&#10;&#10;
+description_ja: '5つの犯罪組織に対する秘密捜査を指揮し、有罪判決を下せるだけの十分な証拠を集めろ。ただし、強引に捜査を進めすぎると、犯罪者たちは何かを嗅ぎつけ、姿をくらましてしまうぞ！
+
+
+  『ホット・リード』では、各ラウンドでプレイヤー数と同じ枚数の犯罪カードが縦一列に並べられる。プレイヤーは手札から捜査官カードを1枚選び、一斉に公開して入札を行う。最も高い捜査官カードを出したプレイヤーは、山札に一番近い犯罪カードを獲得し、2番目に高いプレイヤーは2番目に近いカードを獲得する、というように進む。これらのカードは、表面に書かれた数字（0～5）がそのまま点数となる。
+
+
+  10ラウンド終了時に、いずれかの犯罪組織に関する十分な証拠を集め、有罪に持ち込め（ゲーム内では、同じ種類のカードをちょうど3枚集めると10点のボーナスが与えられる）、さらに、5種類すべての犯罪組織のカードを集めたプレイヤーにも10点のボーナスが与えられる。ただし、強引に捜査を進め、同じ種類のカードを4枚集めてしまうと、犯罪者たちは何かを嗅ぎつけ、姿をくらましてしまい、その種類のカードをすべて失うことになる。ゲーム終了時に最も多くのポイントを獲得したプレイヤーが勝利する。'
 mechanics:
 - name: 'Auction: Sealed Bid'
 - name: Hand Management

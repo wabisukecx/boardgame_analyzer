@@ -54,6 +54,20 @@ description: 'Power Grid is the updated release of the Friedemann Friese crayon 
   this before posting a rules question!  Many questions are asked over and over in
   the forums... If you have a question about a specific expansion, please check the
   rules forum or FAQ for that particular expansion.&#10;&#10;'
+description_ja: 'パワーグリッドは、フリードマン・フリーゼのクレヨンゲーム「フンケンシュラーク」をアップデートしたものです。オリジナル版にあったネットワーク構築のクレヨン要素を取り除き、原油ゲーム「Crude:
+  The Oil Game」のような変動する商品市場や、「フィレンツェの王子」を彷彿とさせるオークションラウンドの熱気を維持しています。
+
+
+  パワーグリッドの目的は、誰かのネットワークが所定の規模に達したとき、最も多くの都市に電力を供給することです。この新版では、プレイヤーは都市間の既存のルートを接続のためにマークし、都市に電力を供給するために使用する発電所を競り合って購入します。
+
+
+  しかし、発電所が購入されるにつれて、より新しく、より効率的な発電所が利用可能になるため、単に購入するだけでも、他のプレイヤーがより優れた設備にアクセスできる可能性を秘めています。
+
+
+  さらに、プレイヤーは発電所を稼働させるために必要な原材料（石炭、石油、ゴミ、ウラン）を調達する必要があります（燃料を必要としない「再生可能」な風力発電所/太陽光発電所を除く）。そのため、ネットワークを迅速に拡張して最も安いルートを取得するために、十分な資金を維持しながら、発電所を最大限の効率でアップグレードするための絶え間ない努力が必要です。
+
+
+  ■ Power Grid FAQ - 質問を投稿する前に必ずお読みください！フォーラムでは多くの質問が何度も繰り返されています...特定の拡張セットに関する質問がある場合は、その拡張セットのルールフォーラムまたはFAQを確認してください。'
 mechanics:
 - name: Auction / Bidding
 - name: 'Auction: Turn Order Until Pass'

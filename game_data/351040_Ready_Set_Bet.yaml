@@ -29,6 +29,10 @@ description: In Ready Set Bet, you and your friends head to the races for a day 
   players win or lose money for each of their placed bet tokens, then receive a VIP
   Club Card to help them win more money in the following races. After four rounds,
   the player with the most money wins!&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: '『レディ・セット・ベット』では、あなたと友人たちが競馬場へ繰り出し、応援したり、からかったり、お気に入りの馬に賭けたりして一日を過ごします。馬たちの運命は、サイコロの目ひとつひとつにかかっています。
+
+
+  ゲームは4ラウンドにわたって行われます。各ラウンドは、レースと賭けの精算で構成されます。各レース中、プレイヤーはレースの進行中に自由に賭けトークンをボードに置きます。レース後、プレイヤーは置いた賭けトークンごとに資金を獲得または失い、次のレースでより多くの資金を獲得するのに役立つVIPクラブカードを受け取ります。4ラウンド終了後、最も多くの資金を持っているプレイヤーが勝利します！'
 mechanics:
 - name: Betting and Bluffing
 - name: Dice Rolling

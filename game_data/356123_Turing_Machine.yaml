@@ -28,6 +28,22 @@ description: '&quot;Codes are a puzzle. A game, just like any other game.&quot;&
   the original competitive mode, you can combine your brain power as a team or try
   to beat the game itself while playing solo.&#10;&#10;Are you ready for an intense
   cerebral gaming experience?&#10;&#10;'
+description_ja: '「暗号はパズルだ。ゲームなんだ、他のゲームと同じように。」 - イミテーション・ゲームのアラン・チューリング
+
+
+  チューリング・マシンは、魅力的で競争的な推理ゲームです。電気も技術も使わない、原始的なコンピューターに質問するという他に類を見ない体験を提供し、新世代の推理ゲームの道を切り開きます。
+
+
+  目標は？マシンに賢く質問して、他のプレイヤーよりも早く秘密のコードを見つけ出すこと。チューリング・マシンでは、これまで見たことのないパンチカードで作られたユニークな部品で構成されたアナログコンピューターを使用します。
+
+
+  このゲームは、簡単なものから驚くほど複雑な組み合わせまで、700万以上の問題を提供し、実質的に無限のゲームプレイを可能にします！
+
+
+  オリジナルの対戦モードに加え、チームとして協力して頭脳を駆使したり、ソロプレイでゲームそのものに挑戦したりすることもできます。
+
+
+  強烈な頭脳ゲーム体験の準備はできていますか？'
 mechanics:
 - name: Deduction
 - name: Solo / Solitaire Game

@@ -32,6 +32,13 @@ description: In Little Town, you lead a team of architects and must dispatch wor
   powers of buildings, by constructing buildings, and by achieving goals dealt to
   them at the beginning of the game. After four rounds, whoever has the most victory
   points wins.&#10;&#10;&mdash;description from the publisher&#10;&#10;
+description_ja: 'リトルタウンでは、あなたは建築家チームを率い、労働者を街に派遣し、資源やお金を集め、建物を建て、この小さな街を発展させなければなりません。
+
+
+  ゲームは4ラウンド続き、各ラウンドで3人の労働者をボードに配置し、周囲のマスから木材、石、魚、小麦などの資源を獲得します。労働者を配置すると、周囲8マスのすべての資源を獲得できます。これらの資源を使って建物を建てることができ、あなたや他のプレイヤーは、建物の隣に労働者を配置することで、その建物の効果を得ることができます。ただし、他人の所有する建物の隣に配置する場合は、資源を収集する前にコインを支払う必要があります。
+
+
+  プレイヤーは、建物の能力を使用したり、建物を建設したり、ゲーム開始時に与えられた目標を達成したりすることで勝利点を獲得します。4ラウンド後、最も多くの勝利点を獲得したプレイヤーが勝利します。'
 mechanics:
 - name: Contracts
 - name: Tile Placement

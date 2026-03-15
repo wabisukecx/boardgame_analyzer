@@ -29,6 +29,10 @@ description: 'The great Pharaoh Mino has passed, and rule passes to his eldest s
   dominoes and place their markers of the same colors to activate the scoring areas.
   Each choice of domino and its positioning has a significant impact since the previous
   stages influence the score throughout the game.&#10;&#10;-description from publisher&#10;&#10;'
+description_ja: '偉大なるファラオ、ミノが崩御し、長男であるファラオ、ミドに統治が移った。父が埋葬されたピラミッドの質素な外観に不満を抱いたミドは、自身の遺産に目を向ける。彼は自身の眠る場所が、自身の威厳をより良く反映したものであることを願い、2～4人の建築家が宝石で飾られたピラミッド、すなわちピラミドを建設することを命じた。最も印象的なピラミドを建設した建築家は宰相に任命され、想像を絶する富と権力を享受するだろう。
+
+
+  ピラミドは、ピラミッドの各段階が相互に繋がりを生み出すタイル配置ゲームである。プレイヤーは順番に、利用可能なドミノを選び、自身のピラミッドを建設していく。ポイントを最大化するため、プレイヤーはドミノの宝石アイコンを一致させ、同じ色のマーカーを配置してスコアリングエリアを活性化させる必要がある。ドミノの選択と配置は、ゲーム全体を通して以前の段階のスコアに影響を与えるため、それぞれが大きな意味を持つ。'
 mechanics:
 - name: Layering
 - name: Open Drafting

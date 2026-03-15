@@ -17,6 +17,7 @@ description: In Stone Garden (&#230;&#158;&#175;&#229;&#177;&#177;&#230;&#176;&#
   by one's garden, virtue points are earned that can be spent on favorite rocks to
   elevate the garden further. Through famous garden architects from history, special
   effects affecting the garden can be achieved.&#10;&#10;
+description_ja: 石庭（「ロックガーデン」や「日本のロックガーデン」とも訳される）では、プレイヤーは庭師となり、それぞれの庭ボードに砂と苔のタイルを隣り合わせに配置して、最も美しい庭を作ろうとします。庭を眺めて瞑想することで徳ポイントを獲得し、そのポイントを使ってお気に入りの石を購入し、庭をさらに高みへと引き上げることができます。歴史に名を残す有名な庭園設計家たちを通じて、庭に影響を与える特別な効果を発揮させることも可能です。
 mechanics:
 - name: Pattern Building
 - name: Tile Placement

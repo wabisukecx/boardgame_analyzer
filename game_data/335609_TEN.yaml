@@ -20,6 +20,10 @@ description: TEN is an exciting push-your-luck and auction game for the whole fa
   longest number sequence in each color. When valuable wildcards emerge from the deck,
   players compete in auctions to obtain them in order to fill gaps in their sequences&#10;&#10;&mdash;description
   from the publisher&#10;&#10;
+description_ja: 'TENは、家族みんなで楽しめる、ドキドキの押し引きと競りのゲームです！プレイヤーはカードを1枚ずつ引き、合計値が10を超えないようにできるだけ多くのカードを集めようとしますが、超えてしまうとバースト（失敗）です！
+
+
+  プレイヤーは、運試しをしてさらにカードを引いたり、通貨を使ってカードを購入したりして、各色で最も長い数字の連鎖を作ろうとします。デッキから貴重なワイルドカードが現れると、プレイヤーは連鎖のギャップを埋めるために、それらを競りで獲得しようとします。'
 mechanics:
 - name: Auction / Bidding
 - name: 'Auction: Once Around'

@@ -7,7 +7,7 @@ alternate_names:
 - 마라카이보
 japanese_name: マラカイボ
 year_published: '2019'
-thumbnail_url: https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__thumb/img/lVlnhYyxlZb3WuKZJHLoJcFHEjs=/fit-in/200x150/filters:strip_icc()/pic4917407.jpg
+thumbnail_url: https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__small/img/lVlnhYyxlZb3WuKZJHLoJcFHEjs=/fit-in/200x150/filters:strip_icc()/pic4917407.jpg
 publisher_min_players: '1'
 publisher_max_players: '4'
 playing_time: '120'
@@ -17,14 +17,35 @@ community_recommended_players: 1, 2, 4
 community_min_age: '14'
 description: 'Maracaibo, a strategy game for 1-4 players by Alexander Pfister, is
   set in the Caribbean during the 17th century. The players try to increase their
-  influence in three nations in four rounds with a play time of 40 minutes per player.&#10;&#10;The
-  players sail on a round course through the Caribbean, e.g., you have city tiles
+  influence in three nations in four rounds with a play time of 40 minutes per player.
+
+
+  The players sail on a round course through the Caribbean, e.g., you have city tiles
   where you are able to perform various&nbsp;actions or deliver goods to. One special
   feature is an implemented quest mode over more and various tiles, which tells the
-  player, who chase after it, a little story.&#10;&#10;As a player, you move with
-  your ship around the course, managing it by using cards like in other games from
-  Alexander Pfister.&#10;&#10;&#10;NOTE: The Spanish and Portuguese editions of Maracaibo
-  contain La Armada mini-expansion packaged inside the base game''s box.&#10;&#10;'
+  player, who chase after it, a little story.
+
+
+  As a player, you move with your ship around the course, managing it by using cards
+  like in other games from Alexander Pfister.
+
+
+
+  NOTE: The Spanish and Portuguese editions of Maracaibo contain La Armada mini-expansion
+  packaged inside the base game''s box.
+
+
+  '
+description_ja: '『マラカイボ』は、アレクサンダー・プフィスターによる1〜4人用の戦略ゲームです。舞台は17世紀のカリブ海。プレイヤーは4ラウンドを通して、3つの国の勢力拡大を目指します。プレイ時間は1人あたり40分です。
+
+
+  プレイヤーはカリブ海を周回する航路を船で進みます。都市タイルでは、さまざまなアクションを実行したり、物資を届けたりすることができます。特徴的なのは、複数のタイルにまたがるクエストモードです。これを追いかけることで、プレイヤーは小さな物語を体験できます。
+
+
+  プレイヤーは船を航路に沿って移動させ、アレクサンダー・プフィスターの他のゲームと同様に、カードを使って船を操ります。
+
+
+  注：『マラカイボ』のスペイン語版とポルトガル語版には、拡張セット「ラ・アルマダ」が基本ゲームの箱に同梱されています。'
 mechanics:
 - name: Contracts
 - name: End Game Bonuses
@@ -63,32 +84,36 @@ publishers:
 - name: テンデイズゲームズ (TendaysGames)
 - name: uplay.it edizioni
 - name: YOKA Games
-average_rating: '7.9748'
-weight: '3.9147'
+average_rating: '7.94659'
+weight: '3.9161'
 ranks:
 - type: boardgame
-  rank: '77'
+  rank: '85'
 - type: strategygames
-  rank: '57'
+  rank: '68'
 learning_analysis:
-  initial_barrier: 3.78
-  strategic_depth: 3.73
-  replayability: 4.51
+  initial_barrier: 4.39
+  strategic_depth: 4.14
+  replayability: 4.37
   mechanics_complexity: 3.02
   mechanics_count: 16
-  bgg_weight: 3.9147
-  bgg_rank: 77
+  bgg_weight: 3.9161
+  bgg_rank: 85
   year_published: 2019
   category_complexity: 3.97
-  rank_complexity: 3.16
-  learning_curve_type: moderate
+  rank_complexity: 3.15
   decision_points: 4.574285714285714
   interaction_complexity: 3.3143249999999997
-  rules_complexity: 3.8998149999999994
+  rules_complexity: 3.9000949999999994
+  solo_friendliness: 5.0
+  player_scalability: 3.5
+  luck_dependency: 2.6
+  strategic_depth_description: 深い
+  learning_curve_type: steep_then_moderate
   player_types:
-  - casual
   - experienced
   - hardcore
+  - strategist
   - system_master
   - replayer
   - trend_follower
@@ -97,4 +122,13 @@ learning_analysis:
     interaction_modifier: 0.0
     decision_density: 0.1
     complexity_factor: 1.0
-  mastery_time: medium
+  mastery_time: medium_to_long
+update_history:
+- date: '2026-03-15'
+  average_rating: '7.94659'
+  weight: '3.9161'
+  ranks:
+  - type: boardgame
+    rank: '85'
+  - type: strategygames
+    rank: '68'
