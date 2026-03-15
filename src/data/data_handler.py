@@ -1,19 +1,97 @@
 import os
-import streamlit as st
+import logging
 import yaml
 import pandas as pd
 import re
+from datetime import date as _date
 from pathlib import Path
 from src.utils.language import t, get_game_display_name, get_game_filename, get_dataframe_column_names
 
-def save_game_data_to_yaml(game_data, custom_filename=None):
+try:
+    import streamlit as st
+    _ST_AVAILABLE = True
+except ImportError:
+    _ST_AVAILABLE = False
+
+_logger = logging.getLogger(__name__)
+
+def _warn(msg: str):
+    """Show warning via logger and optionally st.warning if Streamlit is available."""
+    _logger.warning(msg)
+    if _ST_AVAILABLE:
+        try:
+            st.warning(msg)
+        except Exception:
+            pass
+
+def _values_differ(old_val, new_val):
+    """Compare two values, handling float precision."""
+    if old_val is None and new_val is None:
+        return False
+    if old_val is None or new_val is None:
+        return True
+    try:
+        return abs(float(old_val) - float(new_val)) > 1e-6
+    except (ValueError, TypeError):
+        return old_val != new_val
+
+
+def _build_update_snapshot(previous_data, new_data):
+    """
+    Build a snapshot of changed numerical fields between previous and new data.
+
+    Parameters:
+        previous_data (dict): Previously saved game data (from YAML)
+        new_data (dict): Newly saved game data (after ID stripping)
+
+    Returns:
+        dict or None: Snapshot dict with 'date' and changed fields, or None if no changes
+    """
+    snapshot = {'date': _date.today().isoformat()}
+    has_changes = False
+
+    # Compare average_rating
+    if _values_differ(previous_data.get('average_rating'), new_data.get('average_rating')):
+        snapshot['average_rating'] = new_data.get('average_rating')
+        has_changes = True
+
+    # Compare weight
+    if _values_differ(previous_data.get('weight'), new_data.get('weight')):
+        snapshot['weight'] = new_data.get('weight')
+        has_changes = True
+
+    # Compare ranks (type/rank only)
+    old_ranks = {
+        r['type']: r.get('rank')
+        for r in previous_data.get('ranks', [])
+        if isinstance(r, dict) and 'type' in r
+    }
+    new_ranks = {
+        r['type']: r.get('rank')
+        for r in new_data.get('ranks', [])
+        if isinstance(r, dict) and 'type' in r
+    }
+    rank_changes = [
+        {'type': rank_type, 'rank': new_rank}
+        for rank_type, new_rank in new_ranks.items()
+        if _values_differ(old_ranks.get(rank_type), new_rank)
+    ]
+    if rank_changes:
+        snapshot['ranks'] = rank_changes
+        has_changes = True
+
+    return snapshot if has_changes else None
+
+
+def save_game_data_to_yaml(game_data, custom_filename=None, previous_data=None):
     """
     Save game data to YAML file
-    
+
     Parameters:
     game_data (dict): Game data to save
     custom_filename (str, optional): Custom filename
-    
+    previous_data (dict, optional): Previously saved data for update_history tracking
+
     Returns:
     tuple: (success flag, file path, error message)
     """
@@ -66,7 +144,7 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
                 from src.analysis.learning_curve import calculate_learning_curve
                 game_data_safe['learning_analysis'] = calculate_learning_curve(game_data_safe)
             except Exception as e:
-                    st.warning(t("errors.learning_curve_calculation", error=str(e)))
+                    _warn(t("errors.learning_curve_calculation", error=str(e)))
         
         # Convert full-width spaces to half-width before saving
         def replace_fullwidth_spaces(obj):
@@ -80,7 +158,18 @@ def save_game_data_to_yaml(game_data, custom_filename=None):
                 return obj
         
         game_data_safe = replace_fullwidth_spaces(game_data_safe)
-        
+
+        # Handle update history
+        if previous_data is not None:
+            existing_history = previous_data.get('update_history', [])
+            if not isinstance(existing_history, list):
+                existing_history = []
+            snapshot = _build_update_snapshot(previous_data, game_data_safe)
+            if snapshot:
+                game_data_safe['update_history'] = existing_history + [snapshot]
+            elif existing_history:
+                game_data_safe['update_history'] = existing_history
+
         # Convert to YAML and save
         with open(file_path, 'w', encoding='utf-8') as file:
             yaml.dump(game_data_safe, file, default_flow_style=False, allow_unicode=True, sort_keys=False)
@@ -104,8 +193,7 @@ def load_game_data_from_yaml(file_path):
             game_data = yaml.safe_load(file)
         return game_data
     except Exception as e:
-        # Error display that doesn't depend on Streamlit
-        st.warning(t("errors.file_read", error=str(e)))
+        _warn(t("errors.file_read", error=str(e)))
         return None
 
 def search_results_to_dataframe(results):
